@@ -50,6 +50,9 @@ a {
 	text-decoration: none;
 	color: black;
 }
+p a {
+	color: blue;
+}
 a:hover {
 	color: white;
 }
