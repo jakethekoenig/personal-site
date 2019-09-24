@@ -1,7 +1,7 @@
 var squareCanvas=document.getElementById("squareCanvas");
 var square_ctx=squareCanvas.getContext("2d");
 
-spawn_rate = 3;
+spawn_rate = 7;
 offset = 0;
 max_speed = 10;
 max_size = 200;
