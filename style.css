@@ -10,11 +10,6 @@ canvas {
 	background-color: white;
 }
 
-body {
-	/*background: url('./crater.png') no-repeat center center fixed;*/
-	background-color: LightCyan;
-	background-size: cover;
-}
 
 #title {
 
@@ -27,11 +22,9 @@ body {
 }
 
 #header_menu li {
-	float: left;
 	padding: 15px;
 	margin: 0px;
-	background-color: Cyan;
-	border: 1px Navy solid;
+	border: 1px Black solid;
 }
 
 #header_menu li:hover {
@@ -76,4 +69,21 @@ p, p:hover {
 .rowpics {
 	width: 30%;
 	float:left;
+}
+
+.sidemenu {
+	height: 100%;
+	width: 130px;
+	position: fixed;
+	z-index: 1;	
+	top: 0;
+	left: 0;
+}
+
+.main_content {
+	margin-left: 140px;
+}
+
+.title {
+	margin-left: 140px;
 }
