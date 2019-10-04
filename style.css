@@ -14,6 +14,14 @@ canvas {
 #title {
 
 }
+
+#life {
+	background-image: url("pics/life.gif");
+	background-repeat: no-repeat;
+	background-size: cover;
+	image-rendering: pixelated;
+}
+
 #header_menu {
 	margin-top:0px;
 	list-style-type: none;
