@@ -23,6 +23,7 @@ canvas {
 }
 
 #header_menu {
+	background-color: #F5F5F5;
 	margin-top:0px;
 	list-style-type: none;
 	overflow: hidden;
