@@ -16,12 +16,25 @@ canvas {
 }
 
 #life {
-	background-image: url("pics/life.gif");
+	background-image: url("gifs/life.gif");
 	background-repeat: no-repeat;
 	background-size: cover;
 	image-rendering: pixelated;
 }
 
+#spiral {
+	background-image: url("gifs/spiral.gif");
+	background-repeat: no-repeat;
+	background-size: cover;
+	image-rendering: pixelated;
+}
+
+#grid {
+	background-image: url("gifs/grid.gif");
+	background-repeat: no-repeat;
+	background-size: cover;
+	image-rendering: pixelated;
+}
 #header_menu {
 	background-color: #F5F5F5;
 	margin-top:0px;
