@@ -83,6 +83,12 @@ p, p:hover {
 	float:left;
 }
 
+.rowgifs {
+	width: 30%;
+	float: left;
+	border: 1px Black solid;
+}
+
 .sidemenu {
 	height: 100%;
 	width: 130px;
