@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><$Title$></title>	
+	<link href="../css/style.css" type="text/css" rel="stylesheet">
+	<link rel="shortcut icon" href="../asset/favicon.png" />
+</head>
+<body>
+	<div class="navigation">
+		<ul class="menu"  id="header_navigation">
+			<a class="nav" href="<:prev:>"><li>Previous</li></a><a class="nav" href="../index.html"><li>Index</li></a><a class="nav" href="<:nex:>"><li>Next</li></a>
+		</ul>
+	</div>
+	<div class="blog_title">
+		<h1><$Title$></h1>
+		<h3><i>By: <$Author$> </i><h3>
+		<h3><i><$Date$> </i><h3>
+	</div>
+	<div class="sidemenu">
+		 <ul class="menu" id="header_menu">
+		 	<li class="block"></li>
+			<li>Blog</li>
+			<a href="../experiments.html"><li>Experiments</li></a>
+			<a href="../updates.html"><li>Updates</li></li>
+			<a href="../aboutme.html"><li>About Me</li></a>
+		</ul>
+	</div>	
+	<div class="main_content">
+	<[Content]>
+	</div>
+</body>
