@@ -31,4 +31,5 @@ TODO
 * Use cookies to offer user customization?
 - Dark Mode
 - Browser Notifications
-* Make a videogame
+* Make a video game
+* Make CSS more maintainable 
