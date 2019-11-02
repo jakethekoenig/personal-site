@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index</title>	
+	<link href="./css/style.css" type="text/css" rel="stylesheet">
+	<link rel="shortcut icon" href="./asset/favicon.png" />
+</head>
+<body>
+	<div class="index_title">
+		<h1>My Blogs! Beautifully Organized</h1>
+	</div>
+	<div class="sidemenu">
+		 <ul class="menu" id="header_menu">
+			<li>Blog</li>
+			<a href="./experiments.html"><li>Experiments</li></a>
+			<a href="./updates.html"><li>Updates</li></li>
+			<a href="./aboutme.html"><li>About Me</li></a>
+		</ul>
+	</div>	
+	<div class="main_content">
+	<ul>
+	<:Blogs:>
+	</ul>
+	</div>
+</body>

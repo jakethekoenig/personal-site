@@ -6,4 +6,4 @@
 # Push current git status to github
 git push origin master
 # Sync website assets to aws
-aws s3 sync . s3://ja3k.com/ --exclude "*git/*" --exclude "*scripts/*"
+aws s3 sync live/ s3://ja3k.com/ --exclude "*git/*" --exclude "*scripts/*"

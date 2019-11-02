@@ -1,0 +1,172 @@
+canvas {
+	outline-style: solid;
+	outline-color: black;
+	outline-width: thin;
+	width: 245px;
+	height: 245px;
+	transition: 0.15s;
+	z-index: 0;
+	background-color: white;
+}
+
+
+
+#life {
+	background-image: url("../asset/gif/life.gif");
+	background-repeat: no-repeat;
+	background-size: cover;
+	image-rendering: pixelated;
+}
+
+#spiral {
+	background-image: url("../asset/gif/spiral.gif");
+	background-repeat: no-repeat;
+	background-size: cover;
+	image-rendering: pixelated;
+}
+
+#grid {
+	background-image: url("../asset/gif/grid.gif");
+	background-repeat: no-repeat;
+	background-size: cover;
+	image-rendering: pixelated;
+}
+#header_menu {
+	background-color: #F5F5F5;
+	margin-top:0px;
+	list-style-type: none;
+	overflow: hidden;
+	padding: 0;
+	height: 100%;
+	border-right: 1px Black solid;
+}
+
+.block {
+	background-color: Black;
+}
+
+#header_menu li {
+	border-bottom: 1px Black solid;
+}
+#header_menu li {
+	height:20px;
+	padding: 15px;
+	margin: 0px;
+}
+
+#header_navigation li {
+
+}
+
+.menu li:hover {
+	background-color: Blue;
+	color: white
+}
+.menu .block:hover {
+	background-color: Black;
+}
+
+canvas:hover {
+	transform: scale(1.4);
+	z-index: 1;
+	position: relative;
+	opacity: 1;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+p a {
+	color: blue;
+}
+a:hover {
+	color: white;
+}
+
+p, p:hover {
+
+}
+
+.pictures {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+.container {
+	position:relative;
+	display: inline-block;
+}
+
+.rowpics {
+	width: 30%;
+	float:left;
+}
+
+.rowgifs {
+	width: 30%;
+	float: left;
+	border: 1px Black solid;
+}
+
+.sidemenu {
+	height: 100%;
+	width: 130px;
+	position: fixed;
+	z-index: 1;	
+	top: 0;
+	left: 0;
+}
+
+.navigation {
+	width: 100%;
+	height: 50px;
+	position:fixed;
+	z-index: 1;
+	top: 0;
+	left:130px;
+	background-color: #F5F5F5;
+	border-bottom: 1px Black solid;
+}
+
+.main_content {
+	margin-left: 140px;
+}
+
+.blog_title {
+	margin-top:70px;
+	margin-left: 140px;
+	line-height: 50%;
+}
+.title {
+	margin-left: 140px;
+	line-height: 50%;
+}
+
+.index_title {
+	margin-left: 140px;
+	line-height:50%;
+}
+
+#header_navigation {
+	list-style-type: none;
+	height:100%;
+	padding: 0;
+}
+.nav {
+	height:100%;
+	margin-right:80px;
+}
+.nav li {
+	padding: 16px 30px 16px 30px;
+	margin-right:0px;
+	margin-left:0px;
+	display:inline;
+	border-right: 1px Black solid;
+}
+div h3 {
+	font-size:small;
+	font-weight: normal;
+}
