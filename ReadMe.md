@@ -33,3 +33,4 @@ TODO
 - Browser Notifications
 * Make a video game
 * Make CSS more maintainable 
+* Make site better for mobile
