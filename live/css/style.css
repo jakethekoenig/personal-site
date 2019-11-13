@@ -9,28 +9,18 @@ canvas {
 	background-color: white;
 }
 
+canvas:hover {
+	transform: scale(1.4);
+	z-index: 1;
+	position: relative;
+}
 
-
-#life {
-	background-image: url("../asset/gif/life.gif");
+.gif_covered {
 	background-repeat: no-repeat;
 	background-size: cover;
 	image-rendering: pixelated;
 }
 
-#spiral {
-	background-image: url("../asset/gif/spiral.gif");
-	background-repeat: no-repeat;
-	background-size: cover;
-	image-rendering: pixelated;
-}
-
-#grid {
-	background-image: url("../asset/gif/grid.gif");
-	background-repeat: no-repeat;
-	background-size: cover;
-	image-rendering: pixelated;
-}
 #header_menu {
 	background-color: #F5F5F5;
 	margin-top:0px;
@@ -44,48 +34,29 @@ canvas {
 .block {
 	background-color: Black;
 }
+.menu .block:hover {
+	background-color: Black;
+}
 
 #header_menu li {
 	border-bottom: 1px Black solid;
-}
-#header_menu li {
 	height:20px;
 	padding: 15px;
 	margin: 0px;
-}
-
-#header_navigation li {
-
 }
 
 .menu li:hover {
 	background-color: Blue;
 	color: white
 }
-.menu .block:hover {
-	background-color: Black;
-}
 
-canvas:hover {
-	transform: scale(1.4);
-	z-index: 1;
-	position: relative;
-	opacity: 1;
-}
-
-a {
+.menu a {
 	text-decoration: none;
 	color: black;
 }
-p a {
-	color: blue;
-}
-a:hover {
+
+.menu a:hover {
 	color: white;
-}
-
-p, p:hover {
-
 }
 
 .pictures {
@@ -100,15 +71,9 @@ p, p:hover {
 	display: inline-block;
 }
 
-.rowpics {
+.rowmedia {
 	width: 30%;
 	float:left;
-}
-
-.rowgifs {
-	width: 30%;
-	float: left;
-	border: 1px Black solid;
 }
 
 .sidemenu {
