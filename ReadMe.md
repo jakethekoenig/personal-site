@@ -34,3 +34,4 @@ TODO
 * Make a video game
 * Make CSS more maintainable 
 * Make site better for mobile
+* Add latex to the site. For Z^5
