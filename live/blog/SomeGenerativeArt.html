@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Some Generative Art</title>	
+	<link href="../css/style.css" type="text/css" rel="stylesheet">
+	<link rel="shortcut icon" href="../asset/favicon.png" />
+</head>
+<body>
+	<div class="navigation">
+		<ul class="menu"  id="header_navigation">
+			<a class="nav" href="../blog/Jitter.html"><li>Previous</li></a><a class="nav" href="../index.html"><li>Index</li></a><a class="nav" href="../index.html"><li>Next</li></a>
+		</ul>
+	</div>
+	<div class="blog_title">
+		<h1>Some Generative Art</h1>
+		<h3><i>By: Jake Koenig </i><h3>
+		<h3><i>12/29/2019 </i><h3>
+	</div>
+	<div class="sidemenu">
+		 <ul class="menu" id="header_menu">
+		 	<li class="block"></li>
+			<li>Blog</li>
+			<a href="../experiments.html"><li>Experiments</li></a>
+			<a href="../updates.html"><li>Updates</li></li>
+			<a href="../aboutme.html"><li>About Me</li></a>
+		</ul>
+	</div>	
+	<div class="main_content">
+<p>I've recently been trying my hand at making some generative art and I want to share some of the things I've made so far. My general process is thinking of some way to randomly make an image, randomly making an image, and then seeing how it turns out. Quite often what I get is sort of boring but once in a while I get something which is to me sort of beautiful.</p>
+
+<p>The first thing I'd like to show you are these regularly tiles triangles each randomly colored red, green, or blue. Something about the random regions and shapes which form in the grid fascinate me.</p>
+<div class="container">
+	<img class="rowmedia" src="../asset/pic/gen/triangles.jpg">
+</div>
+<p>The next thing I'd like to share is similar in spirit. I made a triangular grid. But then I perturbed each vertex just slightly. Then instead of randomly coloring the triangles I colored them according to the average color in that region in a given image. I sort of like how they turned out. </p>
+<div class="container">
+	<img class="rowmedia" src="../asset/pic/gen/happy.jpg">
+	<img class="rowmedia" src="../asset/pic/gen/hap_out.jpg">
+</div>
+<div class="container">
+	<img class="rowmedia" src="../asset/pic/gen/lake.jpg">
+	<img class="rowmedia" src="../asset/pic/gen/lake_out.jpg">
+</div>
+<div class="container">
+	<img class="rowmedia" src="../asset/pic/gen/jellies.jpg">
+	<img class="rowmedia" src="../asset/pic/gen/jelly_out.jpg">
+</div>
+<p>I should really figure out how to host some python on my site, or just rewrite it in javascript so my loyal readers can make use of this nice stylization on their own photos. But in the mean time enjoy these examples.</p>
+
+<p>The last thing I'd like to share are some random walks in Z^5. The first two dimensions are spatial, and the next three are RGB values. I ran the walks for longer and longer times which lead to varied and fun effects. This is another one I should reimplement in javascript so I can add it to the experiments page and get some dynamic walks. But for now enjoy these still images.</p>
+
+<div class="container">
+	<img class="rowmedia" src="../asset/pic/gen/brown3.jpg">
+	<img class="rowmedia" src="../asset/pic/gen/brown4.jpg">
+	<img class="rowmedia" src="../asset/pic/gen/brown5.jpg">
+	<img class="rowmedia" src="../asset/pic/gen/brown6.jpg">
+</div>
+
+<p>Somehow these random walks seems so fascinating to me. Each step is independent at random but somehow they end up developing strange self similarity and patterns. Though I suppose that's an illusion that's in my own head not something to see in the image. These are it for now. I've made about 10 similar complexity scripts but for the most part I just get some noisy random triangles which aren't fun to look at. I guess that's a natural hazard of making random art. </p>
+	</div>
+</body>
