@@ -29,7 +29,6 @@ canvas:hover {
 
 .links_menu a {
 	text-decoration:none;
-	font-size: 25px;
 	color: black;
 }
 
@@ -38,7 +37,7 @@ canvas:hover {
 }
 
 .links_menu * li {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	border-bottom: 1px Black solid;
 	padding: 7px;
 }

@@ -3,6 +3,7 @@
 	"Author": "Jake Koenig",
 	"Template": "templates/blog.temp",
 	"Date": "12/29/2019",
-	"Content": "content/art.html"
+	"Content": "content/art.html",
+	"Summary": "A collection of a few simple procedural artworks I've made. My favorite are the random walks at the end."
 }
 	

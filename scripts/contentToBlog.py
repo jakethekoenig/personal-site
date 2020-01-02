@@ -18,7 +18,7 @@ def titleToUrl(title):
 
 def lookUp(index, blog):
     for i,b in enumerate(index):
-        if b[0]==blog:
+        if b[0]["Title"]==blog:
             return i
     return -1
 
@@ -30,12 +30,12 @@ def derivedTags(line, index, blog):
             if ind +1 == len(index):
                 insert = "../index.html"
             else:
-                insert = "../"+titleToUrl(index[ind+1][0])
+                insert = "../"+titleToUrl(index[ind+1][0]["Title"])
         if derived == "nex":
             if ind == 0:
                 insert = "../index.html"
             else:
-                insert = "../"+titleToUrl(index[ind-1][0])
+                insert = "../"+titleToUrl(index[ind-1][0]["Title"])
         line = line[:line.find("<:")] + insert + line[line.find(":>")+2:]
     return line
 
@@ -64,7 +64,12 @@ def process(post_path, index):
                     
 
 def blogLi(blog):
-    return "<a href=" + titleToUrl(blog[0]) + "><li>"+ blog[0] +"</li>"
+    if "Summary" in blog:
+        ans = "<a href=" + titleToUrl(blog["Title"]) + "><li><h2>"+ blog["Title"]+"</h2>"
+        ans += "<p>" + blog["Summary"] + "</p>"
+        ans += "</li>"
+        return ans
+    return "<a href=" + titleToUrl(blog["Title"]) + "><li><h2>"+ blog["Title"] +"</h2></li>"
 
 # Make a html document from index.temp filling in titles of all my blogs
 # in order of date given in their json metadata. Complete with links to them.
@@ -76,7 +81,7 @@ def make_index(blog_dir):
             continue
         with open(blog_dir+"/"+blog) as post_json:
             data = json.load(post_json)
-            blogs.append((data["Title"],datetime.strptime(data["Date"],"%m/%d/%Y")))
+            blogs.append((data,datetime.strptime(data["Date"],"%m/%d/%Y")))
     blogs.sort(key= lambda x : x[1])
     blogs.reverse()
     out = open("../live/index.html", "w")
@@ -84,7 +89,7 @@ def make_index(blog_dir):
         for line in temp:
             if line.find("<:")!=-1:
                 for blog in blogs:
-                    out.write(blogLi((blog)))
+                    out.write(blogLi((blog[0])))
             else:
                 out.write(line)
     out.close()
