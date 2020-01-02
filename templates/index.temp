@@ -7,7 +7,7 @@
 </head>
 <body>
 	<div class="index_title">
-		<h1>My Blogs! Beautifully Organized</h1>
+		<h1>Blogs</h1>
 	</div>
 	<div class="sidemenu">
 		 <ul class="menu" id="header_menu">
@@ -18,7 +18,7 @@
 		</ul>
 	</div>	
 	<div class="main_content">
-	<ul>
+	<ul class="links_menu">
 	<:Blogs:>
 	</ul>
 	</div>
