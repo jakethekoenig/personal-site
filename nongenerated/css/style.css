@@ -80,6 +80,16 @@ div h3 {
 .main_content, .title {
 	margin-left:140px;
 }
+
+.main_content > * {
+	margin-left:15%;
+	margin-right:15%;
+}
+.main_content * {
+	font-family: 'Roboto', sans-serif;
+	line-height:200%;
+	font-size: 20px;
+}
 @media only screen and (max-width:1000px) {
 	#header_menu {
 		width: 100%;
