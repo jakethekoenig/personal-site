@@ -82,13 +82,17 @@ div h3 {
 }
 
 .main_content > * {
-	margin-left:15%;
-	margin-right:15%;
+	margin-left:12%;
+	margin-right:12%;
 }
 .main_content * {
 	font-family: 'Roboto', sans-serif;
 	line-height:200%;
 	font-size: 20px;
+}
+.main_content .container {
+	margin-left:0;
+	margin-right:0;
 }
 @media only screen and (max-width:1000px) {
 	#header_menu {
