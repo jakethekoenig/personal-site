@@ -69,6 +69,10 @@
 	position:relative;
 	display: inline-block;
 }
+.rowhalf {
+	width: 50%;
+	float:left;
+}
 .rowmedia, .responsiverow{
 	width: 30%;
 	float:left;
