@@ -6,7 +6,7 @@
 	<link href="./css/ind.css" type="text/css" rel="stylesheet">
 	<link rel="shortcut icon" href="./asset/favicon.png" />
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-	<script src="js/onscroll.js"></script>
+	<script src="js/onscroll.js?v=1"></script>
 </head>
 <body>
 	<div class="sidemenu">
