@@ -10,14 +10,13 @@
 </head>
 <body>
 	<div class="sidemenu">
-		 <ul class="menu" id="header_menu">
-		 	<li class="block"></li>
-			<li>Blog</li>
-			<a href="./experiments.html"><li>Experiments</li></a>
-			<a href="./aboutme.html"><li>About Me</li></a>
+		 <ul class="menu">
+			<li><a class="full">Blog</a></li>
+			<li><a class="full" href="./experiments.html">Experiments</a></li>
+			<li><a class="full" href="./aboutme.html">About Me</a></li>
 		</ul>
 	</div>	
-	<div class="title">
+	<div class="index_title">
 		<h1>Blogs</h1>
 	</div>
 	<div class="main_content">

@@ -1,12 +1,15 @@
 canvas {
+	float:left;
+	display: block;
+	width: 245px;
+	height: 245px;
 	outline-style: solid;
 	outline-color: black;
 	outline-width: thin;
-	width: 245px;
-	height: 245px;
 	transition: 0.15s;
 	z-index: 0;
 	background-color: white;
+	margin: 10px;
 }
 canvas:hover {
 	transform: scale(1.4);
@@ -17,4 +20,14 @@ canvas:hover {
 	background-repeat: no-repeat;
 	background-size: cover;
 	image-rendering: pixelated;
+}
+@media only screen and (max-width:1000px) {
+	canvas {
+		width: 90vw;
+		height: 90vw;
+		float: none;
+		margin-left:auto;
+		margin-right:auto;
+		display: block;
+	}
 }
