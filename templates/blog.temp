@@ -8,17 +8,9 @@
 	<script src="../js/onscroll.js"></script>
 </head>
 <body>
-	<div class="sidemenu">
-		 <ul class="menu" id="header_menu">
-		 	<li class="block"></li>
-			<li>Blog</li>
-			<a href="../experiments.html"><li>Experiments</li></a>
-			<a href="../aboutme.html"><li>About Me</li></a>
-		</ul>
-	</div>	
-	<div class="navigation">
-		<ul class="menu"  id="header_navigation">
-			<a class="nav" href="<:prev:>"><li>Previous</li></a><a class="nav" href="../index.html"><li>Index</li></a><a class="nav" href="<:nex:>"><li>Next</li></a>
+	<div class="topmenu">
+		<ul class="menu">
+			<li><a class="third" href="<:prev:>">Previous</a></li><li><a class="third" href="../index.html">Nav</a></li><li><a class="third" href="<:nex:>">Next</a></li>
 		</ul>
 	</div>
 	<div class="title">
