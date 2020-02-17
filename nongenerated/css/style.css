@@ -34,6 +34,9 @@
 	float: left;
 	text-align: center;
 }
+figcaption {
+	text-align: center;
+}
 .menu li:nth-child(even) a {
 	background: SlateGrey;
 }
@@ -109,6 +112,18 @@ div h3 {
 	margin-left:0;
 	margin-right:0;
 }
+.plink {
+	text-decoration: none;
+	color: black;
+}
+.plink p {
+	background: lightgrey;
+	border: 1px solid Black ;
+}
+.plink p:hover {
+	background: grey;
+}
+
 @media only screen and (max-width:1000px) {
 	.sidemenu {
 		width: 100%;
