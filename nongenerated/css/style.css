@@ -150,7 +150,7 @@ div h3 {
 		margin-left: 2%;
 	}
 	img.centered, img.half, img.third, img.fourth, img.fifth {
-		float: none;
+		float: left;
 		width: 100%;
 		max-width: 100%;
 	}
