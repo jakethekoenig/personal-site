@@ -23,19 +23,3 @@ templates
 ---------
 In this folder are .temp files which encode partial html files which are completed by including $Content and filling in data specified by <$ $> tags.
 
-TODO
-----
-* Make this todo list more professional. Maybe use JIRA or make it a page on my site
-* More Experiments:
-- Random Partition
-- Random Polygon
-- Make some of the links which go to blog posts which describe their motivation
-* Nicer Index Style
-* Make site homepage my most recent blog, or something nicer than my index.
-* Use cookies to offer user customization?
-- Dark Mode
-- Browser Notifications
-* Make a video game
-* Make CSS more maintainable 
-* Make site better for mobile
-* Add latex to the site. For Z^5
