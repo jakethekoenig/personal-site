@@ -13,8 +13,13 @@ def getContent(line, tags):
         return line[line.find("<[")+2:line.find("]>")]
     return ""
 
-def titleToUrl(title):
-    return "blog/"+title.replace(" ","").replace(",","")+".html"
+def blogUrl(blog):
+    if "URL" in blog:
+        return "blog/"+blog["URL"]+".html"
+    return "blog/"+blog["Title"].replace(" ","").replace(",","")+".html"
+
+def blogFullUrl(blog):
+    return "http://www.ja3k.com/"+blogUrl(blog)
 
 def lookUp(index, blog):
     for i,b in enumerate(index):
@@ -30,12 +35,12 @@ def derivedTags(line, index, blog):
             if ind +1 == len(index):
                 insert = "../index.html"
             else:
-                insert = "../"+titleToUrl(index[ind+1][0]["Title"])
+                insert = "../"+blogUrl(index[ind+1][0])
         if derived == "nex":
             if ind == 0:
                 insert = "../index.html"
             else:
-                insert = "../"+titleToUrl(index[ind-1][0]["Title"])
+                insert = "../"+blogUrl(index[ind-1][0])
         line = line[:line.find("<:")] + insert + line[line.find(":>")+2:]
     return line
 
@@ -47,7 +52,7 @@ def process(post_path, index):
         data = json.load(post_json)
         template = data["Template"]
         content  = data["Content"]
-        out = open("../live/"+titleToUrl(data["Title"]),"w+")
+        out = open("../live/"+blogUrl(data),"w+")
         with open(template) as temp:
             with open(content) as cont:
                 for line in temp:
@@ -63,17 +68,30 @@ def process(post_path, index):
     out.close()
                     
 
+# Returns the html snippet for the blogs entry in the index of blogs.
 def blogLi(blog):
     if "Summary" in blog:
-        ans = "<a href=" + titleToUrl(blog["Title"]) + "><li><h2>"+ blog["Title"]+"</h2>"
+        ans = "<a href=" + blogUrl(blog) + "><li><h2>"+ blog["Title"]+"</h2>"
         ans += "<p>" + blog["Summary"] + "</p>"
         ans += "</li>"
         return ans
-    return "<a href=" + titleToUrl(blog["Title"]) + "><li><h2>"+ blog["Title"] +"</h2></li>"
+    return "<a href=" + blogUrl(blog) + "><li><h2>"+ blog["Title"] +"</h2></li>"
+
+# Returns the xml snippet which describes the blogs entry in the rss file.
+def blogRSS(blog):
+    ans = "<item>"
+    ans+= "<title>"+blog["Title"]+"</title>"
+    ans+= "<link>"+blogFullUrl(blog)+"</link>"
+    if "Summary" in blog:
+        ans+= "<description>"+blog["Summary"]+"</description>"
+    ans += "</item>"
+    return ans
 
 # Make a html document from index.temp filling in titles of all my blogs
 # in order of date given in their json metadata. Complete with links to them.
 # Returns a list of blogs in chronological order.
+#
+# Also generates the rss file associated to the blogs.
 def make_index(blog_dir):
     blogs = []
     for blog in os.listdir(blog_dir):
@@ -93,6 +111,15 @@ def make_index(blog_dir):
             else:
                 out.write(line)
     out.close()
+    rss = open("../live/ja3k-rss.xml", "w")
+    with open("templates/rss.temp") as temp:
+        for line in temp:
+            if line.find("<:")!=-1:
+                for blog in blogs:
+                    rss.write(blogRSS(blog[0]))
+            else:
+                rss.write(line)
+    rss.close()
     return blogs
 
 
