@@ -84,6 +84,7 @@ def blogRSS(blog):
     ans+= "<link>"+blogFullUrl(blog)+"</link>"
     if "Summary" in blog:
         ans+= "<description>"+blog["Summary"]+"</description>"
+    ans += "<pubdate>" + datetime.strptime(blog["Date"],"%m/%d/%Y").strftime("%a, %d %b %Y %H:%M:%S %z") + "</pubdate>"
     ans += "</item>"
     return ans
 
@@ -111,7 +112,7 @@ def make_index(blog_dir):
             else:
                 out.write(line)
     out.close()
-    rss = open("../live/ja3k-rss.xml", "w")
+    rss = open("../live/feed.xml", "w")
     with open("templates/rss.temp") as temp:
         for line in temp:
             if line.find("<:")!=-1:
