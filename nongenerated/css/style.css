@@ -26,7 +26,7 @@
 	padding: 0;
 	font-size: 20px;
 }
-.menu li a {
+.menu-item {
 	text-decoration: none;
 	color: black;
 	padding:10px 0px 10px;
@@ -37,15 +37,15 @@
 figcaption {
 	text-align: center;
 }
-.menu li:nth-child(even) a {
+.menu > li:nth-child(even) > a {
 	background: SlateGrey;
 }
-.menu li:nth-child(odd) a {
+.menu > li:nth-child(odd) > a {
 	background: LightGrey;
 }
-.menu li a:hover {
+.menu > li >  a:hover {
 	color: white;
-	background: DarkGrey;
+	background-color: DarkGrey;
 }
 /* Rules for Media and Pictures */
 blockquote {
@@ -86,9 +86,6 @@ blockquote {
 .index_title {
 	margin_top: 30px;
 }
-h1 {
-	line-height: 30px;
-}
 div h3 {
 	font-size:small;
 	font-weight: normal;
@@ -103,10 +100,20 @@ div h3 {
 }
 .main_content * {
 	line-height:200%;
-	font-size: 20px;
 }
 * {
 	font-family: 'Roboto', sans-serif;
+}
+.icon {
+	width: 30%;
+	padding: 9%;
+}
+.icon:hover {
+	background-color: LightGrey;
+}
+.socials {
+	background-color: white;
+	float:left;
 }
 .main_content .container {
 	margin-left:0;
@@ -143,7 +150,7 @@ div h3 {
 	}
 	.index_title {
 		margin-left: 2%;
-		margin-top: 500px;
+		margin-top: 680px;
 	}
 	.title {
 		margin-top: 180px;
@@ -154,8 +161,12 @@ div h3 {
 		width: 100%;
 		max-width: 100%;
 	}
-	.menu li a {
+	.menu  li  a {
 		padding:40px 0px 40px;
 		font-size: 50px;
+	}
+	.icon {
+		width: 10%;
+		padding: 7%;
 	}
 }

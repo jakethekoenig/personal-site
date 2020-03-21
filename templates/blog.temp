@@ -12,7 +12,7 @@
 <body>
 	<div class="topmenu">
 		<ul class="menu">
-			<li><a class="third" href="<:prev:>">Previous</a></li><li><a class="third" href="../index.html">Nav</a></li><li><a class="third" href="<:nex:>">Next</a></li>
+			<li><a class="third menu-item" href="<:prev:>">Previous</a></li><li><a class="third menu-item" href="../index.html">Nav</a></li><li><a class="third menu-item" href="<:nex:>">Next</a></li>
 		</ul>
 	</div>
 	<div class="title">
