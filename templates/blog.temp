@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title><$Title$></title>	
-	<link href="../css/style.css?v=6" type="text/css" rel="stylesheet">
+	<link href="../css/style.css?v=7" type="text/css" rel="stylesheet">
 	<!-- TODO: Don't put this in production. Move to json file.  <02-03-20, yourname> -->
 	<link href="../css/jelly.css" type="text/css" rel="stylesheet">
 	<link rel="shortcut icon" href="../asset/favicon.png" />
