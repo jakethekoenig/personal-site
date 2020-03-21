@@ -12,9 +12,17 @@
 <body>
 	<div class="sidemenu">
 		 <ul class="menu">
-			<li><a class="full">Blog</a></li>
-			<li><a class="full" href="./experiments.html">Experiments</a></li>
-			<li><a class="full" href="./aboutme.html">About Me</a></li>
+			<li><a class="full menu-item">Blog</a></li>
+			<li><a class="full menu-item" href="./experiments.html">Experiments</a></li>
+			<li><a class="full menu-item" href="./aboutme.html">About Me</a></li>
+			<li>
+			<div class="full socials">
+				<a href="./ja3k-rss.xml"><img class="icon" src="asset/icon/rss.svg"></a>
+				<a href="https://twitter.com/Hail_Corporate"><img class="icon" src="asset/icon/twitter.svg"></a>
+				<a href="https://github.com/jakethekoenig"><img class="icon" src="asset/icon/git.png"></a>
+				<a href="https://www.instagram.com/ricebroccolichicken/"><img class="icon" src="asset/icon/gram.png"></a>
+			</div>
+			</li>
 		</ul>
 	</div>	
 	<div class="index_title">
