@@ -82,9 +82,10 @@ def blogRSS(blog):
     ans = "<item>"
     ans+= "<title>"+blog["Title"]+"</title>"
     ans+= "<link>"+blogFullUrl(blog)+"</link>"
+    ans+= "<guid isPermaLink=\"true\">"+blogFullUrl(blog)+"</guid>"
     if "Summary" in blog:
         ans+= "<description>"+blog["Summary"]+"</description>"
-    ans += "<pubdate>" + datetime.strptime(blog["Date"],"%m/%d/%Y").strftime("%a, %d %b %Y %H:%M:%S %z") + "</pubdate>"
+    ans += "<pubDate>" + datetime.strptime(blog["Date"],"%m/%d/%Y").strftime("%a, %d %b %Y %H:%M:%S %z") + "</pubDate>"
     ans += "</item>"
     return ans
 
