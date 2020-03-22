@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<a rel="me" href="https://qoto.org/@ja3k">Mastodon</a>
 	<title>Index</title>	
 	<link href="./css/style.css?v=7" type="text/css" rel="stylesheet">
 	<link href="./css/ind.css" type="text/css" rel="stylesheet">
@@ -35,3 +34,4 @@
 	</ul>
 	</div>
 </body>
+</html>
