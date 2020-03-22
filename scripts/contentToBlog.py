@@ -15,7 +15,7 @@ def getContent(line, tags):
 
 def blogUrl(blog):
     if "URL" in blog:
-        return "blog/"+blog["URL"]
+        return "blog/"+blog["URL"]+".html"
     return "blog/"+blog["Title"].replace(" ","").replace(",","")+".html"
 
 def blogFullUrl(blog):
