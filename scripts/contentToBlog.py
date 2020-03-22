@@ -75,7 +75,7 @@ def blogLi(blog):
         ans += "<p>" + blog["Summary"] + "</p>"
         ans += "</li>"
         return ans
-    return "<a href=" + blogUrl(blog) + "><li><h2>"+ blog["Title"] +"</h2></li>"
+    return "<a href=" + blogUrl(blog) + "><li><h2>"+ blog["Title"] +"</h2></li></a>"
 
 # Returns the xml snippet which describes the blogs entry in the rss file.
 def blogRSS(blog):
