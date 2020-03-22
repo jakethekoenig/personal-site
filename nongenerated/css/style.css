@@ -1,4 +1,8 @@
 /* Rules for menus*/
+html {
+	font-family: 'Roboto', sans-serif;
+	font-size: calc(1em + 1vw);
+}
 .sidemenu {
 	height: 100%;
 	width: 130px;
@@ -24,9 +28,9 @@
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	font-size: 20px;
 }
 .menu-item {
+	font-size: 0.5em;
 	text-decoration: none;
 	color: black;
 	padding:10px 0px 10px;
@@ -87,7 +91,6 @@ blockquote {
 	margin_top: 30px;
 }
 div h3 {
-	font-size:small;
 	font-weight: normal;
 }
 .main_content, .title, .index_title {
@@ -101,19 +104,15 @@ div h3 {
 .main_content * {
 	line-height:200%;
 }
-* {
-	font-family: 'Roboto', sans-serif;
-}
 .icon {
-	width: 30%;
+	width: 25%;
 	padding: 9%;
-}
-.icon:hover {
-	background-color: LightGrey;
 }
 .socials {
 	background-color: white;
-	float:left;
+}
+.icon:hover {
+	background-color: LightGrey;
 }
 .main_content .container {
 	margin-left:0;
@@ -129,6 +128,12 @@ div h3 {
 }
 .plink p:hover {
 	background: grey;
+}
+h1 {
+	font-size: 2em;
+}
+h2 {
+	font-size: 1.5em;
 }
 
 @media only screen and (max-width:1000px) {
@@ -163,10 +168,12 @@ div h3 {
 	}
 	.menu li a {
 		padding:40px 0px 40px;
-		font-size: 50px;
 	}
 	.icon {
 		width: 10%;
 		padding: 7%;
+	}
+	.menu-item {
+		font-size:1em;
 	}
 }
