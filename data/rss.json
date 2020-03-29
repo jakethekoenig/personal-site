@@ -1,0 +1,8 @@
+{
+	"Title": "feed",
+	"URL":   "feed.xml",
+	"Author": "Jake Koenig",
+	"Template": "rss.temp",
+	"Content": "rss.py"
+}
+	
