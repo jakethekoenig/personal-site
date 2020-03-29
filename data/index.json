@@ -1,0 +1,8 @@
+{
+	"Title": "Blogs",
+	"URL":   "index",
+	"Author": "Jake Koenig",
+	"Template": "toplevel.temp",
+	"Content": "index.py"
+}
+	

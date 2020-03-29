@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<:comp/header:>
+<body>
+	<:comp/sidemenu:>
+	<div class="index_title">
+		<h1><$Title$></h1>
+	</div>
+	<div class="main_content">
+	<[Content]>
+	</div>
+</body>
+</html>
