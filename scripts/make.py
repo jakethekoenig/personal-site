@@ -7,6 +7,7 @@ from url_tools import url
 # From a websites template and its specified data (which has a link to the content)
 # create a filled out webpage.
 def replaceTags(template, data, index):
+    # TODO: Make this method robust to tags inside tags
     # replace content
     path = data["Content"]
     if path[-3:]==".py":
@@ -36,6 +37,45 @@ def replaceTags(template, data, index):
     return template
 
 
+# There are some features of files in the index which are implicit in their relative position
+# in the index so not manually added to the files. They are added in this method.
+# The current list of such attributes is:
+# * depth:     a string which gives a relative path to the top level i.e. "../../"
+# * next:      the next file. Chronologically if 'Date' is present else alphabetically.
+# * previous:  the previous file. Chronologically if 'Date' is present else alphabetically.
+# * index:     If there is a file with attribute "indexes" then the files in the directory
+#              pointed to have their attribute "index" filled in with a back reference. Then
+#              index is updated to be the actual list of files instead of a pointer.
+# TODO: Should the url bookkeeping be done here?
+def addDerivedAttributes(index, depth=0):
+    sortByDate = False
+    for entry in index:
+        data = entry[1]
+        if isinstance(data, list):
+            continue
+        if "Date" in data:
+            sortByDate = True
+        if "Indexes" in data:
+            for item in dict(index)[data["Indexes"]]: #TODO: handle case where index isn't one level up from files.
+                item[1]["Index"] = "../"*(depth+1)+url(data)
+        data["Depth"] = "../"*depth
+    if sortByDate: #TODO: are there other cases where content should be sorted?
+        index.sort(key=lambda t: datetime.strptime(t[1]["Date"], "%m/%d/%Y"), reverse=True)
+    if len(index)>0 and "Index" in index[0][1]:
+        for i,blog in enumerate(index):
+            if i!=0:
+                blog[1]["next"] = url(index[i-1][1])
+            else:
+                blog[1]["next"] = blog[1]["Index"]
+            if i+1<len(index):
+                blog[1]["previous"] = url(index[i+1][1])
+            else:
+                blog[1]["previous"] = blog[1]["Index"]
+    for entry in index:
+        if isinstance(entry[1], list):
+            addDerivedAttributes(entry[1], depth+1)
+    
+
 # From the data directory create an index of the cite. It'll be a list of tuples. Each with
 # first parameter the name of the page or directory and second parameter another list if it
 # was a directory else the associated data object. The lists will be sorted by date if one is
@@ -51,15 +91,6 @@ def make_index(data_dir):
         else:
             with open(path) as data_file:
                 index+=[(page,json.load(data_file))]
-    index = sorted(index, key=lambda t: datetime.strptime(t[1]["Date"],"%m/%d/%Y") if "Date" in t[1] else datetime.now())[::-1]
-    # TODO: Logically this should go somewhere else. But where? I guess I somehow need to pass
-    # the whole index around later?
-    if len(index)>0 and "Date" in index[0][1]:
-        for i,blog in enumerate(index):
-            if i!=0:
-                blog[1]["next"] = url(index[i-1][1])
-            if i+1<len(index):
-                blog[1]["previous"] = url(index[i+1][1])
     return index
 
 
@@ -87,4 +118,5 @@ template_dir = "template/"
 content_dir  = "content/"
 live_dir     = "../live/"
 index = make_index(data_dir)
+addDerivedAttributes(index)
 make_site("../live", index, index)

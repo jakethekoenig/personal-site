@@ -1,6 +1,7 @@
 <div class="sidemenu">
 	 <ul class="menu">
 		<li><a class="full menu-item" href="./index.html">Blog</a></li>
+		<li><a class="full menu-item" href="./pods.html">Podcasts</a></li>
 		<li><a class="full menu-item" href="./experiments.html">Experiments</a></li>
 		<li><a class="full menu-item" href="./aboutme.html">About Me</a></li>
 		<li>

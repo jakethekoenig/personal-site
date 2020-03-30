@@ -3,6 +3,7 @@
 	"URL":   "index",
 	"Author": "Jake Koenig",
 	"Template": "toplevel.temp",
-	"Content": "index.py"
+	"Content": "index.py",
+	"Indexes": "blog"
 }
 	
