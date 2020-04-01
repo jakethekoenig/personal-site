@@ -1,7 +1,6 @@
 /* Rules for menus*/
-html {
+body {
 	font-family: 'Roboto', sans-serif;
-	font-size: calc(1em + 1vw);
 }
 .sidemenu {
 	height: 100%;
@@ -30,7 +29,6 @@ html {
 	padding: 0;
 }
 .menu-item {
-	font-size: 0.5em;
 	text-decoration: none;
 	color: black;
 	padding:10px 0px 10px;
@@ -129,13 +127,6 @@ div h3 {
 .plink p:hover {
 	background: grey;
 }
-h1 {
-	font-size: 2em;
-}
-h2 {
-	font-size: 1.5em;
-}
-
 @media only screen and (max-width:1000px) {
 	.sidemenu {
 		width: 100%;
@@ -172,8 +163,5 @@ h2 {
 	.icon {
 		width: 10%;
 		padding: 7%;
-	}
-	.menu-item {
-		font-size:1em;
 	}
 }
