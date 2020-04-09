@@ -3,6 +3,7 @@
 <link href="<$Depth$>./css/style.css?v=7" type="text/css" rel="stylesheet">
 <link href="<$Depth$>./css/ind.css" type="text/css" rel="stylesheet">
 <link href="<$Depth$>./css/exp.css" type="text/css" rel="stylesheet">
+<link href="<$Depth$>./css/jelly.css" type="text/css" rel="stylesheet">
 <link rel="shortcut icon" href="<$Depth$>./asset/favicon.png" />
 <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 <link rel="alternate" type="application/rss+xml" title="ja3k" href="/feed.xml" />
