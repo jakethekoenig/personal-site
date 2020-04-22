@@ -95,11 +95,15 @@ div h3 {
 	margin-left:140px;
 }
 
-.main_content > p,h2,h3,ul {
+.main_content p,h2,h3,ul,ol,code{
 	margin-left:5%;
 	margin-right:5%;
 }
-.main_content * {
+code {
+	display:block;
+	line-height:100%;
+}
+.main_content p,ul,ol {
 	line-height:200%;
 }
 .icon {
