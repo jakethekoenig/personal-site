@@ -1,0 +1,64 @@
+<h2>Introduction</h2>
+
+<p>Few things make me as sad in life as reflecting on all the people in the world waking up everyday to jarring discordant sounds. First thing every morning a painful and abrupt sound. I watched a Matthew Walker <a href="https://www.youtube.com/watch?v=lRp5AC9W_F8">Q&A Video</a> where he said:</p>
+<blockquote>But what about the snooze button though? Unfortunately its probably not a good idea because there is some data that I discuss in the book where if you look at the cardiovascular response to an alarm its actually quite a stressful event for your cardiovascular sys We see a spike in heart rate, stress chemicals increase. Now it's fine to use an alarm just that one time in the morning to wake you up but you shouldn't really be hitting the snooze button because then you are repeatedly assaulting your cardiovascular system. </blockquote>
+<p>I hate this unquantified harm and benefit. What makes one stressful daily waking fine but the repetition harmful? In this gradient from bad to worse what is Walker's methodology for splitting the acceptable and the unacceptable? It feels like Walker is just giving advice that everyone reflectively knows is good "Don't use the Snooze button". The reason the advice isn't perfectly followed isn't because people have analyzed the data and come to different conclusions. It's because the person who decided when they are waking up and the person who actually wakes up aren't the same person. And it seems like the advice that should really follow from the evidence Walker is hinting at isn't "Don't use the snooze button" but "Don't use an alarm clock at all".</p>
+<p>Luckily I have a great solution to sound alarm clocks: light alarm clocks. It just seems like  such a natural thing. Back in the day when we were hunter gatherers on the plains of Africa we didn't wake up to sounds. Not unless shit was about to go down. We woke up to the rising sun! And even if we've transitioned to being cave dwellers at high latitudes we still ought to wake up to gradually brightening lights. (From now on I think I'll justify all my opinions with an ad hoc evolutionary biology reason)</p>
+<p>The most frequent response to light alarm clocks I hear is that they wouldn't actually wake someone up on time. For most people I think a bright light will wake them up after just 10 to 20 minutes if they've gotten enough sleep. I'd recommend setting the alarm clock 15 minutes earlier than you usually would and trying it out on a day where its not a huge deal if you sleep in.</p>
+<p>Luckily light alarm already exist. I have this <a href="https://amzn.to/2xSSnGu">one</a> and highly recommend it. Note this is an Amazon Affiliate Link. I think I'm selling out and getting famous in the wrong order. For now I'm only going to link products I own and enjoy. This one has a lot of thoughtful features. My favorite thing about it is that it has a battery so if you lose power or have to change outlets it won't forget the time or your alarm. It also has a lot of fun colors, including red which makes it a good late night reading light.</p>
+<p>Unfortunately there is one feature I would like that isn't supported. I have my room blacked out. The linked alarm clock can have its time display turned off. I even have all the LEDs, like the one on my smoke detector, taped over. Which leads to a problem: When I wake up in the middle of the night I have no way to know if it's 1 am and I should go back to sleep. Or if its 4:30-7 am and I should just start my day. I want a very faint red LED to turn on at 5 am. Too dim to disturb my sleep but bright enough that I can see it if I'm conscious.</p>
+<p>Luckily when my laptop broke in the fall I bought a <a href="https://amzn.to/2VuytdS">Raspberry Pi</a> as a prospective computer replacement. It didn't end up being powerful enough to use as my desktop (surprise surprise). But it seemed like a great tool for making my own light alarm clock. I bought this <a href="https://amzn.to/3bvgnyc">Electronics Kit</a> for the wiring and LEDs I needed.</p>
+<h2>Circuit</h2>
+<p>The circuit is really simple and described on page 10 of the Quick Start guide. I recommend using a 10K Ohm Resistor instead of a 220 Ohm. But you may need to adjust the resistance down if your room isn't super dark. Of course if your room isn't super dark you should probably take care of that before building a light alarm clock. Priorities! If you want the contraption to actually wake you up I think three blue LEDs with 220 Ohm resistors should be more than sufficient to wake someone up after 20 minutes.</p>
+<div class="container">
+	<img class="half" src="../asset/pic/alarm/book.jpg">
+	<img class="half" src="../asset/pic/alarm/alarm.jpg">
+</div>
+
+<p>You can see in my circuit I have a blue, yellow and red LED. That's because I originally had the idea that I wanted to be able to tell the time with hour precision starting at 4 am. But I ended up not really wanting that feature so only the red light is used. My light alarm program turns on the LEDs when the button is pressed. This is just a handy way for me to see if the program is running.</p>
+<h2>Code</h2>
+<p>The code is also really simple. </p>
+<code id="alarm_code">
+import RPi.GPIO as GPIO<br>
+import time<br>
+from datetime import datetime<br>
+<br>
+GPIO.setwarnings(False)<br>
+GPIO.setmode(GPIO.BCM)<br>
+GPIO.setup(18, GPIO.OUT)<br>
+GPIO.setup(16, GPIO.IN)<br>
+<br>
+GPIO.output(18, False)<br>
+<br>
+while True:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;# Turn on the light of the button is pressed<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if not GPIO.input(16):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GPIO.output(18, True)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue<br>
+&nbsp;&nbsp;&nbsp;&nbsp;now = datetime.now()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;h = int(now.strftime("%H"))<br>
+&nbsp;&nbsp;&nbsp;&nbsp;# Wake up call! Change 7 and 5 to match your wake up time.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if 7 > h >= 5:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GPIO.output(18, True)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;else:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GPIO.output(18, False)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;time.sleep(1)<br>
+</code>
+<p>Simply adjust 5 and 7 to the times you would like to wake up at. Also adjust 18 and 16 to the Raspberry Pi ports you are using. </p>
+<h2>Remote Setup</h2>
+<p>If you're going to use the Raspberry Pi as an alarm clock you're probably going to want a way to remotely execute code instead of bringing it to a monitor or visa versa every time you want to try a modification of the program. So in this section I'll walk you through that by sending you to four different blogs.</p>
+<ol>
+<li>First you need to set a password on your Raspberry Pi. I couldn't find an easier way to do it than this <a href="https://howtoraspberrypi.com/recover-password-raspberry-pi/">blog</a> describes. Unfortunately it's sort of involved, requiring manually editing the SD card. </li>
+<li>Next you'll want to get the IP address of your Raspberry Pi. You can see how to do that <a href="https://howchoo.com/g/mjk3m2e2njy/find-your-raspberry-pis-ip-address">here</a></li>
+<li>IP address and password in hand you can ssh into your pi with,
+	<code>ssh pi@[ip]</code>
+and then enter your password when prompted.</li>
+<li>You're all set to start editing and running your alarm clock script.</li>
+</ol>
+
+<p>One thing you're probably going to want to do before leaving the pi in your bedroom while you sleep is turn off the red light that shines when it's on. You can see in my image of the alarm clock that I had that part of the pi taped up. But turning it off is even better. Simply add the following line to the file '/etc/crontab':</p>
+<code>@reboot root echo 0 > /sys/class/leds/led1/brightness</code>
+
+<h2>What else should I do with my Raspberry Pi?</h2>
+<p>I'm curious if anyone has other cool ideas for things I could do with my raspberry pi. I think one of the great tragedies of my life (and apparently everyone else's) is that I have access to this incredibly powerful computing device and a network which connects the majority of people on the planet. And yet I can't think of a single creative thing to do with these super powers. I fall into the same routines and it seems like these things use me more than the other way around.</p>
+<p>Now that in the raspberry pi I have a computer that's always on and connected, unlike my laptop which I carry around and what not, maybe I'll work out how to host this site myself instead of using AWS. Maybe Now that I have these LEDs and resistors I can make a cool light display. That seems a little less impressive than just what I can do with a screen though. So if anyone knows any cool thing that I could do to justify owning this amazing piece of technology, please let me know. And in the mean time enjoy your light alarm clocks. Even though there's no longer any reason to wake up at any given time.</p>
