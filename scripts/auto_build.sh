@@ -7,7 +7,8 @@ case "$1" in
 	"")
 		watch="./*";;
 	*)
-		echo watching $1;;
+		echo watching $1
+		watch=$1;;
 esac
 
 while true
