@@ -1,0 +1,38 @@
+	<p>I fell of the blogging wagon the past two months partly because I felt like everything was terrible and I didn't have much to say about that and partly because I was preparing for candidacy. Nothing has really changed on the first front except my increasing acclimation. I've now completed candidacy and while it's definitely more of a formality than a test that one could reasonably fail there was something pretty stressful at staring my ignorance in the face and collecting the things I've learned in the last couple years and the things I hope to accomplish in the next couple into one document. </p>
+<p>To celebrate I thought I'd write up a small thing from my field. I tried to make it understandable but I don't think it'll make sense to anyone whose not already comfortable with linear algebra <a href="#foot1note" id="foot1back">[1]</a> and probability <a href="#foot2note" id="foot2back">[2]</a>. Odlyzko's Lemma is a very useful estimate in random matrix theory. In this blog post I'll give its statement and proof along with a simple corollary and a little bit of context.</p>
+
+<p>Odlyzko himself is a very impressive figure. He worked at Bell Labs (where everyone cool seemed to be) for 26 years and is not at the University of Minnesota. You can see his list of publications <a href="http://www.dtc.umn.edu/~odlyzko/doc/complete.html">here</a>. Let me just highlight a few things:</p>
+
+<ul>
+	<li>His first publication was actually in Analytic Biochemistry.</li>
+	<li>His 2001 article 'Content is not King' is interesting to read in 2020. It turned out to be a very prescient view of the internet.</li>
+	<li>His recent writings are mostly on economics and are good reads. His thoughts on cyber security and the south sea bubble are particularly fascinating to me.</li>
+	<li>The famed lemma is from is his 1988 paper 'On Subspaces Spanned by Random Selections of \(\pm 1\) Vectors' itself a worthwhile read if you want to learn more about random matrix theory. I was looking through it to refresh my memory for this post and I was reminded of Babai's (who I was very lucky to take a class with at UChicago) conjecture that the characteristic polynomial of a \(\pm 1\) matrix is irreducible with high probability. So there's something in it for everyone.</li>
+</ul>
+
+<p>The lemma is the following.</p>
+
+<p><b>Lemma:</b> Let \(X\) be a random vector of length \(n\) with \(\pm 1\) entries with independent and even probability. Let \(V\) be any subspace in \(R^n\) of codimension \(d\). Then, </p>
+
+<p>\[\mathbb{P}(X\in V) \leq \frac{1}{2^d}.\]</p>
+<p>Note that \(R\) can be any commutative ring in which \(-1\neq 1\). For our purposes you might as well assume it is the real numbers. Though for me it is very often a finite field.</p>
+
+<p><em>Proof.</em> Let \(v_1,\dots,v_{n-d}\) be linearly independent vectors which span \(V\). Write them as the columns of a matrix,</p>
+\[\begin{bmatrix} v_1 & \dots & v_{n-d}\end{bmatrix} = \begin{bmatrix} v_{1,1} & \dots & v_{n-d,1} \\ \vdots & & \vdots \\v_{1,n} & \dots & v_{n-d,n} \end{bmatrix}\].
+<p>By assumption that \(V\) has codimension \(d\) this matrix has a full rank minor so without loss of generality we can assume the first \(n-d\) rows are linearly independent. Restricting to the first \(n-d\) coordinates of our vector space we therefore have unique coefficients \(c_1\dots c_{n-d}\) such that \(\big[c_1 v_1+\dots+c_{n-d}v_{n-d}\big]_{[n-d]} = \big[X\big]_{[n-d]}\). In order for \(X\in V\) we need \(d\) more equalities given by the bottom \(d\) rows in the following matrix equation.</p>
+\[\begin{bmatrix} v_1 & \dots & v_{n-d}\end{bmatrix} \begin{bmatrix} c_1 \\ \vdots \\ c_{n-d}\end{bmatrix} = X.\]
+<p> Because \(X_i\) is no given value with probability greater than \(\frac{1}{2}\) we get the desired bound.  </p>
+<p style="text-align:right;">&#9605;</p>
+<p>The same proof technique applies to more general \(X\). If instead of \(X\) having \(\pm 1\) entries \(X\) simply has entries which aren't equal to any specific value with probability greater than \(\alpha\) we get the bound \(\alpha^d\). We also don't need our entries to be independent. We just need the entries to remain unconcentrated after conditioning on any value of the other entries.</p>
+
+<p> Why is this lemma useful? Through its iterated application one can show that for fixed \(\epsilon\) an \(n\times (1-\epsilon)n\) (tall and skinny, but not that tall and skinny) \(\pm 1\)-matrix is full rank with high probability. Why is that important? As a first step in showing that square \(\pm 1\) matrices are nonsingular with high probability. Why is that important? Many physical systems are best understood as random matrices. For instance the Hamiltonian in Quantum Mechanics and hidden layers in Neural Nets. Amazingly the <a href="https://mathworld.wolfram.com/WignersSemicircleLaw.html#:~:text=This%20law%20was%20first%20observed">Wigner Semicircular Law</a> was first observed experimentally. Though I myself don't understand well what physical system encoded a matrix or why the eigenvalues of that matrix were physically significant.</p>
+
+<p>I'll close with a corollary of the lemma (is there any more bad math writing cliche than putting a corollary after a lemma? Where was the Theorem?). This corollary is a first step in showing a square \(\pm 1\) matrix is nonsingular with high probability. One observes the first couple columns are linearly independent with high probability. One then needs more involved techniques to expose the remaining columns. How involved depends on how tight a bound you're shooting for. Perhaps later I'll follow up with a blog post on this.</p>
+<p> <b>Corollary:</b> Fix \(\epsilon>0\). With probability at least \(1-n2^{-\epsilon n}\) an \(n\times (1-\epsilon)n\) matrix with independent \(\pm 1\) entries is full rank.</p>
+<p> <em>Proof.</em> If the matrix is not full rank then there exists a columns \(X_i\) which lies in the span of the previous \(i-1\) columns. The codimension of those columns is at least \(\epsilon n\)so by Odlyzko's Lemma the probability \(X_i\) lies in the span of the preceding columns is less than \(2^{-\epsilon n}\). We can take a union bound over the \((1-\epsilon)n\) columns where the rank may drop and throw out a factor of \(1-\epsilon\) to get the desired bound.</p>
+<p style="text-align:right;">&#9605;</p>
+
+<div style="border-bottom:1px Black solid;"></div>
+
+<p><a id="foot1note" href="#foot1back">[1]</a> If you want to learn more about linear algebra I imagine <a href="https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab">3blue1brown's series</a> is best. Full disclosure I haven't watched this particular series. But I've watched some of Grant Sanderson's other stuff and I'm sure he wouldn't let me down here.</p>
+<p><a id="foot2note" href="#foot2back">[2]</a> The best way to understand probability better is just to play a lot of mtg and poker. </p>
