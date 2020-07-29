@@ -10,7 +10,8 @@ def blogLi(blog):
 
 
 def generate(data, index):
-    ans = "<ul class=\"links_menu\">"
+    ans = "<p>"+data["Summary"]+"</p>"
+    ans += "<ul class=\"links_menu\">"
     index = dict(index)
     for blog in dict(index)["blog"]:
         ans = ans + blogLi(blog[1])

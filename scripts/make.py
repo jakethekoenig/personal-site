@@ -34,6 +34,16 @@ def replaceTags(template, data, index):
     # replace tags
     for tag in data.keys():
         template = template.replace("<$"+tag+"$>", data[tag])
+    # delete optional tags
+    while template.find("<??") != -1:
+        start = template.find("<??")
+        mid   = template.find("???")
+        end   = template.find("??>")+3
+        remove = eval(template[start+3:mid])
+        if remove:
+            template = template[:start] + template[end:]
+        else:
+            template = template[:start]+template[mid+3:end-3]+template[end:]
     return template
 
 
