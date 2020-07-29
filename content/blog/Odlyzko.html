@@ -29,7 +29,7 @@
 
 <p>I'll close with a corollary of the lemma (is there any more bad math writing cliche than putting a corollary after a lemma? Where was the Theorem?). This corollary is a first step in showing a square \(\pm 1\) matrix is nonsingular with high probability. One observes the first couple columns are linearly independent with high probability. One then needs more involved techniques to expose the remaining columns. How involved depends on how tight a bound you're shooting for. Perhaps later I'll follow up with a blog post on this.</p>
 <p> <b>Corollary:</b> Fix \(\epsilon>0\). With probability at least \(1-n2^{-\epsilon n}\) an \(n\times (1-\epsilon)n\) matrix with independent \(\pm 1\) entries is full rank.</p>
-<p> <em>Proof.</em> If the matrix is not full rank then there exists a columns \(X_i\) which lies in the span of the previous \(i-1\) columns. The codimension of those columns is at least \(\epsilon n\)so by Odlyzko's Lemma the probability \(X_i\) lies in the span of the preceding columns is less than \(2^{-\epsilon n}\). We can take a union bound over the \((1-\epsilon)n\) columns where the rank may drop and throw out a factor of \(1-\epsilon\) to get the desired bound.</p>
+<p> <em>Proof.</em> If the matrix is not full rank then there exists a column \(X_i\) which lies in the span of the previous \(i-1\) columns. The codimension of those columns is at least \(\epsilon n\)so by Odlyzko's Lemma the probability \(X_i\) lies in the span of the preceding columns is less than \(2^{-\epsilon n}\). We can take a union bound over the \((1-\epsilon)n\) columns where the rank may drop and throw out a factor of \(1-\epsilon\) to get the desired bound.</p>
 <p style="text-align:right;">&#9605;</p>
 
 <div style="border-bottom:1px Black solid;"></div>
