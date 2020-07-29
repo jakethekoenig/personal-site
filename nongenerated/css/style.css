@@ -3,21 +3,23 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 .sidemenu {
-	height: 100%;
-	width: 130px;
-	position: fixed;
-	z-index: 1;	
-	top: 0;
-	left: 0;
-	border-right: 1px Black solid;
+	width: 10ch;
+	margin: 0ch 4ch 0ch 1ch;
+	position: absolute;
 }
-.topmenu {
-	width: 100%;
-	position:fixed;
-	z-index: 1;
-	top: 0;
-	left:0px;
-	border-bottom: 1px Black solid;
+#mainicon {
+	image-rendering: pixelated;
+	width: 64px;
+}
+
+#socials_footer {
+	text-align: center;
+	max-width: 90ch;
+}
+
+#socials_footer .socials {
+	display: inline-block;
+	width: 200px;
 }
 
 .block, .menu .block:hover {
@@ -34,20 +36,10 @@ body {
 	padding:10px 0px 10px;
 	margin:0px;
 	float: left;
-	text-align: center;
+	width: 100%;
 }
 figcaption {
 	text-align: center;
-}
-.menu > li:nth-child(even) > a {
-	background: SlateGrey;
-}
-.menu > li:nth-child(odd) > a {
-	background: LightGrey;
-}
-.menu > li >  a:hover {
-	color: white;
-	background-color: DarkGrey;
 }
 /* Rules for Media and Pictures */
 blockquote {
@@ -83,35 +75,33 @@ blockquote {
 }
 /* Rules for main text */
 .title {
-	margin-top:90px;
-}
-.index_title {
-	margin_top: 30px;
+	margin-top:30px;
 }
 div h3 {
 	font-weight: normal;
 }
-.main_content, .title, .index_title {
+.main_content, .title {
 	margin-left:140px;
 }
+.main_content {
+	max-width:75ch;
+}
 
-.main_content p,h1,h2,h3,ul,ol,code{
-	margin-left:5%;
-	margin-right:5%;
+.main_content * {
+	margin-left:0;
+	margin-right:0;
 }
 code {
 	display:block;
 	line-height:100%;
 }
-.main_content p,ul,ol {
-	line-height:200%;
+p {
+	line-height:1.45;
+	text-indent:2em;
 }
 .icon {
-	width: 25%;
-	padding: 9%;
-}
-.socials {
-	background-color: white;
+	width: 15%;
+	padding: 20% 3% 3% 3%;
 }
 .icon:hover {
 	background-color: LightGrey;
@@ -138,23 +128,15 @@ code {
 		z-index: 5;	
 		top: 0px;
 		left: 0;
-		border-bottom: 1px Black solid;
-	}
-	.topmenu {
-		top: 0px;
-		left: 0px;
-		width: 100%;
+		position: static;
 	}
 	.main_content {
 		margin-left:0px;
-	}
-	.index_title {
-		margin-left: 2%;
-		margin-top: 680px;
+		max-width:100%;
 	}
 	.title {
-		margin-top: 180px;
 		margin-left: 2%;
+		margin-top: 30px;
 	}
 	img.centered, img.half, img.third, img.fourth, img.fifth {
 		float: left;
@@ -167,5 +149,27 @@ code {
 	.icon {
 		width: 10%;
 		padding: 7%;
+	}
+	.sidemenu .socials {
+		visibility: hidden;
+	}
+	#socials_footer .socials {
+		display: inline-block;
+		width: 100%;
+	}
+	.menu-item {
+		text-decoration: none;
+		color: black;
+		padding:10px 0px 10px;
+		margin:0px;
+		float: left;
+		width:39%;
+		text-align: center;
+		border: 1px Black dotted;
+	}
+	#mainicon {
+		width: 16%;
+		margin: 2%;
+		float: left;
 	}
 }
