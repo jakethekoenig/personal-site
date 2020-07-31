@@ -1,4 +1,10 @@
 /* Rules for menus*/
+
+auto-card a {
+	color: black;
+	text-decoration: none;
+	border-bottom: dotted 1px grey;
+}
 body {
 	font-family: 'Roboto', sans-serif;
 }
