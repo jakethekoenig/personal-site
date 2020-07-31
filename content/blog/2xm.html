@@ -1,0 +1,148 @@
+<p>I wanted to start this review on the Tuesday before the first 2XM PTQ but at that time only four colored commons had been spoiled. <auto-card>Thraben Inspector</auto-card>, <auto-card>Brainstorm</auto-card>, <auto-card>Bloodbriar</auto-card> and <auto-card>Kozilek's Predator</auto-card>. That along with <auto-card>Expedition map</auto-card>, the tron lands, chromatic star and <auto-card>Pyrite Spellbomb</auto-card>. Already enough information to know the limited format was going to be sweet. Now that the <a target="_blank" href=https://magic.wizards.com/en/articles/archive/card-image-gallery/double-masters">full spoiler</a> is out the sweetness is confirmed. In this review I'll go through the major themes of the set and the key cards in those themes. I'll also point out important cards to be aware of such as instants, wraths and combos. I'll mention more rares than usual for my limited reviews since they will be twice as important to the limited format. Note when I make lists which include rares and commons I'll generally but commons first and rares last. As usual I made a spreadsheet in which I ordered the commons by quality which you can see <a target="_blank" href="https://docs.google.com/spreadsheets/d/1zJr0TbJ5yooAme9fyrXeR5Tbe3xfhf4zfBbIaE0EmUc/edit?usp=sharing">here</a>. I think such rankings make particularly little sense in this synergy driven set though. I haven't done any as fan math because I'm still uncertain how foils and double rares will affect the math.</p>
+
+<p>Let's begin. The major themes of the set are:</p>
+
+<ul>
+	<li><b>Big Mana:</b> The best enablers are the tron lands and the best payoffs are colorless so in theory the deck could be any colors but the most natural support is in UG.</li>
+	<li><b>Go Wide:</b> There are a variety of token makers and cards that reward you for making tokens. Principally in Naya.</li>
+	<li><b>Sacrifice:</b> The sacrifice subtheme is concentrated in Jund.</li>
+	<li><b>Equipment:</b> There are a ton of equipment in this set and also cards that pay you off for having equipment. Mostly in RW.</li>
+	<li><b>Artifact Value:</b> There are a lot of small artifacts and cards that want you to play with them. This theme is in every color but green. A more taxonomically minded person would probablysplit this category into 2 or 3 archetypes.</li>
+</ul>
+<p>There are also a few minor themes:</p>
+<ul>
+	<li><b>Counters:</b> There are some cards which care about or make charge counters. This theme is mostly in blue.</li>
+	<li><b>Reanimator and Show and Tell:</b> There are a lot of very powerful cards at high rarities and higher CMCs and cards that'll help you get them into play directly or via reanimation. These cards are mostly in Grixis.</li>
+</ul>
+
+<p>The themes are beautifully curated to play nicely together. Big mana and Reanimator decks want the same top end creatures. Sacrifice decks get mileage from the go wide cards. Equipments reward you for making a bunch of medium creatures. The artifact value cards can trigger your sacrifice cards.</p>
+
+<p>Some of my favorite card choices for cross archetype synergy are: <auto-card>Thraben Inspector</auto-card>, <auto-card>Riddle smith</auto-card>, <auto-card>Ovalchase Daredevil</auto-card>, <auto-card>Rapacious Dragon </auto-card>and <auto-card>Skullmulcher</auto-card>. They check so many boxes.</p>
+
+<p>Let's go into the archetypes in more detail.</p>
+
+<h2>Archetypes</h2>
+
+<h3>Big Mana</h3>
+
+<p>The very first question to ask is how frequently should one be able to draft tron. Something interesting to note is that there are only 91 commons in the set. I can't find any official confirmation but I hypothesize this implies there will only be 9 commons in a given pack. So the EV of a given tron land remains \(0.1\) and so the EV of tron lands in a given draft is 3*8*0.1=2.4. The probability of a given tron land being in a pack is \(0.1\), so the probability of none of that tron land being opened in the draft at all (assuming independence of the packs. I'm not sure how reasonable an assumption that is.) \((1-0.1)^{24}\approx 0.08\). If we assume the probability that a given tron land is absent in independent for each tron then (this is a weak assumption because for instance knowing a tron land is not in a given pack should increase the odds that a different one is. Possibly by more than \(9/91\) to \(9/90\) because different categories of card are guaranteed to be represented. i.e. you never open a pack with no green cards.) the probability that a complete set of tron isn't opened is \((1-0.08)^3 \approx 0.78\). Right of the bad this doesn't make me feel that good about the archetype. A 20% chance of failure seems high. Even if you get two of the lands in the first pack you're odds of getting the last one are only \(1-0.9^{16} \approx 0.81\).</p>
+
+<p>The situation is of course impossibly dire in sealed. If you make the same assumptions then you're only \( (1 - (1 - 0.1)^6)^3 \approx 0.1\) to have a complete set of tron.</p>
+
+<p>And a minimal tron deck isn't even that good. Suppose you have one each of Mine, Plant, Factory and <auto-card>Expedition map</auto-card>. What are the odds you have tron on turn 3? This is more or less the probability that 3 of the four are in your top 9 (This is an overestimate. You need the map in your hand for it to count) on the play and 10 on the draw. My hypergeometric calculator tells me this happens with probability 3% and 4% respectively. I should redo the math for when you have two of each but it's a bit too complicated to do in close form. Maybe I'll release a simulation in a follow up.</p>
+
+<p>Lucky for the prospective tron drafter the tron lands are not just bad cards but stone blanks in any other archetype. Unfortunately I'm not sure the same will be true of <auto-card>Expedition Map</auto-card>. At first I thought it'd be a little too clunky for other decks and certainly they'll want it less. But it is a cheap artifact and sacrifice trigger. Also twice as many rares might mean drafters want to splash twice as often. There's also <auto-card>Crop Rotation </auto-card>but I'm not sure it's good enough to play.</p>
+
+<p>There is some redundancy to the big mana plan though. <auto-card>Kozilek's Predator</auto-card>, <auto-card>Whisperer of the Wilds</auto-card>, <auto-card>Elvish Aberration</auto-card>, <auto-card>Rapacious Dragon</auto-card>, <auto-card>Apprentice Wizard</auto-card>, <auto-card>Cathodion</auto-card>, <auto-card>Everflowing chalice</auto-card>, <auto-card>Pentad Prism</auto-card>, <auto-card>Basalt Monolith</auto-card>, <auto-card>Grand Architect</auto-card>, <auto-card>Awakening Zone </auto-card>, <auto-card>Arixmethes, Slumbering Isle</auto-card>, <auto-card>Heartbeat of Spring</auto-card> and <auto-card>Veteran Explorer </auto-card>can all support your expensive spells. I'd make sure I had close to the best top end possible before putting those last two in my deck though. The bombs get pretty big.</p>
+
+<p>The payoffs are pretty real too. At common you have <auto-card>Accomplished Automaton </auto-card>and <auto-card>Magnifying Glass</auto-card>. They're not exciting but the nice thing about them is you can definitely get all of them. And they're objectively powerful if you ever get them going on turn 3. At uncommon you have <auto-card>Golem Artisan</auto-card>, <auto-card>Sphinx of the Guildpact</auto-card>, <auto-card>Clone Shell, Cogwork</auto-card> <auto-card>Assembler</auto-card>, <auto-card>Sandstone Oracle </auto-card>as exciting mana sinks. The real payoffs are at rare and mythic and there's enough of them that you can actually hope to get 1 or 2. You won't get passed Karn or <auto-card>Myr Battlesphere </auto-card>very often but you might see <auto-card>Blightsteel Colossus </auto-card>late. </p>
+
+<h3> Go Wide </h3>
+
+<p>The notable commons which allow you to go wide are: <auto-card>Glint-Sleeve Artisan</auto-card>, <auto-card>Thopter Engineer</auto-card>, <auto-card>Chatter of the Squirrel</auto-card>, <auto-card>Thraben Inspector</auto-card>.</p>
+
+<p>Higher rarity cards of interest are: <auto-card>Myrsmith</auto-card>, <auto-card>Hidden Stockpile</auto-card>, <auto-card>Rhys the Redeemed</auto-card>, <auto-card>Selesnya Guildmage</auto-card>, <auto-card>Voice of Resurgence</auto-card>, <auto-card>Blade Splicer</auto-card>, and <auto-card>Master Splicer</auto-card>.</p>
+
+<p>In my mind the best rewards for going wide are likely in other archetypes: sacrifice outlets and equipment. There are a few go wide specific payoffs the most obvious of which are <auto-card>Valor in Akros</auto-card>, <auto-card>Angel of the Dawn</auto-card>, <auto-card>Crusader of Odric</auto-card>, <auto-card>Fortify</auto-card>, <auto-card>Battle-Rattle Shaman</auto-card>, <auto-card>Weapon Surge</auto-card>, <auto-card>Champion of Lambholt</auto-card>, <auto-card>Skullmulcher</auto-card>, <auto-card>Doubling Season</auto-card>, <auto-card>Might of the Masses</auto-card>, <auto-card>Shamanic Revelation</auto-card>, <auto-card>Woodland Champion</auto-card>, <auto-card>Adaptive Automaton </auto-card>and <auto-card>Chief of the Foundry</auto-card>. </p>
+
+<p>Also notable is <auto-card>Springleaf Drum</auto-card> which ticks three boxes by being a reward for having spare creatures, a ramp spell and a cheap artifact.</p>
+
+<h3> Equipment </h3>
+<p>The common payoffs, <auto-card>Goblin Gaveleer</auto-card>, and <auto-card>Kazuul's Toll Collector</auto-card> have 6 common equipments to go with them (along with a bonus white equipment). Compare that to the Toll Collector's original home, Oath of the Gatewatch, which had 5 total equipment and only one was common. Even Scars of Mirrodin had fewer total and common equipments than 2XM with 15 total and 5 common. The equipment are also mostly living weapons which are more appealing to play a lot of. <auto-card>Golem Skin Gauntlets</auto-card> and <auto-card>Strength of Arms</auto-card> are also good payoffs at common.</p>
+
+<p>The next rarity up has <auto-card>Fencing ace</auto-card>, <auto-card>Bloodshot Trainee </auto-card>and <auto-card>Weapons Trainer </auto-card>as notables. </p>
+
+<p>This archetype has so much support at common but it is also jammed full of rares. As pay offs there are: <auto-card>Kemba, Kha Regent</auto-card>, <auto-card>Puresteel Paladin</auto-card>, <auto-card>Stoneforge Mystic</auto-card>, <auto-card>Stonehewer Giant </auto-card>and <auto-card>Godo, Bandit Warlord</auto-card>. And all five swords and <auto-card>Batterskull</auto-card> are in the set. No one is going to pass the broken equipment but the equipment matters cards, besides maybe stone forge mystic, are all very passable. </p>
+
+<p>I expect equipment to be one of the better archetypes.</p>
+
+<h3> Sacrifice </h3>
+
+<p>Sacrifice strategies have a huge prevalence with the word occurring on roughly 1 in 6 cards and many creatures which are practically begging to be sacrificed. I see it as more of a value strategy in this set. Notably there are no act of treasons so if you want to be the sacrifice deck you should prioritize your own sac for value creatures.</p>
+
+<p>Some of the best cards to sacrifice are: <auto-card>Ovalchase Daredevil</auto-card>, <auto-card>Driver of the Dead</auto-card>, <auto-card>Vengegine</auto-card>, <auto-card>Veteran Explorer</auto-card>, <auto-card>Treasure Keeper</auto-card>.</p>
+
+<p>Some of the best payoffs for the sacrifice deck are: <auto-card>Deathreap Ritual</auto-card>, <auto-card>Bloodbriar</auto-card>, <auto-card>Ulvenwald Mysteries</auto-card>, <auto-card>Bloodspore Thrinax</auto-card>, <auto-card>Skullmulcher</auto-card>, <auto-card>Bone Picker</auto-card>, <auto-card>Mazirek, Kraul Death Priest</auto-card>, <auto-card>Skirsdag High Priest</auto-card>, <auto-card>Tuktuk the Explorer</auto-card> and <auto-card>Magus of the Abyss</auto-card>.</p>
+
+<p>Notably <auto-card>Morkrut Banshee</auto-card>, <auto-card>Fatal Push </auto-card>and <auto-card>Brimstone Volley </auto-card>all get a lot more efficient when you're in this archetype.</p>
+
+<p>Depending on what you're sacrificing <auto-card>Disciple of the Vault</auto-card> is also quite the payoff. It's also a good card for the various value artifact decks.</p>
+
+<p>If you're focusing specifically on <auto-card>Bloodbriar</auto-card> a lot of cards like <auto-card>Executioner's Capsule</auto-card>, any spell bomb, or treasure or scion maker get marginally more appealing.</p>
+
+<p>The best ways to sacrifice things include <auto-card>Defiant Salvager</auto-card>, <auto-card>Silumgar's Scavenger</auto-card>, <auto-card>Hidden Stockpile</auto-card>, <auto-card>Culling Dais</auto-card>, <auto-card>Greater Good </auto-card>and <auto-card>Falkenrath Aristocrat </auto-card></p>
+
+<p>If you're looking to sacrifice specifically artifacts <auto-card>Kuldotha Flamefiend</auto-card>, <auto-card>Orcish Vandal</auto-card>, <auto-card>Throne of Geth</auto-card> and <auto-card>Kuldotha Forgemaster </auto-card>top rate. <auto-card>Dread Return </auto-card>is also notable as sacrifice outlet with cross synergy reanimator play.</p>
+
+<h3> Value Artifacts </h3>
+<p>Sprinkled in every color besides green are cards that reward you for playing with artifacts. I picture controlling esper decks, WR decks which are mostly equipment aggro decks and UR decks with weird loops going on. It seems like basically every deck will have some artifact synergies though.</p>
+
+<p>Lower rarity rewards for playing a lot of artifacts include: <auto-card>Myrsmith</auto-card>, <auto-card>Esperoza</auto-card>, <auto-card>Faerie Mechanist</auto-card>, <auto-card>Auriok Salvager</auto-card>, <auto-card>Relic Runner</auto-card>, <auto-card>Riddlesmith</auto-card>, <auto-card>Painsmith</auto-card>, <auto-card>Glaze Fiend</auto-card>, <auto-card>Orcish Vandal</auto-card>, <auto-card>Ravenous Intruder</auto-card>, <auto-card>Salivating Gremlin</auto-card>, <auto-card>Thopter Foundry</auto-card>, and <auto-card>Glassdust Hulk</auto-card>. One thing I'm particularly looking to do is curve salivating Gremlin into <auto-card>Voracious Dragon</auto-card>. A real lunch special. Higher rarity incentives are: <auto-card>Hanna, Ship's Navigator</auto-card>, <auto-card>Jhoira, Weatherlight Captain</auto-card>, <auto-card>Sphinx Summoner</auto-card>, <auto-card>Time Sieve</auto-card>, <auto-card>Jhoira's Familiar</auto-card></p>
+
+<p>Some of the notable small artifacts are: <auto-card>Expedition Map</auto-card>, <auto-card>Chromatic Star</auto-card>, <auto-card>Expedition Map</auto-card>, <auto-card>Mishra's Bauble</auto-card>, <auto-card>Myr Retriever</auto-card>, <auto-card>Pyrite Spellbomb</auto-card>, <auto-card>Throne of Geth,</auto-card> <auto-card>Welding Jar</auto-card>. But really there's just a ton of artifacts. A full third of the set are artifacts!</p>
+
+<h3> Counters </h3>
+
+<p>This might be less a deck than two cards which seem fun together but <auto-card>Everflowing Chalice </auto-card>into <auto-card>Vedalken Infuser </auto-card>just seems very exciting and is perhaps a more consistent alternative to tron. There are a number of other cards which care about counters or want to have their counters increased. Most notably <auto-card>Tumble Magnet </auto-card>but also: <auto-card>Surge Node</auto-card>, <auto-card>Throne of Geth</auto-card>, <auto-card>Coretapper</auto-card>, <auto-card>Pentad Prism</auto-card>, <auto-card>Culling Dais</auto-card>, <auto-card>Deepglow Skate</auto-card>, <auto-card>Ion Storm</auto-card>, <auto-card>Lux Cannon</auto-card>, and <auto-card>Deepglow Skate</auto-card>.</p>
+
+<h3>Cheating Creatures into Play</h3>
+<p>A lot of this is reanimator which is facilitated by a lot of premium self discard: <auto-card>Cathartic Reunion</auto-card>, <auto-card>Riddlesmith</auto-card>, <auto-card>Lightning Axe</auto-card>, <auto-card>Sanctum Spirit</auto-card>, <auto-card>Sift</auto-card>, <auto-card>Thirst for Knowledge</auto-card>, <auto-card>Izzet Charm</auto-card>. But I also include other cards which let you get a creature into play without paying its mana cost. For reanimation we have: <auto-card>Argivian Restorer</auto-card>, <auto-card>Dread Return</auto-card>, <auto-card>Trash for Treasure</auto-card>, <auto-card>Beacon of Unrest</auto-card> and <auto-card>Doomed Necromancer</auto-card>.</p>
+
+<p>Other ways to cheat your broken cards into play are: <auto-card>Braids, Conjurer Adept</auto-card>, <auto-card>Arcum Dagsson</auto-card>, <auto-card>Master Transmuter </auto-card>and <auto-card>Sneak Attack</auto-card>. Though again I'd caution you against playing Braids unless you really mean it.</p>
+
+<h2>Fixing</h2>
+<p>For colorless common fixing we only have <auto-card>Expedition Map</auto-card>. And I expect it to go relatively early because not only splashes but also tron and value artifact decks will want it. And anyone who drafted Dark depths+thespian stage. At uncommon we have <auto-card>Ash Barron </auto-card>which will also be in high demand by Brainstormers. There's also <auto-card>Pentad Prism </auto-card>and <auto-card>Springleaf drum </auto-card>at uncommon which depending on if you're doing anything synergistic are either very good or very bad fixing.</p>
+
+<p>In green there's surprisingly nothing unless you count <auto-card>Ancient Stirrings</auto-card>, <auto-card>Crop Rotation </auto-card>or <auto-card>Noble Hierarch</auto-card>.</p>
+
+<p>It's probably good that the fixing isn't good in the set. Twice as many rares means people will want to splash twice about twice as often so it makes sense that the set would discourage that.</p>
+
+<h2>Instants</h2>
+<p>Commons</p>
+<ul>
+	<li> <b>White:</b> <auto-card>Crib Swap</auto-card>, <auto-card>Fortify</auto-card>, <auto-card>Strength of Arms</auto-card>.</li>
+	<li> <b>Blue:</b> <auto-card>Brainstorm</auto-card>, <auto-card>Metallic Rebuke</auto-card>, <auto-card>Steel Sabotage</auto-card>.</li>
+	<li> <b>Black:</b> <auto-card>Cast Down</auto-card>, <auto-card>Costly Plunder</auto-card>, <auto-card>Supernatural Stamina</auto-card></li>
+	<li> <b>Red:</b> <auto-card>Abrade</auto-card>, <auto-card>Balduvian Rage</auto-card>, <auto-card>Lightning Axe</auto-card>, <auto-card>Temur Battle Rage</auto-card>, <auto-card>Weapon Surge</auto-card></li>
+	<li> <b>Green:</b> <auto-card>Clear Shot</auto-card>, <auto-card>Crushing Vines</auto-card>, <auto-card>Might of the Masses</auto-card>, <auto-card>Sylvan Might</auto-card></li>
+</ul>
+<p>Uncommon</p>
+<ul>
+	<li> <b>White:</b> <auto-card>Path to Exile</auto-card>, <auto-card>Topple the Statue</auto-card>, <auto-card>Valorous Stance </auto-card></li>
+	<li> <b>Blue:</b> <auto-card>Ponfigy</auto-card>, <auto-card>Sentinel of the Pearl Trident</auto-card>, <auto-card>Thirst for Knowledge</auto-card></li>
+	<li> <b>Black:</b> <auto-card>Fatal Push</auto-card></li>
+	<li> <b>Red:</b> <auto-card>Brimstone Volley</auto-card>, <auto-card>Galvanic Blast</auto-card></li>
+	<li> <b>Green:</b> <auto-card>Crop Rotation</auto-card>, <auto-card>Invigorate</auto-card></li>
+	<li> <b>Gold:</b> <auto-card>Unlicensed Disintegration</auto-card>, <auto-card>Manamorphose</auto-card>, <auto-card>Izzet Charm</auto-card></li>
+</ul>
+<p>Rare/Mythic</p>
+<ul>
+	<li> <b>Blue:</b> <auto-card>Cyclonic Rift</auto-card>, <auto-card>Force of Will</auto-card> </li>
+	<li> <b>Black:</b> <auto-card>Ad Nauseam</auto-card>, <auto-card>Ravenous Trap</auto-card></li>
+	<li> <b>Red:</b> <auto-card>Dualcaster Mage</auto-card></li>
+	<li> <b>Green:</b> <auto-card>Chord of Calling</auto-card></li>
+</ul>
+
+<h2>Miscellaneous Other Limited Notes</h2>
+<p>I think its cute that there's almost a cycle of premium efficiency removal spells which two for one you: <auto-card>Crib Swap</auto-card>, <auto-card>Frogify</auto-card>, <auto-card>Pongify</auto-card>, <auto-card>Lightning Axe</auto-card>.</p>
+
+<p> While we're on that subject a complete list of common removal is:</p>
+<ul>
+	<li> <b>White:</b> <auto-card>Crib Swap </auto-card></li>
+	<li> <b>Blue:</b> <auto-card>Frogify</auto-card> </li>
+	<li> <b>Black:</b> <auto-card>Cast Down</auto-card>, <auto-card>Executioner's Capsule</auto-card> </li>
+	<li> <b>Red:</b> <auto-card>Abrade</auto-card>, <auto-card>Lightning Axe</auto-card></li>
+	<li> <b>Green:</b> <auto-card>Clear Shot</auto-card> </li>
+</ul>
+
+This is a relatively short list actually. For reference there are 39 cards listed above and in Ikoria there were 58, THB 43 and ELD 48. I suppose it makes sense. This set is much more complicated than a normal set and they had to tone down the complexity somewhere.
+
+<p>It's actually the normal amount both in terms of power and number. Except for Cast Down which in a normal set would probably be uncommon. One more note about removal: It is my recommendation to play all your artifact removal main deck. In number the set is a third artifacts. And many of the best bombs, such as the Swords and <auto-card>Wurmcoil Engine</auto-card>, which is cleanly answered by <auto-card>Revoke Existence</auto-card>, are artifacts.</p>
+
+<p><auto-card>Fierce Empath </auto-card>makes good friends with <auto-card>Elvish Aberration </auto-card>and <auto-card>Twisted Abomination</auto-card>.</p>
+
+<p>There are an amazing number of wraths: <auto-card>Oblivion Stone</auto-card>, <auto-card>Ratchet Bomb</auto-card>, <auto-card>Drown in Sorrow</auto-card>, <auto-card>Toxic Deluge</auto-card>, <auto-card>Austere Command</auto-card>, <auto-card>Wrath of God</auto-card>, <auto-card>Cyclonic Rift</auto-card>, <auto-card>Blasphemous Act</auto-card>, <auto-card>Rolling Earthquake</auto-card>, <auto-card>Merciless Eviction</auto-card>, <auto-card>Engineered Explosive </auto-card>and <auto-card>Ensnaring Bridge</auto-card>. So be careful out there!</p>
+
+<p>There are a lot of combos to look out for: <auto-card>Vampire Hexmage </auto-card>or <auto-card>Thespian Stage </auto-card>and <auto-card>Dark depths</auto-card>, <auto-card>Sword of the Meek</auto-card> and <auto-card>Thoptor Foundry </auto-card>and <auto-card>Sneak attack </auto-card>plus <auto-card>Blightsteel colossus</auto-card></p>
+
+<p>The set looks sweet. The mechanics are all interwoven in interesting ways. I'm really excited to play with the new cards this Sunday in the PTQ. Wish me luck! </p>
