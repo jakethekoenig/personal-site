@@ -1,10 +1,10 @@
 <div class="sidemenu">
 	 <ul class="menu">
 	 	<li><img id="mainicon" src="<$Depth$>./asset/favicon.png"></li>
-		<li><a class="menu-item" href="<$Depth$>./index.html">Blog</a></li>
-		<li><a class="menu-item" href="<$Depth$>./pods.html">Podcast</a></li>
-		<li><a class="menu-item" href="<$Depth$>./experiments.html">Experiments</a></li>
-		<li><a class="menu-item" href="<$Depth$>./aboutme.html">Me</a></li>
+		<li><a class="menu-item" href="<$Depth$>./index">Blog</a></li>
+		<li><a class="menu-item" href="<$Depth$>./pods">Podcast</a></li>
+		<li><a class="menu-item" href="<$Depth$>./experiments">Experiments</a></li>
+		<li><a class="menu-item" href="<$Depth$>./aboutme">Me</a></li>
 		<li><:comp/socials:></li>
 	</ul>
 </div>	
