@@ -9,10 +9,7 @@ def url(data):
         url = data["URL"]
     else:
         url = data["Title"].replace(" ","").replace(",","")
-    if "." in url:
-        return url
-    else:
-        return url + ".html"
+    return url
 
 def blogFullUrl(blog):
     return "http://www.ja3k.com/blog/"+url(blog)
