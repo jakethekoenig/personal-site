@@ -2,7 +2,7 @@ import json
 import os
 from imp import find_module, load_module
 from datetime import datetime
-from url_tools import url
+from url_tools import url, legacy_url
 
 # From a websites template and its specified data (which has a link to the content)
 # create a filled out webpage.
@@ -111,7 +111,7 @@ def make_site(target_dir, index, global_index):
             os.mkdir(nex)
             make_site(nex, data, index)
         else:
-            nex = target_dir+"/"+url(data)+".html"
+            nex = target_dir+"/"+legacy_url(data)
             make_page(nex, data, index)
 
 
