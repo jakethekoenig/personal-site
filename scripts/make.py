@@ -111,7 +111,7 @@ def make_site(target_dir, index, global_index):
             os.mkdir(nex)
             make_site(nex, data, index)
         else:
-            nex = target_dir+"/"+url(data)
+            nex = target_dir+"/"+url(data)+".html"
             make_page(nex, data, index)
 
 
