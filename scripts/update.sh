@@ -10,10 +10,10 @@ scripts=~/personal-site/src/scripts
 cd $live
 
 # Sync website assets to aws
-aws s3 sync ../live/ s3://ja3k.com/
-
-# Produce html stripped of ending with correct content-type
-find . -name '*.html' -exec $scripts/nicecopy.sh {}  \;
+aws s3 sync ../live/asset s3://ja3k.com/asset --size-only
+aws s3 sync ../live/css s3://ja3k.com/css --size-only
+aws s3 sync ../live/js s3://ja3k.com/js --size-only
+aws s3 sync ../live/ s3://ja3k.com/ --exclude "asset*" --exclude "css*" --exclude "js*" --content-type "text/html" --size-only
 
 
 cd $AT
