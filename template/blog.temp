@@ -2,6 +2,7 @@
 <html>
 <:comp/header:>
 <body>
+	<main>
 	<:comp/sidemenu:>
 	<div class="title">
 		<h1><$Title$></h1>
@@ -14,5 +15,6 @@
 	<div id="socials_footer">
 		<:comp/socials:>
 	</div>
+	</main>
 </body>
 </html>
