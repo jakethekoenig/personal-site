@@ -9,7 +9,7 @@
 
 <h2>Counting with Bijections</h2>
 
-<p>A basic problem, the basic problem, in mathematics is to count things. Of course we all know how to count things. We point at the objects we're counting and say "one, two, three ...". Or if we're not in kindergarten we probably keep our mental processes mental. But the idea is the same: We associate the objects we're counting to numbers and the largest number we reach is the number of objects there are. This technique of counting: 'laying our objects next to our numbers' Can be adjusted in the following way: 'lay our objects next so some other objects'. This won't tell us the number of objects we have. But it will tell us if our two groups have the  same size and if not, which  is  larger. Here we  have the same number of squirrels and birds.</p>
+<p>A basic problem, the basic problem, in mathematics is to count things. Of course we all know how to count things. We point at the objects we're counting and say "one, two, three ...". Or if we're not in kindergarten we probably keep our mental processes mental. But the idea is the same: We associate the objects we're counting to numbers and the largest number we reach is the number of objects there are. This technique of counting: 'laying our objects next to our numbers' Can be adjusted in the following way: 'lay our objects next to some other objects'. This won't tell us the number of objects we have. But it will tell us if our two groups have the  same size and if not, which  is  larger. Here we  have the same number of squirrels and birds.</p>
 
 <div class="container">
 	<img class="full" src="../asset/pic/cardinality/birbs.jpg">
@@ -95,10 +95,10 @@
 <p>Suppose the forward chain never terminates. Then let us go backwards. It could be that some element of \(Y\) maps to \(a\) and then some element of \(X\) maps to that element and so on. Because of the injectivity of \(f\) and \(g\) those elements are unique if they exist. We're not guaranteed to be able to go backwards and at some step of the process we may fail, at either \(X\) or \(Y\). Or the process could go on indefinitely. So we have four cases for our chains,</p>
 
 <ul>
-<li>A loop, \[a\to f(a) \to g(f(a)) \to \dots \to g(f(\dots (a)\dots)) = a.\]</li>
-<li>A bidirectional infinite chain, \[ \dots \to f^{-1}(g^{-1}(a)) \to g^{-1}(a) \to a\to f(a) \to g(f(a)) \to \dots. \]</li>
-<li>An \(X\) terminated chain, \[f^{-1}(g^{-1}(\dots(a)\dots))\to\dots \to g^{-1}(a) \to a\to f(a) \to g(f(a)) \to \dots. \]</li>
-<li>A \(Y\) terminated chain, \[g^{-1}(f^{-1}(\dots(a)\dots)) \to\dots\to g^{-1}(a) \to a\to f(a) \to g(f(a)) \to \dots. \]</li>
+<li>A loop, \[a\to f(a) \to g(f(a)) \to \dots \to a.\]</li>
+<li>A bidirectional infinite chain, \[ \dots \to g^{-1}(a) \to a\to f(a) \to g(f(a)) \to \dots. \]</li>
+<li>An \(X\) terminated chain, \[f^{-1}(g^{-1}(a)) \to g^{-1}(a) \to a\to f(a) \to \dots. \]</li>
+<li>A \(Y\) terminated chain, \[g^{-1}(a) \to a\to f(a) \to g(f(a)) \to \dots. \]</li>
 </ul>
 
 <p>These four cases partition all the elements of \(X\) and \(Y\) into chains. Each element of \(X\) and \(Y\) falls into exactly one unique chain. So we have simply to describe a mapping on elements of \(X\) for those that fall into each of these chains in such a way that it's clear we get all the elements of \(Y\).</p>
@@ -120,9 +120,7 @@
 
 <p>Basically there are two ways of thinking of mathematical objects. One can think of them as existing as some set somewhere. Or one can just have a system of statements about the object and try to deduce things from there. For example one can reason about Groups as a collection of symmetries or as an object satisfying some axioms. Both perspectives are valuable.</p>
 
-<p>Let's look more carefully at the sentences I used to describe the natural numbers. Notice this set of sentences don't uniquely describe a mathematical object. For example the disjoint union of the natural and the integers satisfy all those sentences. So you might complain that I missed an important sentence, "every element can be reached by taking the iterated successor of zero". But that sentence can not be written down in first order logic. It is the conjunction of infinitely many clauses,</p>
-
-\[\text{For all } x \text{ in the naturals } x = 0 \text{ or } x = S 0 \text{ or } x = S S 0 \text{ or } \dots .\]
+<p>Let's look more carefully at the sentences I used to describe the natural numbers. Notice this set of sentences don't uniquely describe a mathematical object. For example the disjoint union of the natural and the integers satisfy all those sentences. So you might complain that I missed an important sentence, "every element can be reached by taking the iterated successor of zero". But that sentence can not be written down in first order logic. It is the conjunction of infinitely many clauses: All naturals are either 0 or the successor of 0 or the successor of the successor of 0 or ...</p>
 
 <p>In first order logic all our sentences are finite and built up from or, and, not, for all and there exists. So any first order theory of the naturals which only knows about \(0\) and succession (as opposed to also knowing about addition, and multiplication etc.) will not be able to distinguish the naturals as we think of them from these other mathematical objects.</p>
 
