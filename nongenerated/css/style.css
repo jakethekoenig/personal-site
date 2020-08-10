@@ -7,6 +7,10 @@ auto-card a {
 }
 body {
 	font-family: 'Roboto', sans-serif;
+	max-width: 120ch;
+	margin: 0 auto;
+}
+main {
 }
 .sidemenu {
 	width: 10ch;
@@ -46,14 +50,28 @@ body {
 }
 figcaption {
 	text-align: center;
+	font-style: italic;
 }
 /* Rules for Media and Pictures */
-blockquote {
+.quote {
 	background: lightgrey;
 	border-left: 5px black solid;
 	margin-left: 7%;
 	margin-right: 7%;
 	padding-left: 5px;
+}
+blockquote.epigraph {
+	margin-right: 10%;
+	margin-left: 10%;
+}
+blockquote.epigraph > p:first-child {
+	font-style: italic;
+}
+blockquote.epigraph > p:last-child {
+	text-align:right;
+}
+p.mathblock {
+	text-indent:0;	
 }
 .centered {
 	display: block;
