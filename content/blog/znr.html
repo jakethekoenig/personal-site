@@ -1,0 +1,260 @@
+<p>Another set is upon us with a host of new mechanics to investigate for limited purposes. In this article we'll go over the major themes of the set and discuss how they fit together. The three major themes of the set, party, landfall and modal lands, are each present in every color. In addition there are a few minor themes, counters and mill, which are only present in BG and UB and the party tribes each seem to have their own build around deck available.</p>
+<ul>
+	<li style="list-style-type:none;"><b>Analysis of Mechanics</b></li>
+	<li><a href="#party">Party</a></li>
+	<li><a href="#lands">Modal Lands</a></li>
+	<li><a href="#landfall">Landfall</a></li>
+	<li><a href="#counters">Counters</a></li>
+	<li><a href="#mill">Mill</a></li>
+	<li><a href="#equipment">Equipment</a></li>
+	<li style="list-style-type:none;"><b>Evergreen Limited Discussion</b></a></li>
+	<li><a href="#fixing">Fixing</a></li>
+	<li><a href="#instants">Instants</a></li>
+	<li><a href="#removal">Removal</a></li>
+	<li><a href="#misc">Miscellaneous</a></li>
+</ul>
+
+<h2 id="party">Party</h2>
+
+<p>The party mechanic is truly beautiful. I love the flavor of collecting your raiding party. I also expect it to have good game play. It reminds me sort of of delirium where you need to collect four things to get some special payoff. But most of the payoff, especially at lower rarities isn't in getting a complete set but in the linear payoff. There isn't much of a power level jump between casting your <auto-card>Deadly Alliance</auto-card> for 1 or 2 mana. Even with no discount it's a decent limited card. This seems like the typical power level positioning of these cards in limited. The cards which care about party are generally playable with no party (here it helps that the creatures which care about party give you a party pip themselves) and when maxed out they're very high power level commons but not so high power level that you should jump through painful hoops to get the last increment of payoff. </p>
+
+<p>Only rare cards care about full party: <auto-card>Archpriest of Iona</auto-card>, <auto-card>Nimble Trapfinder</auto-card>, <auto-card>Squad Commander</auto-card>, <auto-card>Coveted Prize</auto-card>, <auto-card>Linvala, Shield of Sea Gate</auto-card>. I had the impression that completing the full party would be onerously difficult and therefore one should evaluate these cards at what their power level would be without the full party riders. But actually a well rounded party deck is not that unlikely to assemble a full party. I wrote a Monte-Carlo simulation in javascript which you can play with below. It answers the question: Given the number of wizards, clerics, rogues, warriors and wild cards in your deck what is the expected size of the number of party cards you've drawn after drawing some number of cards?</p>
+<div class="party_data">
+	<table class="party_input">
+		<tr>
+		<th>Number of ... </th>
+		<th>Clerics</th>
+		<th>Wizards</th>
+		<th>Warriors</th>
+		<th>Rogues</th>
+		<th>Wildcards</th>
+		<th>Draws</th>
+		<th>Trials</th>
+		</tr>
+		<tr>
+			<th>Choose:</th>
+		<td>
+	<select id="clerics">
+		<option value=0>0</option>
+		<option value=1>1</option>
+		<option value=2>2</option>
+		<option value=3>3</option>
+		<option value=4>4</option>
+		<option value=5>5</option>
+		<option value=6>6</option>
+	</select>
+		</td>
+		<td>
+	<select id="wizards">
+		<option value=0>0</option>
+		<option value=1>1</option>
+		<option value=2>2</option>
+		<option value=3>3</option>
+		<option value=4>4</option>
+		<option value=5>5</option>
+		<option value=6>6</option>
+	</select>
+		</td>
+		<td>
+	<select id="warriors">
+		<option value=0>0</option>
+		<option value=1>1</option>
+		<option value=2>2</option>
+		<option value=3>3</option>
+		<option value=4>4</option>
+		<option value=5>5</option>
+		<option value=6>6</option>
+	</select>
+		</td>
+		<td>
+	<select id="rogues">
+		<option value=0>0</option>
+		<option value=1>1</option>
+		<option value=2>2</option>
+		<option value=3>3</option>
+		<option value=4>4</option>
+		<option value=5>5</option>
+		<option value=6>6</option>
+	</select>
+		</td>
+		<td>
+	<select id="wildcards">
+		<option value=0>0</option>
+		<option value=1>1</option>
+		<option value=2>2</option>
+		<option value=3>3</option>
+		<option value=4>4</option>
+		<option value=5>5</option>
+		<option value=6>6</option>
+	</select>
+		</td>
+		<td>
+	<select id="draws">
+		<option value=0>0</option>
+		<option value=1>1</option>
+		<option value=2>2</option>
+		<option value=3>3</option>
+		<option value=4>4</option>
+		<option value=5>5</option>
+		<option value=6>6</option>
+		<option value=7>7</option>
+		<option value=8>8</option>
+		<option value=9>9</option>
+		<option value=10>10</option>
+	</select>
+		</td>
+		<td>
+		<select id=trials>
+			<option value=1000>1000</option></option>
+			<option value=10000>10000</option></option>
+			<option value=100000>100000</option></option>
+			<option value=1000000>1000000</option></option>
+			<option value=10000000>10000000</option></option>
+		</select></td>
+	</tr>
+	</table>
+
+	<button onclick="compute()" class="compute_button">Compute Party<br> Statistics</button>
+	<table>
+		<tr>
+			<th>Party Size = </th>
+			<th>0</th>
+			<th>1</th>
+			<th>2</th>
+			<th>3</th>
+			<th>4</th>
+			<th>EV</th>
+		</tr>
+		<tr>
+			<th>Probability =</th>
+			<td><span id="size0"></span></td>
+			<td><span id="size1"></span></td>
+			<td><span id="size2"></span></td>
+			<td><span id="size3"></span></td>
+			<td><span id="size4"></span></td>
+			<td><span id="EV"></span></td>
+		</tr>
+	</table>
+	</div>
+
+<p>Using the program one can observe that a deck with 3 each of the party types and one wild card is 30% to have access to a full party on turn 5. I would have naively guessed a much lower probability.</p>
+
+<p>In addition to thinking about your deck's party distribution you'll also want to consider the cmcs of party members your party matters cards want. The more expensive payoffs like <auto-card>Shephard of Heroes</auto-card> and <auto-card>Cascade Seer</auto-card> don't care much. But <auto-card>Ardent Electromancer</auto-card> really wants two 2 drop party friends to come along and <auto-card>Grotag Bug-Catcher</auto-card> really wants a 3 drop follow up. While we're here imagine <auto-card>Sneaking Guide</auto-card> into <auto-card>Grotag Bug-Catcher</auto-card> into <auto-card>Ardent Electromancer</auto-card> into <auto-card>Packbeast</auto-card>. That last one would be more powerful as <auto-card>Expedition Champion</auto-card>, but I wanted to complete the party and there are no red clerics. Note that the Bug-Catcher and Guide are friends in more ways than one.</p>
+
+<h3>Pairs</h3>
+
+<p>Any card game which rewards getting one of each of something has to reward getting a bunch of the individual thing. Doesn't matter if we're playing Rummy, Poker or ZNR limited. So in addition to the party payoffs there are a few tribal payoffs for each of the party tribes. There's the cycle of expedition creatures which get some bonus for having a matching creature: <auto-card>Expedition Champion</auto-card>, <auto-card>Expedition Diver</auto-card> and <auto-card>Expedition Skulker</auto-card> and <auto-card>Expedition Healer</auto-card>. There are also two rogues: <auto-card>Sure-Footed Infiltrator</auto-card> and <auto-card>Shadow Stinger</auto-card> which want rogue friends. </p>
+
+<p>The above creatures all reward you for having one friend. But there's also a cycle of uncommon artifacts: <auto-card>Relic Amulet</auto-card>, <auto-card>Relic Axe</auto-card> and <auto-card>Relic Vial</auto-card>. Rogues don't get anything. Sorry. The amulet in particular seems like a fun, potentially quite powerful, build around. Is it just me or is putting 'relic' in the name of an artifact a little lazy? In addition to those four there are two others: <auto-card>Relic Golem</auto-card> and <auto-card>Skyclave Relic</auto-card>. Just name the card 'Artifact Artifact'. I checked original Zendikar and there were no relics. But there was a quest for a holy one and a crushed one. I suppose Zendikar is a few years older now though so there's been ample time for their doodads to become relics.</p>
+
+<p>In addition to the relic wizards have <auto-card>Rockslide Sorcerer</auto-card>, <auto-card>Umara Mystic</auto-card>, <auto-card>Umara Wizard</auto-card> and <auto-card>Windrider Wizard</auto-card> featuring the 'whenever you cast an instant, sorcery, or Wizard spell' trigger. Warriors have <auto-card>Kor Blademaster</auto-card>, <auto-card>Paired Tactician</auto-card>, <auto-card>Goma Fada Vanguard</auto-card> and <auto-card>Kargan Warleader</auto-card>. I really like how the set keeps the different roles feeling mechanically different.</p>
+
+<p>We should also discuss the type's prevalence in the set. There are 34 common party creatures and 21 common non party creatures. If you're wondering how this compares to the set we have 21 wizards, 26 warriors, 22 clerics and 23 rogues. So they're fairly evenly distributed. There are no white rogues. There are no black wizards. There are no red or green clerics. There are no blue warriors. </p>
+
+<h2 id="lands">Modal Lands</h2>
+<p>There a ton of modal lands in the set. Each color has four uncommons, a rare and a mythic in addition to the six dual lands. I'm not entirely sure how they will be put in packs but the <a href="https://magic.wizards.com/en/articles/archive/feature/zendikar-rising-product-overview-2020-09-02">article</a> which discussed set boosters said a draft pack would contain the normal 10 commons, 3 uncommons, 1 rare so I think the double faced cards will be distributed like normal cards of their rarity unlike SOI or INN which had one double faced card per pack. It's more like the double faced cards in Ixalan or Origins except the double faced card in those sets were all rare. There are no common modal lands in the set but because of their 4*5=20 uncommons they still end up with an appreciable as fan of 0.87. So they'll be a pretty important part of limited with a normal sealed pool having about 5.</p>
+
+<p>When evaluating cards for limited there are four ways one can mean a card is powerful that are correlated but not the same. One can talk about the percent of decks that will want to play a card given they will be the colors to cast it. One can talk about how much a decks win percentage will go up by playing a card. And one can talk about what pick a card should go on average and how likely one is to be the card's colors given they opened it in a sealed pool. Those last two metrics are sort of a function of the first two. The modal double faced cards should be played in 100% of limited decks that can cast the spell half. The as fan isn't high enough that you'll end up with so many that you're glutted on tap lands. There's only one exception to be made for <auto-card>Bala Ged Recovery</auto-card> which as far as I can tell doesn't do anything. I was thinking you could loot a land away with <auto-card>Fissure Wizard</auto-card> and then pick it up but instead of doing that you could just play the tapland. But other than that they all do something.</p>
+
+<p>The funny thing about evaluating the modal spell lands is that the narrower their spell half the better they look to me. I'm using a sort of bad heuristic there. I see cards like <auto-card>Zof Consumption</auto-card> or <auto-card>Kazuul's Fury</auto-card> and I see a land. And then I imagine the scenarios I'm casting the spell in and in all of them the spell is winning the game. But in reality the ones that are the most powerful in limited are probably the ones that are good rate slightly more expensive creatures like <auto-card>Umara Wizard</auto-card> or <auto-card>Akoum Warrior</auto-card>. A six drop and a tap land cover each others weak parts of the game pretty well. Compare them to <auto-card>Skyclave Cleric</auto-card>. It's still a good card but unlike the beefy creatures it doesn't play as well as a late game top deck.</p>
+
+<p>The mechanic is going to lead to more situational sort of marginal combat tricks being played than normal. Cards like <auto-card>Makindi Stampede</auto-card>, <auto-card>Sejiri Shelter</auto-card>, <auto-card>Beyenn Veil</auto-card>, <auto-card>Malakir Rebirth</auto-card>, <auto-card>Song-Mad Treachery</auto-card>, <auto-card>Spikefield Hazard</auto-card> and <auto-card>Extended Forest Fortification</auto-card> are all going to be played 100% of the time by merit of their tap land floor. I kind of like it. I think combat tricks are fun to play both with and against but in normal limited formats most of them need to be cut for lack of space. </p>
+
+<p>Note that these lands are antisynergistic with landfall. In many limited environments the 6th or 7th land is often a brick and replacing it with a spell, even a marginal one, is a huge upgrade for the flooding player. But landfall rewards a player for continuing to make their land drops every turn. I like this tension and think it will lead to hard decisions in game. But the anticipation of those difficulties will never add up to a reason to cut a modal spell land.</p>
+
+<p>Another hard decision that will have to be made every game based on the texture of hands is whether to play your tap land to avoid having it mess with your curve later or hold it in case you continue drawing lands and want to have access to the spell. There are some easy cases like when you have one basic, one modal spell land, no other lands and a two drop you should probably always lead with your tap land and when you have three normal lands you should probably always hold your spell lands. But there are a lot of hard cases in between. </p>
+
+<p>Should Double Faced Lands replace a land or spell slot? I think the answer is yes. I'd guess some system like first replacing a land or a spell based on how your curve compares to normal limited decks i.e. if you have the kind of deck that would consider playing 16 lands, play 16 lands and a modal spell land. If you have the kind of deck that would consider playing 18 lands play 17 lands and a modal spell land. And then after that just alternate cutting lands and spells. There are a lot of aspects to consider though. Some modal spell lands rarely want to be cast. Lands like <auto-card>Zof Consumption</auto-card> seem like lands 80% or more of the time. So maybe they should just replace a land. Something else to consider is how many landfall cards you have.</p>
+
+<p>A quirk of the modal cards is they allow you to play more lands which can be used as a form of fixing. A 9-9-2 mana base with 3 spell lands seems consistent and strong to me. Keep in mind you don't want to splash the modal cards. You want the spell lands to be in the 9-9 colors.</p>
+
+<h2 id="landfall">Landfall</h2>
+<p>There are a few different landfall designs but a common theme is that they encourage you to attack. Most long term advantages a card can give you would add up to too much if they happened with every land drop. So a lot of designs give you a stats boost of some kind. But then you only get the stats boost on your turn so they're only helping you if you're attacking. I think they learned their lesson with original Zendikar as this set has much more defensively minded designs, though I think on average the set skews aggressive. In original Zendikar every color had a common creature with landfall +2/+2. In this set the only commons with that ability are <auto-card>Akoum Hellhound</auto-card>, a color shifted <auto-card>Steppe Lynx</auto-card>, and <auto-card>Canopy Baloth</auto-card>. </p>
+
+<p>The white landfall commons are <auto-card>Makindi Ox</auto-card> and <auto-card>Prowling Felidar</auto-card>. I underrated <auto-card>Captivating Unicorn</auto-card> because I can't get exited about a 5 mana 4/4 but I won't make that mistake again. It's easier to trigger landfall than constellation. Though harder to trigger it twice in a turn. The <auto-card>Prowling Felidar</auto-card> is a nice design to counteract landfalls incentives to aggression. Being a vigilant 3/4 means it'll still be blocking and getting counters means its as big on defense as offense.</p> 
+
+<p>Blue has the <auto-card>Skyclave Squid</auto-card>. That's one way to design a landfall creature which isn't disproportionately powerful on your turn. Black has <auto-card>Dreadwurm</auto-card> which really wants to attack. Red has the aforementioned hellhound and <auto-card>Spitfire Lagac</auto-card>. I like pinging on landfall. It's a nice marginal advantage you can get every turn without just crushing.</p>
+
+<p>Green has the most landfall cards, which makes sense because it also has the most ways to put multiple lands into play in one turn. It's commons are <auto-card>Canopy Baloth</auto-card>, <auto-card>Kazanda Nectarpot</auto-card> and <auto-card>Territorial Scythecat</auto-card>. Nectarpod is a nice defensive play.</p>
+
+<p>Some cards to look out for if you're playing a landfall strategy are <auto-card>Tazeem Raptor</auto-card>, <auto-card>Pyroclastic Hellion</auto-card> and <auto-card>Kazandu Stomper</auto-card> which can rebuy some of those extra lands in the late game.</p>
+
+<h2 id="counters">Counters</h2>
+<p>There's a small counters matter theme in black and green. At common in black we have <auto-card>Hagra Constrictor</auto-card> and <auto-card>Oblivion's Hunger</auto-card> and in green <auto-card>Gnarlid Colony</auto-card>. At uncommon there's <auto-card>Skyclave Shadowcat</auto-card>, <auto-card>Iridescent Hornbeetle</auto-card> and <auto-card>Moss-pit Skeleton</auto-card>. I won't list all the enablers because of course there are a lot of ways to put counters on creatures. Particularly versatile is <auto-card>Scale the Heights</auto-card> which is both a counter and landfall enabler.</p>
+
+<h2 id="mill">Mill theme</h2>
+<p>There's a small, and frankly kind of strange, mill subtheme in this set (one could say that about about half of mtg set). This one is centered around payoffs for getting a fifth of the way there i.e. cards that do a little something extra when the opponent has 8 cards in the graveyard. At common you have <auto-card>Anticognition</auto-card> and <auto-card>Nimana Skitter-sneak</auto-card>. The skitter sneak looks alright to me. On net Anticognition looks worse than <auto-card>Essence Scatter</auto-card>. But that's the blue doom blade right? There are some serious payoffs at uncommon. <auto-card>Relic Golem</auto-card>, <auto-card>Soaring Thought-Thief</auto-card>, <auto-card>Blackboom Rogue</auto-card> and <auto-card>Lullmage's Domination</auto-card> all seem excellent. In particular the first two are good enablers as well. There's also two other sort of weird cards for the deck: <auto-card>Merfolk Windrobber</auto-card> and <auto-card>Mind Carver</auto-card>. Once I've gotten them 8 cards deep don't I want to keep going? Why am I saccing my robber then? I guess it makes sense. It's gotten some value and been a Rogue but now it's bricked and I can look for a more impactful card. <auto-card>Mind Carver</auto-card> is a good rate but I don't want to attack, I want to mill! I guess that's the deck though. You mill them a little bit and now all your creatures are above rate.</p>
+
+<p>At common the enablers are, <auto-card>Glacial Grasp</auto-card>, <auto-card>Zulaport Duelist</auto-card>, <auto-card>Mind Drain</auto-card>, and <auto-card>Nimana Skydancer</auto-card> and at uncommon we have, <auto-card>Ruin Crab</auto-card> and <auto-card>Shadow Stinger</auto-card> in addition to the cards that are also payoffs. Of all these cards Ruin Crab is the only one that I can actually imagine milling them out. If you have it turn one it could easily be good for 18 cards milled on its own. So if you're a UB deck with other enablers or a UG deck with cards like <auto-card>Roiling Regrowth</auto-card> it could go the distance. But overall the archetypes plan seems to be to mill them a bit and then beat down with <auto-card>Relic Golem</auto-card> and <auto-card>Nimana Skitter-Sneak</auto-card>. </p>
+
+<h2 id="equipment">Equipments</h2>
+<p>Every equipment in the set equips on ETB. As the spoilers were coming out I thought there was a tight colored cycle but they're all over the place in terms of rarity and power level without a unifying theme besides this new mechanic. I kind of like it. Equipments need to have a high equip cost to make them not too efficient in the early game. But then their cmc is effectively at least their equip cost because you need to equip them before they do anything. And they still need to have an actual cmc. By giving a rebate on the first activation these equipments become much more reasonable aggro plays but not significantly more attractive to players looking for a long game. They remind me of living weapons in a way because they come into play equipped. But unlike living weapons they're not obviously great limited cards by being at least as good as a bear or whatever. The equipment in this set sort of feel like what equipment should have been in the first place. We'll see how they play.</p>
+
+<p>In addition to a greater number of equipments than normal they have a few friends in <auto-card>Kor Blademaster</auto-card>, <auto-card>Fireblade Charger</auto-card> and <auto-card>Resolute Strike</auto-card>. </p>
+
+
+<h2 id="fixing">Mana Fixing</h2>
+<p><auto-card>Lithoform blight</auto-card> is a pretty cool card which is to me as color pie breaking as <auto-card>Feed the Swarm</auto-card>. I can't think of another example of black mana fixing at this power level. Of course the joke is that you enchant your opponent's lands and now they can't make colored mana without paying life and they can't use whatever cool other abilities it might have had. The reality is you get to enchant your own land and make whatever color of mana you want. In limited that's essentially the only mode since the double faced lands ate up all the slots that man and spell lands might have filled. I guess it's possible to get <auto-card>Crawling Barrens</auto-card> and <auto-card>Throne of Makindi</auto-card>.</p>
+
+<p><auto-card>Cleansing Wildfire</auto-card> is also a strange form of fixing. Like blight, in limited there is essentially no reason to target your opponent's lands. Since it cantrips the only cost of having it in your deck is the mana it'll cost. It's also nifty as a way to trigger landfall. It's sort of inefficient so I don't think I'd play it unless my deck wanted two of: landfall triggers, fixing, instants and sorcery cast triggers.</p>
+
+<p><auto-card>Reclaim the Wastes</auto-card> is a versatile one. Efficient fixing on turn one and card advantage in the late game. </p>
+
+<p><auto-card>Roiling Regrowth</auto-card> is good double fixing. Landfall makes it a combat trick. So watch out. <auto-card>Vastwood Surge</auto-card> is slightly less good unless you're playing a ramp deck. But it still double ramps, double splashes and double landfalls.</p>
+
+<p><auto-card>Stonework Packbeast</auto-card> is quite the <auto-card>Prismite</auto-card>. Unlike prismite I don't think you'll be able to get the packbeast late when you're desperate for fixing. But on the plus side you won't feel silly when you put it in your deck. Each color has multiple commons that care about party. And there are also quite a few rares that want you to have a full party. So the packbeast looks pretty valuable.</p>
+
+<p><auto-card>Base Camp</auto-card> is probably just not good enough. There are 60 creatures of party type in the set. But being tapped and not casting all your spells is just such a big downside.</p>
+
+
+<h2 id="instants">Instants</h2>
+<p>Commons</p>
+<ul>
+	<li> <b>White:</b> <auto-card>Pressure Point</auto-card>, <auto-card>Dauntless Unity</auto-card>, <auto-card>Disenchant</auto-card>, <auto-card>Practiced Tactics</auto-card>, <auto-card>Resolute Strike</auto-card>.</li>
+	<li> <b>Blue:</b> <auto-card>Chilling Trap</auto-card>, <auto-card>Anticognition</auto-card>, <auto-card>Deliberate</auto-card>, <auto-card>Glacial Grasp</auto-card>, <auto-card>Into the Roil</auto-card>, <auto-card>Negate</auto-card>, <auto-card>Shell Shield</auto-card>, <auto-card>Living Tempest</auto-card>, <auto-card>Zulaport Duelist</auto-card>.</li>
+	<li> <b>Black:</b> <auto-card>Deadly Alliance</auto-card>, <auto-card>Oblivion's Hunger</auto-card>, <auto-card>Subtle Strike</auto-card>, <auto-card>Nimana Skydancer</auto-card>, <auto-card>Vanquish the Weak</auto-card>.</li>
+	<li> <b>Red:</b> <auto-card>Inordinate Rage</auto-card>, <auto-card>Molten Blast</auto-card>, <auto-card>Sizzling Barrage</auto-card>, <auto-card>Synchronized Spellcraft</auto-card>.</li>
+	<li> <b>Green:</b> <auto-card>Broken Wings</auto-card>, <auto-card>Might of Murasa</auto-card>.</li>
+</ul>
+<p>Uncommons</p>
+<ul>
+	<li> <b>White:</b> <auto-card>Allied Assault</auto-card>, <auto-card>Kabira Takedown</auto-card>, <auto-card>Sejiri Shelter</auto-card>.</li>
+	<li> <b>Blue:</b> <auto-card>Beyeen Veil</auto-card>, <auto-card>Concerted Defense</auto-card>, <auto-card>Jwari Disruption</auto-card>, <auto-card>Silundi Vision</auto-card>.</li>
+	<li> <b>Black:</b> <auto-card>Malakir Rebirth</auto-card>.</li>
+	<li> <b>Red:</b> <auto-card>Cinderclasm</auto-card>, <auto-card>Kazuul's Fury</auto-card>, <auto-card>Spikefield Hazard</auto-card>.</li>
+	<li> <b>Green:</b> <auto-card>Khalni Ambush</auto-card>, <auto-card>Roiling Regrowth</auto-card>, <auto-card>Vastwood Fortification</auto-card>.</li>
+	<li> <b>Multicolored:</b> <auto-card>Spoils of Adventure</auto-card>, <auto-card>Soaring Thought-Thief</auto-card>.</li>
+</ul>
+<p>Rares and Mythics</p>
+<ul>
+	<li> <b>Black:</b> <auto-card>Hagra Mauling</auto-card>, <auto-card>Soul Shatter</auto-card>.</li>
+	<li> <b>Red:</b> <auto-card>Valakut Awakening</auto-card>.</li>
+	<li> <b>Green:</b> <auto-card>Inscription of Abundance</auto-card>.</li>
+	<li> <b>Multicolored:</b> <auto-card>Zareth San, the Trickster</auto-card>.</li>
+</ul>
+
+<h2 id="removal">Removal</h2>
+<p>Common Removal</p>
+<ul>
+	<li> <b>White:</b> <auto-card>Nahiri's Binding</auto-card>, <auto-card>Practiced Tactics</auto-card>, <auto-card>Smite the Monstrous</auto-card>.</li>
+	<li> <b>Blue:</b> <auto-card>Bubble Snare</auto-card>.</li>
+	<li> <b>Blue:</b> <auto-card>Deadly Alliance</auto-card>.</li>
+	<li> <b>Black:</b> <auto-card>Drana's Silencer</auto-card>, <auto-card>Feed the Swarm</auto-card>, <auto-card>Subtle Strike</auto-card>, <auto-card>Vanquish the Weak</auto-card>.</li>
+	<li> <b>Red:</b> <auto-card>Molten Blast</auto-card>, <auto-card>Roil Eruption</auto-card>, <auto-card>Sizzling Barrage</auto-card>, <auto-card>Synchronized Spellcraft</auto-card>.</li>
+	<li> <b>Green:</b><auto-card>Rabid Bite</auto-card>.</li>
+</ul>
+
+<h2 id="misc">Miscellaneous</h2>
+
+<p>I'll close with some uncategorized observations.</p>
+
+<ul>
+<li> <auto-card>Spare Supplies</auto-card> feels like a strange color pie violation to me. In any other set this would have just been <auto-card>Divination</auto-card>. I think this one is a little worse since it's more overall mana and a worse top deck. But it's possible controlling decks would rather take off turn two than turn 3 because there are stronger defensive options on three. I'm certainly interesting in playing it in some durdly ones.</li>
+<li> Jerboas are actually real animals. Basically Gerbils. Don't let them intimidate you.</li>
+<li>While doing research in the base rates of wizards, warriors, clerics and rogues I discovered that 3:30 am EST September 9th, 2020 there were exactly the same number of wizards and warriors 769. With the release of the full set Warriors have the lead by one. Unsurprisingly clerics and rogues are rarer with 432 and 300 respectively. For modern context there are 462, 574, 251, and 211 respectively. Seems like mtg has gotten less magical in modern times. </li>
+<li>There's just a hint of a life gain theme with <auto-card>Attended Healer</auto-card>, <auto-card>Cleric of Life's Bond</auto-card>, <auto-card>Scion of the Swarm</auto-card> and <auto-card>Maruding Blight-Priest</auto-card>. The priest is a design I can't believe we haven't see before. It's a <auto-card>Sanguine Bond</auto-card> which isn't stupid.</li>
+<li><auto-card>Farsight Adept</auto-card> is an interesting one. I guess it's hard to design a white wizard. I'm not sure why <auto-card>Kabira Outrider</auto-card> couldn't have just been a warrior. <auto-card>Nessian Courser</auto-card> gets worse every year but if you're aggressive enough I suppose it has some upside.</li>
+<li>I love <auto-card>Guul Draz Mucklord</auto-card>.</li>
+<li>I was so sure <auto-card>Broken Wings</auto-card> was a reprint but I guess I was thinking about <auto-card>Crushing Vines</auto-card>. Power creep has gotten out of hand.</li>
+</ul>
+

@@ -12,6 +12,9 @@ body {
 }
 main {
 }
+.party_input, .compute_button {
+	display: inline-block;
+}
 .sidemenu {
 	width: 10ch;
 	margin: 0ch 4ch 0ch 1ch;
@@ -73,11 +76,14 @@ blockquote.epigraph > p:last-child {
 p.mathblock {
 	text-indent:0;	
 }
-.centered {
+.centered, #statistics {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 50%;
+}
+#statistics, #statistics tr, #statistics th, #statistics td {
+	border: 1px solid black;
 }
 .full, .half, .third, .fourth, .fifth {
 	float: left;
