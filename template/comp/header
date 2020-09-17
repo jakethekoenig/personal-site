@@ -1,7 +1,7 @@
 <head>
 <title><$Title$></title>
-<link href="<$Depth$>./css/style.css?v=1.3" type="text/css" rel="stylesheet">
-<link href="<$Depth$>./css/ind.css?v=11" type="text/css" rel="stylesheet">
+<link href="<$Depth$>./css/style.css?v=1.4" type="text/css" rel="stylesheet">
+<link href="<$Depth$>./css/ind.css?v=12" type="text/css" rel="stylesheet">
 <link href="<$Depth$>./css/exp.css" type="text/css" rel="stylesheet">
 <link href="<$Depth$>./css/jelly.css" type="text/css" rel="stylesheet">
 <link rel="shortcut icon" href="<$Depth$>./asset/favicon.png" />
@@ -13,4 +13,5 @@
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <link rel="stylesheet" href="https://mtgify.org/dist/autocard.css" />
 <script src="https://mtgify.org/dist/autocard.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>

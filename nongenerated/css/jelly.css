@@ -30,12 +30,9 @@
 	width: auto;
 }
 
-@media only screen and (max-width:1000px) {
+@media only screen and (max-width:600px) {
 	.jellycontainer, .portraitcontainer {
 		margin: 0;
-	}
-	*, .landscape {
-		max-width: 100vw;
 	}
 	.portraitpair, .landscapepair {
 		width:100vw;
