@@ -15,6 +15,12 @@ main {
 .party_input, .compute_button {
 	display: inline-block;
 }
+.compute_button {
+	background-color: #36d23a;
+}
+.compute_button:hover {
+	background-color: #258c27;
+}
 .sidemenu {
 	width: 10ch;
 	margin: 0ch 4ch 0ch 1ch;
@@ -85,6 +91,8 @@ p.mathblock {
 #statistics, #statistics tr, #statistics th, #statistics td {
 	border: 1px solid black;
 }
+
+
 .full, .half, .third, .fourth, .fifth {
 	float: left;
 }
@@ -104,9 +112,6 @@ p.mathblock {
 	width: 19%;
 }
 /* Rules for main text */
-.title {
-	margin-top:30px;
-}
 div h3 {
 	font-weight: normal;
 }
@@ -151,10 +156,44 @@ p {
 .plink p:hover {
 	background: grey;
 }
-@media only screen and (max-width:1000px) {
+/* Rules for Party Chart Styling. TODO: revise to use classes in case I ever make a chart again */
+tr {
+	display: block;
+	float: left;
+}
+th, td {
+	font-weight: normal;
+	display: block;
+	padding: 5px 15px 5px 15px;
+}
+select {
+	width: 60%;
+
+}
+table {   
+	padding: 5px 30px 5px 30px;
+	border: solid 1px black;
+}
+tbody {
+	width: 100%;
+}
+.party_data {
+	width: 90%;
+	margin: auto;
+
+}
+
+.compute_button {
+	display: block;
+	width: 300px;
+}
+@media only screen and (max-width:600px) {
+	* {
+		max-width: 94vw;
+	}
 	.sidemenu {
 		width: 100%;
-		height: 200px;
+		height: 80px;
 		z-index: 5;	
 		top: 0px;
 		left: 0;
@@ -166,7 +205,6 @@ p {
 	}
 	.title {
 		margin-left: 2%;
-		margin-top: 30px;
 	}
 	img.centered, img.half, img.third, img.fourth, img.fifth {
 		float: left;
@@ -174,7 +212,7 @@ p {
 		max-width: 100%;
 	}
 	.menu li a {
-		padding:40px 0px 40px;
+		padding:10px 0px 10px 0px;
 	}
 	.icon {
 		width: 10%;
@@ -182,6 +220,8 @@ p {
 	}
 	.sidemenu .socials {
 		visibility: hidden;
+		height: 0;
+		width: 0;
 	}
 	#socials_footer .socials {
 		display: inline-block;
@@ -202,4 +242,8 @@ p {
 		margin: 2%;
 		float: left;
 	}
+	table, .compute_button {
+		width: 100%;
+	}
+
 }

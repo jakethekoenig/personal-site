@@ -1,0 +1,122 @@
+<div class="party_data">
+	<table class="party_input">
+		<tr>
+		<th>Number of ... </th>
+		<th>Clerics</th>
+		<th>Wizards</th>
+		<th>Warriors</th>
+		<th>Rogues</th>
+		<th>Wildcards</th>
+		<th>Draws</th>
+		<th>Trials</th>
+		</tr>
+		<tr>
+			<th>Choose:</th>
+		<td>
+	<select id="clerics">
+		<option value=0>0</option>
+		<option value=1>1</option>
+		<option value=2>2</option>
+		<option value=3>3</option>
+		<option value=4>4</option>
+		<option value=5>5</option>
+		<option value=6>6</option>
+	</select>
+		</td>
+		<td>
+	<select id="wizards">
+		<option value=0>0</option>
+		<option value=1>1</option>
+		<option value=2>2</option>
+		<option value=3>3</option>
+		<option value=4>4</option>
+		<option value=5>5</option>
+		<option value=6>6</option>
+	</select>
+		</td>
+		<td>
+	<select id="warriors">
+		<option value=0>0</option>
+		<option value=1>1</option>
+		<option value=2>2</option>
+		<option value=3>3</option>
+		<option value=4>4</option>
+		<option value=5>5</option>
+		<option value=6>6</option>
+	</select>
+		</td>
+		<td>
+	<select id="rogues">
+		<option value=0>0</option>
+		<option value=1>1</option>
+		<option value=2>2</option>
+		<option value=3>3</option>
+		<option value=4>4</option>
+		<option value=5>5</option>
+		<option value=6>6</option>
+	</select>
+		</td>
+		<td>
+	<select id="wildcards">
+		<option value=0>0</option>
+		<option value=1>1</option>
+		<option value=2>2</option>
+		<option value=3>3</option>
+		<option value=4>4</option>
+		<option value=5>5</option>
+		<option value=6>6</option>
+	</select>
+		</td>
+		<td>
+	<select id="draws">
+		<option value=0>0</option>
+		<option value=1>1</option>
+		<option value=2>2</option>
+		<option value=3>3</option>
+		<option value=4>4</option>
+		<option value=5>5</option>
+		<option value=6>6</option>
+		<option value=7>7</option>
+		<option value=8>8</option>
+		<option value=9>9</option>
+		<option value=10>10</option>
+	</select>
+		</td>
+		<td>
+		<select id=trials>
+			<option value=1000>1000</option></option>
+			<option value=10000>10000</option></option>
+			<option value=100000>100000</option></option>
+			<option value=1000000>1000000</option></option>
+			<option value=10000000>10000000</option></option>
+		</select></td>
+	</tr>
+
+		<tr>
+			<th>Party Size = </th>
+			<th>0</th>
+			<th>1</th>
+			<th>2</th>
+			<th>3</th>
+			<th>4</th>
+			<th>EV</th>
+		</tr>
+		<tr>
+			<th>Probability =</th>
+			<td><span id="size0"></span></td>
+			<td><span id="size1"></span></td>
+			<td><span id="size2"></span></td>
+			<td><span id="size3"></span></td>
+			<td><span id="size4"></span></td>
+			<td><span id="EV"></span></td>
+		</tr>
+	</table>
+	<button onclick="compute()" class="compute_button">Compute Party<br> Statistics</button>
+	</div>
+
+	<p>A tool to help you build limited decks with party creatures and payoffs. Select the number of each type of creature you have and the number of wildcard creatures. Then $trials number of limited decks with those parameters are shuffled and an opening hand of 7 along with $draw additional draws are drawn. The number of such draws with party sizes 0 through 4 are tabulated and the EV computed. I recommend using 1000000 trials.</p>
+	<p>Note that the effects of mulliganing are not simulated. On one hand you may be more likely to mulligan a hand with a bad party draw. On the other hand the types of limited hands you're most likely to mulligan are 0 and 1 landers which will have more party members on average. The simulation also doesn't take into account your party curve. For some applications party members with cmc less than four may be particularly valuable. For example <auto-card>Ardent Electromancer</auto-card>. </p>
+
+	<p>If you're interested in seeing the code for the simulation to verify correctness or build your own browser based Monte-Carlo simulations you can find it <a target="_blank" href="https://github.com/jakethekoenig/personal-site/blob/master/nongenerated/js/party_math.js">here</a>. </p>
+
+

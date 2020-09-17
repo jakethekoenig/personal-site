@@ -1,0 +1,9 @@
+{
+	"Title": "Party Size EV Calculator",
+	"URL":   "party",
+	"Author": "Jake Koenig",
+	"Template": "toplevel.temp",
+	"Content": "exp/party.html",
+	"Summary": "Party size EV Calculator" 
+}
+	
