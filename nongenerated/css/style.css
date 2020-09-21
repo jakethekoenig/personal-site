@@ -130,6 +130,10 @@ code {
 	display:block;
 	line-height:100%;
 }
+code.inline {
+	display:inline;
+	background-color: lightgrey;
+}
 p {
 	line-height:1.45;
 	text-indent:2em;
