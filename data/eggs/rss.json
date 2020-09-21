@@ -1,0 +1,9 @@
+{
+	"Title": "RSS is pretty cool",
+	"URL":   "rss",
+	"Author": "Jake Koenig",
+	"Template": "toplevel.temp",
+	"Content": "eggs/rss.html",
+	"Summary": "You've found my first easter egg. Well done. The only place this summary is visible is the github so you've really dug deep if you found it. Thanks for your interest." 
+}
+	
