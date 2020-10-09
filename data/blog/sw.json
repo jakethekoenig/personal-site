@@ -3,6 +3,7 @@
 	"Author": "Jake Koenig",
 	"Template": "blog.temp",
 	"Date": "01/09/2020",
+	"Categories": ["review"],
 	"Content": "blog/sw.html"
 }
 	

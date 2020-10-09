@@ -3,6 +3,7 @@
 	"Author": "Rhiannon Bates",
 	"Template": "blog.temp",
 	"Date": "10/07/2019",
-	"Content": "blog/adip.html"
+	"Content": "blog/adip.html",
+	"Categories": ["guest"]
 }
 	

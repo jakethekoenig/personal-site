@@ -3,6 +3,7 @@
 	"Author": "Jake Koenig",
 	"Template": "blog.temp",
 	"Date": "10/20/2019",
+	"Categories": ["art"],
 	"Content": "blog/inter.html"
 }
 	

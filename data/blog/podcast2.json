@@ -5,6 +5,7 @@
 	"Template": "blog.temp",
 	"Date": "03/22/2020",
 	"Content": "blog/podcast2.html",
+	"Categories": ["review", "podcast"],
 	"Summary": "Another short conversation with friend of the site Rhiannon. Plop down all alone onto your couch and feel less alone for 36 minutes."
 }
 	

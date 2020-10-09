@@ -15,4 +15,5 @@
 <script src="https://mtgify.org/dist/autocard.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://tappedout.net/tappedout.js"></script>
+<script src="<$Depth$>./js/filter.js"></script>
 </head>
