@@ -126,6 +126,12 @@ div h3 {
 	margin-left:0;
 	margin-right:0;
 }
+.main_content iframe {
+	margin-left:auto;
+	margin-right:auto;
+	display: block;
+}
+
 code {
 	display:block;
 	line-height:100%;
