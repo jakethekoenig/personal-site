@@ -3,6 +3,7 @@
 	"Author": "Jake Koenig",
 	"Template": "blog.temp",
 	"Date": "10/02/2019",
+	"Categories": ["programming"],
 	"Content": "blog/iter.html"
 }
 	

@@ -5,6 +5,7 @@
 	"Template": "blog.temp",
 	"Date": "09/10/2020",
 	"Content": "blog/znr.html",
+	"Categories": ["magic"],
 	"Summary": "A review of the new Zendikar Rising set for limited. The various themes are analyzed."
 }
 	

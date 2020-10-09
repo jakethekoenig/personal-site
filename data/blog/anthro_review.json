@@ -3,6 +3,7 @@
 	"Author": "Jake Koenig",
 	"Template": "blog.temp",
 	"Date": "09/26/2019",
+	"Categories": ["review"],
 	"Content": "blog/anthro.html"
 }
 	

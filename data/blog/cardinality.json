@@ -4,6 +4,7 @@
 	"URL": "count",
 	"Template": "blog.temp",
 	"Date": "08/10/2020",
+	"Categories": ["math"],
 	"Content": "blog/cardinality.html",
 	"Summary": "An introduction to the bijective method of counting with lots of examples and theorems. It's really beautiful stuff. I think there'll be something for people who know next to nothing about math and for people who know a great deal."
 }

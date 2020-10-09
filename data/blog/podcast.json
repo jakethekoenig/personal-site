@@ -4,6 +4,7 @@
 	"Template": "blog.temp",
 	"Date": "02/25/2020",
 	"Content": "blog/podcast.html",
+	"Categories": ["podcast"],
 	"Summary": "A short interview with friend of the site Rhiannon. Pop in your earbuds and enjoy your commute."
 }
 	

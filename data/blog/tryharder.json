@@ -4,6 +4,7 @@
 	"URL": "spiritualmusings",
 	"Template": "blog.temp",
 	"Date": "05/29/2020",
+	"Categories": ["guest"],
 	"Content": "blog/tryharder.html",
 	"Summary": "A special guest blog post from a friend of mine. He muses on philosophical questions about the bifurcation of soul and body and being true to yourself."
 }

@@ -5,6 +5,6 @@
 	"Template": "toplevel.temp",
 	"Content": "index.py",
 	"Indexes": "blog",
-	"Summary": "This is an archive of my blog posts in reverse chronological order. I try to upload a new post weekly though I fall off occasionally. I'll make a separate list of my notable and good posts as soon as I have some." 
+	"Summary": "This is an archive of my blog posts in reverse chronological order. I try to upload a new post weekly though I fall off occasionally. You can use the buttons below to filter for the topics you're interested in." 
 }
 	
