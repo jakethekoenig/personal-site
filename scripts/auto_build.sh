@@ -7,7 +7,7 @@ trap "kill 0" EXIT
 watch=""
 case "$1" in
 	"")
-		watch="./*";;
+		watch="../src/*";;
 	*)
 		echo watching $1
 		watch=$1;;
