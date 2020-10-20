@@ -18,7 +18,7 @@ cd ../live
 while true
 do
 	# TODO: update to python3.8 to use the --directory flag.
-	python3 -m http.server 8080 > ../src/scripts/error &
+	python3 -m http.server 8080 > /dev/null &
 	inotifywait -r --event modify $watch
 	kill %1
 	cd ../src
