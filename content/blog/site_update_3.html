@@ -1,0 +1,76 @@
+
+<p>Over the past few months I've been iteratively adjusting my website and I thought I'd go over some of the changes. This is sort of a continuation of an informal series of blog posts including <a href="https://ja3k.com/blog/DD">this one</a>, <a href="https://ja3k.com/blog/SomeUpdatesonmyBlogandProcess">this one</a> and <a href="https://ja3k.com/blog/BlogginginEarnest">this one</a>. I've been meaning to write a post like this for months and kept putting it off so it covers a lot of changes. </p> 
+
+<h2>Visual Design</h2>
+
+<p>No more dinky lines between my sidebar and my menu options. I think this was straightforwardly bad. I also got rid of the blocky colored buttons on the side of the screen. This isn't a kids site. This is a serious place of serious discussion. No fun alternating background colors. No background colors at all. </p>
+
+<p>I also added my ja3k logo above my menu options. A strange thing about images on the web: by default the browser will try to interpolate pixels and display at a higher resolution. One needs the css rule: <code class="inline">image-rendering: pixelated;</code> to avoid this. The icon is even a button if you want to go check my main page.</p>
+
+<p>No more next previous button on my blog posts. This isn't a webcomic. No one's going to come to the site and binge all my blogs. And if they want to do that they can simply go through the index anyway.</p>
+
+<p>I also added social tags. On my desktop site they appear at the bottom of my menu options and at the bottom of the page. On my mobile site just the bottom of the page. To be honest I think social icons are a little strange on the modern web. But they are so ubiquitous. I half think I added them more to make my site feel more 'real' than because I expect anyone to ever click them. I suppose one could in theory read a blog post of mine and think to themselves 'Oh boy, I really need to follow this person on instagram and twitter'. But I don't think it will actually happen even once in the history of this website. But they are everywhere so maybe that sort of thing happens all the time and I'm the strange one for never clicking the links.</p>
+
+<p>While we're on this extended meditation on social links, every time I notice a google+ social link in the wild I feel the strangest emotion. The year is 2020 and the internet already feels cludgy and old. Websites are decorates with irrelevant doodads and it's hard to remember why the internet was so exciting in the first place. But maybe this has more to do with the internet's openness and the cheapness of real estate than its age. When you visit this website I am blessed with a whole window to fill. Every pixel free. Maybe I just have a few poorly thought out words to share but I've got to do something else with the space.</p>
+
+<p>I have cool URIs now. For the longest time I had to cart them around with a .html to let the dumb browsers know this wasn't a mere text file. I had to change the content type to "text/html". It was sort of hard to figure out how to do that with a script and I ended up just excluding the files in my assets, css and js folders. You can see that <a href="https://github.com/jakethekoenig/personal-site/blob/master/scripts/update.sh">here</a>. Hopefully it remains true that all the files not in those folders are html files. Though I'm not sure if anything bad would happen if I set the content type of an image to text/html. I imagine it would still display in the webpage correctly.</p>
+
+<p>The biggest change to my website is probably the categories on the index. Now if you're only interested in my magic content, or my math content, or my self indulgent programming content which only reveals my ignorance, you can press a button and just see that stuff. The styling needs a little work but I'm glad to have the functionality. I think I should go a little further and get domains like mtg.ja3k.com and math.ja3k.com up and running to make them feel a little more separate. It's crazy that I can just do whatever I want on this domain. It's my own little patch of dirt to grow some tomatoes and talk about how much I love vim or whatever.</p>
+
+<p>I stopped writing my name under blogs I authored since it's of course the default. To accomplish this I added a new type of tag to complement those listed in my previous document. The optional tag <code class="inline">&lt;?? python_code ??? html_code ??&gt;</code> includes the html based on the code. The python code is run using eval and if it evaluates to true the html code is inserted. Otherwise nothing is. Every time I add another feature to my site generating script I regret more and more not finding an out of the box solution and learning its features as I needed them. This feature is in particular slightly heinous if I ever imagine someone else using my website generator. As I understand it parsing other people's text as code and running it is ill-advised. I guess they'd be using it on their own machine though.</p>
+
+<p>I changed the font spacing. I went from 2 to 1.5. I think 1.5 is a little more normal and better looking. I need to figure out a better font too. Right now I'm using a google font which I think is supposed to be rude.</p>
+
+<p>I made the margins normal. I picked the very scientific 70 characters as the max width of my blog post main content on the advice on the first google link. To be honest I like to read my blog posts at full screen. The first thing I generally do on a new page is zoom in to 250%. But I guess for the people that don't do that margins might be helpful. Maybe I'm really old.</p>
+
+<p>Somehow it's the case that literally every website is supposed to have the following line in it's header.</p>
+
+<code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>
+
+<p>No one told me! That's why my website always looked shitty on mobile and I felt like I had to play with the font sizes and line spacing to make it reasonable to read. Anyway web development is terrible. Maybe just software development or the mere use of computers. All these minefields. Everything is broken. </p>
+
+<p>Also while we're talking about design I added a small easter egg to my site. See if you can find it. (Searching the github for 'easter' is cheating.</p>
+
+<h2>Automatic Build Process</h2>
+
+<p>My build process has been streamlined in a number of ways. Most valuably with my <a href="https://github.com/jakethekoenig/personal-site/blob/master/scripts/auto_build.sh">auto build</a> script. It's modeled after a similar script I have for my latex writing process. I need to open source what I've built there. It's just a really simple script which opens vim and evince (my pdf viewer, which notable also allows hjkl navigation) along with another script which monitors the tex file and recompiles it when it changes. That along with some snippets and abbreviations gives me all the functionality I need. Not sure why I didn't just use texlive or whatever. But whatever. </p>
+
+<p>My current script watches the source directory (or a specified file if you're just editing one thing) and whenever it changes it reruns my build script. It then finds and refreshes my chrome page. That step is accomplished with xdotool, which is pretty cool. It allows you to send keystrokes or give focus to another window from the command line. In this case I send the key F5 to chrome and then return focus to the terminal. Right now it's extremely janky and only really works well when there's one terminal and one chrome window open. I'm not sure how to pick out the right chrome window and the right terminal. I think there might be a way for xdotool to pick out the title of the application and I think chrome might inherit the webpage it's on and the terminal the file it's editing. But I couldn't get it to work. Thanks to the miracle of tabbing I never really need to have a lot of windows open anyway. What I really need to do is just tell the chrome page to refresh without simulating keystrokes. I'm certain that's possible but I have no idea how.</p>
+
+<p>The script also starts a local server which hosts the website since certain scripts and extensions don't work well when you open a local file with chrome. The downside of the local server though is that because it gets restarted chrome doesn't save the offset information of the page when it's refreshed so I need to do a lot of scrolling. I probably need to to update the page without restarting the server. </p>
+
+<p>While we're here one of my biggest grips with Chrome is that when you refresh or restart the browser it will save the offset information of webpages you are on by not pdfs. I guess chrome is open source so I could try to fix it myself. But I have no idea how.</p>
+
+<p>The upshot of this is that while I'm editing my website every time I save a file the website automatically updates. Whereas previously I had to run ./build_live.sh every time I wanted to see how my writing was going. It's a much smoother experience now.</p>
+
+<p>I also slightly changed my release process. I was pushing out every file that changed to an S3 bucket but because of my rebuild process the last-modified attribute of every file was always changed between every release. To fix this I added the --size-only flag to my aws s3 sync command. Now the file only updates if its size changed. Which can get me into slight trouble if I fix a one character typo but it's mostly a big improvement in release speed.</p>
+
+<h2>Third Party Integrations</h2>
+
+<p>I added a few third party scripts to add some functionality. I included the mathjax script so I can make fun and cool equations. You can see that in <a href="https://ja3k.com/blog/count">Counting things</a>. I need to get around to statically generating the equations to avoid the ugly jumping around after the DOM is finished loading. I have the following cryptic line of code (which I think I stole from <a href="gwern.net">Gwern</a>) which I think should do it once I get around to adding it to my build process:</p>
+
+<code>cat personal-site/live/blog/Odlyzko.html | ./node_modules/mathjax-node-page/bin/mjpage --output CommonHTML > test.html</code>
+
+<p>Getting latex integration into my site was surprisingly difficult. Somehow when I google 'best way to put math notation in html' the top <a href='https://www.w3.org/MarkUp/HTMLPlus/htmlplus_45.html'>link</a> is from 1993 and doesn't seem to work anymore (I feel like I should way back machine this but if it made it to 2020 I'm sure it will never die). MathML is another thing that I saw in some links which seems to not work in Chrome despite maybe being a web standard? But somehow mathjax works and wasn't too painful.</p>
+
+<p>I added the autocard script to make my set reviews. It's working quite well on my <a href="https://ja3k.com/blog/2xm">2xm review</a> but sadly it already seems broken on my <a href="https://ja3k.com/blog/znr">znr review</a>. I guess the problem is with the new cards because <auto-card>Crushing Vines</auto-card> seems to be working. I'll have to look into it. Maybe the maintainer lost heart at the state of design and organized play and abandoned it.</p>
+
+<p>I also added the Tappedout deck list plugin which one can see in action in my <a href="https://ja3k.com/blog/clev">Cleveland Tournament Report</a>. It's sort of ugly by default but it fits in well with my website. It's sort of annoying that if you include an incorrect magic card it just doesn't produce anything. Seems like it make a deck list with some broken links instead.</p>
+
+<h2>Assorted Pro Tips</h2>
+
+<p>Some of the random things I've learned which have made me marginally (so marginally that even spending the time to write them down will cost me more time than they'll ever save) more productive. They ended up being mostly about vim.</p>
+<ul>
+	<li>One can hide the header menu in the ubuntu terminal tab (I should probably get into fish or zsh or something). The option is in 'View'. If you want it gone by default you need to go into the preferences menu. One can also toggle the visibility of the Chrome bookmarks bar with Ctrl+Shift+B. I'm not sure I needed that extra line. But now I have it.</li>
+
+	<li>Speaking of bookmarks, you can bookmark file locations in the ubuntu file explorer. I don't know why it was so hard for me to discover this since its syntax is the exact same as chrome. To be determined if there's a natural way to change the icons of the folders you bookmark. </li>
+
+	<li><code class="inline">{,}</code> navigate to the previous and next blank line in your file in vim. <code class="inline">%</code> navigates to the completing parenthesis. I'm not sure why picking up random esoteric vim commands feels so productive. </li>
+
+	<li>I rebound &lt;Tab&gt; to switch between tabs in vim and just generally started using tabs more in vim. At first I was trying to remap it to &lt;C-Tab&gt; to match Chrome but for some reason vim didn't like that. And then I realized there was no reason to match Chrome here anyway. I'm not going to forget &lt;Tab&gt;. I had a bad habit of opening multiple instances of vim but there's no reason do do that. Its cluttered and you lose out on shared registers and macros (though the real pro tip is that macros are stored in a register). Now I tend to have one tab for my blog draft and one for whatever style sheets I'm editing.</li>
+
+	<li>I remapped &lt;C-v&gt; to paste. The fact that I had to do that myself is sort of the epitome of why it's stupid to use vim. Anyway the real pro tip is that the register '+' contains the contents of the system's clipboard.</li>
+
+	<li>For the longest time I typed /\. to jump to the end of the sentence and it always annoyed me that I had to escape the '.'. But now I know () jump forward and backwards a sentence already.</li>
+
+</ul>
