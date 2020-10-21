@@ -1,0 +1,11 @@
+{
+	"Title": "Site Update Three",
+	"Author": "Jake Koenig",
+	"URL": "su3",
+	"Template": "blog.temp",
+	"Date": "10/20/2020",
+	"Content": "blog/site_update_3.html",
+	"Summary": "It sure is difficult to do anything. Here I was wanting to write an interesting blog and now I'm blogging about blogging.",
+	"Categories": ["personal", "programming"]
+}
+	
