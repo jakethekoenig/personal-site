@@ -88,10 +88,10 @@ for blog in os.listdir(data_dir):
 
 week_one_graph.update_layout(title='Page Visits of Blogs in First Week', xaxis_title='days since publication', yaxis_title='Page Views (in ones)')
 week_one_graph.show()
-week_one_graph.write_html("week_one_graph.html")
+week_one_graph.write_html("week_one_graph.html", full_html=False)
 
 week_by_week_graph.update_layout(title='Page views per week', xaxis_title='weeks since publication', yaxis_title='Page Views (in ones)')
 week_by_week_graph.show()
-week_by_week_graph.write_html("week_by_week_graph.html")
+week_by_week_graph.write_html("week_by_week_graph.html", full_html=False)
 # TODO: graph of page views during first and and per week over blogs lifetime. 
 # Total views for each blog post
