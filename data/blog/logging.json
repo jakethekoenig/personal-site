@@ -1,0 +1,12 @@
+{
+	"Title": "I've Been Waching You",
+	"Subtitle": "Growth and Monetization",
+	"Author": "Jake Koenig",
+	"URL": "log",
+	"Template": "blog.temp",
+	"Date": "10/23/2020",
+	"Content": "blog/logging.html",
+	"Summary": "I've been logging access to my website and I thought I'd go over some data.",
+	"Categories": ["personal", "programming"]
+}
+	

@@ -6,9 +6,9 @@
 	<:comp/sidemenu:>
 	<div class="title">
 		<h1><$Title$></h1>
-		<?? "<$Author$>"=="Jake Koenig" ??? <h3><i>By: <$Author$> </i><h3> ??>
+		<?? "<$Author$>"=="Jake Koenig" ??? <h4><i>By: <$Author$> </i></h4> ??>
 		<?? "Subtitle" not in data ??? <h2><$Subtitle$></h2> ??>
-		<h3><i>Published: <$Date$> </i><h3>
+		<h4><i>Published: <$Date$> </i></h4>
 	</div>
 	<div class="main_content">
 	<[Content]>

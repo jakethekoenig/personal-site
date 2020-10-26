@@ -1,5 +1,8 @@
 /* Rules for menus*/
 
+.modebar{
+      display: none !important;
+}
 auto-card a {
 	color: black;
 	text-decoration: none;
@@ -112,7 +115,7 @@ p.mathblock {
 	width: 19%;
 }
 /* Rules for main text */
-div h3 {
+div h4 {
 	font-weight: normal;
 }
 .main_content, .title {
@@ -256,4 +259,7 @@ tbody {
 		width: 100%;
 	}
 
+	.legend{ /* The legend blocks the chart on mobile :/ */
+	      display: none !important;
+	}
 }
