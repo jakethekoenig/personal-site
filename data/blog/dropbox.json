@@ -1,0 +1,11 @@
+{
+	"Title": "An Rsync Command and Cron Job",
+	"Author": "Jake Koenig",
+	"URL": "rsyncandcron",
+	"Template": "blog.temp",
+	"Date": "11/16/2020",
+	"Content": "blog/dropbox.html",
+	"Categories": ["programming"],
+	"Summary": "I recreated all of dropbox with just two lines of code! Not really. Come read about my hacky backup setup."
+}
+	

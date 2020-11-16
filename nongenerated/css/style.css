@@ -138,10 +138,14 @@ div h4 {
 code {
 	display:block;
 	line-height:100%;
+	background-color: black;
+	color: white;
+	padding: 5px;
+	border-radius: 4px;
 }
 code.inline {
 	display:inline;
-	background-color: lightgrey;
+	padding: 1px;
 }
 p {
 	line-height:1.45;
