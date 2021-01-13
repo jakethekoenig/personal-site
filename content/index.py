@@ -15,16 +15,16 @@ def blogCategories(blog):
     else:
         return ""
 
-def allCategories(index):
+def allCategories(data, index):
     cats = set()
-    for blog in dict(index)["blog"]:
+    for blog in dict(index)[data["Indexes"]]:
         blog = blog[1]
         if "Categories" in blog:
             cats = cats|set(blog["Categories"])
     return cats
 
-def categoriesElement(index):
-    cats = allCategories(index)
+def categoriesElement(data, index):
+    cats = allCategories(data, index)
     ans = "<div class='category_menu'>"
     
     for cat in cats:
@@ -34,10 +34,10 @@ def categoriesElement(index):
 
 def generate(data, index):
     ans = "<p>"+data["Summary"]+"</p>"
-    ans += categoriesElement(index)
+    ans += categoriesElement(data, index)
     ans += "<ul class=\"links_menu\">"
     index = dict(index)
-    for blog in dict(index)["blog"]:
+    for blog in dict(index)[data["Indexes"]]:
         ans = ans + blogLi(blog[1])
     ans +="</ul>"
     return ans

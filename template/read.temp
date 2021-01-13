@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<:comp/header:>
+<body>
+	<main>
+	<:comp/sidemenu:>
+	<div class="title">
+		<a href="../reading">&lt;&mdash; back to reading list</a>
+		<p>Some meandering thoughts on: </p>
+		<h1 class="source"><em><$Title$></em>, <$By$></h1>
+		<h4><i>Posted: <$Date$> </i></h4>
+	</div>
+	<div class="main_content">
+	<[Content]>
+	</div>
+	<div id="socials_footer">
+		<:comp/socials:>
+	</div>
+	</main>
+</body>
+</html>

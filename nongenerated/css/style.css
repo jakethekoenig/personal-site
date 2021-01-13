@@ -121,6 +121,9 @@ div h4 {
 .main_content, .title {
 	margin-left:140px;
 }
+h1.source {
+	font-weight: normal;
+}
 .main_content {
 	max-width:75ch;
 }
@@ -265,5 +268,11 @@ tbody {
 
 	.legend{ /* The legend blocks the chart on mobile :/ */
 	      display: none !important;
+	}
+	.desktop-only {
+		visibility: hidden;
+		height: 0;
+		width: 0;
+		padding: 0;
 	}
 }

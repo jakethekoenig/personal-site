@@ -2,26 +2,14 @@ import json
 import os
 from imp import find_module, load_module
 from datetime import datetime
-from url_tools import url, legacy_url
+from url_tools import get_content, url, legacy_url
 
 # From a websites template and its specified data (which has a link to the content)
 # create a filled out webpage.
 def replaceTags(template, data, index):
     # TODO: Make this method robust to tags inside tags
     # replace content
-    path = data["Content"]
-    if path[-3:]==".py":
-        name = path[path.rfind("/")+1:path.rfind(".")]
-        if path.rfind("/")!=-1:
-            dire = content_dir + path[:path.rfind("/")]
-        else:
-            dire = content_dir
-        fp,pathname,desc = find_module(name, [dire])
-        mod = load_module(name,fp,pathname,desc)
-        content = mod.generate(data, index)
-    else:
-        with open(content_dir + path) as c:
-            content = c.read()
+    content = get_content(data, index)
     template = template[:template.find("<[")]+content+template[template.find("]>")+2:]
     # replace components
     while template.find("<:") != -1:
@@ -124,6 +112,7 @@ def make_page(path, data, index):
 
 
 # Hard Coded Locations of data, templates and content. Relative to src/
+# TODO: make them not relative?
 data_dir     = "data/"
 template_dir = "template/"
 content_dir  = "content/"
