@@ -64,6 +64,36 @@ figcaption {
 	text-align: center;
 	font-style: italic;
 }
+/* rules for mtg card hovers */
+.hover_img a { position:relative; color:black; }
+.hover_img a span { position:absolute; display:none; z-index:99; }
+.hover_img a:hover span { display:block; }
+
+.collapsible {
+	color:grey;
+}
+.collapsed{
+	height:90px;
+	overflow:hidden;
+	position:relative;
+}
+.collapsed:after {
+position: absolute;
+  bottom: 0;  
+  left: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background: linear-gradient(to top,
+     rgba(255,255,255, 1) 20%, 
+     rgba(255,255,255, 0) 80%
+  );
+  pointer-events: none;
+}
+.open {
+	height:auto;
+}
+
 /* Rules for Media and Pictures */
 .quote {
 	background: lightgrey;
@@ -128,7 +158,7 @@ h1.source {
 	max-width:75ch;
 }
 
-.main_content * {
+.main_content p,h1,h2,h3,h4 {
 	margin-left:0;
 	margin-right:0;
 }
