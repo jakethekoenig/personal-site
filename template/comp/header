@@ -12,6 +12,12 @@
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <link rel="stylesheet" href="https://mtgify.org/dist/autocard.css" />
+<script>
+  MTGIFY_CONFIG = {
+	      linkSource: "scryfall",
+	          imgSource: "scryfall",
+		    }
+		    </script>
 <script src="https://mtgify.org/dist/autocard.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://tappedout.net/tappedout.js"></script>
