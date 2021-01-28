@@ -1,15 +1,15 @@
 import json
 import os
-from imp import find_module, load_module
 from datetime import datetime
-from url_tools import get_content, url, legacy_url
+from url_tools import url, legacy_url
+from content import generate_content
 
 # From a websites template and its specified data (which has a link to the content)
 # create a filled out webpage.
 def replaceTags(template, data, index):
     # TODO: Make this method robust to tags inside tags
     # replace content
-    content = get_content(data, index)
+    content = generate_content(data, index)
     template = template[:template.find("<[")]+content+template[template.find("]>")+2:]
     # replace components
     while template.find("<:") != -1:
