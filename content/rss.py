@@ -16,7 +16,7 @@ def rss_entry(blog):
     if "Summary" in blog:
         ans+= "<description>"+blog["Summary"]+"</description>"
     ans += "<pubDate>" + datetime.strptime(blog["Date"],"%m/%d/%Y").strftime("%a, %d %b %Y %H:%M:%S %z EST") + "</pubDate>"
-    ans += "</item>"
+    ans += "</item>\n"
     return ans
 
 
