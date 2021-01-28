@@ -17,11 +17,11 @@ cd ../live
 
 while true
 do
-	# TODO: update to python3.8 to use the --directory flag.
-	python3 -m http.server 8080 > /dev/null &
+	python3 ../src/scripts/local_server.py > /dev/null &
 	inotifywait -r --event modify $watch
 	kill %1
 	cd ../src
+	#TODO: fit the auto_card script into the rest of the build process.
 	#python3 scripts/my_auto_card.py temp.html content/blog/khm.html
 	./scripts/build_live.sh
 	cd ../live
