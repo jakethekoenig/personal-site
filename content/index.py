@@ -1,13 +1,13 @@
-from url_tools import url
+from url_tools import relative_path
 
 def blogLi(blog):
     cats = blogCategories(blog)
     if "Summary" in blog:
-        ans = "<a href='blog/" + url(blog) + "' class='blogstub " + cats + "'><li><h2>"+ blog["Title"]+"</h2>"
+        ans = "<a href='" + relative_path(blog) + "' class='blogstub " + cats + "'><li><h2>"+ blog["Title"]+"</h2>"
         ans += "<p>" + blog["Summary"] + "</p>"
         ans += "</li></a>"
         return ans
-    return "<a href='blog/" + url(blog) + "' class='blogstub "+cats+ "'><li><h2>"+ blog["Title"] +"</h2></li></a>"
+    return "<a href='" + relative_path(blog) + "' class='blogstub "+cats+ "'><li><h2>"+ blog["Title"] +"</h2></li></a>"
 
 def blogCategories(blog):
     if "Categories" in blog:
