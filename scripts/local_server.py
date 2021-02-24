@@ -16,5 +16,5 @@ handler_object = MyHttpRequestHandler
 PORT = 8070
 my_server = socketserver.TCPServer(("", PORT), handler_object)
 
-# Star the server
+# Start the server
 my_server.serve_forever()
