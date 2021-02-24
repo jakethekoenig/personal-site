@@ -25,5 +25,7 @@ do
 	#python3 scripts/my_auto_card.py temp.html content/blog/khm.html
 	./scripts/build_live.sh
 	cd ../live
-	xdotool search --onlyvisible --class Chrome windowfocus key ctrl+r && xdotool search --onlyvisible --class Terminal windowfocus
+	MYWINDOW=$(xdotool getactivewindow)
+	xdotool search --onlyvisible --class Chrome windowfocus key ctrl+r
+	xdotool windowfocus --sync ${MYWINDOW}
 done
