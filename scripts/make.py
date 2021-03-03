@@ -119,7 +119,7 @@ def make_page(path, data, index):
 data_dir     = "data"
 template_dir = "template/"
 content_dir  = "content/"
-live_dir     = "../live/"
+live_dir     = "../live"
 index = make_index(data_dir, "")
 addDerivedAttributes(index)
-make_site("../live", "", index, index)
+make_site(live_dir, "", index, index)
