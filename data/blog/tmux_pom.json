@@ -1,0 +1,11 @@
+{
+	"Title": "Tmux Pom v0.1",
+	"Author": "Jake Koenig",
+	"URL": "tmuxpom",
+	"Template": "blog.temp",
+	"Date": "3/22/2021",
+	"Content": "blog/tmux_pom_release.html",
+	"Summary": "I wrote a simple pomodoro timer tmux extension.",
+	"Categories": ["personal", "programming"]
+}
+	
