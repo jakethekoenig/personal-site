@@ -1,0 +1,11 @@
+{
+	"Title": "How Well Calibrated is Predicted?",
+	"Author": "Jake Koenig",
+	"URL": "calibration",
+	"Template": "blog.temp",
+	"Date": "03/29/2021",
+	"Content": "blog/cal.html",
+	"Categories": ["programming","prediction markets"],
+	"Summary": "A simple analysis of how well calibrated Predictit is."
+}
+	
