@@ -1,7 +1,7 @@
 import json
 import os
 from datetime import datetime
-from url_tools import relative_path, file_name
+from url_tools import relative_path, file_name, permalink
 from content import generate_content
 
 # From a websites template and its specified data (which has a link to the content)
@@ -93,6 +93,7 @@ def make_index(data_dir, relative_path):
                 data = json.load(data_file)
                 # TODO: is this a good idea? How do I want this data connected up?
                 data["relative_path"] = os.path.join(relative_path, file_name(data))
+                data["permalink"] = permalink(data)
                 index+=[(page,data)]
     return index
 
