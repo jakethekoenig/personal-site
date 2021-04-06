@@ -1,0 +1,55 @@
+<p>This is the fourth installment in a series of technical and philosophical summaries of progress in the site. Previously: </p>
+<ul>
+<li> <a href="https://ja3k.com/blog/DD" target="_blank">Rethinking my Webpage Generation</a> </li>
+<li> <a href="https://ja3k.com/blog/SomeUpdatesonmyBlogandProcess" target="_blank">Some Updates on my Blog and Process</a> </li>
+<li> <a href="https://ja3k.com/blog/BlogginginEarnest" target="_blank">Blogging in Earnest</a> </li>
+</ul>
+<p>The arrow of time marches on and progress is inexplicably made in all things. Thank Steven Pinker. Though many worry about existential tail risks that might extinguish the bastion of truth and high culture that is this website, if AWS can bring down Parlor it can cancel our little party, in a world 4&#8451; warmer perhaps my readers will be too busy foraging algea to read my hot takes, the doomsayers are once again proved wrong. The website lives and everyday it presents a fuller, more complete and more beautiful mirror to the human condition. Collected here are a variety of indisputable signs of progress in the cultural touchstone of ja3k.com. To wit:</p>
+
+<h3>Disqus Comments</h3>
+
+<p>The website now has comments! I ended up just using Disqus which was a total joy to install. Just a quick copy paste into my template and a set up of an account. In a month I'm going to have to either pay or let them show ads though. </p>
+
+<p>For a while I didn't want comments because I associate comments with Youtube and Hackernews. My general expectation is that comments on the internet will be bad. But I realized a lot of bloggers actually have pretty vibrant conversations going below underneath and I'd like to foster that. I'm not sure all one needs to foster 'community' is to give your 'community' a text box. But I guess I'll find out. [[Quick story about internet comments: back in the 1.0 version of the site when it was hosted on Google Blogger (is that deprecated yet?) someone I don't know posted a comment on an (ill advised) blog post about voting I wrote asking for advice about playing improverge, a deck I designed which was featured by Channelfireball after I won their PPTQ. Unforunately I wasn't checking the comments so I never got back to them and still feel bad about it. They must have just googled my name, which CFB published, found my site and asked for help. I suppose community and connections are always looking for me but too often I have my head buried in the sand. Disqus will e-mail me when you comment so I'll help any loyal readers who need help writing their own static site generator for no reason or forming a bunch of incorrect opinions about a new limited environment]]</p>
+
+<p>Later I decided I did want comments but wasn't sure how to include them. I wanted to stick with an onbrand solution of creating them myself. I thought for a long time about how I could make it simple for a reader of my site to simply edit the source code of my website with a comment and then send a pull request. Surely requiring my readers to understand HTML and Github before commenting could only be good for the quality of conversation. And surely the security risk from allowing my readers to add arbitrary javascript to my website would never come back to bite me. But a few days ago I decided to just use Disqus since it's used by Predictit and a lot of other sites. It ended up taking less than 10 minutes to get working on my site which is sort of amazing. Thanks Disqus [[I wonder if there's some affiliate marketer link I could insert here? Maybe get some free months of hosting.]]! </p>
+
+<p>So go wild! Tell me what you're thinking about. My mind is open and I'm ready to be pulled in the direction my readers want me to go [[For example my <a href="https://ja3k.com/blog/angry.html" target="_blank">angry post</a> got a lot more engagement on twitter than my <a href="https://ja3k.com/blog/surp.html" target="_blank">surprised post</a>. So I think I'll move towards being more angry and certain.]]!</p>
+
+<h3>Reading Tab</h3>
+
+<p>I added a section to my sidebar called 'reading' where I plan to write little blurbs about things I've read. Something between a blog post and a tweet. And I intend to be pretty liberal with my interpretation of 'reading'. I think any media will do. It started from my <a href="https://ja3k.com/blog/res.html" target="_blank">resolution </a> to read at least 5 pages of math a day. I'm sort of awash in media constantly and I thought it would be nice to chronicle and comment on what I'm drowning myself in. Maybe the idea is something like if someone read through the things I've consumed they could understand why I am the way I am. Of course it hasn't really worked that way. I guess I mostly peruse the internet when I'm too unmotivated to do something more high energy so how am I going to produce commentary on the fleeting experiences flying by. To experience and to commentate your experience are very different things.</p>
+
+<h3>Miscellaneous</h3>
+
+<ul>
+	<li> I have a 404 page now. Check it <a href="https://a3k.com/lol" target="_blank">out</a>! </li>
+	<li> I have https set up now. So you don't have to worry about me hacking you. It was surprisingly difficult and involved using AWS Cloudfront. Now if I update a post I have to invalidate it in some cache somewhere before it updates for other people. So I'm not sure this was worth it.</li>
+	<li> I have e-mail set up on the domain. Sort of. I can receive to it. And I can send from it. But I can't reply to e-mails I receive.</li>
+	<li> I can make footers more easily now. Just a matter of [ [ footer ] ] without the spaces. It's already led to some bugs with "[ [" appearing in the plotly html output. I think footnotes might be a writing crutch. But they're a very delicious one (and they have to be better than parentheticals).</li>
+	<li> I added twitch to my socials tray. I've been streaming some lately. Mostly codeforeces, chess and burritoes. Tune in!</li>
+	<li> Autocard wasn't working for me so I built my own. It was surprisingly easy.</li>
+	<li> My AWS associates account lapsed because I didn't drive 3 qualifying purchases. Luckily you can support this excellent content by buying me a <a href="https://ko-fi.com/ja3k0305">coffee</a>.</li>
+</ul>
+
+	<h3>A Short Road Map</h3>
+
+	<ul>
+		<li>I want to decouple my website repository into an independent static site generator and the actual unique content. Just in case anyone else wants to make another website which looks exactly like this one.</li>
+		<li>I want more RSS feeds. No one subscribes of course. But it'd make sense to have one for every category. Just in case someone wants to see my mtg content but not my navel gazing website updates. I like the unobtrusive and slightly antiquated nature of the standard. I guess there's not actually much difference between an RSS feed and a twitter account where I tweet out my new posts. The big difference is I'm not going to maintain a bunch of twitter accounts for each of the categories I cover and no one's going to follow them if I did. But I could maintain a variety of RSS feeds so people can opt into the content which interests them.</li>
+		<li>Something vaguely related is I want to have a way to link related posts together. This one is now part of a series of 'naval gazy, vaguely technical site updates' and I want them to be bound together. I'm not sure what I want the UI to be like though. Maybe next previous buttons at the top and bottom and a list of published posts at the top?</li>
+		<li>Support for website content written in markdown.</li>
+		<li>A script which starts a new blog post. My current workflow involves copying a json file and editing the fields I want for the new post.</li>
+		<li>Dark mode?!</li>
+		<li>Let me know if you have any feature requests!</li>
+</ul>
+
+<h3>Process Updates</h3>
+
+<ul>
+	<li>I started using Tmux. Mostly I wanted a way to see multiple terminals at the same time. I find both windows and tabs slightly paneful to work with. Another feature I wanted was persistence so I could have a dedicated "math" or "personal site" session and detach and reattach them as I changed contexts. I think both features would have been better served at the OS level instead of the application level. Maybe I should have looked into some tiling windows manager. It feels like every very heavy general purpose application, like a web browser and the terminal, eventually has to provide tools for saving state and multitasking. It seems like things could be more consistently and better handled at the OS level. But at the end of the day no technical solution will solve the basic problems which is I can only focus on one thing at a time and eventually get tired of what I'm doing.</li>
+	<li>I've been hacking away at my automatic build script. I figured out how to solve the problem of returning focus to the originally focused terminal. There's a way with xdotool to get the process which currently has focus. Ironically I solved this problem right after solving the problem of having multiple terminal windows open.</li>
+</ul>
+
+
+	<p> Just one pro tip this time: While drafting this blog post I accidentally deleted it. The tool <code class="inline">scalpel</code> made it surprisingly easy to recover. I had thought it'd be impossible. Also it turned out to now be possible to simply recreate the file from the saved vim edit history. It feels like I should have been able to add a "delete everything" command at the top, touch an empty file of the same name and then open it and click undo.</p>
