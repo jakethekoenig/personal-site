@@ -15,11 +15,10 @@ def make_block(name):
 
 def insert_autocard(text):
     while "[h[" in text:
-        start = text.find("[h[")
-        end = text.find("]]", start+1)
-        text = text[:start] + make_hover(text[start+3:end]) + text[end+2:]
+        start = content.find("[h[")
+        end = content.find("]]", start+1)
+        content = content[:start] + make_hover(content[start+3:end]) + content[end+2:]
     while "[b[" in text:
-        start = text.find("[b[")
-        end = text.find("]]", start+1)
-        text = text[:start] + make_block(text[start+3:end]) + text[end+2:]
-    return text
+        start = content.find("[b[")
+        end = content.find("]]", start+1)
+        content = content[:start] + make_block(content[start+3:end]) + content[end+2:]

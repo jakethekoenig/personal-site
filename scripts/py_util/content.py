@@ -1,10 +1,13 @@
 from imp import find_module, load_module
+from my_auto_card import insert_autocard
 
 
 def generate_content(data, index, content_dir="content/"):
     content = get_content(data, index, content_dir)
     # Post processing on the content html
+    # Should there be a more stylized way to do this? Maybe the desired post processing should be listed in the blog's data dir.
     content = generate_footers(content)
+    content = insert_autocard(content)
     return content
 
 # Make the content for a specified webpage. If it's an html file just get it. If it's a python file run it's generate method.
@@ -26,13 +29,14 @@ def get_content(data, index, content_dir):
 
 
 # Find tags of form [[content]] and put the content on the bottom with hyperlinks
+# TODO: should this be in its own post processing file?
 def generate_footers(content):
     i = 1
     if "[[" in content:
         content += "<div style='border-bottom:1px Black solid;'></div>"
     while "[[" in content:
         start = content.find("[[")
-        end = content.find("]]")
+        end = content.find("]]", start+1)
         footer = content[start+2:end]
         content = content[:start] + "<a id='anchor_%d' href='#footer_%d'>[%d]</a>"%(i,i,i) + content[end+2:] + "<p><a id='footer_%d' href='#anchor_%d'>[%d]</a> %s</p>"%(i,i,i,footer)
         i+=1
