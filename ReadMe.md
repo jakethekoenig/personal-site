@@ -1,7 +1,7 @@
-My Website
+Exhibit, a Static Site Generator
 ----------
 
-This is source code for my personal site. I have templates for consistent headers and a content folder with my writing. Below is a sketch of what is in each directory followed by a brief todo list.
+This is a collection of scripts I build concurrently with my [personal website!](https://ja3k.com) whose source code can be seen [here!](https://github.com/jakethekoenig/personal-site). At the moment it's no in a state where it'd be easy for anyone else to use. I've decoupled it from the website content to make it easier to move towards that goal. Below is a brief description of the file format this SSG expects to turn into a website.
 
 blogs
 -----
