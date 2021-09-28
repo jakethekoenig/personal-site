@@ -1,0 +1,9 @@
+{
+	"Title": "Coffee Logger Privacy Policy",
+	"URL":   "privacy",
+	"Author": "Jake Koenig",
+	"Template": "toplevel.temp",
+	"Content": "fitbit/coffee_logger/privacy.html",
+	"Summary": "My privacy policy for my caffeine logging app." 
+}
+	

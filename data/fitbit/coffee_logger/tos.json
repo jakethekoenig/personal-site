@@ -1,0 +1,9 @@
+{
+	"Title": "Coffee Logger Terms of Service",
+	"URL":   "tos",
+	"Author": "Jake Koenig",
+	"Template": "toplevel.temp",
+	"Content": "fitbit/coffee_logger/tos.html",
+	"Summary": "The terms of service for my coffee logging app." 
+}
+	
