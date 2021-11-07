@@ -106,7 +106,7 @@ blockquote.epigraph {
 	margin-right: 10%;
 	margin-left: 10%;
 }
-blockquote.epigraph > div:first-child, p:first-child {
+blockquote.epigraph > (div:first-child, p:first-child) {
 	font-style: italic;
 }
 blockquote.epigraph > p:last-child {
