@@ -10,8 +10,8 @@ jobs:
                         - run: git clone https://github.com/jakethekoenig/exhibit.git
                         - run: ./exhibit/scripts/build_live.sh
                         - run: ls ../live
+                        - run: aws s3 cp ${{ github.workspace }}/ReadMe.md s3://testbucketforjakethekoenig
                         - run: ./exhibit/scripts/update.sh
-                          # - run: aws s3 cp ${{ github.workspace }}/ReadMe.md s3://testbucketforjakethekoenig
                           env:
                                 AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
                                 AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
