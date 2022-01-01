@@ -12,7 +12,22 @@
 	</div>
 	<div class="main_content">
 	<[Content]>
+	<div class="comments">
+	<div>
+		<textarea class="comment_box" id="comment" name="comment" rows="3"></textarea><br>
+		<textarea class="author_box" id="username" name="username" rows="1"></textarea><br>
+		<button class="submit_button" type="submit" value="Submit" data-comment-dir="<$Comments$>">Submit</button>
+	</div>
+	<br>
+	<[Comments]>
+	<script src="<$Depth$>./js/comment.js"></script>
+
+	</div>
 	</div>
 	</main>
+	<br>
+	<div id="socials_footer">
+	<:comp/socials:>
+	</div>
 </body>
 </html>
