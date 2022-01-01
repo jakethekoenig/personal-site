@@ -2,7 +2,7 @@ import json
 import os
 from datetime import datetime
 from url_tools import relative_path, file_name, permalink
-from content import generate_content
+from content import generate_content, generate_comments
 
 # From a websites template and its specified data (which has a link to the content)
 # create a filled out webpage.
@@ -10,7 +10,9 @@ def replaceTags(template, data, index):
     # TODO: Make this method robust to tags inside tags
     # replace content
     content = generate_content(data, index)
-    template = template[:template.find("<[")]+content+template[template.find("]>")+2:]
+    template = template[:template.find("<[Content")]+content+template[template.find("]>")+2:]
+    comments = generate_comments(data, index)
+    template = template[:template.find("<[Comments")]+comments+template[template.find("]>")+2:]
     # replace components
     while template.find("<:") != -1:
         start = template.find("<:")
@@ -23,6 +25,12 @@ def replaceTags(template, data, index):
     for tag in data.keys():
         if type(data[tag]) == type(""):
             template = template.replace("<$"+tag+"$>", data[tag])
+    # Delete all tags with no corresponding data
+    while template.find("<$") != -1:
+        start = template.find("<$")
+        end   = template.find("$>")+2
+        template = template[:start] + template[end:]
+
     # delete optional tags
     while template.find("<??") != -1:
         start = template.find("<??")
