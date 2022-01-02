@@ -1,7 +1,7 @@
 import json
 import sys
 
-sys.stderr.write("python running")
+sys.stderr.write("python running\n")
 
 def safe(text):
     unsafe = ["<",">"]
@@ -13,6 +13,7 @@ def safe(text):
 f=sys.argv[1]
 sys.stderr.write(f)
 if not f.startswith("comments/"):
+    sys.stderr.write("Not in comments dir\n")
     print(0)
     quit()
 try:
@@ -27,6 +28,7 @@ try:
             quit()
         print(1)
 except:
+    sys.stderr.write("exception")
     print(0)
     quit()
 
