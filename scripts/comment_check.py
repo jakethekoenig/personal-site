@@ -27,8 +27,8 @@ try:
             print(0)
             quit()
         print(1)
-except:
-    sys.stderr.write("exception")
+except Exception as e:
+    sys.stderr.write(e)
     print(0)
     quit()
 
