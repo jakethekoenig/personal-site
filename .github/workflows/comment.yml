@@ -1,6 +1,6 @@
 name: Add Comment
 on:
-        pull_request
+        pull_request:
                 types: [ opened ]
 jobs:
         merge_if_good:
