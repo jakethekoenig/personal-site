@@ -1,5 +1,5 @@
 import json
-import system
+import sys
 
 def safe(text):
     unsafe = ["<",">"]
@@ -8,7 +8,7 @@ def safe(text):
             return False
     return True
 
-f=system.argv[1]
+f=sys.argv[1]
 if "comments/" != f[:len("comments/")]:
     print(0)
     quit()

@@ -1,13 +1,14 @@
 #!/bin/bash
-
-files=$(git diff master --name-only)
-count=$(git diff master --name-only | wc -l)
-status=$(git diff master --name-status)
-if [ $count -eq 1]
+echo $1
+echo $2
+files=$(gh pr diff $1 --name-only)
+count=$(gh pr diff $1 --name-only | wc -l)
+status=$(gh pr diff $1 --name-status)
+if [ $count -eq 1 ]
 then
 	exit
 fi
-first = ${status:0:1}
+first=${status:0:1}
 if [ $first != "A" ]
 then
 	exit
