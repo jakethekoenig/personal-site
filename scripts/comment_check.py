@@ -9,12 +9,14 @@ def safe(text):
     return True
 
 f=sys.argv[1]
+sys.stderr.write(f)
 if "comments/" != f[:len("comments/")]:
     print(0)
     quit()
 try:
     with open(f) as data:
         comment = json.load(data)
+        sys.stderr.write(comment)
         if len(comment.keys)>2:
             print(0)
             quit()
