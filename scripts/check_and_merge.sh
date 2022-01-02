@@ -2,9 +2,9 @@
 echo $1
 echo $2
 gh pr diff $1
-files=$(git diff master --name-only)
-count=$(git diff master --name-only | wc -l)
-status=$(git diff master --name-status)
+files=$(git diff --name-only origin/main origin/$1)
+count=$(git diff --name-only origin/main origin/$1 | wc -l)
+status=$(git diff --name-statu origin/main origin/$1s)
 if [ $count -eq 1 ]
 then
 	exit
