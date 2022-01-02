@@ -1,6 +1,7 @@
 name: Add Comment
-on: [pull_request]
-types: [ opened ]
+on:
+        pull_request
+                types: [ opened ]
 jobs:
         merge_if_good:
                 runs-on: ubuntu-latest
