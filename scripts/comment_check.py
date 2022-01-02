@@ -19,8 +19,7 @@ if not f.startswith("comments/"):
 try:
     with open(f) as data:
         comment = json.load(data)
-        sys.stderr.write(comment)
-        if len(comment.keys)>2:
+        if len(comment.keys())>2:
             print(0)
             quit()
         if not "Author" in comment or not "Body" in comment:
@@ -28,7 +27,6 @@ try:
             quit()
         print(1)
 except Exception as e:
-    sys.stderr.write(e)
     print(0)
     quit()
 
