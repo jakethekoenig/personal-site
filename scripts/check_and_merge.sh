@@ -19,6 +19,7 @@ then
 fi
 
 valid=$(python ./scripts/comment_check.py $files)
+echo $valid
 if [ $valid -eq 1 ]
 then
 	echo "merging"

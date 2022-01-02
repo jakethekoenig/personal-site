@@ -1,6 +1,8 @@
 import json
 import sys
 
+sys.stderr.write("python running")
+
 def safe(text):
     unsafe = ["<",">"]
     for c in unsafe:
@@ -10,7 +12,7 @@ def safe(text):
 
 f=sys.argv[1]
 sys.stderr.write(f)
-if "comments/" != f[:len("comments/")]:
+if not f.startswith("comments/"):
     print(0)
     quit()
 try:
