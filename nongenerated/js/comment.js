@@ -1,5 +1,5 @@
 function makeGithubPr() {
-	var author = JSON.stringify(escapeHtml(document.querySelector('.author_box').value)));
+	var author = JSON.stringify(escapeHtml(document.querySelector('.author_box').value));
 	if (author==='') {
 		author = "anon";
 	}
