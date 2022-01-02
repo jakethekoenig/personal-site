@@ -23,5 +23,5 @@ echo $valid
 if [ $valid -eq 1 ]
 then
 	echo "merging"
-	gh pr merge $1
+	gh pr merge $1 --merge
 fi
