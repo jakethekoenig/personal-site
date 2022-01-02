@@ -18,7 +18,7 @@ then
 	exit
 fi
 
-valid=$(python ./scripts/comment_check.py files)
+valid=$(python ./scripts/comment_check.py $files)
 if [ $valid -eq 1 ]
 then
 	echo "merging"
