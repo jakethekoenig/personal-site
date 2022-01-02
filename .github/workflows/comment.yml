@@ -9,6 +9,6 @@ jobs:
                         - name: Add comment if good
 
                           uses: actions/checkout@v2
-                        - run: ./scripts/check_and_merge.sh ${{ github.ref }}
+                        - run: ./scripts/check_and_merge.sh ${{ github.ref_name }}
                           env:
                                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
