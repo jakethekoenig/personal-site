@@ -1,10 +1,11 @@
 name: Add Comment
 on: [pull_request]
+types: [ opened ]
 jobs:
         merge_if_good:
                 runs-on: ubuntu-latest
                 steps:
-                        -name: Add comment if good
+                        - name: Add comment if good
 
                           uses: actions/checkout@v2
                         - run: ./scripts/check_and_merge.sh ${{ github.event.issue.number }}
