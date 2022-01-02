@@ -1,6 +1,7 @@
 #!/bin/bash
 echo $1
 echo $2
+gh pr diff $1
 files=$(git diff master --name-only)
 count=$(git diff master --name-only | wc -l)
 status=$(git diff master --name-status)
