@@ -1,7 +1,4 @@
 #!/bin/bash
-echo $1
-echo $2
-gh pr diff $1
 files=$(git diff --name-only HEAD^..HEAD)
 count=$(git diff --name-only HEAD^..HEAD)
 status=$(git diff --name-statu HEAD^..HEAD)
