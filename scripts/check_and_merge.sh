@@ -5,6 +5,9 @@ gh pr diff $1
 files=$(git diff --name-only HEAD^..HEAD)
 count=$(git diff --name-only HEAD^..HEAD)
 status=$(git diff --name-statu HEAD^..HEAD)
+echo $files
+echo $count
+echo $status
 if [ $count -eq 1 ]
 then
 	exit
