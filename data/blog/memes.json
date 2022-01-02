@@ -4,6 +4,7 @@
 	"URL": "memetax",
 	"Template": "blog.temp",
 	"Date": "11/1/2021",
+	"Comments": "blog/memes",
 	"Content": "blog/memes.html",
 	"Categories": ["misc"],
 	"Summary": "Some properties a meme can have and the names for the resulting categories."
