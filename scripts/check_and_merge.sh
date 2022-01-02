@@ -1,7 +1,7 @@
 #!/bin/bash
 files=$(git diff --name-only HEAD^..HEAD)
-count=$(git diff --name-only HEAD^..HEAD)
-status=$(git diff --name-statu HEAD^..HEAD)
+count=$(git diff --name-only HEAD^..HEAD | wc -l)
+status=$(git diff --name-status HEAD^..HEAD)
 echo $files
 echo $count
 echo $status
