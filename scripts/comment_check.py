@@ -12,7 +12,7 @@ def safe(text):
 
 f=sys.argv[1]
 sys.stderr.write(f)
-if not f.startswith("comments/"):
+if not f.startswith("comments/") or not f.endswith(".json"):
     sys.stderr.write("Not in comments dir\n")
     print(0)
     quit()
@@ -23,6 +23,9 @@ try:
             print(0)
             quit()
         if not "Author" in comment or not "Body" in comment:
+            print(0)
+            quit()
+        if not safe(comment["Author"]) or not safe(comment["Body"]):
             print(0)
             quit()
         print(1)
