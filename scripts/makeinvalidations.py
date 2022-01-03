@@ -8,6 +8,7 @@ with open("tmp") as changed:
         if line.startswith("comments/") and ".json" in line:
             try:
                 data = json.load(line)
+                print(data)
                 if "Page" in data:
                     sys.stderr.write(data["Page"])
                     page = data["Page"]
