@@ -5,7 +5,7 @@ import sys
 with open("tmp") as changed:
     for line in changed:
         sys.stderr.write(line)
-        if line.startswith("comments/") and line.endswith(".json"):
+        if line.startswith("comments/") and ".json" in line:
             try:
                 data = json.load(line)
                 if "Page" in data:
