@@ -10,7 +10,10 @@ function makeGithubPr() {
 	var filename = "comments/" + comment_dir + "/" + Math.floor(Math.random()*10000000) + ".json";
 	var message = `${author} made a comment`;
 	var messageEncoded = encodeURIComponent(message);
-	var value = `{\n\t"Author": ${author},\n\t"Body": ${comment}\n}`;
+	var href = window.location.href;
+	var loc = encodeURIComponent(href.substring(href.indexOf("com")+3));
+	var date = Date.now();
+	var value = `{\n\t"Author": ${author},\n\t"Body": ${comment}\n,\n\t"Page": ${loc},\n\t"time": ${date}}`;
 	var valueEncoded = encodeURIComponent(value);
 	var url = `http://www.github.com/jakethekoenig/personal-site/new/master?filename=${filename}&value=${valueEncoded}&message=${messageEncoded}`
 
