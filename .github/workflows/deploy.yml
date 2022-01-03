@@ -9,6 +9,8 @@ jobs:
                 steps:
                         - name: Push website to aws
                           uses: actions/checkout@v2
+                          with:
+                                  fetch-depth: 2
                         - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
                         - run: git clone https://github.com/jakethekoenig/exhibit.git
                         - run: ./exhibit/scripts/build_live.sh
