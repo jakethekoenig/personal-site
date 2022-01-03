@@ -5,7 +5,8 @@ import sys
 with open("tmp") as changed:
     for line in changed:
         sys.stderr.write(line)
-        if line.startswith("comments/") and ".json" in line:
+        line = line.rstrip()
+        if line.startswith("comments/") and line.endswith(".json"):
             try:
                 with open(line) as l:
                     data = json.load(l)
