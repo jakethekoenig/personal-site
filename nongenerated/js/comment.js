@@ -13,7 +13,7 @@ function makeGithubPr() {
 	var href = window.location.href;
 	var loc = encodeURIComponent(href.substring(href.indexOf("com")+3));
 	var date = Date.now();
-	var value = `{\n\t"Author": ${author},\n\t"Body": ${comment}\n,\n\t"Page": ${loc},\n\t"time": ${date}}`;
+	var value = `{\n\t"Author": ${author},\n\t"Body": ${comment},\n\t"Page": ${loc},\n\t"time": ${date}\n}`;
 	var valueEncoded = encodeURIComponent(value);
 	var url = `http://www.github.com/jakethekoenig/personal-site/new/master?filename=${filename}&value=${valueEncoded}&message=${messageEncoded}`
 
