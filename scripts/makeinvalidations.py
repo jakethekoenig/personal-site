@@ -16,6 +16,7 @@ with open("tmp") as changed:
                     pagehtml = page + ".html"
                     os.system('aws cloudfront create-invalidation --distribution-id E3RFZ3RTME1070 --paths "%s" "%s"'%(page, pagehtml))
                     sys.stderr.write('aws cloudfront create-invalidation --distribution-id E3RFZ3RTME1070 --paths "%s" "%s"'%(page, pagehtml))
-            except:
+            except Exception as e:
+                print(e)
                 continue
 
