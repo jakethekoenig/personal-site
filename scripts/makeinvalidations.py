@@ -1,0 +1,17 @@
+import json
+import os
+
+with open("tmp") as changed:
+    for line in changed:
+        if line.startswith("comments/") and line.endswith(".json"):
+            try:
+                data = json.load(line)
+                if "Page" in data:
+                    page = data["Page"]
+                    if page.endswith(".html"):
+                        page = page[:-5]
+                    pagehtml = page + ".html"
+                    os.system('aws cloudfront create-invalidation --distribution-id E3RFZ3RTME1070 --paths "%s" "%s"'%(page, pagehtml))
+            except:
+                continue
+
