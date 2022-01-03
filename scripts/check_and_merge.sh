@@ -1,13 +1,8 @@
 #!/bin/bash
-echo $1
 files=$(git diff --name-only HEAD^..HEAD)
 commit_count=$(gh pr view $1 --json commits --jq '. | length')
 file_count=$(gh pr view $1 --json files --jq '. | length')
 status=$(git diff --name-status HEAD^..HEAD)
-echo $files
-echo $commit_count
-echo $file_count
-echo $status
 if [ $file_count -gt 1 ]
 then
 	echo "File count not 1"
