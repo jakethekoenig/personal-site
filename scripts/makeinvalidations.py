@@ -14,7 +14,6 @@ with open("tmp") as changed:
                     if "Page" in data:
                         sys.stderr.write(data["Page"])
                         page = data["Page"]
-                        end = f.index('.')
                         if '.' in page:
                             end = page.index('.')
                             page = page[:end]
