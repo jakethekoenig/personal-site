@@ -1,4 +1,5 @@
 #!/bin/bash
+echo $1
 files=$(git diff --name-only HEAD^..HEAD)
 commit_count=$(gh pr view $1 --json commits --jq '. | length')
 file_count=$(gh pr view $1 --json files --jq '. | length')
