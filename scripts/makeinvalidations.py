@@ -14,8 +14,10 @@ with open("tmp") as changed:
                     if "Page" in data:
                         sys.stderr.write(data["Page"])
                         page = data["Page"]
-                        if page.endswith(".html"):
-                            page = page[:-5]
+                        end = f.index('.')
+                        if '.' in page:
+                            end = page.index('.')
+                            page = page[:end]
                         pagehtml = page + ".html"
                         os.system('aws cloudfront create-invalidation --distribution-id E3RFZ3RTME1070 --paths "%s" "%s"'%(page, pagehtml))
                         sys.stderr.write('aws cloudfront create-invalidation --distribution-id E3RFZ3RTME1070 --paths "%s" "%s"'%(page, pagehtml))
