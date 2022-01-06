@@ -37,6 +37,9 @@ try:
                 fail()
         if "Date" in comment:
             int(comment["Date"])
+        reserved_names = ["jake", "jakekoenig", "ja3k", "jaek", "jakethekoenig"]
+        if comment["Author"].lower() in reserved_names:
+            fail()
         if len(comment["Body"])>5000 or len(comment["Author"])>100:
             fail()
         print(1)
