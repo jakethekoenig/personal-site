@@ -15,12 +15,13 @@ then
 fi
 file=$(gh pr view $1 --json files --jq '.files[0]["path"]')
 deletions=$(gh pr view $1 --json files --jq '.files[0]["deletions"]')
-if [ $first != "0" ]
+if [ $deletions != "0" ]
 then
 	echo "Not a new file"
 	exit
 fi
 
+gh pr diff $1 --color never > tmp	
 valid=$(python ./scripts/comment_check.py $file)
 echo $valid
 if [ $valid -eq 1 ]
