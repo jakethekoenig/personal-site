@@ -1,6 +1,5 @@
 #!/bin/bash
 echo $1
-files=$(git diff --name-only HEAD^..HEAD)
 commit_count=$(gh pr view $1 --json commits --jq '. | length')
 file_count=$(gh pr view $1 --json files --jq '. | length')
 status=$(git diff --name-status HEAD^..HEAD)
@@ -14,14 +13,15 @@ then
 	echo "Commit count not 1"
 	exit
 fi
-first=${status:0:1}
-if [ $first != "A" ]
+file=$(gh pr view $1 --json files --jq '.files[0]["path"]')
+deletions=$(gh pr view $1 --json files --jq '.files[0]["deletions"]')
+if [ $first != "0" ]
 then
-	echo "File not added"
+	echo "Not a new file"
 	exit
 fi
 
-valid=$(python ./scripts/comment_check.py $files)
+valid=$(python ./scripts/comment_check.py $file)
 echo $valid
 if [ $valid -eq 1 ]
 then

@@ -15,14 +15,22 @@ def safe(text):
             return False
     return True
 
+def diffToFile(text):
+    ans = ""
+    for line in text:
+        if len(line)>=2 and "+" == line[0] and "+" != line[1]:
+            ans+=line[1:]
+    return ans
+
 f=sys.argv[1]
 sys.stderr.write(f)
 if not f.startswith("comments/") or not f.endswith(".json"):
     sys.stderr.write("Not in comments dir\n")
     fail()
 try:
-    with open(f) as data:
-        comment = json.load(data)
+    with open("tmp") as data:
+        data = diffToFile(data)
+        comment = json.loads(data)
         required = ["Author", "Body"]
         optional = ["Page", "Date"]
         displayed = ["Author", "Body", "Date"]
