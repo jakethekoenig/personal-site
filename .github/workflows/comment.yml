@@ -11,6 +11,6 @@ jobs:
                           uses: actions/checkout@v2
                           with:
                                   fetch-depth: 2
-                        - run: ./scripts/check_and_merge.sh ${{ github.event.pull_request.head.sha }}
+                        - run: ./scripts/check_and_merge.sh ${{github.event.pull_request.user.login}:${{ github.event.pull_request.head.ref }}
                           env:
                                   GITHUB_TOKEN: ${{ secrets.PAT }}
