@@ -54,6 +54,8 @@ def get_comments(comment_dir, depth=0):
     # TODO: make recursive
     if not os.path.isdir(comment_dir):
         os.mkdir(comment_dir)
+    if not os.path.isdir(comment_dir):
+        return comm
     for f1 in os.listdir(comment_dir):
         f = os.path.join(comment_dir, f1)
         if os.path.isfile(f):
