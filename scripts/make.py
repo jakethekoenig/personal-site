@@ -7,12 +7,17 @@ from content import generate_content, generate_comments
 # From a websites template and its specified data (which has a link to the content)
 # create a filled out webpage.
 def replaceTags(template, data, index):
+    tags = { "$", "[", ":", "??" }
     # TODO: Make this method robust to tags inside tags
     # replace content
     content = generate_content(data, index)
-    template = template[:template.find("<[Content")]+content+template[template.find("]>")+2:]
+    content_tag_loc = template.find("<[Content]>")
+    if content_tag_loc != -1:
+        template = template[:content_tag_loc]+content+template[content_tag_loc+11:]
     comments = generate_comments(data, index)
-    template = template[:template.find("<[Comments")]+comments+template[template.find("]>")+2:]
+    comment_tag_loc = template.find("<[Comments]>")
+    if comment_tag_loc != -1:
+        template = template[:comment_tag_loc]+comments+template[comment_tag_loc+12:]
     # replace components
     while template.find("<:") != -1:
         start = template.find("<:")
@@ -101,6 +106,7 @@ def make_index(data_dir, relative_path):
                 data = json.load(data_file)
                 # TODO: is this a good idea? How do I want this data connected up?
                 data["relative_path"] = os.path.join(relative_path, file_name(data))
+                data["comment_path"] = os.path.join(comment_dir, os.path.splitext(data["relative_path"])[0])
                 data["permalink"] = permalink(data)
                 index+=[(page,data)]
     return index
@@ -119,7 +125,7 @@ def make_site(target_dir, cur_path, index, global_index):
 def make_page(path, data, index):
     with open(template_dir + data["Template"], 'r') as f:
         temp = f.read()
-    with open(path, "w+") as out:
+    with open(path, "w") as out:
         out.write(replaceTags(temp, data, index))
 
 
@@ -128,6 +134,7 @@ def make_page(path, data, index):
 data_dir     = "data"
 template_dir = "template/"
 content_dir  = "content/"
+comment_dir  = "comments/"
 live_dir     = "../live"
 index = make_index(data_dir, "")
 addDerivedAttributes(index)

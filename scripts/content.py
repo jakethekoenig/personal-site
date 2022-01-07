@@ -2,6 +2,7 @@ from imp import find_module, load_module
 from my_auto_card import insert_autocard
 import json
 import os
+from url_tools import relative_path, file_name
 
 
 def generate_content(data, index, content_dir="content/"):
@@ -45,19 +46,22 @@ def generate_footers(content):
     return content
 
 def generate_comments(data, index, comment_dir="comments/"):
-    if "Comments" in data:
-        return get_comments(comment_dir+data["Comments"])
-    return ""
+    # TODO: think about disabling comments in some places.
+    return get_comments(data["comment_path"])
 
 def get_comments(comment_dir, depth=0):
     comm = ""
+    # TODO: make recursive
+    if not os.path.isdir(comment_dir):
+        os.mkdir(comment_dir)
     for f1 in os.listdir(comment_dir):
         f = os.path.join(comment_dir, f1)
         if os.path.isfile(f):
             with open(f) as c:
                 comm += render_comment(f, depth)
-            if os.path.isdir(f[:-5]):
-                comm += get_comments(f[:-5], depth+1)
+            end = f.index('.')
+            if os.path.isdir(f[:end]):
+                comm += get_comments(f[:end], depth+1)
     return comm
 
 def render_comment(f, depth):
