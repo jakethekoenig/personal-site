@@ -13,9 +13,10 @@
 	<div class="main_content">
 	<[Content]>
 	<div class="comments">
+	<p>Join the discussion. See this <a href="https://ja3k.com/explainer/howtocomment.html">guide</a> if you need help commenting.</p>
 	<div>
-		<textarea class="comment_box" id="comment" name="comment" rows="3"></textarea><br>
-		<textarea class="author_box" id="username" name="username" rows="1"></textarea><br>
+		<textarea class="comment_box" placeholder="comment" id="comment" name="comment" rows="3"></textarea><br>
+		<textarea class="author_box" placeholder="name" id="username" name="username" rows="1"></textarea><br>
 		<button class="submit_button" type="submit" value="Submit" data-comment-dir="<$comment_path$>">Submit</button>
 	</div>
 	<br>
