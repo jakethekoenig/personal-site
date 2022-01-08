@@ -73,7 +73,8 @@ def render_comment(f, depth):
     with open(f) as data:
         comment = json.load(data)
         rendered_comment = '<div class="comment" style="margin-left:%dpx;">'%(50*depth)
-        rendered_comment += "<p>" + comment["Body"] + "</p>"
+        for line in comment["Body"].split("\n"):
+            rendered_comment += "<p>" + line + "</p>"
         rendered_comment += "<p>" + comment["Author"] + "</p>"
         rendered_comment += "</div>"
         return rendered_comment
