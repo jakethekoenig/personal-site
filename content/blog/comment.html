@@ -1,0 +1,34 @@
+<p>In this blog post I describe the technical details and motivations of my new commenting system. If you just want to know how to comment I wrote a short explainer <a href="https://ja3k.com/explainer/howtocomment.html">here</a>. Unfortunately the whole process takes a few more clicks than I'd hoped. Basically you just have to log in to github and keep clicking the green buttons. If you hate reading just <a href='#comment'>jump to the bottom</a> and start commenting!</p>
+
+<h3>Why?</h3>
+<p>That's a good question. It all started when I made a <a href="https://github.com/kevmo314/blog/pull/3">pull request</a> on a friends personal site and I thought "What fun! All online engagement should be like this". I considered about putting some text on the bottom which said "Have some comments? Submit a pull request" but who would ever be the first? They'd have to think about the design and deployment and a bunch of stuff I couldn't reasonably expect a reader to care enough to do. So I made it a little easier.</p>
+<h3>What?</h3>
+<p>I made a form you can fill out at the bottom of the page that looks like a normal comment box but when you fill it out it takes you to a github pull request. Scroll down and try it out! It turns out github has a nice url api. If you go to github.com/username/repo/new/master it'll take you to a page which prompts you to commit a new file in repo on the master branch. And if you pass in url parameters you can have the files name, text and commit message pre-filled. </p>
+
+<p>I made a github action which looks at every PR that's opened and if it looks safe, automatically merges it to master. I check:</p>
+<ol>
+	<li> The PR is one commit</li>
+	<li> With one file</li>
+	<li> In the comments directory</li>
+	<li> Which is valid JSON</li>
+	<li> With the right fields</li>
+	<li> And there's no html in the fields I display</li>
+</ol>
+
+<p>After being merged to master there is another script which rebuilds the website, syncs it to S3 and cache invalidates any blogs which have new comments.</p>
+
+<p>I streamed a lot of the process and you can watch VODs <a href="https://www.youtube.com/playlist?list=PLT5fmq5a60MNP3EDFLNp7g-ftnQYqINCE">here</a>. In hindsight streaming codeforces and leetcode type stuff works a lot better though since it's low context and faster moving and you don't have to worry about secrets onscreen. I'd rather stream myself making 'useful' stuff but I'm also sort of a scrub.</p>
+
+<p>You may ask: What if I want to have weird html or images or styling in my comment? Or: what if I want to publish for this site, I have my own blogs I want to put out there. You're free to edit the JSON file and add other files to your PR if you want. I'll look over new PRs and if they look safe and fun I'll merge them too. If you're a frequent commenter who I trust I might be down to give you write access to the repo as well. Just ask.</p>
+
+<p>I'm releasing it with a few features unimplemented. Here's what's on my roadmap:</p>
+<ul>
+	<li> Recursive comments so commenters can reply to each other.</li>
+	<ul>
+		<li> This one is already half implemented so if you figure out how to name your file feel free to reply to each other. For a hint see the reply <a href=https://ja3k.com/blog/memetax.html>here</a> and its data file <a href="https://github.com/jakethekoenig/personal-site/blob/master/comments/blog/memes/top1/reply1.json">here</a>.</li>
+	</ul>
+	<li> Time displayed in comment</li>
+	<li> Rolling the feature out to the rest of my content which demands comment.</li>
+</ul>
+
+<p>Let me know what you think in the comments below!</p>

@@ -1,0 +1,12 @@
+{
+	"Title": "Comment via Github Pull Request",
+	"Author": "Jake Koenig",
+	"URL": "comment",
+	"Template": "blog.temp",
+	"Date": "1/6/2022",
+	"Comments": "blog/comment",
+	"Content": "blog/comment.html",
+	"Categories": ["tech", "programming"],
+	"Summary": "Comments are back in a way that may surprise you."
+}
+	
