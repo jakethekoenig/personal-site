@@ -1,0 +1,45 @@
+<p>I got a Fitbit Versa 3 because I thought it'd be cool to monitor my sleep and do some small investigation into how factors like caffeine, alcohol and magnesium affect my sleep quality. And also how sleep quality affects my mood (which I track with <a href="https://daylio.net/" target="_blank">daylio</a>) and productivity (which I don't track but probably should). I also thought it'd be cool to have more data on my heart rate. I settled on the Versa 3 out of the whole Fitbit line up because it was only a little more expensive than the charge and was a full smart watch, and I couldn't figure out how the sense was supposed to be different but it was more expensive.</p>
+
+<h2>Nudging</h2>
+<p>The strange thing about the Fitbit is its explicit purpose is to manipulate you. Well not strange per se. It's how we've accepted all software behaves in 2022. It's not possible to sign up for any software product without it by default sending you notifications on every channel it has access to. Which in the case of a Fitbit is: email, push notifications and the device itself. For most software I accept this state of affairs because I'm getting something for nothing. Or it's just where the people are. Twitter sucks but no one's gonna subscribe to my rss feed. Though tbh no one follows my Twitter either. For Fitbit I accept the manipulation because they make the best health and fitness trackers as far as I can tell and the other options would manipulate me just the same. </p>
+
+<p>In the case of Fitbit I think the reason for the manipulation is slightly different and, to my tastes, even more unsavory. It's simply what the customer wants. People buy these things to berate them into taking more steps. They want to be sitting at their desks working and be interrupted by a &ldquo;reminder to move&rdquo;. They want to get a weekly digest email about how they're doing great. Way better than their neighbor who's only logging 7k daily steps. They want their attention to be drawn from their walk by a swooping 10k steps congratulations. </p>
+
+<p>There are two other partial explanations:</p>
+<ul>
+	<li> <p>They want to sell Fitbit premium which there are a lot of emails (which of course I've unsubscribed to) and in app messages (including one recurring, ununsubscribable one at top of your day summary!) encouraging you to get premium. I'm really not sure why one would get premium. To me there are 2 selling points: <p>
+		<ul>
+			<li> Access to breakdowns of fake things. Your 'sleep score' and 'stress management score'. I can look at the REM, Deep and awakenings and make my own judgement of whether it was a good sleep. I don't need my wrist to tell me if I'm stressed.</li>
+			<li> Access to 90 days of health trends. You can just download your data <a href="https://www.fitbit.com/settings/data/export" target="_blank">here</a>.</li>
+		</ul>
+	</li>
+	<li> Eventually your Fitbit will break and they want you to buy another one then. You'll be more likely to do that if you used your fitbit a lot.</li>
+</ul>
+
+<p>Anyway, I didn't want all that. Luckily all these little distractions can be turned off. I just had to find the setting as the distraction arose.</p>
+
+<p>Modern software should have a global &ldquo;please don't manipulate me&rdquo; setting. So people not interested don't have to hunt through the settings or be a little bothered for a week before they're all off. Sure some people want these little manipulations and distractions. But it's disrespectful to make people hunt down all these little dings and beeps and turn them off. But it's 2022 and I can't hold it against Fitbit too hard. Everyone knows &ldquo;everyone else is doing it&rdquo; is morally exculpatory.</p>
+
+<h2>Software Quality</h2>
+<p>The Fitbit feels very unpolished. But in the same way everything is these days.  <a href="https://danluu.com/everything-is-broken" target="_blank">This Dan Luu blog post</a> [[Ironically when copying this link from the Google app on Android I ran into a bug I've never seen before. It's hard to describe in it's entirety but basically I clicked a button that said copy and did not get the url in my clipboard.</p>
+]] is a huge infohazard. It's central claim &ldquo;everything is very broken&rdquo; should be obvious to anyone paying attention but somehow reading his post made me pay attention a little more. Some Fitbit bugs and or software shittineses I've run into (a partial list because it's not like I take notes. There's definitely more):
+<ul>
+	<li> I wanted to set up tap pay. The credit card number flow was not stripe or wallet or any service which supported any autofill. It also made me set a pin which it then began prompting me for at random times of the day for no reason.</li>
+	<li> Once some app didn't finish downloading and now every time I go to the gallery I get a pop up that says &ldquo;an app didn't finish downloading&rdquo; with options &ldquo;retry&rdquo; or &ldquo;give up&rdquo;. But no matter which I click I get the message next time. I'd tell you which app but I can't remember and the pop-up doesn't say.</li>
+	<li> If you want watch apps that are logically connected to your phone. Like a little Spotify companion you have to download them from the Fitbit gallery. It'd be cool if Spotify could detect the watch and prompt you from the Spotify app.</li>
+	<li> The sleep score can be laggy to update. There's a main dashboard that takes a bit to give you your score and breakdown. And after it does when you click it it'll take you to a screen that'll take even longer to append today to your week so you can see your sleep timeline with your major wakes.</li>
+</ul>
+
+<h2>Dev Experience</h2>
+
+<p>The dev experience is really good. I made two apps. A <a href="https://gallery.fitbit.com/details/60ea80eb-ebf3-491d-a66c-fb1dd4434fd5" target="_blank">coffee tracker</a> and the <a href="https://gallery.fitbit.com/details/04129424-845b-4c62-9c8e-47671183ef2f" target="_blank">simplest clockface possible</a>. I checked the Fitbit gallery and I could not find a single clock that was just the time. I searched for simple, minimalist, and &ldquo;just the time&rdquo; and found some decidedly not minimalist clockfaces. I guess minimalism is just a buzz word. You can't expect people to mean it when they say it.</p>
+
+<p>There's a convenient browser ide and also a good cli. Though the simulator only works on Mac and PC. And in order to get it to work on the PC I had to copy a weird text file from a stranger into the app data. One day copying code from the internet is going to get me into trouble.</p>
+
+<p>One of my only other gripes is Fitbit has no native way to make users pay for apps. I wanted to charge for my coffee tracker but I'd need to find and integrate my own payment flow which seems like too much work for an app I'd be happy if got downloaded 50 times.</p>
+
+<h2>Conclusion</h2>
+
+<p>Anyway the sensors are good. Hopefully one day the data will actually inform a decision and not just be a curiosity I've collected. It reminds me of this <a href="https://writings.stephenwolfram.com/2012/03/the-personal-analytics-of-my-life/" target="_blank">Wolfram blog</a>. It's a cool collection of data and maybe it's worth it just for the blog. But it seems short on actual moments the data changed his behavior.</p>
+
+<p>I recommend the Fitbit versa if you want a sleep or heart rate tracker.</p>
