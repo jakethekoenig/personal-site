@@ -1,0 +1,135 @@
+<p>I made a <a href='https://twitter.com/ja3k_/status/1476599728200724482?s=20' target='_blank'>twitter poll</a> asking if I should be boosted and was surprised that 100% of the respondents thought I should. I don't really agree and I thought I'd share why.</p>
+
+<p>First some notes about my current opinion:</p>
+<ul>
+<li> I'm writing this as a 27 year old male with no weight or immunity issues who has had two Pfizer shots. I think any of these aren't true for you you should consider getting boosted and if you're over 60 you should definitely get boosted.</li>
+<li> I think the decision is really close. But not because the vaccine and virus are both very dangerous but because both are very unlikely to cause harm (to me). I feel like in my calculus I'm comparing two values that are very close to 0.
+<ul>
+<li> One might ask why write this if I think the decision is ultimately unimportant? The closest decisions are sometimes the funnest to talk about. If it was obvious what I should do there would be little to say. Also since I apparently disagree with all my friends maybe I'll learn something from them.</li>
+</ul></li>
+</ul>
+
+<p>Please let me know if you think I'm wrong about anything. The <a href='https://ja3k.com/blog/comment.html'>commenting system</a> is sort of jank. If you don't want to use it you can also reply to the corresponding tweet.</p>
+
+<p>The points I consider:</p>
+
+<ul>
+<li><a href='#effectiveness'> Booster Effectiveness Against Omicron</a></li>
+<li><a href='#already'>Have I Already had Covid?</a></li>
+<li> <a href='#symptoms'>Symptoms</a>
+<ul>
+	<li> <a href='#shitty'>Feeling shitty</a></li>
+	<li> <a href='#myocarditis'>Myocarditis</a></li>
+	<li> <a href='#long'>Long Covid</a></li>
+	<li> <a href='#death'>Death</a></li>
+	<li> <a href='#other'>Other?</a></li>
+</ul></li>
+<li><a href='#moral'>Moral Obligation</a></li>
+<li><a href='#coercion'>Eventual Coercion</a></li>
+</ul>
+
+<h2 id='effectiveness'>How effective is a booster against Omicron?</h2>
+
+<p>To answer this question I googled "omicron mortality by booster status us" and clicked the first <a href='https://www.cdc.gov/mmwr/volumes/71/wr/mm7104e2.htm' target='_blank'>link</a>, a cdc publication. Their bottom line takeaway is that boosters remain effective against omicron but I don't think they numbers they give support that conclusion. I'll illustrate why with some back of the envelope math. </p>
+
+<p>From the paper in: the October - November 2021 period there were (per 100,000):</p>
+<table>
+<tr>
+<th>boosted cases<th><th>vaccinated cases</th><th>unvaccinated cases</th>
+</tr>
+<tr>
+<td>25</td><td>87.7</td><td>347.8</td>
+</tr>
+</table>
+
+<p>And then in December 2021 there were:</p>
+<table>
+	<tr>
+<th>boosted cases<th><th>vaccinated cases</th><th>unvaccinated cases</th>
+	</tr>
+	<tr>
+<td>148.6</td><td>254.8</td><td>725.6</td>
+	</tr>
+</table>
+<p>(Somehow the paper only quotes mortality statistics for Oct-Nov or I'd look at those too.)</p>
+
+<p>Indicating you're about 100/250 =40% less likely to get omicron if you're boosted than otherwise. To quote from their article "COVID-19 vaccination protected against SARS-CoV-2 infection, even as the Omicron variant became predominant". Of course the period when Omicron became predominate is over and we're in the era where it is. It may be interesting to study this period but it's just a blip. One day Omicron prevalence is 0, 40 days later its >99. <a href='https://covid.cdc.gov/covid-data-tracker/#variant-proportions' target='_blank'>Specifically</a> for the week ending in 12/4/21 it was less than 0.6 and for the week ending in 1/1/22 it was 89.1 (latest number 99.5).</p>
+
+<p>It would be *nice* to have all categories in December broken down by variant to extrapolate into our deltaless future but even with what's available I think rather pessimistic conclusions can be drawn. For simplicity let me make the following assumptions:</p>
+<ul>
+<li>The ratio of delta cases per 100k in the 3 groups stayed roughly the same in December. I think this is reasonable but problems are:
+<ul>
+<li> Winter might effect things</li>
+<li> The demographics of the populations might shift as more people get boosted.</li>
+</ul>
+</li>
+<li> The cases were split about equally between Omicron and Delta in December.</li>
+<ul>
+<li> One could get a more precise estimate by computing the weighted average of each weeks ratio by total case numbers. Or maybe find the cdc's original data source to get the exact number. But I think being rough here is fine.</li>
+</ul>
+</ul>
+
+<p>Using these assumptions let's estimate the ratio of breakthrough cases among vaccinated to boosted in two different incorrect ways that I believe will bound the correct answer (One could simply do the analysis correctly but one would need to know the relative sizes of the 3 groups, e.g. is almost no one is vaccinated method 1 is basically correct if almost everyone is method 2 is. I could look it up and do this but I think the bounds are fine and illustrate my point. Also the size of the gruops is always changing.) (It's possible I should be spending more time Googling than thinking because it's almost February and really the answer should be known).</p>
+
+<p>Suppose of the 725.6 per 100k cases among the unvaccinated in December ~360 had delta and ~360 had omicron (Method 1, overestimate). Then by assumption (1) there should be roughly 90/350*360 ~= 90 breakthrough delta cases so the remaining 160 breakthroughs are omicron. Those 90 breakthrough delta cases should have ~25 boosted breakthroughs leaving the remaining 125 to be breakthrough omicron cases. Therefore by my math you were 35/160 ~= 22% less likely to get omicron in December if you were boosted.</p>
+
+<p>Now suppose the 254.8 breakthrough cases in December are split between 127 omicron and delta breakthroughs (Method 2, underestimate). The 127 delta cases should correspond to roughly 25/87*127 ~= 36 boosted delta breakthroughs leaving the remaining ~120 boosted breakthroughs for omicron. Meaning you are 7/120 ~= 6% less likely to get omicron in December if boosted.</p>
+
+<h3>Other sources of evidence:</h3>
+<p>The CDC paper is the only one I've thought about carefully but something else that leads me to think the booster has close to no marginal effectiveness is Israel where over 93% of people are vaccinated and of those 85% are boosted and yet they recently hit the highest per capita cases of covid. It seems impossible to square that fact with any significant marginal booster effectiveness.</p>
+
+<p>Please let me know if you think there are important other studies I should consider especially if their implied relative risk reduction for boosting is outside of 7-22%.</p>
+
+<h3>It Can Only Get Worse</h3>
+<p>This being the second time in a year a new variant has displaced the old one, one shouldn't be surprised if it happens again and repeatedly. And the vaccine will almost certainly confer less protection on future variants. Unlike virulence which is only weakly selected against, contagiousness is by definition what is selected for. Now that over half the world is vaccinated, contagiousness within vaccinated people is mostly what will be selected for.</p>
+
+<h3>A Crux</h3>
+
+<p>Just to preregister evidence that would change my mind about whether I should be boosted: If you demonstrate a 20% *absolute* reduction in infection probability over the next year I will get boosted. This is asking for a lot. I'm not even sure my current probability of getting covid over the next year is over 20%. But I think covid for me is mild enough in expectation and the side effects of the vaccine are bad enough that such a large absolute reduction is required. In the next section I'll talk more about side effects and symptoms. If you can convince me I'm very wrong about those I'd get boosted with a smaller absolute reduction.</p>
+
+<h2 id='already'>Have I already had Covid?</h2>
+
+<p>My wife had to take a nap about a month ago and thinks it might have been covid. I'm skeptical but looking at base rate it seems not unlikely that I have already had covid. At the time of writing 72 million Americans have had confirmed cases of covid. Back in <a href='https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/burden.html' target='_bkank'>September</a> the CDC estimated 1 in 4 covid cases were reported. If that remains true then that corresponds to 280 million infections for a base rate of 85% so even considering factors such as being vaccinated, a total recluse, and having never felt sick I still think there's a substantial chance I had covid at some point. And in fact the week before last I coughed maybe 10 times. I thought it was just the dry air but who knows. I'd say there's at least a 40% chance I've had covid.</p>
+
+<p>I'm not entirely sure how this should effect my decision making but I think if I knew 100% I had been infected at some point, especially if by omicron, then I definitely would not get a booster.</p>
+
+<h2 id='symptoms'>Symptoms</h2>
+
+<h3 id='shitty'>Feeling Shitty</h3>
+
+<p>By far the most likely symptom of both the booster and covid is feeling shitty for a bit. The tail risk scenarios are more important but since this is so likely I think it should affect my decision. I'd say I'm very likely to feel shitty for a day if I get a booster and feel shitty for 2-5 days if I get Omicron (strangely I think I'm more likely to just not feel shitty getting covid than a booster) so the booster must reduce my *absolute* risk of infection by 20% to pay off here which is almost certainly not the case.</p>
+
+<h3 id='myocarditis'>Myocarditis</h3>
+
+<p>Finland, Sweden and Denmark have all stopped giving Moderna to people in my demographic because of Myocarditis. According to this <a href='https://www.nature.com/articles/s41591-021-01630-0' target='_blank'>paper</a> if you're under 40 you're more likely to get Myocarditis from your second mRNA shot than covid.</p>
+
+<p>I have a lot of questions though (Many of which I probably could have answered myself. Sorry.).</p>
+<ul>
+	<li> Are the cases more serious for covid than the vaccine? I heard that from a doctor but have not seen a study.</li>
+	<li> Is the booster safer than the 2nd shot? This <a href='https://www.reuters.com/world/middle-east/israel-reports-very-few-myocarditis-cases-among-12-15-year-olds-after-booster-2022-01-05' target='_blank'/>article</a>  maybe suggests that. It's the opposite of what I'd expect intuitively. But biology doesn't have to be intuitive.</li>
+	<li> The paper only gives &lt;40. I've heard that men are more likely to get myocarditis than women. And under 30s have more risk.</li>
+</ul>
+
+<h3 id='long'>Long Covid</h3>
+
+<p>This <a href='https://www.medrxiv.org/content/10.1101/2022.01.05.22268800v2' target='_blank'>study</a> which I confess I've only read the one <a href='https://twitter.com/zeynep/status/1483147963300040704?s=20' target='_blank'>tweet</a> summary of suggests long covid is already not a thing for vaccinated people.</p>
+
+<h3 id='death'>Death</h3>
+
+<p>With my age, bmi, immune system, vaccination status and general sense of health I'm really not worried about dying of covid. I'd put it at roughly 1 in a million.</p>
+
+<h3 id='other'>Other symptoms</h3>
+
+<p>There's a lot of space in between feeling shitty and death. I've talked about the ones I hear the most about but let me know if you think there are important symptoms I haven't touched on.</p>
+
+<h2 id='moral'>Moral Obligation</h2>
+<p>I'm amenable to the idea that I should sacrifice a little of my personal well-being for the good of the group. In fact when I originally got my second shot of Pfizer I conceptualized it more about the good of the group (and a little bit of conformity) than my personal well being since it seemed like the first shot already reduced the likely adverse effect of infection to the likely symptoms of the second shot. Doing my part towards heard immunity, and less abstractly just reducing the probability I infect others made it a good moral choice though.</p>
+
+<p>But one has to actually make the moral argument and I don't think it stands up in this case. If the relative risk of covid is reduced by 20% that corresponds to an absolute risk reduction of less than 1% so even with an r0 of 20, an overestimate, I should expect to infect less than a fifth of an incremental person by boosting. Therefore I think for this decision I should mostly think about it's effects on myself.</p>
+
+<p>If you can convince me I'll infect more than one additional person over the next year in expectation if I don't get boosted, I'll get boosted.</p>
+
+<h2 id='coercion'>I'll be Compelled Eventually Anyway</h2>
+<p>I don't really buy this one. Maybe I'm just living in a bubble, but it's basically not mattered once that I was vaccinated from a coercion point of view. I visited NYC in September and restaurants asked for a vaccine card there. And apparently OSU has a requirement but I dropped out and started a remote job so it never really affected me. It just doesn't seem like there's political will for more restrictions. I don't think flights will ever require even 2 shots. I think all the energy for any kind of requirement will dissipate in 2 years.</p>
+
+<p>In any event I don't see why the anticipation of future coercion would make me act now unless I foresaw retroactive punishments or it being difficult to get a vaccine before doing something which requires it. Neither seems likely to me.</p>
