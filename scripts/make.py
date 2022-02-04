@@ -88,13 +88,21 @@ def addDerivedAttributes(index, depth=0):
             addDerivedAttributes(entry[1], depth+1)
     
 
-# From the data directory create an index of the cite. It'll be a list of tuples. Each with
+# From the data directory create an index of the site. It'll be a list of tuples. Each with
 # first parameter the name of the page or directory and second parameter another list if it
 # was a directory else the associated data object. The lists will be sorted by date if one is
 # present else alphabetically.
 def make_index(data_dir, relative_path):
     index = []
+    defaults = {}
+    new_relative_path = os.path.join(relative_path,'default.json')
+    default_file = os.path.join(data_dir,new_relative_path)
+    if os.path.exists(default_file):
+        with open(default_file) as data_file:
+            defaults = json.load(data_file)
     for page in os.listdir(os.path.join(data_dir,relative_path)):
+        if page=='default.json':
+            continue
         if page.find("swp")!=-1: # Should probably find a better way to avoid my swap files getting in the way. Maybe this isn't necessary anymore because my swps go in my vim/?
             continue
         new_relative_path = os.path.join(relative_path,page)
@@ -108,6 +116,9 @@ def make_index(data_dir, relative_path):
                 data["relative_path"] = os.path.join(relative_path, file_name(data))
                 data["comment_path"] = os.path.join(comment_dir, os.path.splitext(data["relative_path"])[0])
                 data["permalink"] = permalink(data)
+                for k,v in defaults.items():
+                    if k not in data.keys():
+                        data[k] = v
                 index+=[(page,data)]
     return index
 
