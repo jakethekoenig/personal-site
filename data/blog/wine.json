@@ -1,0 +1,12 @@
+{
+	"Title": "Wine and (my) Sleep",
+	"Author": "Jake Koenig",
+	"URL": "wine",
+	"Template": "blog.temp",
+	"Date": "2/4/2022",
+	"Comments": "blog/wine",
+	"Content": "blog/wine.html",
+	"Categories": ["science", "personal"],
+	"Summary": "I've been drinking a glass of wine a day and I take a brief look at the data of it's effect on my sleep."
+}
+	
