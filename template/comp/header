@@ -14,13 +14,24 @@
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <link rel="stylesheet" href="https://mtgify.org/dist/autocard.css" />
 <script>
-  MTGIFY_CONFIG = {
-	      linkSource: "scryfall",
-	          imgSource: "scryfall",
-		    }
-		    </script>
+MTGIFY_CONFIG = {
+linkSource: "scryfall",
+	    imgSource: "scryfall",
+}
+</script>
 <script src="https://mtgify.org/dist/autocard.js"></script>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://tappedout.net/tappedout.js"></script>
 <script src="<$Depth$>./js/filter.js"></script>
+
+<meta name="description" content="<$Summary$>">
+<meta property="og:title" content="<$Title$>">
+<meta property="og:description" content="<$Summary$>">
+<meta property="og:image" content="https://www.mywebsite.com/image.jpg">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:url" content="<$permalink$>">
+<link rel="canonical" href="<$permalink$>">
 </head>
