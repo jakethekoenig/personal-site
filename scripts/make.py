@@ -14,7 +14,10 @@ def replaceTags(template, data, index):
     content_tag_loc = template.find("<[Content]>")
     if content_tag_loc != -1:
         template = template[:content_tag_loc]+content+template[content_tag_loc+11:]
-    comments = generate_comments(data, index)
+    if "Commentsource" in data.keys() and data["Commentsource"] == "github":
+        comments = generate_comments(data, index)
+    else:
+        comments = "<:comp/commentiframe:>" # TODO: switch it around so this is what it is by default.
     comment_tag_loc = template.find("<[Comments]>")
     if comment_tag_loc != -1:
         template = template[:comment_tag_loc]+comments+template[comment_tag_loc+12:]
@@ -31,9 +34,11 @@ def replaceTags(template, data, index):
         if type(data[tag]) == type(""):
             template = template.replace("<$"+tag+"$>", data[tag])
     # Delete all tags with no corresponding data
-    while template.find("<$") != -1:
+    while template.find("<$") != -1 and template.find("$>") != -1:
         start = template.find("<$")
         end   = template.find("$>")+2
+        if start>end:
+            break
         template = template[:start] + template[end:]
 
     # delete optional tags
