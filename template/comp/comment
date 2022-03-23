@@ -1,0 +1,6 @@
+<div class="comment" style="margin-left:%dpx;">
+        <p> comment["Body"] </p>
+        <p> comment["Author"] </p>
+</div>
+<:comp/commentbox:>
+
