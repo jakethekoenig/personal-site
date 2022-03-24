@@ -24,18 +24,20 @@ site = "ja3k.com"
 
 
 def safe_args(event):
+    if len(event.keys())>10: # I may support other optional fields later. But I don't want people putting to much data in. TODO: rate limit.
+        return False
     if "text" not in event.keys() or "author" not in event.keys() or "url" not in event.keys():
-        print("unsafe")
+        print("unsafe 1")
         return False
-    if len(event["text"])>1500 or len(event["author"])>50:
-        print("unsafe")
-        return False
-    if "text" in event.keys() and len(event["text"])>200:
-        print("unsafe")
+    if len(event["text"])>3000 or len(event["author"])>50:
+        print("unsafe 2")
         return False
     if not (event["url"].startswith("comments/") and event["url"].endswith(".html")):
-        print("unsafe")
+        print("unsafe 3")
         return False
+    for k,v in event.items():
+        if len(v)>3000:
+            return False
     return True
 
 
