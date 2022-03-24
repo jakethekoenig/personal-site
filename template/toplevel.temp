@@ -2,6 +2,18 @@
 <html>
 <:comp/header:>
 <body>
+
+<script type=text/javascript>
+try {
+	if (window.self !== window.top) {
+		document.getElementsByTagName("body")[0].style.visibility = "hidden";
+	} else {
+		// console.log("not in iframe");
+	}
+} catch (e) {
+	document.getElementsByTagName("body")[0].style.visibility = "hidden";
+}
+</script>
 	<:comp/sidemenu:>
 	<div class="title">
 		<h1><$Title$></h1>
