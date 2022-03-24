@@ -17,6 +17,7 @@ def replaceTags(template, data, index):
     if "Commentsource" in data.keys() and data["Commentsource"] == "github":
         comments = generate_comments(data, index)
     else:
+        data["Commentsource"] = "lambda"
         comments = "<:comp/commentiframe:>" # TODO: switch it around so this is what it is by default.
     comment_tag_loc = template.find("<[Comments]>")
     if comment_tag_loc != -1:
@@ -91,7 +92,7 @@ def addDerivedAttributes(index, depth=0):
     for entry in index:
         if isinstance(entry[1], list):
             addDerivedAttributes(entry[1], depth+1)
-    
+
 
 # From the data directory create an index of the site. It'll be a list of tuples. Each with
 # first parameter the name of the page or directory and second parameter another list if it
