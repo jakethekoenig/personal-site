@@ -15,7 +15,7 @@
 	<div class="comments">
 	<div>
 		<textarea class="comment_box" placeholder="comment" id="comment" name="comment" rows="3"></textarea><br>
-		<textarea class="author_box" placeholder="name" id="username" name="username" rows="1"></textarea><br>
+		<input type="text" class="author_box" placeholder="name" id="username" name="username" rows="1"/><br>
 		<button class="submit_button" type="submit" value="Submit" data-comment-dir="<$comment_path$>">Submit</button>
 	</div>
 	<br>
