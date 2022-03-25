@@ -1,0 +1,25 @@
+<p>I had a lot of fun cooking up my <a href='https://ja3k.com/blog/comment.html' target='_blank'>last commenting system</a> which was half performance art and half actual functioning comment system. But it turns out:</p>
+<ul>
+<li>People don't want to make a github account and fork a repository to make a comment.</li>
+<li>It's not very safe to make processes which automatically merge things into your code base. Especially when it's automatically run.</li>
+</ul>
+
+<p>So I'm announcing my third, and hopefully final, commenting system. (My first being Disqus, which is fine, but I didn't want to pay and I didn't want to have ads)</p>
+
+<p>For a user it is quite simple:</p>
+
+<ul>
+<li>Enter your comment and user name. Plaintext only right now. 3000 character limit for comment, 50 for name. Feel free to stay anonymous.</li>
+<li>Click enter.</li>
+</ul>
+
+<p>There's no notion of replies, but feel free to @ people.</p>
+
+<p>Technically it is also quite simple:</p>
+<ul>
+<li>There is a AWS Lambda function with an API endpoint.</li>
+<li>Clicking Submit posts to the endpoint.</li>
+<li>The function ads your comment to an html doc in the website's s3 bucket.</li>
+<li>This other doc is embedded in an iframe in the main page.</li>
+</ul>
+<p>There were a few minor annoyances around iframes and AWS but overall pretty simple to set up.</p>
