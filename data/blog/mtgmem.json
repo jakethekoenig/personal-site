@@ -1,0 +1,10 @@
+{
+	"Title": "Some Favorite Tournament Magic Memories",
+	"Author": "Jake Koenig",
+	"URL": "mem",
+	"Template": "blog.temp",
+	"Date": "04/23/2022",
+	"Content": "blog/mtgmems.html",
+	"Categories": ["magic"],
+	"Summary": "Various Anecdotes from Magic Tournaments."
+}
