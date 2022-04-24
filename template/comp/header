@@ -34,6 +34,7 @@ linkSource: "scryfall",
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ja3k.com<$og_image$>">
 <meta property="og:url" content="<$permalink$>">
 <link rel="canonical" href="<$permalink$>">
 </head>
