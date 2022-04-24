@@ -29,7 +29,7 @@ linkSource: "scryfall",
 <meta name="description" content="<$Summary$>">
 <meta property="og:title" content="<$Title$>">
 <meta property="og:description" content="<$Summary$>">
-<meta property="og:image" content="<$og_image$>">
+<meta property="og:image" content="https://ja3k.com<$og_image$>">
 <meta name="og:image" content="<$og_image$>">
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="website">
