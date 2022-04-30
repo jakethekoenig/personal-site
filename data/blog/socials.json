@@ -1,0 +1,10 @@
+{
+	"Title": "Online Identity",
+	"Author": "Jake Koenig",
+	"URL": "onid",
+	"Template": "blog.temp",
+	"Date": "04/30/2022",
+	"Content": "blog/socials.html",
+	"Categories": ["philosophy", "technology"],
+	"Summary": "Thoughts on Internet Identity."
+}
