@@ -1,0 +1,81 @@
+<p>I've been thinking about the overlapping purposes of accounts and config files and dreamed up a TwitterRC [[I dreamed this up before Elon's takeover bid but please consider this.]]:</p>
+
+<code>
+muteAccount realDonaldTrump
+<br>
+muteAccount georgeTakai
+<br>
+muteAccount neilTyson
+<br>
+&#8230;
+<br>
+muteAccount badEconTakes [[There are a lot of accounts whose sole purpose seems to be to bring you something dumb. I guess I understand the enjoyment inherent in feeling superior to someone or something. But to deliberately seek it out and share it or bond over it with others seems &#8230; disgusting. Perhaps I should simply unfollow someone when they retweet an account like this since if they do it in one context they probably do it in a variety of ways and contexts which are hard to capture with a few mutes.]]
+<br>
+<br>
+muteWord trump
+<br>
+&#8230;
+<br>
+muteWord clippers
+<br>
+<br>
+colorscheme darkblue
+<br>
+set chronologicalorder
+<br>
+set nosuggestedinterests
+<br>
+set noinappbrowser
+<br>
+<br>
+plugin PoliticBlockList
+<br>
+plugin MuteCurrentThing
+<br>
+plugin PoliticMuteList
+<br>
+plugin SportsMuteList
+<br>
+<br>
+set number
+<br>
+set relativenumber
+<br>
+<br>
+follow paulg
+<br>
+follow zswitterion
+<br>
+&#8230;
+<br>
+follow Rhiannonbates14
+</code>
+
+<p>Of course such a thing will never exist because no one would use it. But it would have a number of benefits:</p>
+<ol>
+	<li> One could quickly shuffle around mute lists. Maybe you mostly don't want to see political posts but are curious during election years. In general one could quickly switch between content categories by switching up the follow and mute lists. Currently there seem to be two approaches to this: lists and multiple accounts.</li>
+	<li> One could share mute and block lists. One could import a plugin which mutes all US senator names. Or if one was Australian, all US states and cities. One could also share block lists of people your group considered bullies or just didn't want to interact with for whatever reason. Unlike a personal mute list where by the time you think to mute a given thing it's probably already annoyed you you could use a plugin that automatically mutes some category of new things. </li>
+	<li> The configuration could allow the user more control into how the algorithm weighted factors such as:
+	<ol>
+		<li> Recency</li>
+		<li> Total engagement</li>
+		<li> Predicted engagement</li>
+		<li> Mutuals</li>
+	</ol>
+	Even arbitrary tweet selection and display code could be made by the user if we defined a TwitterScript.</li>
+	<li> Could dissolve anon vs. real identity debates. As a joke I've often thought Twitter should have no character limit. But all tweets above a user set parameter, defaulting to 280, are muted by default. Well one could mute all accounts that haven't been verified. It wouldn't even require twitter's support. A third party service could provide verification and a "verified" list. One could even imagine competing standards of verification. I think there's a lot of charm in a space where famous celebrities, politicians and academics rub shoulders with real named nobodies and <a href='https://twitter.com/literalbanana'>literal bananas</a>. Some people disagree. With the right automated blocking (in the sense of a user automatically blocking a class of users, not a class of users being blocked from the platform) and authenticating tools there's no reason both groups can't be satisfied. Isn't the whole point of social media to be personalized to people's tastes?</li>
+</ul>
+<p>One could likely make a twitterrc capable of most of these things by using chrome with some chrome plugin instead of lobbying this behemoth incentivized to prioritize low agency over power users at every turn making this whole discussion an instance of <a href='https://ja3k.com/blog/onid#footer_4'>the law I made up last time</a>.</p>
+
+<h3>Other Programrcs</h3>
+
+<p>In general I wish lots of websites and applications had text based configuration. Especially ones I conceptually use across identities. For instance I use chrome for work and personal use. But as of 2022 the settings state of the browser is tied up in my Google account, a form of identity I'd rather keep separated from my work identity [[I did some digging in <code class='inline'>~/.config/google-chrome</code> to see if there was a de facto chromerc. I found some interesting files like <code class='inline'>ZxcvbnData/1/passwords.txt</code> and <code class='inline'>.config/google-chrome/Default/Bookmarks</code> but no easily editable file that just has all your settings.]]. Therefore when I start a new job I have to manually copy over the extensions and settings I like. It seems like it should be as easy as cloning my dotfiles repo.</p>
+
+<p>But maybe customization is bad? I've seen it said "learning to use a tiling window manager is essentially giving yourself a specific form of brain damage" because it'll make it very hard for you to use another computer [[It's difficult to avoid such brain damage. I've gotten very used to Ubuntu keyboard shortcuts and the only slightly different MacOS defaults are very painful for me.]]. Vim is very customizable but all the bells and whistles I've added to my vimrc had made it basically impossible for me to use vanilla vim. Though maybe that's just because vanilla vim is impossible to use. I'm increasingly sympathetic to the perspective: "why do you want to fiddle with your computer like a nerd? Just do what you actually want to get done".</p>
+
+<h3>Vim SSO</h3>
+<p>But maybe we should go the other way and vim should have accounts to manage your settings. Someone send this mock up to Bram Moolenaar:</p>
+
+<div class="portraitcontainer" >
+	<img class="landscape" src="../asset/pic/vimsso.png">
+</div>

@@ -181,6 +181,12 @@ h1.source {
 	margin-left:0;
 	margin-right:0;
 }
+
+.subheading {
+	font-weight: normal;
+
+}
+
 .main_content iframe {
 	margin-left:auto;
 	margin-right:auto;
