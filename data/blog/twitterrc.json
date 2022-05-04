@@ -1,0 +1,12 @@
+{
+	"Title": "TwitterRCs and Vim SSO",
+	"Subtitle": "Visions of Impossible Futures",
+	"Author": "Jake Koenig",
+	"URL": "twitterrc",
+	"Template": "blog.temp",
+	"Date": "05/04/2022",
+	"og_image": "/asset/pic/vimsso.png",
+	"Content": "blog/twitterrc.html",
+	"Categories": ["technology"],
+	"Summary": "What if your twitter had an rc file? What if you needed to SSO onto vim?"
+}
