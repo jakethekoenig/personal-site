@@ -1,0 +1,12 @@
+{
+	"Title": "Cows are Bigger than Chickens",
+	"Subtitle": "And its implications",
+	"Author": "Jake Koenig",
+	"URL": "cow",
+	"Template": "blog.temp",
+	"Date": "05/15/2022",
+	"og_image": "/asset/pic/cow.jpg",
+	"Content": "blog/chicken.html",
+	"Categories": ["philosophy"],
+	"Summary": "A cow is bigger than a chicken. Yes this means they contain more meals but surely it also means they contain more of that ineffable joy and zest which make life worth living."
+}
