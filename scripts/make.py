@@ -68,9 +68,7 @@ def make_index(data_dir, relative_path):
         with open(default_file) as data_file:
             defaults = json.load(data_file)
     for page in os.listdir(os.path.join(data_dir,relative_path)):
-        if page=='default.json':
-            continue
-        if page.find("swp")!=-1: # Should probably find a better way to avoid my swap files getting in the way. Maybe this isn't necessary anymore because my swps go in my vim/?
+        if page=='default.json' or  page.find("swp")!=-1:
             continue
         new_relative_path = os.path.join(relative_path,page)
         full_path = os.path.join(data_dir,new_relative_path)
