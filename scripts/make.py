@@ -55,6 +55,8 @@ def replaceTags(template, data, index):
     return template
 
 
+# TODO: fill in content with same named file.
+# TODO: inherit properties from default.json. Have rhem inherit
 # There are some features of files in the index which are implicit in their relative position
 # in the index so not manually added to the files. They are added in this method.
 # The current list of such attributes is:
@@ -65,7 +67,7 @@ def replaceTags(template, data, index):
 #              pointed to have their attribute "index" filled in with a back reference. Then
 #              index is updated to be the actual list of files instead of a pointer.
 # TODO: Should the url bookkeeping be done here?
-def addDerivedAttributes(index, depth=0):
+def addDerivedAttributes(index):
     sortByDate = False
     for entry in index:
         data = entry[1]
@@ -76,22 +78,11 @@ def addDerivedAttributes(index, depth=0):
         if "Indexes" in data:
             for item in dict(index)[data["Indexes"]]: #TODO: handle case where index isn't one level up from files.
                 item[1]["Index"] = relative_path(data)
-        data["Depth"] = "../"*depth
     if sortByDate: #TODO: are there other cases where content should be sorted?
         index.sort(key=lambda t: datetime.strptime(t[1]["Date"], "%m/%d/%Y"), reverse=True)
-    if len(index)>0 and "Index" in index[0][1]:
-        for i,blog in enumerate(index):
-            if i!=0:
-                blog[1]["next"] = relative_path(index[i-1][1])
-            else:
-                blog[1]["next"] = blog[1]["Index"]
-            if i+1<len(index):
-                blog[1]["previous"] = relative_path(index[i+1][1])
-            else:
-                blog[1]["previous"] = blog[1]["Index"]
     for entry in index:
         if isinstance(entry[1], list):
-            addDerivedAttributes(entry[1], depth+1)
+            addDerivedAttributes(entry[1])
 
 
 # From the data directory create an index of the site. It'll be a list of tuples. Each with
