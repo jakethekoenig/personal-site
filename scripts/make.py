@@ -55,36 +55,6 @@ def replaceTags(template, data, index):
     return template
 
 
-# TODO: fill in content with same named file.
-# TODO: inherit properties from default.json. Have rhem inherit
-# There are some features of files in the index which are implicit in their relative position
-# in the index so not manually added to the files. They are added in this method.
-# The current list of such attributes is:
-# * depth:     a string which gives a relative path to the top level i.e. "../../"
-# * next:      the next file. Chronologically if 'Date' is present else alphabetically.
-# * previous:  the previous file. Chronologically if 'Date' is present else alphabetically.
-# * index:     If there is a file with attribute "indexes" then the files in the directory
-#              pointed to have their attribute "index" filled in with a back reference. Then
-#              index is updated to be the actual list of files instead of a pointer.
-# TODO: Should the url bookkeeping be done here?
-def addDerivedAttributes(index):
-    sortByDate = False
-    for entry in index:
-        data = entry[1]
-        if isinstance(data, list):
-            continue
-        if "Date" in data:
-            sortByDate = True
-        if "Indexes" in data:
-            for item in dict(index)[data["Indexes"]]: #TODO: handle case where index isn't one level up from files.
-                item[1]["Index"] = relative_path(data)
-    if sortByDate: #TODO: are there other cases where content should be sorted?
-        index.sort(key=lambda t: datetime.strptime(t[1]["Date"], "%m/%d/%Y"), reverse=True)
-    for entry in index:
-        if isinstance(entry[1], list):
-            addDerivedAttributes(entry[1])
-
-
 # From the data directory create an index of the site. It'll be a list of tuples. Each with
 # first parameter the name of the page or directory and second parameter another list if it
 # was a directory else the associated data object. The lists will be sorted by date if one is
@@ -117,6 +87,7 @@ def make_index(data_dir, relative_path):
                     if k not in data.keys():
                         data[k] = v
                 index+=[(page,data)]
+    index.sort(key=lambda t: datetime.strptime(t[1]["Date"] if "Date" in t[1] else "1/1/2000", "%m/%d/%Y"), reverse=True)
     return index
 
 
@@ -145,5 +116,4 @@ content_dir  = "content/"
 comment_dir  = "comments/"
 live_dir     = "../live"
 index = make_index(data_dir, "")
-addDerivedAttributes(index)
 make_site(live_dir, "", index, index)
