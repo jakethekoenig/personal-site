@@ -20,7 +20,7 @@
 	</div>
 	<br>
 	<[Comments]>
-	<script src="<$Depth$>./js/comment.js"></script>
+	<script src="/js/comment.js"></script>
 
 	</div>
 	</div>
