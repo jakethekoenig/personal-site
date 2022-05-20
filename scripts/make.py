@@ -59,26 +59,23 @@ def replaceTags(template, data, index):
 # first parameter the name of the page or directory and second parameter another list if it
 # was a directory else the associated data object. The lists will be sorted by date if one is
 # present else alphabetically.
-def make_index(data_dir, relative_path):
+def make_index(index_path):
     index = []
     defaults = {}
-    new_relative_path = os.path.join(relative_path,'default.json')
-    default_file = os.path.join(data_dir,new_relative_path)
+    default_file = os.path.join(index_path, 'default.json')
     if os.path.exists(default_file):
         with open(default_file) as data_file:
             defaults = json.load(data_file)
-    for page in os.listdir(os.path.join(data_dir,relative_path)):
+    for page in os.listdir(index_path):
         if page=='default.json' or  page.find("swp")!=-1:
             continue
-        new_relative_path = os.path.join(relative_path,page)
-        full_path = os.path.join(data_dir,new_relative_path)
-        if os.path.isdir(full_path):
-            index+=[(page, make_index(data_dir,new_relative_path))]
+        new_index_path = os.path.join(index_path,page)
+        if os.path.isdir(new_index_path):
+            index+=[(page, make_index(new_index_path))]
         else:
-            with open(full_path) as data_file:
+            with open(new_index_path) as data_file:
                 data = json.load(data_file)
-                # TODO: is this a good idea? How do I want this data connected up?
-                data["relative_path"] = os.path.join(relative_path, file_name(data))
+                data["relative_path"] = os.path.join(index_path[len(data_dir)+1:], file_name(data))
                 data["comment_path"] = os.path.join(comment_dir, os.path.splitext(data["relative_path"])[0])
                 data["permalink"] = permalink(data)
                 for k,v in defaults.items():
@@ -113,5 +110,5 @@ template_dir = "template/"
 content_dir  = "content/"
 comment_dir  = "comments/"
 live_dir     = "../live"
-index = make_index(data_dir, "")
+index = make_index(data_dir)
 make_site(live_dir, "", index, index)
