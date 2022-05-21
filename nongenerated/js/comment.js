@@ -30,19 +30,29 @@ function escapeHtml(unsafe)
 		.replace(/'/g, "&#039;");
 }
 
-function hitLambda() {
-	var href = window.location.href;
+function hitLambda() { var href = window.location.href;
 	if (href.indexOf("com")!=-1) {
-		var loc = href.substring(href.indexOf("com")+3); //TODO: should work on test too.
+		var loc = href.substring(href.indexOf("com")+3);
 	} else {
-		var loc = href.substring(href.indexOf("live/")+4);
+		if (href.indexOf("localhost")!=-1) {
+			var loc = href.substring(14);
+		} else {
+			var loc = href.substring(href.indexOf("live/")+4);
+		}
 	}
 	if (!loc.endsWith('.html')) {
 		loc = loc + '.html'
 	}
-	loc = 'comments' + loc
-	const comment = document.querySelector('.comment_box').value;
-	const author = document.querySelector('.author_box').value;
+	loc = 'comments' + loc;
+	var comment_box = document.querySelector('.comment_box');
+	var author_box = document.querySelector('.author_box');
+	const comment = comment_box.value;
+	if (comment.length < 3) {
+		return;
+	}
+	const author = author_box.value;
+	comment_box.value = '';
+	author_box.value = '';
 	const data = {
 		text: comment,
 		author: author,
