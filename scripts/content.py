@@ -79,11 +79,10 @@ def md2html(content):
         elif tokens[0][:2] == '![':
             tokens = re.split(' |\[|\]|\!|\(|\)', line)
             tokens = [t for t in tokens if len(t)>0]
-            print(tokens)
             source = tokens[1]
             alt = tokens[0]
             title = tokens[2]
-            source += wrap('p', '<img src="%s" alt="%s" title="%s"/>'%(source, alt, title))
+            ans += wrap('p', '<img src="%s" alt="%s" title="%s"/>'%(source, alt, title))
         elif tokens[0] == '```':
             codemode = not codemode
             if codemode:
