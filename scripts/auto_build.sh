@@ -24,12 +24,8 @@ do
 	python3 $SCRIPT_DIR/local_server.py > /dev/null &
 	inotifywait -r --event modify $watch
 	kill %1
+	wait %1
 	cd $RUN_DIR
-	#TODO: fit the auto_card script into the rest of the build process.
-	#python3 scripts/my_auto_card.py temp.html content/blog/khm.html
 	$SCRIPT_DIR/build_live.sh
 	cd $LIVE
-	MYWINDOW=$(xdotool getactivewindow)
-	xdotool search --onlyvisible --class Chrome windowfocus key ctrl+r
-	xdotool windowfocus --sync ${MYWINDOW}
 done
