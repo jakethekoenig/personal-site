@@ -86,11 +86,11 @@ def md2html(content):
         elif tokens[0] == '```':
             codemode = not codemode
             if codemode:
-                ans+='<code>\n'
+                ans+='<pre><code>'
             else:
-                ans+='</code>\n'
+                ans+='</code></pre>\n'
         elif codemode:
-            ans += line+'<br>\n'
+            ans += line+'\n'
         else:
             ans+=wrap('p',replacelinks(line))+'\n'
     return ans
