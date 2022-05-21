@@ -11,25 +11,22 @@ def replaceTags(template, data, index):
     # TODO: Make this method robust to tags inside tags
     # replace content
     content = generate_content(data, index)
-    content_tag_loc = template.find("<[Content]>")
-    if content_tag_loc != -1:
-        template = template[:content_tag_loc]+content+template[content_tag_loc+11:]
+    template = template.replace("<[Content]>", content)
     if "Commentsource" in data.keys() and data["Commentsource"] == "github":
         comments = generate_comments(data, index)
     else:
         data["Commentsource"] = "lambda"
         comments = "<:comp/commentiframe:>" # TODO: switch it around so this is what it is by default.
-    comment_tag_loc = template.find("<[Comments]>")
-    if comment_tag_loc != -1:
-        template = template[:comment_tag_loc]+comments+template[comment_tag_loc+12:]
+    template = template.replace("<[Comments]>", comments)
     # replace components
     while template.find("<:") != -1:
         start = template.find("<:")
         end   = template.find(":>")+2
-        comp_path = template[start+2:end-2]
+        tag = template[start:end]
+        comp_path = tag[2:-2]
         with open(template_dir+comp_path) as c:
             comp = c.read()
-        template = template[:start] + comp + template[end:]
+        template = template.replace(tag, comp)
     # replace tags
     for tag in data.keys():
         if type(data[tag]) == type(""):
@@ -41,7 +38,6 @@ def replaceTags(template, data, index):
         if start>end:
             break
         template = template[:start] + template[end:]
-
     # delete optional tags
     while template.find("<??") != -1:
         start = template.find("<??")
