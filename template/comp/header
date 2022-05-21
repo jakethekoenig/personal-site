@@ -26,6 +26,11 @@ linkSource: "scryfall",
 <script src="https://tappedout.net/tappedout.js"></script>
 <script src="/js/filter.js"></script>
 
+<link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+
 <meta name="description" content="<$Summary$>">
 <meta property="og:title" content="<$Title$>">
 <meta property="og:description" content="<$Summary$>">
