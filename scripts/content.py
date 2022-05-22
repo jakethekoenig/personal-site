@@ -30,12 +30,12 @@ def get_content(data, index, content_dir):
         fp,pathname,desc = find_module(name, [dire])
         mod = load_module(name,fp,pathname,desc)
         return mod.generate(data, index)
-    elif ext==".md":
-        with open(content_dir + path) as c:
-            return md2html(c.read())
-    else: # raw:
-        with open(content_dir + path) as c:
-            return c.read()
+    else:
+        with open(os.path.join(content_dir, path)) as c:
+            if ext==".md":
+                return md2html(c.read())
+            else: # raw:
+                return c.read()
 
 
 def wrap(t, c, a=None):

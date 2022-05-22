@@ -2,6 +2,7 @@ import json
 import os
 from datetime import datetime
 from url_tools import relative_path, file_name, permalink
+from config import default_config as config
 from content import generate_content, generate_comments
 
 # From a websites template and its specified data (which has a link to the content)
@@ -10,7 +11,7 @@ def replaceTags(template, data, index):
     tags = { "$", "[", ":", "??" }
     # TODO: Make this method robust to tags inside tags
     # replace content
-    content = generate_content(data, index)
+    content = generate_content(data, index, config["content"])
     template = template.replace("<[Content]>", content)
     if "Commentsource" in data.keys() and data["Commentsource"] == "github":
         comments = generate_comments(data, index)
@@ -24,7 +25,7 @@ def replaceTags(template, data, index):
         end   = template.find(":>")+2
         tag = template[start:end]
         comp_path = tag[2:-2]
-        with open(template_dir+comp_path) as c:
+        with open(os.path.join(config["templates"],comp_path)) as c:
             comp = c.read()
         template = template.replace(tag, comp)
     # replace tags
@@ -71,8 +72,8 @@ def make_index(index_path):
         else:
             with open(new_index_path) as data_file:
                 data = json.load(data_file)
-                data["relative_path"] = os.path.join(index_path[len(data_dir)+1:], file_name(data))
-                data["comment_path"] = os.path.join(comment_dir, os.path.splitext(data["relative_path"])[0])
+                data["relative_path"] = os.path.join(index_path[len(config["pages"])+1:], file_name(data))
+                data["comment_path"] = os.path.join("comments/", os.path.splitext(data["relative_path"])[0])
                 data["permalink"] = permalink(data)
                 for k,v in defaults.items():
                     if k not in data.keys():
@@ -93,18 +94,15 @@ def make_site(target_dir, cur_path, index, global_index):
 
 
 def make_page(path, data, index):
-    with open(template_dir + data["Template"], 'r') as f:
+    with open(os.path.join(config["templates"], data["Template"]), 'r') as f:
         temp = f.read()
     with open(path, "w") as out:
         out.write(replaceTags(temp, data, index))
 
 
-# Hard Coded Locations of data, templates and content. Relative to src/
-# TODO: make them not relative?
-data_dir     = "data"
-template_dir = "template/"
-content_dir  = "content/"
-comment_dir  = "comments/"
-live_dir     = "../live"
-index = make_index(data_dir)
-make_site(live_dir, "", index, index)
+if os.path.exists("config.json"):
+    with open("config.json") as f:
+        config.update(json.load(f))
+
+index = make_index(config["pages"])
+make_site(config["live"], "", index, index)
