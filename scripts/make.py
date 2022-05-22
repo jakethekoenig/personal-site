@@ -56,7 +56,7 @@ def replaceTags(template, data, index):
 # first parameter the name of the page or directory and second parameter another list if it
 # was a directory else the associated data object. The lists will be sorted by date if one is
 # present else alphabetically.
-def make_index(index_path):
+def make_index(index_path="."):
     index = []
     defaults = {}
     default_file = os.path.join(index_path, 'default.json')
@@ -72,7 +72,7 @@ def make_index(index_path):
         else:
             with open(new_index_path) as data_file:
                 data = json.load(data_file)
-                data["relative_path"] = os.path.join(index_path[len(config["pages"])+1:], file_name(data))
+                data["relative_path"] = os.path.join(index_path, file_name(data))
                 data["comment_path"] = os.path.join("comments/", os.path.splitext(data["relative_path"])[0])
                 data["permalink"] = permalink(data)
                 for k,v in defaults.items():
@@ -83,12 +83,12 @@ def make_index(index_path):
     return index
 
 
-def make_site(target_dir, cur_path, index, global_index):
+def make_site(target_dir, index, global_index, cur_path=""):
     for (path, data) in index:
         if isinstance(data, list):
             nex = os.path.join(cur_path, path)
             os.mkdir(os.path.join(target_dir,nex))
-            make_site(target_dir, nex, data, index)
+            make_site(target_dir, data, index, nex)
         else:
             make_page(os.path.join(target_dir, relative_path(data)), data, index)
 
@@ -104,5 +104,8 @@ if os.path.exists("config.json"):
     with open("config.json") as f:
         config.update(json.load(f))
 
-index = make_index(config["pages"])
-make_site(config["live"], "", index, index)
+src_dir = os.getcwd()
+os.chdir(config["pages"])
+index = make_index()
+os.chdir(src_dir)
+make_site(config["live"], index, index)
