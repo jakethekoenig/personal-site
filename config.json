@@ -1,0 +1,6 @@
+{
+	"baseurl": "ja3k.com",
+	"static": "nongenerated",
+	"templates": "template",
+	"pages": "data"
+}
