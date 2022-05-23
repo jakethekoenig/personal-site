@@ -1,7 +1,6 @@
 import json
 import os
 from datetime import datetime
-from url_tools import relative_path, file_name, permalink
 from config import default_config as config
 from content import generate_content, generate_comments
 
@@ -51,6 +50,16 @@ def replaceTags(template, data, index):
             template = template[:start]+template[mid+3:end-3]+template[end:]
     return template
 
+# More complicated than it should be for legacy reasons
+def file_name(data):
+    if "URL" in data:
+        url = data["URL"]
+    else:
+        url = data["Title"].replace(" ","").replace(",","")
+    if "." not in url:
+        url = url+".html"
+    return url
+
 
 # From the data directory create an index of the site. It'll be a list of tuples. Each with
 # first parameter the name of the page or directory and second parameter another list if it
@@ -74,7 +83,7 @@ def make_index(index_path="."):
                 data = json.load(data_file)
                 data["relative_path"] = os.path.join(index_path, file_name(data))
                 data["comment_path"] = os.path.join("comments/", os.path.splitext(data["relative_path"])[0])
-                data["permalink"] = permalink(data)
+                data["permalink"] = os.path.join(config.get("base_url", "/"), data["relative_path"])
                 for k,v in defaults.items():
                     if k not in data.keys():
                         data[k] = v
@@ -90,7 +99,7 @@ def make_site(target_dir, index, global_index, cur_path=""):
             os.mkdir(os.path.join(target_dir,nex))
             make_site(target_dir, data, index, nex)
         else:
-            make_page(os.path.join(target_dir, relative_path(data)), data, index)
+            make_page(os.path.join(target_dir, data["relative_path"], data, index)
 
 
 def make_page(path, data, index):

@@ -3,8 +3,6 @@ from my_auto_card import insert_autocard
 import json
 import os
 import re
-from url_tools import relative_path, file_name
-
 
 def generate_content(data, index, content_dir="content/"):
     content = get_content(data, index, content_dir)
