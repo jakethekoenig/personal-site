@@ -99,7 +99,7 @@ def make_site(target_dir, index, global_index, cur_path=""):
             os.mkdir(os.path.join(target_dir,nex))
             make_site(target_dir, data, index, nex)
         else:
-            make_page(os.path.join(target_dir, data["relative_path"], data, index)
+            make_page(os.path.join(target_dir, data["relative_path"]), data, index)
 
 
 def make_page(path, data, index):
