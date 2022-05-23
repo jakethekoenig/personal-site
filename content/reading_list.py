@@ -1,10 +1,9 @@
-from url_tools import relative_path
 from content import generate_content
 
 def entry_comp(entry, index):
     cats = entryCategories(entry)
     ans = "<div>"
-    ans += "<p>" + "<a href='"+relative_path(entry)+"'>" + entry["Date"]+"</a>: " + entry["Title"] + "</p>" # TODO: make title a link to a standalone page? Work out best css classes.
+    ans += "<p>" + "<a href='"+entry["relative_path"]+"'>" + entry["Date"]+"</a>: " + entry["Title"] + "</p>" # TODO: make title a link to a standalone page? Work out best css classes.
     ans += "<div>" + generate_content(entry, index) + "</div>"
     return ans + "</div>"
 
