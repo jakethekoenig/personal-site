@@ -67,8 +67,12 @@ def md2html(content):
     ans = ""
     lines = content.split('\n')
     codemode=False
+    listmode=False
     for line in lines:
         tokens = line.split()
+        if listmode and (len(tokens)==0 or tokens[0] in {'-', '*', '+'}):
+            listmode=False
+            ans+= '</ul>'
         if len(tokens)==0:
             continue
         depth = len(tokens[0])
@@ -89,6 +93,11 @@ def md2html(content):
                 ans+='</code></pre>\n'
         elif codemode:
             ans += line+'\n'
+        elif tokens[0] in {'-', '*', '+'}:
+            if not listmode:
+                listmode=True
+                ans+= '<ul>'
+            ans+=wrap('li',replacelinks(line[1:].strip()))+'\n'
         else:
             ans+=wrap('p',replacelinks(line))+'\n'
     return ans
