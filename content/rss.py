@@ -1,4 +1,3 @@
-from url_tools import permalink
 from datetime import datetime
 
 def generate(data, index):
@@ -11,8 +10,8 @@ def generate(data, index):
 def rss_entry(blog):
     ans = "<item>"
     ans+= "<title>"+blog["Title"]+"</title>"
-    ans+= "<link>"+permalink(blog)+"</link>"
-    ans+= "<guid isPermaLink=\"true\">"+permalink(blog)+"</guid>"
+    ans+= "<link>"+blog["permalink"]+"</link>"
+    ans+= "<guid isPermaLink=\"true\">"+blog["permalink"]+"</guid>"
     if "Summary" in blog:
         ans+= "<description>"+blog["Summary"]+"</description>"
     ans += "<pubDate>" + datetime.strptime(blog["Date"],"%m/%d/%Y").strftime("%a, %d %b %Y %H:%M:%S %z EST") + "</pubDate>"
