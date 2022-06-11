@@ -1,0 +1,11 @@
+{
+	"Title": "Vim Outline Release",
+	"Author": "Jake Koenig",
+	"URL": "vimoutline",
+	"Template": "blog.temp",
+	"Date": "06/11/2022",
+	"og_image": "/asset/pic/vimoutline.png",
+	"Content": "blog/vimoutline.md",
+	"Categories": ["tech"],
+	"Summary": "I made a Workflowy inspired Vim extension"
+}
