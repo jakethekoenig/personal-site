@@ -84,7 +84,7 @@ def make_index(index_path="."):
                 data = json.load(data_file)
                 data["relative_path"] = os.path.join(index_path, file_name(data))
                 data["comment_path"] = os.path.join("comments/", os.path.splitext(data["relative_path"])[0])
-                data["permalink"] = os.path.join(config.get("base_url", "/"), data["relative_path"])
+                data["permalink"] = os.path.join(config.get("base_url", "/"), data["relative_path"]).replace("/./","/")
                 data1 = dict(defaults)
                 data1.update(data)
                 index+=[(page,data1)]
