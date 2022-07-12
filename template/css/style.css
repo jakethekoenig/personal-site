@@ -213,6 +213,7 @@ p {
 	width: 12%;
 	max-width: 20px;
 	padding: 2% 2% 3% 2%;
+    aspect-ratio: 1;
 }
 .icon:hover {
 	background-color: LightGrey;
