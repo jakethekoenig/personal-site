@@ -2,24 +2,28 @@
 <title><$Title$></title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link href="/css/style.css?v=1.42" type="text/css" rel="stylesheet">
-<link href="/css/ind.css" type="text/css" rel="stylesheet">
-<link href="/css/exp.css" type="text/css" rel="stylesheet">
-<link href="/css/jelly.css" type="text/css" rel="stylesheet">
 <link rel="shortcut icon" href="/asset/favicon.png" />
-<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 <link rel="alternate" type="application/rss+xml" title="ja3k" href="/feed.xml" />
 
-<script data-ad-client="ca-pub-3550373617904036" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script src="/js/onscroll.js defer" defer></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<script src="/js/filter.js" defer></script>
+<style>
+<:css/style.css:>
+<:css/ind.css:>
+<:css/exp.css:>
+<:css/jelly.css:>
+</style>
 
-<link rel="stylesheet"nhref="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
-<script>hljs.highlightAll();</script>
+<script>
+<:js/onscroll.js:>
+<:js/filter.js:>
+</script>
+
+<script data-ad-client="ca-pub-3550373617904036" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css" defer>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js" defer></script>
+<script src="/js/highlighter.js" defer></script>
 
 <meta name="description" content="<$Summary$>">
 <meta property="og:title" content="<$Title$>">
