@@ -5,7 +5,7 @@ import scrython
 #TODO: consider organizing directory by set?
 def file_name(s):
     s = s.replace("'","").replace(",","").replace(" ","").replace('/','-')
-    return "<$Depth$>./asset/cards/" + s.lower() + ".png"
+    return "/asset/cards/" + s.lower() + ".png"
 
 def local_file_name(s):
     s = s.replace("'","").replace(",","").replace(" ","").replace('/','-')
