@@ -10,6 +10,7 @@
 <:css/ind.css:>
 <:css/exp.css:>
 <:css/jelly.css:>
+<:css/highlight.css:>
 </style>
 
 <script>
@@ -21,8 +22,7 @@
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
 
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css" defer>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js" defer></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js" defer></script>
 <script src="/js/highlighter.js" defer></script>
 
 <meta name="description" content="<$Summary$>">
