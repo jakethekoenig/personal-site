@@ -5,7 +5,7 @@ def blogLi(blog):
         ans += "<p>" + blog["Summary"] + "</p>"
         ans += "</div></a></li>"
         return ans
-    return "<a href='" + blog["relative_path"] + "' class='blogstub "+cats+ "'><li><h2>"+ blog["Title"] +"</h2></li></a>"
+    return "<li><a href='" + blog["relative_path"] + "' class='blogstub "+cats+ "'><h2>"+ blog["Title"] +"</h2></a></li>"
 
 def blogCategories(blog):
     if "Categories" in blog:
