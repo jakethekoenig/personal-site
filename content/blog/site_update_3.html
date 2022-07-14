@@ -25,7 +25,7 @@
 
 <p>Somehow it's the case that literally every website is supposed to have the following line in it's header.</p>
 
-<code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>
+<pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></pre>
 
 <p>No one told me! That's why my website always looked shitty on mobile and I felt like I had to play with the font sizes and line spacing to make it reasonable to read. Anyway web development is terrible. Maybe just software development or the mere use of computers. All these minefields. Everything is broken. </p>
 
@@ -49,7 +49,7 @@
 
 <p>I added a few third party scripts to add some functionality. I included the mathjax script so I can make fun and cool equations. You can see that in <a href="https://ja3k.com/blog/count">Counting things</a>. I need to get around to statically generating the equations to avoid the ugly jumping around after the DOM is finished loading. I have the following cryptic line of code (which I think I stole from <a href="gwern.net">Gwern</a>) which I think should do it once I get around to adding it to my build process:</p>
 
-<code>cat personal-site/live/blog/Odlyzko.html | ./node_modules/mathjax-node-page/bin/mjpage --output CommonHTML > test.html</code>
+<pre><code>cat personal-site/live/blog/Odlyzko.html | ./node_modules/mathjax-node-page/bin/mjpage --output CommonHTML > test.html</code></pre>
 
 <p>Getting latex integration into my site was surprisingly difficult. Somehow when I google 'best way to put math notation in html' the top <a href='https://www.w3.org/MarkUp/HTMLPlus/htmlplus_45.html'>link</a> is from 1993 and doesn't seem to work anymore (I feel like I should way back machine this but if it made it to 2020 I'm sure it will never die). MathML is another thing that I saw in some links which seems to not work in Chrome despite maybe being a web standard? But somehow mathjax works and wasn't too painful.</p>
 

@@ -18,32 +18,31 @@
 <p>You can see in my circuit I have a blue, yellow and red LED. That's because I originally had the idea that I wanted to be able to tell the time with hour precision starting at 4 am. But I ended up not really wanting that feature so only the red light is used. My light alarm program turns on the LEDs when the button is pressed. This is just a handy way for me to see if the program is running.</p>
 <h2>Code</h2>
 <p>The code is also really simple. </p>
-<code id="alarm_code">
-import RPi.GPIO as GPIO<br>
-import time<br>
-from datetime import datetime<br>
-<br>
-GPIO.setwarnings(False)<br>
-GPIO.setmode(GPIO.BCM)<br>
-GPIO.setup(18, GPIO.OUT)<br>
-GPIO.setup(16, GPIO.IN)<br>
-<br>
-GPIO.output(18, False)<br>
-<br>
-while True:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;# Turn on the light of the button is pressed<br>
-&nbsp;&nbsp;&nbsp;&nbsp;if not GPIO.input(16):<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GPIO.output(18, True)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue<br>
-&nbsp;&nbsp;&nbsp;&nbsp;now = datetime.now()<br>
-&nbsp;&nbsp;&nbsp;&nbsp;h = int(now.strftime("%H"))<br>
-&nbsp;&nbsp;&nbsp;&nbsp;# Wake up call! Change 7 and 5 to match your wake up time.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;if 7 > h >= 5:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GPIO.output(18, True)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;else:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GPIO.output(18, False)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;time.sleep(1)<br>
-</code>
+<pre><code id="alarm_code">import RPi.GPIO as GPIO
+import time
+from datetime import datetime
+
+GPIO.setwarnings(False)
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(18, GPIO.OUT)
+GPIO.setup(16, GPIO.IN)
+
+GPIO.output(18, False)
+
+while True:
+    # Turn on the light of the button is pressed
+    if not GPIO.input(16):
+        GPIO.output(18, True)
+        continue
+    now = datetime.now()
+    h = int(now.strftime("%H"))
+    # Wake up call! Change 7 and 5 to match your wake up time.
+    if 7 > h >= 5:
+        GPIO.output(18, True)
+    else:
+        GPIO.output(18, False)
+    time.sleep(1)
+</code></pre>
 <p>Simply adjust 5 and 7 to the times you would like to wake up at. Also adjust 18 and 16 to the Raspberry Pi ports you are using. </p>
 <h2>Remote Setup</h2>
 <p>If you're going to use the Raspberry Pi as an alarm clock you're probably going to want a way to remotely execute code instead of bringing it to a monitor or visa versa every time you want to try a modification of the program. So in this section I'll walk you through that by sending you to four different blogs.</p>
@@ -51,14 +50,14 @@ while True:<br>
 <li>First you need to set a password on your Raspberry Pi. I couldn't find an easier way to do it than this <a href="https://howtoraspberrypi.com/recover-password-raspberry-pi/">blog</a> describes. Unfortunately it's sort of involved, requiring manually editing the SD card. </li>
 <li>Next you'll want to get the IP address of your Raspberry Pi. You can see how to do that <a href="https://howchoo.com/g/mjk3m2e2njy/find-your-raspberry-pis-ip-address">here</a></li>
 <li>IP address and password in hand you can ssh into your pi with,
-	<code>ssh pi@[ip]</code>
+    <pre><code>ssh pi@[ip]</code></pre>
 and then enter your password when prompted.</li>
 <li>You're all set to start editing and running your alarm clock script.</li>
 </ol>
 
 <p>One thing you're probably going to want to do before leaving the pi in your bedroom while you sleep is turn off the red light that shines when it's on. You can see in my image of the alarm clock that I had that part of the pi taped up. But turning it off is even better. Simply add the following line to the file '/etc/crontab':</p>
-<code>@reboot root echo 0 > /sys/class/leds/led1/brightness</code>
+<pre><code>@reboot root echo 0 > /sys/class/leds/led1/brightness</code></pre>
 
 <h2>What else should I do with my Raspberry Pi?</h2>
 <p>I'm curious if anyone has other cool ideas for things I could do with my raspberry pi. I think one of the great tragedies of my life (and apparently everyone else's) is that I have access to this incredibly powerful computing device and a network which connects the majority of people on the planet. And yet I can't think of a single creative thing to do with these super powers. I fall into the same routines and it seems like these things use me more than the other way around.</p>
-<p>Now that in the raspberry pi I have a computer that's always on and connected, unlike my laptop which I carry around and what not, maybe I'll work out how to host this site myself instead of using AWS. Maybe Now that I have these LEDs and resistors I can make a cool light display. That seems a little less impressive than just what I can do with a screen though. So if anyone knows any cool thing that I could do to justify owning this amazing piece of technology, please let me know. And in the mean time enjoy your light alarm clocks. Even though there's no longer any reason to wake up at any given time.</p>
+<p>Now that in the raspberry pi I have a computer that's always on and connected, unlike my laptop which I carry around and what not, maybe I'll work out how to host this site myself instead of using AWS. Maybe now that I have these LEDs and resistors I can make a cool light display. That seems a little less impressive than just what I can do with a screen though. So if anyone knows any cool thing that I could do to justify owning this amazing piece of technology, please let me know. And in the mean time enjoy your light alarm clocks. Even though there's no longer any reason to wake up at any given time.</p>
