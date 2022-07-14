@@ -11,34 +11,30 @@
 <p>Luckily for me I had some hardware lying around from past projects. I have a 1 TB hard drive I got when I was thinking about becoming a <a href="https://www.twitch.tv/ja3k">streamer</a> (I streamed <a href="agar.io" target="_blank">agar.io</a> once and mtgo once) and I have a raspberry pi from when my aforementioned laptop broke and I thought it might be practical to replace my laptop with it (not the craziest idea, but there were a few things it couldn't quite handle. And carrying a monitor around turned out to be impractical. I guess there's a reason laptops exist). The pi is actually a recurring character in my blog. You can read about it's previous job in my <a href="https://ja3k.com/blog/alarm">light alarm clock tutorial</a>. That turned out to be a bad idea as well. I just get up when I'm awake now. If it's 3 it's 3. So now my raspberry pi is querying predictit for market data every 5 minutes and has been for the last 4 months. A fun fact I learned doing that is that FAT directories can only store so many files. So for instance my hard drive, which is vfat according to <code class="inline">du</code> can store about 65000 files per directory. So I have a data1 folder, a data2 folder ... But anyway I thought I'd give my little pi another job backing up my personal computer. </p>
 
 <p>The back up command is note too bad:</p>
-<code>
-rsync -azh --size-only --filter="merge /home/jaek/Development/sync/filter.txt" /home/jaek/ pi@192.168.1.83:"/media/pi/ja3k\\'s\\ hd/backup/"
-</code>
+<pre><code>rsync -azh --size-only --filter="merge /home/jaek/Development/sync/filter.txt" /home/jaek/ pi@192.168.1.83:"/media/pi/ja3k\\'s\\ hd/backup/" </code></pre>
 <p>Note the complicated target because for some reason I decided to give my disk a stupid name with spaces and a single quote. Rsync basically syncs my home directory with the backup folder in my pi's hard drive. Note I wrote directories out because I ~ expansion doesn't work where this command is called. </p>
 
 <p>Unfortunately my home directory is full of crud I thought would be wasteful to back up. There's the obvious crud like the screenshots in my photo's directory and the one off files in my Downloads and the window's VMs I have for playing mtgo. But there's also a sea of dot files. And unfortunately some of the dot files are created by me (like my vimrc which you can check out <a href="https://github.com/jakethekoenig/vimrc/blob/master/.vimrc">here</a>. It's like 60% little abbreviations for math writing. As if that was the bottleneck in anyone's mathematical productivity) and others are dumps by other programs which I think are probably unimportant but I'm also too scared to delete. I'm not sure I want to know what .ICEauthority is doing. There wasn't an obvious hard and fast rule to distinguish the files I wanted to back up from those I didn't so I made a little filter file.</p>
 
-<code>
-	+ /Development/***<br>
-	+ /Documents/***<br>
-	+ /art/***<br>
-	+ /deks/***<br>
-	+ /Gaming/***<br>
-	+ /metrics/***<br>
-	+ /personal-site/<br>
-	+ /personal-site/todo/***<br>
-	+ /personal-site/drafts/***<br>
-	+ /.vim/***<br>
-	+ /.journal/***<br>
-	+ /.xmonad/***<br>
-	+ /.gitconfig<br>
-	+ /.bash_history<br>
-	+ /.python_history<br>
-	+ /.zshrc<br>
-	+ /.zsh_history<br>
-	+ /.xsessionrc<br>
-	- /**<br>
-</code>
+<pre><code>+ /Development/***
++ /Documents/***
++ /art/***
++ /deks/***
++ /Gaming/***
++ /metrics/***
++ /personal-site/
++ /personal-site/todo/***
++ /personal-site/drafts/***
++ /.vim/***
++ /.journal/***
++ /.xmonad/***
++ /.gitconfig
++ /.bash_history
++ /.python_history
++ /.zshrc
++ /.zsh_history
++ /.xsessionrc
+- /** </code></pre>
 <p>Some miscellaneous observations about the folders I backed up:</p>
 <ul>
 <li>This is sort of a personal look at how I organize my files. I'm reminded of <a href="http://karolis.koncevicius.lt/posts/fast_navigation_in_terminal_coming_full_cirlce/">this blog post</a> where the author describes their file organization schemes. Their content makes me worry a little less that my blog topics are too niche. </li>
@@ -49,10 +45,10 @@ rsync -azh --size-only --filter="merge /home/jaek/Development/sync/filter.txt" /
 
 <p>Backing up to the raspberry pi a few meters away from my laptop is really only covering a few potential data loss scenarios. I can worry less about my laptop suddenly crapping out or getting stolen at some cafe (whenever I go to a cafe again). But in the event of a home fire, flood or burglary I'm likely still fucked. So I might set up an Amazon S3 bucket and sync things there too. I've done that before for my <a href="https://github.com/jakethekoenig/personal-site/blob/master/scripts/update.sh">website</a>. It's simply hosted in a public S3 bucket. Amazon's <code class="inline">sync</code> doesn't seem to support a filter file and I'm less concerned about storage space on the cloud so my command would probably just be:</p>
 
-<code>aws s3 sync ~ s3://backup</code>
+<pre><code>aws s3 sync ~ s3://backup</code></pre>
 
 <p>Of course if my back up system relies on me pressing any buttons it's unlikely to be consistently done. So I added the following line to my cron jobs:</p>
-<code>10 11 * * * /home/jaek/Development/sync/sync.sh</code>
+<pre><code>10 11 * * * /home/jaek/Development/sync/sync.sh</code></pre>
 <p>The numbers and stars out front basically say to run the job at 11:10 everyday. To make a new cron job run <code class="inline">crontab -e</code>.</p>
 <p>Of course I didn't really replicate all of dropbox since I can't do nice things like access my files from other computers or easily share them and in my current setup if two hard drives were to fail I'd lose my data, which isn't too reliable. But as always it's satisfying to do something for yourself instead of using other's products. </p>
 

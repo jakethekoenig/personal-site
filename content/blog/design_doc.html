@@ -40,10 +40,9 @@
 	to quickly change the paths to content files for all my blogs. The flag -i means in place. The alternative being to print the modified file to standard out.</li>
 <li>wa - vim write all. To be honest I'm not sure how I used vim for so long without knowing about this command. I guess my primary vim use case has been writing tex documents, writing programs for Codeforces and writing blog posts, none of which lead to opening a lot of buffers. This refactor was a more complicated process and learning about this command definitely saved some time.</li>
 <li><p>Python's imp module - I'm not sure that this is the most elegant or pythonic thing. But in order to allow my content file be a method in some .py file I used the imp module. I've actually used this before because for some reason in the python interpreter if you import foo, edit foo.py, and then import foo again the module foo that you have doesn't change. To get around that I've used imp.reload. Now to import a python file, name in directory dire I import find_module and load_module from imp and use the code:</p>
-<code>
-        fp,pathname,desc = find_module(name, [dire])
-        mod = load_module(name,fp,pathname,desc)
-</code>
+<pre><code>fp,pathname,desc = find_module(name, [dire])
+mod = load_module(name,fp,pathname,desc)
+</code></pre>
 <p>I'm not sure this is the most pythonic way to do this so please let me know if there's a better way.</p></li>
 <li>strptime and strftime are great. The most interesting thing I'm going to remember is that %Y is the year and %y is just the last two digits of the year. I would have named them the other way around personally.</li>
 <li>In python <code class="inline">s.find('ex')</code> returns the index of the first 'ex' in the string s. I learned about <code class="inline">rfind</code> which searches from the right, i.e. it finds the last copy of 'ex'.</li>
