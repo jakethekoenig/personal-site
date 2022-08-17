@@ -1,0 +1,11 @@
+{
+	"Title": "Shutting Down Prediction Alerts",
+	"Author": "Jake Koenig",
+	"URL": "predictionalerts",
+	"Template": "blog.temp",
+	"Date": "08/17/2022",
+	"og_image": "/asset/pic/predictionalerts.jpg",
+	"Content": "blog/PredictionAlerts.md",
+	"Categories": ["tech"],
+	"Summary": "I made a simple SAAS service and now I'm shutting it down."
+}
