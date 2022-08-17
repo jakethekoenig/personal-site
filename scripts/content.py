@@ -63,16 +63,18 @@ def replacelinks(line):
         else:
             at = clos
     return line
+
 def md2html(content):
     ans = ""
     lines = content.split('\n')
     codemode=False
-    listmode=False
+    list_depth = []
     for line in lines:
         tokens = line.split()
-        if listmode and (len(tokens)==0 or tokens[0] in {'-', '*', '+'}):
-            listmode=False
-            ans+= '</ul>'
+        if len(list_depth)>0 and (len(tokens)==0 or tokens[0] not in {'-', '*', '+'}):
+            for _ in list_depth:
+                ans+= '</ul>'
+            list_depth = []
         if len(tokens)==0:
             continue
         depth = len(tokens[0])
@@ -94,10 +96,18 @@ def md2html(content):
         elif codemode:
             ans += line+'\n'
         elif tokens[0] in {'-', '*', '+'}:
-            if not listmode:
-                listmode=True
+            cur_depth = len(line) - len(line.lstrip())
+            if len(list_depth) == 0:
                 ans+= '<ul>'
-            ans+=wrap('li',replacelinks(line[1:].strip()))+'\n'
+                list_depth += [cur_depth]
+            elif list_depth[-1] > cur_depth:
+                while list_depth[-1] > cur_depth:
+                    list_depth = list_depth[:-1]
+                    ans += '</ul>'
+            elif list_depth[-1] < cur_depth:
+                list_depth += [cur_depth]
+                ans += '<ul>'
+            ans+=wrap('li',replacelinks(line.strip()[1:].strip()))+'\n'
         else:
             ans+=wrap('p',replacelinks(line))+'\n'
     return ans
