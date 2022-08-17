@@ -1,6 +1,10 @@
 import os
 import requests
-import scrython
+try:
+    import scrython
+except:
+    print("Not downloading images")
+    scrython = None
 
 #TODO: consider organizing directory by set?
 def file_name(s):
@@ -12,6 +16,8 @@ def local_file_name(s):
     return "nongenerated/asset/cards/" + s.lower() + ".png"
 
 def downloadCard(s):
+    if scrython is None:
+        return
     filename = local_file_name(s)
     if not os.path.exists(filename):
         print("downloading %s"%filename)
