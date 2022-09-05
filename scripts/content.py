@@ -64,12 +64,16 @@ def replacelinks(line):
             at = clos
     return line
 
+# TODO: automatically make index
 def md2html(content):
     ans = ""
     lines = content.split('\n')
     codemode=False
     list_depth = []
     for line in lines:
+        if line.startswith('<') or line.startswith("[b["):
+            ans+=line+'\n'
+            continue
         tokens = line.split()
         if len(list_depth)>0 and (len(tokens)==0 or tokens[0] not in {'-', '*', '+'}):
             for _ in list_depth:
@@ -79,7 +83,8 @@ def md2html(content):
             continue
         depth = len(tokens[0])
         if tokens[0] == '#'*depth:
-            ans += wrap('h'+str(depth), line.strip()[depth:].strip())
+            header = line.strip()[depth:].strip()
+            ans += wrap('h'+str(depth), header, a='id="'+ header.lower().replace(" ","_") +'"')
         elif tokens[0][:2] == '![':
             tokens = re.split(' |\[|\]|\!|\(|\)', line)
             tokens = [t for t in tokens if len(t)>0]
