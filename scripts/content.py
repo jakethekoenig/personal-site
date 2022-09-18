@@ -72,7 +72,7 @@ def md2html(content):
     list_depth = []
     for line in lines:
         if line.startswith('<') or line.startswith("[b["):
-            ans+=line+'\n'
+            ans+=replacelinks(line)+'\n'
             continue
         tokens = line.split()
         if len(list_depth)>0 and (len(tokens)==0 or tokens[0] not in {'-', '*', '+'}):
