@@ -56,7 +56,7 @@ def file_name(data):
     if "URL" in data:
         url = data["URL"]
     else:
-        url = data["Title"].replace(" ","").replace(",","")
+        url = data["Title"].replace(" ","").replace(",","").replace("'","")
     if "." not in url:
         url = url+".html"
     return url

@@ -19,12 +19,10 @@ esac
 mkdir $LIVE
 cd $LIVE
 
+python3 $SCRIPT_DIR/local_server.py > /dev/null &
 while true
 do
-	python3 $SCRIPT_DIR/local_server.py > /dev/null &
 	inotifywait -r --event modify $watch
-	kill %1
-	wait %1
 	cd $RUN_DIR
 	$SCRIPT_DIR/build_live.sh
 	cd $LIVE

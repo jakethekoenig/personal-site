@@ -10,7 +10,7 @@ cd "$RUN_DIR"
 
 live="$RUN_DIR"/../live
 # Remove the current live directory.
-rm -rf "$live"
+rm -rf "$live/*"
 # Copy the nongenerated directory, the skeleton of the website, to live.
 # TODO: <08-05-20, Jake> I need to add a -n here but only to assets to prevent AWS#
 # From syncing everything.
