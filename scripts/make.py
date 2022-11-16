@@ -1,7 +1,6 @@
 import json
 import os
 from datetime import datetime
-from config import default_config as config
 from content import generate_content, generate_comments
 
 # From a websites template and its specified data (which has a link to the content)
@@ -109,6 +108,7 @@ def make_page(path, data, index):
         out.write(replaceTags(temp, data, index))
 
 
+from config import default_config as config
 if os.path.exists("config.json"):
     with open("config.json") as f:
         config.update(json.load(f))
