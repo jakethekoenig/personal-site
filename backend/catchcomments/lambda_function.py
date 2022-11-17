@@ -40,6 +40,34 @@ def safe_args(event):
             return False
     return True
 
+def send_email(comment):
+    # Create a new SES resource and specify a region.
+    client = boto3.client('ses',region_name='us-east-1')
+
+    # Try to send the email.
+    try:
+        #Provide the contents of the email.
+        response = client.send_email(
+            Destination={
+                'ToAddresses': ['jakethekoenig@gmail.com']
+                },
+            Message={
+                'Body': {
+                    'Text': {
+                        'Charset': "UTF-8",
+                        'Data': comment,
+                        },
+                    },
+                'Subject': {
+                    'Charset': "UTF-8",
+                    'Data': "New Comment on ja3k.com",
+                    },
+                },
+            Source="jake@ja3k.com"
+            )
+    except Exception as e:
+        print(e)
+
 
 def build_html(json):
     ans = ""
@@ -71,12 +99,15 @@ def lambda_handler(event, context):
     print(comments)
 
     # Append Comment
-    comments[str(time.time())] = {
+    comment = {
             "text": html.escape(event["text"]),
             "author": html.escape(event["author"])
             }
+    comments[str(time.time())] = comment
     if "link" in event.keys():
         comments[str(time.time())]["link"] = html.escape(event["link"])
+
+    send_email(comment["author"] + "\n wrote \n" + comment["text"])
 
     # Write comment file
     s3.put_object(Body=json.dumps(comments).encode("utf-8"), Bucket=site, Key=jsonfile)
