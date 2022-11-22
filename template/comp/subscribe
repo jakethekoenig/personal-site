@@ -1,0 +1,15 @@
+<div id="subscribe_box" class="hidden">
+    <h2>Subscribe to Ja3k</h2>
+    <p>That's right this blog is now a newsletter.</p>
+    <form>
+    <input autocomplete="email" type="email"></input>
+    <button type="submit">Subscribe</button>
+    </form>
+</div>
+
+<div id="subscribe_button">
+    <button>Subscribe</button>
+</div>
+<script>
+<:js/subscribe.js:>
+</script>
