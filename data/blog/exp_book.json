@@ -1,0 +1,11 @@
+{
+	"Title": "Book announcement: Exponential Growth for Babies",
+	"Author": "Jake Koenig",
+	"URL": "exp_book",
+	"og_image": "/asset/pic/cover.png",
+	"Template": "blog.temp",
+	"Date": "11/26/2022",
+	"Content": "blog/expbook.md",
+	"Categories": ["personal", "math"],
+	"Summary": "I wrote a children's book about exponential growth."
+}
