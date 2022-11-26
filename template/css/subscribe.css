@@ -34,3 +34,9 @@ transform: translate(-50%, -50%);
     max-width: 50ch;
     margin: 20px auto;
 }
+
+.close_parent {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
