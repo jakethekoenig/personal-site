@@ -1,4 +1,6 @@
 <div id="subscribe_box" class="hidden">
+    <button class="close_parent">x
+    </button>
     <h2>Subscribe to Ja3k</h2>
     <p>That's right this blog is now a newsletter.</p>
     <form>
