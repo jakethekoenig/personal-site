@@ -86,11 +86,14 @@ def md2html(content):
             header = line.strip()[depth:].strip()
             ans += wrap('h'+str(depth), header, a='id="'+ header.lower().replace(" ","_") +'"')
         elif tokens[0][:2] == '![':
-            tokens = re.split(' |\[|\]|\!|\(|\)', line)
+            tokens = re.split('\[|\]|\!|\(|\)|"|\'', line)
             tokens = [t for t in tokens if len(t)>0]
-            source = tokens[1]
+            source = tokens[1].rstrip()
             alt = tokens[0]
-            title = tokens[2]
+            if len(tokens)>2:
+                title = tokens[2]
+            else:
+                title = alt
             ans += wrap('p', '<img src="%s" alt="%s" title="%s"/>'%(source, alt, title))
         elif tokens[0] == '```':
             codemode = not codemode
