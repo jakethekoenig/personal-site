@@ -1,0 +1,16 @@
+I always want to do a format retrospective where I discuss some of the mistakes I made and things I missed. Typically I play my last big event and all interest drains from my body and I never look back . It's a pity because I make a lot of mistakes and without feedback I won't get better [[For the record I lost in the semis of an RCQ, and 2-2-1ed a second, and had medium results drafting on mtgo. So I definitely have to get better.]]. So here's a necessarily incomplete list of things I was wrong about:
+
+- I was wrong about monocolor.
+    * The uncommon payoffs aren't big draws to be monocolor. You don't want to play [h[blanchwood armor]]. [h[Corrupt]] is a good card still but not as good as the common black removal.
+    * A lot of the artifacts pull you to splash. Normally you can only splash great cards but [h[Combat Courier]] (which I greatly underrated) and [h[Scrapwork Rager]] are both medium cards you can splash.
+    * You want to be in an archetype not a color. There are enough good black cards to be mono black but there aren't enough good graveyard black cards or sacrifice black cards. If you want to play into the theme you'll have to also be green or red respectively.
+    * I also underrated [h[Energy Refractor]]. It does cool stuff like filter powerstone mana.
+- I was wrong about fog or at least I didn't have the guts to commit. I did play one UW draft deck with 4 [h[Union of the Third Path]]. It was great and I trophied but it was probably more to do with my rares and fliers.
+- I underrated [h[Citanul Stalwart]]. It reminded me of [h[Jaspera Sentinel]] but being able to use powerstones or random equipment makes it a lot better. Not a top common but I'm happy to play it if I'm ramping or stretching my mana.
+- I didn't even realize the retro artifacts exist. Major downside of learning about the set only by refreshing scryfall. It actuallly affects the limited environment a lot since there's more bombs and fixing and just a higher as fan of artifacts. Really pushes [h[Raze to the Ground]] from a mostly play to an always play.
+    * Side note I actually love the retro card thing. It increases variety a lot and all the bombs it introduces die to the disenchants you should be playing as many as you can get. The best one is maybe [h[Wurmcoil Engine]] which is worse than the green command anyway.
+- I released the blog with an incomplete list of instants. No one commented so this probably only affected me. I actually do use my post as a reference in the future for this information. I guess that's the beauty of writing. You can refer back to it.
+- I underrated [h[Mishra's Juggernaut]]. I even splashed it in my weaker sealed deck.
+- I underrated the activated ability on [h[Bitter Reunion]]. It's a scary card to have sitting in play which deters a lot of attacks. I think it's better than [h[Thrill of Possibility]].
+- I underestimated [h[Emergency Weld]]. Someone let me know in the commments to the original post. Another benefit of writing. It's close to a cheaper gravedigger. You lose the ability to loop it and cast it with an empty graveyard. But costing 2 more than makes up for it.
+- I underestimated [h[Dwarven Forge-Chanter]]. At least it's better than the bad Mishra modal cards.
