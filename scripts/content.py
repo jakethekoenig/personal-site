@@ -64,6 +64,24 @@ def replacelinks(line):
             at = clos
     return line
 
+def replaceinlinecode(line):
+    at = 0
+    while line.find('`', at) != -1:
+        ope = line.find('`', at)
+        clos = line.find('`', ope+1)
+        if clos==-1:
+            break
+        text=line[ope+1:clos]
+        text = wrap('code', text, a='class="inline"')
+        line = line[:ope]+text+line[clos+1:]
+        at = ope + len(text)
+    return line
+
+def replaceInlineFeatures(line):
+    line = replaceinlinecode(line)
+    line = replacelinks(line)
+    return line
+
 # TODO: automatically make index
 def md2html(content):
     ans = ""
@@ -72,7 +90,7 @@ def md2html(content):
     list_depth = []
     for line in lines:
         if line.startswith('<') or line.startswith("[b["):
-            ans+=replacelinks(line)+'\n'
+            ans+=replaceInlineFeatures(line)+'\n'
             continue
         tokens = line.split()
         if len(list_depth)>0 and (len(tokens)==0 or tokens[0] not in {'-', '*', '+'}):
@@ -115,9 +133,9 @@ def md2html(content):
             elif list_depth[-1] < cur_depth:
                 list_depth += [cur_depth]
                 ans += '<ul>'
-            ans+=wrap('li',replacelinks(line.strip()[1:].strip()))+'\n'
+            ans+=wrap('li',replaceInlineFeatures(line.strip()[1:].strip()))+'\n'
         else:
-            ans+=wrap('p',replacelinks(line))+'\n'
+            ans+=wrap('p',replaceInlineFeatures(line))+'\n'
     return ans
 
 
