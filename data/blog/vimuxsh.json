@@ -1,0 +1,11 @@
+{
+	"Title": "My Favorite vim/tmux/zsh Configurations",
+	"Author": "Jake Koenig",
+	"URL": "vimuxsh",
+	"og_image": "/asset/cards/mineworker.png",
+	"Template": "blog.temp",
+	"Date": "12/03/2022",
+	"Content": "blog/vimuxsh.md",
+	"Categories": ["programming"],
+	"Summary": "A collection of my favorite vim, tmux, and zsh configurations."
+}
