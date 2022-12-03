@@ -2,7 +2,7 @@
 	"Title": "My Favorite vim/tmux/zsh Configurations",
 	"Author": "Jake Koenig",
 	"URL": "vimuxsh",
-	"og_image": "/asset/cards/mineworker.png",
+	"og_image": "/asset/pic/abbrev.png",
 	"Template": "blog.temp",
 	"Date": "12/03/2022",
 	"Content": "blog/vimuxsh.md",
