@@ -5,6 +5,7 @@
 	"Template": "toplevel.temp",
 	"Content": "index.py",
 	"Indexes": "blog",
-	"Summary": "Welcome to my blog. Enjoy." 
+	"Summary": "Welcome to my blog. Enjoy.",
+        "permalink": "https://ja3k.com"
 }
 	

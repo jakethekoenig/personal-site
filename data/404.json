@@ -4,6 +4,7 @@
 	"Author": "Jake Koenig",
 	"Template": "toplevel.temp",
 	"Content": "404.html",
-	"Summary": "Sorry you're seeing this page." 
+	"Summary": "Sorry you're seeing this page.",
+        "Hide": true
 }
 	
