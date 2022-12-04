@@ -18,16 +18,9 @@ cp -r "$RUN_DIR"/nongenerated/ "$live"
 # Build the blogs from templates
 python3 "$SCRIPT_DIR"/make.py 
 
-# Make a copy of all html files without extension included.
-# Strip is a helper function.
-Strip () {
-	name=${1%.*}
-	cp "$1" "$name"
-}
-
-find "$live" -name '*.html' -print0 | while read -d $'\0' file
+find "$live" -type f ! -name '*.*' -print0 | while read -d $'\0' file
 do
-	Strip "$file"
+	cp "$1" "$1.html"
 done
 
 
