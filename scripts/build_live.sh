@@ -20,7 +20,7 @@ python3 "$SCRIPT_DIR"/make.py
 
 find "$live" -type f ! -name '*.*' -print0 | while read -d $'\0' file
 do
-	cp "$1" "$1.html"
+	cp "$file" "$file.html"
 done
 
 
