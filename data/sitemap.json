@@ -1,6 +1,7 @@
 {
 	"Template": "empty.temp",
 	"URL":   "sitemap.txt",
-	"Content": "sitemap.py"
+	"Content": "sitemap.py",
+        "Hide": true
 }
 	
