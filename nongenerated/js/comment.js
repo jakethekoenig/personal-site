@@ -59,8 +59,7 @@ function hitLambda() { var href = window.location.href;
 		url: loc
 	};
 	console.log(JSON.stringify(data));
-
-	fetch('https://ifr71jknt7.execute-api.us-east-2.amazonaws.com/default/addComment', {
+fetch('https://ifr71jknt7.execute-api.us-east-2.amazonaws.com/default/addComment', {
 		method: 'POST',
 		mode: 'no-cors',
 		headers: {
