@@ -12,4 +12,4 @@ function resizer(id)
 
 }
 </script>
-<iframe src="https://ja3k.com/comments/<$relative_path$>" width="100%"  id='commentiframe' onload='resizer("commentiframe")' style="border:none;"></iframe>
+<iframe src="https://ja3k.com/comments/<$relative_path$>.html" width="100%"  id='commentiframe' onload='resizer("commentiframe")' style="border:none;"></iframe>
