@@ -1,0 +1,49 @@
+.hidden {
+    display: none;
+}
+
+#subscribe_button button {
+    border-radius: 100px;
+    background-color: #1cf140;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    font-size: 1.4em;
+    z-index: 101;
+}
+#subscribe_button button:hover {
+    background-color: #95ffa7;
+}
+
+#subscribe_box {
+    text-align: center;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    max-width: 70ch;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+#subscribe_box input {
+    width: 70%;
+    max-width: 50ch;
+    margin: 20px auto;
+}
+
+.close_parent {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.close_parent:hover {
+    background-color: #959595;
+    border-radius: 100px;
+}

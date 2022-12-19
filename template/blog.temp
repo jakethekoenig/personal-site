@@ -10,6 +10,7 @@
 		<?? "Subtitle" not in data ??? <h2 class="subheading"><$Subtitle$></h2> ??>
 		<h4><i>Published: <$Date$> </i></h4>
 	</div>
+        <:comp/subscribe:>
 	<div class="main_content">
 	<[Content]>
 	<div class="comments">
