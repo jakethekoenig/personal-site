@@ -8,8 +8,6 @@ function resizer(id)
 	var height = Math.max( body_.scrollHeight, body_.offsetHeight, html_.clientHeight, html_.scrollHeight, html_.offsetHeight );
 
 	document.getElementById(id).style.height=height+"px";
-	console.log(height);
-
 }
 </script>
 <iframe src="https://ja3k.com/comments/<$relative_path$>" width="100%"  id='commentiframe' onload='resizer("commentiframe")' style="border:none;"></iframe>

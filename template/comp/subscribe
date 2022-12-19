@@ -4,7 +4,7 @@
     <h2>Subscribe to Ja3k</h2>
     <p>That's right this blog is now a newsletter.</p>
     <div id="subscribe_form">
-        <input autocomplete="email" type="email"></input>
+        <input id="email_subscribe_textform" placeholder="your e-mail" autocomplete="email" type="email"></input>
         <button id="subscribe_submit">Subscribe</button>
     </div>
     <p id="thanks_message" class="hidden">Thanks for subscribing!</p>
