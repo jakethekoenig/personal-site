@@ -80,6 +80,8 @@ def handle_addcomment(event):
         return {  'statusCode': 404  }
     # Open file
     jsonfile = event["url"][:-5] + ".json"
+    if "?" in jsonfile:
+        jsonfile = jsonfile[:jsonfile.index("?")]
     try:
         comments = json.loads(s3.get_object(Bucket=site, Key=jsonfile)['Body'].read().decode("utf-8"))
     except Exception as e:
