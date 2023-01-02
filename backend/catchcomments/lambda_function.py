@@ -93,7 +93,7 @@ def handle_addcomment(event):
     comments[str(time.time())] = comment
     if "link" in event.keys():
         comments[str(time.time())]["link"] = html.escape(event["link"])
-    send_email("New Comment on ja3k.com", comment["author"] + "\n wrote \n" + comment["text"])
+    send_email(comment["author"] + "wrote: " + comment["text"], "New Comment on ja3k.com")
     # Write comment file
     s3.put_object(Body=json.dumps(comments).encode("utf-8"), Bucket=site, Key=jsonfile)
     # Write html
