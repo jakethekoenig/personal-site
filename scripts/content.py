@@ -1,5 +1,6 @@
 from imp import find_module, load_module
 from my_auto_card import insert_autocard
+from my_mathjax import mathjax
 import json
 import os
 import re
@@ -10,6 +11,7 @@ def generate_content(data, index, content_dir="content/"):
     # Should there be a more stylized way to do this? Maybe the desired post processing should be listed in the blog's data dir.
     content = generate_footers(content)
     content = insert_autocard(content)
+    content = mathjax(content)
     return content
 
 # TODO: handle .md files as well as py and html
@@ -43,25 +45,20 @@ def wrap(t, c, a=None):
         return '<'+t+'>'+c+'</'+t+'>'
 
 def replacelinks(line):
-    at = 0
-    while line.find('[', at) != -1:
-        ope = line.find('[', at)
-        clos = line.find(']', ope)
-        if clos==-1:
+    while line.find('](') != -1:
+        nex = line.find('](')
+        ope = line.rfind('[', 0, nex)
+        clos = line.find(')', nex)
+        if clos==-1 or ope==-1:
             break
-        if line[clos+1]=='(':
-            text=line[ope+1:clos]
-            clos2 = line.find(')', clos)
-            link=line[clos+2:clos2]
-            if link[0]=='/':
-                attr='href=%s'%link
-            else:
-                attr='href=%s target=_blank'%link
-            htmllink = wrap('a', text, attr)
-            line = line[:ope]+htmllink+line[clos2+1:]
-            at = ope + len(htmllink)
+        text=line[ope+1:nex]
+        link=line[nex+2:clos]
+        if link[0]=='/':
+            attr='href=%s'%link
         else:
-            at = clos
+            attr='href=%s target=_blank'%link
+        htmllink = wrap('a', text, attr)
+        line = line[:ope]+htmllink+line[clos+1:]
     return line
 
 def replaceinlinecode(line):

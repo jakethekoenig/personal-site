@@ -4,6 +4,8 @@
 
 # A script for building the website
 
+npm ci
+
 RUN_DIR=$(pwd)
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd "$RUN_DIR"
