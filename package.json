@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "mathjax-node-page": "^3.2.0"
+  }
+}
