@@ -1,0 +1,12 @@
+{
+	"Title": "Zero Utils",
+	"Subtitle": "A critical look at additive utility",
+	"Author": "Jake Koenig",
+	"URL": "zeroutils",
+	"og_image": "/asset/pic/sum.png",
+	"Template": "blog.temp",
+	"Date": "1/07/2023",
+	"Content": "blog/zeroutils.md",
+        "Summary": "Von Neumann-Morgenstern's Utility Theorem and Harsayni's Aggregation Theorem are often given as good justifications for additive utility and utilitarianism in general but does it make sense?",
+	"Categories": ["philosophy", "math"]
+}

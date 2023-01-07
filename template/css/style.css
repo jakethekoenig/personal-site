@@ -124,6 +124,10 @@ blockquote.epigraph > (div:first-child, p:first-child) {
 blockquote.epigraph > p:last-child {
 	text-align:right;
 }
+blockquote > p {
+	text-indent:0;
+}
+
 .dialog {
 	margin-right: 10%;
 	margin-left: 10%;
