@@ -34,7 +34,6 @@ def replaceTags(template, data, index):
     while template.find("<$") != -1 and template.find("$>") != -1:
         start = template.find("<$")
         end   = template.find("$>")+2
-        print("Couldn't find: %s"%template[start:end])
         if start>end:
             break
         template = template[:start] + template[end:]
