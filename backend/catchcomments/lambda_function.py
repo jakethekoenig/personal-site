@@ -1,7 +1,8 @@
 import json
 import html
-import time
 import boto3
+from datetime import datetime
+from comment_json_to_html import build_html
 
 s3 = boto3.client("s3")
 cf = boto3.client("cloudfront")
@@ -62,46 +63,40 @@ def valid_comment_params(event):
             return False
     return True
 
-def build_html(json):
-    ans = ""
-    for k in sorted(json.keys()):
-        rendered_comment = '<div class="comment">'
-        for line in json[k]["text"].split("\n"):
-            rendered_comment += "<p>" + line + "</p>"
-        rendered_comment += "<p>" + json[k]["author"] + "</p>"
-        rendered_comment += "</div>"
-        ans += rendered_comment
-    ans = "<!DOCTYPE html><html><head><link href='/css/comment.css' type='text/css' rel='stylesheet'></head><body>" + ans + "</body></html>"
-    return ans
-
 def handle_addcomment(event):
+    now = datetime.now()
+    timestamp = str(now.timestamp())
     if not valid_comment_params(event):
         print("Invalid comment params")
         return {  'statusCode': 404  }
     # Open file
-    jsonfile = event["url"][:-5] + ".json"
+    jsonfile = event["url"]
     if "?" in jsonfile:
         jsonfile = jsonfile[:jsonfile.index("?")]
+    if "#" in jsonfile:
+        jsonfile = jsonfile[:jsonfile.index("#")]
+    if "." in jsonfile:
+        jsonfile = jsonfile[:jsonfile.index(".")]
+    htmf = jsonfile + ".html"
+    jsonfile = jsonfile + ".json"
     try:
         comments = json.loads(s3.get_object(Bucket=site, Key=jsonfile)['Body'].read().decode("utf-8"))
     except Exception as e:
         comments = {}
-    print(comments)
     # Append Comment
     comment = {
             "text": html.escape(event["text"]),
-            "author": html.escape(event["author"])
+            "author": html.escape(event["author"]),
+            "prettytime": now.strftime("%B %d, %Y %I:%M %p")
             }
-    comments[str(time.time())] = comment
+    comments[timestamp] = comment
     if "link" in event.keys():
-        comments[str(time.time())]["link"] = html.escape(event["link"])
+        comments[timestamp]["link"] = html.escape(event["link"])
     send_email(comment["author"] + "wrote: " + comment["text"], "New Comment on ja3k.com")
     # Write comment file
     s3.put_object(Body=json.dumps(comments).encode("utf-8"), Bucket=site, Key=jsonfile)
     # Write html
     htm = build_html(comments)
-    htmf = event["url"]
-    print(htmf)
     s3.put_object(Body=htm.encode("utf-8"), Bucket=site, Key=htmf, ContentType='text/html')
     # Invalidate cache
     cf.create_invalidation(
@@ -113,7 +108,7 @@ def handle_addcomment(event):
                         "/" + htmf
                     ]
                 },
-                'CallerReference': str(time.time()).replace(".","")
+                'CallerReference': timestamp.replace(".","")
             })
     return {
         'statusCode': 200
