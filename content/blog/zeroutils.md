@@ -10,7 +10,7 @@ But this is all very trite and obvious and of course the utilcels have thought o
 <p>God made preferences. All else is the work of man.</p>
 <p>- Leopold Kronecker, basically</p></blockquote>
 
-Let's begin my considering the utility of an individual before moving on to aggregation. For concreteness let it be my utility.
+Let's begin by considering the utility of an individual before moving on to aggregation. For concreteness let it be my utility.
 
 In the beginning there are preferences. I prefer green tea to black. I prefer my eggs fried to scrambled. At first glance if all I have to work with is preferences you might think all I could give you is an ordering of scenarios. I could say green tea gives me 5 utility and black tea 1 or green tea 3.89 utility and black tea -300 and it'd make no difference to what happens when you offer me my choice of beverage.
 
