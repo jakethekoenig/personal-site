@@ -7,9 +7,8 @@ def build_html(comment_data):
     ans = """
     <!DOCTYPE html><html><head>
     <link href='/css/comment.css?v=1' type='text/css' rel='stylesheet'>
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <script type="text/javascript"
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/config/TeX-MML-AM_CHTML.js">
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
     </head><body> 
     """
