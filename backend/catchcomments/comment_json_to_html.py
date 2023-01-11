@@ -9,7 +9,7 @@ def build_html(comment_data):
     <link href='/css/comment.css?v=1' type='text/css' rel='stylesheet'>
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <script type="text/javascript"
-  src="https://d3eoax9i5htok0.cloudfront.net/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/config/TeX-MML-AM_CHTML.js">
 </script>
     </head><body> 
     """
