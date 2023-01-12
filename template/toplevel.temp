@@ -15,11 +15,14 @@ try {
 }
 </script>
 	<:comp/sidemenu:>
+        <:comp/subscribe:>
+
 	<div class="title">
 		<h1><$Title$></h1>
 	</div>
 	<div class="main_content">
 	<[Content]>
 	</div>
+        <:comp/socials:>
 </body>
 </html>

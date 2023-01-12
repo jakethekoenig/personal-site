@@ -3,16 +3,17 @@
 }
 
 #subscribe_button button {
-    border-radius: 100px;
-    background-color: #1cf140;
+    border-radius: 10px;
+    background-image: url(/asset/pic/smol.jpg);
     position: fixed;
-    bottom: 25px;
+    bottom: 1%;
     right: 25px;
     font-size: 1.4em;
     z-index: 101;
+    padding: 10px 20px;
 }
 #subscribe_button button:hover {
-    background-color: #95ffa7;
+    background-image:  linear-gradient(#ffffff40, #ffffff40), url(/asset/pic/smol.jpg);
 }
 
 #subscribe_box {
@@ -23,15 +24,23 @@
     max-width: 70ch;
     border-radius: 10px;
     box-shadow: 0 0 10px #000;
+    background-image: radial-gradient(white, transparent), url(/asset/pic/mid.jpg);
+    background-size: cover;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 100;
 }
 
-#subscribe_box input {
-    width: 70%;
+#subscribe_form input {
+    width: 60%;
     max-width: 50ch;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+#subscribe_form button {
+    padding: 10px;
     margin: 20px auto;
 }
 
@@ -47,3 +56,8 @@
     background-color: #959595;
     border-radius: 100px;
 }
+#subscribeicon {
+	image-rendering: pixelated;
+	height: 1em;
+}
+
