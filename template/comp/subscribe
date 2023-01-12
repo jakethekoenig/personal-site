@@ -11,8 +11,12 @@
 </div>
 
 <div id="subscribe_button">
-    <button>Subscribe</button>
+    <button>Subscribe
+    <img id="subscribeicon" src="/asset/favicon.png"></button>
 </div>
 <script>
 <:js/subscribe.js:>
 </script>
+<style>
+<:css/subscribe.css:>
+</style>

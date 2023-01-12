@@ -7,6 +7,6 @@
 	"Date": "05/04/2022",
 	"og_image": "/asset/pic/vimsso.png",
 	"Content": "blog/twitterrc.html",
-	"Categories": ["technology"],
+	"Categories": ["tech"],
 	"Summary": "What if your twitter had an rc file? What if you needed to SSO onto vim?"
 }
