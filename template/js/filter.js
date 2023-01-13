@@ -31,9 +31,9 @@ function filter(button) {
 
 	Array.from(document.getElementsByClassName("blogstub")).forEach(function(e) {
 		if (!repeat && !overlap(classes, e.classList)) {
-			e.style.display = "none";
+			e.parentElement.style.display = "none";
 		} else {
-			e.style.display = "block";
+			e.parentElement.style.display = "block";
 		}
 	});
 }
