@@ -3,4 +3,4 @@ In addition to a bad ssg and cms (through which you're reading this post now), e
 
 Check out [VimOutline](https://github.com/jakethekoenig/VimOutline).
 
-![usage_gif /asset/gif/vimoutline.gif](The app in use)
+![usage_gif vimoutline](/asset/gif/vimoutline.gif)
