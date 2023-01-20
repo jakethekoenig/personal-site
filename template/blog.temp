@@ -12,6 +12,7 @@
 	</div>
         <:comp/subscribe:>
 	<div class="main_content">
+        <:comp/book_ad:>
 	<[Content]>
 	<div class="comments">
 	<div>
