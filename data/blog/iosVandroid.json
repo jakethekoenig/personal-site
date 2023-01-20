@@ -1,0 +1,11 @@
+{
+	"Title": "Android is just better than iOS",
+	"Author": "Jake Koenig",
+	"URL": "iosvandroid",
+	"og_image": "/asset/pic/iosvand/ogimage.png",
+	"Template": "blog.temp",
+	"Date": "1/20/2023",
+	"Content": "blog/iosVandroid.md",
+        "Summary": "Despite popular opinion Android is just better than iOS. I go through a variety of os components and describe how in almost all cases Android has superior design",
+	"Categories": ["technology"]
+}
