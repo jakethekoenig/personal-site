@@ -1,4 +1,26 @@
-/* Rules for menus*/
+.ad {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    background: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #ccc;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.ad > img {
+    max-width: 100px;
+}
+.book_link {
+    position: relative;
+}
+.bunny {
+    max-width: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
 .modebar{
       display: none !important;
 }

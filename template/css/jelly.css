@@ -2,9 +2,20 @@
 	display: inline-block;
 	margin: 2% 9% 2% 9%;
 }
+.inlineblock {
+	display: inline-block;
+}
 .portraitpair {
 	width: 36%;
 	float: left;
+}
+.portraittriple {
+	width: 30%;
+	float: left;
+        margin: 0 1% 0 1%;
+}
+.portraittriple > img {
+    width: 100%;
 }
 .landscapepair {
 	width: 64%;
@@ -18,8 +29,10 @@
 	display:block;
 	margin-left: auto;
 	margin-right: auto;
-	max-height: 80vh;
 	width: auto;
+}
+.portrait > img {
+    max-width: 400px;
 }
 .landscape {
 	display:block;
@@ -34,7 +47,19 @@
 	.jellycontainer, .portraitcontainer {
 		margin: 0;
 	}
-	.portraitpair, .landscapepair {
+	.portraitpair, .portraittriple, .landscapepair {
 		width:100vw;
 	}
+}
+
+.phone_container {
+    display: flex;
+}
+.phone_container > figure {
+    width: fit-content;
+}
+.phone {
+    max-width: 100%;
+    min-width: 200px;
+    width: 400px;
 }
