@@ -1,0 +1,11 @@
+{
+	"Title": "Low Amounts of Drinking are Healthy",
+	"Author": "Jake Koenig",
+	"URL": "alc",
+	"og_image": "/asset/pic/wine.jpg",
+	"Template": "blog.temp",
+	"Date": "1/31/2023",
+	"Content": "blog/alc.md",
+        "Summary": "There is strong evidence drinking a unit of alcohol a day reduces all cause mortality primarily by being good for cardiovascular health and not particularly bad for anything.",
+	"Categories": ["science"]
+}
