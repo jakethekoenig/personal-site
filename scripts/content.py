@@ -79,10 +79,13 @@ def replaceInlineFeatures(line):
     line = replacelinks(line)
     return line
 
+# TODO: paragraphs should require a blank line
+# TODO: paragraphs in blockquotes
 # TODO: automatically make index
 def md2html(content):
     ans = ""
     lines = content.split('\n')
+    quotemode=False
     codemode=False
     list_depth = []
     for line in lines:
@@ -94,6 +97,9 @@ def md2html(content):
             for _ in list_depth:
                 ans+= '</ul>'
             list_depth = []
+        if quotemode and (len(tokens)==0 or tokens[0]!='>'):
+            quotemode=False
+            ans+='</blockquote>'
         if len(tokens)==0:
             continue
         depth = len(tokens[0])
@@ -116,6 +122,11 @@ def md2html(content):
                 ans+='<pre><code>'
             else:
                 ans+='</code></pre>\n'
+        elif tokens[0] == '>':
+            if not quotemode:
+                quotemode=True
+                ans+='<blockquote class="quote epigraph">'
+            ans+=replaceInlineFeatures(line[1:].strip())
         elif codemode:
             ans += line+'\n'
         elif tokens[0] in {'-', '*', '+'}:
