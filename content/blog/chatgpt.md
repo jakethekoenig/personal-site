@@ -9,8 +9,8 @@ I've tried to use Chat GPT three times and all three times it failed so then I s
 
 Note two things:
 
-- It's very nice. I think humans have this fault too where when you ask them to be edit they often focus on the positive.
-- When I do push it to be more critical it makes something up about what I wrote. It says to replace centimeter with cm but it is cm in my original writing.
+- It's very nice. I think humans have this fault too where when you ask them to edit they often focus on the positive.
+- When I push it to be more critical it makes something up about what I wrote. It says to replace centimeter with cm but it is cm in my original writing.
 
 I recently put [prediction alerts](https://www.predictionalerts.com) back online. I ended up just provisioning a smaller shared core postgres db instance which will cost $0.20 a day. But before I settled on that I was considering bundling in an sqlite db and using the local file system to run it all out of one ec2 instance.
 ![aws aws](/asset/pic/gpt/aws.png)
