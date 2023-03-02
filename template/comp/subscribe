@@ -10,9 +10,17 @@
     <p id="thanks_message" class="hidden">Thanks for subscribing!</p>
 </div>
 
-<div id="subscribe_button">
-    <button>Subscribe
-    <img id="subscribeicon" src="/asset/favicon.png"></button>
+<div id="toggle_subscribe_buttons">
+    <img src="/asset/favicon.png">
+    <img src="/asset/icon/mailbox.svg">
+</div>
+
+<div id="subscribe_buttons" class="fixed_bottom">
+    <div id="subscribe_button">
+        <button>Subscribe for Free
+        <img id="subscribeicon" src="/asset/favicon.png"></button>
+    </div>
+    <a id="subscibe_premium_button" href="https://buy.stripe.com/14k00e8p41f04MMcMP" target="_blank"> <p>Subscribe Premium $10/month</p><p>Checkout with Stripe</p></a>
 </div>
 <script>
 <:js/subscribe.js:>

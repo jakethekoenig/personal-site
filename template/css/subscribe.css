@@ -2,15 +2,43 @@
     display: none;
 }
 
-#subscribe_button button {
+#subscibe_premium_button:hover {
+    background-color: #e277f7;
+}
+
+#subscibe_premium_button p {
+    line-height: 0;
+}
+#subscibe_premium_button {
+    text-align: center;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
     border-radius: 10px;
-    background-image: url(/asset/pic/smol.jpg);
+    border: 1px black solid;
+    background-color: #c242db;
+    font-size: 1.4em;
+    z-index: 101;
+    padding: 10px 0px;
+    display: block;
+}
+.fixed_bottom {
     position: fixed;
     bottom: 1%;
     right: 25px;
+}
+
+#subscribe_button button {
+    border-radius: 10px;
+    width: 100%;
+    background-image: url(/asset/pic/smol.jpg);
+    color: white;
     font-size: 1.4em;
     z-index: 101;
     padding: 10px 20px;
+    margin: 10px;
+    display: block;
 }
 #subscribe_button button:hover {
     background-image:  linear-gradient(#ffffff40, #ffffff40), url(/asset/pic/smol.jpg);
@@ -61,3 +89,39 @@
 	height: 1em;
 }
 
+#toggle_subscribe_buttons {
+    display: none;
+}
+
+@media only screen and (max-width:600px) {
+    #toggle_subscribe_buttons {
+        display: flex;
+        position: fixed;
+        bottom: 1%;
+        right: 5%;
+        background-color: #daff54;
+        border-radius: 100px;
+        border: 1px black solid;
+        padding: 20px;
+        gap: 15px;
+    }
+    #toggle_subscribe_buttons img {
+	image-rendering: pixelated;
+	height: 1.5em;
+
+    }
+    .fixed_bottom_visible {
+        bottom: 0vh;
+        left: 0;
+    }
+    .fixed_bottom {
+        bottom: 0vh;
+        transform: translate(0,100%);
+        left: 0;
+    }
+    #subscribe_buttons {
+        position: fixed;
+        background-color: white;
+        transition: transform 0.3s;
+    }
+}

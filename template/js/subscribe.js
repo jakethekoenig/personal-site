@@ -1,5 +1,7 @@
 const email_input = document.getElementById('subscribe_box');
 const subscribe_button = document.getElementById('subscribe_button');
+const subscribe_buttons = document.getElementById('subscribe_buttons');
+const toggle_subscribe_buttons = document.getElementById('toggle_subscribe_buttons');
 const subscribe_submit = document.getElementById('subscribe_submit');
 const email_subscribe_textform = document.getElementById('email_subscribe_textform');
 const subscribe_form = document.getElementById('subscribe_form');
@@ -14,6 +16,15 @@ subscribe_button.addEventListener('click', () => {
     }
 });
 
+toggle_subscribe_buttons.addEventListener('click', () => {
+    if (subscribe_buttons.classList.contains('fixed_bottom')) {
+        subscribe_buttons.classList.remove('fixed_bottom');
+        subscribe_buttons.classList.add('fixed_bottom_visible');
+    } else {
+        subscribe_buttons.classList.remove('fixed_bottom_visible');
+        subscribe_buttons.classList.add('fixed_bottom');
+    }
+});
 
 function sendSubToLambda(email) {
         const data = {
@@ -38,6 +49,7 @@ function sendSubToLambda(email) {
 subscribe_submit.addEventListener('click', () => {
     subscribe_form.classList.add('hidden');
     const email = email_subscribe_textform.value;
+    // TODO: client side validate email
     console.log(email);
     sendSubToLambda(email);
     thanks_message.classList.remove('hidden');
@@ -51,10 +63,14 @@ for (e of close_parent) {
     });
 }
 
-function hideOnClickOutside(element) {
+function addClassOnClickOutside(element, className, removeClass=[]) {
     const outsideClickListener = event => {
-        if (!element.contains(event.target) && !subscribe_button.contains(event.target) && isVisible(element)) { // or use: event.target.closest(selector) === null
-          element.classList.add('hidden');
+        // TODO: this long list of classes makes the function not quite do what it claims.
+        if (!element.contains(event.target) && !subscribe_button.contains(event.target) && !toggle_subscribe_buttons.contains(event.target) && isVisible(element)) { // or use: event.target.closest(selector) === null
+          element.classList.add(className);
+            for (e of removeClass) {
+                element.classList.remove(e);
+            }
         }
     }
     document.addEventListener('click', outsideClickListener);
@@ -62,4 +78,5 @@ function hideOnClickOutside(element) {
 
 const isVisible = elem => !!elem && !!( elem.offsetWidth || elem.offsetHeight || elem.getClientRects().length );
 
-hideOnClickOutside(email_input);
+addClassOnClickOutside(email_input, 'hidden');
+addClassOnClickOutside(subscribe_buttons, 'fixed_bottom', ['fixed_bottom_visible']);
