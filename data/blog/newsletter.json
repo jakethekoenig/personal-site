@@ -1,0 +1,11 @@
+{
+	"Title": "Slowly and Badly Copying Substack",
+        "Subtitle": "From blog to newsletter",
+	"Author": "Jake Koenig",
+	"URL": "premium",
+	"og_image": "/asset/pic/dumbsubstack.png",
+	"Template": "blog.temp",
+	"Date": "03/06/2023",
+	"Content": "blog/newsletter.md",
+	"Categories": ["technology", "personal"]
+}
