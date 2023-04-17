@@ -1,4 +1,5 @@
 from datetime import datetime
+import os
 
 def generate(data, index):
     ans = ""
@@ -14,6 +15,11 @@ def rss_entry(blog):
     ans+= "<guid isPermaLink=\"true\">"+blog["permalink"]+"</guid>"
     if "Summary" in blog:
         ans+= "<description>"+blog["Summary"]+"</description>"
+    if "Content" in blog:
+        content_path = os.path.join("content", blog["Content"])
+        with open(content_path, "r") as f:
+            content = f.read()
+        ans += "<content:encoded><![CDATA[" + content + "]]></content:encoded>"
     ans += "<pubDate>" + datetime.strptime(blog["Date"],"%m/%d/%Y").strftime("%a, %d %b %Y %H:%M:%S %z EST") + "</pubDate>"
     ans += "</item>\n"
     return ans
