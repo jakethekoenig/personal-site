@@ -1,0 +1,9 @@
+{
+	"Title": "How Blog Breed",
+	"Author": "Jake Koenig",
+	"URL": "blogsbreed",
+	"Template": "blog.temp",
+	"Date": "06/12/2023",
+	"Content": "blog/blogsbreed.md",
+	"Categories": ["philosophy", "personal"]
+}
