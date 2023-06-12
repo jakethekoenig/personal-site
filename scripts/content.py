@@ -53,7 +53,7 @@ def replacelinks(line):
             break
         text=line[ope+1:nex]
         link=line[nex+2:clos]
-        if link[0]=='/':
+        if len(link)>0 and link[0]=='/':
             attr='href=%s'%link
         else:
             attr='href=%s target=_blank'%link
