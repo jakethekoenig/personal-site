@@ -19,6 +19,8 @@
 	<a href="https://disqus.com/by/ja3k/"><img class="icon" src="/asset/icon/disq.ico"></a>
 	<a href="https://linktr.ee/ja3k_"><img class="icon" src="/asset/icon/linktree.ico"></a>
 	<a href="/feed.xml"><img class="icon" src="/asset/icon/rss.svg" style="display:none;"></a>
+        <a rel="me" href="https://mastodon.social/@ja3k"><img class="icon" src="/asset/icon/mastodon.svg"></a>
+	<div style="display:none;">
         <a rel="me" href="https://qoto.org/@ja3k"><img class="icon" src="/asset/icon/mastodon.svg"></a>
-	<div style="display:none;"><a target="_blank" href="https://icons8.com/icon/CVY1Tj6mnwWy/chess-com">Chess Com</a> icon by <a target="_blank" href="https://icons8.com" style="dispay:none;">Icons8</a></div>
+        <a target="_blank" href="https://icons8.com/icon/CVY1Tj6mnwWy/chess-com">Chess Com</a> icon by <a target="_blank" href="https://icons8.com" style="dispay:none;">Icons8</a></div>
 </div>
