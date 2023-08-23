@@ -1,0 +1,10 @@
+{
+	"Title": "String Poaster",
+	"Author": "Jake Koenig",
+	"URL": "stringpoaster",
+	"Template": "blog.temp",
+	"Date": "08/23/2023",
+	"Content": "blog/stringpoaster.md",
+	"Categories": ["personal", "tech"],
+        "Summary": "I made a tool to cross post my tweets to X, bluesky, threads, mastodon and farcaster."
+}
