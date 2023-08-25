@@ -1,7 +1,7 @@
 
 I'm going to Vegas for the Limited Open so I figured as step one I'd write down some of my thoughts on Wilds of Eldraine. I'm going to take it a little more seriously than the release weekend RCQs I've been playing so I've included a common ranking.
 
-The set looks like a total delight. Rats, roles and adventures all all seem fun and creative and I'm a big fan of all the cute rodents and candy people.
+The set looks like a total delight. Rats, roles and adventures all seem fun and creative and I'm a big fan of the cute rodents and candy people.
 <ul>
 <li><a href="#mechanics">Mechanics</a></li>
 <ul>
@@ -40,7 +40,7 @@ The set looks like a total delight. Rats, roles and adventures all all seem fun 
 
 Every pack will have a bonus enchanted tale enchantment card. Even without this I think it'd be a main deck naturalize format but it really pushes it to 100%. At uncommon there's a lot of removal and a few that require answers: [h[Griffin Aerie]] seems pretty good in the food set. 
 
-The best rares to be aware of are: [h[Blind Obedience]], [h[Dark Tutelage]] (though I'd want food + bargain before putting it in my deck) [h[Force Fruition]] (I'm not 100% on this one. Maybe if you spend 6 mana on nothing your opponent has a decent chance of beating you with the best 4 cards in their deck.) [h[Dawn of Hope]], [h[Grave Pact]], [h[Unnatural Growth]], [h[Defense of the Heart]].
+The best rares to be aware of are: [h[Blind Obedience]], [h[Dark Tutelage]] (though I'd want food + bargain before putting it in my deck) [h[Force Fruition]] (I'm not 100% on this one. Maybe if you spend 6 mana on nothing your opponent has a decent chance of beating you with the best 4 cards in their deck.) [h[Dawn of Hope]], [h[Grave Pact]], [h[Unnatural Growth]] and [h[Defense of the Heart]].
 
 ## Fixing
 
@@ -58,7 +58,7 @@ The 'Only one role' is a cool way to make the game about buffing creatures witho
 
 ## Bargain
 
-There are 20 bargain cards spread throughout all 5 colors. My sense is there isn't really a bargain deck it's just another option some cards have. For instance there's a handful of removal spells that would all be good without bargain and I suspect will be cast quite frequently without it. Even at higher rarities the main benefit you get from bargaining is a more flexibility, life or mana. [h[Agatha's Champion]], [h[Troublemaker Ouphe]], [h[Tenacious Tomeseeker]] are the only card which gives you a cards worth of value for the deal. Which isn't to say the bargain cards aren't good. I just don't think you should think of it as your archetype as you're drafting.
+There are 20 bargain cards spread throughout all 5 colors. My sense is there isn't really a bargain deck it's just another option some cards have. For instance there's a handful of removal spells that would all be good without bargain and I suspect will be cast quite frequently without it. Even at higher rarities the main benefit you get from bargaining is more flexibility, life or mana. [h[Agatha's Champion]], [h[Troublemaker Ouphe]], [h[Tenacious Tomeseeker]] are the only card which gives you a cards worth of value for the deal. Which isn't to say the bargain cards aren't good. I just don't think you should think of it as your archetype as you're drafting.
 
 It's interesting that UG seem to have some of the better bargain cards and the ones that are more important to actually bargain since that color pair will have a relatively difficult time paying without rats or the sacrifice enchantment theme. There's a lot of green food at least.
 
@@ -68,7 +68,7 @@ I ordered the color pairs by how good I thought they'd be based on how good thei
 
 ## Food (BG)
 
-There's one white card ([h[Food Coma]] and one blue card ([h[The Goose Mother]]) that make food but other than that it's all BG. The payoffs for making food your thing are: [h[Experimental Confectioner]], [h[Greta, Sweettooth Scourge]], [h[Hollow Scavenger]], [h[Night of the Sweet's Revenge]], [h[Provisions Merchant]], [h[Sweettooth Witch]] and [h[Tough Cookie]]. That's a ton of payoffs and I expect food to be one of the better archetypes. Gaining life will play well against the aggro decks
+There's one white card ([h[Food Coma]]) and one blue card ([h[The Goose Mother]]) that make food but other than that it's all BG. The payoffs for making food your thing are: [h[Experimental Confectioner]], [h[Greta, Sweettooth Scourge]], [h[Hollow Scavenger]], [h[Night of the Sweet's Revenge]], [h[Provisions Merchant]], [h[Sweettooth Witch]] and [h[Tough Cookie]]. That's a ton of payoffs and I expect food to be one of the better archetypes. Gaining life will play well against the aggro decks
 
 ## Rats (BR)
 
@@ -80,7 +80,7 @@ Black is at the intersection of Rats and Food which will make [h[Experimental Co
 
 ## Dying Enchantments (BW)
 
-There's a mini enchantments dying theme here as you can tell from [h[Neva, Stalked by Nightmares]]. I think there's a fair bit of potential here as [h[Savior of the Sleeping]] and [h[Warehouse Tabby]] are both commons a lot of decks won't want that much are fine with just one trigger and sort of broken if you're triggering them every turn. [h[Ashiok's Reaper]] and [h[Knight of Doves]] are excellent uncommons and you shouldn't have to fight for [h[Wicked Visitor]]s.
+There's an enchantments dying theme here as you can tell from [h[Neva, Stalked by Nightmares]]. I think there's a fair bit of potential here as [h[Savior of the Sleeping]] and [h[Warehouse Tabby]] are both commons a lot of decks won't want that much are fine with just one trigger and sort of broken if you're triggering them every turn. [h[Ashiok's Reaper]] and [h[Knight of Doves]] are excellent uncommons and you shouldn't have to fight for [h[Wicked Visitor]]s.
 
 On the Enabling side I think BW in particular can be happy with [h[Hopeful Vigil]] and [h[Hopeless Nightmare]] (See this is why I write these set reviews. I never would have noticed that naming otherwise) whereas most decks won't want them. Of course the primary way to trigger all these cards is with roles. There are 9 commons in BW that make roles.
 
@@ -94,13 +94,11 @@ It's pretty adjacent to rats as rats will often trigger celebration and [h[Bespo
 
 ## Faeries (UB)
 
-There are 25 faeries (Counting [h[Into the Fae Court]] 8 of which are common. They bleed into white with 2 common and 1 rare white faerie. The payoffs are [h[Picklock Prankster]] and [h[Spell Stutter]], which you can play in any blue deck and don't get that much better with a density of faeries, and [h[Barrow Naughty]], [h[Ego Drain]] and [h[Faerie Fencing]] who want a little more faerie density and [h[Obyra, Dreaming Duelist]]. Only Obyra scales linearly in power with the number of faeries you have. 
+There are 25 faeries (Counting [h[Into the Fae Court]]) 8 of which are common. They bleed into white with 2 common and 1 rare white faerie. The payoffs are [h[Picklock Prankster]] and [h[Spell Stutter]], which you can play in any blue deck and don't get that much better with a density of faeries, and [h[Barrow Naughty]], [h[Ego Drain]] and [h[Faerie Fencing]] who want a little more faerie density and [h[Obyra, Dreaming Duelist]]. Only Obyra scales linearly in power with the number of faeries you have. 
 
 ## Mana Value 5 or Greater (UG)
 
-[h[Troyan, Gutsy Explorer]] makes mana but only for spells that cost 5 or greater. In addition there are three uncommons [h[Galvanic Giant]], [h[Tempest Hart]], [h[Up the Beanstalk]] that care about expensive spells and two commons [h[Skybeast Tracker]] and [h[Stormkeld Prowler]]. 
-
-I think the deck will want a lot of [h[Beanstalk Wurm]]s, [h[Obyra's Attendants]] and [h[Beluna's Gatekeeper]]s to have early plays and a good density of 5+ drops. [h[Hamlet Glutton]] also seems key for the deck.
+There are four uncommons [h[Troyan, Gutsy Explorer]], [h[Galvanic Giant]], [h[Tempest Hart]], [h[Up the Beanstalk]] and two commons [h[Skybeast Tracker]] and [h[Stormkeld Prowler]] that care about spells that cost 5+. I think the deck will want a lot of [h[Beanstalk Wurm]]s, [h[Obyra's Attendants]] and [h[Beluna's Gatekeeper]]s to have early plays and a good density of 5+ drops. [h[Hamlet Glutton]] also seems key for the deck.
 
 Another interesting thing about UG is it has in my opinion the best bargainers while generally being the worst at bargaining. Maybe a conscious decision to keep the power level of bargain even across the colors? Much like there isn't a role or adventure deck because those cards are everywhere there's not a bargain deck.
 
