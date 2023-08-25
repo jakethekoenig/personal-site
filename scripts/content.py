@@ -105,7 +105,7 @@ def md2html(content):
         depth = len(tokens[0])
         if tokens[0] == '#'*depth:
             header = line.strip()[depth:].strip()
-            headerId = header[header.find('[[')].lower().replace(" ","_") # A title can end with a footnote. I don't want that in the id.
+            headerId = header.lower().replace(" ","_") # A title can end with a footnote. I don't want that in the id.
             ans += wrap('h'+str(depth), header, a='id="'+ headerId +'"')
         elif tokens[0][:2] == '![':
             tokens = re.split('\[|\]|\!|\(|\)|"|\'', line)
