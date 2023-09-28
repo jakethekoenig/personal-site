@@ -323,7 +323,7 @@ This is mostly a land and a 1/1 which is pretty good. It's a quirk in my card ev
 [b[Skybeast Tracker]]
 Nice [h[Giant Spider]]. You're not going to go off casting 5 mana spells but it should get triggered once or twice in most games. It'll be pretty good.
 [b[Hollow Scavenger]]
-Not to be confused with [h[Hollowhedge Scavenger]]. I've been ragging on 3 mana 3/2s all review but this one is actually fine. It's trivial to do the adventure so you'll always have the threat of activation up. Also I don't know why I'm bothering to point this out at this point but it celebrates on its own.
+Not to be confused with [h[Hollowhenge Scavenger]]. I've been ragging on 3 mana 3/2s all review but this one is actually fine. It's trivial to do the adventure so you'll always have the threat of activation up. Also I don't know why I'm bothering to point this out at this point but it celebrates on its own.
 [b[Brave the Wilds]]
 The option to make a 3/3 is just what this type of card needs. I think bargain is a little worse in green because it doesn't have rats. In some games foods aren't that relevant though.
 [b[Troublemaker Ouphe]]
