@@ -1,0 +1,11 @@
+{
+	"Title": "Write on your Phone",
+	"Author": "Jake Koenig",
+	"URL": "keyboard",
+	"og_image": "/asset/pic/keyboard.png",
+	"Template": "blog.temp",
+	"Date": "09/28/2023",
+	"Content": "blog/keyboard.md",
+	"Categories": ["tech"],
+	"Summary": "I recently got a foldable bluetooth keyboard to work while I traveled and it was more delightful than I could have imagined."
+}
