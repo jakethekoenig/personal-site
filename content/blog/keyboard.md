@@ -22,7 +22,7 @@ The bluetooth keyboard charges with USB-c so you won't need another charger.
 
 The phone stand even came with the keyboard which even though it's just a small piece of plastic was a very nice touch. It was well designed with 5 different angles, even labeled in degrees.
 
-Spirit ended up having extremely small tray tables.
+Spirit ended up having extremely small tray tables. But I was still able to write on my phone by putting my phone in landscape mode and leaning it between the keyboard and chair. I wasn't able to take a picture for obvious reasons. But it worked great. I was able to do some journaling, write a lot of a Vegas tournament report and even make some small commits to ChatVim. Unfortunately I wasn't able to install [mentat](https://github.com/AbanteAI/mentat) because the pip install complained about some rust dependencies so I wasn't able to work on my day job. But other than that I was able to do everything I wanted to.
 <div class='portraitcontainer'>
 <figure class='portrait'>
 <img src='/asset/pic/tray.png' alt='tray table'>
