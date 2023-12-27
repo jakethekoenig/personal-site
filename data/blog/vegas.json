@@ -1,0 +1,11 @@
+{
+	"Title": "Magic Fest Vegas (15th)",
+	"Author": "Jake Koenig",
+	"URL": "vegas",
+	"og_image": "/asset/pic/vegas.png",
+	"Template": "blog.temp",
+	"Date": "12/27/2023",
+	"Content": "blog/vegas.md",
+	"Categories": ["magic"],
+	"Summary": "I came in 15th at Magic Fest Vegas 2023."
+}
