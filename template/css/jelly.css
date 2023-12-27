@@ -34,11 +34,18 @@
 .portrait > img {
     max-width: 400px;
 }
-.landscape {
+.landscape>img {
 	display:block;
 	margin-left: auto;
 	margin-right: auto;
 	max-height: 80vh;
+	max-width: 100%;
+	width: auto;
+}
+.landscape {
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
 	max-width: 100%;
 	width: auto;
 }
