@@ -1,0 +1,10 @@
+{
+	"Title": "Turning my Workflow Inside Out",
+        "Summary": "Downregulating tmux",
+	"Author": "Jake Koenig",
+	"URL": "inside_out",
+	"Template": "blog.temp",
+	"Date": "07/17/2024",
+	"Content": "blog/inside_out.md",
+	"Categories": ["tech", "productivity"]
+}
