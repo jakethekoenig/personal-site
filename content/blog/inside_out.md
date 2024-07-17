@@ -31,7 +31,7 @@ The default chord to enter normal mode from a terminal `&lt;C-\&gt;&lt;C-n&gt;` 
 ```
 " ~/.config/nvim/init.vim
 nnoremap &lt;C-x&gt; :vsp&lt;CR&gt;:term&lt;CR&gt;
-tnoremap &lt;C-x&gt; &lt;C-\&gt;&lt;C-&gt;n
+tnoremap &lt;C-x&gt; &lt;C-\&gt;&lt;C-n&gt;
 tnoremap &lt;C-p&gt; &lt;C-\&gt;&lt;C-n&gt;:CtrlP&lt;CR&gt;
 tnoremap &lt;C-o&gt; &lt;C-\&gt;&lt;C-n&gt;&lt;C-o&gt;
 tnoremap &lt;C-h&gt; &lt;C-\&gt;&lt;C-n&gt;&lt;C-w&gt;&lt;C-h&gt;
