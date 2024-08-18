@@ -1,0 +1,9 @@
+{
+	"Title": "Vim is more useful in the age of LLMs",
+	"Author": "Jake Koenig",
+	"URL": "vimllm",
+	"Template": "blog.temp",
+	"Date": "08/18/2024",
+	"Content": "blog/vimllm.md",
+	"Categories": ["tech", "productivity"]
+}
