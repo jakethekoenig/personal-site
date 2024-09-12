@@ -1,4 +1,4 @@
-from imp import find_module, load_module
+from importlib import util
 from my_auto_card import insert_autocard
 from my_mathjax import mathjax
 import json
@@ -27,8 +27,9 @@ def get_content(data, index, content_dir):
             dire = content_dir + path[:path.rfind("/")]
         else:
             dire = content_dir
-        fp,pathname,desc = find_module(name, [dire])
-        mod = load_module(name,fp,pathname,desc)
+        spec = util.spec_from_file_location(name, os.path.join(dire, name + '.py'))
+        mod = util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
         return mod.generate(data, index)
     else:
         with open(os.path.join(content_dir, path)) as c:

@@ -2,7 +2,7 @@ from subprocess import run
 
 def mathjax(content):
     # Don't want to unnecessarily call node
-    if '\[' not in content:
+    if '\\[' not in content:
         return content
     # TODO: avoid node dependency, don't hardcode location
     # TODO: cache. I should do this in general.
