@@ -18,20 +18,24 @@ def local_file_name(s):
 def downloadCard(s):
     if scrython is None:
         return
-    filename = local_file_name(s)
-    if not os.path.exists(filename):
-        print("downloading %s"%filename)
-        card = scrython.cards.Search(q=s).data()[0]
-        if 'card_faces' not in card and 'image_uris' not in card:
-            print("Could not download image")
-            return
-        if 'card_faces' in card:
-            image_uri = card['card_faces'][0]['image_uris']['normal']
-        else:
-            image_uri = card['image_uris']['normal']
-        response = requests.get(image_uri)
-        with open(filename, 'wb') as f:
-            f.write(response.content)
+    try:
+        filename = local_file_name(s)
+        if not os.path.exists(filename):
+            print("downloading %s"%filename)
+            card = scrython.cards.Search(q=s).data()[0]
+            if 'card_faces' not in card and 'image_uris' not in card:
+                print("Could not download image")
+                return
+            if 'image_uris' in card:
+                image_uri = card['image_uris']['normal']
+            else:
+                image_uri = card['card_faces'][0]['image_uris']['normal']
+            response = requests.get(image_uri)
+            with open(filename, 'wb') as f:
+                f.write(response.content)
+    except Exception as e:
+        print(s)
+        print("Could not download image: %s"%e)
 
 def make_hover(name):
     downloadCard(name)
