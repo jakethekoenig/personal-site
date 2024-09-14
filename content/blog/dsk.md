@@ -25,7 +25,7 @@ I'm really excited to draft a rooms deck. It seems like every limited environmen
 
 This theme is spread across esper. Somehow it seems more cohesive as distinct BW and UW decks though. At common there are 4 cards that have eerie: 1 white, 2 blue, 1 black. The UB uncommons, [h[Fear of Infinity]] and [h[Skullsnap Nuisance]] both have Eerie. One of the UW uncommons [h[Gremlin Tamer]] has eerie and the other [h[Inquisitive Glimmer]] is definitely an Eerie card. Outside of the eerie cards there's also [h[Ethereal Armor]] as a payoff.
 
-A lot of the eerie cards seem a little out of place though. For instance [h[Scrabbling Skullcrab]] doesn't really seem like what you want to be doing]]. [h[Stalked Researcher]] and [h[Balemurk Leech]] don't really look like they belong in the same deck. I guess if you're really triggering eerie down they're both aggressive cards but I tend to see the [h[Stalked Researcher]] as a defensively positioned option.
+A lot of the eerie cards seem a little out of place though. For instance [h[Scrabbling Skullcrab]] doesn't really seem like what you want to be doing. [h[Stalked Researcher]] and [h[Balemurk Leech]] don't really look like they belong in the same deck. I guess if you're really triggering eerie down they're both aggressive cards but I tend to see the [h[Stalked Researcher]] as a defensively positioned option.
 
 ## Manifest
 
