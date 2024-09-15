@@ -4,6 +4,7 @@
 	"Author": "Jake Koenig",
 	"Template": "rss.temp",
 	"Content": "rss.py",
-        "Hide": true
+        "Hide": true,
+        "skip_post_processing": true
 }
 	
