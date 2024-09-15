@@ -9,9 +9,10 @@ def generate_content(data, index, content_dir="content/"):
     content = get_content(data, index, content_dir)
     # Post processing on the content html
     # Should there be a more stylized way to do this? Maybe the desired post processing should be listed in the blog's data dir.
-    content = generate_footers(content)
-    content = insert_autocard(content)
-    content = mathjax(content)
+    if not data.get("skip_post_processing"):
+        content = generate_footers(content)
+        content = insert_autocard(content)
+        content = mathjax(content)
     return content
 
 # TODO: handle .md files as well as py and html
