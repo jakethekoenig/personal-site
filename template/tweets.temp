@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<:comp/header:>
+<body>
+	<main>
+	<:comp/sidemenu:>
+	<div class="title">
+		<h1><$Title$></h1>
+	</div>
+	<div class="main_content">
+	    <[Content]>
+	</div>
+	</main>
+	<br>
+	<div id="socials_footer">
+	<:comp/socials:>
+	</div>
+</body>
+</html>
