@@ -119,7 +119,10 @@ def render_thread(items: List[Dict[str, Any]]) -> str:
 
 def generate(data, index):
     # Load tweet JSONs written by scripts/process_twitter_archive.py
-    data_dir = Path("data") / "tweets_data"
+    # Prefer keeping large tweet data out of the site's data index:
+    preferred = Path("nongenerated") / "data" / "tweets_data"
+    fallback = Path("data") / "tweets_data"
+    data_dir = preferred if preferred.exists() else fallback
     tweets = load_all_tweets(data_dir)
 
     # Group into threads (self-replies only; processor already filtered)

@@ -355,7 +355,7 @@ def process_archive(
 def main(argv: Optional[List[str]] = None) -> int:
     p = argparse.ArgumentParser(description="Extract tweets from a Twitter/X archive to site JSON and assets.")
     p.add_argument("--archive-dir", required=True, help="Path to root of the Twitter data export")
-    p.add_argument("--out-data-dir", default="data/tweets_data", help="Directory to write per-tweet JSON files")
+    p.add_argument("--out-data-dir", default="nongenerated/data/tweets_data", help="Directory to write per-tweet JSON files (kept out of site index)")
     p.add_argument("--out-media-dir", default="nongenerated/assets/crosspoast", help="Directory to place media assets to be served at /assets/crosspoast")
     p.add_argument("--screen-name", help="Your Twitter/X @username (without @). If omitted, try to read from archive.")
     p.add_argument("--download", action="store_true", help="Download media from URLs if not present in the archive (requires 'requests').")
