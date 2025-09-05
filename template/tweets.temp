@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <:comp/header:>
+<style>
+<:css/tweets.css:>
+</style>
 <body>
 	<main>
 	<:comp/sidemenu:>
