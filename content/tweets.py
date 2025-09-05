@@ -86,7 +86,7 @@ def render_thread(items: List[Dict[str, Any]]) -> str:
 
 def generate(data, index):
     # Load tweet JSONs written by scripts/process_twitter_archive.py
-    data_dir = Path("data") / "tweets"
+    data_dir = Path("data") / "tweets_data"
     tweets = load_all_tweets(data_dir)
 
     # Group into threads (self-replies only; processor already filtered)
