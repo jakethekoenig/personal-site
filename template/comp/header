@@ -12,6 +12,7 @@
 <:css/exp.css:>
 <:css/jelly.css:>
 <:css/highlight.css:>
+<:css/tweets.css:>
 </style>
 
 <script>
