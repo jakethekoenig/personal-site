@@ -104,28 +104,55 @@ def extract_tweet_data(tweet_obj, user_screen_name=None):
         'username': username
     }
 
-def download_media(media_list, output_dir, tweet_id):
+def process_media(media_list, assets_dir, tweet_id, archive_path):
     """
-    Process media URLs and prepare them for local storage.
-    Note: Actual downloading would require the files to be present in the archive.
+    Process media URLs and copy files from archive to assets directory.
     """
     processed_media = []
     
     for media in media_list:
         if media['url']:
-            # Get file extension from URL
+            # Extract the original filename from the URL
             url = media['url']
-            ext = os.path.splitext(url)[1] or '.jpg'
+            url_parts = url.split('/')
+            original_filename = url_parts[-1] if url_parts else ''
             
-            # Create a filename based on tweet ID and media index
-            filename = f"{tweet_id}_{len(processed_media)}{ext}"
-            local_path = f"/assets/crosspoast/{filename}"
+            # Twitter archive media files are typically named: tweet_id-filename.ext
+            # Try multiple possible locations
+            possible_sources = [
+                Path(archive_path) / 'data' / 'tweet_media' / f"{tweet_id}-{original_filename}",
+                Path(archive_path) / 'data' / 'tweets_media' / f"{tweet_id}-{original_filename}",
+                Path(archive_path) / 'data' / 'tweet_media' / original_filename,
+                Path(archive_path) / 'data' / 'tweets_media' / original_filename,
+            ]
+            
+            # Find the actual file
+            source_file = None
+            for possible_source in possible_sources:
+                if possible_source.exists():
+                    source_file = possible_source
+                    break
+            
+            # Create a new filename for our assets
+            ext = os.path.splitext(original_filename)[1] or '.jpg'
+            new_filename = f"{tweet_id}_{len(processed_media)}{ext}"
+            local_path = f"/assets/crosspoast/{new_filename}"
+            dest_file = assets_dir / new_filename
+            
+            # Copy the file if found
+            if source_file:
+                try:
+                    shutil.copy2(source_file, dest_file)
+                    print(f"  Copied media: {source_file.name} -> {new_filename}")
+                except Exception as e:
+                    print(f"  Error copying {source_file}: {e}")
             
             processed_media.append({
                 'type': media['type'],
                 'original_url': url,
                 'local_path': local_path,
-                'filename': filename
+                'filename': new_filename,
+                'found': source_file is not None
             })
     
     return processed_media
@@ -258,10 +285,11 @@ def process_twitter_archive(archive_path, output_dir):
                 
                 # Process media
                 if tweet_data['media']:
-                    tweet_data['processed_media'] = download_media(
+                    tweet_data['processed_media'] = process_media(
                         tweet_data['media'], 
                         assets_dir, 
-                        tweet_data['id']
+                        tweet_data['id'],
+                        archive_path
                     )
                 
                 all_tweets.append(tweet_data)
@@ -316,16 +344,18 @@ def process_twitter_archive(archive_path, output_dir):
     print(f"Master file saved to {master_file}")
     print(f"Threads file saved to {threads_file}")
     
-    # Copy media files if they exist in the archive
-    media_source = Path(archive_path) / 'data' / 'tweets_media'
-    if media_source.exists():
-        print(f"Copying media files from {media_source}...")
-        for media_file in media_source.glob('*'):
-            dest = assets_dir / media_file.name
-            shutil.copy2(media_file, dest)
-        print(f"Media files copied to {assets_dir}")
-    else:
-        print("Note: No media directory found in archive. You'll need to manually add media files.")
+    # Report on media processing
+    media_found = sum(1 for t in filtered_tweets 
+                     for m in t.get('processed_media', []) 
+                     if m.get('found', False))
+    media_total = sum(len(t.get('processed_media', [])) 
+                     for t in filtered_tweets)
+    
+    if media_total > 0:
+        print(f"Processed {media_found}/{media_total} media files")
+        if media_found < media_total:
+            print("Note: Some media files were not found in the archive.")
+            print("Twitter archives may have media in 'data/tweet_media/' or 'data/tweets_media/'")
     
     return filtered_tweets
 
