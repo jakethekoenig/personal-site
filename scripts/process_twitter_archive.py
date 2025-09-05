@@ -46,6 +46,9 @@ def process_media(tweet, media_dir, output_media_dir):
     """Process media files associated with a tweet"""
     media_files = []
     
+    # Get tweet ID for filename matching
+    tweet_id = tweet.get('id_str', tweet.get('id', ''))
+    
     # Check multiple possible locations for media in the tweet data
     media_sources = []
     
@@ -61,39 +64,50 @@ def process_media(tweet, media_dir, output_media_dir):
         if 'media_url' in media:
             # Extract filename from URL
             media_url = media['media_url']
-            filename = os.path.basename(urlparse(media_url).path)
+            original_filename = os.path.basename(urlparse(media_url).path)
             
-            # Try different possible filenames and extensions
+            # Twitter archives often prefix media files with tweet ID
+            # Try different possible filename patterns
             possible_filenames = [
-                filename,
-                filename.replace('.jpg', '.png'),
-                filename.replace('.png', '.jpg'),
-                filename + '.jpg',
-                filename + '.png'
+                # With tweet ID prefix (most common in archives)
+                f"{tweet_id}-{original_filename}",
+                f"{tweet_id}-{original_filename.replace('.jpg', '.png')}",
+                f"{tweet_id}-{original_filename.replace('.png', '.jpg')}",
+                # Without prefix (fallback)
+                original_filename,
+                original_filename.replace('.jpg', '.png'),
+                original_filename.replace('.png', '.jpg'),
+                original_filename + '.jpg',
+                original_filename + '.png'
             ]
             
             source_path = None
+            actual_filename = None
             for possible_filename in possible_filenames:
                 test_path = os.path.join(media_dir, possible_filename)
                 if os.path.exists(test_path):
                     source_path = test_path
-                    filename = possible_filename
+                    actual_filename = possible_filename
                     break
             
             if source_path:
+                # Use the original filename (without tweet ID prefix) for the output
+                output_filename = original_filename
+                
                 # Copy to output directory
                 os.makedirs(output_media_dir, exist_ok=True)
-                dest_path = os.path.join(output_media_dir, filename)
+                dest_path = os.path.join(output_media_dir, output_filename)
                 shutil.copy2(source_path, dest_path)
                 
                 # Store relative path for the JSON
                 media_files.append({
                     'type': media.get('type', 'photo'),
-                    'url': f"/assets/crosspoast/{filename}",
+                    'url': f"/assets/crosspoast/{output_filename}",
                     'original_url': media_url
                 })
+                print(f"Found media: {actual_filename} -> {output_filename}")
             else:
-                print(f"Warning: Could not find media file for {filename}")
+                print(f"Warning: Could not find media file for {original_filename} (tried with tweet ID {tweet_id})")
     
     return media_files
 
