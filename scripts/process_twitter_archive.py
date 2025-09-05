@@ -189,6 +189,23 @@ def _best_video_variant(media_obj: Dict[str, Any]) -> Optional[str]:
     return None
 
 
+def _discover_account_id(archive_dir: Path) -> Optional[str]:
+    for name in ["account.js", "profile.js", "account-creation.js"]:
+        p = archive_dir / "data" / name
+        if p.exists():
+            try:
+                payload = _read_js_json(p)
+                if isinstance(payload, list) and payload:
+                    obj = payload[0]
+                    if "account" in obj and "accountId" in obj["account"]:
+                        return str(obj["account"]["accountId"])
+                    if "profile" in obj and "userId" in obj["profile"]:
+                        return str(obj["profile"]["userId"])
+            except Exception:
+                continue
+    return None
+
+
 def process_archive(
     archive_dir: Path,
     out_data_dir: Path,
@@ -211,17 +228,61 @@ def process_archive(
         archive_dir,  # last resort
     ]
 
-    count = 0
-    for t in _iter_tweet_records(archive_dir):
-        # Only tweets authored by the account owner (filter out retweets by others if present)
-        user_id = t.get("user_id_str") or (t.get("user") or {}).get("id_str")
-        # When it's the owner's archive, user_id should match 'account_id' in account.js; skip check for simplicity
+    # Load all tweets first to support filtering and threading
+    raw: List[Dict[str, Any]] = list(_iter_tweet_records(archive_dir))
+    by_id: Dict[str, Dict[str, Any]] = {}
+    for t in raw:
+        tid = t.get("id_str") or t.get("id")
+        if tid:
+            by_id[str(tid)] = t
 
-        id_str = t.get("id_str") or t.get("id")
-        if not id_str:
-            continue
+    own_user_id = _discover_account_id(archive_dir)
+    if not own_user_id:
+        # Fallback: infer from one of the tweets
+        for t in raw:
+            uid = t.get("user_id_str") or (t.get("user") or {}).get("id_str")
+            if uid:
+                own_user_id = str(uid)
+                break
+
+    def is_self_reply(t: Dict[str, Any]) -> bool:
+        in_reply_to_uid = t.get("in_reply_to_user_id_str") or t.get("in_reply_to_user_id")
+        return bool(in_reply_to_uid) and own_user_id and str(in_reply_to_uid) == own_user_id
+
+    def thread_root_id(t: Dict[str, Any]) -> str:
+        seen = set()
+        current = t
+        while True:
+            tid = str(current.get("id_str") or current.get("id"))
+            parent_id = current.get("in_reply_to_status_id_str") or current.get("in_reply_to_status_id")
+            if not parent_id:
+                return tid
+            parent_id = str(parent_id)
+            if parent_id in seen:
+                return tid
+            seen.add(parent_id)
+            parent = by_id.get(parent_id)
+            if not parent:
+                return tid
+            # only follow chain if parent is authored by self
+            parent_uid = parent.get("user_id_str") or (parent.get("user") or {}).get("id_str")
+            if own_user_id and str(parent_uid) != own_user_id:
+                return tid
+            current = parent
+
+    # Filter: keep top-level tweets and self-threads (replies where in_reply_to_user_id is self)
+    filtered: List[Dict[str, Any]] = []
+    for t in raw:
+        is_reply = bool(t.get("in_reply_to_status_id_str") or t.get("in_reply_to_status_id"))
+        if not is_reply or is_self_reply(t):
+            filtered.append(t)
+
+    # Write outputs
+    count = 0
+    for t in filtered:
+        id_str = str(t.get("id_str") or t.get("id"))
         created_at = t.get("created_at") or t.get("createdAt") or t.get("time")
-        if not created_at:
+        if not id_str or not created_at:
             continue
         dt = _parse_timestamp(created_at)
         iso_ts = dt.replace(tzinfo=timezone.utc).isoformat().replace("+00:00", "Z")
@@ -265,23 +326,27 @@ def process_archive(
             if site_rel:
                 copied_assets.append(site_rel)
 
-        # Build tweet JSON object
+        in_reply_to = t.get("in_reply_to_status_id_str") or t.get("in_reply_to_status_id")
+        root_id = thread_root_id(t)
+
         obj = {
             "id": id_str,
             "Title": f"Tweet {id_str}",
+            "Template": "empty.temp",
             "Hide": True,
             "content": full_text,
             "link": f"https://x.com/{screen_name}/status/{id_str}",
             "timestamp": iso_ts,
+            "thread_root": root_id,
         }
+        if in_reply_to:
+            obj["in_reply_to_status_id"] = str(in_reply_to)
         if copied_assets:
             obj["media"] = copied_assets
 
-        # Write per-tweet json
         out_path = out_data_dir / f"{id_str}.json"
         with open(out_path, "w", encoding="utf-8") as f:
             json.dump(obj, f, ensure_ascii=False, indent=2)
-
         count += 1
 
     return count
