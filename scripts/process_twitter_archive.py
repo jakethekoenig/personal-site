@@ -268,6 +268,8 @@ def process_archive(
         # Build tweet JSON object
         obj = {
             "id": id_str,
+            "Title": f"Tweet {id_str}",
+            "Hide": True,
             "content": full_text,
             "link": f"https://x.com/{screen_name}/status/{id_str}",
             "timestamp": iso_ts,
