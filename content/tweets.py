@@ -47,32 +47,62 @@ def load_all_tweets(data_dir: Path) -> List[Dict[str, Any]]:
                 tweets.append(t)
         except Exception:
             continue
-    # Sort newest first by timestamp if present
-    def key(t):
-        ts = t.get("timestamp", "")
-        try:
-            return datetime.fromisoformat(ts.replace("Z", "+00:00"))
-        except Exception:
-            return datetime.min
-    tweets.sort(key=key, reverse=True)
     return tweets
+
+def parse_ts(ts: str):
+    try:
+        return datetime.fromisoformat(ts.replace("Z", "+00:00"))
+    except Exception:
+        return datetime.min
+
+def group_threads(tweets: List[Dict[str, Any]]) -> List[List[Dict[str, Any]]]:
+    """
+    Group tweets by 'thread_root'. Singletons (no replies) will be size 1.
+    Order groups by newest item in the group (desc). Within a group, order ascending by timestamp.
+    """
+    from collections import defaultdict
+    groups = defaultdict(list)
+    for t in tweets:
+        root = t.get("thread_root") or t.get("id")
+        groups[str(root)].append(t)
+    # Order each group
+    ordered_groups: List[List[Dict[str, Any]]] = []
+    for root, items in groups.items():
+        items.sort(key=lambda x: parse_ts(x.get("timestamp", "")))
+        ordered_groups.append(items)
+    # Sort groups by newest timestamp in group (desc)
+    ordered_groups.sort(key=lambda grp: parse_ts(grp[-1].get("timestamp", "")), reverse=True)
+    return ordered_groups
+
+def render_thread(items: List[Dict[str, Any]]) -> str:
+    if len(items) == 1:
+        return render_tweet(items[0])
+    inner = []
+    inner.append("<div class='thread'>")
+    for t in items:
+        inner.append(render_tweet(t))
+    inner.append("</div>")
+    return "\n".join(inner)
 
 def generate(data, index):
     # Load tweet JSONs written by scripts/process_twitter_archive.py
     data_dir = Path("data") / "tweets"
     tweets = load_all_tweets(data_dir)
-    # Note: With very large numbers of tweets, this page could be very large.
-    # This is intentionally a single static page per user request.
+
+    # Group into threads (self-replies only; processor already filtered)
+    threads = group_threads(tweets)
+
     parts = []
     parts.append("<div class='tweets'>")
-    for t in tweets:
-        parts.append(render_tweet(t))
+    for thread in threads:
+        parts.append(render_thread(thread))
     parts.append("</div>")
-    # Minimal inline styles for readability; can be moved to a CSS file if desired
+
     styles = """
 <style>
 .tweets { max-width: 900px; }
-.tweet { padding: 10px 0; border-bottom: 1px solid #ddd; }
+.thread { padding: 12px 0; border-bottom: 1px solid #ddd; }
+.tweet { padding: 6px 0; }
 .tweet_meta { font-size: 0.9em; color: #666; margin-top: 4px; }
 .tweet_media img { max-width: 100%; height: auto; display: block; margin: 6px 0; }
 </style>
