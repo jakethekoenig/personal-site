@@ -2,51 +2,52 @@ import json
 import os
 import argparse
 import datetime
-import requests
+import shutil
 import sys
 
 # Output directories
 TWEET_DATA_DIR = os.path.join("data", "tweets")
 MEDIA_ASSETS_DIR = os.path.join("assets", "crosspoast")
 
-def download_media(media_url, tweet_id):
+def copy_media(archive_media_path, tweet_id):
     """
-    Downloads a media file if it doesn't already exist.
-    Returns the local web path if successful, otherwise None.
+    Copies a media file from the Twitter archive to the local assets directory
+    if it doesn't already exist. Returns the local web path if successful.
     """
     try:
-        # Create a unique filename based on tweet ID and original filename
-        file_name = f"{tweet_id}_{os.path.basename(media_url)}"
-        local_path = os.path.join(MEDIA_ASSETS_DIR, file_name)
+        # The filename in the archive is unique enough
+        file_name = os.path.basename(archive_media_path)
+        destination_path = os.path.join(MEDIA_ASSETS_DIR, file_name)
 
-        # Skip download if file already exists
-        if os.path.exists(local_path):
-            print(f"Media already exists for tweet {tweet_id}: {local_path}")
-            return f"/{local_path}"
+        # Skip copy if file already exists
+        if os.path.exists(destination_path):
+            # print(f"Media already exists for tweet {tweet_id}: {destination_path}")
+            return f"/{destination_path}"
 
-        # Download the file
-        response = requests.get(media_url, stream=True)
-        response.raise_for_status()  # Raise an exception for bad status codes
+        # Ensure the source file exists before trying to copy
+        if not os.path.exists(archive_media_path):
+            print(f"Warning: Source media file not found for tweet {tweet_id} at {archive_media_path}")
+            return None
 
-        with open(local_path, 'wb') as f:
-            for chunk in response.iter_content(chunk_size=8192):
-                f.write(chunk)
+        shutil.copy(archive_media_path, destination_path)
+        print(f"Copied media for tweet {tweet_id} to {destination_path}")
+        return f"/{destination_path}"
 
-        print(f"Downloaded media for tweet {tweet_id} to {local_path}")
-        return f"/{local_path}"
-
-    except requests.exceptions.RequestException as e:
-        print(f"Warning: Could not download media {media_url} for tweet {tweet_id}. Error: {e}")
+    except Exception as e:
+        print(f"Warning: Could not copy media for tweet {tweet_id} from {archive_media_path}. Error: {e}")
         return None
 
-def process_tweets(tweets_js_path, twitter_username):
+def process_tweets(archive_path, twitter_username):
     """
-    Processes a Twitter archive's tweets.js file to extract tweets into individual
-    JSON files and download associated media.
+    Processes a Twitter archive to extract tweets into individual JSON files
+    and copy associated media from the archive.
     """
     print("Starting tweet processing...")
 
-    # --- 1. Create output directories if they don't exist ---
+    # --- 1. Define paths and create output directories ---
+    tweets_js_path = os.path.join(archive_path, 'data', 'tweets.js')
+    archive_media_dir = os.path.join(archive_path, 'data', 'tweet_media')
+
     os.makedirs(TWEET_DATA_DIR, exist_ok=True)
     os.makedirs(MEDIA_ASSETS_DIR, exist_ok=True)
     print(f"Output directories '{TWEET_DATA_DIR}' and '{MEDIA_ASSETS_DIR}' are ready.")
@@ -56,7 +57,7 @@ def process_tweets(tweets_js_path, twitter_username):
         with open(tweets_js_path, 'r', encoding='utf-8') as f:
             content = f.read()
     except FileNotFoundError:
-        print(f"Error: The file '{tweets_js_path}' was not found.")
+        print(f"Error: The file '{tweets_js_path}' was not found. Make sure the provided path is the root of the Twitter archive.")
         sys.exit(1)
 
     # The .js file is not pure JSON, it starts with an assignment. We strip it.
@@ -87,11 +88,17 @@ def process_tweets(tweets_js_path, twitter_username):
 
         # --- 5. Handle media ---
         media_paths = []
-        if 'entities' in tweet and 'media' in tweet['entities']:
-            for media_item in tweet['entities']['media']:
+        if 'extended_entities' in tweet and 'media' in tweet['extended_entities']:
+            for media_item in tweet['extended_entities']['media']:
+                # The filename in the archive is like: <tweet_id>-<media_id>-<filename>
+                # We can find it in the 'media_url_https' and take the basename.
                 media_url = media_item.get('media_url_https')
                 if media_url:
-                    local_media_path = download_media(media_url, tweet_id)
+                    # The archive filename is the tweet ID plus the original filename from the URL
+                    archive_filename = f"{tweet_id}-{os.path.basename(media_url)}"
+                    source_media_path = os.path.join(archive_media_dir, archive_filename)
+                    
+                    local_media_path = copy_media(source_media_path, tweet_id)
                     if local_media_path:
                         media_paths.append(local_media_path)
 
@@ -114,11 +121,11 @@ def process_tweets(tweets_js_path, twitter_username):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description="Process a Twitter archive's tweets.js file into a JSON format for a static site."
+        description="Process a Twitter archive into a JSON format for a static site."
     )
     parser.add_argument(
-        "tweets_js_path",
-        help="Path to the tweets.js file from your Twitter archive (e.g., 'path/to/archive/data/tweets.js')."
+        "archive_path",
+        help="Path to the root directory of your extracted Twitter archive."
     )
     parser.add_argument(
         "--username",
@@ -127,4 +134,4 @@ if __name__ == "__main__":
     )
     args = parser.parse_args()
     
-    process_tweets(args.tweets_js_path, args.username)
+    process_tweets(args.archive_path, args.username)
