@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <:comp/header:>
-<head>
-	<link href='/css/tweets.css' type='text/css' rel='stylesheet'>
-</head>
 <body>
 	<main>
 	<:comp/sidemenu:>
