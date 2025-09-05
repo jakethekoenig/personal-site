@@ -106,13 +106,17 @@ def process_tweets(archive_path, twitter_username):
         # Convert date to a more usable format
         dt_object = datetime.datetime.strptime(created_at, '%a %b %d %H:%M:%S %z %Y')
         
+        # Create a title from the first 50 chars of the tweet for compatibility
+        title = (full_text[:50] + '...') if len(full_text) > 50 else full_text
+        
         output_data = {
             "id": tweet_id,
             "created_at": created_at,
             "timestamp": dt_object.timestamp(),
             "text": full_text,
             "url": tweet_url,
-            "media": media_paths
+            "media": media_paths,
+            "Title": title.replace('\n', ' ') # Titles shouldn't have newlines
         }
 
         # --- 7. Save to file ---
