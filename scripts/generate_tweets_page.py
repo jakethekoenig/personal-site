@@ -154,15 +154,16 @@ def organize_tweets_with_threads(tweets):
     # Add threads as single items with their first tweet's timestamp
     for thread_id, thread_tweets in threads.items():
         if thread_tweets:
-            first_tweet_time = thread_tweets[0].get('timestamp', 0)
+            first_tweet_time = thread_tweets[0].get('timestamp') or 0
             all_items.append(('thread', first_tweet_time, thread_tweets))
     
     # Add standalone tweets
     for tweet in standalone:
-        all_items.append(('single', tweet.get('timestamp', 0), tweet))
+        tweet_time = tweet.get('timestamp') or 0
+        all_items.append(('single', tweet_time, tweet))
     
     # Sort all items by timestamp (newest first)
-    all_items.sort(key=lambda x: x[1], reverse=True)
+    all_items.sort(key=lambda x: x[1] if x[1] is not None else 0, reverse=True)
     
     # Build final organized list
     for item_type, _, item_data in all_items:
@@ -176,8 +177,13 @@ def organize_tweets_with_threads(tweets):
     
     return organized
 
-def generate_page_html(tweets):
-    """Generate the complete HTML page."""
+def generate_page_html(tweets, standalone=False):
+    """Generate the complete HTML page.
+    
+    Args:
+        tweets: List of tweet dictionaries
+        standalone: If True, generate a complete HTML page. If False, generate just the content.
+    """
     
     # Organize tweets with threads grouped
     organized_tweets = organize_tweets_with_threads(tweets)
@@ -189,7 +195,9 @@ def generate_page_html(tweets):
     threads_count = len(set(t.get('thread_id') for t in tweets if t.get('is_thread')))
     original = total_tweets - retweets - replies
     
-    html = """<!DOCTYPE html>
+    # Start building HTML
+    if standalone:
+        html = """<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -397,7 +405,183 @@ def generate_page_html(tweets):
     </style>
 </head>
 <body>
-    <h1>Jake's Complete Tweet Archive</h1>
+    <h1>Jake's Complete Tweet Archive</h1>"""
+    else:
+        # For integration with site template, just provide the content and inline styles
+        html = """
+    <style>
+        .tweet {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        
+        .tweet:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+        
+        .tweet.retweet {
+            border-left: 4px solid #19cf86;
+        }
+        
+        .tweet.reply {
+            border-left: 4px solid #ffa500;
+        }
+        
+        .tweet.in-thread {
+            margin-left: 20px;
+            position: relative;
+        }
+        
+        .tweet.in-thread::before {
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: -15px;
+            bottom: -15px;
+            width: 2px;
+            background: #1da1f2;
+        }
+        
+        .tweet.thread-start::before {
+            top: 50%;
+        }
+        
+        .tweet.thread-end::before {
+            bottom: 50%;
+        }
+        
+        .tweet-header {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .tweet-type {
+            color: #19cf86;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .reply .tweet-type {
+            color: #ffa500;
+        }
+        
+        .tweet-time {
+            color: #999;
+        }
+        
+        .tweet-link {
+            color: #1da1f2;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        
+        .tweet-link:hover {
+            text-decoration: underline;
+        }
+        
+        .tweet-content {
+            margin: 10px 0;
+            word-wrap: break-word;
+        }
+        
+        .tweet-content a {
+            color: #1da1f2;
+            text-decoration: none;
+        }
+        
+        .tweet-content a:hover {
+            text-decoration: underline;
+        }
+        
+        .tweet-media {
+            margin-top: 10px;
+        }
+        
+        .tweet-media img, .tweet-media video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        
+        .stats {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .stats span {
+            margin-right: 20px;
+            font-weight: bold;
+        }
+        
+        .filters {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .filter-button {
+            background: #1da1f2;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            margin: 5px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .filter-button:hover {
+            background: #0d8bd9;
+        }
+        
+        .filter-button.active {
+            background: #0d8bd9;
+        }
+        
+        .search-box {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        
+        #load-more {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 30px;
+            background: #1da1f2;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        #load-more:hover {
+            background: #0d8bd9;
+        }
+    </style>
+    <h1>Complete Tweet Archive</h1>"""
+    
+    html += """
     
     <div class="stats">
         <span>Total: """ + str(total_tweets) + """</span>
@@ -497,7 +681,10 @@ def generate_page_html(tweets):
         
         // Search functionality
         document.getElementById('search').addEventListener('input', applyCurrentFilter);
-    </script>
+    </script>"""
+    
+    if standalone:
+        html += """
 </body>
 </html>"""
     
@@ -546,7 +733,7 @@ def main():
         sys.exit(1)
     
     print(f"Generating HTML for {len(tweets)} tweets...")
-    html = generate_page_html(tweets)
+    html = generate_page_html(tweets, standalone=True)
     
     # Save HTML file
     output_path = Path(output_file)
