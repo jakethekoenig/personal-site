@@ -29,7 +29,7 @@ def copy_media(archive_media_path, tweet_id):
             print(f"Warning: Source media file not found for tweet {tweet_id} at {archive_media_path}")
             return None
 
-        shutil.copy(archive_media_path, destination_path)
+        shutil.copy2(archive_media_path, destination_path)
         print(f"Copied media for tweet {tweet_id} to {destination_path}")
         return f"/{destination_path}"
 
