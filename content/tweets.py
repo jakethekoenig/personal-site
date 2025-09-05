@@ -20,12 +20,11 @@ def generate(data, index):
             with open(filepath, 'r', encoding='utf-8') as f:
                 try:
                     tweet_data = json.load(f)
+                    # Ensure timestamp exists before appending
                     if 'timestamp' in tweet_data:
                         all_tweets.append(tweet_data)
                     else:
-                        # Fallback for older data format without timestamp
-                        tweet_data['timestamp'] = datetime.strptime(tweet_data['created_at'], '%a %b %d %H:%M:%S %z %Y').timestamp()
-                        all_tweets.append(tweet_data)
+                        print(f"Warning: Skipping file {filename} due to missing 'timestamp'.")
                 except (json.JSONDecodeError, KeyError) as e:
                     print(f"Warning: Could not process file {filename}. Error: {e}")
 
