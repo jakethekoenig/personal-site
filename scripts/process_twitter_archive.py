@@ -46,26 +46,54 @@ def process_media(tweet, media_dir, output_media_dir):
     """Process media files associated with a tweet"""
     media_files = []
     
+    # Check multiple possible locations for media in the tweet data
+    media_sources = []
+    
+    # Extended entities (most common)
     if 'extended_entities' in tweet and 'media' in tweet['extended_entities']:
-        for media in tweet['extended_entities']['media']:
-            if 'media_url' in media:
-                # Extract filename from URL
-                filename = os.path.basename(urlparse(media['media_url']).path)
+        media_sources.extend(tweet['extended_entities']['media'])
+    
+    # Regular entities (fallback)
+    if 'entities' in tweet and 'media' in tweet['entities']:
+        media_sources.extend(tweet['entities']['media'])
+    
+    for media in media_sources:
+        if 'media_url' in media:
+            # Extract filename from URL
+            media_url = media['media_url']
+            filename = os.path.basename(urlparse(media_url).path)
+            
+            # Try different possible filenames and extensions
+            possible_filenames = [
+                filename,
+                filename.replace('.jpg', '.png'),
+                filename.replace('.png', '.jpg'),
+                filename + '.jpg',
+                filename + '.png'
+            ]
+            
+            source_path = None
+            for possible_filename in possible_filenames:
+                test_path = os.path.join(media_dir, possible_filename)
+                if os.path.exists(test_path):
+                    source_path = test_path
+                    filename = possible_filename
+                    break
+            
+            if source_path:
+                # Copy to output directory
+                os.makedirs(output_media_dir, exist_ok=True)
+                dest_path = os.path.join(output_media_dir, filename)
+                shutil.copy2(source_path, dest_path)
                 
-                # Look for the file in the archive's media directory
-                source_path = os.path.join(media_dir, filename)
-                if os.path.exists(source_path):
-                    # Copy to output directory
-                    os.makedirs(output_media_dir, exist_ok=True)
-                    dest_path = os.path.join(output_media_dir, filename)
-                    shutil.copy2(source_path, dest_path)
-                    
-                    # Store relative path for the JSON
-                    media_files.append({
-                        'type': media.get('type', 'photo'),
-                        'url': f"/assets/crosspoast/{filename}",
-                        'original_url': media['media_url']
-                    })
+                # Store relative path for the JSON
+                media_files.append({
+                    'type': media.get('type', 'photo'),
+                    'url': f"/assets/crosspoast/{filename}",
+                    'original_url': media_url
+                })
+            else:
+                print(f"Warning: Could not find media file for {filename}")
     
     return media_files
 
@@ -111,34 +139,66 @@ def identify_tweet_threads(tweets, username="ja3k_"):
         if tweet_id:
             tweet_map[tweet_id] = tweet
     
-    threads = {}  # thread_id -> list of tweets in thread
-    tweet_to_thread = {}  # tweet_id -> thread_id
+    # First pass: identify all replies to the same user
+    replies_to_user = {}  # original_tweet_id -> list of reply tweets
     
     for tweet in tweets:
         tweet_id = tweet.get('id_str', tweet.get('id', ''))
         if not tweet_id:
             continue
             
-        # Check if this is a reply
+        # Check if this is a reply to the same user
         reply_to_id = tweet.get('in_reply_to_status_id_str')
         reply_to_user = tweet.get('in_reply_to_screen_name')
         
-        if reply_to_id and reply_to_user:
-            # This is a reply - check if it's a reply to the same user (thread)
-            if reply_to_user.lower() == username.lower():
-                # This is a reply to the same user - part of a thread
-                if reply_to_id in tweet_to_thread:
-                    # The tweet we're replying to is already in a thread
-                    thread_id = tweet_to_thread[reply_to_id]
-                    threads[thread_id].append(tweet)
-                    tweet_to_thread[tweet_id] = thread_id
-                elif reply_to_id in tweet_map:
-                    # Start a new thread with the original tweet and this reply
-                    thread_id = reply_to_id  # Use the original tweet ID as thread ID
-                    original_tweet = tweet_map[reply_to_id]
-                    threads[thread_id] = [original_tweet, tweet]
-                    tweet_to_thread[reply_to_id] = thread_id
-                    tweet_to_thread[tweet_id] = thread_id
+        if reply_to_id and reply_to_user and reply_to_user.lower() == username.lower():
+            if reply_to_id not in replies_to_user:
+                replies_to_user[reply_to_id] = []
+            replies_to_user[reply_to_id].append(tweet)
+    
+    # Second pass: build threads by following the chain of replies
+    threads = {}  # thread_id -> list of tweets in thread
+    tweet_to_thread = {}  # tweet_id -> thread_id
+    
+    def build_thread_chain(start_tweet_id, visited=None):
+        """Recursively build a thread chain starting from a tweet"""
+        if visited is None:
+            visited = set()
+        
+        if start_tweet_id in visited or start_tweet_id not in tweet_map:
+            return []
+        
+        visited.add(start_tweet_id)
+        chain = [tweet_map[start_tweet_id]]
+        
+        # Add all direct replies to this tweet
+        if start_tweet_id in replies_to_user:
+            for reply_tweet in replies_to_user[start_tweet_id]:
+                reply_id = reply_tweet.get('id_str', reply_tweet.get('id', ''))
+                if reply_id and reply_id not in visited:
+                    chain.append(reply_tweet)
+                    # Recursively add replies to this reply
+                    chain.extend(build_thread_chain(reply_id, visited))
+        
+        return chain
+    
+    # Find all tweets that have replies (potential thread starters)
+    for original_tweet_id in replies_to_user.keys():
+        if original_tweet_id not in tweet_to_thread:  # Not already processed
+            thread_chain = build_thread_chain(original_tweet_id)
+            
+            if len(thread_chain) > 1:  # Only consider it a thread if it has multiple tweets
+                # Sort by creation date to maintain chronological order
+                thread_chain.sort(key=lambda t: t.get('created_at', ''))
+                
+                thread_id = original_tweet_id
+                threads[thread_id] = thread_chain
+                
+                # Mark all tweets in this thread
+                for tweet in thread_chain:
+                    tweet_id = tweet.get('id_str', tweet.get('id', ''))
+                    if tweet_id:
+                        tweet_to_thread[tweet_id] = thread_id
     
     return threads, tweet_to_thread
 
@@ -290,8 +350,6 @@ def process_twitter_archive(archive_path, output_dir="data/tweets", media_output
                     elif media['type'] == 'video':
                         md_content += f"[Video: {media['url']}]({media['url']})\n\n"
             
-            md_content += f"[View original tweet]({tweet_data['tweet_url']})\n"
-            
             md_path = os.path.join(content_dir, f"{tweet_id}.md")
             with open(md_path, 'w', encoding='utf-8') as f:
                 f.write(md_content)
@@ -397,11 +455,7 @@ def process_tweet_thread(thread_tweets, media_dir, media_output_dir, output_dir)
             elif media['type'] == 'video':
                 md_content += f"[Video: {media['url']}]({media['url']})\n\n"
         
-        md_content += f"[View tweet {i}]({tweet_url})\n\n"
         md_content += "---\n\n"
-    
-    md_content += "## Full Thread\n\n"
-    md_content += f"[View full thread on Twitter]({tweet_urls[0]})\n"
     
     md_path = os.path.join(content_dir, f"thread_{thread_id}.md")
     with open(md_path, 'w', encoding='utf-8') as f:
