@@ -20,15 +20,17 @@ def generate(data, index):
             with open(filepath, 'r', encoding='utf-8') as f:
                 try:
                     tweet_data = json.load(f)
-                    # Twitter's created_at format is 'Wed Jan 21 20:53:38 +0000 2009'
-                    # We parse it to a datetime object for sorting.
-                    tweet_data['created_at_dt'] = datetime.strptime(tweet_data['created_at'], '%a %b %d %H:%M:%S %z %Y')
-                    all_tweets.append(tweet_data)
+                    if 'timestamp' in tweet_data:
+                        all_tweets.append(tweet_data)
+                    else:
+                        # Fallback for older data format without timestamp
+                        tweet_data['timestamp'] = datetime.strptime(tweet_data['created_at'], '%a %b %d %H:%M:%S %z %Y').timestamp()
+                        all_tweets.append(tweet_data)
                 except (json.JSONDecodeError, KeyError) as e:
                     print(f"Warning: Could not process file {filename}. Error: {e}")
 
-    # Sort tweets by date, newest first
-    all_tweets.sort(key=lambda x: x['created_at_dt'], reverse=True)
+    # Sort tweets by timestamp, newest first
+    all_tweets.sort(key=lambda x: x['timestamp'], reverse=True)
 
     if not all_tweets:
         return "<p>No tweets found to display.</p>"
@@ -37,7 +39,8 @@ def generate(data, index):
     html_output = ""
     for tweet in all_tweets:
         # Format the date for display
-        display_date = tweet['created_at_dt'].strftime('%B %d, %Y at %I:%M %p %Z')
+        dt_object = datetime.fromtimestamp(tweet['timestamp'])
+        display_date = dt_object.strftime('%B %d, %Y at %I:%M %p %Z')
         
         # Sanitize text for HTML display
         tweet_text_html = html.escape(tweet.get('text', ''))
