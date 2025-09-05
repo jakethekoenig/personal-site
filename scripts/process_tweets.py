@@ -7,7 +7,7 @@ import sys
 
 # Output directories
 TWEET_DATA_DIR = os.path.join("data", "tweets")
-MEDIA_ASSETS_DIR = os.path.join("assets", "crosspost")
+MEDIA_ASSETS_DIR = os.path.join("assets", "crosspoast")
 
 def download_media(media_url, tweet_id):
     """
