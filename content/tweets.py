@@ -57,10 +57,8 @@ def generate_single_tweet_html(tweet_data):
     else:
         tweet_content = tweet_data.get("Summary", "")
     
-    # Remove the "View original tweet" link from content since we'll add our own
-    lines = tweet_content.split('\n')
-    filtered_lines = [line for line in lines if not line.startswith('[View original tweet]')]
-    tweet_content = '\n'.join(filtered_lines).strip()
+    # Clean up the content
+    tweet_content = tweet_content.strip()
     
     # Convert markdown images to HTML
     import re
