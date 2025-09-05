@@ -1,0 +1,10 @@
+{
+	"Title": "All My Tweets",
+	"Author": "Jake Koenig",
+	"URL": "tweets",
+	"Template": "tweets.temp",
+	"Date": "09/05/2025",
+	"Content": "tweets.py",
+	"Summary": "Every tweet I've ever posted, all in one place. Because why not?",
+	"Indexes": "tweets"
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<:comp/header:>
+<head>
+	<link href='/css/tweets.css' type='text/css' rel='stylesheet'>
+</head>
+<body>
+	<main>
+	<:comp/sidemenu:>
+	<div class="title">
+		<h1><$Title$></h1>
+		<h4><i><$Summary$></i></h4>
+	</div>
+	<div class="main_content">
+	<[Content]>
+	</div>
+	</main>
+	<br>
+	<div id="socials_footer">
+	<:comp/socials:>
+	</div>
+</body>
+</html>
