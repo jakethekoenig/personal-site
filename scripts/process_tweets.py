@@ -5,11 +5,6 @@ import datetime
 import requests
 import sys
 
-# --- Configuration ---
-# Assumed Twitter username for constructing tweet URLs.
-# The user can change this if their handle is different.
-TWITTER_USERNAME = "jakethekoenig"
-
 # Output directories
 TWEET_DATA_DIR = os.path.join("data", "tweets")
 MEDIA_ASSETS_DIR = os.path.join("assets", "crosspost")
@@ -44,7 +39,7 @@ def download_media(media_url, tweet_id):
         print(f"Warning: Could not download media {media_url} for tweet {tweet_id}. Error: {e}")
         return None
 
-def process_tweets(tweets_js_path):
+def process_tweets(tweets_js_path, twitter_username):
     """
     Processes a Twitter archive's tweets.js file to extract tweets into individual
     JSON files and download associated media.
@@ -88,7 +83,7 @@ def process_tweets(tweets_js_path):
         full_text = tweet.get('full_text')
         
         # Construct the tweet URL
-        tweet_url = f"https://twitter.com/{TWITTER_USERNAME}/status/{tweet_id}"
+        tweet_url = f"https://twitter.com/{twitter_username}/status/{tweet_id}"
 
         # --- 5. Handle media ---
         media_paths = []
@@ -125,6 +120,11 @@ if __name__ == "__main__":
         "tweets_js_path",
         help="Path to the tweets.js file from your Twitter archive (e.g., 'path/to/archive/data/tweets.js')."
     )
+    parser.add_argument(
+        "--username",
+        default="jakethekoenig",
+        help="Your Twitter username (handle) for constructing tweet URLs. Defaults to 'jakethekoenig'."
+    )
     args = parser.parse_args()
     
-    process_tweets(args.tweets_js_path)
+    process_tweets(args.tweets_js_path, args.username)
