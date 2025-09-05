@@ -103,9 +103,13 @@ def process_tweets(archive_path, twitter_username):
                         media_paths.append(local_media_path)
 
         # --- 6. Prepare JSON output ---
+        # Convert date to a more usable format
+        dt_object = datetime.datetime.strptime(created_at, '%a %b %d %H:%M:%S %z %Y')
+        
         output_data = {
             "id": tweet_id,
             "created_at": created_at,
+            "timestamp": dt_object.timestamp(),
             "text": full_text,
             "url": tweet_url,
             "media": media_paths
