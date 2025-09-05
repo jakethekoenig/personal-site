@@ -53,7 +53,7 @@ def process_tweet_text(text):
     
     return text
 
-def generate_tweet_html(tweet):
+def generate_tweet_html(tweet, is_in_thread=False):
     """Generate HTML for a single tweet."""
     tweet_id = tweet.get('id', 'unknown')
     text = tweet.get('text', '')
@@ -61,7 +61,11 @@ def generate_tweet_html(tweet):
     url = tweet.get('url', '#')
     is_retweet = tweet.get('is_retweet', False)
     in_reply_to_user = tweet.get('in_reply_to_user')
+    is_self_reply = tweet.get('is_self_reply', False)
     media = tweet.get('processed_media', [])
+    thread_position = tweet.get('thread_position', 0)
+    thread_length = tweet.get('thread_length', 1)
+    is_thread = tweet.get('is_thread', False)
     
     # Process text
     processed_text = process_tweet_text(text)
@@ -70,17 +74,27 @@ def generate_tweet_html(tweet):
     tweet_class = 'tweet'
     if is_retweet:
         tweet_class += ' retweet'
-    if in_reply_to_user:
+    if in_reply_to_user and not is_self_reply:
         tweet_class += ' reply'
+    if is_in_thread:
+        tweet_class += ' in-thread'
+        if thread_position == 0:
+            tweet_class += ' thread-start'
+        elif thread_position == thread_length - 1:
+            tweet_class += ' thread-end'
+        else:
+            tweet_class += ' thread-middle'
     
-    html_parts = [f'<div class="{tweet_class}" id="tweet-{tweet_id}">']
+    html_parts = [f'<div class="{tweet_class}" id="tweet-{tweet_id}" data-thread-position="{thread_position}" data-thread-length="{thread_length}">']
     
     # Add metadata
     html_parts.append('<div class="tweet-header">')
     
     if is_retweet:
         html_parts.append('<span class="tweet-type">🔁 Retweet</span>')
-    elif in_reply_to_user:
+    elif is_thread and thread_position == 0:
+        html_parts.append(f'<span class="tweet-type">🧵 Thread ({thread_length} tweets)</span>')
+    elif in_reply_to_user and not is_self_reply:
         html_parts.append(f'<span class="tweet-type">↩️ Reply to @{in_reply_to_user}</span>')
     
     html_parts.append(f'<span class="tweet-time">{pretty_time}</span>')
@@ -109,13 +123,70 @@ def generate_tweet_html(tweet):
     
     return '\n'.join(html_parts)
 
+def organize_tweets_with_threads(tweets):
+    """Organize tweets, grouping threads together."""
+    organized = []
+    seen_ids = set()
+    
+    # Group tweets by thread_id
+    threads = {}
+    standalone = []
+    
+    for tweet in tweets:
+        if tweet['id'] in seen_ids:
+            continue
+            
+        if tweet.get('is_thread') and tweet.get('thread_id'):
+            thread_id = tweet['thread_id']
+            if thread_id not in threads:
+                threads[thread_id] = []
+            threads[thread_id].append(tweet)
+        else:
+            standalone.append(tweet)
+    
+    # Sort threads by their first tweet's timestamp
+    for thread_tweets in threads.values():
+        thread_tweets.sort(key=lambda x: x.get('thread_position', 0))
+    
+    # Combine threads and standalone tweets, sorted by timestamp
+    all_items = []
+    
+    # Add threads as single items with their first tweet's timestamp
+    for thread_id, thread_tweets in threads.items():
+        if thread_tweets:
+            first_tweet_time = thread_tweets[0].get('timestamp', 0)
+            all_items.append(('thread', first_tweet_time, thread_tweets))
+    
+    # Add standalone tweets
+    for tweet in standalone:
+        all_items.append(('single', tweet.get('timestamp', 0), tweet))
+    
+    # Sort all items by timestamp (newest first)
+    all_items.sort(key=lambda x: x[1], reverse=True)
+    
+    # Build final organized list
+    for item_type, _, item_data in all_items:
+        if item_type == 'thread':
+            for tweet in item_data:
+                organized.append(tweet)
+                seen_ids.add(tweet['id'])
+        else:
+            organized.append(item_data)
+            seen_ids.add(item_data['id'])
+    
+    return organized
+
 def generate_page_html(tweets):
     """Generate the complete HTML page."""
+    
+    # Organize tweets with threads grouped
+    organized_tweets = organize_tweets_with_threads(tweets)
     
     # Count statistics
     total_tweets = len(tweets)
     retweets = sum(1 for t in tweets if t.get('is_retweet', False))
-    replies = sum(1 for t in tweets if t.get('in_reply_to_user'))
+    replies = sum(1 for t in tweets if t.get('in_reply_to_user') and not t.get('is_self_reply'))
+    threads_count = len(set(t.get('thread_id') for t in tweets if t.get('is_thread')))
     original = total_tweets - retweets - replies
     
     html = """<!DOCTYPE html>
@@ -201,6 +272,29 @@ def generate_page_html(tweets):
         
         .tweet.reply {
             border-left: 4px solid #ffa500;
+        }
+        
+        .tweet.in-thread {
+            margin-left: 20px;
+            position: relative;
+        }
+        
+        .tweet.in-thread::before {
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: -15px;
+            bottom: -15px;
+            width: 2px;
+            background: #1da1f2;
+        }
+        
+        .tweet.thread-start::before {
+            top: 50%;
+        }
+        
+        .tweet.thread-end::before {
+            bottom: 50%;
         }
         
         .tweet-header {
@@ -309,7 +403,7 @@ def generate_page_html(tweets):
         <span>Total: """ + str(total_tweets) + """</span>
         <span>Original: """ + str(original) + """</span>
         <span>Retweets: """ + str(retweets) + """</span>
-        <span>Replies: """ + str(replies) + """</span>
+        <span>Threads: """ + str(threads_count) + """</span>
     </div>
     
     <div class="filters">
@@ -318,7 +412,7 @@ def generate_page_html(tweets):
             <button class="filter-button active" data-filter="all">All</button>
             <button class="filter-button" data-filter="original">Original</button>
             <button class="filter-button" data-filter="retweet">Retweets</button>
-            <button class="filter-button" data-filter="reply">Replies</button>
+            <button class="filter-button" data-filter="thread">Threads</button>
         </div>
     </div>
     
@@ -326,8 +420,11 @@ def generate_page_html(tweets):
 """
     
     # Add tweets (initially show first 100)
-    for i, tweet in enumerate(tweets[:100]):
-        html += generate_tweet_html(tweet)
+    prev_thread_id = None
+    for i, tweet in enumerate(organized_tweets[:100]):
+        is_in_thread = tweet.get('is_thread', False)
+        html += generate_tweet_html(tweet, is_in_thread)
+        prev_thread_id = tweet.get('thread_id')
     
     html += """
     </div>
@@ -336,7 +433,7 @@ def generate_page_html(tweets):
     
     <script>
         // Store all tweets for client-side filtering
-        const allTweets = """ + json.dumps([generate_tweet_html(t) for t in tweets], ensure_ascii=False) + """;
+        const allTweets = """ + json.dumps([generate_tweet_html(t, t.get('is_thread', False)) for t in organized_tweets], ensure_ascii=False) + """;
         let currentIndex = 100;
         const tweetsPerLoad = 100;
         
@@ -380,7 +477,9 @@ def generate_page_html(tweets):
                 // Apply type filter
                 if (currentFilter !== 'all') {
                     if (currentFilter === 'original') {
-                        show = !tweet.classList.contains('retweet') && !tweet.classList.contains('reply');
+                        show = !tweet.classList.contains('retweet') && !tweet.classList.contains('reply') && !tweet.classList.contains('in-thread');
+                    } else if (currentFilter === 'thread') {
+                        show = tweet.classList.contains('in-thread');
                     } else {
                         show = tweet.classList.contains(currentFilter);
                     }
@@ -463,14 +562,15 @@ def main():
     
     # Print some stats
     retweets = sum(1 for t in tweets if t.get('is_retweet', False))
-    replies = sum(1 for t in tweets if t.get('in_reply_to_user'))
+    replies = sum(1 for t in tweets if t.get('in_reply_to_user') and not t.get('is_self_reply'))
+    threads_count = len(set(t.get('thread_id') for t in tweets if t.get('is_thread')))
     original = len(tweets) - retweets - replies
     
     print(f"\nStatistics:")
     print(f"  Total tweets: {len(tweets)}")
     print(f"  Original tweets: {original}")
     print(f"  Retweets: {retweets}")
-    print(f"  Replies: {replies}")
+    print(f"  Threads: {threads_count}")
 
 if __name__ == "__main__":
     main()
