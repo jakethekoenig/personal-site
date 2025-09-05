@@ -14,6 +14,36 @@ TWITTER_USERNAME = "jakethekoenig"
 TWEET_DATA_DIR = os.path.join("data", "tweets")
 MEDIA_ASSETS_DIR = os.path.join("assets", "crosspost")
 
+def download_media(media_url, tweet_id):
+    """
+    Downloads a media file if it doesn't already exist.
+    Returns the local web path if successful, otherwise None.
+    """
+    try:
+        # Create a unique filename based on tweet ID and original filename
+        file_name = f"{tweet_id}_{os.path.basename(media_url)}"
+        local_path = os.path.join(MEDIA_ASSETS_DIR, file_name)
+
+        # Skip download if file already exists
+        if os.path.exists(local_path):
+            print(f"Media already exists for tweet {tweet_id}: {local_path}")
+            return f"/{local_path}"
+
+        # Download the file
+        response = requests.get(media_url, stream=True)
+        response.raise_for_status()  # Raise an exception for bad status codes
+
+        with open(local_path, 'wb') as f:
+            for chunk in response.iter_content(chunk_size=8192):
+                f.write(chunk)
+
+        print(f"Downloaded media for tweet {tweet_id} to {local_path}")
+        return f"/{local_path}"
+
+    except requests.exceptions.RequestException as e:
+        print(f"Warning: Could not download media {media_url} for tweet {tweet_id}. Error: {e}")
+        return None
+
 def process_tweets(tweets_js_path):
     """
     Processes a Twitter archive's tweets.js file to extract tweets into individual
@@ -66,24 +96,9 @@ def process_tweets(tweets_js_path):
             for media_item in tweet['entities']['media']:
                 media_url = media_item.get('media_url_https')
                 if media_url:
-                    try:
-                        response = requests.get(media_url, stream=True)
-                        response.raise_for_status() # Raise an exception for bad status codes
-                        
-                        # Create a unique filename
-                        file_name = f"{tweet_id}_{os.path.basename(media_url)}"
-                        local_path = os.path.join(MEDIA_ASSETS_DIR, file_name)
-                        
-                        with open(local_path, 'wb') as f:
-                            for chunk in response.iter_content(chunk_size=8192):
-                                f.write(chunk)
-                        
-                        # Store the relative path for use on the website
-                        media_paths.append(f"/{local_path}")
-                        print(f"Downloaded media for tweet {tweet_id} to {local_path}")
-
-                    except requests.exceptions.RequestException as e:
-                        print(f"Warning: Could not download media {media_url} for tweet {tweet_id}. Error: {e}")
+                    local_media_path = download_media(media_url, tweet_id)
+                    if local_media_path:
+                        media_paths.append(local_media_path)
 
         # --- 6. Prepare JSON output ---
         output_data = {
