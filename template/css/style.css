@@ -367,7 +367,7 @@ tbody {
 .tweet-text {
     font-size: 1.1em;
     line-height: 1.4;
-    white-space: pre-wrap; /* Preserve whitespace and newlines */
+    white-space: pre-line; /* Preserve line breaks, collapse whitespace */
     word-wrap: break-word; /* Ensure long strings don't overflow */
 }
 .tweet-media img {
