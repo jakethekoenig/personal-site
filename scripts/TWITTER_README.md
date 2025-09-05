@@ -53,6 +53,8 @@ python scripts/process_twitter_archive.py <archive_path> [options]
 - Creates JSON files compatible with your site's structure
 - Creates markdown content files for each tweet
 - Skips retweets (only processes original tweets)
+- **Identifies and processes tweet threads**: Groups replies to your own tweets into threads
+- **Renders threads nicely**: Displays connected tweets as a cohesive thread with visual indicators
 
 **Example:**
 ```bash
@@ -105,6 +107,8 @@ content/tweets.py     # Tweets page generator
 
 ## Tweet Data Format
 
+### Individual Tweets
+
 Each tweet is stored as a JSON file with this structure:
 
 ```json
@@ -120,6 +124,7 @@ Each tweet is stored as a JSON file with this structure:
     "tweet_id": "1234567890",
     "tweet_url": "https://twitter.com/ja3k_/status/1234567890",
     "original_date": "Fri Dec 01 15:30:00 +0000 2023",
+    "is_thread": false,
     "media": [
         {
             "type": "photo",
@@ -127,6 +132,32 @@ Each tweet is stored as a JSON file with this structure:
             "original_url": "https://pbs.twimg.com/media/..."
         }
     ]
+}
+```
+
+### Tweet Threads
+
+Tweet threads are stored with additional metadata:
+
+```json
+{
+    "Title": "Thread: First tweet text...",
+    "Author": "Jake Koenig",
+    "URL": "thread_1234567890",
+    "Template": "tweet.temp",
+    "Date": "12/01/2023",
+    "Content": "tweets/thread_1234567890.md",
+    "Summary": "Combined thread text preview...",
+    "Categories": ["tweets", "threads"],
+    "tweet_id": "1234567890",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1234567890",
+        "https://twitter.com/ja3k_/status/1234567891"
+    ],
+    "original_date": "Fri Dec 01 15:30:00 +0000 2023",
+    "is_thread": true,
+    "thread_length": 3,
+    "media": [...]
 }
 ```
 
@@ -179,9 +210,28 @@ The tweets functionality integrates seamlessly with your existing site:
 - Includes in site search and navigation
 - Works with your existing build process
 
+## Thread Handling
+
+The script intelligently handles tweet threads:
+
+- **Identifies threads**: Detects when you reply to your own tweets
+- **Groups threads**: Combines related tweets into a single thread unit
+- **Visual distinction**: Threads are displayed with special styling and thread indicators
+- **Preserves order**: Tweets within threads are ordered chronologically
+- **Individual links**: Each tweet in a thread maintains its original Twitter URL
+
+### Thread Detection Logic
+
+- Replies to other users are skipped (not included)
+- Replies to your own tweets are identified as thread continuations
+- Threads are grouped starting from the original tweet
+- Each thread gets a unique identifier based on the first tweet
+
 ## Privacy Notes
 
 - Only processes tweets from your own account
 - Skips retweets (doesn't republish others' content)
+- Skips replies to other users (respects privacy)
+- Includes replies only when they're part of your own threads
 - Media files are copied locally (no external dependencies)
 - Original Twitter URLs are preserved for reference

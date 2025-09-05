@@ -89,6 +89,84 @@
     }
 }
 
+/* Thread-specific styling */
+.tweet.thread {
+    border-left: 4px solid #1da1f2;
+    background: linear-gradient(to right, #f8f9fa, #fff);
+}
+
+.thread-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #1da1f2;
+}
+
+.thread-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.thread-indicator {
+    color: #1da1f2;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.thread-content {
+    position: relative;
+}
+
+.thread-content::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, #1da1f2, #e1e8ed);
+}
+
+.thread-tweet {
+    display: flex;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.thread-tweet-number {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #1da1f2;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 15px;
+    z-index: 1;
+    position: relative;
+}
+
+.thread-tweet-content {
+    flex: 1;
+    padding-top: 5px;
+}
+
+.thread-tweet-content p {
+    margin: 0 0 10px 0;
+    line-height: 1.4;
+}
+
+.thread-tweet-content p:last-child {
+    margin-bottom: 0;
+}
+
 /* Dark mode support */
 @media (prefers-color-scheme: dark) {
     .tweet {
@@ -103,5 +181,18 @@
     
     .tweet-header {
         border-bottom-color: #333;
+    }
+    
+    .tweet.thread {
+        background: linear-gradient(to right, #2a2a2a, #1a1a1a);
+        border-left-color: #1da1f2;
+    }
+    
+    .thread-header {
+        border-bottom-color: #1da1f2;
+    }
+    
+    .thread-content::before {
+        background: linear-gradient(to bottom, #1da1f2, #555);
     }
 }

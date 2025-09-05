@@ -101,6 +101,47 @@ def process_tweets_js_file(file_path):
     
     return tweets
 
+def identify_tweet_threads(tweets, username="ja3k_"):
+    """Identify which tweets are part of threads by the same user"""
+    
+    # Create a mapping of tweet_id -> tweet for quick lookup
+    tweet_map = {}
+    for tweet in tweets:
+        tweet_id = tweet.get('id_str', tweet.get('id', ''))
+        if tweet_id:
+            tweet_map[tweet_id] = tweet
+    
+    threads = {}  # thread_id -> list of tweets in thread
+    tweet_to_thread = {}  # tweet_id -> thread_id
+    
+    for tweet in tweets:
+        tweet_id = tweet.get('id_str', tweet.get('id', ''))
+        if not tweet_id:
+            continue
+            
+        # Check if this is a reply
+        reply_to_id = tweet.get('in_reply_to_status_id_str')
+        reply_to_user = tweet.get('in_reply_to_screen_name')
+        
+        if reply_to_id and reply_to_user:
+            # This is a reply - check if it's a reply to the same user (thread)
+            if reply_to_user.lower() == username.lower():
+                # This is a reply to the same user - part of a thread
+                if reply_to_id in tweet_to_thread:
+                    # The tweet we're replying to is already in a thread
+                    thread_id = tweet_to_thread[reply_to_id]
+                    threads[thread_id].append(tweet)
+                    tweet_to_thread[tweet_id] = thread_id
+                elif reply_to_id in tweet_map:
+                    # Start a new thread with the original tweet and this reply
+                    thread_id = reply_to_id  # Use the original tweet ID as thread ID
+                    original_tweet = tweet_map[reply_to_id]
+                    threads[thread_id] = [original_tweet, tweet]
+                    tweet_to_thread[reply_to_id] = thread_id
+                    tweet_to_thread[tweet_id] = thread_id
+    
+    return threads, tweet_to_thread
+
 def process_twitter_archive(archive_path, output_dir="data/tweets", media_output_dir="nongenerated/assets/crosspoast"):
     """Process the entire Twitter archive"""
     
@@ -148,13 +189,38 @@ def process_twitter_archive(archive_path, output_dir="data/tweets", media_output
     tweets = process_tweets_js_file(tweets_file)
     print(f"Found {len(tweets)} tweets")
     
+    # Identify tweet threads
+    threads, tweet_to_thread = identify_tweet_threads(tweets)
+    print(f"Found {len(threads)} tweet threads")
+    
     # Create output directories
     os.makedirs(output_dir, exist_ok=True)
     if media_dir:
         os.makedirs(media_output_dir, exist_ok=True)
     
     processed_count = 0
+    processed_tweets = set()  # Track which tweets we've already processed
     
+    # Process threads first
+    for thread_id, thread_tweets in threads.items():
+        try:
+            # Sort thread tweets by date
+            thread_tweets.sort(key=lambda t: t.get('created_at', ''))
+            
+            # Process the thread as a single unit
+            thread_data = process_tweet_thread(thread_tweets, media_dir, media_output_dir, output_dir)
+            if thread_data:
+                processed_count += len(thread_tweets)
+                for tweet in thread_tweets:
+                    tweet_id = tweet.get('id_str', tweet.get('id', ''))
+                    if tweet_id:
+                        processed_tweets.add(tweet_id)
+                        
+        except Exception as e:
+            print(f"Error processing thread {thread_id}: {e}")
+            continue
+    
+    # Process individual tweets (not part of threads)
     for tweet in tweets:
         try:
             # Extract basic tweet info
@@ -164,9 +230,17 @@ def process_twitter_archive(archive_path, output_dir="data/tweets", media_output
             
             if not tweet_id or not text:
                 continue
+                
+            # Skip if already processed as part of a thread
+            if tweet_id in processed_tweets:
+                continue
             
             # Skip retweets (they start with "RT @")
             if text.startswith('RT @'):
+                continue
+                
+            # Skip replies that are not part of our own threads
+            if tweet.get('in_reply_to_status_id_str'):
                 continue
             
             # Clean the text
@@ -184,15 +258,16 @@ def process_twitter_archive(archive_path, output_dir="data/tweets", media_output
                 "Title": clean_text[:100] + "..." if len(clean_text) > 100 else clean_text,
                 "Author": "Jake Koenig",
                 "URL": f"tweet_{tweet_id}",
-                "Template": "tweet.temp",  # We'll create this template
+                "Template": "tweet.temp",
                 "Date": parse_twitter_date(created_at),
-                "Content": f"tweets/{tweet_id}.md",  # We'll create markdown files
+                "Content": f"tweets/{tweet_id}.md",
                 "Summary": clean_text,
                 "Categories": ["tweets"],
                 "tweet_id": tweet_id,
                 "tweet_url": f"https://twitter.com/ja3k_/status/{tweet_id}",
                 "original_date": created_at,
-                "media": media_files
+                "media": media_files,
+                "is_thread": False
             }
             
             # Save JSON file
@@ -235,6 +310,104 @@ def process_twitter_archive(archive_path, output_dir="data/tweets", media_output
     print(f"Markdown files saved to: content/tweets")
     if media_dir:
         print(f"Media files saved to: {media_output_dir}")
+
+def process_tweet_thread(thread_tweets, media_dir, media_output_dir, output_dir):
+    """Process a thread of tweets as a single unit"""
+    
+    if not thread_tweets:
+        return None
+    
+    # Use the first tweet's ID as the thread ID
+    first_tweet = thread_tweets[0]
+    thread_id = first_tweet.get('id_str', first_tweet.get('id', ''))
+    
+    if not thread_id:
+        return None
+    
+    # Collect all text and media from the thread
+    thread_text_parts = []
+    all_media = []
+    tweet_urls = []
+    
+    for tweet in thread_tweets:
+        tweet_id = tweet.get('id_str', tweet.get('id', ''))
+        text = tweet.get('full_text', tweet.get('text', ''))
+        created_at = tweet.get('created_at', '')
+        
+        if not text:
+            continue
+            
+        clean_text = clean_tweet_text(text)
+        if clean_text:
+            thread_text_parts.append(clean_text)
+            
+        # Process media for this tweet
+        if media_dir:
+            media_files = process_media(tweet, media_dir, media_output_dir)
+            all_media.extend(media_files)
+            
+        # Add tweet URL
+        if tweet_id:
+            tweet_urls.append(f"https://twitter.com/ja3k_/status/{tweet_id}")
+    
+    if not thread_text_parts:
+        return None
+    
+    # Combine thread text
+    full_thread_text = "\n\n".join(thread_text_parts)
+    
+    # Create thread data
+    thread_data = {
+        "Title": f"Thread: {thread_text_parts[0][:80]}..." if len(thread_text_parts[0]) > 80 else f"Thread: {thread_text_parts[0]}",
+        "Author": "Jake Koenig",
+        "URL": f"thread_{thread_id}",
+        "Template": "tweet.temp",
+        "Date": parse_twitter_date(first_tweet.get('created_at', '')),
+        "Content": f"tweets/thread_{thread_id}.md",
+        "Summary": full_thread_text[:200] + "..." if len(full_thread_text) > 200 else full_thread_text,
+        "Categories": ["tweets", "threads"],
+        "tweet_id": thread_id,
+        "thread_urls": tweet_urls,
+        "original_date": first_tweet.get('created_at', ''),
+        "media": all_media,
+        "is_thread": True,
+        "thread_length": len(thread_tweets)
+    }
+    
+    # Save JSON file
+    json_path = os.path.join(output_dir, f"thread_{thread_id}.json")
+    with open(json_path, 'w', encoding='utf-8') as f:
+        json.dump(thread_data, f, indent=4, ensure_ascii=False)
+    
+    # Create markdown content file
+    content_dir = os.path.join("content", "tweets")
+    os.makedirs(content_dir, exist_ok=True)
+    
+    md_content = "# Thread\n\n"
+    
+    for i, (text_part, tweet_url) in enumerate(zip(thread_text_parts, tweet_urls), 1):
+        md_content += f"## Tweet {i}\n\n"
+        md_content += text_part + "\n\n"
+        
+        # Add media for this specific tweet if any
+        tweet_media = [m for m in all_media if tweet_url.split('/')[-1] in str(m)]
+        for media in tweet_media:
+            if media['type'] == 'photo':
+                md_content += f"![Tweet image]({media['url']})\n\n"
+            elif media['type'] == 'video':
+                md_content += f"[Video: {media['url']}]({media['url']})\n\n"
+        
+        md_content += f"[View tweet {i}]({tweet_url})\n\n"
+        md_content += "---\n\n"
+    
+    md_content += "## Full Thread\n\n"
+    md_content += f"[View full thread on Twitter]({tweet_urls[0]})\n"
+    
+    md_path = os.path.join(content_dir, f"thread_{thread_id}.md")
+    with open(md_path, 'w', encoding='utf-8') as f:
+        f.write(md_content)
+    
+    return thread_data
 
 def main():
     parser = argparse.ArgumentParser(description='Process Twitter archive into blog-like format')
