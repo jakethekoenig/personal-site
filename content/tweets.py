@@ -1,6 +1,7 @@
 import os
 import json
 from datetime import datetime
+import html
 
 TWEET_DATA_DIR = os.path.join("data", "tweets")
 
@@ -39,7 +40,7 @@ def generate(data, index):
         display_date = tweet['created_at_dt'].strftime('%B %d, %Y at %I:%M %p %Z')
         
         # Sanitize text for HTML display
-        tweet_text_html = tweet.get('text', '').replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+        tweet_text_html = html.escape(tweet.get('text', ''))
 
         html_output += '<div class="tweet-container">\n'
         html_output += f'  <div class="tweet-header"><a href="{tweet["url"]}" target="_blank" rel="noopener noreferrer">Tweeted on {display_date}</a></div>\n'
