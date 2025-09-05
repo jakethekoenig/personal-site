@@ -157,7 +157,7 @@ def generate_thread_html(thread_data):
             
         html += f"""
             <div class="thread-tweet">
-                <div class="thread-tweet-number">{i}</div>
+                <div class="thread-tweet-number"></div>
                 <div class="thread-tweet-content">
                     {content}
                 </div>
