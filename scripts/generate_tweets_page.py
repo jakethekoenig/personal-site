@@ -5,6 +5,8 @@ Generate a static HTML page displaying all tweets.
 
 import json
 import os
+import re
+import sys
 from pathlib import Path
 from datetime import datetime
 import html
@@ -424,9 +426,6 @@ def create_data_json(output_dir):
     print(f"Created data file: {data_file}")
 
 def main():
-    import sys
-    import re
-    
     if len(sys.argv) < 2:
         print("Usage: python generate_tweets_page.py <tweets_directory> [output_file]")
         print("\nExample: python generate_tweets_page.py ./tweets ./content/tweets.html")
