@@ -48,28 +48,28 @@ def integrate_tweets_into_site():
     threads_count = len(set(t.get('thread_id') for t in tweets if t.get('is_thread')))
     original = len(tweets) - retweets - replies
     
+    # Get the date from the most recent tweet
+    from datetime import datetime
+    date_str = "01/01/2024"
+    if tweets and tweets[0].get('created_at'):
+        try:
+            # Parse Twitter date format to site format
+            dt = datetime.strptime(tweets[0]['created_at'], "%a %b %d %H:%M:%S %z %Y")
+            date_str = dt.strftime("%m/%d/%Y")
+        except:
+            pass
+    
     data = {
         "Title": "Tweets",
         "Author": "Jake Koenig",
         "URL": "tweets",
         "Template": "toplevel.temp",
-        "Date": tweets[0].get('created_at', '').split()[1:4] if tweets else "01/01/2024",
+        "Date": date_str,
         "Content": "tweets.html",
         "Summary": f"Archive of {len(tweets)} tweets: {original} original, {retweets} retweets, {threads_count} threads",
         "Categories": ["social"],
         "og_image": "/asset/pic/twitter_archive.png"  # You can add a custom image
     }
-    
-    # Convert date format if needed
-    if tweets and tweets[0].get('created_at'):
-        # Parse Twitter date format to site format
-        from datetime import datetime
-        date_str = tweets[0]['created_at']
-        try:
-            dt = datetime.strptime(date_str, "%a %b %d %H:%M:%S %z %Y")
-            data["Date"] = dt.strftime("%m/%d/%Y")
-        except:
-            data["Date"] = "01/01/2024"
     
     with open(data_path, 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=2)
