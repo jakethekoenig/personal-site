@@ -446,15 +446,6 @@ def process_tweet_thread(thread_tweets, media_dir, media_output_dir, output_dir)
     for i, (text_part, tweet_url) in enumerate(zip(thread_text_parts, tweet_urls), 1):
         md_content += f"## Tweet {i}\n\n"
         md_content += text_part + "\n\n"
-        
-        # Add media for this specific tweet if any
-        tweet_media = [m for m in all_media if tweet_url.split('/')[-1] in str(m)]
-        for media in tweet_media:
-            if media['type'] == 'photo':
-                md_content += f"![Tweet image]({media['url']})\n\n"
-            elif media['type'] == 'video':
-                md_content += f"[Video: {media['url']}]({media['url']})\n\n"
-        
         md_content += "---\n\n"
     
     md_path = os.path.join(content_dir, f"thread_{thread_id}.md")
