@@ -42,6 +42,26 @@ def clean_tweet_text(text):
     text = ' '.join(text.split())
     return text.strip()
 
+def process_quoted_tweet(tweet):
+    """Extract quoted tweet information if present"""
+    quoted_tweet_info = None
+    
+    # Check for quoted tweet in various possible locations
+    if 'quoted_status' in tweet:
+        quoted = tweet['quoted_status']
+        quoted_user = quoted.get('user', {}).get('screen_name', 'unknown')
+        quoted_text = quoted.get('full_text', quoted.get('text', ''))
+        quoted_id = quoted.get('id_str', quoted.get('id', ''))
+        
+        if quoted_text and quoted_id:
+            quoted_tweet_info = {
+                'user': quoted_user,
+                'text': clean_tweet_text(quoted_text),
+                'url': f"https://twitter.com/{quoted_user}/status/{quoted_id}"
+            }
+    
+    return quoted_tweet_info
+
 def process_media(tweet, media_dir, output_media_dir):
     """Process media files associated with a tweet"""
     media_files = []
@@ -205,6 +225,14 @@ def identify_tweet_threads(tweets, username="ja3k_"):
                 # Sort by creation date to maintain chronological order
                 thread_chain.sort(key=lambda t: t.get('created_at', ''))
                 
+                # Check if the first tweet in the thread is itself a reply to someone else
+                first_tweet = thread_chain[0]
+                first_tweet_reply_to_user = first_tweet.get('in_reply_to_screen_name')
+                
+                # Skip threads where the first tweet is a reply to someone else
+                if first_tweet_reply_to_user and first_tweet_reply_to_user.lower() != username.lower():
+                    continue
+                
                 thread_id = original_tweet_id
                 threads[thread_id] = thread_chain
                 
@@ -327,6 +355,9 @@ def process_twitter_archive(archive_path, output_dir="data/tweets", media_output
             if media_dir:
                 media_files = process_media(tweet, media_dir, media_output_dir)
             
+            # Process quoted tweet if present
+            quoted_tweet = process_quoted_tweet(tweet)
+            
             # Create JSON structure similar to blog posts
             tweet_data = {
                 "Title": clean_text[:100] + "..." if len(clean_text) > 100 else clean_text,
@@ -341,6 +372,7 @@ def process_twitter_archive(archive_path, output_dir="data/tweets", media_output
                 "tweet_url": f"https://twitter.com/ja3k_/status/{tweet_id}",
                 "original_date": created_at,
                 "media": media_files,
+                "quoted_tweet": quoted_tweet,
                 "is_thread": False
             }
             
@@ -354,6 +386,11 @@ def process_twitter_archive(archive_path, output_dir="data/tweets", media_output
             os.makedirs(content_dir, exist_ok=True)
             
             md_content = clean_text + "\n\n"
+            
+            # Add quoted tweet if present
+            if quoted_tweet:
+                md_content += f"> **@{quoted_tweet['user']}:** {quoted_tweet['text']}\n"
+                md_content += f"> [View original tweet]({quoted_tweet['url']})\n\n"
             
             # Add media if present
             if media_files:
@@ -411,6 +448,11 @@ def process_tweet_thread(thread_tweets, media_dir, media_output_dir, output_dir)
             
         clean_text = clean_tweet_text(text)
         if clean_text:
+            # Check for quoted tweet and include it
+            quoted_tweet = process_quoted_tweet(tweet)
+            if quoted_tweet:
+                clean_text += f"\n\n> **@{quoted_tweet['user']}:** {quoted_tweet['text']}\n> [View original tweet]({quoted_tweet['url']})"
+            
             thread_text_parts.append(clean_text)
             
         # Process media for this tweet
