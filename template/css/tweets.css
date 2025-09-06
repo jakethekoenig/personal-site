@@ -162,32 +162,22 @@
     margin-bottom: 0;
 }
 
-/* Dark mode support */
-@media (prefers-color-scheme: dark) {
-    .tweet {
-        background-color: #1a1a1a;
-        border-color: #333;
-        color: #e1e8ed;
-    }
-    
-    .tweet-content {
-        color: #e1e8ed;
-    }
-    
-    .tweet-header {
-        border-bottom-color: #333;
-    }
-    
-    .tweet.thread {
-        background: linear-gradient(to right, #2a2a2a, #1a1a1a);
-        border-left-color: #1da1f2;
-    }
-    
-    .thread-header {
-        border-bottom-color: #1da1f2;
-    }
-    
-    .thread-content::before {
-        background: linear-gradient(to bottom, #1da1f2, #555);
-    }
+/* Quote tweet styling */
+.tweet-content blockquote {
+    border-left: 3px solid #1da1f2;
+    margin: 10px 0;
+    padding: 10px 15px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
 }
+
+.tweet-content blockquote p {
+    margin: 0 0 5px 0;
+    font-style: italic;
+    color: #555;
+}
+
+.tweet-content blockquote p:last-child {
+    margin-bottom: 0;
+}
+

@@ -15,8 +15,7 @@ def generate(data, index):
     sorted_tweets = sorted(tweets_index, key=lambda x: parse_date_for_sorting(x[1].get("Date", "")), reverse=True)
     
     # Generate HTML
-    html = f"<p>{data['Summary']}</p>\n"
-    html += f"<p><strong>Total tweets:</strong> {len(sorted_tweets)}</p>\n"
+    html = f"<p><strong>Total tweets:</strong> {len(sorted_tweets)}</p>\n"
     html += "<div class='tweets-container'>\n"
     
     for path, tweet_data in sorted_tweets:
@@ -110,12 +109,12 @@ def generate_thread_html(thread_data):
                 # Extract tweet number and content
                 tweet_num = lines[0].strip()
                 
-                # Find content between the tweet number and the "View tweet" link
+                # Find content between the tweet number and the separator
                 content_lines = []
                 for line in lines[1:]:
-                    if line.startswith('[View tweet'):
+                    if line.strip() == '---':
                         break
-                    if line.strip() and not line.startswith('---'):
+                    if line.strip():
                         content_lines.append(line)
                 
                 if content_lines:
