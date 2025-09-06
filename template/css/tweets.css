@@ -218,13 +218,6 @@
     font-size: 16px;
 }
 
-.individual-tweet .tweet-content img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin: 10px 0;
-    display: block;
-}
 
 .comments-section {
     max-width: 800px;
