@@ -2,10 +2,11 @@
 	 <ul class="menu">
 	 	<li><a href="https://ja3k.com"><img id="mainicon" src="/asset/favicon.png"></a></li>
 		<li><a class="menu-item" href="/index">Blog</a></li>
+		<li><a class="menu-item" href="/shortform">short form</a></li>
 		<li><a class="menu-item" href="/pods">Podcast</a></li>
 		<li><a class="menu-item" href="/reading">Reading</a></li>
 		<li><a class="menu-item desktop-only" href="/experiments">Experiments</a></li>
 		<li><a class="menu-item" href="/aboutme">Me</a></li>
 		<li><:comp/socials:></li>
 	</ul>
-</div>	
+</div>

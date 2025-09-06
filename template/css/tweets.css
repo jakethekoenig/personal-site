@@ -34,15 +34,32 @@
     font-weight: 500;
 }
 
-.tweet-link {
-    color: #1da1f2;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 500;
+.tweet-links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
-.tweet-link:hover {
-    text-decoration: underline;
+.tweet-page-link, .tweet-twitter-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+
+.tweet-page-link:hover, .tweet-twitter-link:hover {
+    opacity: 1;
+}
+
+.favicon-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.twitter-icon {
+    width: 16px;
+    height: 16px;
 }
 
 .tweet-content {
