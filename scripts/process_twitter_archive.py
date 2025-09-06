@@ -128,8 +128,15 @@ def process_media(tweet, media_dir, output_media_dir):
                 print(f"Found media: {actual_filename} -> {output_filename}")
             else:
                 print(f"Warning: Could not find media file for {original_filename} (tried with tweet ID {tweet_id})")
-    
-    return media_files
+
+    ans = []
+    urls = set()
+    for media_file in media_files:
+        if media_file['url'] not in urls:
+            ans.append(media_file)
+            urls.add(media_file['url'])
+
+    return ans
 
 def process_tweets_js_file(file_path):
     """Process tweets.js file from Twitter archive"""
