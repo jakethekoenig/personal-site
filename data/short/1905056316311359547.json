@@ -1,0 +1,24 @@
+{
+    "Title": "My pfp in Ghibli style",
+    "Author": "Jake Koenig",
+    "URL": "1905056316311359547",
+    "Template": "tweet.temp",
+    "Date": "03/27/2025",
+    "Content": "short/1905056316311359547.md",
+    "Summary": "My pfp in Ghibli style",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1905056316311359547",
+    "tweet_url": "https://twitter.com/ja3k_/status/1905056316311359547",
+    "original_date": "Thu Mar 27 00:36:34 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GnAen50asAEaDDD.jpg",
+            "original_url": "http://pbs.twimg.com/media/GnAen50asAEaDDD.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

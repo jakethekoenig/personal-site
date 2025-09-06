@@ -1,0 +1,18 @@
+{
+    "Title": "Tweeting via the API while that's still free. Testing 123.",
+    "Author": "Jake Koenig",
+    "URL": "1687674431538413568",
+    "Template": "tweet.temp",
+    "Date": "08/05/2023",
+    "Content": "short/1687674431538413568.md",
+    "Summary": "Tweeting via the API while that's still free. Testing 123.",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1687674431538413568",
+    "tweet_url": "https://twitter.com/ja3k_/status/1687674431538413568",
+    "original_date": "Sat Aug 05 03:58:34 +0000 2023",
+    "media": [],
+    "quoted_tweet": null,
+    "is_thread": false
+}

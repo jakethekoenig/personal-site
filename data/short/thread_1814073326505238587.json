@@ -1,0 +1,22 @@
+{
+    "Title": "Thread: @samswoora Make git submodules for the plugins your want in ~.vim/pack/misc/star...",
+    "Author": "Jake Koenig",
+    "URL": "1814073326505238587",
+    "Template": "tweet.temp",
+    "Date": "07/18/2024",
+    "Content": "short/thread_1814073326505238587.md",
+    "Summary": "@samswoora Make git submodules for the plugins your want in ~.vim/pack/misc/start like here:\n\n@samswoora Also mostly don't use plugins. Put this in your vimrc: ``` nnoremap &lt;leader&gt;ev :e $MYVIMR...",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1814073326505238587",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1814073326505238587",
+        "https://twitter.com/ja3k_/status/1814074344479559880"
+    ],
+    "original_date": "Thu Jul 18 23:02:39 +0000 2024",
+    "media": [],
+    "is_thread": true,
+    "thread_length": 2
+}

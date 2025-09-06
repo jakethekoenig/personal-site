@@ -1,0 +1,24 @@
+{
+    "Title": "May, huh?",
+    "Author": "Jake Koenig",
+    "URL": "1917964290067402871",
+    "Template": "tweet.temp",
+    "Date": "05/01/2025",
+    "Content": "short/1917964290067402871.md",
+    "Summary": "May, huh?",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1917964290067402871",
+    "tweet_url": "https://twitter.com/ja3k_/status/1917964290067402871",
+    "original_date": "Thu May 01 15:28:15 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/Gp36W6VbwAA_NxG.jpg",
+            "original_url": "http://pbs.twimg.com/media/Gp36W6VbwAA_NxG.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

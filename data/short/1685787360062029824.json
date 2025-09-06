@@ -1,0 +1,29 @@
+{
+    "Title": "Maybe not the greatest scientist of the 19th century but at least he's got his own Pokemon.",
+    "Author": "Jake Koenig",
+    "URL": "1685787360062029824",
+    "Template": "tweet.temp",
+    "Date": "07/30/2023",
+    "Content": "short/1685787360062029824.md",
+    "Summary": "Maybe not the greatest scientist of the 19th century but at least he's got his own Pokemon.",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1685787360062029824",
+    "tweet_url": "https://twitter.com/ja3k_/status/1685787360062029824",
+    "original_date": "Sun Jul 30 23:00:01 +0000 2023",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/F2Id9PDaUAAmxAB.jpg",
+            "original_url": "http://pbs.twimg.com/media/F2Id9PDaUAAmxAB.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/F2Id-6va4AAj5nd.png",
+            "original_url": "http://pbs.twimg.com/media/F2Id-6va4AAj5nd.png"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

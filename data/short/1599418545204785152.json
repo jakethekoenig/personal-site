@@ -1,0 +1,24 @@
+{
+    "Title": "Merry Christmas! #NewProfilePic",
+    "Author": "Jake Koenig",
+    "URL": "1599418545204785152",
+    "Template": "tweet.temp",
+    "Date": "12/04/2022",
+    "Content": "short/1599418545204785152.md",
+    "Summary": "Merry Christmas! #NewProfilePic",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1599418545204785152",
+    "tweet_url": "https://twitter.com/ja3k_/status/1599418545204785152",
+    "original_date": "Sun Dec 04 15:01:11 +0000 2022",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/FjJGsP4aEAAr6G1.jpg",
+            "original_url": "http://pbs.twimg.com/media/FjJGsP4aEAAr6G1.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

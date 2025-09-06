@@ -1,0 +1,27 @@
+{
+    "Title": "Thread: Reasons mentat is better than every other GitHub integration I've seen:",
+    "Author": "Jake Koenig",
+    "URL": "1925369658187948394",
+    "Template": "tweet.temp",
+    "Date": "05/22/2025",
+    "Content": "short/thread_1925369658187948394.md",
+    "Summary": "Reasons mentat is better than every other GitHub integration I've seen:\n\nAutomatically sees and fixed CI failures\n\nAutomatically sees new discussion on PRs and Issues as it's running\n\nMuch faster than...",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1925369658187948394",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1925369658187948394",
+        "https://twitter.com/ja3k_/status/1925369662487085103",
+        "https://twitter.com/ja3k_/status/1925369664546464048",
+        "https://twitter.com/ja3k_/status/1925369666970812820",
+        "https://twitter.com/ja3k_/status/1925369668916875279",
+        "https://twitter.com/ja3k_/status/1925369671358062724",
+        "https://twitter.com/ja3k_/status/1925369816480981072"
+    ],
+    "original_date": "Thu May 22 01:54:32 +0000 2025",
+    "media": [],
+    "is_thread": true,
+    "thread_length": 7
+}

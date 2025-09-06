@@ -1,0 +1,24 @@
+{
+    "Title": "Alright I give in. Claude is my friend",
+    "Author": "Jake Koenig",
+    "URL": "1876235143587008624",
+    "Template": "tweet.temp",
+    "Date": "01/06/2025",
+    "Content": "short/1876235143587008624.md",
+    "Summary": "Alright I give in. Claude is my friend",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1876235143587008624",
+    "tweet_url": "https://twitter.com/ja3k_/status/1876235143587008624",
+    "original_date": "Mon Jan 06 11:51:31 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/Ggm52XdWkAACxmx.png",
+            "original_url": "http://pbs.twimg.com/media/Ggm52XdWkAACxmx.png"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

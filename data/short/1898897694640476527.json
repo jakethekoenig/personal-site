@@ -1,0 +1,24 @@
+{
+    "Title": "It's time to dig",
+    "Author": "Jake Koenig",
+    "URL": "1898897694640476527",
+    "Template": "tweet.temp",
+    "Date": "03/10/2025",
+    "Content": "short/1898897694640476527.md",
+    "Summary": "It's time to dig",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1898897694640476527",
+    "tweet_url": "https://twitter.com/ja3k_/status/1898897694640476527",
+    "original_date": "Mon Mar 10 00:44:24 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/Glo9ZAeaIAAWctK.jpg",
+            "original_url": "http://pbs.twimg.com/media/Glo9ZAeaIAAWctK.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

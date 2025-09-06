@@ -1,0 +1,24 @@
+{
+    "Title": "Happy Friday!",
+    "Author": "Jake Koenig",
+    "URL": "1910701835121549370",
+    "Template": "tweet.temp",
+    "Date": "04/11/2025",
+    "Content": "short/1910701835121549370.md",
+    "Summary": "Happy Friday!",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1910701835121549370",
+    "tweet_url": "https://twitter.com/ja3k_/status/1910701835121549370",
+    "original_date": "Fri Apr 11 14:29:51 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GoQtMYgbYAAUXLg.jpg",
+            "original_url": "http://pbs.twimg.com/media/GoQtMYgbYAAUXLg.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

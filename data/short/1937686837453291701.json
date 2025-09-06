@@ -1,0 +1,24 @@
+{
+    "Title": "Some days you're the bird. Others you're the statue",
+    "Author": "Jake Koenig",
+    "URL": "1937686837453291701",
+    "Template": "tweet.temp",
+    "Date": "06/25/2025",
+    "Content": "short/1937686837453291701.md",
+    "Summary": "Some days you're the bird. Others you're the statue",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1937686837453291701",
+    "tweet_url": "https://twitter.com/ja3k_/status/1937686837453291701",
+    "original_date": "Wed Jun 25 01:38:37 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GuQL6SeagAE4bOH.jpg",
+            "original_url": "http://pbs.twimg.com/media/GuQL6SeagAE4bOH.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

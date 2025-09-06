@@ -1,0 +1,29 @@
+{
+    "Title": "When prompt to movie is ready I'm going to make the greatest crossover of all time",
+    "Author": "Jake Koenig",
+    "URL": "1754523319494398185",
+    "Template": "tweet.temp",
+    "Date": "02/05/2024",
+    "Content": "short/1754523319494398185.md",
+    "Summary": "When prompt to movie is ready I'm going to make the greatest crossover of all time",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1754523319494398185",
+    "tweet_url": "https://twitter.com/ja3k_/status/1754523319494398185",
+    "original_date": "Mon Feb 05 15:12:11 +0000 2024",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GFlRWcTaQAAe1w0.jpg",
+            "original_url": "http://pbs.twimg.com/media/GFlRWcTaQAAe1w0.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GFlRbkRaAAAqT_9.png",
+            "original_url": "http://pbs.twimg.com/media/GFlRbkRaAAAqT_9.png"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

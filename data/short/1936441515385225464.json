@@ -1,0 +1,24 @@
+{
+    "Title": "Make a wish",
+    "Author": "Jake Koenig",
+    "URL": "1936441515385225464",
+    "Template": "tweet.temp",
+    "Date": "06/21/2025",
+    "Content": "short/1936441515385225464.md",
+    "Summary": "Make a wish",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1936441515385225464",
+    "tweet_url": "https://twitter.com/ja3k_/status/1936441515385225464",
+    "original_date": "Sat Jun 21 15:10:09 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/Gt-fS-WXAAAoOb_.jpg",
+            "original_url": "http://pbs.twimg.com/media/Gt-fS-WXAAAoOb_.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

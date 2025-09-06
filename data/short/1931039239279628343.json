@@ -1,0 +1,24 @@
+{
+    "Title": "Posted late today because I was working outside",
+    "Author": "Jake Koenig",
+    "URL": "1931039239279628343",
+    "Template": "tweet.temp",
+    "Date": "06/06/2025",
+    "Content": "short/1931039239279628343.md",
+    "Summary": "Posted late today because I was working outside",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1931039239279628343",
+    "tweet_url": "https://twitter.com/ja3k_/status/1931039239279628343",
+    "original_date": "Fri Jun 06 17:23:26 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/Gsxt9JMaEAAf8Hu.jpg",
+            "original_url": "http://pbs.twimg.com/media/Gsxt9JMaEAAf8Hu.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

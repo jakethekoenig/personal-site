@@ -1,0 +1,18 @@
+{
+    "Title": "I wish there was a way to enter Normal mode in the vim command line. After entering 'set paste' is t...",
+    "Author": "Jake Koenig",
+    "URL": "1505162510550327299",
+    "Template": "tweet.temp",
+    "Date": "03/19/2022",
+    "Content": "short/1505162510550327299.md",
+    "Summary": "I wish there was a way to enter Normal mode in the vim command line. After entering 'set paste' is there no better way to enter 'set nopaste' than 'up, left x5 no'? Feels like 'kbno' should work.",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1505162510550327299",
+    "tweet_url": "https://twitter.com/ja3k_/status/1505162510550327299",
+    "original_date": "Sat Mar 19 12:41:21 +0000 2022",
+    "media": [],
+    "quoted_tweet": null,
+    "is_thread": false
+}

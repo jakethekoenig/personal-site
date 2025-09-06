@@ -1,0 +1,28 @@
+{
+    "Title": "Thread: Oops I linked the wrong image. Meant to link this",
+    "Author": "Jake Koenig",
+    "URL": "1834790030919057530",
+    "Template": "tweet.temp",
+    "Date": "09/14/2024",
+    "Content": "short/thread_1834790030919057530.md",
+    "Summary": "Oops I linked the wrong image. Meant to link this\n\nOh yeah the repo is open source too. Very much a WIP:",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1834790030919057530",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1834790030919057530",
+        "https://twitter.com/ja3k_/status/1834879473067475305"
+    ],
+    "original_date": "Sat Sep 14 03:03:26 +0000 2024",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GXZ7zzgbwAARa7U.jpg",
+            "original_url": "http://pbs.twimg.com/media/GXZ7zzgbwAARa7U.jpg"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 2
+}

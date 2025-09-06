@@ -1,0 +1,24 @@
+{
+    "Title": "New prompt drop",
+    "Author": "Jake Koenig",
+    "URL": "1858313739826778614",
+    "Template": "tweet.temp",
+    "Date": "11/18/2024",
+    "Content": "short/1858313739826778614.md",
+    "Summary": "New prompt drop",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1858313739826778614",
+    "tweet_url": "https://twitter.com/ja3k_/status/1858313739826778614",
+    "original_date": "Mon Nov 18 00:58:16 +0000 2024",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GcoOf84WAAAMYeP.jpg",
+            "original_url": "http://pbs.twimg.com/media/GcoOf84WAAAMYeP.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

@@ -1,0 +1,24 @@
+{
+    "Title": "One trillion dollar company",
+    "Author": "Jake Koenig",
+    "URL": "1615882488106356738",
+    "Template": "tweet.temp",
+    "Date": "01/19/2023",
+    "Content": "short/1615882488106356738.md",
+    "Summary": "One trillion dollar company",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1615882488106356738",
+    "tweet_url": "https://twitter.com/ja3k_/status/1615882488106356738",
+    "original_date": "Thu Jan 19 01:23:01 +0000 2023",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/FmzEjvSaMAEPkuX.jpg",
+            "original_url": "http://pbs.twimg.com/media/FmzEjvSaMAEPkuX.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

@@ -264,7 +264,7 @@ def identify_tweet_threads(tweets, username="ja3k_"):
 
     return final_threads, tweet_to_thread
 
-def process_twitter_archive(archive_path, output_dir="data/tweets", media_output_dir="nongenerated/assets/crosspoast"):
+def process_twitter_archive(archive_path, output_dir="data/short", media_output_dir="nongenerated/assets/crosspoast"):
     """Process the entire Twitter archive"""
     
     # Look for tweets data file
@@ -382,10 +382,10 @@ def process_twitter_archive(archive_path, output_dir="data/tweets", media_output
             tweet_data = {
                 "Title": clean_text[:100] + "..." if len(clean_text) > 100 else clean_text,
                 "Author": "Jake Koenig",
-                "URL": f"short/{tweet_id}",
+                "URL": str(tweet_id),
                 "Template": "tweet.temp",
                 "Date": parse_twitter_date(created_at),
-                "Content": f"tweets/{tweet_id}.md",
+                "Content": f"short/{tweet_id}.md",
                 "Summary": clean_text,
                 "Categories": ["tweets"],
                 "tweet_id": tweet_id,
@@ -402,7 +402,7 @@ def process_twitter_archive(archive_path, output_dir="data/tweets", media_output
                 json.dump(tweet_data, f, indent=4, ensure_ascii=False)
             
             # Create markdown content file
-            content_dir = os.path.join("content", "tweets")
+            content_dir = os.path.join("content", "short")
             os.makedirs(content_dir, exist_ok=True)
             
             md_content = clean_text + "\n\n"
@@ -436,7 +436,7 @@ def process_twitter_archive(archive_path, output_dir="data/tweets", media_output
     
     print(f"Successfully processed {processed_count} tweets")
     print(f"JSON files saved to: {output_dir}")
-    print(f"Markdown files saved to: content/tweets")
+    print(f"Markdown files saved to: content/short")
     if media_dir:
         print(f"Media files saved to: {media_output_dir}")
 
@@ -494,10 +494,10 @@ def process_tweet_thread(thread_tweets, media_dir, media_output_dir, output_dir)
     thread_data = {
         "Title": f"Thread: {thread_text_parts[0][:80]}..." if len(thread_text_parts[0]) > 80 else f"Thread: {thread_text_parts[0]}",
         "Author": "Jake Koenig",
-        "URL": f"short/{thread_id}",
+        "URL": str(thread_id),
         "Template": "tweet.temp",
         "Date": parse_twitter_date(first_tweet.get('created_at', '')),
-        "Content": f"tweets/thread_{thread_id}.md",
+        "Content": f"short/thread_{thread_id}.md",
         "Summary": full_thread_text[:200] + "..." if len(full_thread_text) > 200 else full_thread_text,
         "Categories": ["tweets", "threads"],
         "tweet_id": thread_id,
@@ -514,7 +514,7 @@ def process_tweet_thread(thread_tweets, media_dir, media_output_dir, output_dir)
         json.dump(thread_data, f, indent=4, ensure_ascii=False)
     
     # Create markdown content file
-    content_dir = os.path.join("content", "tweets")
+    content_dir = os.path.join("content", "short")
     os.makedirs(content_dir, exist_ok=True)
     
     md_content = "# Thread\n\n"
@@ -533,7 +533,7 @@ def process_tweet_thread(thread_tweets, media_dir, media_output_dir, output_dir)
 def main():
     parser = argparse.ArgumentParser(description='Process Twitter archive into blog-like format')
     parser.add_argument('archive_path', help='Path to the Twitter archive directory')
-    parser.add_argument('--output-dir', default='data/tweets', help='Output directory for JSON files')
+    parser.add_argument('--output-dir', default='data/short', help='Output directory for JSON files')
     parser.add_argument('--media-dir', default='nongenerated/assets/crosspoast', help='Output directory for media files')
     
     args = parser.parse_args()

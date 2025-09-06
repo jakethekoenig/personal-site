@@ -1,0 +1,24 @@
+{
+    "Title": "Thread: Much faster than codex for some reason. Our setup scripts take 2m on our server ...",
+    "Author": "Jake Koenig",
+    "URL": "1925369666970812820",
+    "Template": "tweet.temp",
+    "Date": "05/22/2025",
+    "Content": "short/thread_1925369666970812820.md",
+    "Summary": "Much faster than codex for some reason. Our setup scripts take 2m on our server and close to 10 on theirs\n\nHas Internet access as it's running\n\nCan be started from a PR. Want it to add tests to your P...",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1925369666970812820",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1925369666970812820",
+        "https://twitter.com/ja3k_/status/1925369668916875279",
+        "https://twitter.com/ja3k_/status/1925369671358062724",
+        "https://twitter.com/ja3k_/status/1925369816480981072"
+    ],
+    "original_date": "Thu May 22 01:54:34 +0000 2025",
+    "media": [],
+    "is_thread": true,
+    "thread_length": 4
+}

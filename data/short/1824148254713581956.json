@@ -1,0 +1,18 @@
+{
+    "Title": "btw this is why vim is actually MORE useful in the age of LLMs. I asked claude for a command to get ...",
+    "Author": "Jake Koenig",
+    "URL": "1824148254713581956",
+    "Template": "tweet.temp",
+    "Date": "08/15/2024",
+    "Content": "short/1824148254713581956.md",
+    "Summary": "btw this is why vim is actually MORE useful in the age of LLMs. I asked claude for a command to get this number and it gave me a one liner that computed this number. I asked how to do it with vscode and it gave an 8 step process which started with \"install npm\"",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1824148254713581956",
+    "tweet_url": "https://twitter.com/ja3k_/status/1824148254713581956",
+    "original_date": "Thu Aug 15 18:16:49 +0000 2024",
+    "media": [],
+    "quoted_tweet": null,
+    "is_thread": false
+}

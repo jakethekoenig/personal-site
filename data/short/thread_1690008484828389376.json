@@ -1,0 +1,22 @@
+{
+    "Title": "Thread: Does anyone know how to get an image from the system clipboard in node? I tried ...",
+    "Author": "Jake Koenig",
+    "URL": "1690008484828389376",
+    "Template": "tweet.temp",
+    "Date": "08/11/2023",
+    "Content": "short/thread_1690008484828389376.md",
+    "Summary": "Does anyone know how to get an image from the system clipboard in node? I tried clipboardy, copy-paste and electron and none of them worked.\n\nI think the problem may just be that I'm using ubuntu. I'l...",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1690008484828389376",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1690008484828389376",
+        "https://twitter.com/ja3k_/status/1690039321989152768"
+    ],
+    "original_date": "Fri Aug 11 14:33:16 +0000 2023",
+    "media": [],
+    "is_thread": true,
+    "thread_length": 2
+}

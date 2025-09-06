@@ -1,0 +1,24 @@
+{
+    "Title": "In this age of token abundance every repo needs a poem",
+    "Author": "Jake Koenig",
+    "URL": "1924937108885799015",
+    "Template": "tweet.temp",
+    "Date": "05/20/2025",
+    "Content": "short/1924937108885799015.md",
+    "Summary": "In this age of token abundance every repo needs a poem",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1924937108885799015",
+    "tweet_url": "https://twitter.com/ja3k_/status/1924937108885799015",
+    "original_date": "Tue May 20 21:15:45 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GrbAE6TbAAEeHYh.jpg",
+            "original_url": "http://pbs.twimg.com/media/GrbAE6TbAAEeHYh.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

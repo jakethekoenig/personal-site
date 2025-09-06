@@ -1,0 +1,24 @@
+{
+    "Title": "This bot understands the project better than I do",
+    "Author": "Jake Koenig",
+    "URL": "1882523049834230119",
+    "Template": "tweet.temp",
+    "Date": "01/23/2025",
+    "Content": "short/1882523049834230119.md",
+    "Summary": "This bot understands the project better than I do",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1882523049834230119",
+    "tweet_url": "https://twitter.com/ja3k_/status/1882523049834230119",
+    "original_date": "Thu Jan 23 20:17:25 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GiAQvRObsAAf5QJ.jpg",
+            "original_url": "http://pbs.twimg.com/media/GiAQvRObsAAf5QJ.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

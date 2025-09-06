@@ -1,0 +1,24 @@
+{
+    "Title": "Nice!",
+    "Author": "Jake Koenig",
+    "URL": "1952080800377360483",
+    "Template": "tweet.temp",
+    "Date": "08/03/2025",
+    "Content": "short/1952080800377360483.md",
+    "Summary": "Nice!",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1952080800377360483",
+    "tweet_url": "https://twitter.com/ja3k_/status/1952080800377360483",
+    "original_date": "Sun Aug 03 18:55:05 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GxcvJNbaIAAPJGM.jpg",
+            "original_url": "http://pbs.twimg.com/media/GxcvJNbaIAAPJGM.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

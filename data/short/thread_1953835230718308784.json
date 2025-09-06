@@ -1,0 +1,31 @@
+{
+    "Title": "Thread: Even benchmarks that don't look saturated e.g. swe bench are so low quality that...",
+    "Author": "Jake Koenig",
+    "URL": "1953835230718308784",
+    "Template": "tweet.temp",
+    "Date": "08/08/2025",
+    "Content": "short/thread_1953835230718308784.md",
+    "Summary": "Even benchmarks that don't look saturated e.g. swe bench are so low quality that further improvements probably aren't even desirable\n\nThe labs are most incentivized to produce high quality benchmarks ...",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1953835230718308784",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1953835230718308784",
+        "https://twitter.com/ja3k_/status/1953835232647422340",
+        "https://twitter.com/ja3k_/status/1953835238448410833",
+        "https://twitter.com/ja3k_/status/1953835241141153913",
+        "https://twitter.com/ja3k_/status/1953835242873082104"
+    ],
+    "original_date": "Fri Aug 08 15:06:34 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/Gx1qy8RawAAz6oy.jpg",
+            "original_url": "http://pbs.twimg.com/media/Gx1qy8RawAAz6oy.jpg"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 5
+}

@@ -1,0 +1,18 @@
+{
+    "Title": "You should be able to block people on github and then when you clone repos it just skips their commi...",
+    "Author": "Jake Koenig",
+    "URL": "1674452955045691392",
+    "Template": "tweet.temp",
+    "Date": "06/29/2023",
+    "Content": "short/1674452955045691392.md",
+    "Summary": "You should be able to block people on github and then when you clone repos it just skips their commits.",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1674452955045691392",
+    "tweet_url": "https://twitter.com/ja3k_/status/1674452955045691392",
+    "original_date": "Thu Jun 29 16:21:08 +0000 2023",
+    "media": [],
+    "quoted_tweet": null,
+    "is_thread": false
+}

@@ -1,0 +1,18 @@
+{
+    "Title": "abbreviated hex shas sort of look like hex rgb codes. We should rewrite git so that every sha can ha...",
+    "Author": "Jake Koenig",
+    "URL": "1940119956756340750",
+    "Template": "tweet.temp",
+    "Date": "07/01/2025",
+    "Content": "short/1940119956756340750.md",
+    "Summary": "abbreviated hex shas sort of look like hex rgb codes. We should rewrite git so that every sha can have it's own little color.",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1940119956756340750",
+    "tweet_url": "https://twitter.com/ja3k_/status/1940119956756340750",
+    "original_date": "Tue Jul 01 18:46:58 +0000 2025",
+    "media": [],
+    "quoted_tweet": null,
+    "is_thread": false
+}

@@ -1,0 +1,24 @@
+{
+    "Title": "Oh thanks Netflix",
+    "Author": "Jake Koenig",
+    "URL": "1500793716566540292",
+    "Template": "tweet.temp",
+    "Date": "03/07/2022",
+    "Content": "short/1500793716566540292.md",
+    "Summary": "Oh thanks Netflix",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1500793716566540292",
+    "tweet_url": "https://twitter.com/ja3k_/status/1500793716566540292",
+    "original_date": "Mon Mar 07 11:21:20 +0000 2022",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/FNPj7pfWQAYxVL1.jpg",
+            "original_url": "http://pbs.twimg.com/media/FNPj7pfWQAYxVL1.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

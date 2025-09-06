@@ -1,0 +1,24 @@
+{
+    "Title": "good night",
+    "Author": "Jake Koenig",
+    "URL": "1830791115458613268",
+    "Template": "tweet.temp",
+    "Date": "09/03/2024",
+    "Content": "short/1830791115458613268.md",
+    "Summary": "good night",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1830791115458613268",
+    "tweet_url": "https://twitter.com/ja3k_/status/1830791115458613268",
+    "original_date": "Tue Sep 03 02:13:11 +0000 2024",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GWhG0R1a4AAq62r.jpg",
+            "original_url": "http://pbs.twimg.com/media/GWhG0R1a4AAq62r.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

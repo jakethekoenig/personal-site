@@ -1,0 +1,34 @@
+{
+    "Title": "Thread: We're living in the future",
+    "Author": "Jake Koenig",
+    "URL": "1927561054436884967",
+    "Template": "tweet.temp",
+    "Date": "05/28/2025",
+    "Content": "short/thread_1927561054436884967.md",
+    "Summary": "We're living in the future\n\nLmao I take it back. It literally tagged it's testbot in the issue it titled \"do not tag yet\"\n\nI somehow missed its apology",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1927561054436884967",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1927561054436884967",
+        "https://twitter.com/ja3k_/status/1927562440557969833",
+        "https://twitter.com/ja3k_/status/1927779224644985121"
+    ],
+    "original_date": "Wed May 28 03:02:22 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GsASkDBXcAESCuk.jpg",
+            "original_url": "http://pbs.twimg.com/media/GsASkDBXcAESCuk.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GsDY-m_aUAM6Vjb.jpg",
+            "original_url": "http://pbs.twimg.com/media/GsDY-m_aUAM6Vjb.jpg"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 3
+}

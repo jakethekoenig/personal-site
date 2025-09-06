@@ -1,0 +1,24 @@
+{
+    "Title": "Post screen time",
+    "Author": "Jake Koenig",
+    "URL": "1893705930413387830",
+    "Template": "tweet.temp",
+    "Date": "02/23/2025",
+    "Content": "short/1893705930413387830.md",
+    "Summary": "Post screen time",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1893705930413387830",
+    "tweet_url": "https://twitter.com/ja3k_/status/1893705930413387830",
+    "original_date": "Sun Feb 23 16:54:11 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GkfLgjobMAAu0Uo.jpg",
+            "original_url": "http://pbs.twimg.com/media/GkfLgjobMAAu0Uo.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

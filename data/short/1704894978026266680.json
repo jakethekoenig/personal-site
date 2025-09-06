@@ -1,0 +1,18 @@
+{
+    "Title": "You should be able to make a comment with any emoji. Imagine instead of: # TODO: finish this 🤷 finis...",
+    "Author": "Jake Koenig",
+    "URL": "1704894978026266680",
+    "Template": "tweet.temp",
+    "Date": "09/21/2023",
+    "Content": "short/1704894978026266680.md",
+    "Summary": "You should be able to make a comment with any emoji. Imagine instead of: # TODO: finish this 🤷 finish this OR #!/usr/bin/env python 🔥/usr/bin/env python",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1704894978026266680",
+    "tweet_url": "https://twitter.com/ja3k_/status/1704894978026266680",
+    "original_date": "Thu Sep 21 16:26:52 +0000 2023",
+    "media": [],
+    "quoted_tweet": null,
+    "is_thread": false
+}

@@ -1,0 +1,18 @@
+{
+    "Title": "huh, if you provision a postgres database on gcloud with the default settings for a month it costs a...",
+    "Author": "Jake Koenig",
+    "URL": "1502415046403629063",
+    "Template": "tweet.temp",
+    "Date": "03/11/2022",
+    "Content": "short/1502415046403629063.md",
+    "Summary": "huh, if you provision a postgres database on gcloud with the default settings for a month it costs almost exactly the free credits they give you when you're starting out. Probably shouldn't have just assumed it'd be 'basically free'.",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1502415046403629063",
+    "tweet_url": "https://twitter.com/ja3k_/status/1502415046403629063",
+    "original_date": "Fri Mar 11 22:43:55 +0000 2022",
+    "media": [],
+    "quoted_tweet": null,
+    "is_thread": false
+}

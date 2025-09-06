@@ -1,0 +1,33 @@
+{
+    "Title": "Thread: What could this mean?",
+    "Author": "Jake Koenig",
+    "URL": "1610466133383204865",
+    "Template": "tweet.temp",
+    "Date": "01/04/2023",
+    "Content": "short/thread_1610466133383204865.md",
+    "Summary": "What could this mean?\n\nThis came through when my wife turned on the printer for her own use. Hard to explain.",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1610466133383204865",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1610466133383204865",
+        "https://twitter.com/ja3k_/status/1610467138367787008"
+    ],
+    "original_date": "Wed Jan 04 02:40:21 +0000 2023",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/FlmGaV7aYAIeTio.jpg",
+            "original_url": "http://pbs.twimg.com/media/FlmGaV7aYAIeTio.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/FlmHU7MagAA8azl.jpg",
+            "original_url": "http://pbs.twimg.com/media/FlmHU7MagAA8azl.jpg"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 2
+}

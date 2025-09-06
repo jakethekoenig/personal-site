@@ -1,0 +1,30 @@
+{
+    "Title": "Thread: Mentat now supports images!",
+    "Author": "Jake Koenig",
+    "URL": "1923499450175262756",
+    "Template": "tweet.temp",
+    "Date": "05/16/2025",
+    "Content": "short/thread_1923499450175262756.md",
+    "Summary": "Mentat now supports images!\n\nShould have done it a long time ago. I actually solved issue #165 doing it (we're in the 3000s now). But the GitHub auth story around images is complicated. There's actual...",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1923499450175262756",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1923499450175262756",
+        "https://twitter.com/ja3k_/status/1923499452104573251",
+        "https://twitter.com/ja3k_/status/1923499453199286520",
+        "https://twitter.com/ja3k_/status/1923499454352720001"
+    ],
+    "original_date": "Fri May 16 22:03:00 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GrGkAyyWUAAxA_U.jpg",
+            "original_url": "http://pbs.twimg.com/media/GrGkAyyWUAAxA_U.jpg"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 4
+}

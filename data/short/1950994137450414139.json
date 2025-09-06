@@ -1,0 +1,24 @@
+{
+    "Title": "I'm tired",
+    "Author": "Jake Koenig",
+    "URL": "1950994137450414139",
+    "Template": "tweet.temp",
+    "Date": "07/31/2025",
+    "Content": "short/1950994137450414139.md",
+    "Summary": "I'm tired",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1950994137450414139",
+    "tweet_url": "https://twitter.com/ja3k_/status/1950994137450414139",
+    "original_date": "Thu Jul 31 18:57:04 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GxNS1DCa4AAWV6S.jpg",
+            "original_url": "http://pbs.twimg.com/media/GxNS1DCa4AAWV6S.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

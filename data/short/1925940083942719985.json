@@ -1,0 +1,24 @@
+{
+    "Title": "nvim MCP is actually pretty cool",
+    "Author": "Jake Koenig",
+    "URL": "1925940083942719985",
+    "Template": "tweet.temp",
+    "Date": "05/23/2025",
+    "Content": "short/1925940083942719985.md",
+    "Summary": "nvim MCP is actually pretty cool",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1925940083942719985",
+    "tweet_url": "https://twitter.com/ja3k_/status/1925940083942719985",
+    "original_date": "Fri May 23 15:41:12 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GrpQRK6XMAA7QyO.jpg",
+            "original_url": "http://pbs.twimg.com/media/GrpQRK6XMAA7QyO.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

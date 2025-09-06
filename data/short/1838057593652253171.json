@@ -1,0 +1,18 @@
+{
+    "Title": "Changing the line limit on this python project to 48 so it looks good on termux",
+    "Author": "Jake Koenig",
+    "URL": "1838057593652253171",
+    "Template": "tweet.temp",
+    "Date": "09/23/2024",
+    "Content": "short/1838057593652253171.md",
+    "Summary": "Changing the line limit on this python project to 48 so it looks good on termux",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1838057593652253171",
+    "tweet_url": "https://twitter.com/ja3k_/status/1838057593652253171",
+    "original_date": "Mon Sep 23 03:27:34 +0000 2024",
+    "media": [],
+    "quoted_tweet": null,
+    "is_thread": false
+}

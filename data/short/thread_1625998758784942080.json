@@ -1,0 +1,22 @@
+{
+    "Title": "Thread: Today it's tabonly",
+    "Author": "Jake Koenig",
+    "URL": "1625998758784942080",
+    "Template": "tweet.temp",
+    "Date": "02/15/2023",
+    "Content": "short/thread_1625998758784942080.md",
+    "Summary": "Today it's tabonly\n\nHonestly I shouldn't use tabs but I'm terminally chrome brained. Trying to switch to vimium+'T' there and ctrlP in vim",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1625998758784942080",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1625998758784942080",
+        "https://twitter.com/ja3k_/status/1625999005649080321"
+    ],
+    "original_date": "Wed Feb 15 23:21:28 +0000 2023",
+    "media": [],
+    "is_thread": true,
+    "thread_length": 2
+}

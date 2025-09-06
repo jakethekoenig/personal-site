@@ -1,0 +1,24 @@
+{
+    "Title": "Happy Monday!",
+    "Author": "Jake Koenig",
+    "URL": "1904200244470177878",
+    "Template": "tweet.temp",
+    "Date": "03/24/2025",
+    "Content": "short/1904200244470177878.md",
+    "Summary": "Happy Monday!",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1904200244470177878",
+    "tweet_url": "https://twitter.com/ja3k_/status/1904200244470177878",
+    "original_date": "Mon Mar 24 15:54:51 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/Gm0UCBsa4AACj2Q.jpg",
+            "original_url": "http://pbs.twimg.com/media/Gm0UCBsa4AACj2Q.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

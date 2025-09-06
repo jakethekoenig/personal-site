@@ -1,0 +1,24 @@
+{
+    "Title": "Guess what happened yesterday!",
+    "Author": "Jake Koenig",
+    "URL": "1486113197916573715",
+    "Template": "tweet.temp",
+    "Date": "01/25/2022",
+    "Content": "short/1486113197916573715.md",
+    "Summary": "Guess what happened yesterday!",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1486113197916573715",
+    "tweet_url": "https://twitter.com/ja3k_/status/1486113197916573715",
+    "original_date": "Tue Jan 25 23:06:11 +0000 2022",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/FJ-8FBDXsAYz85B.jpg",
+            "original_url": "http://pbs.twimg.com/media/FJ-8FBDXsAYz85B.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

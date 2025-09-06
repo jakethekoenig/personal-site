@@ -1,0 +1,29 @@
+{
+    "Title": "If you can't handle me programming on a phone you don't deserve me programming holding a baby",
+    "Author": "Jake Koenig",
+    "URL": "1689345540021170178",
+    "Template": "tweet.temp",
+    "Date": "08/09/2023",
+    "Content": "short/1689345540021170178.md",
+    "Summary": "If you can't handle me programming on a phone you don't deserve me programming holding a baby",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1689345540021170178",
+    "tweet_url": "https://twitter.com/ja3k_/status/1689345540021170178",
+    "original_date": "Wed Aug 09 18:38:57 +0000 2023",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/F3HC0ALaMAACEu2.jpg",
+            "original_url": "http://pbs.twimg.com/media/F3HC0ALaMAACEu2.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/F3HC0P6acAAtzpR.jpg",
+            "original_url": "http://pbs.twimg.com/media/F3HC0P6acAAtzpR.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

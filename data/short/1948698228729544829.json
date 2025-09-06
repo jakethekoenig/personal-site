@@ -1,0 +1,29 @@
+{
+    "Title": "New record for me. Worked first try.",
+    "Author": "Jake Koenig",
+    "URL": "1948698228729544829",
+    "Template": "tweet.temp",
+    "Date": "07/25/2025",
+    "Content": "short/1948698228729544829.md",
+    "Summary": "New record for me. Worked first try.",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1948698228729544829",
+    "tweet_url": "https://twitter.com/ja3k_/status/1948698228729544829",
+    "original_date": "Fri Jul 25 10:53:57 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GwsqiQ2bgAA3PpI.png",
+            "original_url": "http://pbs.twimg.com/media/GwsqiQ2bgAA3PpI.png"
+        },
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GwsqriubgAIbq0B.png",
+            "original_url": "http://pbs.twimg.com/media/GwsqriubgAIbq0B.png"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

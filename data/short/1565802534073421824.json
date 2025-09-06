@@ -1,0 +1,24 @@
+{
+    "Title": "Fake news isn't even trying anymore. I can see the guy making them right there",
+    "Author": "Jake Koenig",
+    "URL": "1565802534073421824",
+    "Template": "tweet.temp",
+    "Date": "09/02/2022",
+    "Content": "short/1565802534073421824.md",
+    "Summary": "Fake news isn't even trying anymore. I can see the guy making them right there",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1565802534073421824",
+    "tweet_url": "https://twitter.com/ja3k_/status/1565802534073421824",
+    "original_date": "Fri Sep 02 20:43:09 +0000 2022",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/FbrZGxraUAAm0va.jpg",
+            "original_url": "http://pbs.twimg.com/media/FbrZGxraUAAm0va.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

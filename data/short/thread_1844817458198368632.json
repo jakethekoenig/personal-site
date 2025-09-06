@@ -1,0 +1,22 @@
+{
+    "Title": "Thread: I wonder if LLM's make the classic \"never do a complete rewrite\" advice possibly...",
+    "Author": "Jake Koenig",
+    "URL": "1844817458198368632",
+    "Template": "tweet.temp",
+    "Date": "10/11/2024",
+    "Content": "short/thread_1844817458198368632.md",
+    "Summary": "I wonder if LLM's make the classic \"never do a complete rewrite\" advice possibly untrue.\n\nCould do things like rewrite commit by commit if the goal is just to change languages. Could add extra tests d...",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1844817458198368632",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1844817458198368632",
+        "https://twitter.com/ja3k_/status/1844817459356061899"
+    ],
+    "original_date": "Fri Oct 11 19:08:51 +0000 2024",
+    "media": [],
+    "is_thread": true,
+    "thread_length": 2
+}

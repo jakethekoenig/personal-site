@@ -1,0 +1,18 @@
+{
+    "Title": "Python should have a keyword \"Nine\" which is a constant `9` so if you mistype `None` it silently fai...",
+    "Author": "Jake Koenig",
+    "URL": "1924856086173253929",
+    "Template": "tweet.temp",
+    "Date": "05/20/2025",
+    "Content": "short/1924856086173253929.md",
+    "Summary": "Python should have a keyword \"Nine\" which is a constant `9` so if you mistype `None` it silently fails",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1924856086173253929",
+    "tweet_url": "https://twitter.com/ja3k_/status/1924856086173253929",
+    "original_date": "Tue May 20 15:53:47 +0000 2025",
+    "media": [],
+    "quoted_tweet": null,
+    "is_thread": false
+}

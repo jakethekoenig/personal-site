@@ -1,0 +1,24 @@
+{
+    "Title": "lmao if you try to use the filesystem MCP and you list a directory that doesn't exist it just crashe...",
+    "Author": "Jake Koenig",
+    "URL": "1921678655991738597",
+    "Template": "tweet.temp",
+    "Date": "05/11/2025",
+    "Content": "short/1921678655991738597.md",
+    "Summary": "lmao if you try to use the filesystem MCP and you list a directory that doesn't exist it just crashes",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1921678655991738597",
+    "tweet_url": "https://twitter.com/ja3k_/status/1921678655991738597",
+    "original_date": "Sun May 11 21:27:49 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GqssisvWAAAJQot.jpg",
+            "original_url": "http://pbs.twimg.com/media/GqssisvWAAAJQot.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

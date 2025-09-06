@@ -1,0 +1,24 @@
+{
+    "Title": "Been having some programming with Rhiannon:",
+    "Author": "Jake Koenig",
+    "URL": "1261380951294148608",
+    "Template": "tweet.temp",
+    "Date": "05/15/2020",
+    "Content": "short/1261380951294148608.md",
+    "Summary": "Been having some programming with Rhiannon:",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1261380951294148608",
+    "tweet_url": "https://twitter.com/ja3k_/status/1261380951294148608",
+    "original_date": "Fri May 15 19:40:28 +0000 2020",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/EYFTAJyU4AA4Rhj.jpg",
+            "original_url": "http://pbs.twimg.com/media/EYFTAJyU4AA4Rhj.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

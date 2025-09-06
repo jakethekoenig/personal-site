@@ -1,0 +1,24 @@
+{
+    "Title": "Fixed it",
+    "Author": "Jake Koenig",
+    "URL": "1484984226114064385",
+    "Template": "tweet.temp",
+    "Date": "01/22/2022",
+    "Content": "short/1484984226114064385.md",
+    "Summary": "Fixed it",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1484984226114064385",
+    "tweet_url": "https://twitter.com/ja3k_/status/1484984226114064385",
+    "original_date": "Sat Jan 22 20:20:03 +0000 2022",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/FJu5SNdXMAIbmky.jpg",
+            "original_url": "http://pbs.twimg.com/media/FJu5SNdXMAIbmky.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}
