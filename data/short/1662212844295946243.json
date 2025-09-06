@@ -1,0 +1,24 @@
+{
+    "Title": "POV: you're a whale",
+    "Author": "Jake Koenig",
+    "URL": "1662212844295946243",
+    "Template": "tweet.temp",
+    "Date": "05/26/2023",
+    "Content": "short/1662212844295946243.md",
+    "Summary": "POV: you're a whale",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1662212844295946243",
+    "tweet_url": "https://twitter.com/ja3k_/status/1662212844295946243",
+    "original_date": "Fri May 26 21:43:19 +0000 2023",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/FxFdxhQaIAAMso3.jpg",
+            "original_url": "http://pbs.twimg.com/media/FxFdxhQaIAAMso3.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

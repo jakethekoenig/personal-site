@@ -1,0 +1,24 @@
+{
+    "Title": "First claude-4 PR. Migrating us from pyright to ty",
+    "Author": "Jake Koenig",
+    "URL": "1925606894317781457",
+    "Template": "tweet.temp",
+    "Date": "05/22/2025",
+    "Content": "short/1925606894317781457.md",
+    "Summary": "First claude-4 PR. Migrating us from pyright to ty",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1925606894317781457",
+    "tweet_url": "https://twitter.com/ja3k_/status/1925606894317781457",
+    "original_date": "Thu May 22 17:37:14 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GrkhO41agAA-xt1.jpg",
+            "original_url": "http://pbs.twimg.com/media/GrkhO41agAA-xt1.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

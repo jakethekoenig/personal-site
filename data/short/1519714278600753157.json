@@ -1,0 +1,29 @@
+{
+    "Title": "Happy Thursday!",
+    "Author": "Jake Koenig",
+    "URL": "1519714278600753157",
+    "Template": "tweet.temp",
+    "Date": "04/28/2022",
+    "Content": "short/1519714278600753157.md",
+    "Summary": "Happy Thursday!",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1519714278600753157",
+    "tweet_url": "https://twitter.com/ja3k_/status/1519714278600753157",
+    "original_date": "Thu Apr 28 16:24:53 +0000 2022",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/FRccEavXMAATn-8.jpg",
+            "original_url": "http://pbs.twimg.com/media/FRccEavXMAATn-8.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/FRccFQ-XIAMqt51.jpg",
+            "original_url": "http://pbs.twimg.com/media/FRccFQ-XIAMqt51.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

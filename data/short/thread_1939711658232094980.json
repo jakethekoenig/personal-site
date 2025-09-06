@@ -1,0 +1,22 @@
+{
+    "Title": "Thread: In case it's not clear what you're looking at Mentat ran the Mentat backend and ...",
+    "Author": "Jake Koenig",
+    "URL": "1939711658232094980",
+    "Template": "tweet.temp",
+    "Date": "06/30/2025",
+    "Content": "short/thread_1939711658232094980.md",
+    "Summary": "In case it's not clear what you're looking at Mentat ran the Mentat backend and frontend server which I can see embedded in an iframe (the port 5173 tab). In that iframe I can see the diff of a \"test ...",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1939711658232094980",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1939711658232094980",
+        "https://twitter.com/ja3k_/status/1939711659339321394"
+    ],
+    "original_date": "Mon Jun 30 15:44:32 +0000 2025",
+    "media": [],
+    "is_thread": true,
+    "thread_length": 2
+}

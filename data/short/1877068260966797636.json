@@ -1,0 +1,18 @@
+{
+    "Title": "Something totally obvious that has never occurred to me: if you use the vim shell you can save your ...",
+    "Author": "Jake Koenig",
+    "URL": "1877068260966797636",
+    "Template": "tweet.temp",
+    "Date": "01/08/2025",
+    "Content": "short/1877068260966797636.md",
+    "Summary": "Something totally obvious that has never occurred to me: if you use the vim shell you can save your shell history with `:w`",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1877068260966797636",
+    "tweet_url": "https://twitter.com/ja3k_/status/1877068260966797636",
+    "original_date": "Wed Jan 08 19:02:02 +0000 2025",
+    "media": [],
+    "quoted_tweet": null,
+    "is_thread": false
+}

@@ -1,0 +1,18 @@
+{
+    "Title": "Idea: an app that every time you get a message from someone uses an LLM to make a message based on a...",
+    "Author": "Jake Koenig",
+    "URL": "1890232790047945166",
+    "Template": "tweet.temp",
+    "Date": "02/14/2025",
+    "Content": "short/1890232790047945166.md",
+    "Summary": "Idea: an app that every time you get a message from someone uses an LLM to make a message based on all your previous communications with that person and asks you to guess which is which",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1890232790047945166",
+    "tweet_url": "https://twitter.com/ja3k_/status/1890232790047945166",
+    "original_date": "Fri Feb 14 02:53:10 +0000 2025",
+    "media": [],
+    "quoted_tweet": null,
+    "is_thread": false
+}

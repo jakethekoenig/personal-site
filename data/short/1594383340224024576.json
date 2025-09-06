@@ -1,0 +1,29 @@
+{
+    "Title": "Now available in paperback:",
+    "Author": "Jake Koenig",
+    "URL": "1594383340224024576",
+    "Template": "tweet.temp",
+    "Date": "11/20/2022",
+    "Content": "short/1594383340224024576.md",
+    "Summary": "Now available in paperback:",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1594383340224024576",
+    "tweet_url": "https://twitter.com/ja3k_/status/1594383340224024576",
+    "original_date": "Sun Nov 20 17:33:05 +0000 2022",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/FiBjMSIaUAQ65E5.jpg",
+            "original_url": "http://pbs.twimg.com/media/FiBjMSIaUAQ65E5.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/FiBjMp0aYAIyzb5.jpg",
+            "original_url": "http://pbs.twimg.com/media/FiBjMp0aYAIyzb5.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

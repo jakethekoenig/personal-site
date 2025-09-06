@@ -1,0 +1,24 @@
+{
+    "Title": "My sock drawer",
+    "Author": "Jake Koenig",
+    "URL": "1650565563507429376",
+    "Template": "tweet.temp",
+    "Date": "04/24/2023",
+    "Content": "short/1650565563507429376.md",
+    "Summary": "My sock drawer",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1650565563507429376",
+    "tweet_url": "https://twitter.com/ja3k_/status/1650565563507429376",
+    "original_date": "Mon Apr 24 18:21:11 +0000 2023",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/Fuf8ogEaAAEZBbq.jpg",
+            "original_url": "http://pbs.twimg.com/media/Fuf8ogEaAAEZBbq.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

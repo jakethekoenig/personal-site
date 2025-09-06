@@ -1,0 +1,24 @@
+{
+    "Title": "Tag yourself",
+    "Author": "Jake Koenig",
+    "URL": "1483867878852108292",
+    "Template": "tweet.temp",
+    "Date": "01/19/2022",
+    "Content": "short/1483867878852108292.md",
+    "Summary": "Tag yourself",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1483867878852108292",
+    "tweet_url": "https://twitter.com/ja3k_/status/1483867878852108292",
+    "original_date": "Wed Jan 19 18:24:05 +0000 2022",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/FJfB5fJWYAIGqzH.jpg",
+            "original_url": "http://pbs.twimg.com/media/FJfB5fJWYAIGqzH.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

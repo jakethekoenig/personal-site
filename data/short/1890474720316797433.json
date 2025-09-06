@@ -1,0 +1,24 @@
+{
+    "Title": "Is this LLM joke original? It's pretty funny",
+    "Author": "Jake Koenig",
+    "URL": "1890474720316797433",
+    "Template": "tweet.temp",
+    "Date": "02/14/2025",
+    "Content": "short/1890474720316797433.md",
+    "Summary": "Is this LLM joke original? It's pretty funny",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1890474720316797433",
+    "tweet_url": "https://twitter.com/ja3k_/status/1890474720316797433",
+    "original_date": "Fri Feb 14 18:54:31 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GjxQsp4bQAAaNqu.jpg",
+            "original_url": "http://pbs.twimg.com/media/GjxQsp4bQAAaNqu.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

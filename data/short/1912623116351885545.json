@@ -1,0 +1,24 @@
+{
+    "Title": "I love open source",
+    "Author": "Jake Koenig",
+    "URL": "1912623116351885545",
+    "Template": "tweet.temp",
+    "Date": "04/16/2025",
+    "Content": "short/1912623116351885545.md",
+    "Summary": "I love open source",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1912623116351885545",
+    "tweet_url": "https://twitter.com/ja3k_/status/1912623116351885545",
+    "original_date": "Wed Apr 16 21:44:20 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GosAkRPacAAhb6d.jpg",
+            "original_url": "http://pbs.twimg.com/media/GosAkRPacAAhb6d.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

@@ -1,0 +1,24 @@
+{
+    "Title": "This is actually a pure hallucination huh?",
+    "Author": "Jake Koenig",
+    "URL": "1934024537156550961",
+    "Template": "tweet.temp",
+    "Date": "06/14/2025",
+    "Content": "short/1934024537156550961.md",
+    "Summary": "This is actually a pure hallucination huh?",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1934024537156550961",
+    "tweet_url": "https://twitter.com/ja3k_/status/1934024537156550961",
+    "original_date": "Sat Jun 14 23:05:56 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GtcJEM4bcAETEWh.jpg",
+            "original_url": "http://pbs.twimg.com/media/GtcJEM4bcAETEWh.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

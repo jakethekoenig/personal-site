@@ -1,0 +1,18 @@
+{
+    "Title": "I love a lot about clojure syntax but overall I regret choosing it for this side project: 1. GPT and...",
+    "Author": "Jake Koenig",
+    "URL": "1648054367533301760",
+    "Template": "tweet.temp",
+    "Date": "04/17/2023",
+    "Content": "short/1648054367533301760.md",
+    "Summary": "I love a lot about clojure syntax but overall I regret choosing it for this side project: 1. GPT and copilot are relatively bad at it 2. It has the horrible java stack traces",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1648054367533301760",
+    "tweet_url": "https://twitter.com/ja3k_/status/1648054367533301760",
+    "original_date": "Mon Apr 17 20:02:35 +0000 2023",
+    "media": [],
+    "quoted_tweet": null,
+    "is_thread": false
+}

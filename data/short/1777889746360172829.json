@@ -1,0 +1,24 @@
+{
+    "Title": "Chatgpt",
+    "Author": "Jake Koenig",
+    "URL": "1777889746360172829",
+    "Template": "tweet.temp",
+    "Date": "04/10/2024",
+    "Content": "short/1777889746360172829.md",
+    "Summary": "Chatgpt",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1777889746360172829",
+    "tweet_url": "https://twitter.com/ja3k_/status/1777889746360172829",
+    "original_date": "Wed Apr 10 02:42:01 +0000 2024",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GKxVTXYaUAAxmq9.jpg",
+            "original_url": "http://pbs.twimg.com/media/GKxVTXYaUAAxmq9.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

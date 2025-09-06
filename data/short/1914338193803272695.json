@@ -1,0 +1,24 @@
+{
+    "Title": "Just another manic Monday",
+    "Author": "Jake Koenig",
+    "URL": "1914338193803272695",
+    "Template": "tweet.temp",
+    "Date": "04/21/2025",
+    "Content": "short/1914338193803272695.md",
+    "Summary": "Just another manic Monday",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1914338193803272695",
+    "tweet_url": "https://twitter.com/ja3k_/status/1914338193803272695",
+    "original_date": "Mon Apr 21 15:19:26 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GpEYcUsbEAASKGR.jpg",
+            "original_url": "http://pbs.twimg.com/media/GpEYcUsbEAASKGR.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

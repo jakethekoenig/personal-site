@@ -1,0 +1,24 @@
+{
+    "Title": "Claude after it fixed my issue",
+    "Author": "Jake Koenig",
+    "URL": "1906680577589440972",
+    "Template": "tweet.temp",
+    "Date": "03/31/2025",
+    "Content": "short/1906680577589440972.md",
+    "Summary": "Claude after it fixed my issue",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1906680577589440972",
+    "tweet_url": "https://twitter.com/ja3k_/status/1906680577589440972",
+    "original_date": "Mon Mar 31 12:10:48 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GnXj2M6awAAvYAi.png",
+            "original_url": "http://pbs.twimg.com/media/GnXj2M6awAAvYAi.png"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

@@ -1,0 +1,33 @@
+{
+    "Title": "Thread: Happy Sunday!",
+    "Author": "Jake Koenig",
+    "URL": "1518313630718205954",
+    "Template": "tweet.temp",
+    "Date": "04/24/2022",
+    "Content": "short/thread_1518313630718205954.md",
+    "Summary": "Happy Sunday!\n\nSecond loaf",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1518313630718205954",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1518313630718205954",
+        "https://twitter.com/ja3k_/status/1518318391869718528"
+    ],
+    "original_date": "Sun Apr 24 19:39:13 +0000 2022",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/FRIiMz5XEAETp2v.jpg",
+            "original_url": "http://pbs.twimg.com/media/FRIiMz5XEAETp2v.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/FRImh5HWQAE5pSs.jpg",
+            "original_url": "http://pbs.twimg.com/media/FRImh5HWQAE5pSs.jpg"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 2
+}

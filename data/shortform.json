@@ -1,0 +1,9 @@
+{
+	"Title": "Short Form Posts",
+	"Author": "Jake Koenig",
+	"URL": "shortform",
+	"Template": "tweets.temp",
+	"Date": "09/05/2025",
+	"Content": "shortform.py",
+	"Indexes": "short"
+}

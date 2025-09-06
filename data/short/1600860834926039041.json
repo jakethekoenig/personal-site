@@ -1,0 +1,18 @@
+{
+    "Title": "I have an Xorg issue for which the only working fix people recommend is switching to Wayland. Unfort...",
+    "Author": "Jake Koenig",
+    "URL": "1600860834926039041",
+    "Template": "tweet.temp",
+    "Date": "12/08/2022",
+    "Content": "short/1600860834926039041.md",
+    "Summary": "I have an Xorg issue for which the only working fix people recommend is switching to Wayland. Unfortunately I also have a Wayland issue the only working fix for which is to switch to Xorg. Computers were a mistake.",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1600860834926039041",
+    "tweet_url": "https://twitter.com/ja3k_/status/1600860834926039041",
+    "original_date": "Thu Dec 08 14:32:20 +0000 2022",
+    "media": [],
+    "quoted_tweet": null,
+    "is_thread": false
+}

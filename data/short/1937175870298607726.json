@@ -1,0 +1,18 @@
+{
+    "Title": "It's easy to invert a binary tree of numbers. But I'm not sure how to do it in general. Maybe if the...",
+    "Author": "Jake Koenig",
+    "URL": "1937175870298607726",
+    "Template": "tweet.temp",
+    "Date": "06/23/2025",
+    "Content": "short/1937175870298607726.md",
+    "Summary": "It's easy to invert a binary tree of numbers. But I'm not sure how to do it in general. Maybe if they're strings I'd use `reverse`?",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1937175870298607726",
+    "tweet_url": "https://twitter.com/ja3k_/status/1937175870298607726",
+    "original_date": "Mon Jun 23 15:48:13 +0000 2025",
+    "media": [],
+    "quoted_tweet": null,
+    "is_thread": false
+}

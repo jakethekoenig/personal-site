@@ -1,0 +1,18 @@
+{
+    "Title": "This behavior doesn't go far enough!! If you run: ``` python python ``` The output ought to be: ``` ...",
+    "Author": "Jake Koenig",
+    "URL": "1824120601356951755",
+    "Template": "tweet.temp",
+    "Date": "08/15/2024",
+    "Content": "short/1824120601356951755.md",
+    "Summary": "This behavior doesn't go far enough!! If you run: ``` python python ``` The output ought to be: ``` [] ['x'] ['x','x'] ['x','x','x'] ```",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1824120601356951755",
+    "tweet_url": "https://twitter.com/ja3k_/status/1824120601356951755",
+    "original_date": "Thu Aug 15 16:26:56 +0000 2024",
+    "media": [],
+    "quoted_tweet": null,
+    "is_thread": false
+}

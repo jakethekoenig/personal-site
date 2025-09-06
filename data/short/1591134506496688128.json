@@ -1,0 +1,18 @@
+{
+    "Title": "Best news feed",
+    "Author": "Jake Koenig",
+    "URL": "1591134506496688128",
+    "Template": "tweet.temp",
+    "Date": "11/11/2022",
+    "Content": "short/1591134506496688128.md",
+    "Summary": "Best news feed",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1591134506496688128",
+    "tweet_url": "https://twitter.com/ja3k_/status/1591134506496688128",
+    "original_date": "Fri Nov 11 18:23:22 +0000 2022",
+    "media": [],
+    "quoted_tweet": null,
+    "is_thread": false
+}

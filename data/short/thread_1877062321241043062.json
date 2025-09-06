@@ -1,0 +1,22 @@
+{
+    "Title": "Thread: HiSTorY",
+    "Author": "Jake Koenig",
+    "URL": "1877062321241043062",
+    "Template": "tweet.temp",
+    "Date": "01/08/2025",
+    "Content": "short/thread_1877062321241043062.md",
+    "Summary": "HiSTorY\n\nReverse search in my python interpreter has been broken and I always assumed it was a problem somewhere in zsh/vim/tmux (even though it worked with psql) but I'm realizing I probably fucked u...",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1877062321241043062",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1877062321241043062",
+        "https://twitter.com/ja3k_/status/1877064290009522633"
+    ],
+    "original_date": "Wed Jan 08 18:38:26 +0000 2025",
+    "media": [],
+    "is_thread": true,
+    "thread_length": 2
+}

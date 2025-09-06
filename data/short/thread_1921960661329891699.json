@@ -1,0 +1,33 @@
+{
+    "Title": "Thread: Vibe coding an nvim mcp client. Add this to your claude config to try it out",
+    "Author": "Jake Koenig",
+    "URL": "1921960661329891699",
+    "Template": "tweet.temp",
+    "Date": "05/12/2025",
+    "Content": "short/thread_1921960661329891699.md",
+    "Summary": "Vibe coding an nvim mcp client. Add this to your claude config to try it out\n\nThis is actually pretty cool",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1921960661329891699",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1921960661329891699",
+        "https://twitter.com/ja3k_/status/1921965017974362609"
+    ],
+    "original_date": "Mon May 12 16:08:24 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GqwtBx8WEAABEfL.png",
+            "original_url": "http://pbs.twimg.com/media/GqwtBx8WEAABEfL.png"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/Gqww-PYW4AApYHI.jpg",
+            "original_url": "http://pbs.twimg.com/media/Gqww-PYW4AApYHI.jpg"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 2
+}

@@ -1,0 +1,24 @@
+{
+    "Title": "Welcome to the first day of singularity school",
+    "Author": "Jake Koenig",
+    "URL": "1940169983193227725",
+    "Template": "tweet.temp",
+    "Date": "07/01/2025",
+    "Content": "short/1940169983193227725.md",
+    "Summary": "Welcome to the first day of singularity school",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1940169983193227725",
+    "tweet_url": "https://twitter.com/ja3k_/status/1940169983193227725",
+    "original_date": "Tue Jul 01 22:05:45 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GuzeUJQXYAAvPC6.jpg",
+            "original_url": "http://pbs.twimg.com/media/GuzeUJQXYAAvPC6.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

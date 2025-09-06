@@ -1,0 +1,22 @@
+{
+    "Title": "Thread: Just had one of my best ideas ever: \"inoremap :w &lt;esc&gt;:w&lt;cr&gt;\"",
+    "Author": "Jake Koenig",
+    "URL": "1456973318809010181",
+    "Template": "tweet.temp",
+    "Date": "11/06/2021",
+    "Content": "short/thread_1456973318809010181.md",
+    "Summary": "Just had one of my best ideas ever: \"inoremap :w &lt;esc&gt;:w&lt;cr&gt;\"\n\nI love vim. Another great idea: ino &lt;Space&gt; &lt;esc&gt;mxblvu`xa&lt;Space&gt;",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1456973318809010181",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1456973318809010181",
+        "https://twitter.com/ja3k_/status/1585755756200361985"
+    ],
+    "original_date": "Sat Nov 06 13:14:43 +0000 2021",
+    "media": [],
+    "is_thread": true,
+    "thread_length": 2
+}

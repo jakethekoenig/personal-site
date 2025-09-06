@@ -1,0 +1,24 @@
+{
+    "Title": "These people aren't joking about baking safety into their products. What is this api? At least give ...",
+    "Author": "Jake Koenig",
+    "URL": "1735056530125537418",
+    "Template": "tweet.temp",
+    "Date": "12/13/2023",
+    "Content": "short/1735056530125537418.md",
+    "Summary": "These people aren't joking about baking safety into their products. What is this api? At least give me the logprob on HARM_CATEGORY_DEROGATORY",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1735056530125537418",
+    "tweet_url": "https://twitter.com/ja3k_/status/1735056530125537418",
+    "original_date": "Wed Dec 13 21:58:07 +0000 2023",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GBQogqna0AAdIKr.jpg",
+            "original_url": "http://pbs.twimg.com/media/GBQogqna0AAdIKr.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

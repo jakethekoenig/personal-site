@@ -1,0 +1,33 @@
+{
+    "Title": "Thread: I got really excited for the GitHub app update hoping they fixed the bug where i...",
+    "Author": "Jake Koenig",
+    "URL": "1885528701464699343",
+    "Template": "tweet.temp",
+    "Date": "02/01/2025",
+    "Content": "short/thread_1885528701464699343.md",
+    "Summary": "I got really excited for the GitHub app update hoping they fixed the bug where it takes 3 seconds to load your repository list. But now it takes 4\n\nOooh I'm supposed to use the shortcuts feature. Mayb...",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1885528701464699343",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1885528701464699343",
+        "https://twitter.com/ja3k_/status/1885530275758956983"
+    ],
+    "original_date": "Sat Feb 01 03:20:48 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/Giq-XMIbYAEQ3Pn.jpg",
+            "original_url": "http://pbs.twimg.com/media/Giq-XMIbYAEQ3Pn.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/Giq_y26bYAIIfFS.jpg",
+            "original_url": "http://pbs.twimg.com/media/Giq_y26bYAIIfFS.jpg"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 2
+}

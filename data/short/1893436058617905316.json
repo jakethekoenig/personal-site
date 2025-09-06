@@ -1,0 +1,24 @@
+{
+    "Title": "Thanks Google",
+    "Author": "Jake Koenig",
+    "URL": "1893436058617905316",
+    "Template": "tweet.temp",
+    "Date": "02/22/2025",
+    "Content": "short/1893436058617905316.md",
+    "Summary": "Thanks Google",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1893436058617905316",
+    "tweet_url": "https://twitter.com/ja3k_/status/1893436058617905316",
+    "original_date": "Sat Feb 22 23:01:49 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GkbWD87W4AA40bl.jpg",
+            "original_url": "http://pbs.twimg.com/media/GkbWD87W4AA40bl.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

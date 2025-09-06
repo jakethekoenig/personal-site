@@ -1,0 +1,18 @@
+{
+    "Title": "I'm cool with calling the default branch `master` but do we really need to prefix all the feature br...",
+    "Author": "Jake Koenig",
+    "URL": "1912941650483266000",
+    "Template": "tweet.temp",
+    "Date": "04/17/2025",
+    "Content": "short/1912941650483266000.md",
+    "Summary": "I'm cool with calling the default branch `master` but do we really need to prefix all the feature branches `slave-`?",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1912941650483266000",
+    "tweet_url": "https://twitter.com/ja3k_/status/1912941650483266000",
+    "original_date": "Thu Apr 17 18:50:04 +0000 2025",
+    "media": [],
+    "quoted_tweet": null,
+    "is_thread": false
+}

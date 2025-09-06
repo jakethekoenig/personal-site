@@ -1,0 +1,24 @@
+{
+    "Title": "Prompt engineering level 5000",
+    "Author": "Jake Koenig",
+    "URL": "1950358078010085692",
+    "Template": "tweet.temp",
+    "Date": "07/30/2025",
+    "Content": "short/1950358078010085692.md",
+    "Summary": "Prompt engineering level 5000",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1950358078010085692",
+    "tweet_url": "https://twitter.com/ja3k_/status/1950358078010085692",
+    "original_date": "Wed Jul 30 00:49:36 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GxEQVi6bIAArpMH.jpg",
+            "original_url": "http://pbs.twimg.com/media/GxEQVi6bIAArpMH.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

@@ -1,0 +1,33 @@
+{
+    "Title": "Thread: I shared this screenshot with o3 and it thought for 3 minutes zooming in on rand...",
+    "Author": "Jake Koenig",
+    "URL": "1920642625578873213",
+    "Template": "tweet.temp",
+    "Date": "05/09/2025",
+    "Content": "short/thread_1920642625578873213.md",
+    "Summary": "I shared this screenshot with o3 and it thought for 3 minutes zooming in on random characters before concluding Scott probably wrote a lowercase L instead of an uppercase i\n\nEnhance!",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1920642625578873213",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1920642625578873213",
+        "https://twitter.com/ja3k_/status/1920642848782758331"
+    ],
+    "original_date": "Fri May 09 00:51:00 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/Gqd-SaFaAAAavAY.jpg",
+            "original_url": "http://pbs.twimg.com/media/Gqd-SaFaAAAavAY.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/Gqd-fkFbMAYmQaM.png",
+            "original_url": "http://pbs.twimg.com/media/Gqd-fkFbMAYmQaM.png"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 2
+}

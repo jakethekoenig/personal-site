@@ -1,0 +1,23 @@
+{
+    "Title": "Thread: At my last job I debugged a subtle race condition in obsofucated js and I made n...",
+    "Author": "Jake Koenig",
+    "URL": "1757221914496692260",
+    "Template": "tweet.temp",
+    "Date": "02/13/2024",
+    "Content": "short/thread_1757221914496692260.md",
+    "Summary": "At my last job I debugged a subtle race condition in obsofucated js and I made no progress with a debugger for a long time but eventually sufficient print statements made it obvious.\n\nThis might be a ...",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1757221914496692260",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1757221914496692260",
+        "https://twitter.com/ja3k_/status/1757221917239701933",
+        "https://twitter.com/ja3k_/status/1757221921761243510"
+    ],
+    "original_date": "Tue Feb 13 01:55:26 +0000 2024",
+    "media": [],
+    "is_thread": true,
+    "thread_length": 3
+}

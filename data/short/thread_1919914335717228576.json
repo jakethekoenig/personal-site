@@ -1,0 +1,22 @@
+{
+    "Title": "Thread: @theo An example from my own use",
+    "Author": "Jake Koenig",
+    "URL": "1919914335717228576",
+    "Template": "tweet.temp",
+    "Date": "05/07/2025",
+    "Content": "short/thread_1919914335717228576.md",
+    "Summary": "@theo An example from my own use\n\n@theo Two things not obvious from the screenshot: 1. It was my PR to begin with 2. It really all did work at the end",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1919914335717228576",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1919914335717228576",
+        "https://twitter.com/ja3k_/status/1919915320191639624"
+    ],
+    "original_date": "Wed May 07 00:37:02 +0000 2025",
+    "media": [],
+    "is_thread": true,
+    "thread_length": 2
+}

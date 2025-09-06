@@ -1,0 +1,24 @@
+{
+    "Title": "Enjoy the weekend!",
+    "Author": "Jake Koenig",
+    "URL": "1913671383063949787",
+    "Template": "tweet.temp",
+    "Date": "04/19/2025",
+    "Content": "short/1913671383063949787.md",
+    "Summary": "Enjoy the weekend!",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1913671383063949787",
+    "tweet_url": "https://twitter.com/ja3k_/status/1913671383063949787",
+    "original_date": "Sat Apr 19 19:09:46 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/Go658vIbsAAKKMb.jpg",
+            "original_url": "http://pbs.twimg.com/media/Go658vIbsAAKKMb.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

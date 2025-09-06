@@ -1,0 +1,22 @@
+{
+    "Title": "Thread: I just debugged a subtle bug in code I'm pretty sure I wrote with copilot and re...",
+    "Author": "Jake Koenig",
+    "URL": "1611717616674148353",
+    "Template": "tweet.temp",
+    "Date": "01/07/2023",
+    "Content": "short/thread_1611717616674148353.md",
+    "Summary": "I just debugged a subtle bug in code I'm pretty sure I wrote with copilot and reading it carefully I realize it added a nice feature I wouldn't have thought to.\n\nIt's funny that copilot is very hesita...",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1611717616674148353",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1611717616674148353",
+        "https://twitter.com/ja3k_/status/1611719860404518913"
+    ],
+    "original_date": "Sat Jan 07 13:33:18 +0000 2023",
+    "media": [],
+    "is_thread": true,
+    "thread_length": 2
+}

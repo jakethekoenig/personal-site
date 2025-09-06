@@ -1,0 +1,24 @@
+{
+    "Title": "Nice sha",
+    "Author": "Jake Koenig",
+    "URL": "1963342978644373901",
+    "Template": "tweet.temp",
+    "Date": "09/03/2025",
+    "Content": "short/1963342978644373901.md",
+    "Summary": "Nice sha",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1963342978644373901",
+    "tweet_url": "https://twitter.com/ja3k_/status/1963342978644373901",
+    "original_date": "Wed Sep 03 20:46:57 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/Gz8yBq7aYAAjMHU.png",
+            "original_url": "http://pbs.twimg.com/media/Gz8yBq7aYAAjMHU.png"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

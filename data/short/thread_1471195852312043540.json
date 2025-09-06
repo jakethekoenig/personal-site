@@ -1,0 +1,49 @@
+{
+    "Title": "Thread: Merry Christmas!",
+    "Author": "Jake Koenig",
+    "URL": "1471195852312043540",
+    "Template": "tweet.temp",
+    "Date": "12/15/2021",
+    "Content": "short/thread_1471195852312043540.md",
+    "Summary": "Merry Christmas!",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1471195852312043540",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1471195852312043540",
+        "https://twitter.com/ja3k_/status/1471195864370659333",
+        "https://twitter.com/ja3k_/status/1471220815421190152"
+    ],
+    "original_date": "Wed Dec 15 19:09:59 +0000 2021",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/FGq803EXsAMGR00.jpg",
+            "original_url": "http://pbs.twimg.com/media/FGq803EXsAMGR00.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/FGq81NKWQAEKsVF.jpg",
+            "original_url": "http://pbs.twimg.com/media/FGq81NKWQAEKsVF.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/FGq81kmXwAkXLE-.jpg",
+            "original_url": "http://pbs.twimg.com/media/FGq81kmXwAkXLE-.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/FGq813LWQAAks3e.jpg",
+            "original_url": "http://pbs.twimg.com/media/FGq813LWQAAks3e.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/FGrTiM8XEAAa6bI.jpg",
+            "original_url": "http://pbs.twimg.com/media/FGrTiM8XEAAa6bI.jpg"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 3
+}

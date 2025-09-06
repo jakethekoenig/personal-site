@@ -1,0 +1,18 @@
+{
+    "Title": "My website now has comments!",
+    "Author": "Jake Koenig",
+    "URL": "1377392188632408066",
+    "Template": "tweet.temp",
+    "Date": "03/31/2021",
+    "Content": "short/1377392188632408066.md",
+    "Summary": "My website now has comments!",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1377392188632408066",
+    "tweet_url": "https://twitter.com/ja3k_/status/1377392188632408066",
+    "original_date": "Wed Mar 31 22:47:43 +0000 2021",
+    "media": [],
+    "quoted_tweet": null,
+    "is_thread": false
+}

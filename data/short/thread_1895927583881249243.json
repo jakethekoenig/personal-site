@@ -1,0 +1,39 @@
+{
+    "Title": "Thread: Great news! I love Claude's personality",
+    "Author": "Jake Koenig",
+    "URL": "1895927583881249243",
+    "Template": "tweet.temp",
+    "Date": "03/01/2025",
+    "Content": "short/thread_1895927583881249243.md",
+    "Summary": "Great news! I love Claude's personality\n\njk I hate this guy\n\nAlright I still love him",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1895927583881249243",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1895927583881249243",
+        "https://twitter.com/ja3k_/status/1895931969437098310",
+        "https://twitter.com/ja3k_/status/1896030036731605437"
+    ],
+    "original_date": "Sat Mar 01 20:02:15 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/Gk-wF0PXMAEktMS.jpg",
+            "original_url": "http://pbs.twimg.com/media/Gk-wF0PXMAEktMS.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/Gk-0EjDbQAEErb5.jpg",
+            "original_url": "http://pbs.twimg.com/media/Gk-0EjDbQAEErb5.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GlANRY1b0AAp2eA.jpg",
+            "original_url": "http://pbs.twimg.com/media/GlANRY1b0AAp2eA.jpg"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 3
+}

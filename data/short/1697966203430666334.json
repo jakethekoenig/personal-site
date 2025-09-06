@@ -1,0 +1,24 @@
+{
+    "Title": "This is my quant. Notice anything different about him!?",
+    "Author": "Jake Koenig",
+    "URL": "1697966203430666334",
+    "Template": "tweet.temp",
+    "Date": "09/02/2023",
+    "Content": "short/1697966203430666334.md",
+    "Summary": "This is my quant. Notice anything different about him!?",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1697966203430666334",
+    "tweet_url": "https://twitter.com/ja3k_/status/1697966203430666334",
+    "original_date": "Sat Sep 02 13:34:24 +0000 2023",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/F5BjQ5WacAACxEO.jpg",
+            "original_url": "http://pbs.twimg.com/media/F5BjQ5WacAACxEO.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

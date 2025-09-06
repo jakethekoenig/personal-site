@@ -1,0 +1,24 @@
+{
+    "Title": "There's a cost to talking to GPT via API in vim but it's well worth it",
+    "Author": "Jake Koenig",
+    "URL": "1701999194834411735",
+    "Template": "tweet.temp",
+    "Date": "09/13/2023",
+    "Content": "short/1701999194834411735.md",
+    "Summary": "There's a cost to talking to GPT via API in vim but it's well worth it",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1701999194834411735",
+    "tweet_url": "https://twitter.com/ja3k_/status/1701999194834411735",
+    "original_date": "Wed Sep 13 16:40:04 +0000 2023",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/F563CrnbUAAF_Be.png",
+            "original_url": "http://pbs.twimg.com/media/F563CrnbUAAF_Be.png"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}
