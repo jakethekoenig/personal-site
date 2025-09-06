@@ -122,7 +122,7 @@ def process_media(tweet, media_dir, output_media_dir):
                 # Store relative path for the JSON
                 media_files.append({
                     'type': media.get('type', 'photo'),
-                    'url': f"/assets/crosspoast/{output_filename}",
+                    'url': f"/asset/crosspoast/{output_filename}",
                     'original_url': media_url
                 })
                 print(f"Found media: {actual_filename} -> {output_filename}")
@@ -264,7 +264,7 @@ def identify_tweet_threads(tweets, username="ja3k_"):
 
     return final_threads, tweet_to_thread
 
-def process_twitter_archive(archive_path, output_dir="data/short", media_output_dir="nongenerated/assets/crosspoast"):
+def process_twitter_archive(archive_path, output_dir="data/short", media_output_dir="nongenerated/asset/crosspoast"):
     """Process the entire Twitter archive"""
     
     # Look for tweets data file
@@ -534,7 +534,7 @@ def main():
     parser = argparse.ArgumentParser(description='Process Twitter archive into blog-like format')
     parser.add_argument('archive_path', help='Path to the Twitter archive directory')
     parser.add_argument('--output-dir', default='data/short', help='Output directory for JSON files')
-    parser.add_argument('--media-dir', default='nongenerated/assets/crosspoast', help='Output directory for media files')
+    parser.add_argument('--media-dir', default='nongenerated/asset/crosspoast', help='Output directory for media files')
     
     args = parser.parse_args()
     
