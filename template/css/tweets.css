@@ -198,3 +198,49 @@
     margin-bottom: 0;
 }
 
+/* Individual tweet page styling */
+.individual-tweet {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    padding: 20px;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.individual-tweet .tweet-header {
+    margin-bottom: 15px;
+}
+
+.individual-tweet .tweet-content {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.individual-tweet .tweet-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 0;
+    display: block;
+}
+
+.comments-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Responsive design for individual tweets */
+@media (max-width: 768px) {
+    .individual-tweet {
+        margin: 0 10px 30px 10px;
+        padding: 15px;
+    }
+    
+    .comments-section {
+        padding: 0 10px;
+    }
+}
+

@@ -382,7 +382,7 @@ def process_twitter_archive(archive_path, output_dir="data/tweets", media_output
             tweet_data = {
                 "Title": clean_text[:100] + "..." if len(clean_text) > 100 else clean_text,
                 "Author": "Jake Koenig",
-                "URL": f"tweet_{tweet_id}",
+                "URL": f"short/{tweet_id}",
                 "Template": "tweet.temp",
                 "Date": parse_twitter_date(created_at),
                 "Content": f"tweets/{tweet_id}.md",
@@ -494,7 +494,7 @@ def process_tweet_thread(thread_tweets, media_dir, media_output_dir, output_dir)
     thread_data = {
         "Title": f"Thread: {thread_text_parts[0][:80]}..." if len(thread_text_parts[0]) > 80 else f"Thread: {thread_text_parts[0]}",
         "Author": "Jake Koenig",
-        "URL": f"thread_{thread_id}",
+        "URL": f"short/{thread_id}",
         "Template": "tweet.temp",
         "Date": parse_twitter_date(first_tweet.get('created_at', '')),
         "Content": f"tweets/thread_{thread_id}.md",
