@@ -1,0 +1,29 @@
+{
+    "Title": "Update! Wtf. It must be boring as shit on tiktok",
+    "Author": "Jake Koenig",
+    "URL": "1874611659098173880",
+    "Template": "tweet.temp",
+    "Date": "01/02/2025",
+    "Content": "short/1874611659098173880.md",
+    "Summary": "Update! Wtf. It must be boring as shit on tiktok",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1874611659098173880",
+    "tweet_url": "https://twitter.com/ja3k_/status/1874611659098173880",
+    "original_date": "Thu Jan 02 00:20:22 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GgP1XYOXYAA3Ysi.jpg",
+            "original_url": "http://pbs.twimg.com/media/GgP1XYOXYAA3Ysi.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GgP1XpEXsAElKY_.jpg",
+            "original_url": "http://pbs.twimg.com/media/GgP1XpEXsAElKY_.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

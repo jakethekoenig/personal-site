@@ -1,0 +1,33 @@
+{
+    "Title": "Thread: October / Today (And yes it really did work first try. It's open source you can ...",
+    "Author": "Jake Koenig",
+    "URL": "1882520306763591680",
+    "Template": "tweet.temp",
+    "Date": "01/23/2025",
+    "Content": "short/thread_1882520306763591680.md",
+    "Summary": "October / Today (And yes it really did work first try. It's open source you can check it out yourself)\n\nagent transcript:",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1882520306763591680",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1882520306763591680",
+        "https://twitter.com/ja3k_/status/1882520468475023754"
+    ],
+    "original_date": "Thu Jan 23 20:06:31 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GiAOCa4bUAAXG8R.jpg",
+            "original_url": "http://pbs.twimg.com/media/GiAOCa4bUAAXG8R.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GiAOGQqa4AA8SwT.jpg",
+            "original_url": "http://pbs.twimg.com/media/GiAOGQqa4AA8SwT.jpg"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 2
+}

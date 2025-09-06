@@ -1,0 +1,33 @@
+{
+    "Title": "Thread: Friday night deploying prod from the GitHub app. What could go wrong",
+    "Author": "Jake Koenig",
+    "URL": "1890572720108171422",
+    "Template": "tweet.temp",
+    "Date": "02/15/2025",
+    "Content": "short/thread_1890572720108171422.md",
+    "Summary": "Friday night deploying prod from the GitHub app. What could go wrong\n\nYes I made the change from my phone too",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1890572720108171422",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1890572720108171422",
+        "https://twitter.com/ja3k_/status/1890575209528209831"
+    ],
+    "original_date": "Sat Feb 15 01:23:56 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/Gjyp3r0acAIGpqo.jpg",
+            "original_url": "http://pbs.twimg.com/media/Gjyp3r0acAIGpqo.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GjysImOaUAAGG_7.jpg",
+            "original_url": "http://pbs.twimg.com/media/GjysImOaUAAGG_7.jpg"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 2
+}

@@ -1,0 +1,18 @@
+{
+    "Title": "@alexalbert__ I think a cool api feature would be \"prospective caching\" e.g. to have the input + out...",
+    "Author": "Jake Koenig",
+    "URL": "1885388896185573527",
+    "Template": "tweet.temp",
+    "Date": "01/31/2025",
+    "Content": "short/1885388896185573527.md",
+    "Summary": "@alexalbert__ I think a cool api feature would be \"prospective caching\" e.g. to have the input + output cached so that if I make a call planning to append the model output before making another call I can save ~18% on that part of the conversation",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1885388896185573527",
+    "tweet_url": "https://twitter.com/ja3k_/status/1885388896185573527",
+    "original_date": "Fri Jan 31 18:05:16 +0000 2025",
+    "media": [],
+    "quoted_tweet": null,
+    "is_thread": false
+}

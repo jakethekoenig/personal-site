@@ -1,0 +1,23 @@
+{
+    "Title": "Thread: A thing about GPT I've noticed is if you prompt it in such a way that it tells y...",
+    "Author": "Jake Koenig",
+    "URL": "1599828793421877248",
+    "Template": "tweet.temp",
+    "Date": "12/05/2022",
+    "Content": "short/thread_1599828793421877248.md",
+    "Summary": "A thing about GPT I've noticed is if you prompt it in such a way that it tells you something wrong or makes a contradiction it'll never correct itself if you point it out and push it.\n\nThough often wh...",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1599828793421877248",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1599828793421877248",
+        "https://twitter.com/ja3k_/status/1599828794353020930",
+        "https://twitter.com/ja3k_/status/1599828796068487168"
+    ],
+    "original_date": "Mon Dec 05 18:11:22 +0000 2022",
+    "media": [],
+    "is_thread": true,
+    "thread_length": 3
+}

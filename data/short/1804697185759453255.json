@@ -1,0 +1,24 @@
+{
+    "Title": "My quant doesn't even speak English",
+    "Author": "Jake Koenig",
+    "URL": "1804697185759453255",
+    "Template": "tweet.temp",
+    "Date": "06/23/2024",
+    "Content": "short/1804697185759453255.md",
+    "Summary": "My quant doesn't even speak English",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1804697185759453255",
+    "tweet_url": "https://twitter.com/ja3k_/status/1804697185759453255",
+    "original_date": "Sun Jun 23 02:05:13 +0000 2024",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GQuShqGbkAANhq6.jpg",
+            "original_url": "http://pbs.twimg.com/media/GQuShqGbkAANhq6.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

@@ -1,0 +1,33 @@
+{
+    "Title": "Thread: I'm debugging an issue with timezones and discovered the github UI will happily ...",
+    "Author": "Jake Koenig",
+    "URL": "1885075113571475917",
+    "Template": "tweet.temp",
+    "Date": "01/30/2025",
+    "Content": "short/thread_1885075113571475917.md",
+    "Summary": "I'm debugging an issue with timezones and discovered the github UI will happily tell you events happened in the future\n\nHuh if you get too crazy experimenting chrome cuts you off",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1885075113571475917",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1885075113571475917",
+        "https://twitter.com/ja3k_/status/1885078948448788541"
+    ],
+    "original_date": "Thu Jan 30 21:18:24 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GikhzjibYAMMRKj.png",
+            "original_url": "http://pbs.twimg.com/media/GikhzjibYAMMRKj.png"
+        },
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GiklTgWb0AAjRyi.jpg",
+            "original_url": "http://pbs.twimg.com/media/GiklTgWb0AAjRyi.jpg"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 2
+}

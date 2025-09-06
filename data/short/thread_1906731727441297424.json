@@ -1,0 +1,28 @@
+{
+    "Title": "Thread: I opened 4 PRs before 6:30 am today",
+    "Author": "Jake Koenig",
+    "URL": "1906731727441297424",
+    "Template": "tweet.temp",
+    "Date": "03/31/2025",
+    "Content": "short/thread_1906731727441297424.md",
+    "Summary": "I opened 4 PRs before 6:30 am today\n\nEvery one of them a fix for a bug I made coding super sleep deprived",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1906731727441297424",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1906731727441297424",
+        "https://twitter.com/ja3k_/status/1906733357784076403"
+    ],
+    "original_date": "Mon Mar 31 15:34:03 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GnYSZu_awAA3pSM.jpg",
+            "original_url": "http://pbs.twimg.com/media/GnYSZu_awAA3pSM.jpg"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 2
+}

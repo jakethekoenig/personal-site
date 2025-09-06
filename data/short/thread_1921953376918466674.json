@@ -1,0 +1,47 @@
+{
+    "Title": "Thread: If you come back to your computer the next day and click \"approve\" it's too late...",
+    "Author": "Jake Koenig",
+    "URL": "1921953376918466674",
+    "Template": "tweet.temp",
+    "Date": "05/12/2025",
+    "Content": "short/thread_1921953376918466674.md",
+    "Summary": "If you come back to your computer the next day and click \"approve\" it's too late apparently. Also there's a \"2\" there but unclear what it means. No way to see the other error if there is another.\n\nI t...",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1921953376918466674",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1921953376918466674",
+        "https://twitter.com/ja3k_/status/1921679769206239710",
+        "https://twitter.com/ja3k_/status/1921683664615674095",
+        "https://twitter.com/ja3k_/status/1921697159100912075",
+        "https://twitter.com/ja3k_/status/1921697323131814174",
+        "https://twitter.com/ja3k_/status/1921698220247339485"
+    ],
+    "original_date": "Mon May 12 15:39:27 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GqwmWIXWMAArnd6.jpg",
+            "original_url": "http://pbs.twimg.com/media/GqwmWIXWMAArnd6.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/Gqstix8aAAAmGXv.jpg",
+            "original_url": "http://pbs.twimg.com/media/Gqstix8aAAAmGXv.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/Gqs9YdVWQAAgcYn.jpg",
+            "original_url": "http://pbs.twimg.com/media/Gqs9YdVWQAAgcYn.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/Gqs9iCRWAAA-3Yt.jpg",
+            "original_url": "http://pbs.twimg.com/media/Gqs9iCRWAAA-3Yt.jpg"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 6
+}

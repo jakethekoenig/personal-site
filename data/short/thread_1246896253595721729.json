@@ -1,0 +1,33 @@
+{
+    "Title": "Thread: Another nice one. Some questions: * Does anyone want to play the white cards? * ...",
+    "Author": "Jake Koenig",
+    "URL": "1246896253595721729",
+    "Template": "tweet.temp",
+    "Date": "04/05/2020",
+    "Content": "short/thread_1246896253595721729.md",
+    "Summary": "Another nice one. Some questions: * Does anyone want to play the white cards? * Should I play: Temple Thieves Pharika's Libation, Treacherous Blessing, Wrap in Flame or Thrill of Possibilities?\n\nAlso ...",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1246896253595721729",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1246896253595721729",
+        "https://twitter.com/ja3k_/status/1246903549570711554"
+    ],
+    "original_date": "Sun Apr 05 20:23:27 +0000 2020",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/EU3c3MvWsAANKVY.jpg",
+            "original_url": "http://pbs.twimg.com/media/EU3c3MvWsAANKVY.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/EU3c3MvXsAIimSJ.jpg",
+            "original_url": "http://pbs.twimg.com/media/EU3c3MvXsAIimSJ.jpg"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 2
+}

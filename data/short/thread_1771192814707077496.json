@@ -1,0 +1,22 @@
+{
+    "Title": "Thread: Holy shit: if you're using a terminal in a vim buffer than you can `setlocal spe...",
+    "Author": "Jake Koenig",
+    "URL": "1771192814707077496",
+    "Template": "tweet.temp",
+    "Date": "03/22/2024",
+    "Content": "short/thread_1771192814707077496.md",
+    "Summary": "Holy shit: if you're using a terminal in a vim buffer than you can `setlocal spell`\n\nVery useful if you're tweeting from a cli",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1771192814707077496",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1771192814707077496",
+        "https://twitter.com/ja3k_/status/1771192899830526386"
+    ],
+    "original_date": "Fri Mar 22 15:10:48 +0000 2024",
+    "media": [],
+    "is_thread": true,
+    "thread_length": 2
+}

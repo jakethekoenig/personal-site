@@ -1,0 +1,24 @@
+{
+    "Title": "Haven't seen that one before",
+    "Author": "Jake Koenig",
+    "URL": "1910399128141783368",
+    "Template": "tweet.temp",
+    "Date": "04/10/2025",
+    "Content": "short/1910399128141783368.md",
+    "Summary": "Haven't seen that one before",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1910399128141783368",
+    "tweet_url": "https://twitter.com/ja3k_/status/1910399128141783368",
+    "original_date": "Thu Apr 10 18:27:00 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GoMZ2hmbsAAEL_z.jpg",
+            "original_url": "http://pbs.twimg.com/media/GoMZ2hmbsAAEL_z.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

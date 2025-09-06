@@ -1,0 +1,18 @@
+{
+    "Title": "Thanks to OSS I could easily run a Twitter replacement with a team of &lt;10. For example I'd use: -...",
+    "Author": "Jake Koenig",
+    "URL": "1599816931422638081",
+    "Template": "tweet.temp",
+    "Date": "12/05/2022",
+    "Content": "short/1599816931422638081.md",
+    "Summary": "Thanks to OSS I could easily run a Twitter replacement with a team of &lt;10. For example I'd use: - Bootstrap for the frontend - Pelikan for the cache",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1599816931422638081",
+    "tweet_url": "https://twitter.com/ja3k_/status/1599816931422638081",
+    "original_date": "Mon Dec 05 17:24:14 +0000 2022",
+    "media": [],
+    "quoted_tweet": null,
+    "is_thread": false
+}

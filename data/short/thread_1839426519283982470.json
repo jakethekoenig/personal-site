@@ -1,0 +1,22 @@
+{
+    "Title": "Thread: @yacineMTB I got it to work but I realize I must have some automatic deduplicati...",
+    "Author": "Jake Koenig",
+    "URL": "1839426519283982470",
+    "Template": "tweet.temp",
+    "Date": "09/26/2024",
+    "Content": "short/thread_1839426519283982470.md",
+    "Summary": "@yacineMTB I got it to work but I realize I must have some automatic deduplication going on because a lot of things I run a lot, like certain psql's, only appear once. Maybe because I always run them ...",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1839426519283982470",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1839426519283982470",
+        "https://twitter.com/ja3k_/status/1839426635814367320"
+    ],
+    "original_date": "Thu Sep 26 22:07:11 +0000 2024",
+    "media": [],
+    "is_thread": true,
+    "thread_length": 2
+}

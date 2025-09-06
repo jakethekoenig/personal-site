@@ -1,0 +1,24 @@
+{
+    "Title": "This neighborhood is going to the dogs",
+    "Author": "Jake Koenig",
+    "URL": "1958951148691628438",
+    "Template": "tweet.temp",
+    "Date": "08/22/2025",
+    "Content": "short/1958951148691628438.md",
+    "Summary": "This neighborhood is going to the dogs",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1958951148691628438",
+    "tweet_url": "https://twitter.com/ja3k_/status/1958951148691628438",
+    "original_date": "Fri Aug 22 17:55:24 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/Gy-XsAaboAMEOz8.jpg",
+            "original_url": "http://pbs.twimg.com/media/Gy-XsAaboAMEOz8.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

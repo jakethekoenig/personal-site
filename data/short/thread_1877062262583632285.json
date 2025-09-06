@@ -1,0 +1,29 @@
+{
+    "Title": "Thread: wtf is this at the top of my ~/.python_history?! python isn't real",
+    "Author": "Jake Koenig",
+    "URL": "1877062262583632285",
+    "Template": "tweet.temp",
+    "Date": "01/08/2025",
+    "Content": "short/thread_1877062262583632285.md",
+    "Summary": "wtf is this at the top of my ~/.python_history?! python isn't real\n\nHiSTorY\n\nReverse search in my python interpreter has been broken and I always assumed it was a problem somewhere in zsh/vim/tmux (ev...",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1877062262583632285",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1877062262583632285",
+        "https://twitter.com/ja3k_/status/1877062321241043062",
+        "https://twitter.com/ja3k_/status/1877064290009522633"
+    ],
+    "original_date": "Wed Jan 08 18:38:12 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GgyqLLCWMAA109q.png",
+            "original_url": "http://pbs.twimg.com/media/GgyqLLCWMAA109q.png"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 3
+}

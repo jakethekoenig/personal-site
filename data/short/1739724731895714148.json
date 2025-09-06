@@ -1,0 +1,24 @@
+{
+    "Title": "Novelty account that tweets out this image every day except something fun on Thanksgiving",
+    "Author": "Jake Koenig",
+    "URL": "1739724731895714148",
+    "Template": "tweet.temp",
+    "Date": "12/26/2023",
+    "Content": "short/1739724731895714148.md",
+    "Summary": "Novelty account that tweets out this image every day except something fun on Thanksgiving",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1739724731895714148",
+    "tweet_url": "https://twitter.com/ja3k_/status/1739724731895714148",
+    "original_date": "Tue Dec 26 19:07:53 +0000 2023",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GCS-bMpbgAAV41X.png",
+            "original_url": "http://pbs.twimg.com/media/GCS-bMpbgAAV41X.png"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

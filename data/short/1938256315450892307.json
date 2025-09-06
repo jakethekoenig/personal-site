@@ -1,0 +1,24 @@
+{
+    "Title": "I think I missed yesterday",
+    "Author": "Jake Koenig",
+    "URL": "1938256315450892307",
+    "Template": "tweet.temp",
+    "Date": "06/26/2025",
+    "Content": "short/1938256315450892307.md",
+    "Summary": "I think I missed yesterday",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1938256315450892307",
+    "tweet_url": "https://twitter.com/ja3k_/status/1938256315450892307",
+    "original_date": "Thu Jun 26 15:21:31 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GuYR2P3bgAAzl7c.jpg",
+            "original_url": "http://pbs.twimg.com/media/GuYR2P3bgAAzl7c.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

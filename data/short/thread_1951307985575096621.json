@@ -1,0 +1,22 @@
+{
+    "Title": "Thread: My nvim session crashed this morning?!",
+    "Author": "Jake Koenig",
+    "URL": "1951307985575096621",
+    "Template": "tweet.temp",
+    "Date": "08/01/2025",
+    "Content": "short/thread_1951307985575096621.md",
+    "Summary": "My nvim session crashed this morning?!\n\nI wish I new how long it was running and how many buffers were open. I'd guess: ~3 months ~5000",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1951307985575096621",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1951307985575096621",
+        "https://twitter.com/ja3k_/status/1951307986988679442"
+    ],
+    "original_date": "Fri Aug 01 15:44:11 +0000 2025",
+    "media": [],
+    "is_thread": true,
+    "thread_length": 2
+}

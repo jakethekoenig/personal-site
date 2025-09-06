@@ -1,0 +1,34 @@
+{
+    "Title": "Thread: Are these fields supposed to have different content?",
+    "Author": "Jake Koenig",
+    "URL": "1898120802819805567",
+    "Template": "tweet.temp",
+    "Date": "03/07/2025",
+    "Content": "short/thread_1898120802819805567.md",
+    "Summary": "Are these fields supposed to have different content?\n\nWhy is this second field non-optional\n\nAlso they broke field autocomplete in a way that's hard to describe and hard to believe is possible",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1898120802819805567",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1898120802819805567",
+        "https://twitter.com/ja3k_/status/1898120804426301670",
+        "https://twitter.com/ja3k_/status/1898120805667721640"
+    ],
+    "original_date": "Fri Mar 07 21:17:19 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/Gld6nyAaMAAC6l4.jpg",
+            "original_url": "http://pbs.twimg.com/media/Gld6nyAaMAAC6l4.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/Gld6ukWaUAA5PWX.png",
+            "original_url": "http://pbs.twimg.com/media/Gld6ukWaUAA5PWX.png"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 3
+}

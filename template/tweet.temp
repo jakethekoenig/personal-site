@@ -8,7 +8,8 @@
 	<main>
 	<:comp/sidemenu:>
 	<div class="main_content">
-		<div class="individual-tweet">
+                <div style="height: 50px;"></div>
+		<div class="individual-tweet" style="margin-left: 20px;">
 			<div class="tweet-header">
 				<span class="tweet-date"><$Date$></span>
 				<div class="tweet-links">

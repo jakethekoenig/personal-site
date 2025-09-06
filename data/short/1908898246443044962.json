@@ -1,0 +1,29 @@
+{
+    "Title": "Some children's shows have surprising range",
+    "Author": "Jake Koenig",
+    "URL": "1908898246443044962",
+    "Template": "tweet.temp",
+    "Date": "04/06/2025",
+    "Content": "short/1908898246443044962.md",
+    "Summary": "Some children's shows have surprising range",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1908898246443044962",
+    "tweet_url": "https://twitter.com/ja3k_/status/1908898246443044962",
+    "original_date": "Sun Apr 06 15:03:02 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/Gn3E1pUaUAAL2uL.jpg",
+            "original_url": "http://pbs.twimg.com/media/Gn3E1pUaUAAL2uL.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/Gn3E1srbAAAarNG.jpg",
+            "original_url": "http://pbs.twimg.com/media/Gn3E1srbAAAarNG.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

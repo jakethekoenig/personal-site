@@ -1,0 +1,24 @@
+{
+    "Title": "I like a book that takes a controversial stance.",
+    "Author": "Jake Koenig",
+    "URL": "1272309171271225344",
+    "Template": "tweet.temp",
+    "Date": "06/14/2020",
+    "Content": "short/1272309171271225344.md",
+    "Summary": "I like a book that takes a controversial stance.",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1272309171271225344",
+    "tweet_url": "https://twitter.com/ja3k_/status/1272309171271225344",
+    "original_date": "Sun Jun 14 23:25:19 +0000 2020",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/EagmcQQX0AIvXFg.jpg",
+            "original_url": "http://pbs.twimg.com/media/EagmcQQX0AIvXFg.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

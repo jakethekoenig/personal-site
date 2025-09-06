@@ -1,0 +1,28 @@
+{
+    "Title": "Thread: New programming technique",
+    "Author": "Jake Koenig",
+    "URL": "1896612259826417675",
+    "Template": "tweet.temp",
+    "Date": "03/03/2025",
+    "Content": "short/thread_1896612259826417675.md",
+    "Summary": "New programming technique\n\nI feel like this photo makes me look fat instead of like I'm holding a baby",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1896612259826417675",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1896612259826417675",
+        "https://twitter.com/ja3k_/status/1896651616599920692"
+    ],
+    "original_date": "Mon Mar 03 17:22:54 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GlIezJIbwAAB1Oa.jpg",
+            "original_url": "http://pbs.twimg.com/media/GlIezJIbwAAB1Oa.jpg"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 2
+}

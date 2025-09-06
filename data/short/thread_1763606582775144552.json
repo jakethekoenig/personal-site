@@ -1,0 +1,22 @@
+{
+    "Title": "Thread: Two pro tips for people who use my gpt vim plugin: nnoremap &lt;leader&gt;c ?```...",
+    "Author": "Jake Koenig",
+    "URL": "1763606582775144552",
+    "Template": "tweet.temp",
+    "Date": "03/01/2024",
+    "Content": "short/thread_1763606582775144552.md",
+    "Summary": "Two pro tips for people who use my gpt vim plugin: nnoremap &lt;leader&gt;c ?```&lt;CR&gt;jvNk$\"ty:vnew&lt;CR&gt;i&lt;Esc&gt;\"tp:w! &lt;CR&gt; nnoremap &lt;leader&gt;i :let currentfile = @% \\| new \\| ...",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1763606582775144552",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1763606582775144552",
+        "https://twitter.com/ja3k_/status/1763607263787507857"
+    ],
+    "original_date": "Fri Mar 01 16:45:50 +0000 2024",
+    "media": [],
+    "is_thread": true,
+    "thread_length": 2
+}

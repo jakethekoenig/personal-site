@@ -1,0 +1,24 @@
+{
+    "Title": "Is it just me or does this Tuesday feel like Friday?",
+    "Author": "Jake Koenig",
+    "URL": "1932460233873576265",
+    "Template": "tweet.temp",
+    "Date": "06/10/2025",
+    "Content": "short/1932460233873576265.md",
+    "Summary": "Is it just me or does this Tuesday feel like Friday?",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1932460233873576265",
+    "tweet_url": "https://twitter.com/ja3k_/status/1932460233873576265",
+    "original_date": "Tue Jun 10 15:29:57 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GtF6V33bkAAj9YM.jpg",
+            "original_url": "http://pbs.twimg.com/media/GtF6V33bkAAj9YM.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

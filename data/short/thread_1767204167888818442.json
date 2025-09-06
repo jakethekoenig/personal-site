@@ -1,0 +1,33 @@
+{
+    "Title": "Thread: Asked claude to predict stock price changes from its knowledge cutoff to now:",
+    "Author": "Jake Koenig",
+    "URL": "1767204167888818442",
+    "Template": "tweet.temp",
+    "Date": "03/11/2024",
+    "Content": "short/thread_1767204167888818442.md",
+    "Summary": "Asked claude to predict stock price changes from its knowledge cutoff to now:\n\nAlright its a little cherrypicked. It didn't do that well on the task.",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1767204167888818442",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1767204167888818442",
+        "https://twitter.com/ja3k_/status/1767204169427951896"
+    ],
+    "original_date": "Mon Mar 11 15:01:21 +0000 2024",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GIZeolMbYAAoqzu.png",
+            "original_url": "http://pbs.twimg.com/media/GIZeolMbYAAoqzu.png"
+        },
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GIZev2kb0AAbz8i.jpg",
+            "original_url": "http://pbs.twimg.com/media/GIZev2kb0AAbz8i.jpg"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 2
+}

@@ -1,0 +1,33 @@
+{
+    "Title": "Thread: My wife got me a fun novelty keycap and putting it on 4 helps a lot",
+    "Author": "Jake Koenig",
+    "URL": "1612166467579170816",
+    "Template": "tweet.temp",
+    "Date": "01/08/2023",
+    "Content": "short/thread_1612166467579170816.md",
+    "Summary": "My wife got me a fun novelty keycap and putting it on 4 helps a lot\n\nAlso this adorable cat. I click escape a lot because I made it my tmux prefix",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1612166467579170816",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1612166467579170816",
+        "https://twitter.com/ja3k_/status/1612176490606776321"
+    ],
+    "original_date": "Sun Jan 08 19:16:53 +0000 2023",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/Fl-Q2b1acAABG6q.jpg",
+            "original_url": "http://pbs.twimg.com/media/Fl-Q2b1acAABG6q.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/Fl-Z-NSacAE5UCO.jpg",
+            "original_url": "http://pbs.twimg.com/media/Fl-Z-NSacAE5UCO.jpg"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 2
+}

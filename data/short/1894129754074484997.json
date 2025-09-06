@@ -1,0 +1,24 @@
+{
+    "Title": "When you ssh into your desktop computer's tmux session from your phone it makes your terminal look l...",
+    "Author": "Jake Koenig",
+    "URL": "1894129754074484997",
+    "Template": "tweet.temp",
+    "Date": "02/24/2025",
+    "Content": "short/1894129754074484997.md",
+    "Summary": "When you ssh into your desktop computer's tmux session from your phone it makes your terminal look like the american flag",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1894129754074484997",
+    "tweet_url": "https://twitter.com/ja3k_/status/1894129754074484997",
+    "original_date": "Mon Feb 24 20:58:19 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GklM95KbkAAwVc_.png",
+            "original_url": "http://pbs.twimg.com/media/GklM95KbkAAwVc_.png"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

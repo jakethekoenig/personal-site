@@ -1,0 +1,29 @@
+{
+    "Title": "In a fit of inspiration I realized I didn't have to make my subscribe components look like substack'...",
+    "Author": "Jake Koenig",
+    "URL": "1613572143069147137",
+    "Template": "tweet.temp",
+    "Date": "01/12/2023",
+    "Content": "short/1613572143069147137.md",
+    "Summary": "In a fit of inspiration I realized I didn't have to make my subscribe components look like substack's. I could make them look ridiculous instead.",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1613572143069147137",
+    "tweet_url": "https://twitter.com/ja3k_/status/1613572143069147137",
+    "original_date": "Thu Jan 12 16:22:32 +0000 2023",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/FmSPEAUagAIQc_x.png",
+            "original_url": "http://pbs.twimg.com/media/FmSPEAUagAIQc_x.png"
+        },
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/FmSPKBeacAYm76B.png",
+            "original_url": "http://pbs.twimg.com/media/FmSPKBeacAYm76B.png"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

@@ -1,0 +1,24 @@
+{
+    "Title": "They stole my idea!",
+    "Author": "Jake Koenig",
+    "URL": "1923512143636463911",
+    "Template": "tweet.temp",
+    "Date": "05/16/2025",
+    "Content": "short/1923512143636463911.md",
+    "Summary": "They stole my idea!",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1923512143636463911",
+    "tweet_url": "https://twitter.com/ja3k_/status/1923512143636463911",
+    "original_date": "Fri May 16 22:53:26 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GrGwGfdWkAEq1tQ.jpg",
+            "original_url": "http://pbs.twimg.com/media/GrGwGfdWkAEq1tQ.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

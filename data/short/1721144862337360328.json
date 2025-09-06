@@ -1,0 +1,34 @@
+{
+    "Title": "At a 2 gate airport 15 minutes from my house. Great vibes",
+    "Author": "Jake Koenig",
+    "URL": "1721144862337360328",
+    "Template": "tweet.temp",
+    "Date": "11/05/2023",
+    "Content": "short/1721144862337360328.md",
+    "Summary": "At a 2 gate airport 15 minutes from my house. Great vibes",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1721144862337360328",
+    "tweet_url": "https://twitter.com/ja3k_/status/1721144862337360328",
+    "original_date": "Sun Nov 05 12:38:07 +0000 2023",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/F-K8GFJaAAA6tRs.jpg",
+            "original_url": "http://pbs.twimg.com/media/F-K8GFJaAAA6tRs.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/F-K8HKOboAEn-VN.jpg",
+            "original_url": "http://pbs.twimg.com/media/F-K8HKOboAEn-VN.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/F-K8H6sa4AA_BgN.jpg",
+            "original_url": "http://pbs.twimg.com/media/F-K8H6sa4AA_BgN.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

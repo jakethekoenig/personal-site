@@ -1,0 +1,24 @@
+{
+    "Title": "Got Dall-E access",
+    "Author": "Jake Koenig",
+    "URL": "1565789332514144256",
+    "Template": "tweet.temp",
+    "Date": "09/02/2022",
+    "Content": "short/1565789332514144256.md",
+    "Summary": "Got Dall-E access",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1565789332514144256",
+    "tweet_url": "https://twitter.com/ja3k_/status/1565789332514144256",
+    "original_date": "Fri Sep 02 19:50:42 +0000 2022",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/FbrNGZlaAAAhrkQ.jpg",
+            "original_url": "http://pbs.twimg.com/media/FbrNGZlaAAAhrkQ.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

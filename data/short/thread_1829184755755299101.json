@@ -1,0 +1,22 @@
+{
+    "Title": "Thread: Does openrouter truncate prompt automatically? I ran the first time on 1/5th of ...",
+    "Author": "Jake Koenig",
+    "URL": "1829184755755299101",
+    "Template": "tweet.temp",
+    "Date": "08/29/2024",
+    "Content": "short/thread_1829184755755299101.md",
+    "Summary": "Does openrouter truncate prompt automatically? I ran the first time on 1/5th of my blog but it said it was 19k tokens so I did the whole thing and now it says its 18k tokens?\n\nIn the second generation...",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1829184755755299101",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1829184755755299101",
+        "https://twitter.com/ja3k_/status/1829184756975841314"
+    ],
+    "original_date": "Thu Aug 29 15:50:05 +0000 2024",
+    "media": [],
+    "is_thread": true,
+    "thread_length": 2
+}

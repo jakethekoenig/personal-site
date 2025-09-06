@@ -1,0 +1,28 @@
+{
+    "Title": "Thread: I wrote a blog post about how LLMs are really not like junior developers at all.",
+    "Author": "Jake Koenig",
+    "URL": "1887184614663544952",
+    "Template": "tweet.temp",
+    "Date": "02/05/2025",
+    "Content": "short/thread_1887184614663544952.md",
+    "Summary": "I wrote a blog post about how LLMs are really not like junior developers at all.\n\nLink:",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1887184614663544952",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1887184614663544952",
+        "https://twitter.com/ja3k_/status/1887184616160891178"
+    ],
+    "original_date": "Wed Feb 05 17:00:48 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GjCgSsMaQAAPFJN.png",
+            "original_url": "http://pbs.twimg.com/media/GjCgSsMaQAAPFJN.png"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 2
+}

@@ -1,0 +1,18 @@
+{
+    "Title": "There's this very logical \"security\" feature OSes implement around waiting ~3 seconds before rejecti...",
+    "Author": "Jake Koenig",
+    "URL": "1921680546532618672",
+    "Template": "tweet.temp",
+    "Date": "05/11/2025",
+    "Content": "short/1921680546532618672.md",
+    "Summary": "There's this very logical \"security\" feature OSes implement around waiting ~3 seconds before rejecting an incorrect password. I just wish they had a special case for empty strings. I don't want to wait 3s because I hit enter too quickly",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1921680546532618672",
+    "tweet_url": "https://twitter.com/ja3k_/status/1921680546532618672",
+    "original_date": "Sun May 11 21:35:20 +0000 2025",
+    "media": [],
+    "quoted_tweet": null,
+    "is_thread": false
+}

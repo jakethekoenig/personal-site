@@ -1,0 +1,29 @@
+{
+    "Title": "Thread: Coming together",
+    "Author": "Jake Koenig",
+    "URL": "1776298505323397372",
+    "Template": "tweet.temp",
+    "Date": "04/05/2024",
+    "Content": "short/thread_1776298505323397372.md",
+    "Summary": "Coming together\n\nIf you want to try it out here's the repo: Not sure if I'll do much more with it. Might be nice to give it \"see the buffer/register\" functions so it could do longer scoped tasks that ...",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1776298505323397372",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1776298505323397372",
+        "https://twitter.com/ja3k_/status/1776304085077205482",
+        "https://twitter.com/ja3k_/status/1776345449768907069"
+    ],
+    "original_date": "Fri Apr 05 17:19:00 +0000 2024",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GKbYwqObwAAz57p.jpg",
+            "original_url": "http://pbs.twimg.com/media/GKbYwqObwAAz57p.jpg"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 3
+}

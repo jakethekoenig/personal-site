@@ -1,0 +1,18 @@
+{
+    "Title": "I always want to write quine prompts. Just give it the code that will get/parse/act on the LLM's out...",
+    "Author": "Jake Koenig",
+    "URL": "1776407182336221515",
+    "Template": "tweet.temp",
+    "Date": "04/06/2024",
+    "Content": "short/1776407182336221515.md",
+    "Summary": "I always want to write quine prompts. Just give it the code that will get/parse/act on the LLM's output and tell the LLM to behave accordingly",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1776407182336221515",
+    "tweet_url": "https://twitter.com/ja3k_/status/1776407182336221515",
+    "original_date": "Sat Apr 06 00:30:50 +0000 2024",
+    "media": [],
+    "quoted_tweet": null,
+    "is_thread": false
+}

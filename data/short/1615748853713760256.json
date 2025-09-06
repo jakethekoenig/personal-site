@@ -1,0 +1,18 @@
+{
+    "Title": "Clicking the view button to log that I viewed a tweet",
+    "Author": "Jake Koenig",
+    "URL": "1615748853713760256",
+    "Template": "tweet.temp",
+    "Date": "01/18/2023",
+    "Content": "short/1615748853713760256.md",
+    "Summary": "Clicking the view button to log that I viewed a tweet",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1615748853713760256",
+    "tweet_url": "https://twitter.com/ja3k_/status/1615748853713760256",
+    "original_date": "Wed Jan 18 16:32:00 +0000 2023",
+    "media": [],
+    "quoted_tweet": null,
+    "is_thread": false
+}

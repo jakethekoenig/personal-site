@@ -1,0 +1,33 @@
+{
+    "Title": "Thread: Made it!",
+    "Author": "Jake Koenig",
+    "URL": "1662859000873107457",
+    "Template": "tweet.temp",
+    "Date": "05/28/2023",
+    "Content": "short/thread_1662859000873107457.md",
+    "Summary": "Made it!\n\nGlad to have a wife that understands you have to spend money to make money",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1662859000873107457",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1662859000873107457",
+        "https://twitter.com/ja3k_/status/1662859625333661696"
+    ],
+    "original_date": "Sun May 28 16:30:54 +0000 2023",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/FxOpcysaUAEc9HI.png",
+            "original_url": "http://pbs.twimg.com/media/FxOpcysaUAEc9HI.png"
+        },
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/FxOqBGvaEAIA08R.png",
+            "original_url": "http://pbs.twimg.com/media/FxOqBGvaEAIA08R.png"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 2
+}

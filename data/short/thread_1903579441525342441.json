@@ -1,0 +1,28 @@
+{
+    "Title": "Thread: X is so broken it's unbelievable",
+    "Author": "Jake Koenig",
+    "URL": "1903579441525342441",
+    "Template": "tweet.temp",
+    "Date": "03/22/2025",
+    "Content": "short/thread_1903579441525342441.md",
+    "Summary": "X is so broken it's unbelievable\n\n@yacineMTB is X \"engineer heaven\" because no one has to write tests and fix bugs?",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1903579441525342441",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1903579441525342441",
+        "https://twitter.com/ja3k_/status/1903580110953042116"
+    ],
+    "original_date": "Sat Mar 22 22:48:00 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GmrfaevbQAAu6zj.jpg",
+            "original_url": "http://pbs.twimg.com/media/GmrfaevbQAAu6zj.jpg"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 2
+}

@@ -1,0 +1,28 @@
+{
+    "Title": "Thread: This isn't funny. A social media site only does this when it's in great distress",
+    "Author": "Jake Koenig",
+    "URL": "1924490149272154532",
+    "Template": "tweet.temp",
+    "Date": "05/19/2025",
+    "Content": "short/thread_1924490149272154532.md",
+    "Summary": "This isn't funny. A social media site only does this when it's in great distress\n\nMaybe I should promote this tweet",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1924490149272154532",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1924490149272154532",
+        "https://twitter.com/ja3k_/status/1924490247418909175"
+    ],
+    "original_date": "Mon May 19 15:39:41 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GrUpiMybsAADm5T.png",
+            "original_url": "http://pbs.twimg.com/media/GrUpiMybsAADm5T.png"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 2
+}

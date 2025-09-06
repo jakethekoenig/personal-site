@@ -1,0 +1,24 @@
+{
+    "Title": "I am defeated",
+    "Author": "Jake Koenig",
+    "URL": "1733646358756888972",
+    "Template": "tweet.temp",
+    "Date": "12/10/2023",
+    "Content": "short/1733646358756888972.md",
+    "Summary": "I am defeated",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1733646358756888972",
+    "tweet_url": "https://twitter.com/ja3k_/status/1733646358756888972",
+    "original_date": "Sun Dec 10 00:34:36 +0000 2023",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/assets/crosspoast/GA8l28JaAAAX2GP.jpg",
+            "original_url": "http://pbs.twimg.com/media/GA8l28JaAAAX2GP.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}
