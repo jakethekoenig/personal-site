@@ -1,0 +1,239 @@
+/* Tweets page styling */
+.tweets-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.tweet {
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease;
+}
+
+.tweet:hover {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.tweet-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.tweet-date {
+    color: #657786;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.tweet-links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.tweet-page-link, .tweet-twitter-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+
+.tweet-page-link:hover, .tweet-twitter-link:hover {
+    opacity: 1;
+}
+
+.favicon-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.twitter-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.tweet-content {
+    line-height: 1.5;
+    color: #14171a;
+    font-size: 16px;
+}
+
+.tweet-content p {
+    margin: 0 0 10px 0;
+}
+
+.tweet-content p:last-child {
+    margin-bottom: 0;
+}
+
+.tweet-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 0;
+    display: block;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .tweets-container {
+        padding: 10px;
+    }
+    
+    .tweet {
+        margin-bottom: 15px;
+        padding: 12px;
+    }
+    
+    .tweet-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .tweet-content {
+        font-size: 15px;
+    }
+}
+
+/* Thread-specific styling */
+.tweet.thread {
+    border-left: 4px solid #1da1f2;
+    background: linear-gradient(to right, #f8f9fa, #fff);
+}
+
+.thread-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #1da1f2;
+}
+
+.thread-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.thread-indicator {
+    color: #1da1f2;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.thread-content {
+    position: relative;
+}
+
+.thread-content::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, #1da1f2, #e1e8ed);
+}
+
+.thread-tweet {
+    display: flex;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.thread-tweet-number {
+    flex-shrink: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #1da1f2;
+    margin-right: 15px;
+    margin-top: 8px;
+    z-index: 1;
+    position: relative;
+}
+
+.thread-tweet-content {
+    flex: 1;
+    padding-top: 5px;
+}
+
+.thread-tweet-content p {
+    margin: 0 0 10px 0;
+    line-height: 1.4;
+}
+
+.thread-tweet-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Quote tweet styling */
+.tweet-content blockquote {
+    border-left: 3px solid #1da1f2;
+    margin: 10px 0;
+    padding: 10px 15px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+.tweet-content blockquote p {
+    margin: 0 0 5px 0;
+    font-style: italic;
+    color: #555;
+}
+
+.tweet-content blockquote p:last-child {
+    margin-bottom: 0;
+}
+
+/* Individual tweet page styling */
+.individual-tweet {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    padding: 20px;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.individual-tweet .tweet-header {
+    margin-bottom: 15px;
+}
+
+.individual-tweet .tweet-content {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+
+.comments-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Responsive design for individual tweets */
+@media (max-width: 768px) {
+    .individual-tweet {
+        margin: 0 10px 30px 10px;
+        padding: 15px;
+    }
+    
+    .comments-section {
+        padding: 0 10px;
+    }
+}
+

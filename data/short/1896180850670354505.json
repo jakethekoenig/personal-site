@@ -1,0 +1,29 @@
+{
+    "Title": "Not the most interesting or important change but nice that it was able to one shot it",
+    "Author": "Jake Koenig",
+    "URL": "1896180850670354505",
+    "Template": "tweet.temp",
+    "Date": "03/02/2025",
+    "Content": "short/1896180850670354505.md",
+    "Summary": "Not the most interesting or important change but nice that it was able to one shot it",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1896180850670354505",
+    "tweet_url": "https://twitter.com/ja3k_/status/1896180850670354505",
+    "original_date": "Sun Mar 02 12:48:38 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GlCWO2ZWEAAASrM.jpg",
+            "original_url": "http://pbs.twimg.com/media/GlCWO2ZWEAAASrM.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GlCWRINa4AAE0cI.png",
+            "original_url": "http://pbs.twimg.com/media/GlCWRINa4AAE0cI.png"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

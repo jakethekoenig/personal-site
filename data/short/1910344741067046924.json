@@ -1,0 +1,24 @@
+{
+    "Title": "Another sleepy Thursday",
+    "Author": "Jake Koenig",
+    "URL": "1910344741067046924",
+    "Template": "tweet.temp",
+    "Date": "04/10/2025",
+    "Content": "short/1910344741067046924.md",
+    "Summary": "Another sleepy Thursday",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1910344741067046924",
+    "tweet_url": "https://twitter.com/ja3k_/status/1910344741067046924",
+    "original_date": "Thu Apr 10 14:50:53 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GoLoaxAaIAAnz75.jpg",
+            "original_url": "http://pbs.twimg.com/media/GoLoaxAaIAAnz75.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

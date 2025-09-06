@@ -1,0 +1,24 @@
+{
+    "Title": "Yeah I'm an operator",
+    "Author": "Jake Koenig",
+    "URL": "1903514645140517324",
+    "Template": "tweet.temp",
+    "Date": "03/22/2025",
+    "Content": "short/1903514645140517324.md",
+    "Summary": "Yeah I'm an operator",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1903514645140517324",
+    "tweet_url": "https://twitter.com/ja3k_/status/1903514645140517324",
+    "original_date": "Sat Mar 22 18:30:31 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/Gmqke5Ja4AAN7TC.jpg",
+            "original_url": "http://pbs.twimg.com/media/Gmqke5Ja4AAN7TC.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

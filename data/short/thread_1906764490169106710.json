@@ -1,0 +1,28 @@
+{
+    "Title": "Thread: It's nice having an agent doing code review. I made a fix for a dumb mistake and...",
+    "Author": "Jake Koenig",
+    "URL": "1906764490169106710",
+    "Template": "tweet.temp",
+    "Date": "03/31/2025",
+    "Content": "short/thread_1906764490169106710.md",
+    "Summary": "It's nice having an agent doing code review. I made a fix for a dumb mistake and it searched the codebase for similar mistakes and found 3.\n\nAlways feel awkward posting code review examples because th...",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1906764490169106710",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1906764490169106710",
+        "https://twitter.com/ja3k_/status/1906764572440285656"
+    ],
+    "original_date": "Mon Mar 31 17:44:15 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GnYv9PoaAAAu-m6.jpg",
+            "original_url": "http://pbs.twimg.com/media/GnYv9PoaAAAu-m6.jpg"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 2
+}

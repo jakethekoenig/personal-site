@@ -1,0 +1,29 @@
+{
+    "Title": "I knew this was the real misunderstanding",
+    "Author": "Jake Koenig",
+    "URL": "1892670714852815299",
+    "Template": "tweet.temp",
+    "Date": "02/20/2025",
+    "Content": "short/1892670714852815299.md",
+    "Summary": "I knew this was the real misunderstanding",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1892670714852815299",
+    "tweet_url": "https://twitter.com/ja3k_/status/1892670714852815299",
+    "original_date": "Thu Feb 20 20:20:37 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GkQd_D7bAAIvP4N.jpg",
+            "original_url": "http://pbs.twimg.com/media/GkQd_D7bAAIvP4N.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GkQd_GRXMAAKpYR.jpg",
+            "original_url": "http://pbs.twimg.com/media/GkQd_GRXMAAKpYR.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

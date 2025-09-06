@@ -1,0 +1,30 @@
+{
+    "Title": "Thread: I wrote a blog post about our decision to write a GitHub bot instead of an edito...",
+    "Author": "Jake Koenig",
+    "URL": "1881750123757314062",
+    "Template": "tweet.temp",
+    "Date": "01/21/2025",
+    "Content": "short/thread_1881750123757314062.md",
+    "Summary": "I wrote a blog post about our decision to write a GitHub bot instead of an editor. Leads to better: - Async work - Collaboration\n\nLink:\n\nBuilding an editor feels a little bit like making a faster hors...",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1881750123757314062",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1881750123757314062",
+        "https://twitter.com/ja3k_/status/1881750125049155614",
+        "https://twitter.com/ja3k_/status/1881750126026498115",
+        "https://twitter.com/ja3k_/status/1881750337738158232"
+    ],
+    "original_date": "Tue Jan 21 17:06:05 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/Gh1Rh-IagAAeTj6.jpg",
+            "original_url": "http://pbs.twimg.com/media/Gh1Rh-IagAAeTj6.jpg"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 4
+}

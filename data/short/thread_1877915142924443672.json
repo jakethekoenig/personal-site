@@ -1,0 +1,23 @@
+{
+    "Title": "Thread: Ah here it is. It was on threads!",
+    "Author": "Jake Koenig",
+    "URL": "1877915142924443672",
+    "Template": "tweet.temp",
+    "Date": "01/11/2025",
+    "Content": "short/thread_1877915142924443672.md",
+    "Summary": "Ah here it is. It was on threads!\n\nLooking through karpathy tweets for one that I know contains the word \"morning\" and there are a lot of gems\n\nAnyway my new years resolution is to not check Twitter i...",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1877915142924443672",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1877915142924443672",
+        "https://twitter.com/ja3k_/status/1874248609711219130",
+        "https://twitter.com/ja3k_/status/1874249567321153910"
+    ],
+    "original_date": "Sat Jan 11 03:07:14 +0000 2025",
+    "media": [],
+    "is_thread": true,
+    "thread_length": 3
+}

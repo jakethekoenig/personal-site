@@ -1,0 +1,24 @@
+{
+    "Title": "You can make art out of anything! #WelcomeToMoes",
+    "Author": "Jake Koenig",
+    "URL": "920703988181405697",
+    "Template": "tweet.temp",
+    "Date": "10/18/2017",
+    "Content": "short/920703988181405697.md",
+    "Summary": "You can make art out of anything! #WelcomeToMoes",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "920703988181405697",
+    "tweet_url": "https://twitter.com/ja3k_/status/920703988181405697",
+    "original_date": "Wed Oct 18 17:31:51 +0000 2017",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/DMb_YmAXcAE9vC8.jpg",
+            "original_url": "http://pbs.twimg.com/media/DMb_YmAXcAE9vC8.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

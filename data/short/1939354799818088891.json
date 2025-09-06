@@ -1,0 +1,24 @@
+{
+    "Title": "If I start a thread Twitter prompts me to tweet my password. Sure why not I think I'm about done wit...",
+    "Author": "Jake Koenig",
+    "URL": "1939354799818088891",
+    "Template": "tweet.temp",
+    "Date": "06/29/2025",
+    "Content": "short/1939354799818088891.md",
+    "Summary": "If I start a thread Twitter prompts me to tweet my password. Sure why not I think I'm about done with this account",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1939354799818088891",
+    "tweet_url": "https://twitter.com/ja3k_/status/1939354799818088891",
+    "original_date": "Sun Jun 29 16:06:30 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/Gun46QtagAA0Lrs.jpg",
+            "original_url": "http://pbs.twimg.com/media/Gun46QtagAA0Lrs.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

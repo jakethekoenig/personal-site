@@ -1,0 +1,24 @@
+{
+    "Title": "This fucking dog thinks he's better than me",
+    "Author": "Jake Koenig",
+    "URL": "1546681461415165952",
+    "Template": "tweet.temp",
+    "Date": "07/12/2022",
+    "Content": "short/1546681461415165952.md",
+    "Summary": "This fucking dog thinks he's better than me",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1546681461415165952",
+    "tweet_url": "https://twitter.com/ja3k_/status/1546681461415165952",
+    "original_date": "Tue Jul 12 02:22:51 +0000 2022",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/FXbql7LUYAI7wO_.jpg",
+            "original_url": "http://pbs.twimg.com/media/FXbql7LUYAI7wO_.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

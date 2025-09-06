@@ -1,0 +1,24 @@
+{
+    "Title": "Finally happy with my setup",
+    "Author": "Jake Koenig",
+    "URL": "1875299844434358514",
+    "Template": "tweet.temp",
+    "Date": "01/03/2025",
+    "Content": "short/1875299844434358514.md",
+    "Summary": "Finally happy with my setup",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1875299844434358514",
+    "tweet_url": "https://twitter.com/ja3k_/status/1875299844434358514",
+    "original_date": "Fri Jan 03 21:54:58 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GgZnPL7WcAAJOCh.jpg",
+            "original_url": "http://pbs.twimg.com/media/GgZnPL7WcAAJOCh.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

@@ -1,0 +1,24 @@
+{
+    "Title": "Wow only $6.50",
+    "Author": "Jake Koenig",
+    "URL": "1912200938586296658",
+    "Template": "tweet.temp",
+    "Date": "04/15/2025",
+    "Content": "short/1912200938586296658.md",
+    "Summary": "Wow only $6.50",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1912200938586296658",
+    "tweet_url": "https://twitter.com/ja3k_/status/1912200938586296658",
+    "original_date": "Tue Apr 15 17:46:45 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GomAl3qW4AA3pTo.png",
+            "original_url": "http://pbs.twimg.com/media/GomAl3qW4AA3pTo.png"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

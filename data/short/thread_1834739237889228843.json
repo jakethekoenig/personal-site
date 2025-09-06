@@ -1,0 +1,34 @@
+{
+    "Title": "Thread: The code is horrible but I don't read that",
+    "Author": "Jake Koenig",
+    "URL": "1834739237889228843",
+    "Template": "tweet.temp",
+    "Date": "09/13/2024",
+    "Content": "short/thread_1834739237889228843.md",
+    "Summary": "The code is horrible but I don't read that\n\nOops I linked the wrong image. Meant to link this\n\nOh yeah the repo is open source too. Very much a WIP:",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1834739237889228843",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1834739237889228843",
+        "https://twitter.com/ja3k_/status/1834790030919057530",
+        "https://twitter.com/ja3k_/status/1834879473067475305"
+    ],
+    "original_date": "Fri Sep 13 23:41:36 +0000 2024",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GXZNnTOaUAAiaW9.jpg",
+            "original_url": "http://pbs.twimg.com/media/GXZNnTOaUAAiaW9.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GXZ7zzgbwAARa7U.jpg",
+            "original_url": "http://pbs.twimg.com/media/GXZ7zzgbwAARa7U.jpg"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 3
+}

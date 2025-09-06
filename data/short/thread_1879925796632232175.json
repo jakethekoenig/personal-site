@@ -1,0 +1,23 @@
+{
+    "Title": "Thread: Problem: Find the number of tuples (a1, a2, ...,a7) with all ai in Z/7Z such tha...",
+    "Author": "Jake Koenig",
+    "URL": "1879925796632232175",
+    "Template": "tweet.temp",
+    "Date": "01/16/2025",
+    "Content": "short/thread_1879925796632232175.md",
+    "Summary": "Problem: Find the number of tuples (a1, a2, ...,a7) with all ai in Z/7Z such that the sum of the ai is 0 mod 7 and their product is 1 mod 7 In case you want to think about the elementary solution\n\nAls...",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1879925796632232175",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1879925796632232175",
+        "https://twitter.com/ja3k_/status/1879926528584392866",
+        "https://twitter.com/ja3k_/status/1879928463291003289"
+    ],
+    "original_date": "Thu Jan 16 16:16:51 +0000 2025",
+    "media": [],
+    "is_thread": true,
+    "thread_length": 3
+}

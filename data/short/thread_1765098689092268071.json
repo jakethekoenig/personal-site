@@ -1,0 +1,28 @@
+{
+    "Title": "Thread: Also getting occasional 500s but they're pretty rare",
+    "Author": "Jake Koenig",
+    "URL": "1765098689092268071",
+    "Template": "tweet.temp",
+    "Date": "03/05/2024",
+    "Content": "short/thread_1765098689092268071.md",
+    "Summary": "Also getting occasional 500s but they're pretty rare\n\nSmall sample sizes and I haven't been able to test everything I'd like because of these issues. But it has performed better than gpt-4 in the test...",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1765098689092268071",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1765098689092268071",
+        "https://twitter.com/ja3k_/status/1765099856954315068"
+    ],
+    "original_date": "Tue Mar 05 19:34:56 +0000 2024",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GH7j43qa0AAoL2O.jpg",
+            "original_url": "http://pbs.twimg.com/media/GH7j43qa0AAoL2O.jpg"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 2
+}

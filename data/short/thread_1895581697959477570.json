@@ -1,0 +1,33 @@
+{
+    "Title": "Thread: What is going on with this tweet? I've never seen such a bot frenzy. I don't thi...",
+    "Author": "Jake Koenig",
+    "URL": "1895581697959477570",
+    "Template": "tweet.temp",
+    "Date": "02/28/2025",
+    "Content": "short/thread_1895581697959477570.md",
+    "Summary": "What is going on with this tweet? I've never seen such a bot frenzy. I don't think there's any notable key words?\n\nThere were actually even more. I blocked like 10 of them and then gave up",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1895581697959477570",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1895581697959477570",
+        "https://twitter.com/ja3k_/status/1895581870064353392"
+    ],
+    "original_date": "Fri Feb 28 21:07:49 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/Gk51bdpagAA_96d.jpg",
+            "original_url": "http://pbs.twimg.com/media/Gk51bdpagAA_96d.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/Gk51qJbWAAA6aMZ.jpg",
+            "original_url": "http://pbs.twimg.com/media/Gk51qJbWAAA6aMZ.jpg"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 2
+}

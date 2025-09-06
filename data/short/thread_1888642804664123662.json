@@ -1,0 +1,22 @@
+{
+    "Title": "Thread: My number one piece of prompting advice is when you see the model make an error ...",
+    "Author": "Jake Koenig",
+    "URL": "1888642804664123662",
+    "Template": "tweet.temp",
+    "Date": "02/09/2025",
+    "Content": "short/thread_1888642804664123662.md",
+    "Summary": "My number one piece of prompting advice is when you see the model make an error if at all possible make the error work\n\nThe canonical example is it you just want a code response make it work if the mo...",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1888642804664123662",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1888642804664123662",
+        "https://twitter.com/ja3k_/status/1888644632365723655"
+    ],
+    "original_date": "Sun Feb 09 17:35:08 +0000 2025",
+    "media": [],
+    "is_thread": true,
+    "thread_length": 2
+}

@@ -1,0 +1,24 @@
+{
+    "Title": "Thanks Gmail!",
+    "Author": "Jake Koenig",
+    "URL": "1294301036916674560",
+    "Template": "tweet.temp",
+    "Date": "08/14/2020",
+    "Content": "short/1294301036916674560.md",
+    "Summary": "Thanks Gmail!",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1294301036916674560",
+    "tweet_url": "https://twitter.com/ja3k_/status/1294301036916674560",
+    "original_date": "Fri Aug 14 15:53:08 +0000 2020",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/EfZH7ksXsAARkDd.jpg",
+            "original_url": "http://pbs.twimg.com/media/EfZH7ksXsAARkDd.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

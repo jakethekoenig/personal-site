@@ -1,0 +1,18 @@
+{
+    "Title": "You can get GitHub Copilot suggestions in vim command mode if you enter insert mode in it with &lt;C...",
+    "Author": "Jake Koenig",
+    "URL": "1586105292055801856",
+    "Template": "tweet.temp",
+    "Date": "10/28/2022",
+    "Content": "short/1586105292055801856.md",
+    "Summary": "You can get GitHub Copilot suggestions in vim command mode if you enter insert mode in it with &lt;C-f&gt; and then re-enter insert mode. This is not very useful because the AI doesn't have much context there",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1586105292055801856",
+    "tweet_url": "https://twitter.com/ja3k_/status/1586105292055801856",
+    "original_date": "Fri Oct 28 21:19:04 +0000 2022",
+    "media": [],
+    "quoted_tweet": null,
+    "is_thread": false
+}

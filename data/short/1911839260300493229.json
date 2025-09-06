@@ -1,0 +1,24 @@
+{
+    "Title": "Something is off about this verification code",
+    "Author": "Jake Koenig",
+    "URL": "1911839260300493229",
+    "Template": "tweet.temp",
+    "Date": "04/14/2025",
+    "Content": "short/1911839260300493229.md",
+    "Summary": "Something is off about this verification code",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1911839260300493229",
+    "tweet_url": "https://twitter.com/ja3k_/status/1911839260300493229",
+    "original_date": "Mon Apr 14 17:49:34 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/Gog3q6IXcAAAogi.png",
+            "original_url": "http://pbs.twimg.com/media/Gog3q6IXcAAAogi.png"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

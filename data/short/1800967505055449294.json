@@ -1,0 +1,18 @@
+{
+    "Title": "replying to every tweet I like with #like",
+    "Author": "Jake Koenig",
+    "URL": "1800967505055449294",
+    "Template": "tweet.temp",
+    "Date": "06/12/2024",
+    "Content": "short/1800967505055449294.md",
+    "Summary": "replying to every tweet I like with #like",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1800967505055449294",
+    "tweet_url": "https://twitter.com/ja3k_/status/1800967505055449294",
+    "original_date": "Wed Jun 12 19:04:48 +0000 2024",
+    "media": [],
+    "quoted_tweet": null,
+    "is_thread": false
+}

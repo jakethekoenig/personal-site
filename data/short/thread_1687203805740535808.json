@@ -1,0 +1,28 @@
+{
+    "Title": "Thread: Very surprised copilot new the first one but not the second. I would have though...",
+    "Author": "Jake Koenig",
+    "URL": "1687203805740535808",
+    "Template": "tweet.temp",
+    "Date": "08/03/2023",
+    "Content": "short/thread_1687203805740535808.md",
+    "Summary": "Very surprised copilot new the first one but not the second. I would have thought both or neither\n\nIf you tell it the first digit of course it gets it. heckin llms.",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1687203805740535808",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1687203805740535808",
+        "https://twitter.com/ja3k_/status/1687204242971578371"
+    ],
+    "original_date": "Thu Aug 03 20:48:28 +0000 2023",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/F2om1FOaUAMcQQ2.png",
+            "original_url": "http://pbs.twimg.com/media/F2om1FOaUAMcQQ2.png"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 2
+}

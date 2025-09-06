@@ -1,0 +1,24 @@
+{
+    "Title": "Rate my setup",
+    "Author": "Jake Koenig",
+    "URL": "1577411581729968136",
+    "Template": "tweet.temp",
+    "Date": "10/04/2022",
+    "Content": "short/1577411581729968136.md",
+    "Summary": "Rate my setup",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1577411581729968136",
+    "tweet_url": "https://twitter.com/ja3k_/status/1577411581729968136",
+    "original_date": "Tue Oct 04 21:33:22 +0000 2022",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/FeQXeQaaEAEG2X5.jpg",
+            "original_url": "http://pbs.twimg.com/media/FeQXeQaaEAEG2X5.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

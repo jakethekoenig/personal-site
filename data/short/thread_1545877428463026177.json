@@ -1,0 +1,34 @@
+{
+    "Title": "Thread: Found just what I needed at the local goodwill",
+    "Author": "Jake Koenig",
+    "URL": "1545877428463026177",
+    "Template": "tweet.temp",
+    "Date": "07/09/2022",
+    "Content": "short/thread_1545877428463026177.md",
+    "Summary": "Found just what I needed at the local goodwill\n\nThis is like $20\n\nGot home and confirmed all 100 tiles were there. What a score",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1545877428463026177",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1545877428463026177",
+        "https://twitter.com/ja3k_/status/1545877884467720192",
+        "https://twitter.com/ja3k_/status/1545902827725213696"
+    ],
+    "original_date": "Sat Jul 09 21:07:54 +0000 2022",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/FXQPRGcUUAA0U52.jpg",
+            "original_url": "http://pbs.twimg.com/media/FXQPRGcUUAA0U52.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/FXQPt9GUEAIdMuG.jpg",
+            "original_url": "http://pbs.twimg.com/media/FXQPt9GUEAIdMuG.jpg"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 3
+}

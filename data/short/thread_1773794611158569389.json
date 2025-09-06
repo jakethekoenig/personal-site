@@ -1,0 +1,22 @@
+{
+    "Title": "Thread: If you run your terminal inside vim when a command outputs a file name you can s...",
+    "Author": "Jake Koenig",
+    "URL": "1773794611158569389",
+    "Template": "tweet.temp",
+    "Date": "03/29/2024",
+    "Content": "short/thread_1773794611158569389.md",
+    "Summary": "If you run your terminal inside vim when a command outputs a file name you can see the file with `gf`. Also autocomplete is shared across buffers.\n\nSince vim and neovim have built in terminals I shoul...",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1773794611158569389",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1773794611158569389",
+        "https://twitter.com/ja3k_/status/1732408434560270693"
+    ],
+    "original_date": "Fri Mar 29 19:29:25 +0000 2024",
+    "media": [],
+    "is_thread": true,
+    "thread_length": 2
+}

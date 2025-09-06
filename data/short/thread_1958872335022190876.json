@@ -1,0 +1,63 @@
+{
+    "Title": "Thread: My new thing is doodling",
+    "Author": "Jake Koenig",
+    "URL": "1958872335022190876",
+    "Template": "tweet.temp",
+    "Date": "08/22/2025",
+    "Content": "short/thread_1958872335022190876.md",
+    "Summary": "My new thing is doodling\n\nAfter I started this one I realized I've seen it a million times",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1958872335022190876",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1958872335022190876",
+        "https://twitter.com/ja3k_/status/1958984508172353826",
+        "https://twitter.com/ja3k_/status/1957122596006477952",
+        "https://twitter.com/ja3k_/status/1957143772074250335",
+        "https://twitter.com/ja3k_/status/1958620334363746440",
+        "https://twitter.com/ja3k_/status/1958135139634126929",
+        "https://twitter.com/ja3k_/status/1958252233654772144"
+    ],
+    "original_date": "Fri Aug 22 12:42:13 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/Gy9QAhZboAAhx5f.jpg",
+            "original_url": "http://pbs.twimg.com/media/Gy9QAhZboAAhx5f.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/Gy-2B2sboAUl-M_.jpg",
+            "original_url": "http://pbs.twimg.com/media/Gy-2B2sboAUl-M_.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GykYoUrbkAAmheq.jpg",
+            "original_url": "http://pbs.twimg.com/media/GykYoUrbkAAmheq.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/Gykr47lbcAAPZKa.jpg",
+            "original_url": "http://pbs.twimg.com/media/Gykr47lbcAAPZKa.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/Gy5q0LqboAAOWrQ.jpg",
+            "original_url": "http://pbs.twimg.com/media/Gy5q0LqboAAOWrQ.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GyyxiG-aAAEcApn.jpg",
+            "original_url": "http://pbs.twimg.com/media/GyyxiG-aAAEcApn.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/Gy0cB4WbYAA2FEE.jpg",
+            "original_url": "http://pbs.twimg.com/media/Gy0cB4WbYAA2FEE.jpg"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 7
+}

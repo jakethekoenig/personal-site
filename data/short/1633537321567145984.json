@@ -1,0 +1,18 @@
+{
+    "Title": "When I write imperative code it's like: f_ified_x = f(x) g_f_ified_x = g(f_ified_x) result = h(g_f_i...",
+    "Author": "Jake Koenig",
+    "URL": "1633537321567145984",
+    "Template": "tweet.temp",
+    "Date": "03/08/2023",
+    "Content": "short/1633537321567145984.md",
+    "Summary": "When I write imperative code it's like: f_ified_x = f(x) g_f_ified_x = g(f_ified_x) result = h(g_f_ified(x)) When I write functional code it's like: (h (g (f x))) Am I doing it wrong? It's nice not to name intermediate steps but as soon as I won't to use 1 value twice I need to.",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1633537321567145984",
+    "tweet_url": "https://twitter.com/ja3k_/status/1633537321567145984",
+    "original_date": "Wed Mar 08 18:37:01 +0000 2023",
+    "media": [],
+    "quoted_tweet": null,
+    "is_thread": false
+}

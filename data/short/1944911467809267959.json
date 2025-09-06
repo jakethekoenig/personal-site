@@ -1,0 +1,24 @@
+{
+    "Title": "Added some very basic fraud detection to Mentat and now people are signing up with usernames like fu...",
+    "Author": "Jake Koenig",
+    "URL": "1944911467809267959",
+    "Template": "tweet.temp",
+    "Date": "07/15/2025",
+    "Content": "short/1944911467809267959.md",
+    "Summary": "Added some very basic fraud detection to Mentat and now people are signing up with usernames like fuck-this-site",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1944911467809267959",
+    "tweet_url": "https://twitter.com/ja3k_/status/1944911467809267959",
+    "original_date": "Tue Jul 15 00:06:43 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/Gv22rGYbQAAn0A6.jpg",
+            "original_url": "http://pbs.twimg.com/media/Gv22rGYbQAAn0A6.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

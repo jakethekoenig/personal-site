@@ -1,0 +1,18 @@
+{
+    "Title": "What do you call a function which is uniquely determined up to a constant? I want to say shift-invar...",
+    "Author": "Jake Koenig",
+    "URL": "1610658040851881984",
+    "Template": "tweet.temp",
+    "Date": "01/04/2023",
+    "Content": "short/1610658040851881984.md",
+    "Summary": "What do you call a function which is uniquely determined up to a constant? I want to say shift-invariant or scale-invariant but I guess it's the family it's chosen from that's invariant not the fn itself. I'd really like to use a 1-2 word phrase for this property.",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1610658040851881984",
+    "tweet_url": "https://twitter.com/ja3k_/status/1610658040851881984",
+    "original_date": "Wed Jan 04 15:22:56 +0000 2023",
+    "media": [],
+    "quoted_tweet": null,
+    "is_thread": false
+}

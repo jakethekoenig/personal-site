@@ -1,0 +1,18 @@
+{
+    "Title": "A friend wrote a blog post for my site. I'm basically rewriting medium.",
+    "Author": "Jake Koenig",
+    "URL": "1266583902845468673",
+    "Template": "tweet.temp",
+    "Date": "05/30/2020",
+    "Content": "short/1266583902845468673.md",
+    "Summary": "A friend wrote a blog post for my site. I'm basically rewriting medium.",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1266583902845468673",
+    "tweet_url": "https://twitter.com/ja3k_/status/1266583902845468673",
+    "original_date": "Sat May 30 04:15:09 +0000 2020",
+    "media": [],
+    "quoted_tweet": null,
+    "is_thread": false
+}

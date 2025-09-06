@@ -1,0 +1,24 @@
+{
+    "Title": "It's over",
+    "Author": "Jake Koenig",
+    "URL": "1937975781877240206",
+    "Template": "tweet.temp",
+    "Date": "06/25/2025",
+    "Content": "short/1937975781877240206.md",
+    "Summary": "It's over",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1937975781877240206",
+    "tweet_url": "https://twitter.com/ja3k_/status/1937975781877240206",
+    "original_date": "Wed Jun 25 20:46:46 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GuUSn6ubcAA8Wmg.jpg",
+            "original_url": "http://pbs.twimg.com/media/GuUSn6ubcAA8Wmg.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

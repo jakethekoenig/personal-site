@@ -1,0 +1,33 @@
+{
+    "Title": "Thread: It's so over",
+    "Author": "Jake Koenig",
+    "URL": "1912123034221330513",
+    "Template": "tweet.temp",
+    "Date": "04/15/2025",
+    "Content": "short/thread_1912123034221330513.md",
+    "Summary": "It's so over\n\nIt's so over",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1912123034221330513",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1912123034221330513",
+        "https://twitter.com/ja3k_/status/1912172119087268295"
+    ],
+    "original_date": "Tue Apr 15 12:37:11 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/Gok5u-BWUAASnyx.png",
+            "original_url": "http://pbs.twimg.com/media/Gok5u-BWUAASnyx.png"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GolmZ3yXYAAX-ss.png",
+            "original_url": "http://pbs.twimg.com/media/GolmZ3yXYAAX-ss.png"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 2
+}

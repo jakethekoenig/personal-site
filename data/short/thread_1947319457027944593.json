@@ -1,0 +1,24 @@
+{
+    "Title": "Thread: It actually seems like a really cool future where you just write the API and you...",
+    "Author": "Jake Koenig",
+    "URL": "1947319457027944593",
+    "Template": "tweet.temp",
+    "Date": "07/21/2025",
+    "Content": "short/thread_1947319457027944593.md",
+    "Summary": "It actually seems like a really cool future where you just write the API and your server just returns the OpenAPI client and maybe some docs about how the service works and the user's client generates...",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1947319457027944593",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1947319457027944593",
+        "https://twitter.com/ja3k_/status/1947319458516926922",
+        "https://twitter.com/ja3k_/status/1947319459670343689",
+        "https://twitter.com/ja3k_/status/1947319461284872697"
+    ],
+    "original_date": "Mon Jul 21 15:35:12 +0000 2025",
+    "media": [],
+    "is_thread": true,
+    "thread_length": 4
+}

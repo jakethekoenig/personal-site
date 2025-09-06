@@ -1,0 +1,29 @@
+{
+    "Title": "If you set your Android phone on dark mode Google keep's light bulb icon turns off.",
+    "Author": "Jake Koenig",
+    "URL": "1476946376307183625",
+    "Template": "tweet.temp",
+    "Date": "12/31/2021",
+    "Content": "short/1476946376307183625.md",
+    "Summary": "If you set your Android phone on dark mode Google keep's light bulb icon turns off.",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1476946376307183625",
+    "tweet_url": "https://twitter.com/ja3k_/status/1476946376307183625",
+    "original_date": "Fri Dec 31 16:00:31 +0000 2021",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/FH8q5qHXEB4-TtT.jpg",
+            "original_url": "http://pbs.twimg.com/media/FH8q5qHXEB4-TtT.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/FH8q5xXXMAEyhnT.jpg",
+            "original_url": "http://pbs.twimg.com/media/FH8q5xXXMAEyhnT.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

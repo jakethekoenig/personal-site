@@ -1,0 +1,24 @@
+{
+    "Title": "Happy hump day!",
+    "Author": "Jake Koenig",
+    "URL": "1950719148172189914",
+    "Template": "tweet.temp",
+    "Date": "07/31/2025",
+    "Content": "short/1950719148172189914.md",
+    "Summary": "Happy hump day!",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1950719148172189914",
+    "tweet_url": "https://twitter.com/ja3k_/status/1950719148172189914",
+    "original_date": "Thu Jul 31 00:44:22 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GxJYuYIbYAAKrwo.jpg",
+            "original_url": "http://pbs.twimg.com/media/GxJYuYIbYAAKrwo.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

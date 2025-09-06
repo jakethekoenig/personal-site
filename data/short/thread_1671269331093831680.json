@@ -1,0 +1,28 @@
+{
+    "Title": "Thread: I was getting all ready to write my first system prompt but then realized chatgp...",
+    "Author": "Jake Koenig",
+    "URL": "1671269331093831680",
+    "Template": "tweet.temp",
+    "Date": "06/20/2023",
+    "Content": "short/thread_1671269331093831680.md",
+    "Summary": "I was getting all ready to write my first system prompt but then realized chatgpt was already doing what I wanted out of the box.\n\nAnyway if you use my vim plugin to talk to chat gpt and have the foll...",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1671269331093831680",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1671269331093831680",
+        "https://twitter.com/ja3k_/status/1671270184806682624"
+    ],
+    "original_date": "Tue Jun 20 21:30:33 +0000 2023",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/FzGLWTpaAAARh7F.png",
+            "original_url": "http://pbs.twimg.com/media/FzGLWTpaAAARh7F.png"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 2
+}

@@ -1,0 +1,33 @@
+{
+    "Title": "Thread: Stripe has a strange mix of excellent and terrible docs",
+    "Author": "Jake Koenig",
+    "URL": "1804160718473957663",
+    "Template": "tweet.temp",
+    "Date": "06/21/2024",
+    "Content": "short/thread_1804160718473957663.md",
+    "Summary": "Stripe has a strange mix of excellent and terrible docs\n\nIn their tutorial they mislabel their publishable api key as their secret api key. Either that or they say to put the secret api key in fronten...",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1804160718473957663",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1804160718473957663",
+        "https://twitter.com/ja3k_/status/1804218219143823691"
+    ],
+    "original_date": "Fri Jun 21 14:33:29 +0000 2024",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GQmqc_0agAAkRtQ.png",
+            "original_url": "http://pbs.twimg.com/media/GQmqc_0agAAkRtQ.png"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GQne3xGakAMicFR.png",
+            "original_url": "http://pbs.twimg.com/media/GQne3xGakAMicFR.png"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 2
+}

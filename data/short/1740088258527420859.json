@@ -1,0 +1,24 @@
+{
+    "Title": "ha ha, nice try @Chase",
+    "Author": "Jake Koenig",
+    "URL": "1740088258527420859",
+    "Template": "tweet.temp",
+    "Date": "12/27/2023",
+    "Content": "short/1740088258527420859.md",
+    "Summary": "ha ha, nice try @Chase",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1740088258527420859",
+    "tweet_url": "https://twitter.com/ja3k_/status/1740088258527420859",
+    "original_date": "Wed Dec 27 19:12:24 +0000 2023",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GCYI-wIbIAAlFPm.png",
+            "original_url": "http://pbs.twimg.com/media/GCYI-wIbIAAlFPm.png"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

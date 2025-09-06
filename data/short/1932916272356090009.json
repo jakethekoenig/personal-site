@@ -1,0 +1,24 @@
+{
+    "Title": "Good afternoon",
+    "Author": "Jake Koenig",
+    "URL": "1932916272356090009",
+    "Template": "tweet.temp",
+    "Date": "06/11/2025",
+    "Content": "short/1932916272356090009.md",
+    "Summary": "Good afternoon",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1932916272356090009",
+    "tweet_url": "https://twitter.com/ja3k_/status/1932916272356090009",
+    "original_date": "Wed Jun 11 21:42:05 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GtMZG2VbQAA8HiW.jpg",
+            "original_url": "http://pbs.twimg.com/media/GtMZG2VbQAA8HiW.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

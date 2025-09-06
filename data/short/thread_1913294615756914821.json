@@ -1,0 +1,38 @@
+{
+    "Title": "Thread: Incredibly you have to select the office you want it mailed from",
+    "Author": "Jake Koenig",
+    "URL": "1913294615756914821",
+    "Template": "tweet.temp",
+    "Date": "04/18/2025",
+    "Content": "short/thread_1913294615756914821.md",
+    "Summary": "Incredibly you have to select the office you want it mailed from",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1913294615756914821",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1913294615756914821",
+        "https://twitter.com/ja3k_/status/1913295876485005472"
+    ],
+    "original_date": "Fri Apr 18 18:12:38 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/Go1jQM3bUAAlRUJ.jpg",
+            "original_url": "http://pbs.twimg.com/media/Go1jQM3bUAAlRUJ.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/Go1jTeEacAALS0w.png",
+            "original_url": "http://pbs.twimg.com/media/Go1jTeEacAALS0w.png"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/Go1kcsUasAA5lmk.jpg",
+            "original_url": "http://pbs.twimg.com/media/Go1kcsUasAA5lmk.jpg"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 2
+}

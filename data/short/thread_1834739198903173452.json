@@ -1,0 +1,51 @@
+{
+    "Title": "Thread: When the bot works it feels so good - vague stream of consciousness voice dictat...",
+    "Author": "Jake Koenig",
+    "URL": "1834739198903173452",
+    "Template": "tweet.temp",
+    "Date": "09/13/2024",
+    "Content": "short/thread_1834739198903173452.md",
+    "Summary": "When the bot works it feels so good - vague stream of consciousness voice dictated issue - fixed its own CI - fixed one issue I pointed out\n\nI haven't been able to install bcrypt or the SQLite driver ...",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1834739198903173452",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1834739198903173452",
+        "https://twitter.com/ja3k_/status/1834739218570264596",
+        "https://twitter.com/ja3k_/status/1834739237889228843",
+        "https://twitter.com/ja3k_/status/1834790030919057530",
+        "https://twitter.com/ja3k_/status/1834879473067475305"
+    ],
+    "original_date": "Fri Sep 13 23:41:27 +0000 2024",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GXZNkz9bwAACmLK.jpg",
+            "original_url": "http://pbs.twimg.com/media/GXZNkz9bwAACmLK.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GXZNl2vbkAA_NGv.jpg",
+            "original_url": "http://pbs.twimg.com/media/GXZNl2vbkAA_NGv.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GXZNl8pbwAI_jez.jpg",
+            "original_url": "http://pbs.twimg.com/media/GXZNl8pbwAI_jez.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GXZNnTOaUAAiaW9.jpg",
+            "original_url": "http://pbs.twimg.com/media/GXZNnTOaUAAiaW9.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GXZ7zzgbwAARa7U.jpg",
+            "original_url": "http://pbs.twimg.com/media/GXZ7zzgbwAARa7U.jpg"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 5
+}

@@ -1,0 +1,24 @@
+{
+    "Title": "Twitter has fallen",
+    "Author": "Jake Koenig",
+    "URL": "1895415087093150054",
+    "Template": "tweet.temp",
+    "Date": "02/28/2025",
+    "Content": "short/1895415087093150054.md",
+    "Summary": "Twitter has fallen",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1895415087093150054",
+    "tweet_url": "https://twitter.com/ja3k_/status/1895415087093150054",
+    "original_date": "Fri Feb 28 10:05:46 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/Gk3d-jBaYAASPOo.jpg",
+            "original_url": "http://pbs.twimg.com/media/Gk3d-jBaYAASPOo.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

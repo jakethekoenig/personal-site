@@ -1,0 +1,33 @@
+{
+    "Title": "Thread: Nice they finally shipped the GitHub contributions widget to Android",
+    "Author": "Jake Koenig",
+    "URL": "1939327976522575943",
+    "Template": "tweet.temp",
+    "Date": "06/29/2025",
+    "Content": "short/thread_1939327976522575943.md",
+    "Summary": "Nice they finally shipped the GitHub contributions widget to Android\n\nI'm never going to get rid of this notification dot",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1939327976522575943",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1939327976522575943",
+        "https://twitter.com/ja3k_/status/1939328397970456890"
+    ],
+    "original_date": "Sun Jun 29 14:19:55 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GunghKQXsAAyLDf.jpg",
+            "original_url": "http://pbs.twimg.com/media/GunghKQXsAAyLDf.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/Gung5sLWQAAUwhT.jpg",
+            "original_url": "http://pbs.twimg.com/media/Gung5sLWQAAUwhT.jpg"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 2
+}

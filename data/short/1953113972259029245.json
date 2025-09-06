@@ -1,0 +1,24 @@
+{
+    "Title": "Good morning!",
+    "Author": "Jake Koenig",
+    "URL": "1953113972259029245",
+    "Template": "tweet.temp",
+    "Date": "08/06/2025",
+    "Content": "short/1953113972259029245.md",
+    "Summary": "Good morning!",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1953113972259029245",
+    "tweet_url": "https://twitter.com/ja3k_/status/1953113972259029245",
+    "original_date": "Wed Aug 06 15:20:32 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GxrazqSawAMN0DV.jpg",
+            "original_url": "http://pbs.twimg.com/media/GxrazqSawAMN0DV.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

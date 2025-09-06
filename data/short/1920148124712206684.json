@@ -1,0 +1,24 @@
+{
+    "Title": "Tick tock",
+    "Author": "Jake Koenig",
+    "URL": "1920148124712206684",
+    "Template": "tweet.temp",
+    "Date": "05/07/2025",
+    "Content": "short/1920148124712206684.md",
+    "Summary": "Tick tock",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1920148124712206684",
+    "tweet_url": "https://twitter.com/ja3k_/status/1920148124712206684",
+    "original_date": "Wed May 07 16:06:02 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GqW8iy4bMAALtkp.jpg",
+            "original_url": "http://pbs.twimg.com/media/GqW8iy4bMAALtkp.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

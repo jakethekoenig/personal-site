@@ -1,0 +1,24 @@
+{
+    "Title": "What did I even get done this week?",
+    "Author": "Jake Koenig",
+    "URL": "1948857062219551177",
+    "Template": "tweet.temp",
+    "Date": "07/25/2025",
+    "Content": "short/1948857062219551177.md",
+    "Summary": "What did I even get done this week?",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1948857062219551177",
+    "tweet_url": "https://twitter.com/ja3k_/status/1948857062219551177",
+    "original_date": "Fri Jul 25 21:25:06 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/Gwu7K70bUAAMNco.jpg",
+            "original_url": "http://pbs.twimg.com/media/Gwu7K70bUAAMNco.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

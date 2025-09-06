@@ -1,0 +1,22 @@
+{
+    "Title": "Thread: Every time I try to use Chat GPT to actually do something it fails in the first ...",
+    "Author": "Jake Koenig",
+    "URL": "1623092208219086848",
+    "Template": "tweet.temp",
+    "Date": "02/07/2023",
+    "Content": "short/thread_1623092208219086848.md",
+    "Summary": "Every time I try to use Chat GPT to actually do something it fails in the first sentence. Me: \"I'd like to do X on the CLI\" GPT: \"Step one: go to the management console\"\n\nI know prompt engineering wil...",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1623092208219086848",
+    "thread_urls": [
+        "https://twitter.com/ja3k_/status/1623092208219086848",
+        "https://twitter.com/ja3k_/status/1623093431521144839"
+    ],
+    "original_date": "Tue Feb 07 22:51:52 +0000 2023",
+    "media": [],
+    "is_thread": true,
+    "thread_length": 2
+}

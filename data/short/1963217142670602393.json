@@ -1,0 +1,24 @@
+{
+    "Title": "Your never know what tweet will take off",
+    "Author": "Jake Koenig",
+    "URL": "1963217142670602393",
+    "Template": "tweet.temp",
+    "Date": "09/03/2025",
+    "Content": "short/1963217142670602393.md",
+    "Summary": "Your never know what tweet will take off",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1963217142670602393",
+    "tweet_url": "https://twitter.com/ja3k_/status/1963217142670602393",
+    "original_date": "Wed Sep 03 12:26:56 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/Gz6_hSSaQAAkCNo.jpg",
+            "original_url": "http://pbs.twimg.com/media/Gz6_hSSaQAAkCNo.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

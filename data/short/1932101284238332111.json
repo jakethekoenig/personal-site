@@ -1,0 +1,24 @@
+{
+    "Title": "Doe-ray-me, A-B-C, 1-2-3",
+    "Author": "Jake Koenig",
+    "URL": "1932101284238332111",
+    "Template": "tweet.temp",
+    "Date": "06/09/2025",
+    "Content": "short/1932101284238332111.md",
+    "Summary": "Doe-ray-me, A-B-C, 1-2-3",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1932101284238332111",
+    "tweet_url": "https://twitter.com/ja3k_/status/1932101284238332111",
+    "original_date": "Mon Jun 09 15:43:37 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GtAz4QXa0AA5cxY.jpg",
+            "original_url": "http://pbs.twimg.com/media/GtAz4QXa0AA5cxY.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}
