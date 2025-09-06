@@ -248,8 +248,21 @@ def identify_tweet_threads(tweets, username="ja3k_"):
                     tweet_id = tweet.get('id_str', tweet.get('id', ''))
                     if tweet_id:
                         tweet_to_thread[tweet_id] = thread_id
-    
-    return threads, tweet_to_thread
+
+    # deduplicate tweets in threads
+    final_threads = {}
+    for thread_id, thread_tweets in threads.items():
+        ids = set()
+        new_thread = []
+        for tweet in thread_tweets:
+            tweet_id = tweet.get('id_str', tweet.get('id', ''))
+            if tweet_id in ids:
+                continue
+            ids.add(tweet_id)
+            new_thread.append(tweet)
+        final_threads[thread_id] = new_thread
+
+    return final_threads, tweet_to_thread
 
 def process_twitter_archive(archive_path, output_dir="data/tweets", media_output_dir="nongenerated/assets/crosspoast"):
     """Process the entire Twitter archive"""
