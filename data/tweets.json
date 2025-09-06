@@ -1,7 +1,7 @@
 {
-	"Title": "All My Tweets",
+	"Title": "short form",
 	"Author": "Jake Koenig",
-	"URL": "tweets",
+	"URL": "shortform",
 	"Template": "tweets.temp",
 	"Date": "09/05/2025",
 	"Content": "tweets.py",

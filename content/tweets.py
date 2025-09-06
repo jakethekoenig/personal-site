@@ -70,11 +70,23 @@ def generate_single_tweet_html(tweet_data):
     if tweet_content and not tweet_content.startswith('<'):
         tweet_content = f"<p>{tweet_content}</p>"
     
+    # Generate individual page link
+    individual_page_url = f"/{tweet_data.get('URL', '')}"
+    
     html = f"""
     <div class="tweet" id="tweet-{tweet_data.get('tweet_id', '')}">
         <div class="tweet-header">
             <span class="tweet-date">{tweet_data.get('Date', '')}</span>
-            <a href="{tweet_data.get('tweet_url', '#')}" target="_blank" class="tweet-link">View on Twitter</a>
+            <div class="tweet-links">
+                <a href="{individual_page_url}" class="tweet-page-link" title="View individual page">
+                    <img src="/asset/favicon.png" alt="Individual page" class="favicon-icon">
+                </a>
+                <a href="{tweet_data.get('tweet_url', '#')}" target="_blank" class="tweet-twitter-link" title="View on Twitter">
+                    <svg class="twitter-icon" viewBox="0 0 24 24" width="16" height="16">
+                        <path fill="#1da1f2" d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                    </svg>
+                </a>
+            </div>
         </div>
         <div class="tweet-content">
             {tweet_content}
@@ -137,6 +149,9 @@ def generate_thread_html(thread_data):
     thread_urls = thread_data.get('thread_urls', [])
     first_url = thread_urls[0] if thread_urls else '#'
     
+    # Generate individual page link for thread
+    individual_page_url = f"/{thread_data.get('URL', '')}"
+    
     html = f"""
     <div class="tweet thread" id="thread-{thread_data.get('tweet_id', '')}">
         <div class="thread-header">
@@ -144,7 +159,16 @@ def generate_thread_html(thread_data):
                 <span class="thread-indicator">🧵 Thread ({thread_length} tweets)</span>
                 <span class="tweet-date">{thread_data.get('Date', '')}</span>
             </div>
-            <a href="{first_url}" target="_blank" class="tweet-link">View thread on Twitter</a>
+            <div class="tweet-links">
+                <a href="{individual_page_url}" class="tweet-page-link" title="View individual page">
+                    <img src="/asset/favicon.png" alt="Individual page" class="favicon-icon">
+                </a>
+                <a href="{first_url}" target="_blank" class="tweet-twitter-link" title="View thread on Twitter">
+                    <svg class="twitter-icon" viewBox="0 0 24 24" width="16" height="16">
+                        <path fill="#1da1f2" d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                    </svg>
+                </a>
+            </div>
         </div>
         <div class="thread-content">
     """
