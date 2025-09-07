@@ -99,6 +99,12 @@
         padding: 12px;
     }
     
+    .tweet-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
     .tweet-content {
         font-size: 15px;
     }
