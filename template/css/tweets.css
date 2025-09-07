@@ -235,10 +235,3 @@
     }
 }
 
-/* Additional mobile constraint for very small screens */
-@media (max-width: 600px) {
-    * {
-        max-width: 94vw;
-    }
-}
-
