@@ -1,0 +1,9 @@
+{
+	"Title": "tweets_feed",
+	"URL":   "tweets_feed.xml",
+	"Author": "Jake Koenig",
+	"Template": "rss_tweets.temp",
+	"Content": "rss_tweets.py",
+        "Hide": true,
+        "skip_post_processing": true
+}

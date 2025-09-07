@@ -1,0 +1,9 @@
+{
+	"Title": "podcast_feed",
+	"URL":   "podcast_feed.xml",
+	"Author": "Jake Koenig",
+	"Template": "rss_podcast.temp",
+	"Content": "rss_podcast.py",
+        "Hide": true,
+        "skip_post_processing": true
+}
