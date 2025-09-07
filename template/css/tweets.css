@@ -86,7 +86,10 @@
 
 /* Responsive design */
 @media (max-width: 768px) {
-    * {
+    .tweets-container,
+    .tweet,
+    .tweet-content,
+    .tweet-image {
         max-width: 94vw;
     }
     
