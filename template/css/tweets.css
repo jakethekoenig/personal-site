@@ -86,6 +86,10 @@
 
 /* Responsive design */
 @media (max-width: 768px) {
+    * {
+        max-width: 94vw;
+    }
+    
     .tweets-container {
         padding: 10px;
     }
@@ -234,6 +238,13 @@
     
     .comments-section {
         padding: 0 10px;
+    }
+}
+
+/* Additional mobile constraint for very small screens */
+@media (max-width: 600px) {
+    * {
+        max-width: 94vw;
     }
 }
 
