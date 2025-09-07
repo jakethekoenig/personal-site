@@ -31,7 +31,7 @@ def rss_entry(tweet):
     
     # Use Summary as description (consistent with other RSS feeds)
     if "Summary" in tweet:
-        ans += "<description><![CDATA[" + tweet["Summary"] + "]]></description>"
+        ans += "<description>" + tweet["Summary"] + "</description>"
     
     # Add link to original tweet if available
     if "tweet_url" in tweet:
