@@ -153,7 +153,7 @@ def generate_thread_html(thread_data):
     first_url = thread_urls[0] if thread_urls else '#'
     
     # Generate individual page link for thread
-    individual_page_url = f"/{thread_data.get('URL', '')}"
+    individual_page_url = f"/{thread_data.get('relative_path', '')}"
     
     html = f"""
     <div class="tweet thread" id="thread-{thread_data.get('tweet_id', '')}">
