@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>ja3k - Short Form Posts</title>
+<link>http://ja3k.com/shortform</link>
+<atom:link href="http://ja3k.com/tweets_feed.xml" rel="self" type="application/rss+xml" />
+<description>Short form posts and tweets from ja3k - a mirror of posts from other platforms.</description>
+<language>en-us</language>
+<[Content]>
+</channel>
+</rss>
