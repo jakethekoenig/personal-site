@@ -97,6 +97,7 @@
     
     .tweet-content {
         font-size: 15px;
+        overflow-wrap: break-word;
     }
 }
 
@@ -162,6 +163,8 @@
 .thread-tweet-content {
     flex: 1;
     padding-top: 5px;
+    overflow-wrap: break-word;
+    max-width: calc(100% - 40px);
 }
 
 .thread-tweet-content p {
