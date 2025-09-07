@@ -1,5 +1,4 @@
 from datetime import datetime
-import os
 
 def generate(data, index):
     ans = ""
@@ -30,18 +29,9 @@ def rss_entry(tweet):
     ans += "<link>" + tweet["permalink"] + "</link>"
     ans += "<guid isPermaLink=\"true\">" + tweet["permalink"] + "</guid>"
     
-    # Use Summary as description, or read content if available
-    description = ""
+    # Use Summary as description (consistent with other RSS feeds)
     if "Summary" in tweet:
-        description = tweet["Summary"]
-    elif "Content" in tweet:
-        content_path = os.path.join("content", tweet["Content"])
-        if os.path.exists(content_path):
-            with open(content_path, "r") as f:
-                description = f.read()
-    
-    if description:
-        ans += "<description><![CDATA[" + description + "]]></description>"
+        ans += "<description><![CDATA[" + tweet["Summary"] + "]]></description>"
     
     # Add link to original tweet if available
     if "tweet_url" in tweet:

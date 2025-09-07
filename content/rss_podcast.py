@@ -1,5 +1,4 @@
 from datetime import datetime
-import os
 
 def generate(data, index):
     ans = ""
