@@ -48,6 +48,6 @@ def rss_entry(tweet):
     if "tweet_url" in tweet:
         ans += "<comments>" + tweet["tweet_url"] + "</comments>"
     
-    ans += "<pubDate>" + datetime.strptime(tweet["Date"], "%m/%d/%Y").strftime("%a, %d %b %Y %H:%M:%S %z EST") + "</pubDate>"
+    ans += "<pubDate>" + datetime.strptime(tweet["Date"], "%m/%d/%Y").strftime("%a, %d %b %Y %H:%M:%S -0500") + "</pubDate>"
     ans += "</item>\n"
     return ans

@@ -37,7 +37,7 @@ def rss_entry(blog):
             ans += "<content:encoded><![CDATA[" + content + "]]></content:encoded>"
         except (FileNotFoundError, UnicodeDecodeError):
             pass  # Skip content if file can't be read
-    ans += "<pubDate>" + datetime.strptime(blog["Date"],"%m/%d/%Y").strftime("%a, %d %b %Y %H:%M:%S %z EST") + "</pubDate>"
+    ans += "<pubDate>" + datetime.strptime(blog["Date"],"%m/%d/%Y").strftime("%a, %d %b %Y %H:%M:%S -0500") + "</pubDate>"
     ans += "</item>\n"
     return ans
 
