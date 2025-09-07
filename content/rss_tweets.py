@@ -1,4 +1,5 @@
 from datetime import datetime
+import os
 
 def generate(data, index):
     ans = ""
@@ -32,6 +33,16 @@ def rss_entry(tweet):
     # Use Summary as description (consistent with other RSS feeds)
     if "Summary" in tweet:
         ans += "<description>" + tweet["Summary"] + "</description>"
+    
+    # Include full content for RSS readers
+    if "Content" in tweet:
+        content_path = os.path.join("content", tweet["Content"])
+        try:
+            with open(content_path, "r", encoding='utf-8') as f:
+                content = f.read()
+            ans += "<content:encoded><![CDATA[" + content + "]]></content:encoded>"
+        except (FileNotFoundError, UnicodeDecodeError):
+            pass  # Skip content if file can't be read
     
     # Add link to original tweet if available
     if "tweet_url" in tweet:
