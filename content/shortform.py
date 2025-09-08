@@ -1,6 +1,11 @@
 import json
 import os
+import sys
 from datetime import datetime
+
+# Add the exhibit scripts directory to the path to import markdown processor
+sys.path.append('../exhibit/scripts')
+from content import md2html
 
 # Twitter icon SVG constant to avoid duplication
 TWITTER_ICON_SVG = '''<svg class="twitter-icon" viewBox="0 0 24 24" width="16" height="16">
@@ -64,16 +69,11 @@ def generate_single_tweet_html(tweet_data):
     # Clean up the content
     tweet_content = tweet_content.strip()
     
-    # Convert markdown images to HTML
-    import re
-    tweet_content = re.sub(r'!\[([^\]]*)\]\(([^)]+)\)', r'<img src="\2" alt="\1" class="tweet-image">', tweet_content)
-    
-    # Convert newlines to <br> tags for display
-    tweet_content = tweet_content.replace('\n\n', '</p><p>').replace('\n', '<br>')
-    
-    # Wrap in paragraph tags if not empty
-    if tweet_content and not tweet_content.startswith('<'):
-        tweet_content = f"<p>{tweet_content}</p>"
+    # Process markdown content properly
+    if tweet_content:
+        tweet_content = md2html(tweet_content)
+        # Add tweet-specific image class to any images
+        tweet_content = tweet_content.replace('<img ', '<img class="tweet-image" ')
     
     # Generate individual page link
     individual_page_url = f"/{tweet_data.get('relative_path', '')}"
@@ -134,9 +134,10 @@ def generate_thread_html(thread_data):
                 
                 if content_lines:
                     tweet_text = '\n'.join(content_lines).strip()
-                    # Convert markdown images to HTML
-                    import re
-                    tweet_text = re.sub(r'!\[([^\]]*)\]\(([^)]+)\)', r'<img src="\2" alt="\1" class="tweet-image">', tweet_text)
+                    # Process markdown content properly
+                    tweet_text = md2html(tweet_text)
+                    # Add tweet-specific image class to any images
+                    tweet_text = tweet_text.replace('<img ', '<img class="tweet-image" ')
                     
                     thread_parts.append({
                         'number': tweet_num,
@@ -175,9 +176,8 @@ def generate_thread_html(thread_data):
     """
     
     for i, part in enumerate(thread_parts, 1):
-        content = part['content'].replace('\n\n', '</p><p>').replace('\n', '<br>')
-        if content and not content.startswith('<'):
-            content = f"<p>{content}</p>"
+        content = part['content']
+        # Content is already processed as HTML from markdown
             
         html += f"""
             <div class="thread-tweet">
