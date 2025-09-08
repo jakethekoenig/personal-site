@@ -1,6 +1,130 @@
 import json
 import os
+import sys
 from datetime import datetime
+
+# Add the exhibit scripts directory to the path to import markdown processor
+sys.path.append('../exhibit/scripts')
+try:
+    from content import md2html
+except ImportError:
+    # Fallback if exhibit is not available - basic markdown processing
+    import re
+    
+    def wrap(t, c, a=None):
+        if a:
+            return '<'+t+' '+a+'>'+c+'</'+t+'>'
+        else:
+            return '<'+t+'>'+c+'</'+t+'>'
+
+    def replacelinks(line):
+        while line.find('](') != -1:
+            nex = line.find('](')
+            ope = line.rfind('[', 0, nex)
+            clos = line.find(')', nex)
+            if clos==-1 or ope==-1:
+                break
+            text=line[ope+1:nex]
+            link=line[nex+2:clos]
+            if len(link)>0 and link[0]=='/':
+                attr='href=%s'%link
+            else:
+                attr='href=%s target=_blank'%link
+            htmllink = wrap('a', text, attr)
+            line = line[:ope]+htmllink+line[clos+1:]
+        return line
+
+    def replaceinlinecode(line):
+        at = 0
+        while line.find('`', at) != -1:
+            ope = line.find('`', at)
+            clos = line.find('`', ope+1)
+            if clos==-1:
+                break
+            text=line[ope+1:clos]
+            text = wrap('code', text, a='class="inline"')
+            line = line[:ope]+text+line[clos+1:]
+            at = ope + len(text)
+        return line
+
+    def replaceInlineFeatures(line):
+        line = replaceinlinecode(line)
+        line = replacelinks(line)
+        return line
+
+    def md2html(content):
+        ans = ""
+        lines = content.split('\n')
+        quotemode=False
+        codemode=False
+        list_depth = []
+        for line in lines:
+            if line.startswith('<') or line.startswith("[b["):
+                ans+=replaceInlineFeatures(line)+'\n'
+                continue
+            tokens = line.split()
+            if len(list_depth)>0 and (len(tokens)==0 or tokens[0] not in {'-', '*', '+'}):
+                for _ in list_depth:
+                    ans+= '</ul>'
+                list_depth = []
+            if quotemode and (len(tokens)==0 or tokens[0]!='>'):
+                quotemode=False
+                ans+='</blockquote>'
+            if len(tokens)==0:
+                continue
+            depth = len(tokens[0])
+            if tokens[0] == '#'*depth:
+                header = line.strip()[depth:].strip()
+                headerId = header.lower().replace(" ","_")
+                ans += wrap('h'+str(depth), header, a='id="'+ headerId +'"')
+            elif tokens[0][:2] == '![':
+                tokens = re.split(r'\[|\]|\!|\(|\)|"|\'', line)
+                tokens = [t for t in tokens if len(t)>0]
+                source = tokens[1].rstrip()
+                alt = tokens[0]
+                if len(tokens)>2:
+                    title = tokens[2]
+                else:
+                    title = alt
+                ans += wrap('p', '<img src="%s" alt="%s" title="%s"/>'%(source, alt, title))
+            elif tokens[0] == '```':
+                codemode = not codemode
+                if codemode:
+                    ans+='<pre><code>'
+                else:
+                    ans+='</code></pre>\n'
+            elif tokens[0] == '>':
+                if not quotemode:
+                    quotemode=True
+                    ans+='<blockquote class="quote epigraph">'
+                ans+=replaceInlineFeatures(line[1:].strip())
+            elif codemode:
+                ans += line+'\n'
+            elif tokens[0] in {'-', '*', '+'}:
+                cur_depth = len(line) - len(line.lstrip())
+                if len(list_depth) == 0:
+                    ans+= '<ul>'
+                    list_depth += [cur_depth]
+                elif list_depth[-1] > cur_depth:
+                    while list_depth[-1] > cur_depth:
+                        list_depth = list_depth[:-1]
+                        ans += '</ul>'
+                elif list_depth[-1] < cur_depth:
+                    list_depth += [cur_depth]
+                    ans += '<ul>'
+                ans+=wrap('li',replaceInlineFeatures(line.strip()[1:].strip()))+'\n'
+            else:
+                ans+=wrap('p',replaceInlineFeatures(line))+'\n'
+        
+        # Close any remaining open tags
+        if quotemode:
+            ans += '</blockquote>'
+        if codemode:
+            ans += '</code></pre>'
+        for _ in list_depth:
+            ans += '</ul>'
+            
+        return ans
 
 # Twitter icon SVG constant to avoid duplication
 TWITTER_ICON_SVG = '''<svg class="twitter-icon" viewBox="0 0 24 24" width="16" height="16">
@@ -64,16 +188,11 @@ def generate_single_tweet_html(tweet_data):
     # Clean up the content
     tweet_content = tweet_content.strip()
     
-    # Convert markdown images to HTML
-    import re
-    tweet_content = re.sub(r'!\[([^\]]*)\]\(([^)]+)\)', r'<img src="\2" alt="\1" class="tweet-image">', tweet_content)
-    
-    # Convert newlines to <br> tags for display
-    tweet_content = tweet_content.replace('\n\n', '</p><p>').replace('\n', '<br>')
-    
-    # Wrap in paragraph tags if not empty
-    if tweet_content and not tweet_content.startswith('<'):
-        tweet_content = f"<p>{tweet_content}</p>"
+    # Process markdown content properly
+    if tweet_content:
+        tweet_content = md2html(tweet_content)
+        # Add tweet-specific image class to any images
+        tweet_content = tweet_content.replace('<img ', '<img class="tweet-image" ')
     
     # Generate individual page link
     individual_page_url = f"/{tweet_data.get('relative_path', '')}"
@@ -134,9 +253,10 @@ def generate_thread_html(thread_data):
                 
                 if content_lines:
                     tweet_text = '\n'.join(content_lines).strip()
-                    # Convert markdown images to HTML
-                    import re
-                    tweet_text = re.sub(r'!\[([^\]]*)\]\(([^)]+)\)', r'<img src="\2" alt="\1" class="tweet-image">', tweet_text)
+                    # Process markdown content properly
+                    tweet_text = md2html(tweet_text)
+                    # Add tweet-specific image class to any images
+                    tweet_text = tweet_text.replace('<img ', '<img class="tweet-image" ')
                     
                     thread_parts.append({
                         'number': tweet_num,
@@ -175,9 +295,8 @@ def generate_thread_html(thread_data):
     """
     
     for i, part in enumerate(thread_parts, 1):
-        content = part['content'].replace('\n\n', '</p><p>').replace('\n', '<br>')
-        if content and not content.startswith('<'):
-            content = f"<p>{content}</p>"
+        content = part['content']
+        # Content is already processed as HTML from markdown
             
         html += f"""
             <div class="thread-tweet">
