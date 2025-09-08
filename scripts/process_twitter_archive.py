@@ -60,6 +60,28 @@ def process_quoted_tweet(tweet):
                 'url': f"https://twitter.com/{quoted_user}/status/{quoted_id}"
             }
     
+    # Check for quote tweets referenced via URLs in entities
+    if not quoted_tweet_info and 'entities' in tweet and 'urls' in tweet['entities']:
+        for url_entity in tweet['entities']['urls']:
+            expanded_url = url_entity.get('expanded_url', '')
+            
+            # Check if this is a Twitter/X URL pointing to a tweet
+            if expanded_url and ('twitter.com' in expanded_url or 'x.com' in expanded_url):
+                # Extract username and tweet ID from URL
+                # Format: https://x.com/username/status/tweet_id or https://twitter.com/username/status/tweet_id
+                match = re.search(r'(?:twitter\.com|x\.com)/([^/]+)/status/(\d+)', expanded_url)
+                if match:
+                    quoted_user = match.group(1)
+                    quoted_id = match.group(2)
+                    
+                    quoted_tweet_info = {
+                        'user': quoted_user,
+                        'text': None,  # We don't have the text, just the reference
+                        'url': expanded_url,
+                        'is_url_reference': True  # Flag to indicate this is just a URL reference
+                    }
+                    break
+    
     return quoted_tweet_info
 
 def process_media(tweet, media_dir, output_media_dir):
@@ -409,8 +431,13 @@ def process_twitter_archive(archive_path, output_dir="data/short", media_output_
             
             # Add quoted tweet if present
             if quoted_tweet:
-                md_content += f"> **@{quoted_tweet['user']}:** {quoted_tweet['text']}\n"
-                md_content += f"> [View original tweet]({quoted_tweet['url']})\n\n"
+                if quoted_tweet.get('is_url_reference'):
+                    # For URL-only references, show a simple link
+                    md_content += f"> [Quote tweet of @{quoted_tweet['user']}]({quoted_tweet['url']})\n\n"
+                else:
+                    # For full quoted tweets with text
+                    md_content += f"> **@{quoted_tweet['user']}:** {quoted_tweet['text']}\n"
+                    md_content += f"> [View original tweet]({quoted_tweet['url']})\n\n"
             
             # Add media if present
             if media_files:
@@ -471,7 +498,12 @@ def process_tweet_thread(thread_tweets, media_dir, media_output_dir, output_dir)
             # Check for quoted tweet and include it
             quoted_tweet = process_quoted_tweet(tweet)
             if quoted_tweet:
-                clean_text += f"\n\n> **@{quoted_tweet['user']}:** {quoted_tweet['text']}\n> [View original tweet]({quoted_tweet['url']})"
+                if quoted_tweet.get('is_url_reference'):
+                    # For URL-only references, show a simple link
+                    clean_text += f"\n\n> [Quote tweet of @{quoted_tweet['user']}]({quoted_tweet['url']})"
+                else:
+                    # For full quoted tweets with text
+                    clean_text += f"\n\n> **@{quoted_tweet['user']}:** {quoted_tweet['text']}\n> [View original tweet]({quoted_tweet['url']})"
             
             thread_text_parts.append(clean_text)
             
