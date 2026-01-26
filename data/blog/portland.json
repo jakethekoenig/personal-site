@@ -2,6 +2,7 @@
 	"Title": "RC Portland Tournament Report (29th)",
 	"Author": "Jake Koenig",
 	"URL": "portland",
+	"og_image": "/asset/cards/vibrance.png",
 	"Template": "blog.temp",
 	"Date": "1/26/2026",
 	"Content": "blog/portland.md",
