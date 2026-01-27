@@ -238,12 +238,7 @@ After the match my opponent said they thought carefully about boarding in torpor
 
 ## Round 12: Mono-green Landfall 1-2
 
-Again I get game 1 and lose 2 more. My opponent intentionally cheated against me twice:
-
-* They have [h[Icetill Explorer]] play a land, attack with [h[Sazh's Chocobo]] and then fetch say mill 2. I say I think they missed the mill trigger there's some back and forth and we agree to mill 1. But then he mills 2 anyway. I hesitate for a second and should have called a judge but just let them do it.
-* I [h[Sunderflock]] and he puts [h[Meltstrider's Resolve]] back in his hand with his creatures. He does a funny dexterity move where hides the resolve with another card before picking them all up. Obviously I don't let him keep the resolve but maybe I should have more explicitly accused him of cheating.
-
-Obviously both plays are possible mistakes but I'm pretty confident from my opponent's movements and how they looked at me that they knew exactly what they were doing.
+Again I get game 1 and lose 2 more.
 
 After the fourth loss I'm dead for top 8 but still live for top 32. It's not great to go from 7-0 to 8-4 and I wasn't happy with my play in any of the matches. I didn't feel too bad though. Just a little tired maybe. But excited to play more magic. When you only play magic once a quarter it's always pretty fun.
 
