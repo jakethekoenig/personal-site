@@ -81,6 +81,26 @@ def replaceInlineFeatures(line):
     line = replacelinks(line)
     return line
 
+def render_quote(lines):
+    attribution = None
+    quote_lines = lines[:]
+    if quote_lines and quote_lines[-1].lstrip().startswith("-"):
+        attribution = quote_lines.pop().lstrip()[1:].strip()
+        while quote_lines and quote_lines[-1].strip() == "<br>":
+            quote_lines.pop()
+
+    rendered = '<blockquote class="quote epigraph">'
+    for line in quote_lines:
+        line = line.strip()
+        if line == "<br>":
+            rendered += "<br>"
+        elif line:
+            rendered += wrap('p', replaceInlineFeatures(line))
+    if attribution:
+        rendered += wrap('p', replaceInlineFeatures(attribution), a='class="quote-attribution"')
+    rendered += '</blockquote>'
+    return rendered
+
 # TODO: paragraphs should require a blank line
 # TODO: paragraphs in blockquotes
 # TODO: automatically make index
@@ -88,6 +108,7 @@ def md2html(content):
     ans = ""
     lines = content.split('\n')
     quotemode=False
+    quote_lines = []
     codemode=False
     list_depth = []
     for line in lines:
@@ -101,7 +122,8 @@ def md2html(content):
             list_depth = []
         if quotemode and (len(tokens)==0 or tokens[0]!='>'):
             quotemode=False
-            ans+='</blockquote>'
+            ans += render_quote(quote_lines)
+            quote_lines = []
         if len(tokens)==0:
             continue
         depth = len(tokens[0])
@@ -110,7 +132,7 @@ def md2html(content):
             headerId = header.lower().replace(" ","_") # A title can end with a footnote. I don't want that in the id.
             ans += wrap('h'+str(depth), header, a='id="'+ headerId +'"')
         elif tokens[0][:2] == '![':
-            tokens = re.split('\[|\]|\!|\(|\)|"|\'', line)
+            tokens = re.split(r"\[|\]|\!|\(|\)|\"|'", line)
             tokens = [t for t in tokens if len(t)>0]
             source = tokens[1].rstrip()
             alt = tokens[0]
@@ -128,8 +150,7 @@ def md2html(content):
         elif tokens[0] == '>':
             if not quotemode:
                 quotemode=True
-                ans+='<blockquote class="quote epigraph">'
-            ans+=replaceInlineFeatures(line[1:].strip())
+            quote_lines.append(line[1:].strip())
         elif codemode:
             ans += line+'\n'
         elif tokens[0] in {'-', '*', '+'}:
@@ -147,6 +168,8 @@ def md2html(content):
             ans+=wrap('li',replaceInlineFeatures(line.strip()[1:].strip()))+'\n'
         else:
             ans+=wrap('p',replaceInlineFeatures(line))+'\n'
+    if quotemode:
+        ans += render_quote(quote_lines)
     return ans
 
 
