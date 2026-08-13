@@ -1,0 +1,10 @@
+{
+	"Title": "Cumulative Income Tax",
+	"Author": "Jake Koenig",
+	"URL": "cumtax",
+	"og_image": "/asset/pic/cumulative-income-tax.png",
+	"Template": "blog.temp",
+	"Date": "8/13/2026",
+	"Content": "blog/cumtax.md",
+	"Categories": ["politics"]
+}
