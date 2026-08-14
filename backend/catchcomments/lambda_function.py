@@ -37,6 +37,13 @@ def send_email(body, subject):
     except Exception as e:
         print(e)
 
+def commented_page_url(comment_url):
+    """Convert a comment storage path into the public page URL."""
+    comment_path = comment_url.split("?", 1)[0].split("#", 1)[0]
+    comment_path = comment_path.removeprefix("comments/")
+    comment_path = comment_path.removesuffix(".html")
+    return "https://" + site + "/" + comment_path.lstrip("/")
+
 
 # COMMENT CODE
 # A comment add request has the following fields:
@@ -92,7 +99,9 @@ def handle_addcomment(event):
     comments[timestamp] = comment
     if "link" in event.keys():
         comments[timestamp]["link"] = html.escape(event["link"])
-    send_email(comment["author"] + "wrote: " + comment["text"], "New Comment on ja3k.com")
+    page_url = commented_page_url(event["url"])
+    email_body = comment["author"] + " wrote:\n\n" + comment["text"] + "\n\nPage: " + page_url
+    send_email(email_body, "New Comment on ja3k.com")
     # Write comment file
     s3.put_object(Body=json.dumps(comments).encode("utf-8"), Bucket=site, Key=jsonfile)
     # Write html
