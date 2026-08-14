@@ -18,7 +18,16 @@ case "$LIVE" in
 	/*) ;;
 	*) LIVE="$REPO_ROOT/$LIVE";;
 esac
-npm ci
+
+INSTALLED_LOCK="$REPO_ROOT/node_modules/.package-lock.json"
+MATHJAX_PAGE="$REPO_ROOT/node_modules/mathjax-node-page/bin/mjpage"
+if [ ! -f "$INSTALLED_LOCK" ] || \
+	[ ! -x "$MATHJAX_PAGE" ] || \
+	[ "$REPO_ROOT/package.json" -nt "$INSTALLED_LOCK" ] || \
+	[ "$REPO_ROOT/package-lock.json" -nt "$INSTALLED_LOCK" ]; then
+	echo "Installing npm dependencies..."
+	npm ci
+fi
 
 # Remove the current live directory.
 mkdir -p "$LIVE"
