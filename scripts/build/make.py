@@ -1,11 +1,15 @@
 import json
 import os
+import shutil
+from concurrent.futures import ProcessPoolExecutor
 from datetime import datetime
 from content import generate_content, generate_comments
+from config import config
 
 # From a websites template and its specified data (which has a link to the content)
 # create a filled out webpage.
 def replaceTags(template, data, index):
+    data = dict(data)
     tags = { "$", "[", ":", "??" }
     # TODO: Make this method robust to tags inside tags
     # replace content
@@ -89,14 +93,71 @@ def make_index(index_path="."):
     return index
 
 
-def make_site(target_dir, index, global_index, cur_path=""):
+def collect_pages(target_dir, index):
+    sequential_pages = []
+    parallel_pages = []
+
     for (path, data) in index:
         if isinstance(data, list):
-            nex = os.path.join(cur_path, path)
-            os.makedirs(os.path.join(target_dir,nex), exist_ok=True)
-            make_site(target_dir, data, index, nex)
+            child_sequential, child_parallel = collect_pages(target_dir, data)
+            sequential_pages.extend(child_sequential)
+            parallel_pages.extend(child_parallel)
         else:
-            make_page(os.path.join(target_dir, data["relative_path"]), data, index)
+            destination = os.path.join(target_dir, data["relative_path"])
+            os.makedirs(os.path.dirname(destination), exist_ok=True)
+            if os.path.splitext(data["Content"])[1] == ".py":
+                sequential_pages.append((destination, data, index))
+            else:
+                parallel_pages.append((destination, data))
+
+    return sequential_pages, parallel_pages
+
+
+def configured_jobs():
+    default_jobs = min(8, os.cpu_count() or 1)
+    value = os.environ.get("BUILD_JOBS")
+    if value is None:
+        return default_jobs
+    try:
+        jobs = int(value)
+    except ValueError as error:
+        raise ValueError("BUILD_JOBS must be a positive integer") from error
+    if jobs < 1:
+        raise ValueError("BUILD_JOBS must be a positive integer")
+    return jobs
+
+
+def initialize_worker(worker_config, working_directory):
+    config.clear()
+    config.update(worker_config)
+    os.chdir(working_directory)
+
+
+def make_parallel_page(page):
+    path, data = page
+    make_page(path, data, None)
+
+
+def make_site(target_dir, index):
+    sequential_pages, parallel_pages = collect_pages(target_dir, index)
+
+    for path, data, local_index in sequential_pages:
+        make_page(path, data, local_index)
+
+    jobs = min(configured_jobs(), len(parallel_pages))
+    if jobs <= 1:
+        for page in parallel_pages:
+            make_parallel_page(page)
+        return
+
+    print("Rendering %d pages with %d workers..." % (len(parallel_pages), jobs))
+    with ProcessPoolExecutor(
+        max_workers=jobs,
+        initializer=initialize_worker,
+        initargs=(dict(config), os.getcwd()),
+    ) as executor:
+        for _ in executor.map(make_parallel_page, parallel_pages, chunksize=32):
+            pass
 
 
 def make_page(path, data, index):
@@ -106,12 +167,30 @@ def make_page(path, data, index):
         out.write(replaceTags(temp, data, index))
 
 
-from config import config
-if os.path.exists("config.json"):
-    with open("config.json") as f:
-        config.update(json.load(f))
-src_dir = os.getcwd()
-os.chdir(config["pages"])
-index = make_index()
-os.chdir(src_dir)
-make_site(config["live"], index, index)
+def copy_html_aliases(target_dir):
+    for directory, _, files in os.walk(target_dir):
+        for file_name in files:
+            if "." in file_name:
+                continue
+            source = os.path.join(directory, file_name)
+            shutil.copyfile(source, source + ".html")
+
+
+def main():
+    if os.path.exists("config.json"):
+        with open("config.json") as config_file:
+            config.update(json.load(config_file))
+
+    source_directory = os.getcwd()
+    try:
+        os.chdir(config["pages"])
+        index = make_index()
+    finally:
+        os.chdir(source_directory)
+
+    make_site(config["live"], index)
+    copy_html_aliases(config["live"])
+
+
+if __name__ == "__main__":
+    main()

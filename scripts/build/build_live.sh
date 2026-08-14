@@ -38,8 +38,3 @@ find "$LIVE" -mindepth 1 -maxdepth 1 -exec rm -rf {} +
 cp -r "$REPO_ROOT"/nongenerated/. "$LIVE"
 # Build the blogs from templates
 "$PYTHON" "$SCRIPT_DIR"/make.py
-
-find "$LIVE" -type f ! -name '*.*' -print0 | while read -d $'\0' file
-do
-	cp "$file" "$file.html"
-done
