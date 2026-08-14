@@ -39,7 +39,7 @@ def create_default_tweet_data():
             "Author": "Jake Koenig",
             "URL": "tweet_example",
             "Template": "tweet.temp",
-            "Date": "09/05/2025",
+            "Date": "2025-09-05",
             "Content": "tweets/example.md",
             "Summary": "This is an example tweet to show how the tweets page works.",
             "Categories": ["tweets"],

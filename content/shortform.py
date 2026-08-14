@@ -38,10 +38,12 @@ def generate(data, index):
 
 def parse_date_for_sorting(date_str):
     """Parse date string for sorting purposes"""
-    try:
-        return datetime.strptime(date_str, "%m/%d/%Y")
-    except ValueError:
-        return datetime.min
+    for date_format in ("%Y-%m-%d", "%m/%d/%Y"):
+        try:
+            return datetime.strptime(date_str, date_format)
+        except ValueError:
+            pass
+    return datetime.min
 
 def generate_tweet_html(tweet_data):
     """Generate HTML for a single tweet or thread"""

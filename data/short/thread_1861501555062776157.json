@@ -4,7 +4,7 @@
     "URL": "1861501555062776157",
     "Template": "tweet.temp",
     "Hide": true,
-    "Date": "11/26/2024",
+    "Date": "2024-11-26",
     "Content": "short/thread_1861501555062776157.md",
     "Summary": "The bot could already see CI failures and attempt fixes but for formatting checks this is inefficient and difficult to do with an LLM. Now you can tell the bot to use the formatter!\n\nOf course the bot...",
     "Categories": [

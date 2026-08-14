@@ -4,7 +4,7 @@
     "URL": "1925606894317781457",
     "Template": "tweet.temp",
     "Hide": true,
-    "Date": "05/22/2025",
+    "Date": "2025-05-22",
     "Content": "short/1925606894317781457.md",
     "Summary": "First claude-4 PR. Migrating us from pyright to ty",
     "Categories": [

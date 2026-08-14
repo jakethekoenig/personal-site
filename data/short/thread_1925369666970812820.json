@@ -4,7 +4,7 @@
     "URL": "1925369666970812820",
     "Template": "tweet.temp",
     "Hide": true,
-    "Date": "05/22/2025",
+    "Date": "2025-05-22",
     "Content": "short/thread_1925369666970812820.md",
     "Summary": "Much faster than codex for some reason. Our setup scripts take 2m on our server and close to 10 on theirs\n\nHas Internet access as it's running\n\nCan be started from a PR. Want it to add tests to your P...",
     "Categories": [

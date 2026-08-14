@@ -4,7 +4,7 @@
     "URL": "1839426519283982470",
     "Template": "tweet.temp",
     "Hide": true,
-    "Date": "09/26/2024",
+    "Date": "2024-09-26",
     "Content": "short/thread_1839426519283982470.md",
     "Summary": "@yacineMTB I got it to work but I realize I must have some automatic deduplication going on because a lot of things I run a lot, like certain psql's, only appear once. Maybe because I always run them ...",
     "Categories": [

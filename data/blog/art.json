@@ -2,7 +2,7 @@
 	"Title": "Some Generative Art",
 	"Author": "Jake Koenig",
 	"Template": "blog.temp",
-	"Date": "12/29/2019",
+	"Date": "2019-12-29",
 	"Content": "blog/art.html",
 	"Categories": ["art"],
 	"Summary": "A collection of a few simple procedural artworks I've made. My favorite are the random walks at the end."

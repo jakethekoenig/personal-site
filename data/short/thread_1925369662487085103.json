@@ -4,7 +4,7 @@
     "URL": "1925369662487085103",
     "Template": "tweet.temp",
     "Hide": true,
-    "Date": "05/22/2025",
+    "Date": "2025-05-22",
     "Content": "short/thread_1925369662487085103.md",
     "Summary": "Automatically sees and fixed CI failures\n\nAutomatically sees new discussion on PRs and Issues as it's running\n\nMuch faster than codex for some reason. Our setup scripts take 2m on our server and close...",
     "Categories": [

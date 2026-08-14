@@ -62,6 +62,15 @@ def file_name(data):
     return url
 
 
+def parse_date(value):
+    for date_format in ("%Y-%m-%d", "%m/%d/%Y"):
+        try:
+            return datetime.strptime(value, date_format)
+        except ValueError:
+            pass
+    raise ValueError(f"Unsupported date format: {value}")
+
+
 # From the data directory create an index of the site. It'll be a list of tuples. Each with
 # first parameter the name of the page or directory and second parameter another list if it
 # was a directory else the associated data object. The lists will be sorted by date if one is
@@ -89,7 +98,7 @@ def make_index(index_path="."):
                 data1 = dict(defaults)
                 data1.update(data)
                 index+=[(page,data1)]
-    index.sort(key=lambda t: datetime.strptime(t[1]["Date"] if "Date" in t[1] else "1/1/2000", "%m/%d/%Y"), reverse=True)
+    index.sort(key=lambda t: parse_date(t[1]["Date"] if "Date" in t[1] else "2000-01-01"), reverse=True)
     return index
 
 

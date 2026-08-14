@@ -4,7 +4,7 @@
     "URL": "1610658040851881984",
     "Template": "tweet.temp",
     "Hide": true,
-    "Date": "01/04/2023",
+    "Date": "2023-01-04",
     "Content": "short/1610658040851881984.md",
     "Summary": "What do you call a function which is uniquely determined up to a constant? I want to say shift-invariant or scale-invariant but I guess it's the family it's chosen from that's invariant not the fn itself. I'd really like to use a 1-2 word phrase for this property.",
     "Categories": [

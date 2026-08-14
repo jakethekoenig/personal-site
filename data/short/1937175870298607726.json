@@ -4,7 +4,7 @@
     "URL": "1937175870298607726",
     "Template": "tweet.temp",
     "Hide": true,
-    "Date": "06/23/2025",
+    "Date": "2025-06-23",
     "Content": "short/1937175870298607726.md",
     "Summary": "It's easy to invert a binary tree of numbers. But I'm not sure how to do it in general. Maybe if they're strings I'd use `reverse`?",
     "Categories": [

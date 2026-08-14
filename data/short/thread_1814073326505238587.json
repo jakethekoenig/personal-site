@@ -4,7 +4,7 @@
     "URL": "1814073326505238587",
     "Template": "tweet.temp",
     "Hide": true,
-    "Date": "07/18/2024",
+    "Date": "2024-07-18",
     "Content": "short/thread_1814073326505238587.md",
     "Summary": "@samswoora Make git submodules for the plugins your want in ~.vim/pack/misc/start like here:\n\n@samswoora Also mostly don't use plugins. Put this in your vimrc: ``` nnoremap &lt;leader&gt;ev :e $MYVIMR...",
     "Categories": [

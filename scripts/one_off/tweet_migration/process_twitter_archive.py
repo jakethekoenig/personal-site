@@ -16,16 +16,16 @@ from urllib.parse import urlparse
 import argparse
 
 def parse_twitter_date(date_str):
-    """Parse Twitter's date format to a readable format"""
+    """Parse Twitter's date format to an ISO date."""
     # Twitter dates are typically in format: "Wed Oct 05 19:41:02 +0000 2011"
     try:
         dt = datetime.strptime(date_str, "%a %b %d %H:%M:%S %z %Y")
-        return dt.strftime("%m/%d/%Y")
+        return dt.strftime("%Y-%m-%d")
     except ValueError:
         # Try ISO format as backup
         try:
             dt = datetime.fromisoformat(date_str.replace('Z', '+00:00'))
-            return dt.strftime("%m/%d/%Y")
+            return dt.strftime("%Y-%m-%d")
         except ValueError:
             return date_str
 

@@ -4,7 +4,7 @@
 	"URL": "vimuxsh",
 	"og_image": "/asset/pic/abbrev.png",
 	"Template": "blog.temp",
-	"Date": "12/03/2022",
+	"Date": "2022-12-03",
 	"Content": "blog/vimuxsh.md",
 	"Categories": ["programming"],
 	"Summary": "A collection of my favorite vim, tmux, and zsh configurations."

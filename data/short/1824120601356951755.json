@@ -4,7 +4,7 @@
     "URL": "1824120601356951755",
     "Template": "tweet.temp",
     "Hide": true,
-    "Date": "08/15/2024",
+    "Date": "2024-08-15",
     "Content": "short/1824120601356951755.md",
     "Summary": "This behavior doesn't go far enough!! If you run: ``` python python ``` The output ought to be: ``` [] ['x'] ['x','x'] ['x','x','x'] ```",
     "Categories": [

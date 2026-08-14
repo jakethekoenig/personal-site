@@ -20,8 +20,7 @@ def rss_entry(blog):
         # with open(content_path, "r") as f:
             # content = f.read()
         # ans += "<content:encoded><![CDATA[" + content + "]]></content:encoded>"
-    ans += "<pubDate>" + datetime.strptime(blog["Date"],"%m/%d/%Y").strftime("%a, %d %b %Y %H:%M:%S %z EST") + "</pubDate>"
+    ans += "<pubDate>" + datetime.strptime(blog["Date"], "%Y-%m-%d").strftime("%a, %d %b %Y %H:%M:%S %z EST") + "</pubDate>"
     ans += "</item>\n"
     return ans
-
 

@@ -4,7 +4,7 @@
     "URL": "1895638074576814552",
     "Template": "tweet.temp",
     "Hide": true,
-    "Date": "03/01/2025",
+    "Date": "2025-03-01",
     "Content": "short/1895638074576814552.md",
     "Summary": "Dumb question but you know how LLMs output a distribution over tokens? Can you also give it a distribution as input?",
     "Categories": [

@@ -4,7 +4,7 @@
     "URL": "1923499450175262756",
     "Template": "tweet.temp",
     "Hide": true,
-    "Date": "05/16/2025",
+    "Date": "2025-05-16",
     "Content": "short/thread_1923499450175262756.md",
     "Summary": "Mentat now supports images!\n\nShould have done it a long time ago. I actually solved issue #165 doing it (we're in the 3000s now). But the GitHub auth story around images is complicated. There's actual...",
     "Categories": [

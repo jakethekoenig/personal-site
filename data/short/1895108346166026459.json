@@ -4,7 +4,7 @@
     "URL": "1895108346166026459",
     "Template": "tweet.temp",
     "Hide": true,
-    "Date": "02/27/2025",
+    "Date": "2025-02-27",
     "Content": "short/1895108346166026459.md",
     "Summary": "Pro tip: if you add `set path+=**5` to your vimrc you can go to your python/node dependencies with `gf`",
     "Categories": [

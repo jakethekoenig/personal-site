@@ -4,7 +4,7 @@
     "URL": "1690008484828389376",
     "Template": "tweet.temp",
     "Hide": true,
-    "Date": "08/11/2023",
+    "Date": "2023-08-11",
     "Content": "short/thread_1690008484828389376.md",
     "Summary": "Does anyone know how to get an image from the system clipboard in node? I tried clipboardy, copy-paste and electron and none of them worked.\n\nI think the problem may just be that I'm using ubuntu. I'l...",
     "Categories": [

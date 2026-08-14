@@ -4,7 +4,7 @@
     "URL": "1924856086173253929",
     "Template": "tweet.temp",
     "Hide": true,
-    "Date": "05/20/2025",
+    "Date": "2025-05-20",
     "Content": "short/1924856086173253929.md",
     "Summary": "Python should have a keyword \"Nine\" which is a constant `9` so if you mistype `None` it silently fails",
     "Categories": [

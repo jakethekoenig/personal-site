@@ -1,7 +1,7 @@
 {
 	"Title": "Com(ent)ing to My Senses",
 	"URL": "comment2",
-	"Date": "3/25/2022",
+	"Date": "2022-03-25",
 	"Content": "blog/newcomments.html",
 	"Categories": ["programming", "personal"],
 	"Summary": "You can now comment on my blog posts without making a github pull request."

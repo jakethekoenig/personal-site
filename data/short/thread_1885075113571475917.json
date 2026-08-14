@@ -4,7 +4,7 @@
     "URL": "1885075113571475917",
     "Template": "tweet.temp",
     "Hide": true,
-    "Date": "01/30/2025",
+    "Date": "2025-01-30",
     "Content": "short/thread_1885075113571475917.md",
     "Summary": "I'm debugging an issue with timezones and discovered the github UI will happily tell you events happened in the future\n\nHuh if you get too crazy experimenting chrome cuts you off",
     "Categories": [

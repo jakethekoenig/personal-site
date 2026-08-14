@@ -34,7 +34,7 @@ print(total())
 # Browsers: Chrome, Safari, Firefox
 def visits_histogram(name):
     name = url(dat)
-    start = datetime.strptime(dat["Date"],"%m/%d/%Y")
+    start = datetime.strptime(dat["Date"], "%Y-%m-%d")
     dates = []
     for log in os.listdir(LOG_DIR):
         with open(LOG_DIR / log) as c:
@@ -73,9 +73,9 @@ for blog in os.listdir(DATA_DIR):
 
     with open(DATA_DIR / blog) as f:
         dat = json.load(f)
-    date = datetime.strptime(dat["Date"],"%m/%d/%Y")
+    date = datetime.strptime(dat["Date"], "%Y-%m-%d")
 
-    if date < datetime.strptime("02/12/2020", "%m/%d/%Y"):
+    if date < datetime.strptime("2020-02-12", "%Y-%m-%d"):
         continue
 
     hist = visits_histogram(dat)

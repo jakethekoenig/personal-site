@@ -4,7 +4,7 @@
     "URL": "1885388896185573527",
     "Template": "tweet.temp",
     "Hide": true,
-    "Date": "01/31/2025",
+    "Date": "2025-01-31",
     "Content": "short/1885388896185573527.md",
     "Summary": "@alexalbert__ I think a cool api feature would be \"prospective caching\" e.g. to have the input + output cached so that if I make a call planning to append the model output before making another call I can save ~18% on that part of the conversation",
     "Categories": [

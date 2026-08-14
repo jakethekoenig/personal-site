@@ -4,7 +4,7 @@
 	"URL": "bro_learned",
 	"og_image": "/asset/cards/unionofthethirdpath.png",
 	"Template": "blog.temp",
-	"Date": "12/02/2022",
+	"Date": "2022-12-02",
 	"Content": "blog/bro_learned.md",
 	"Categories": ["magic"],
 	"Summary": "A short retrospective where I list some of my errors and misses."

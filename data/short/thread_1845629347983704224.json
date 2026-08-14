@@ -4,7 +4,7 @@
     "URL": "1845629347983704224",
     "Template": "tweet.temp",
     "Hide": true,
-    "Date": "10/14/2024",
+    "Date": "2024-10-14",
     "Content": "short/thread_1845629347983704224.md",
     "Summary": "Modularity as in the ability to use one piece without importing the whole thing is perhaps desirable but does it happen in practice? When you pip install/npm install you get all the files and likely a...",
     "Categories": [

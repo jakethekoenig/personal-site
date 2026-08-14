@@ -4,6 +4,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="shortcut icon" href="/asset/favicon.png" />
 <link rel="alternate" type="application/rss+xml" title="ja3k" href="/feed.xml" />
+<meta name="description" content="<$Summary$>">
+<meta property="og:title" content="<$Title$>">
+<meta property="og:description" content="<$Summary$>">
+<meta property="og:image" content="https://ja3k.com<$og_image$>">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="<$Date$>">
+<meta property="article:author" content="https://ja3k.com/aboutme">
+<meta property="og:site_name" content="ja3k">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://ja3k.com<$og_image$>">
+<meta property="og:url" content="<$permalink$>">
+<link rel="canonical" href="<$permalink$>">
 
 <style>
 <:css/style.css:>
@@ -21,16 +34,4 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js" defer></script>
 <script src="/js/highlighter.js" defer></script>
-
-<meta name="description" content="<$Summary$>">
-<meta property="og:title" content="<$Title$>">
-<meta property="og:description" content="<$Summary$>">
-<meta property="og:image" content="https://ja3k.com<$og_image$>">
-<meta name="og:image" content="<$og_image$>">
-<meta property="og:locale" content="en_US">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://ja3k.com<$og_image$>">
-<meta property="og:url" content="<$permalink$>">
-<link rel="canonical" href="<$permalink$>">
 </head>

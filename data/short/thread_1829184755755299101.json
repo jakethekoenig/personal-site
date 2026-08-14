@@ -4,7 +4,7 @@
     "URL": "1829184755755299101",
     "Template": "tweet.temp",
     "Hide": true,
-    "Date": "08/29/2024",
+    "Date": "2024-08-29",
     "Content": "short/thread_1829184755755299101.md",
     "Summary": "Does openrouter truncate prompt automatically? I ran the first time on 1/5th of my blog but it said it was 19k tokens so I did the whole thing and now it says its 18k tokens?\n\nIn the second generation...",
     "Categories": [

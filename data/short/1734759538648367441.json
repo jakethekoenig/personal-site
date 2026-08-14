@@ -4,7 +4,7 @@
     "URL": "1734759538648367441",
     "Template": "tweet.temp",
     "Hide": true,
-    "Date": "12/13/2023",
+    "Date": "2023-12-13",
     "Content": "short/1734759538648367441.md",
     "Summary": "It's extremely silly that json mode allows the first character to be white space. Honestly unnecessary white space should be totally disallowed. Aren't they trying to save tokens?",
     "Categories": [

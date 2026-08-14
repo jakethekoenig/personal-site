@@ -4,7 +4,7 @@
     "URL": "1633575668029198341",
     "Template": "tweet.temp",
     "Hide": true,
-    "Date": "03/08/2023",
+    "Date": "2023-03-08",
     "Content": "short/thread_1633575668029198341.md",
     "Summary": "I can't tell if I'm really bad at functional programming or this is just how all your functions are supposed to look\n\nAlso not sure how much I'm liking clojure. How come map is only defined over lists...",
     "Categories": [

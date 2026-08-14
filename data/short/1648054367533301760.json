@@ -4,7 +4,7 @@
     "URL": "1648054367533301760",
     "Template": "tweet.temp",
     "Hide": true,
-    "Date": "04/17/2023",
+    "Date": "2023-04-17",
     "Content": "short/1648054367533301760.md",
     "Summary": "I love a lot about clojure syntax but overall I regret choosing it for this side project: 1. GPT and copilot are relatively bad at it 2. It has the horrible java stack traces",
     "Categories": [
