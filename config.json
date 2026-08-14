@@ -1,5 +1,6 @@
 {
 	"base_url": "https://ja3k.com",
+	"live": "../live",
 	"static": "nongenerated",
 	"templates": "template",
 	"pages": "data"
