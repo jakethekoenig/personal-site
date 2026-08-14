@@ -26,13 +26,13 @@ The build requires Python 3 and Node.js/npm. From the repository root, run:
 ./scripts/build/build_live.sh
 ```
 
-This installs the locked npm dependencies and rebuilds `../live`. To serve that directory and rebuild when source files change, install `fswatch` on macOS or `inotifywait` on Linux, then run:
+This installs the locked npm dependencies when they are missing or out of date, then rebuilds `../live`. To serve that directory and rebuild when source files change, install `fswatch` on macOS or `inotifywait` on Linux, then run:
 
 ```sh
 ./scripts/build/auto_build.sh
 ```
 
-The local server listens on port 8070.
+The watcher ignores changes under `node_modules/`. The local server listens on port 8070.
 
 ## Deploy
 

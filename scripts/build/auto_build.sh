@@ -12,6 +12,7 @@ case "$LIVE" in
 esac
 SERVER_PID=""
 WATCH_PID=""
+CHANGES_FILE="$(mktemp "${TMPDIR:-/tmp}/auto_build_changes.XXXXXX")" || exit 1
 
 cleanup() {
 	trap - EXIT INT TERM
@@ -23,6 +24,7 @@ cleanup() {
 		kill "$SERVER_PID" 2>/dev/null
 		wait "$SERVER_PID" 2>/dev/null
 	fi
+	rm -f "$CHANGES_FILE"
 }
 
 trap cleanup EXIT
@@ -42,13 +44,18 @@ case "$1" in
 		esac;;
 esac
 
+WATCH_EXCLUDE='(^|/)node_modules(/|$)'
 if command -v inotifywait >/dev/null 2>&1; then
 	watch_for_change() {
-		inotifywait -r --event modify,create,delete,move "$watch" >/dev/null
+		inotifywait --quiet --recursive \
+			--exclude "$WATCH_EXCLUDE" \
+			--event modify,create,delete,move \
+			--format '%w%f' \
+			"$watch"
 	}
 elif command -v fswatch >/dev/null 2>&1; then
 	watch_for_change() {
-		fswatch -1 -r "$watch" >/dev/null
+		fswatch -1 -r -E --exclude "$WATCH_EXCLUDE" "$watch"
 	}
 else
 	echo "auto_build requires inotifywait on Linux or fswatch on macOS."
@@ -63,7 +70,8 @@ python3 "$SCRIPT_DIR/local_server.py" > /dev/null &
 SERVER_PID=$!
 while true
 do
-	watch_for_change &
+	: > "$CHANGES_FILE"
+	watch_for_change > "$CHANGES_FILE" &
 	WATCH_PID=$!
 	wait "$WATCH_PID"
 	watch_status=$?
@@ -71,7 +79,16 @@ do
 	if [ "$watch_status" -ne 0 ]; then
 		exit "$watch_status"
 	fi
+	echo "Rebuilding after changes to:"
+	sort -u "$CHANGES_FILE" | while IFS= read -r changed
+	do
+		case "$changed" in
+			"$REPO_ROOT"/*) changed="${changed#"$REPO_ROOT"/}";;
+		esac
+		printf '  %s\n' "$changed"
+	done
 	cd "$REPO_ROOT" || exit 1
 	"$SCRIPT_DIR/build_live.sh"
+        echo "Build complete"
 	cd "$LIVE" || exit 1
 done
