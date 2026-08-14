@@ -127,21 +127,31 @@ position: absolute;
 
 /* Rules for Media and Pictures */
 .quote {
-	background: lightgrey;
-	border-left: 5px black solid;
-	margin-left: 7%;
-	margin-right: 7%;
-	padding-left: 5px;
+	background: #f6f6f6;
+	border-left: 3px solid #777;
+	margin: 1.5em min(7%, 3em);
+	padding: 0.7em 1em;
+}
+.quote p:first-child {
+	margin-top: 0;
+}
+.quote p:last-child {
+	margin-bottom: 0;
+}
+.quote .quote-attribution {
+	color: #555;
+	font-size: 0.9em;
+	margin-top: 0.9em;
+	text-align: right;
 }
 blockquote.epigraph {
-	margin-right: 10%;
-	margin-left: 10%;
+	margin: 1.5em min(10%, 4em);
 }
-blockquote.epigraph > (div:first-child, p:first-child) {
+blockquote.epigraph > p:first-child {
 	font-style: italic;
 }
 blockquote.epigraph > p:last-child {
-	text-align:right;
+	text-align: right;
 }
 
 .dialog {
