@@ -44,7 +44,7 @@ case "$1" in
 		esac;;
 esac
 
-WATCH_EXCLUDE='(^|/)node_modules(/|$)'
+WATCH_EXCLUDE='(^|/)(node_modules|\.git)(/|$)'
 if command -v inotifywait >/dev/null 2>&1; then
 	watch_for_change() {
 		inotifywait --quiet --recursive \
