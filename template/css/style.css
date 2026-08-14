@@ -194,6 +194,14 @@ div h4 {
 .main_content, .title {
 	margin-left:140px;
 }
+.title {
+	max-width: 90ch;
+}
+.title h1 {
+	line-height: 1.15;
+	overflow-wrap: break-word;
+	text-wrap: balance;
+}
 h1.source {
 	font-weight: normal;
 }
