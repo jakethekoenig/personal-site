@@ -3,7 +3,7 @@
 # If no file to watch is specified then it watches the whole project.
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-REPO_ROOT="$( cd "$SCRIPT_DIR/.." && pwd )"
+REPO_ROOT="$( cd "$SCRIPT_DIR/../.." && pwd )"
 cd "$REPO_ROOT" || exit 1
 LIVE="$(python3 -c 'import json; print(json.load(open("config.json"))["live"])')"
 case "$LIVE" in

@@ -6,7 +6,7 @@ set -e
 # A script for building the website
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-REPO_ROOT="$( cd "$SCRIPT_DIR/.." && pwd )"
+REPO_ROOT="$( cd "$SCRIPT_DIR/../.." && pwd )"
 PYTHON=python3
 if [ -x "$REPO_ROOT/venv/bin/python" ]; then
 	PYTHON="$REPO_ROOT/venv/bin/python"

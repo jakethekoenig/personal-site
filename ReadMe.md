@@ -10,7 +10,10 @@ The site is hosted on AWS. A push to `master` runs the deployment workflow, whic
 - `data/` contains page metadata and generated short-form post data.
 - `template/` contains page templates and reusable components.
 - `nongenerated/` contains CSS, JavaScript, and other files copied directly into the built site.
-- `scripts/` contains the site generator, deployment helpers, and maintenance scripts.
+- `scripts/build/` contains the static-site generator and local development server.
+- `scripts/deploy/` contains the S3 sync and CloudFront invalidation helpers.
+- `scripts/mtg/` contains Magic: The Gathering utilities used by some posts.
+- `scripts/one_off/` contains historical data migrations and legacy comment utilities.
 - `comments/` and `backend/` contain the legacy commenting data and Lambda code.
 
 The generator combines metadata, content, and templates, then copies the result plus `nongenerated/` into the directory named by `live` in `config.json` (currently the sibling `../live` directory).
@@ -20,13 +23,13 @@ The generator combines metadata, content, and templates, then copies the result 
 The build requires Python 3 and Node.js/npm. From the repository root, run:
 
 ```sh
-./scripts/build_live.sh
+./scripts/build/build_live.sh
 ```
 
 This installs the locked npm dependencies and rebuilds `../live`. To serve that directory and rebuild when source files change, install `fswatch` on macOS or `inotifywait` on Linux, then run:
 
 ```sh
-./scripts/auto_build.sh
+./scripts/build/auto_build.sh
 ```
 
 The local server listens on port 8070.
@@ -36,6 +39,6 @@ The local server listens on port 8070.
 Deployment is normally handled by `.github/workflows/deploy.yml`. With AWS credentials configured locally, the same build and sync can be run with:
 
 ```sh
-./scripts/build_live.sh
-./scripts/update.sh
+./scripts/build/build_live.sh
+./scripts/deploy/update.sh
 ```

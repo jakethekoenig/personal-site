@@ -23,12 +23,13 @@ def diffToFile(text):
     return ans
 
 f=sys.argv[1]
+diff_file=sys.argv[2]
 sys.stderr.write(f)
 if not f.startswith("comments/") or not f.endswith(".json"):
     sys.stderr.write("Not in comments dir\n")
     fail()
 try:
-    with open("tmp") as data:
+    with open(diff_file) as data:
         data = diffToFile(data)
         comment = json.loads(data)
         required = ["Author", "Body"]
@@ -53,4 +54,3 @@ try:
         print(1)
 except Exception as e:
     fail()
-

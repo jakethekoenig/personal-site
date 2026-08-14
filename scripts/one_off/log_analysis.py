@@ -3,11 +3,16 @@ from url_tools import url
 from datetime import datetime, timedelta
 import json
 import os
+from pathlib import Path
+
+REPO_ROOT = Path(__file__).resolve().parents[2]
+LOG_DIR = REPO_ROOT / "logs"
+DATA_DIR = REPO_ROOT / "data" / "blog"
 
 def check_widget():
     total = 0
-    for log in os.listdir('/home/jaek/personal-site/logs'):
-        with open(os.path.join('/home/jaek/personal-site/logs', log)) as c:
+    for log in os.listdir(LOG_DIR):
+        with open(LOG_DIR / log) as c:
             content = c.read()
         if 'GET /exp/party' in content:
             total+=1
@@ -16,8 +21,8 @@ print(check_widget())
 
 def total():
     total = 0
-    for log in os.listdir('/home/jaek/personal-site/logs'):
-        with open(os.path.join('/home/jaek/personal-site/logs', log)) as c:
+    for log in os.listdir(LOG_DIR):
+        with open(LOG_DIR / log) as c:
             content = c.read()
         if 'GET /blog' in content:
             total+=1
@@ -31,8 +36,8 @@ def visits_histogram(name):
     name = url(dat)
     start = datetime.strptime(dat["Date"],"%m/%d/%Y")
     dates = []
-    for log in os.listdir('/home/jaek/personal-site/logs'):
-        with open(os.path.join('/home/jaek/personal-site/logs', log)) as c:
+    for log in os.listdir(LOG_DIR):
+        with open(LOG_DIR / log) as c:
             content = c.read()
         if 'GET /blog/' +name in content:
             OSes = {'Windows','Linux','iPhone','Chrome','Macintosh'}
@@ -54,7 +59,6 @@ def visits_histogram(name):
     return (weekOne, weeksSince, dates)
 
 
-data_dir = '/home/jaek/personal-site/src/data/blog'
 week_one_graph = go.Figure()
 week_by_week_graph = go.Figure()
 colors = {
@@ -65,9 +69,9 @@ colors = {
         "programming": "orange",
         "guest": "cyan"
         }
-for blog in os.listdir(data_dir):
+for blog in os.listdir(DATA_DIR):
 
-    with open(os.path.join(data_dir, blog)) as f:
+    with open(DATA_DIR / blog) as f:
         dat = json.load(f)
     date = datetime.strptime(dat["Date"],"%m/%d/%Y")
 

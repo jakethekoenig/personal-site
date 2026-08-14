@@ -15,18 +15,18 @@ The Twitter functionality consists of:
 1. **Download your Twitter archive** from Twitter's settings
 2. **Set up the tweets functionality**:
    ```bash
-   python scripts/setup_tweets.py
+   python3 scripts/one_off/tweet_migration/setup_tweets.py
    ```
 
 3. **Process your Twitter archive**:
    ```bash
-   python scripts/process_twitter_archive.py /path/to/your/twitter-archive
+   python3 scripts/one_off/tweet_migration/process_twitter_archive.py /path/to/your/twitter-archive
    ```
 
-4. **Build your site** (using exhibit):
+4. **Build your site**:
    ```bash
    # Your normal site build process
-   ./scripts/build_live.sh
+   ./scripts/build/build_live.sh
    ```
 
 5. **Visit `/tweets`** on your site to see all your tweets!
@@ -39,7 +39,7 @@ The main script that processes your Twitter archive.
 
 **Usage:**
 ```bash
-python scripts/process_twitter_archive.py <archive_path> [options]
+python3 scripts/one_off/tweet_migration/process_twitter_archive.py <archive_path> [options]
 ```
 
 **Options:**
@@ -58,7 +58,7 @@ python scripts/process_twitter_archive.py <archive_path> [options]
 
 **Example:**
 ```bash
-python scripts/process_twitter_archive.py ~/Downloads/twitter-2023-12-01-abc123/
+python3 scripts/one_off/tweet_migration/process_twitter_archive.py ~/Downloads/twitter-2023-12-01-abc123/
 ```
 
 ### `setup_tweets.py`
@@ -67,7 +67,7 @@ Sets up the directory structure and validates the tweets functionality.
 
 **Usage:**
 ```bash
-python scripts/setup_tweets.py
+python3 scripts/one_off/tweet_migration/setup_tweets.py
 ```
 
 **What it does:**

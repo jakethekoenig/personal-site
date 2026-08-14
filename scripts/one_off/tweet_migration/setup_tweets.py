@@ -119,8 +119,8 @@ def main():
     print("Setup complete!")
     print()
     print("Next steps:")
-    print("1. Run: python scripts/process_twitter_archive.py <path_to_twitter_archive>")
-    print("2. Build your site with exhibit")
+    print("1. Run: python3 scripts/one_off/tweet_migration/process_twitter_archive.py <path_to_twitter_archive>")
+    print("2. Build your site with scripts/build/build_live.sh")
     print("3. Your tweets will be available at /tweets")
 
 if __name__ == "__main__":
