@@ -32,7 +32,7 @@ This installs the locked npm dependencies when they are missing or out of date, 
 ./scripts/build/auto_build.sh
 ```
 
-The watcher ignores changes under `node_modules/`. The local server listens on port 8070.
+The watcher ignores changes under `node_modules/` and `.git/`. The local server listens on port 8070.
 
 ## Deploy
 
