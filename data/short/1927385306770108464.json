@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1927385306770108464",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "05/27/2025",
     "Content": "short/1927385306770108464.md",
     "Summary": "It's funny how people learn logical errors you can make, like causation vs correlation, y-axis problems, etc. median vs mean, and then just pattern match them without checking if they apply in the specific situation",

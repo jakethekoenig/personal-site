@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1889005999849459807",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "02/10/2025",
     "Content": "short/1889005999849459807.md",
     "Summary": "`gh pr view --web` is so much better than trying to find where the pr is already open in my tabs or navigate to it from the website. The internet was a mistake.",

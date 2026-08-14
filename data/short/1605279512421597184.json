@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1605279512421597184",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "12/20/2022",
     "Content": "short/1605279512421597184.md",
     "Summary": "svg editor? You mean vim?",

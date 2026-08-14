@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1950174066616213728",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "07/29/2025",
     "Content": "short/thread_1950174066616213728.md",
     "Summary": "I keep hearing orgs want \"subscriptions\" for \"predictable costs\". How is this for a solution: api pricing but you can configure max spend per individual per unit time\n\nMentat is still api + 19.5% whic...",

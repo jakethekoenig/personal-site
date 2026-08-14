@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1633989050683228160",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "03/10/2023",
     "Content": "short/1633989050683228160.md",
     "Summary": "Someone should make WASM but for vim",

@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1824610808267182228",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "08/17/2024",
     "Content": "short/1824610808267182228.md",
     "Summary": "The coolest thing about using vim in termux on your android phone is you can scroll it just like your newsfeed",

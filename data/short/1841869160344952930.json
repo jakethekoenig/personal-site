@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1841869160344952930",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "10/03/2024",
     "Content": "short/1841869160344952930.md",
     "Summary": "Has anyone tried using coffee instead of water in the LLMs?",

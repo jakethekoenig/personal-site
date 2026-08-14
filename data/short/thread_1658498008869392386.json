@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1658498008869392386",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "05/16/2023",
     "Content": "short/thread_1658498008869392386.md",
     "Summary": "I cannot get gpt-4 to write good tweets. I have yet to see an AI generated tweet I'd be proud to have twat\n\nMaybe the rlhfification pushes it to be too verbose? Maybe I'm too critical when I know it's...",

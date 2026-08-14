@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1922750732593254719",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "05/14/2025",
     "Content": "short/1922750732593254719.md",
     "Summary": "LLM code is often bad by try/catching more than it should but another way it is often bad is special casing things that don't need to be. Neither early return here changes the semantics of the function or make it meaningfully more efficient",

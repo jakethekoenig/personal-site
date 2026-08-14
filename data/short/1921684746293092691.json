@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1921684746293092691",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "05/11/2025",
     "Content": "short/1921684746293092691.md",
     "Summary": "I gave Claude desktop filesystem access told it I wanted to write a nvim mcp, alt tabbed and when I come back it wrote the whole thing without asking a single followup question?",

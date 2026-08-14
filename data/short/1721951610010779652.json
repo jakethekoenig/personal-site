@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1721951610010779652",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "11/07/2023",
     "Content": "short/1721951610010779652.md",
     "Summary": "We've seen similar results. For us gpt-4 gets 88/122 of the exercism javascript exercises right in 2 tries but only 84/122 for gpt-4-turbo.",

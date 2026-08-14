@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1595841366294425600",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "11/24/2022",
     "Content": "short/1595841366294425600.md",
     "Summary": "Twitter feature request: if I follow X and Y and X retweets Y don't show me that tweet twice",

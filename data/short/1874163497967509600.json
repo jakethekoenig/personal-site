@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1874163497967509600",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "12/31/2024",
     "Content": "short/1874163497967509600.md",
     "Summary": "No software is too simple to have a bug. My kettle has a race condition where after it finishes boiling and is in \"keep warm\" mode if I click the off button and remove it from the base before the ding finishes playing it is still in \"keep warm\" mode when returned to the base",

@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1691924252017213725",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "08/16/2023",
     "Content": "short/1691924252017213725.md",
     "Summary": "im tweeting from a node application running on termux. ur turning off auotcap on your iphone while I'm writing into a terminal. we r not the same",

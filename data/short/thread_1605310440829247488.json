@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1605310440829247488",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "12/20/2022",
     "Content": "short/thread_1605310440829247488.md",
     "Summary": "@sailaunderscore 2 already highlights the problem: You're imaging the AI as having motivations other than the reward we've specified. So maybe it understands it could take the reward but it's also alt...",

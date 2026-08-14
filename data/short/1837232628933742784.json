@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1837232628933742784",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "09/20/2024",
     "Content": "short/1837232628933742784.md",
     "Summary": "Historically I've hated comments in code because they get out of date and they're one more thing to maintain. But I wander if in the glorious LLM future the optimal amount of comments is far far greater",

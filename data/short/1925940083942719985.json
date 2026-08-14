@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1925940083942719985",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "05/23/2025",
     "Content": "short/1925940083942719985.md",
     "Summary": "nvim MCP is actually pretty cool",

@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1586105292055801856",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "10/28/2022",
     "Content": "short/1586105292055801856.md",
     "Summary": "You can get GitHub Copilot suggestions in vim command mode if you enter insert mode in it with &lt;C-f&gt; and then re-enter insert mode. This is not very useful because the AI doesn't have much context there",

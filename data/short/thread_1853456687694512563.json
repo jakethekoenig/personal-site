@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1853456687694512563",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "11/04/2024",
     "Content": "short/thread_1853456687694512563.md",
     "Summary": "@AdonAlternative er, maybe that's not right. You can define the crossing number for s, #{(i,j) | i&lt;j, s(i)&gt;s(j)} without reference to representation and then see that a single transposition must...",

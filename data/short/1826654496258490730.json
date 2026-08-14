@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1826654496258490730",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "08/22/2024",
     "Content": "short/1826654496258490730.md",
     "Summary": "password manager? You mean .zsh_history?",

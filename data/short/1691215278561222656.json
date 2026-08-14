@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1691215278561222656",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "08/14/2023",
     "Content": "short/1691215278561222656.md",
     "Summary": "Added stream completion to my GPT Vim plugin",

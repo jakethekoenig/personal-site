@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1867592005087367389",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "12/13/2024",
     "Content": "short/thread_1867592005087367389.md",
     "Summary": "It's so funny that OpenAI made a SWE-bench verified and no one has made the obvious observation that since agent performance on SWE-bench UNverified is decent the whole thing is contaminated to hell.\n...",

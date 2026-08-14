@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1585763044512403457",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "10/27/2022",
     "Content": "short/1585763044512403457.md",
     "Summary": "I added it to `ftplugin/gitcommit.vim`. Just to see how it feels.",

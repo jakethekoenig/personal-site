@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1604911646912413696",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "12/19/2022",
     "Content": "short/1604911646912413696.md",
     "Summary": "I should make a vim wrapped plugin",

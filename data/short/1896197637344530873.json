@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1896197637344530873",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "03/02/2025",
     "Content": "short/1896197637344530873.md",
     "Summary": "People asking how to exit vim is a classic XY program",

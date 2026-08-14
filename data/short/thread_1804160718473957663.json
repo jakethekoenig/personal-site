@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1804160718473957663",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "06/21/2024",
     "Content": "short/thread_1804160718473957663.md",
     "Summary": "Stripe has a strange mix of excellent and terrible docs\n\nIn their tutorial they mislabel their publishable api key as their secret api key. Either that or they say to put the secret api key in fronten...",

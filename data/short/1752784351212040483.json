@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1752784351212040483",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "01/31/2024",
     "Content": "short/1752784351212040483.md",
     "Summary": "im turning my workflow inside out. no more vim in the terminal. I will run the terminal in vim",

@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1792214105371345132",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "05/19/2024",
     "Content": "short/1792214105371345132.md",
     "Summary": "Enjoying sicp. I wish lisp was real",

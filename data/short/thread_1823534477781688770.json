@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1823534477781688770",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "08/14/2024",
     "Content": "short/thread_1823534477781688770.md",
     "Summary": "What's your favorite vim command?\n\nMines q\n\nTo be clear I mean record macro not quit",

@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1362810146204827651",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "02/19/2021",
     "Content": "short/1362810146204827651.md",
     "Summary": "I'm this close to putting my duo on an android sim on a VM with a Java Robot which always clicks approve.",

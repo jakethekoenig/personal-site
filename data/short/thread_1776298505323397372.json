@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1776298505323397372",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "04/05/2024",
     "Content": "short/thread_1776298505323397372.md",
     "Summary": "Coming together\n\nIf you want to try it out here's the repo: Not sure if I'll do much more with it. Might be nice to give it \"see the buffer/register\" functions so it could do longer scoped tasks that ...",

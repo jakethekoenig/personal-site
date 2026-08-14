@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1845628676295324009",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "10/14/2024",
     "Content": "short/thread_1845628676295324009.md",
     "Summary": "Why is it conventional to write a program across multiple files?\n\nYou want to be able to build up an understanding of a program piece by piece but couldn't those pieces be functions/classes all define...",

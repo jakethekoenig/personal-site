@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1825012287385854265",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "08/18/2024",
     "Content": "short/1825012287385854265.md",
     "Summary": "Since I talk to LLMs in a big text document after they help me I type out \"thank you\" and don't request a completion",

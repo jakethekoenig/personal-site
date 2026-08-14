@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1906731727441297424",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "03/31/2025",
     "Content": "short/thread_1906731727441297424.md",
     "Summary": "I opened 4 PRs before 6:30 am today\n\nEvery one of them a fix for a bug I made coding super sleep deprived",

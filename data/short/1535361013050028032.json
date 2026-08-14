@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1535361013050028032",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "06/10/2022",
     "Content": "short/1535361013050028032.md",
     "Summary": "Made a workflowy inspired vim plugin:",

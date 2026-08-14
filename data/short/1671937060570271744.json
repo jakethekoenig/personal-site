@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1671937060570271744",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "06/22/2023",
     "Content": "short/1671937060570271744.md",
     "Summary": "Zero days since I've found a + that should be a - in my autotrading logic.",

@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1867592003652927951",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "12/13/2024",
     "Content": "short/thread_1867592003652927951.md",
     "Summary": "It's so funny that Devin popularized SWE-bench which no one had ever heard of. And now even Anthropic and Google report their numbers. But not Devin. Because it's a garbage benchmark and no one cares ...",

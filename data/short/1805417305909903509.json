@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1805417305909903509",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "06/25/2024",
     "Content": "short/1805417305909903509.md",
     "Summary": "Every time I work on frontend I'll make a little component or styling and think \"this is clearly off I'm doing it wrong\" and then see it everywhere",

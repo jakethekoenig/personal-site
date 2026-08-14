@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1818334111628771670",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "07/30/2024",
     "Content": "short/1818334111628771670.md",
     "Summary": "Working on llm codegen feels a bit like trying to build a faster horse",

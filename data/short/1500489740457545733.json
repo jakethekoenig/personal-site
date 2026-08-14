@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1500489740457545733",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "03/06/2022",
     "Content": "short/1500489740457545733.md",
     "Summary": "I made a price notification service for some prediction markets.",

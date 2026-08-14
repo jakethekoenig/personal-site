@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1853834725695357017",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "11/05/2024",
     "Content": "short/1853834725695357017.md",
     "Summary": "There are too many bad llm naming things to notice all of them but it being claude-3-5-haiku-20241022 via api is really the cherry on top.",

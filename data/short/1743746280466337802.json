@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1743746280466337802",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "01/06/2024",
     "Content": "short/1743746280466337802.md",
     "Summary": "I get software engineering with types. I get software engineering without types. But how does with types but no generics work? You just cast whenever you get something out of a list? Doesn't that defeat the purpose?",

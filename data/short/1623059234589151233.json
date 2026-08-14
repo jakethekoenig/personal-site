@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1623059234589151233",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "02/07/2023",
     "Content": "short/1623059234589151233.md",
     "Summary": "til that python and node also store my command history in dot files in ~",

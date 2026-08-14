@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1800894839413957051",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "06/12/2024",
     "Content": "short/thread_1800894839413957051.md",
     "Summary": "The model takes in text and outputs text. There needs to be some kind of layer to get the model to do useful work. Maybe at present its difficult to get useful work out and shortly it'll be trivial. A...",

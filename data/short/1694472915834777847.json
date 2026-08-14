@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1694472915834777847",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "08/23/2023",
     "Content": "short/1694472915834777847.md",
     "Summary": "My most important coding interview tip is to not learn what a priority queue is. Can't accidentally add log factors if you don't know how.",

@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1920905881832636840",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "05/09/2025",
     "Content": "short/1920905881832636840.md",
     "Summary": "After a few weeks in the same vim session I start encountering bugs where I can't open new terminals and the system clipboard stops working.",

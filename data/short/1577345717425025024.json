@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1577345717425025024",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "10/04/2022",
     "Content": "short/1577345717425025024.md",
     "Summary": "Today I learned about anacron. Nice.",

@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1834739218570264596",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "09/13/2024",
     "Content": "short/thread_1834739218570264596.md",
     "Summary": "I haven't been able to install bcrypt or the SQLite driver so I haven't been able to fully test it but it looks like it mostly did what I want\n\nThe code is horrible but I don't read that\n\nOops I linke...",

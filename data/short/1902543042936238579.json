@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1902543042936238579",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "03/20/2025",
     "Content": "short/1902543042936238579.md",
     "Summary": "Something that I think helps get better results from Claude is making it clear you're willing and able to run any commands it gives you",

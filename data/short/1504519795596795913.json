@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1504519795596795913",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "03/17/2022",
     "Content": "short/1504519795596795913.md",
     "Summary": "Add this to your bashrc to be an ally: alias person='man'",

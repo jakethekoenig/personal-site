@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1653424083244294146",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "05/02/2023",
     "Content": "short/1653424083244294146.md",
     "Summary": "visionary of clojure to provide no zip function and instead make map n-ary",

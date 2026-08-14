@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1925364577812029781",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "05/22/2025",
     "Content": "short/1925364577812029781.md",
     "Summary": "The goal is simple. To compute the transitive closure of all our knowledge",

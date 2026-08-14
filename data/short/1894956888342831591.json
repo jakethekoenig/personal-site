@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1894956888342831591",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "02/27/2025",
     "Content": "short/1894956888342831591.md",
     "Summary": "LMAO when you use vim on a touchscreen and scroll it sends literal &lt;c-e&gt; and &lt;c-y&gt;. Don't know what I expected. Guess I shouldn't have remapped &lt;c-y&gt;",

@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1701999194834411735",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "09/13/2023",
     "Content": "short/1701999194834411735.md",
     "Summary": "There's a cost to talking to GPT via API in vim but it's well worth it",

@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1694097950165913776",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "08/22/2023",
     "Content": "short/1694097950165913776.md",
     "Summary": "I keep notes in a github repo that's automatically committed and pushed on any change. I feel weird about it since it wasn't at all my intention to game my github board but it is very green.",

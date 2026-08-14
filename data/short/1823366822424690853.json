@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1823366822424690853",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "08/13/2024",
     "Content": "short/1823366822424690853.md",
     "Summary": "My eyes glaze over whenever I see an LLM \"jailbreak\". Oh cool you put some weird text in and got some weird text out.",

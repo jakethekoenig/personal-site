@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1763606582775144552",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "03/01/2024",
     "Content": "short/thread_1763606582775144552.md",
     "Summary": "Two pro tips for people who use my gpt vim plugin: nnoremap &lt;leader&gt;c ?```&lt;CR&gt;jvNk$\"ty:vnew&lt;CR&gt;i&lt;Esc&gt;\"tp:w! &lt;CR&gt; nnoremap &lt;leader&gt;i :let currentfile = @% \\| new \\| ...",

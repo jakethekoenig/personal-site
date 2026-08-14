@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1939372151808962826",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "06/29/2025",
     "Content": "short/thread_1939372151808962826.md",
     "Summary": "It's often said modern software is slow because devs don't know what they're doing and we've inserted one too many layers of abstractions. And maybe there's some truth to that. But an underrated expla...",

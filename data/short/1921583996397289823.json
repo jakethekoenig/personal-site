@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1921583996397289823",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "05/11/2025",
     "Content": "short/1921583996397289823.md",
     "Summary": "Reading anthropic docs and discovered a very nice LLM affordance",

@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1825656721945276539",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "08/19/2024",
     "Content": "short/thread_1825656721945276539.md",
     "Summary": "Is there a way that get LLM apis to tokenize inefficiently in a per token way for some sections? I have a theory this will make them understand my vim keylogger better in normal mode\n\n*per character w...",

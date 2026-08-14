@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1583861528117510144",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "10/22/2022",
     "Content": "short/1583861528117510144.md",
     "Summary": "It's not enough that your application implements the most common vim keybindings. You must parse my vimrc and interpret what all the flags should mean in your context.",

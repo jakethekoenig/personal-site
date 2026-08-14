@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1569822675354402816",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "09/13/2022",
     "Content": "short/thread_1569822675354402816.md",
     "Summary": "What's the best way to send myself an Android push notification with a Post request?\n\nI should probably just use email",

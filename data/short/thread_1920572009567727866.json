@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1920572009567727866",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "05/08/2025",
     "Content": "short/thread_1920572009567727866.md",
     "Summary": "The best benchmarks are the ones that confirm what you always knew in your heart: Sonnet 3.7 is the best model and a big jump over 3.6\n\nWith 3.6 it was so important to cutoff your agent and start over...",

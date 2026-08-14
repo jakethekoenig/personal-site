@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1892650429466521748",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "02/20/2025",
     "Content": "short/1892650429466521748.md",
     "Summary": "The missing UX for voice transcription is a way to easily edit while you're talking. Even just to add punctuation. I guess voice transcription and LLM prompting are a perfect match because the grammar/typos matter a lot less.",

@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1878537993486839857",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "01/12/2025",
     "Content": "short/1878537993486839857.md",
     "Summary": "! is such a good git branch name: `git push origin !` `git checkout !` It makes you really excited to use git!",

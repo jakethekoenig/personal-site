@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1816157082481242321",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "07/24/2024",
     "Content": "short/1816157082481242321.md",
     "Summary": "You'd think LLMs would make esoteric vim knowledge less valuable as we move up the abstraction ladder but someone it feels even more natural. Text is the universal interface. Everything is a buffer.",

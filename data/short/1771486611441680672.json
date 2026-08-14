@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1771486611441680672",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "03/23/2024",
     "Content": "short/1771486611441680672.md",
     "Summary": "It's happening. My github bot's contributions to its own repo are going exponential",

@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1838057593652253171",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "09/23/2024",
     "Content": "short/1838057593652253171.md",
     "Summary": "Changing the line limit on this python project to 48 so it looks good on termux",

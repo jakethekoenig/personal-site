@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1845646582164930796",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "10/14/2024",
     "Content": "short/1845646582164930796.md",
     "Summary": "I'd define reasoning as computing the transitive closure of your knowledge",

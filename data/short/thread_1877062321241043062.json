@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1877062321241043062",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "01/08/2025",
     "Content": "short/thread_1877062321241043062.md",
     "Summary": "HiSTorY\n\nReverse search in my python interpreter has been broken and I always assumed it was a problem somewhere in zsh/vim/tmux (even though it worked with psql) but I'm realizing I probably fucked u...",

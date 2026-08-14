@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1768090641752592730",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "03/14/2024",
     "Content": "short/1768090641752592730.md",
     "Summary": "Reading, writing and running code is a substantial part of a SWE's job",

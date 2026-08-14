@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1798394926268625220",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "06/05/2024",
     "Content": "short/1798394926268625220.md",
     "Summary": "I'm running my shell in a vim buffer and I'm pretty sure copilot is using the output to make suggestions in other buffers",

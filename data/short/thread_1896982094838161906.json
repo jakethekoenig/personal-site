@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1896982094838161906",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "03/04/2025",
     "Content": "short/thread_1896982094838161906.md",
     "Summary": "@moultano All this discussion of bishops made me realize the obvious generalization of rooks is also wrong. Bishops should be able to move along the span of any vector of 1,0,-1 with entries summing t...",

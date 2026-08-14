@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1258822927488712706",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "05/08/2020",
     "Content": "short/1258822927488712706.md",
     "Summary": "The variance of MTG is bounded above by 1/4:",

@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1601932866866540547",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "12/11/2022",
     "Content": "short/1601932866866540547.md",
     "Summary": "This reminds me of the knapsack problem. The first time I solved it it took hours and ~50 loc and only worked for American coins. The second time it took 2 LoC and a minute.",

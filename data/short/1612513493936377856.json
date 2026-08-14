@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1612513493936377856",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "01/09/2023",
     "Content": "short/1612513493936377856.md",
     "Summary": "What would be cool re long form tweets if replies to tweets in a thread were easier to see. Maybe when you click a tweet in a thread you should be able to swipe left to compress the thread and see replies to the selected tweet. Instead of having to scroll past the thread.",

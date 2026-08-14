@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1936574215555285039",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "06/21/2025",
     "Content": "short/thread_1936574215555285039.md",
     "Summary": "Like every day I see bugs on this site that I'd be happy to solve within ~3 months of being hired at a company as big as X but would probably be a couple line change once I understood the problem\n\nAt ...",

@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1923499452104573251",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "05/16/2025",
     "Content": "short/thread_1923499452104573251.md",
     "Summary": "Should have done it a long time ago. I actually solved issue #165 doing it (we're in the 3000s now). But the GitHub auth story around images is complicated. There's actually no way for an App to get a...",

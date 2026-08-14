@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1871926304385462414",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "12/25/2024",
     "Content": "short/thread_1871926304385462414.md",
     "Summary": "The only go-to def you need is `gd^wgfn` (usually works in vim with python)\n\nAlso you might think this only works for declarations in your project but if the site_modules are in your path it happily f...",

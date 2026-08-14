@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1483759157421522944",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "01/19/2022",
     "Content": "short/1483759157421522944.md",
     "Summary": "Browsers shouldn't even have a close tab button",

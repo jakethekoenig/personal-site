@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1946538217618166163",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "07/19/2025",
     "Content": "short/1946538217618166163.md",
     "Summary": "Joys of talking to llms in nvim. typescript's hecking requirements",

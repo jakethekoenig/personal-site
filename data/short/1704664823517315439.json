@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1704664823517315439",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "09/21/2023",
     "Content": "short/1704664823517315439.md",
     "Summary": "I don't have a custom instruction for GPT but in the UI I use to talk to it I can interrupt it by typing which I think gives most of the benefits of a \"please be direct\" system prompt",

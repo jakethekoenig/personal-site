@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1818073374238871662",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "07/29/2024",
     "Content": "short/thread_1818073374238871662.md",
     "Summary": "I should really learn Lua and stop writing my vim config in vim script but part of me still thinks I may go back\n\nI only switched for copilot support but copilot sorta sucks",

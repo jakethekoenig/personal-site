@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1825724570017608067",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "08/20/2024",
     "Content": "short/1825724570017608067.md",
     "Summary": "People make up and make fun of a \"swe that tinkers with their ssg/cms and never posts except rarely about that. But I did make my own ssg/cms and host on S3 and have written &gt;100k words a across 97 posts So that's what I think about when people say things like \"don't learn vim,…",

@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1541612573971271680",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "06/28/2022",
     "Content": "short/1541612573971271680.md",
     "Summary": "gx works in vim on termux too. What a delight",

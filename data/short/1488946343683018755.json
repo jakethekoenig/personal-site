@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1488946343683018755",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "02/02/2022",
     "Content": "short/1488946343683018755.md",
     "Summary": "Part of the problem of making self driving cars is literally everyone drives illegally. It's weird to codify law breaking into software but it's also weird to make a car that doesn't drive like everyone else.",

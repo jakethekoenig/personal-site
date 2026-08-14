@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1687674431538413568",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "08/05/2023",
     "Content": "short/1687674431538413568.md",
     "Summary": "Tweeting via the API while that's still free. Testing 123.",

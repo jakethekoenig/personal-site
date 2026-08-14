@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1702737818836169037",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "09/15/2023",
     "Content": "short/1702737818836169037.md",
     "Summary": "Looking up the definition of idempotent is idempotent",

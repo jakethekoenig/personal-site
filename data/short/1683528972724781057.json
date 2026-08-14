@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1683528972724781057",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "07/24/2023",
     "Content": "short/1683528972724781057.md",
     "Summary": "I hate how some languages reserve true and others True. All languages should reserve all capitalizations of true and false. With the caveat that TrUe and tRuE should be false for consistency with memes.",

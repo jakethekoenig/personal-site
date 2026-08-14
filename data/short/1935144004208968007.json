@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1935144004208968007",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "06/18/2025",
     "Content": "short/1935144004208968007.md",
     "Summary": "Not great running a service whose uptime is the intersection of Anthropic and GitHub's",

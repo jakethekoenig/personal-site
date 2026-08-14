@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1762301784704598253",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "02/27/2024",
     "Content": "short/1762301784704598253.md",
     "Summary": "Friendship with `pip install numpy` ended. `gpt write vectorlibrary` is my new best friend.",

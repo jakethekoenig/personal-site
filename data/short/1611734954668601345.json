@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1611734954668601345",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "01/07/2023",
     "Content": "short/1611734954668601345.md",
     "Summary": "Made my first recursive vim macro today only to discover this breaks @@. Sad!",

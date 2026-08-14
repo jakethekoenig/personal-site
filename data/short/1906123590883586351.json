@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1906123590883586351",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "03/29/2025",
     "Content": "short/1906123590883586351.md",
     "Summary": "The anthropic outages are due to Claude clicking the button",

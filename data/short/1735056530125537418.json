@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1735056530125537418",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "12/13/2023",
     "Content": "short/1735056530125537418.md",
     "Summary": "These people aren't joking about baking safety into their products. What is this api? At least give me the logprob on HARM_CATEGORY_DEROGATORY",

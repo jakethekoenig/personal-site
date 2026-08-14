@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1806344991528341644",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "06/27/2024",
     "Content": "short/thread_1806344991528341644.md",
     "Summary": "I made this tweet the day we got SWE-bench setup and actually solved the first issue on the first try and then 3 out of the first 5. That turned out not to be representative. But we still got good res...",

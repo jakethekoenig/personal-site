@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1829181840588144642",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "08/29/2024",
     "Content": "short/thread_1829181840588144642.md",
     "Summary": "wow base models are strange. I thought if I concatenated my blog posts with a consistent delimiter it would at least get the markdown/delimiter. But it quickly goes off the rails, breaks into japanese...",

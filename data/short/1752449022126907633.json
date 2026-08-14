@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1752449022126907633",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "01/30/2024",
     "Content": "short/1752449022126907633.md",
     "Summary": "while you are renaming master to main I'm adding `--dry-run` to rawdog",

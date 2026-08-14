@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1819005521061630404",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "08/01/2024",
     "Content": "short/thread_1819005521061630404.md",
     "Summary": "I like the idea of more special purpose LLM companions. With Gemma you could probably sell a device that does inference locally for &lt;$50. I want a google home esque device in my office that says \"l...",

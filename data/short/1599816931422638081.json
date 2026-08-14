@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1599816931422638081",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "12/05/2022",
     "Content": "short/1599816931422638081.md",
     "Summary": "Thanks to OSS I could easily run a Twitter replacement with a team of &lt;10. For example I'd use: - Bootstrap for the frontend - Pelikan for the cache",

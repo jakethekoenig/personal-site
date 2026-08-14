@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1691275791244599296",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "08/15/2023",
     "Content": "short/1691275791244599296.md",
     "Summary": "Someone should make a Twitter algo that sorts tweets by quality. Is anyone working on this?",

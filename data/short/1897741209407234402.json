@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1897741209407234402",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "03/06/2025",
     "Content": "short/1897741209407234402.md",
     "Summary": "If I'm understanding MCP right it's a gpt wrapper wrapper",

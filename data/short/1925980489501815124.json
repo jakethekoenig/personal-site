@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1925980489501815124",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "05/23/2025",
     "Content": "short/1925980489501815124.md",
     "Summary": "Giving claude desk top a nvim mcp is like building the worlds worst claude code",

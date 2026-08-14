@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1845835439112172015",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "10/14/2024",
     "Content": "short/thread_1845835439112172015.md",
     "Summary": "Had a cool moment on stream where I was reviewing its PR and before I submitted the review it pushed another commit fixing most of my feedback. But overall more frustrating than delightful",

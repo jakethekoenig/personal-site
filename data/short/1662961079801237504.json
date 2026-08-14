@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1662961079801237504",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "05/28/2023",
     "Content": "short/1662961079801237504.md",
     "Summary": "Twitter is no longer rendering the send tweet button on my timeline. Probably for the best but I found a workaround",

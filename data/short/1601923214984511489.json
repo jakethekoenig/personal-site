@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1601923214984511489",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "12/11/2022",
     "Content": "short/1601923214984511489.md",
     "Summary": "I was going to post my Tmux Pomodoro Extension to r/tmux bc I love self promotion. I read through the recent posts first to make sure it was on topic and like the 3rd post was another pomodoro extension",

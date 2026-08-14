@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1737219024365462005",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "12/19/2023",
     "Content": "short/1737219024365462005.md",
     "Summary": "Rich Hickey will always be a hero to me for taking all the commas and colons out of json",

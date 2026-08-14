@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1803820794058772760",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "06/20/2024",
     "Content": "short/1803820794058772760.md",
     "Summary": "Every couple of weeks I have to restart vim when I have around ~4k buffers open. I need a bigger computer.",

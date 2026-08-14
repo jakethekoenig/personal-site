@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1583896457022967808",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "10/22/2022",
     "Content": "short/thread_1583896457022967808.md",
     "Summary": "Why was Moore's law exponential? My best explanation is: rate of improvement ∝ investment ∝ usefulness ∝ computer speed But it sort of predicts everything that can be improved will improve exponential...",

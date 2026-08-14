@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1696984174597689690",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "08/30/2023",
     "Content": "short/1696984174597689690.md",
     "Summary": "Made a vim plugin to talk to my computer. Work in progress.",

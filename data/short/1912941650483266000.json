@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1912941650483266000",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "04/17/2025",
     "Content": "short/1912941650483266000.md",
     "Summary": "I'm cool with calling the default branch `master` but do we really need to prefix all the feature branches `slave-`?",

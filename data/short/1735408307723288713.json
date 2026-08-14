@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1735408307723288713",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "12/14/2023",
     "Content": "short/1735408307723288713.md",
     "Summary": "I came here to gradient descend and predict the next token. And I'm all out of gradients.",

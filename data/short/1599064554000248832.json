@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1599064554000248832",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "12/03/2022",
     "Content": "short/1599064554000248832.md",
     "Summary": "I'm going to stream myself catching up on Advent of Code in an hour at 8:30 PST at",

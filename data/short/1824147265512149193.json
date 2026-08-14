@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1824147265512149193",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "08/15/2024",
     "Content": "short/1824147265512149193.md",
     "Summary": "I have 564453 total lines open in vim buffers rn. Big \"That's it?\" moment",

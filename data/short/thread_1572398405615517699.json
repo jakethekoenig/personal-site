@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1572398405615517699",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "09/21/2022",
     "Content": "short/thread_1572398405615517699.md",
     "Summary": "Got the GPT-3 API running on termux. What should I do?\n\nAsked GPT-3 since it has to answer but it didn't seem to have any good ideas",

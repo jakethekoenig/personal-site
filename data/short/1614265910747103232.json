@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1614265910747103232",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "01/14/2023",
     "Content": "short/1614265910747103232.md",
     "Summary": "I wish chrome had panes like tmux. Does this mean I need a tiling window manager?",

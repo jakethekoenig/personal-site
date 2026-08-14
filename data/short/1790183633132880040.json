@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1790183633132880040",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "05/14/2024",
     "Content": "short/1790183633132880040.md",
     "Summary": "The old gpt voice mode had 5 voice assistants. Since this one is \"end to end\" will it be configurable by drop down? I suppose you could put \"talk like a man\" or maybe even \"talk like Sam Altman\" in the system prompt?",

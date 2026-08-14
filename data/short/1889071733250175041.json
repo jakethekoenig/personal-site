@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1889071733250175041",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "02/10/2025",
     "Content": "short/1889071733250175041.md",
     "Summary": "Pushing a commit on top of a coworker's PR and then approving it",

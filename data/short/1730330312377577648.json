@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1730330312377577648",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "11/30/2023",
     "Content": "short/1730330312377577648.md",
     "Summary": "I only talk to gpt via api so I'm missing out on all the degradations everyone is always complaining about.",

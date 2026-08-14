@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1630679721838284800",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "02/28/2023",
     "Content": "short/1630679721838284800.md",
     "Summary": "My laptop was running with the lid closed for 4 days and I came to this strange error text floating in a vim buffer.",

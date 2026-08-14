@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1845550069837373927",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "10/13/2024",
     "Content": "short/thread_1845550069837373927.md",
     "Summary": "Possibly dumb idea but has anyone ever tried to make an abstract syntax tree aware version control system?\n\nPros: have more powerful tools to visualize the evolution of the program Cons: can't support...",

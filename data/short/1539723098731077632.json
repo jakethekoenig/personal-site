@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1539723098731077632",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "06/22/2022",
     "Content": "short/1539723098731077632.md",
     "Summary": "Should I switch to neovim for github copilot?",

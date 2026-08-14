@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1953835228675641466",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "08/08/2025",
     "Content": "short/thread_1953835228675641466.md",
     "Summary": "We are not post-eval in the sense that rigorous evaluation of models no longer matters But we are post-eval in the sense that no evals that people talked about a year ago matter anymore. And there are...",

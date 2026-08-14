@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1932545734685147444",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "06/10/2025",
     "Content": "short/1932545734685147444.md",
     "Summary": "When I get to around 4000 files open in nvim I start encountering strange bugs",

@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1602087812102524928",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "12/11/2022",
     "Content": "short/1602087812102524928.md",
     "Summary": "Billion dollar UI idea: when you click a confirm e-mail link, gmail deletes that e-mail.",

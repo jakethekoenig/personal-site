@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1963720182318448682",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "09/04/2025",
     "Content": "short/1963720182318448682.md",
     "Summary": "All the Mentat agent transcripts are viewable by anyone added to the repository installation. It's sort of like they're the \"repository's agents\" not the \"user's agents\". Though in practice people mostly only interact with agents they start.",

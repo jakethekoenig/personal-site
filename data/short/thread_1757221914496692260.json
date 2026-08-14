@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1757221914496692260",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "02/13/2024",
     "Content": "short/thread_1757221914496692260.md",
     "Summary": "At my last job I debugged a subtle race condition in obsofucated js and I made no progress with a debugger for a long time but eventually sufficient print statements made it obvious.\n\nThis might be a ...",

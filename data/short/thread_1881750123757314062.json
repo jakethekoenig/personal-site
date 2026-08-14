@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1881750123757314062",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "01/21/2025",
     "Content": "short/thread_1881750123757314062.md",
     "Summary": "I wrote a blog post about our decision to write a GitHub bot instead of an editor. Leads to better: - Async work - Collaboration\n\nLink:\n\nBuilding an editor feels a little bit like making a faster hors...",

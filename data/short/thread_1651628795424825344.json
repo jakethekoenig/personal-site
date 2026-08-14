@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1651628795424825344",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "04/27/2023",
     "Content": "short/thread_1651628795424825344.md",
     "Summary": "Preference for extreme verbosity is sort of a mental illness but I really appreciate clojure omitting all colons and commas from its dictionary syntax\n\nCommas in written math make sense as a bad handw...",

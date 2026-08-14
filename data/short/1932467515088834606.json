@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1932467515088834606",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "06/10/2025",
     "Content": "short/1932467515088834606.md",
     "Summary": "wtf when I run `seq 1 10000` I can only scroll back to around ~3500. I think I'll spend today getting to the bottom of that instead of my job",

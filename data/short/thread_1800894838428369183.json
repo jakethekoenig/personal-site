@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1800894838428369183",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "06/12/2024",
     "Content": "short/thread_1800894838428369183.md",
     "Summary": "I don't get all the hate on gpt wrappers. It seems likely to me that value won't accumulate in the model layer. There's so much competition\n\nThe model takes in text and outputs text. There needs to be...",

@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1849174504846893139",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "10/23/2024",
     "Content": "short/1849174504846893139.md",
     "Summary": "The bot is smarter than me. I was thinking \"why would it change the ' to \", that's not our style but of course it's necessary for the ' in the string",

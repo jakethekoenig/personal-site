@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1623368984908406784",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "02/08/2023",
     "Content": "short/thread_1623368984908406784.md",
     "Summary": "when i type a vim/tmux/shell command from memory for the first time I feel some of my humanity slip away\n\nToday it's tabonly\n\nHonestly I shouldn't use tabs but I'm terminally chrome brained. Trying to...",

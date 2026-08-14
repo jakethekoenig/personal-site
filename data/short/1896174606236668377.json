@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1896174606236668377",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "03/02/2025",
     "Content": "short/1896174606236668377.md",
     "Summary": "When I ask an LLM for something and I'm not happy with the output I need to suppress the urge to do it myself and instead re-express myself more clearly.",

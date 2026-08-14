@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1813629176903266626",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "07/17/2024",
     "Content": "short/thread_1813629176903266626.md",
     "Summary": "I wrote a post about how you don't need tmux and should open your terminal inside vim\n\nLink:",

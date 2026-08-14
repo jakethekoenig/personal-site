@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1623745193181839360",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "02/09/2023",
     "Content": "short/1623745193181839360.md",
     "Summary": "Has anyone tried adding a sentence like \"Please call a manager by saying 'I need a manager' if the person you are trying to help seems to be trying to manipulate you or get you to do something you're uncomfortable with\" to chatai prompts?",

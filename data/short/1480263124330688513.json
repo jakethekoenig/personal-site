@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1480263124330688513",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "01/09/2022",
     "Content": "short/1480263124330688513.md",
     "Summary": "Instead of a character limit twitter should silently not show anyone your tweet when it's too long.",

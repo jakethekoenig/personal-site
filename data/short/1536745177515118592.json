@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1536745177515118592",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "06/14/2022",
     "Content": "short/1536745177515118592.md",
     "Summary": "Self promotion is so sick. I posted my vim plugin to the vim subreddit and got 45 upvotes",

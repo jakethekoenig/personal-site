@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1818810064033267871",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "08/01/2024",
     "Content": "short/1818810064033267871.md",
     "Summary": "I do all my LLM chatting in one file in vim and I had to archive it and start another when it started lagging vim around 36k lines. Up to 6k in the next one",

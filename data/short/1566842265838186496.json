@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1566842265838186496",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "09/05/2022",
     "Content": "short/1566842265838186496.md",
     "Summary": "How hard would it be to have your webcam know if you were looking at the right or left of your screen and automatically give keyboard focus to the application on that side?",

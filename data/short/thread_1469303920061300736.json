@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1469303920061300736",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "12/10/2021",
     "Content": "short/thread_1469303920061300736.md",
     "Summary": "@zswitten @eigenrobot I agree there's no stable algorithm we'd all agree optimizes for the most true/relevant results. But I don't think this implies that all approaches are equally good/fair. Or that...",

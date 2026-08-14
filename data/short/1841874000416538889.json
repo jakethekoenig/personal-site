@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1841874000416538889",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "10/03/2024",
     "Content": "short/1841874000416538889.md",
     "Summary": "Making a AR app that detects when people pause and then when they start talking again displays \"thought for 4.2s\" under them",

@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1527434042504888338",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "05/19/2022",
     "Content": "short/1527434042504888338.md",
     "Summary": "Phones are unbelievably addictive. Somehow it's easier for me to focus on programming in termux than on my 32\" monitor?",

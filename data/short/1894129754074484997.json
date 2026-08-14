@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1894129754074484997",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "02/24/2025",
     "Content": "short/1894129754074484997.md",
     "Summary": "When you ssh into your desktop computer's tmux session from your phone it makes your terminal look like the american flag",

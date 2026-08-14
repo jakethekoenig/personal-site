@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1818477348788093357",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "07/31/2024",
     "Content": "short/1818477348788093357.md",
     "Summary": "My wife got me a postgres book from the library and I'm learning you can write python functions in the database? Python in your database? It's more likely than you think",

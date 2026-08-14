@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1318905745434398720",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "10/21/2020",
     "Content": "short/thread_1318905745434398720.md",
     "Summary": "Just spent longer than I'd like to admit trying to figure out why my tablet wasn't writing in gimp when the problem was the color was set to white.\n\nWhy does gimp keep track of different colors for di...",

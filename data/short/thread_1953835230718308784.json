@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1953835230718308784",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "08/08/2025",
     "Content": "short/thread_1953835230718308784.md",
     "Summary": "Even benchmarks that don't look saturated e.g. swe bench are so low quality that further improvements probably aren't even desirable\n\nThe labs are most incentivized to produce high quality benchmarks ...",

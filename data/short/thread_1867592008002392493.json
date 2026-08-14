@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1867592008002392493",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "12/13/2024",
     "Content": "short/thread_1867592008002392493.md",
     "Summary": "The only benchmark that matter is is the agent writing itself. If it's not then it doesn't work.\n\n@paulgauthier's \"aider wrote x% of this release\" is the most important number in the field",

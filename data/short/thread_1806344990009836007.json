@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1806344990009836007",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "06/27/2024",
     "Content": "short/thread_1806344990009836007.md",
     "Summary": "For the last few months I’ve been working at Abante on a github bot that solves issues and reviews PRs. Today it’s generally available and we’re announcing we benchmarked 38.3% on SWE-bench lite\n\nI ma...",

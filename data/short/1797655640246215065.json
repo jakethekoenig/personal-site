@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1797655640246215065",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "06/03/2024",
     "Content": "short/1797655640246215065.md",
     "Summary": "life pro tip: after doing something in the repl open ~/.python_history and copy what you wrote to a script",

@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1874259422731805117",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "01/01/2025",
     "Content": "short/1874259422731805117.md",
     "Summary": "It's 2025 and auto complete on my phone keyboard isn't using a 1B LLM",

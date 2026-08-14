@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1632171141644304385",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "03/05/2023",
     "Content": "short/1632171141644304385.md",
     "Summary": "Programming is a lot of `apt get`, `npm install`, `pip install`, `git clone`... and now Termux is taking up 7 GB on my phone",

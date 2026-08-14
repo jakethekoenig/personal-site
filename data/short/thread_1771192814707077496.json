@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1771192814707077496",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "03/22/2024",
     "Content": "short/thread_1771192814707077496.md",
     "Summary": "Holy shit: if you're using a terminal in a vim buffer than you can `setlocal spell`\n\nVery useful if you're tweeting from a cli",

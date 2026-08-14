@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1831434215071871469",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "09/04/2024",
     "Content": "short/thread_1831434215071871469.md",
     "Summary": "Like few humans could read just my code and error message and propose a fix. And NO human could do it for the same range of source files and at the same speed.\n\nBut you can't (yet, easily) give it an ...",

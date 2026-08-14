@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1941560139640864959",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "07/05/2025",
     "Content": "short/1941560139640864959.md",
     "Summary": "Mentat's been charging for usage (API + markup) since January. It was already obvious then it was the only model that made sense.",

@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1947319457027944593",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "07/21/2025",
     "Content": "short/thread_1947319457027944593.md",
     "Summary": "It actually seems like a really cool future where you just write the API and your server just returns the OpenAPI client and maybe some docs about how the service works and the user's client generates...",

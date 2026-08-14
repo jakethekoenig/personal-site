@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1608234592741502977",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "12/28/2022",
     "Content": "short/thread_1608234592741502977.md",
     "Summary": "I write blogs and notes in vim and I don't turn copilot off. I'm constantly surprised by the little things it knows for example the authors of books and their themes.\n\nAlso it always wants me to write...",

@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1715908925537898954",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "10/22/2023",
     "Content": "short/1715908925537898954.md",
     "Summary": "Foom will occur as soon as OpenAI puts their API docs in the training set",

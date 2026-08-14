@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1769375481101717646",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "03/17/2024",
     "Content": "short/1769375481101717646.md",
     "Summary": "Who knew designing data intensive applications could be so much fun",

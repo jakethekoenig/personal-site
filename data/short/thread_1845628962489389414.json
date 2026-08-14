@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1845628962489389414",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "10/14/2024",
     "Content": "short/thread_1845628962489389414.md",
     "Summary": "You want to be able to build up an understanding of a program piece by piece but couldn't those pieces be functions/classes all defined in one file?\n\nModularity as in the ability to use one piece with...",

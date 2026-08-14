@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1947319458516926922",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "07/21/2025",
     "Content": "short/thread_1947319458516926922.md",
     "Summary": "User's could have a prompt describing their preferences. Maybe even a component library so e.g. buttons could be the same on every site.\n\nObviously you'd want it cached so calls after the first are fa...",

@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1527320822217871360",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "05/19/2022",
     "Content": "short/1527320822217871360.md",
     "Summary": "Termux is a delight, I'm never touching a keyboard again:",

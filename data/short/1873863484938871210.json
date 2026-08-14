@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1873863484938871210",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "12/30/2024",
     "Content": "short/1873863484938871210.md",
     "Summary": "What do you think of omitting the trailing `return False` in this toy function because `None` is False-y?",

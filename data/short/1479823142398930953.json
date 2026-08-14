@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1479823142398930953",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "01/08/2022",
     "Content": "short/1479823142398930953.md",
     "Summary": "@fitbit I really like the smart wake alarm feature. You should make a smart no wake alarm feature where if it detects your sleep quality was bad enough it cancels the alarm.",

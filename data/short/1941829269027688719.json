@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1941829269027688719",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "07/06/2025",
     "Content": "short/1941829269027688719.md",
     "Summary": "What I really want from my notes is it's just a text file on desktop so I can use vim motions/sync with git etc. but on my phone I can drag to re-order, collapse, and check with a nice touch interface",

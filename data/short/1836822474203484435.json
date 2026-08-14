@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1836822474203484435",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "09/19/2024",
     "Content": "short/1836822474203484435.md",
     "Summary": "There's no way via github API to download the images attached to issues/pull requests?!?",

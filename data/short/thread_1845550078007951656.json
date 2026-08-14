@@ -3,6 +3,7 @@
     "Author": "Jake Koenig",
     "URL": "1845550078007951656",
     "Template": "tweet.temp",
+    "Hide": true,
     "Date": "10/13/2024",
     "Content": "short/thread_1845550078007951656.md",
     "Summary": "What I'm picturing is your VC instead of tracking the state of files tracks the state of the AST and diffs are tree modifications not line diffs.\n\nOne con is I guess you can't comment anymore unless y...",
