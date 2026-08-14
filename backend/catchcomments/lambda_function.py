@@ -40,8 +40,10 @@ def send_email(body, subject):
 def commented_page_url(comment_url):
     """Convert a comment storage path into the public page URL."""
     comment_path = comment_url.split("?", 1)[0].split("#", 1)[0]
-    comment_path = comment_path.removeprefix("comments/")
-    comment_path = comment_path.removesuffix(".html")
+    if comment_path.startswith("comments/"):
+        comment_path = comment_path[len("comments/"):]
+    if comment_path.endswith(".html"):
+        comment_path = comment_path[:-len(".html")]
     return "https://" + site + "/" + comment_path.lstrip("/")
 
 
