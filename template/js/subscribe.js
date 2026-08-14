@@ -46,6 +46,13 @@ function sendSubToLambda(email) {
         });
 }
 
+function updateSubscribeButtonState() {
+    subscribe_submit.disabled = email_subscribe_textform.value.trim() === '';
+}
+
+email_subscribe_textform.addEventListener('input', updateSubscribeButtonState);
+updateSubscribeButtonState();
+
 subscribe_submit.addEventListener('click', () => {
     subscribe_form.classList.add('hidden');
     const email = email_subscribe_textform.value;
@@ -55,13 +62,21 @@ subscribe_submit.addEventListener('click', () => {
     thanks_message.classList.remove('hidden');
 });
 
-for (e of close_parent) {
-    e.addEventListener('click', function(event) {
-        event.target.parentElement.classList.add('hidden');
-        subscribe_form.classList.remove('hidden');
-        thanks_message.classList.add('hidden');
-    });
+function closeSubscribeBox() {
+    email_input.classList.add('hidden');
+    subscribe_form.classList.remove('hidden');
+    thanks_message.classList.add('hidden');
 }
+
+for (e of close_parent) {
+    e.addEventListener('click', closeSubscribeBox);
+}
+
+document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && isVisible(email_input)) {
+        closeSubscribeBox();
+    }
+});
 
 function addClassOnClickOutside(element, className, removeClass=[]) {
     const outsideClickListener = event => {
