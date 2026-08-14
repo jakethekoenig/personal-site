@@ -3,7 +3,7 @@
 Script to process Twitter archive and extract tweets into JSON format
 similar to the blog post structure used by this site.
 
-Usage: python process_twitter_archive.py <path_to_twitter_archive>
+Usage: python3 scripts/one_off/tweet_migration/process_twitter_archive.py <path_to_twitter_archive>
 """
 
 import json

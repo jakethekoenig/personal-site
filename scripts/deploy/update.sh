@@ -5,7 +5,7 @@ set -e
 # more complicated may come in handy later.
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-REPO_ROOT="$( cd "$SCRIPT_DIR/.." && pwd )"
+REPO_ROOT="$( cd "$SCRIPT_DIR/../.." && pwd )"
 
 cd "$REPO_ROOT"
 LIVE="$(python3 -c 'import json; print(json.load(open("config.json"))["live"])')"

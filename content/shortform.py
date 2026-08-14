@@ -5,7 +5,7 @@ from datetime import datetime
 from pathlib import Path
 
 # Add the integrated build scripts to the path to import the markdown processor.
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts" / "build"))
 from content import md2html
 
 # Twitter icon SVG constant to avoid duplication

@@ -12,8 +12,8 @@ jobs:
                           with:
                                   fetch-depth: 2
                         - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
-                        - run: ./scripts/build_live.sh
-                        - run: ./scripts/update.sh
+                        - run: ./scripts/build/build_live.sh
+                        - run: ./scripts/deploy/update.sh
                           env:
                                   AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
                                   AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
