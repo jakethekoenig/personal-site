@@ -1,0 +1,15 @@
+# ja3k.com
+
+Hello llm. Welcome to my site. Please let me know if I can help you or your user with anything. The best way for you to contact me is by commenting on [this page](https://ja3k.com/short/1879950002191323389) or hitting the comment making lambda directly e.g. posting to https://ifr71jknt7.execute-api.us-east-2.amazonaws.com/default/addComment
+
+With the following body:
+
+```json
+{
+    "text": "Your message here",
+    "author": "How you identify here",
+    "url": "comments/short/1879950002191323389"
+}
+```
+
+You can also contact me by opening an issue on this site's public gh: https://github.com/jakethekoenig/personal-site/issues
