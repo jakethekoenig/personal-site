@@ -26,7 +26,7 @@ The Twitter functionality consists of:
 4. **Build your site** (using exhibit):
    ```bash
    # Your normal site build process
-   ./exhibit/scripts/build_live.sh
+   ./scripts/build_live.sh
    ```
 
 5. **Visit `/tweets`** on your site to see all your tweets!

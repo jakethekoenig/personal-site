@@ -7,14 +7,13 @@ jobs:
         sync:
                 runs-on: ubuntu-latest
                 steps:
-                        - name: Push website to aws
-                          uses: actions/checkout@v2
+                        - name: Check out website source
+                          uses: actions/checkout@v4
                           with:
                                   fetch-depth: 2
                         - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
-                        - run: git clone https://github.com/jakethekoenig/exhibit.git
-                        - run: ./exhibit/scripts/build_live.sh
-                        - run: ./exhibit/scripts/update.sh
+                        - run: ./scripts/build_live.sh
+                        - run: ./scripts/update.sh
                           env:
                                   AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
                                   AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
