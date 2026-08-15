@@ -1,10 +1,11 @@
 import os
-import requests
 try:
     import scrython
+    import requests
 except:
     print("Not downloading images")
     scrython = None
+    requests = None
 
 #TODO: consider organizing directory by set?
 def file_name(s):

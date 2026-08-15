@@ -4,7 +4,6 @@ import shutil
 from concurrent.futures import ProcessPoolExecutor
 from datetime import datetime
 from content import generate_content, generate_comments
-from config import config
 
 # From a websites template and its specified data (which has a link to the content)
 # create a filled out webpage.
@@ -83,7 +82,7 @@ def make_index(index_path="."):
         with open(default_file) as data_file:
             defaults = json.load(data_file)
     for page in os.listdir(index_path):
-        if page=='default.json' or  page.find("swp")!=-1:
+        if page=='default.json':
             continue
         new_index_path = os.path.join(index_path,page)
         if os.path.isdir(new_index_path):
@@ -123,17 +122,7 @@ def collect_pages(target_dir, index):
 
 
 def configured_jobs():
-    default_jobs = min(8, os.cpu_count() or 1)
-    value = os.environ.get("BUILD_JOBS")
-    if value is None:
-        return default_jobs
-    try:
-        jobs = int(value)
-    except ValueError as error:
-        raise ValueError("BUILD_JOBS must be a positive integer") from error
-    if jobs < 1:
-        raise ValueError("BUILD_JOBS must be a positive integer")
-    return jobs
+    return min(8, os.cpu_count() or 1)
 
 
 def initialize_worker(worker_config, working_directory):
@@ -154,10 +143,6 @@ def make_site(target_dir, index):
         make_page(path, data, local_index)
 
     jobs = min(configured_jobs(), len(parallel_pages))
-    if jobs <= 1:
-        for page in parallel_pages:
-            make_parallel_page(page)
-        return
 
     print("Rendering %d pages with %d workers..." % (len(parallel_pages), jobs))
     with ProcessPoolExecutor(
@@ -184,19 +169,15 @@ def copy_html_aliases(target_dir):
             source = os.path.join(directory, file_name)
             shutil.copyfile(source, source + ".html")
 
-
+config = {}
 def main():
-    if os.path.exists("config.json"):
-        with open("config.json") as config_file:
-            config.update(json.load(config_file))
+    with open("config.json") as config_file:
+        config.update(json.load(config_file))
 
     source_directory = os.getcwd()
-    try:
-        os.chdir(config["pages"])
-        index = make_index()
-    finally:
-        os.chdir(source_directory)
-
+    os.chdir(config["pages"])
+    index = make_index()
+    os.chdir(source_directory)
     make_site(config["live"], index)
     copy_html_aliases(config["live"])
 

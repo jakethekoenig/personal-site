@@ -3,5 +3,6 @@
 	"live": "../live",
 	"static": "nongenerated",
 	"templates": "template",
+	"content": "content",
 	"pages": "data"
 }
