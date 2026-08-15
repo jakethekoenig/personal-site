@@ -52,14 +52,6 @@ def replaceTags(template, data, index):
             template = template[:start]+template[mid+3:end-3]+template[end:]
     return template
 
-# More complicated than it should be for legacy reasons
-def file_name(data):
-    if "URL" in data:
-        url = data["URL"]
-    else:
-        url = data["Title"].replace(" ","").replace(",","").replace("'","")
-    return url
-
 
 def parse_date(value):
     for date_format in ("%Y-%m-%d", "%m/%d/%Y"):
@@ -90,7 +82,7 @@ def make_index(index_path="."):
         else:
             with open(new_index_path) as data_file:
                 data = json.load(data_file)
-                data["relative_path"] = os.path.join(index_path, file_name(data))
+                data["relative_path"] = os.path.join(index_path, data["URL"])
                 data["comment_path"] = os.path.join("comments/", os.path.splitext(data["relative_path"])[0])
                 if "permalink" not in data.keys():
                     data["permalink"] = os.path.join(config.get("base_url", "/"), data["relative_path"]).replace("/./","/")
