@@ -1,7 +1,6 @@
 import json
 import os
 import shutil
-from concurrent.futures import ProcessPoolExecutor
 from datetime import datetime
 from content import generate_content, generate_comments
 
@@ -89,57 +88,20 @@ def make_index(index_path="."):
     return index
 
 
-def collect_pages(target_dir, index):
-    sequential_pages = []
-    parallel_pages = []
-
-    for (path, data) in index:
-        if isinstance(data, list):
-            child_sequential, child_parallel = collect_pages(target_dir, data)
-            sequential_pages.extend(child_sequential)
-            parallel_pages.extend(child_parallel)
-        else:
-            destination = os.path.join(target_dir, data["relative_path"])
-            os.makedirs(os.path.dirname(destination), exist_ok=True)
-            if os.path.splitext(data["Content"])[1] == ".py":
-                sequential_pages.append((destination, data, index))
-            else:
-                parallel_pages.append((destination, data))
-
-    return sequential_pages, parallel_pages
-
-
-def configured_jobs():
-    return min(8, os.cpu_count() or 1)
-
-
-def initialize_worker(worker_config, working_directory):
-    config.clear()
-    config.update(worker_config)
-    os.chdir(working_directory)
-
 
 def make_parallel_page(page):
     path, data = page
     make_page(path, data, None)
 
 
-def make_site(target_dir, index):
-    sequential_pages, parallel_pages = collect_pages(target_dir, index)
-
-    for path, data, local_index in sequential_pages:
-        make_page(path, data, local_index)
-
-    jobs = min(configured_jobs(), len(parallel_pages))
-
-    print("Rendering %d pages with %d workers..." % (len(parallel_pages), jobs))
-    with ProcessPoolExecutor(
-        max_workers=jobs,
-        initializer=initialize_worker,
-        initargs=(dict(config), os.getcwd()),
-    ) as executor:
-        for _ in executor.map(make_parallel_page, parallel_pages, chunksize=32):
-            pass
+def make_site(target_dir, index, global_index, cur_path=""):
+    for (path, data) in index:
+        if isinstance(data, list):
+            nex = os.path.join(cur_path, path)
+            os.makedirs(os.path.join(target_dir, nex), exist_ok=True)
+            make_site(target_dir, data, index, nex)
+        else:
+            make_page(os.path.join(target_dir, data["relative_path"]), data, index)
 
 
 def make_page(path, data, index):
@@ -166,7 +128,7 @@ def main():
     os.chdir(config["pages"])
     index = make_index()
     os.chdir(source_directory)
-    make_site(config["live"], index)
+    make_site(config["live"], index, index, )
     copy_html_aliases(config["live"])
 
 
