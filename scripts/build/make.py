@@ -18,9 +18,8 @@ def replaceTags(template, data, index):
         comments = generate_comments(data, index)
     else:
         data["Commentsource"] = "lambda"
-        comments = "<:comp/commentiframe:>" # TODO: switch it around so this is what it is by default.
+        comments = "<:comp/commentiframe:>"
     template = template.replace("<[Comments]>", comments)
-    # replace components
     while template.find("<:") != -1:
         start = template.find("<:")
         end   = template.find(":>")+2
@@ -29,18 +28,15 @@ def replaceTags(template, data, index):
         with open(os.path.join(config["templates"],comp_path)) as c:
             comp = c.read()
         template = template.replace(tag, comp)
-    # replace tags
     for tag in data.keys():
         if type(data[tag]) == type(""):
             template = template.replace("<$"+tag+"$>", data[tag])
-    # Delete all tags with no corresponding data
     while template.find("<$") != -1 and template.find("$>") != -1:
         start = template.find("<$")
         end   = template.find("$>")+2
         if start>end:
             break
         template = template[:start] + template[end:]
-    # delete optional tags
     while template.find("<??") != -1:
         start = template.find("<??")
         mid   = template.find("???")

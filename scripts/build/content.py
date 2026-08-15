@@ -7,18 +7,12 @@ import re
 
 def generate_content(data, index, content_dir="content/"):
     content = get_content(data, index, content_dir)
-    # Post processing on the content html
-    # Should there be a more stylized way to do this? Maybe the desired post processing should be listed in the blog's data dir.
     if not data.get("skip_post_processing"):
         content = generate_footers(content)
         content = insert_autocard(content)
         content = mathjax(content)
     return content
 
-# TODO: handle .md files as well as py and html
-# TODO: seperate footer, autocard into a 'post processing' system
-# Make the content for a specified webpage. If it's an html file just get it. If it's a python file run it's generate method.
-# TODO: How should global config be handled? How should global index be handled?
 def get_content(data, index, content_dir):
     path = data["Content"]
     ext = os.path.splitext(path)[1]
@@ -36,7 +30,7 @@ def get_content(data, index, content_dir):
         with open(os.path.join(content_dir, path)) as c:
             if ext==".md":
                 return md2html(c.read())
-            else: # raw:
+            else:
                 return c.read()
 
 
@@ -174,7 +168,6 @@ def md2html(content):
 
 
 # Find tags of form [[content]] and put the content on the bottom with hyperlinks
-# TODO: should this be in its own post processing file?
 def generate_footers(content):
     i = 1
     if "[[" in content:
@@ -187,13 +180,12 @@ def generate_footers(content):
         i+=1
     return content
 
+# Legacy gh ci comment system
 def generate_comments(data, index, comment_dir="comments/"):
-    # TODO: think about disabling comments in some places.
     return get_comments(data["comment_path"])
 
 def get_comments(comment_dir, depth=0):
     comm = ""
-    # TODO: make recursive
     if not os.path.isdir(comment_dir):
         try:
             os.mkdir(comment_dir)
