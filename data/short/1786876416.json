@@ -5,7 +5,7 @@
     "Template": "tweet.temp",
     "Date": "2026-08-16",
     "Content": "short/1786876416.md",
-    "Summary": "Testing the sync between bluesky and my website here ja3k.com/shortform Making it a thread and including an image for testing",
+    "Summary": "Testing the sync between bluesky and my website here ja3k.com/shortform Making it a thread and including an image for testing It kind of worked! ja3k.com/short/178687...",
     "Categories": [
         "shorts",
         "bluesky",
@@ -30,11 +30,13 @@
     "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mt6yf2w2lc27",
     "post_uris": [
         "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mt6yf2w2lc27",
-        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mt6yf3dq3c27"
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mt6yf3dq3c27",
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mt6yldgduk27"
     ],
-    "thread_length": 2,
+    "thread_length": 3,
     "thread_urls": [
         "https://bsky.app/profile/ja3k.bsky.social/post/3mt6yf2w2lc27",
-        "https://bsky.app/profile/ja3k.bsky.social/post/3mt6yf3dq3c27"
+        "https://bsky.app/profile/ja3k.bsky.social/post/3mt6yf3dq3c27",
+        "https://bsky.app/profile/ja3k.bsky.social/post/3mt6yldgduk27"
     ]
 }
