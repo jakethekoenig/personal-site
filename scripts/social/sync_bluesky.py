@@ -8,7 +8,7 @@ import mimetypes
 import os
 import time
 from dataclasses import dataclass
-from datetime import datetime, timezone
+from datetime import datetime
 from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.parse import quote, urlencode
@@ -62,18 +62,6 @@ def post_record(post):
 def post_created_at(post):
     record = post_record(post)
     return record.get("createdAt") or post.get("indexedAt", "")
-
-
-def post_timestamp(post):
-    """Return the post's creation time as a Unix timestamp in whole seconds."""
-    value = post_created_at(post)
-    try:
-        parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
-    except (AttributeError, ValueError) as error:
-        raise ValueError(f"Post has an invalid creation time: {value!r}") from error
-    if parsed.tzinfo is None:
-        parsed = parsed.replace(tzinfo=timezone.utc)
-    return str(int(parsed.timestamp()))
 
 
 def post_reply(post):
@@ -474,7 +462,7 @@ def existing_media_paths(data_path, repo_root):
 def save_thread(repo_root, client, actor, actor_did, posts):
     root = posts[0]
     root_uri = root["uri"]
-    slug = post_timestamp(root)
+    slug = at_uri_rkey(root_uri)
     data_path = repo_root / "data" / "short" / f"{slug}.json"
     content_path = repo_root / "content" / "short" / f"{slug}.md"
     media_dir = repo_root / "nongenerated" / "asset" / "bluesky"
@@ -491,12 +479,12 @@ def save_thread(repo_root, client, actor, actor_did, posts):
     all_media = []
     for post in posts:
         post_uri = post["uri"]
-        media_timestamp = post_timestamp(post)
+        media_rkey = at_uri_rkey(post_uri)
         post_media = []
         for index, spec in enumerate(extract_media_specs(post), 1):
             body, content_type = client.download_media(actor_did, spec)
             extension = extension_for_content_type(content_type, spec.get("mime_type"))
-            filename = f"{media_timestamp}_{index}{extension}"
+            filename = f"{media_rkey}_{index}{extension}"
             path = media_dir / filename
             if not path.exists() or path.read_bytes() != body:
                 path.write_bytes(body)

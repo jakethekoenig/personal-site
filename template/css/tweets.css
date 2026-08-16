@@ -115,7 +115,8 @@
 }
 
 /* Thread-specific styling */
-.tweet.thread {
+.tweet.thread,
+.individual-tweet.thread {
     border-left: 4px solid #1da1f2;
     background: linear-gradient(to right, #f8f9fa, #fff);
 }

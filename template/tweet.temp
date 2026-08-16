@@ -14,11 +14,14 @@
 	<:comp/sidemenu:>
 	<div class="main_content">
                 <div style="height: 50px;"></div>
-		<div class="individual-tweet" style="margin-left: 20px;">
-			<div class="tweet-header">
-				<span class="tweet-date"><$Date$></span>
+		<div class="individual-tweet<$short_page_class$>" style="margin-left: 20px;">
+			<div class="<$short_header_class$>">
+				<div class="thread-info">
+					<$thread_indicator$>
+					<span class="tweet-date"><$Date$></span>
+				</div>
 				<div class="tweet-links">
-					<a href="<$tweet_url$>" target="_blank" class="tweet-twitter-link" title="View original post on <$source_name$>">
+					<a href="<$tweet_url$>" target="_blank" class="tweet-twitter-link" title="<$short_source_title$>">
 						<$source_badge$>
 					</a>
 				</div>

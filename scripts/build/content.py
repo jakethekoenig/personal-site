@@ -1,6 +1,7 @@
 from importlib import util
 from my_auto_card import insert_autocard
 from my_mathjax import mathjax
+from shortform_render import render_thread_content
 import json
 import os
 import re
@@ -29,7 +30,14 @@ def get_content(data, index, content_dir):
     else:
         with open(os.path.join(content_dir, path)) as c:
             if ext==".md":
-                return md2html(c.read())
+                raw_content = c.read()
+                if data.get("is_thread") and data.get("Template") == "tweet.temp":
+                    return render_thread_content(
+                        raw_content,
+                        md2html,
+                        data.get("Summary", ""),
+                    )
+                return md2html(raw_content)
             else:
                 return c.read()
 
