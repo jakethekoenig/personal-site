@@ -1,0 +1,70 @@
+name: Sync Bluesky posts
+
+on:
+        schedule:
+                # Offset from the top of the hour to reduce GitHub Actions congestion.
+                - cron: '2-59/5 * * * *'
+        workflow_dispatch:
+                inputs:
+                        deploy_without_changes:
+                                description: Re-run the site deployment even if no new post is found
+                                required: false
+                                default: false
+                                type: boolean
+
+permissions:
+        contents: write
+        actions: write
+
+concurrency:
+        group: bluesky-shortform-sync
+        cancel-in-progress: false
+
+jobs:
+        sync:
+                runs-on: ubuntu-latest
+                steps:
+                        - name: Check out website source
+                          uses: actions/checkout@v4
+                          with:
+                                  fetch-depth: 0
+
+                        - name: Import new Bluesky posts
+                          run: python3 scripts/social/sync_bluesky.py
+
+                        - name: Check for imported posts
+                          id: changes
+                          shell: bash
+                          run: |
+                                  changes="$(git status --porcelain -- .github/bluesky-sync-state.json data/short content/short)"
+                                  if [[ -n "$changes" ]]; then
+                                          echo "changed=true" >> "$GITHUB_OUTPUT"
+                                          echo "$changes"
+                                  else
+                                          echo "changed=false" >> "$GITHUB_OUTPUT"
+                                  fi
+
+                        - name: Upload Bluesky media
+                          if: steps.changes.outputs.changed == 'true'
+                          env:
+                                  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+                                  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+                                  AWS_DEFAULT_REGION: us-west-2
+                          run: aws s3 sync nongenerated/asset/bluesky s3://ja3k.com/asset/bluesky --size-only
+
+                        - name: Commit and push imported posts
+                          if: steps.changes.outputs.changed == 'true'
+                          shell: bash
+                          run: |
+                                  git config user.name "github-actions[bot]"
+                                  git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+                                  git add .github/bluesky-sync-state.json data/short content/short
+                                  git commit -m "Sync Bluesky posts"
+                                  git pull --rebase origin master
+                                  git push origin HEAD:master
+
+                        - name: Trigger website deployment
+                          if: steps.changes.outputs.changed == 'true' || inputs.deploy_without_changes == true
+                          env:
+                                  GH_TOKEN: ${{ github.token }}
+                          run: gh workflow run deploy.yml --ref master
