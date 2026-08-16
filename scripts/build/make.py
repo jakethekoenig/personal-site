@@ -7,12 +7,11 @@ from content import generate_content, generate_comments
 # From a websites template and its specified data (which has a link to the content)
 # create a filled out webpage.
 def replaceTags(template, data, index):
-    data = dict(data)
     tags = { "$", "[", ":", "??" }
     # TODO: Make this method robust to tags inside tags
     # replace content
-    content = generate_content(data, index, config["content"])
-    template = template.replace("<[Content]>", content)
+    data["RenderedContent"] = generate_content(data, index, config["content"])
+    template = template.replace("<[Content]>", data["RenderedContent"])
     if "Commentsource" in data.keys() and data["Commentsource"] == "github":
         comments = generate_comments(data, index)
     else:
@@ -80,11 +79,11 @@ def make_index(index_path="."):
                 data["relative_path"] = os.path.join(index_path, data["URL"])
                 data["comment_path"] = os.path.join("comments/", os.path.splitext(data["relative_path"])[0])
                 if "permalink" not in data.keys():
-                    data["permalink"] = os.path.join(config.get("base_url", "/"), data["relative_path"]).replace("/./","/")
+                    data["permalink"] = os.path.join(config["base_url"], data["relative_path"]).replace("/./","/")
                 data1 = dict(defaults)
                 data1.update(data)
                 index+=[(page,data1)]
-    index.sort(key=lambda t: parse_date(t[1]["Date"] if "Date" in t[1] else "2000-01-01"), reverse=True)
+    index.sort(key=lambda t: parse_date(t[1]["Date"] if "Date" in t[1] else ("9000-01-01" if isinstance(t[1], list) else "2000-01-01")), reverse=True)
     return index
 
 
