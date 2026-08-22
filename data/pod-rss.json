@@ -1,0 +1,14 @@
+{
+	"Title": "ja3k — pod",
+	"URL":   "pod.xml",
+	"Author": "Jake Koenig",
+        "Indexes": "pod",
+        "Page": "pods",
+        "Limit": 20,
+        "Summary": "ja3k's podcast. sort of defunct but if you'd like to be on invite yourself.",
+	"Template": "rss.temp",
+	"Content": "rss.py",
+        "Hide": true,
+        "skip_post_processing": true
+}
+	

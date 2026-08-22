@@ -1,0 +1,14 @@
+{
+	"Title": "ja3k — tweets",
+	"URL":   "tweet.xml",
+	"Author": "Jake Koenig",
+        "Indexes": "short",
+        "Page": "shortform",
+        "Limit": 200,
+        "Summary": "A mirror of my tweets from @ja3k_.",
+	"Template": "rss.temp",
+	"Content": "rss.py",
+        "Hide": true,
+        "skip_post_processing": true
+}
+	

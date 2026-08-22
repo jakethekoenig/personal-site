@@ -3,7 +3,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="shortcut icon" href="/asset/favicon.png" />
-<link rel="alternate" type="application/rss+xml" title="ja3k" href="/feed.xml" />
+<link rel="alternate" type="application/rss+xml" title="ja3k — blog" href="/feed.xml" />
+<link rel="alternate" type="application/rss+xml" title="ja3k — tweets" href="/tweet.xml" />
+<link rel="alternate" type="application/rss+xml" title="ja3k — pod" href="/pod.xml" />
 <meta name="description" content="<$Summary$>">
 <meta property="og:title" content="<$Title$>">
 <meta property="og:description" content="<$Summary$>">

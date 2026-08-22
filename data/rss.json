@@ -1,7 +1,11 @@
 {
-	"Title": "feed",
+	"Title": "ja3k — blog",
 	"URL":   "feed.xml",
 	"Author": "Jake Koenig",
+        "Indexes": "blog",
+        "Page": "",
+        "Limit": 20,
+        "Summary": "Blogs, podcasts and art from ja3k. This is a personal project with scope and subject matter ill defined and flowing from interest.",
 	"Template": "rss.temp",
 	"Content": "rss.py",
         "Hide": true,
