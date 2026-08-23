@@ -21,6 +21,7 @@ DEFAULT_STATE_FILE = ".github/bluesky-sync-state.json"
 AUTHOR_FEED_ENDPOINT = "app.bsky.feed.getAuthorFeed"
 POST_THREAD_ENDPOINT = "app.bsky.feed.getPostThread"
 MAX_FEED_PAGES = 20
+TWITTER_CHARACTER_LIMIT = 280
 
 
 def at_uri_did(uri):
@@ -336,6 +337,113 @@ def load_state(path):
         return json.load(state_file)
 
 
+# --- Twitter/X cross-posting -------------------------------------------------
+
+_twitter_clients = None
+_twitter_initialized = False
+
+
+def chunk_text(text, limit=TWITTER_CHARACTER_LIMIT - 10):
+    """Split text into <=limit character chunks, preferring paragraph breaks."""
+    text = text.strip()
+    if not text:
+        return []
+    if len(text) <= limit:
+        return [text]
+
+    chunks = []
+    remaining = text
+    while len(remaining) > limit:
+        window = remaining[: limit + 1]
+        cut = window.rfind("\n\n")
+        if cut < limit // 2:
+            cut = window.rfind("\n")
+        if cut < limit // 2:
+            cut = window.rfind(" ")
+        if cut < limit // 2:
+            cut = limit
+        chunks.append(remaining[:cut].strip())
+        remaining = remaining[cut:].strip()
+    if remaining:
+        chunks.append(remaining)
+    return chunks
+
+
+def twitter_clients():
+    """Return (v1.1 media API, v2 client), or None when not configured."""
+    global _twitter_clients, _twitter_initialized
+    if _twitter_initialized:
+        return _twitter_clients
+    _twitter_initialized = True
+    credentials = {
+        key: os.environ.get(f"TWITTER_{key}")
+        for key in ("API_KEY", "API_SECRET", "ACCESS_TOKEN", "ACCESS_SECRET")
+    }
+    if not all(credentials.values()):
+        print("Twitter credentials not set; skipping cross-posting.")
+        return None
+    try:
+        import tweepy
+    except ImportError:
+        print("tweepy is not installed; skipping Twitter cross-posting.")
+        return None
+    auth = tweepy.OAuth1UserHandler(
+        credentials["API_KEY"],
+        credentials["API_SECRET"],
+        credentials["ACCESS_TOKEN"],
+        credentials["ACCESS_SECRET"],
+    )
+    api_v1 = tweepy.API(auth)
+    client_v2 = tweepy.Client(
+        consumer_key=credentials["API_KEY"],
+        consumer_secret=credentials["API_SECRET"],
+        access_token=credentials["ACCESS_TOKEN"],
+        access_token_secret=credentials["ACCESS_SECRET"],
+    )
+    _twitter_clients = (api_v1, client_v2)
+    return _twitter_clients
+
+
+def upload_media(api_v1, path, alt=""):
+    mime = mimetypes.guess_type(str(path))[0] or ""
+    kwargs = {"alt_text": alt[:1000]} if alt else {}
+    if "video" in mime or path.suffix.lower() in {".mp4", ".webm", ".mov"}:
+        media = api_v1.media_upload(str(path), chunked=True, media_category="tweet_video", **kwargs)
+    else:
+        media = api_v1.media_upload(str(path), **kwargs)
+    return media.media_id_string
+
+
+def crosspost_to_twitter(posts, media_by_post, media_dir, username, previous_id=None):
+    """Mirror Bluesky posts (or continue an existing X thread) and return (urls, last_tweet_id)."""
+    clients = twitter_clients()
+    if clients is None:
+        return [], previous_id
+    api_v1, client_v2 = clients
+
+    urls = []
+    for post in posts:
+        for index, chunk in enumerate(chunk_text(post_record(post).get("text", "")) or [""]):
+            payload = {"text": chunk}
+            if previous_id:
+                payload["reply"] = {"in_reply_to_tweet_id": previous_id}
+            if index == 0:
+                media_ids = []
+                for item in media_by_post.get(post["uri"], [])[:4]:
+                    local_path = media_dir / Path(item["url"]).name
+                    if local_path.exists():
+                        media_ids.append(upload_media(api_v1, local_path, item.get("alt", "")))
+                if media_ids:
+                    payload["media"] = {"media_ids": media_ids}
+            response = client_v2.create_tweet(**payload)
+            previous_id = response.data["id"]
+            urls.append(f"https://x.com/{username}/status/{previous_id}")
+            time.sleep(2)
+
+    print(f"Cross-posted to Twitter: {urls}")
+    return urls, previous_id
+
+
 def write_json(path, value):
     path.parent.mkdir(parents=True, exist_ok=True)
     temporary_path = path.with_suffix(path.suffix + ".tmp")
@@ -474,6 +582,8 @@ def save_thread(repo_root, client, actor, actor_did, posts):
             raise RuntimeError(
                 f"Cannot mirror {root_uri}: short-form URL {slug} is already in use"
             )
+    else:
+        existing_data = None
 
     media_by_post = {}
     all_media = []
@@ -509,6 +619,29 @@ def save_thread(repo_root, client, actor, actor_did, posts):
     text_parts = [post_record(post).get("text", "") for post in posts]
     combined_text = "\n\n".join(text for text in text_parts if text)
     root_url = bluesky_post_url(actor, root_uri)
+
+    # Post to Twitter first so the site data can include the permalink.
+    # Posts already tweeted are skipped; new replies continue the same X thread.
+    twitter_urls = []
+    tweeted_uris = []
+    last_tweet_id = None
+    if existing_data is not None:
+        twitter_urls = list(existing_data.get("twitter_urls", []))
+        tweeted_uris = list(existing_data.get("twitter_post_uris", existing_data.get("post_uris", [])))
+        last_url = twitter_urls[-1] if twitter_urls else ""
+        last_tweet_id = last_url.rsplit("/", 1)[-1] if "/status/" in last_url else None
+    pending_posts = [post for post in posts if post["uri"] not in tweeted_uris]
+    if pending_posts:
+        new_urls, last_tweet_id = crosspost_to_twitter(
+            pending_posts,
+            media_by_post,
+            media_dir,
+            os.environ.get("TWITTER_USERNAME", "ja3k_"),
+            previous_id=last_tweet_id,
+        )
+        twitter_urls.extend(new_urls)
+        tweeted_uris.extend(post["uri"] for post in pending_posts)
+
     is_thread = len(posts) > 1
     data = {
         "Title": (
@@ -524,7 +657,7 @@ def save_thread(repo_root, client, actor, actor_did, posts):
         "Summary": shortened(combined_text, 200),
         "Categories": ["shorts", "bluesky"] + (["threads"] if is_thread else []),
         "tweet_id": slug,
-        "tweet_url": root_url,
+        "bluesky_url": root_url,
         "original_date": post_created_at(root),
         "media": all_media,
         "is_thread": is_thread,
@@ -537,6 +670,15 @@ def save_thread(repo_root, client, actor, actor_did, posts):
     if is_thread:
         data["thread_length"] = len(posts)
         data["thread_urls"] = [bluesky_post_url(actor, post["uri"]) for post in posts]
+        data["bluesky_thread_urls"] = list(data["thread_urls"])
+    if twitter_urls:
+        data["twitter_posted"] = True
+        data["tweet_url"] = twitter_urls[0]
+        data["twitter_urls"] = twitter_urls
+        data["twitter_post_uris"] = tweeted_uris
+    else:
+        # Fall back to the Bluesky URL so the field is never empty.
+        data["tweet_url"] = root_url
 
     if is_thread:
         sections = ["# Thread", ""]

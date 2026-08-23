@@ -24,6 +24,28 @@ def source_badge(post_data):
     return TWITTER_ICON_SVG
 
 
+def source_links_html(post_data):
+    """Render one link per platform the post exists on."""
+    is_bluesky = post_data.get('source') == 'bluesky'
+    if is_bluesky:
+        bluesky_url = post_data.get('bluesky_url')
+        if not bluesky_url:
+            thread_urls = post_data.get('thread_urls') or []
+            bluesky_url = thread_urls[0] if thread_urls else None
+        tweet_url = post_data.get('tweet_url') if post_data.get('twitter_posted') else None
+    else:
+        bluesky_url = None
+        tweet_url = post_data.get('tweet_url')
+
+    links = ''
+    if bluesky_url:
+        links += f'<a href="{html_lib.escape(bluesky_url, quote=True)}" target="_blank" class="tweet-bluesky-link" title="View original post on Bluesky">{source_badge(post_data)}</a>'
+    if tweet_url:
+        title = 'View original post on Twitter'
+        links += f'<a href="{html_lib.escape(tweet_url, quote=True)}" target="_blank" class="tweet-twitter-link" title="{title}">{TWITTER_ICON_SVG}</a>'
+    return links
+
+
 def generate(data, index):
     """Generate the tweets page content"""
     
@@ -86,9 +108,7 @@ def generate_single_tweet_html(tweet_data):
     
     # Generate individual page link
     individual_page_url = f"/{tweet_data.get('relative_path', '')}"
-    source_name = html_lib.escape(tweet_data.get('source_name', 'Twitter'))
-    source_url = html_lib.escape(tweet_data.get('tweet_url', '#'), quote=True)
-    badge = source_badge(tweet_data)
+    badge = source_links_html(tweet_data) or '<a href="#">Unknown source</a>'
     
     html = f"""
     <div class="tweet" id="tweet-{tweet_data.get('tweet_id', '')}">
@@ -98,9 +118,7 @@ def generate_single_tweet_html(tweet_data):
                 <a href="{individual_page_url}" class="tweet-page-link" title="View individual page">
                     <img src="/asset/favicon.png" alt="Individual page" class="favicon-icon">
                 </a>
-                <a href="{source_url}" target="_blank" class="tweet-twitter-link" title="View original post on {source_name}">
-                    {badge}
-                </a>
+                {badge}
             </div>
         </div>
         <div class="tweet-content">
@@ -131,14 +149,8 @@ def generate_thread_html(thread_data):
     )
     
     # Generate HTML for the thread
-    thread_urls = thread_data.get('thread_urls', [])
-    first_url = thread_urls[0] if thread_urls else '#'
-    source_name = html_lib.escape(thread_data.get('source_name', 'Twitter'))
-    source_url = html_lib.escape(first_url, quote=True)
-    badge = source_badge(thread_data)
-    
-    # Generate individual page link for thread
     individual_page_url = f"/{thread_data.get('relative_path', '')}"
+    badge = source_links_html(thread_data) or '<a href="#">Unknown source</a>'
     
     html = f"""
     <div class="tweet thread" id="thread-{thread_data.get('tweet_id', '')}">
@@ -151,9 +163,7 @@ def generate_thread_html(thread_data):
                 <a href="{individual_page_url}" class="tweet-page-link" title="View individual page">
                     <img src="/asset/favicon.png" alt="Individual page" class="favicon-icon">
                 </a>
-                <a href="{source_url}" target="_blank" class="tweet-twitter-link" title="View original thread on {source_name}">
-                    {badge}
-                </a>
+                {badge}
             </div>
         </div>
         {rendered_thread}
