@@ -1,14 +1,15 @@
 {
-    "Title": "Testing X crosspoasting",
+    "Title": "Thread: Testing X crosspoasting",
     "Author": "Jake Koenig",
     "URL": "3mtt75l6ecs2c",
     "Template": "tweet.temp",
     "Date": "2026-08-24",
     "Content": "short/3mtt75l6ecs2c.md",
-    "Summary": "Testing X crosspoasting",
+    "Summary": "Testing X crosspoasting Nice it worked! ja3k.com/short/3mtt75...",
     "Categories": [
         "shorts",
-        "bluesky"
+        "bluesky",
+        "threads"
     ],
     "tweet_id": "3mtt75l6ecs2c",
     "bluesky_url": "https://bsky.app/profile/ja3k.bsky.social/post/3mtt75l6ecs2c",
@@ -22,13 +23,23 @@
             "source_post_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtt75l6ecs2c"
         }
     ],
-    "is_thread": false,
+    "is_thread": true,
     "source": "bluesky",
     "source_name": "Bluesky",
     "source_badge": "<span class=\"post-source\">Bluesky</span>",
     "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtt75l6ecs2c",
     "post_uris": [
-        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtt75l6ecs2c"
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtt75l6ecs2c",
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtt7h54cn22c"
+    ],
+    "thread_length": 2,
+    "thread_urls": [
+        "https://bsky.app/profile/ja3k.bsky.social/post/3mtt75l6ecs2c",
+        "https://bsky.app/profile/ja3k.bsky.social/post/3mtt7h54cn22c"
+    ],
+    "bluesky_thread_urls": [
+        "https://bsky.app/profile/ja3k.bsky.social/post/3mtt75l6ecs2c",
+        "https://bsky.app/profile/ja3k.bsky.social/post/3mtt7h54cn22c"
     ],
     "twitter_crossposts": [
         {
@@ -36,13 +47,21 @@
             "chunk_index": 0,
             "tweet_id": "2091850915456438556",
             "tweet_url": "https://x.com/ja3k_/status/2091850915456438556"
+        },
+        {
+            "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtt7h54cn22c",
+            "chunk_index": 0,
+            "tweet_id": "2091852547841577217",
+            "tweet_url": "https://x.com/ja3k_/status/2091852547841577217"
         }
     ],
     "twitter_urls": [
-        "https://x.com/ja3k_/status/2091850915456438556"
+        "https://x.com/ja3k_/status/2091850915456438556",
+        "https://x.com/ja3k_/status/2091852547841577217"
     ],
     "twitter_post_uris": [
-        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtt75l6ecs2c"
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtt75l6ecs2c",
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtt7h54cn22c"
     ],
     "tweet_url": "https://x.com/ja3k_/status/2091850915456438556",
     "twitter_posted": true
