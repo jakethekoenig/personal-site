@@ -17,6 +17,9 @@ class ShortformSourceLinksTest(unittest.TestCase):
         bluesky_only = source_links_html({"posts": [[bluesky_url]]})
         self.assertIn(bluesky_url, bluesky_only)
         self.assertIn("tweet-bluesky-link", bluesky_only)
+        self.assertIn('/asset/icon/bluesky.svg', bluesky_only)
+        self.assertIn('alt="Bluesky"', bluesky_only)
+        self.assertNotIn(">Bluesky</span>", bluesky_only)
         self.assertNotIn("tweet-twitter-link", bluesky_only)
 
         both = source_links_html({"posts": [[bluesky_url, twitter_url]]})

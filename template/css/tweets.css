@@ -57,15 +57,9 @@
     height: 16px;
 }
 
-.twitter-icon {
+.twitter-icon, .bluesky-icon {
     width: 16px;
     height: 16px;
-}
-
-.post-source {
-    color: #1d6fdc;
-    font-size: 12px;
-    font-weight: 600;
 }
 
 .tweet-content video {

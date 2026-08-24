@@ -37,7 +37,8 @@ def source_links_html(post_data):
             links.append(
                 '<a href="%s" target="_blank" class="tweet-bluesky-link" '
                 'title="View original post on Bluesky">'
-                '<span class="post-source">Bluesky</span></a>' % escaped_url
+                '<img class="bluesky-icon" src="/asset/icon/bluesky.svg" '
+                'alt="Bluesky"></a>' % escaped_url
             )
         elif service == "twitter":
             links.append(
