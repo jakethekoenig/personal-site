@@ -1,0 +1,35 @@
+{
+    "Title": "Adding typing indicators and read receipts to my harness",
+    "Author": "Jake Koenig",
+    "URL": "3mtuietiqw226",
+    "Template": "tweet.temp",
+    "Date": "2026-08-24",
+    "Content": "short/3mtuietiqw226.md",
+    "Summary": "Adding typing indicators and read receipts to my harness",
+    "Categories": [
+        "shorts",
+        "bluesky"
+    ],
+    "tweet_id": "3mtuietiqw226",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mtuietiqw226",
+            "https://x.com/ja3k_/status/2092037368932864477"
+        ]
+    ],
+    "original_date": "2026-08-24T23:45:42.925Z",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/bluesky/3mtuietiqw226_1.webp",
+            "original_url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:hdbroi7ep3cg76jeppowcsg6/bafkreibyo627b5nu5ia76xqdrd2x5ozkym65jluxsx4frfbaxbfit56yxe",
+            "alt": "",
+            "source_post_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtuietiqw226"
+        }
+    ],
+    "is_thread": false,
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtuietiqw226",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtuietiqw226"
+    ]
+}
