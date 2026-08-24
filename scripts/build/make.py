@@ -3,7 +3,7 @@ import os
 import shutil
 from datetime import datetime
 from content import generate_content, generate_comments
-from shortform_render import thread_indicator_text
+from shortform_render import source_links_html, thread_indicator_text
 
 # From a websites template and its specified data (which has a link to the content)
 # create a filled out webpage.
@@ -85,7 +85,11 @@ def make_index(index_path="."):
                 data1.update(data)
                 if data1.get("Template") == "tweet.temp":
                     is_thread = data1.get("is_thread", False)
-                    if is_thread and not data1.get("tweet_url"):
+                    if (
+                        is_thread
+                        and data1.get("source") != "bluesky"
+                        and not data1.get("tweet_url")
+                    ):
                         thread_urls = data1.get("thread_urls", [])
                         if thread_urls:
                             data1["tweet_url"] = thread_urls[0]
@@ -93,10 +97,7 @@ def make_index(index_path="."):
                     data1["short_header_class"] = (
                         "thread-header" if is_thread else "tweet-header"
                     )
-                    data1["short_source_title"] = "View original %s on %s" % (
-                        "thread" if is_thread else "post",
-                        data1.get("source_name", "Twitter"),
-                    )
+                    data1["short_source_links"] = source_links_html(data1)
                     data1["thread_indicator"] = (
                         '<span class="thread-indicator">'
                         + thread_indicator_text(data1)

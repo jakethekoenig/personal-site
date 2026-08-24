@@ -21,6 +21,7 @@ DEFAULT_STATE_FILE = ".github/bluesky-sync-state.json"
 AUTHOR_FEED_ENDPOINT = "app.bsky.feed.getAuthorFeed"
 POST_THREAD_ENDPOINT = "app.bsky.feed.getPostThread"
 MAX_FEED_PAGES = 20
+TWITTER_CHARACTER_LIMIT = 280
 
 
 def at_uri_did(uri):
@@ -336,6 +337,176 @@ def load_state(path):
         return json.load(state_file)
 
 
+# --- Twitter/X cross-posting -------------------------------------------------
+
+_twitter_clients = None
+
+
+def chunk_text(text, limit=TWITTER_CHARACTER_LIMIT - 10):
+    """Split text into <=limit character chunks, preferring paragraph breaks."""
+    text = text.strip()
+    if not text:
+        return []
+    if len(text) <= limit:
+        return [text]
+
+    chunks = []
+    remaining = text
+    while len(remaining) > limit:
+        window = remaining[: limit + 1]
+        cut = window.rfind("\n\n")
+        if cut < limit // 2:
+            cut = window.rfind("\n")
+        if cut < limit // 2:
+            cut = window.rfind(" ")
+        if cut < limit // 2:
+            cut = limit
+        chunks.append(remaining[:cut].strip())
+        remaining = remaining[cut:].strip()
+    if remaining:
+        chunks.append(remaining)
+    return chunks
+
+
+def twitter_clients():
+    """Return the authenticated v1.1 media API and v2 posting client."""
+    global _twitter_clients
+    if _twitter_clients is not None:
+        return _twitter_clients
+    credentials = {
+        key: os.environ.get(f"TWITTER_{key}")
+        for key in ("API_KEY", "API_SECRET", "ACCESS_TOKEN", "ACCESS_SECRET")
+    }
+    missing = [key for key, value in credentials.items() if not value]
+    if missing:
+        names = ", ".join(f"TWITTER_{key}" for key in missing)
+        raise RuntimeError(f"Twitter cross-posting is enabled but {names} is not set")
+    try:
+        import tweepy
+    except ImportError as error:
+        raise RuntimeError("Twitter cross-posting requires tweepy") from error
+    auth = tweepy.OAuth1UserHandler(
+        credentials["API_KEY"],
+        credentials["API_SECRET"],
+        credentials["ACCESS_TOKEN"],
+        credentials["ACCESS_SECRET"],
+    )
+    api_v1 = tweepy.API(auth)
+    client_v2 = tweepy.Client(
+        consumer_key=credentials["API_KEY"],
+        consumer_secret=credentials["API_SECRET"],
+        access_token=credentials["ACCESS_TOKEN"],
+        access_token_secret=credentials["ACCESS_SECRET"],
+    )
+    _twitter_clients = (api_v1, client_v2)
+    return _twitter_clients
+
+
+def upload_media(api_v1, path, alt=""):
+    mime = mimetypes.guess_type(str(path))[0] or ""
+    is_video = "video" in mime or path.suffix.lower() in {".mp4", ".webm", ".mov"}
+    if is_video:
+        media = api_v1.media_upload(
+            str(path),
+            chunked=True,
+            media_category="tweet_video",
+        )
+    else:
+        media = api_v1.media_upload(str(path))
+    media_id = media.media_id_string
+    if alt and not is_video:
+        api_v1.create_media_metadata(media_id, alt[:1000])
+    return media_id
+
+
+def twitter_crossposting_enabled():
+    """Allow local site-only imports while requiring X in the scheduled workflow."""
+    return os.environ.get("TWITTER_CROSSPOST_ENABLED", "").lower() in {
+        "1",
+        "true",
+        "yes",
+    }
+
+
+def crosspost_to_twitter(
+    posts,
+    media_by_post,
+    media_dir,
+    username,
+    existing_crossposts=None,
+):
+    """Mirror posts to X, resuming after each previously successful chunk."""
+    crossposts = list(existing_crossposts or [])
+    existing_by_key = {
+        (item.get("bluesky_uri"), item.get("chunk_index")): item
+        for item in crossposts
+    }
+    previous_id = None
+
+    try:
+        api_v1, client_v2 = twitter_clients()
+    except Exception as error:
+        print(f"Twitter cross-posting deferred: {error}")
+        return crossposts, False
+
+    for post in posts:
+        for index, chunk in enumerate(chunk_text(post_record(post).get("text", "")) or [""]):
+            key = (post["uri"], index)
+            existing = existing_by_key.get(key)
+            if existing:
+                previous_id = existing["tweet_id"]
+                continue
+
+            try:
+                payload = {}
+                if chunk:
+                    payload["text"] = chunk
+                if previous_id:
+                    payload["in_reply_to_tweet_id"] = previous_id
+                if index == 0:
+                    media_ids = []
+                    for item in media_by_post.get(post["uri"], [])[:4]:
+                        local_path = media_dir / Path(item["url"]).name
+                        if local_path.exists():
+                            media_ids.append(
+                                upload_media(api_v1, local_path, item.get("alt", ""))
+                            )
+                    if media_ids:
+                        payload["media_ids"] = media_ids
+                response = client_v2.create_tweet(**payload)
+                previous_id = str(response.data["id"])
+            except Exception as error:
+                print(
+                    "Twitter cross-posting deferred after "
+                    f"{len(crossposts)} successful post(s): {error}"
+                )
+                return crossposts, False
+            item = {
+                "bluesky_uri": post["uri"],
+                "chunk_index": index,
+                "tweet_id": previous_id,
+                "tweet_url": f"https://x.com/{username}/status/{previous_id}",
+            }
+            crossposts.append(item)
+            existing_by_key[key] = item
+            time.sleep(2)
+
+    print(f"Cross-posted to Twitter: {[item['tweet_url'] for item in crossposts]}")
+    return crossposts, True
+
+
+def completed_twitter_post_uris(posts, crossposts):
+    completed_chunks = {
+        (item.get("bluesky_uri"), item.get("chunk_index")) for item in crossposts
+    }
+    completed = []
+    for post in posts:
+        chunks = chunk_text(post_record(post).get("text", "")) or [""]
+        if all((post["uri"], index) in completed_chunks for index in range(len(chunks))):
+            completed.append(post["uri"])
+    return completed
+
+
 def write_json(path, value):
     path.parent.mkdir(parents=True, exist_ok=True)
     temporary_path = path.with_suffix(path.suffix + ".tmp")
@@ -474,6 +645,8 @@ def save_thread(repo_root, client, actor, actor_did, posts):
             raise RuntimeError(
                 f"Cannot mirror {root_uri}: short-form URL {slug} is already in use"
             )
+    else:
+        existing_data = None
 
     media_by_post = {}
     all_media = []
@@ -509,6 +682,27 @@ def save_thread(repo_root, client, actor, actor_did, posts):
     text_parts = [post_record(post).get("text", "") for post in posts]
     combined_text = "\n\n".join(text for text in text_parts if text)
     root_url = bluesky_post_url(actor, root_uri)
+
+    # Store each successful X chunk so a partial thread can resume without
+    # duplicating the posts that X already accepted.
+    existing_data = existing_data or {}
+    twitter_crossposts = list(existing_data.get("twitter_crossposts", []))
+    skipped_twitter_uris = list(existing_data.get("twitter_skipped_post_uris", []))
+    twitter_posts = [
+        post for post in posts if post["uri"] not in skipped_twitter_uris
+    ]
+    twitter_complete = not existing_data.get("twitter_crosspost_pending", False)
+    if twitter_crossposting_enabled():
+        twitter_crossposts, twitter_complete = crosspost_to_twitter(
+            twitter_posts,
+            media_by_post,
+            media_dir,
+            os.environ.get("TWITTER_USERNAME", "ja3k_"),
+            existing_crossposts=twitter_crossposts,
+        )
+    twitter_urls = [item["tweet_url"] for item in twitter_crossposts]
+    tweeted_uris = completed_twitter_post_uris(twitter_posts, twitter_crossposts)
+
     is_thread = len(posts) > 1
     data = {
         "Title": (
@@ -524,7 +718,7 @@ def save_thread(repo_root, client, actor, actor_did, posts):
         "Summary": shortened(combined_text, 200),
         "Categories": ["shorts", "bluesky"] + (["threads"] if is_thread else []),
         "tweet_id": slug,
-        "tweet_url": root_url,
+        "bluesky_url": root_url,
         "original_date": post_created_at(root),
         "media": all_media,
         "is_thread": is_thread,
@@ -537,6 +731,18 @@ def save_thread(repo_root, client, actor, actor_did, posts):
     if is_thread:
         data["thread_length"] = len(posts)
         data["thread_urls"] = [bluesky_post_url(actor, post["uri"]) for post in posts]
+        data["bluesky_thread_urls"] = list(data["thread_urls"])
+    if skipped_twitter_uris:
+        data["twitter_skipped_post_uris"] = skipped_twitter_uris
+    if twitter_crossposts:
+        data["twitter_crossposts"] = twitter_crossposts
+        data["twitter_urls"] = twitter_urls
+        data["twitter_post_uris"] = tweeted_uris
+        data["tweet_url"] = twitter_urls[0]
+    if twitter_complete and twitter_crossposts:
+        data["twitter_posted"] = True
+    elif not twitter_complete:
+        data["twitter_crosspost_pending"] = True
 
     if is_thread:
         sections = ["# Thread", ""]
@@ -558,7 +764,7 @@ def save_thread(repo_root, client, actor, actor_did, posts):
     write_json(data_path, data)
     content_path.parent.mkdir(parents=True, exist_ok=True)
     content_path.write_text(content, encoding="utf-8")
-    return data_path
+    return data_path, twitter_complete
 
 
 def sync(repo_root, client, actor, state_path):
@@ -581,6 +787,7 @@ def sync(repo_root, client, actor, state_path):
             root_uris.append(root_uri)
 
     written = 0
+    twitter_complete = True
     fallback_posts = {post.get("uri"): post for post in eligible_posts}
     for root_uri in root_uris:
         try:
@@ -595,9 +802,21 @@ def sync(repo_root, client, actor, state_path):
             posts.sort(key=lambda post: parse_datetime(post_created_at(post)))
         if not posts or posts[0].get("uri") != root_uri:
             raise RuntimeError(f"Could not load Bluesky thread root {root_uri}")
-        path = save_thread(repo_root, client, actor, actor_did, posts)
+        path, thread_twitter_complete = save_thread(
+            repo_root,
+            client,
+            actor,
+            actor_did,
+            posts,
+        )
         print(f"Updated {path.relative_to(repo_root)} with {len(posts)} post(s).")
         written += 1
+        twitter_complete = twitter_complete and thread_twitter_complete
+
+    if not twitter_complete:
+        raise RuntimeError(
+            "One or more X cross-posts are incomplete; Bluesky checkpoint was not advanced"
+        )
 
     state["last_seen_uri"] = scan.newest_uri
     state["last_seen_indexed_at"] = scan.newest_indexed_at
