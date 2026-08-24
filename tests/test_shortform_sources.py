@@ -14,14 +14,12 @@ class ShortformSourceLinksTest(unittest.TestCase):
         bluesky_url = "https://bsky.app/profile/example/post/123"
         twitter_url = "https://x.com/example/status/456"
 
-        bluesky_only = source_links_html({"bluesky_url": bluesky_url})
+        bluesky_only = source_links_html({"posts": [[bluesky_url]]})
         self.assertIn(bluesky_url, bluesky_only)
         self.assertIn("tweet-bluesky-link", bluesky_only)
         self.assertNotIn("tweet-twitter-link", bluesky_only)
 
-        both = source_links_html(
-            {"bluesky_url": bluesky_url, "tweet_url": twitter_url}
-        )
+        both = source_links_html({"posts": [[bluesky_url, twitter_url]]})
         self.assertIn(bluesky_url, both)
         self.assertIn(twitter_url, both)
         self.assertIn("tweet-bluesky-link", both)

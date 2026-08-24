@@ -12,9 +12,13 @@
         "threads"
     ],
     "tweet_id": "1909030013896421633",
-    "thread_urls": [
-        "https://twitter.com/ja3k_/status/1909030013896421633",
-        "https://twitter.com/ja3k_/status/1909030238723752215"
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1909030013896421633"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/1909030238723752215"
+        ]
     ],
     "original_date": "Sun Apr 06 23:46:38 +0000 2025",
     "media": [],

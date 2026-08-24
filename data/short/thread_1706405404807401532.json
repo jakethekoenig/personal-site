@@ -12,11 +12,19 @@
         "threads"
     ],
     "tweet_id": "1706405404807401532",
-    "thread_urls": [
-        "https://twitter.com/ja3k_/status/1706405404807401532",
-        "https://twitter.com/ja3k_/status/1705475140853899566",
-        "https://twitter.com/ja3k_/status/1705701814560297331",
-        "https://twitter.com/ja3k_/status/1705786023341621436"
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1706405404807401532"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/1705475140853899566"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/1705701814560297331"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/1705786023341621436"
+        ]
     ],
     "original_date": "Mon Sep 25 20:28:46 +0000 2023",
     "media": [
