@@ -20,6 +20,10 @@
         [
             "https://bsky.app/profile/ja3k.bsky.social/post/3mttceaoui226",
             "https://x.com/ja3k_/status/2091875707257487653"
+        ],
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mtthwnma4k2u",
+            "https://x.com/ja3k_/status/2091902684282675368"
         ]
     ],
     "original_date": "2026-08-24T12:25:21.042Z",
@@ -28,7 +32,8 @@
     "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mttceaonnc26",
     "post_uris": [
         "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mttceaonnc26",
-        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mttceaoui226"
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mttceaoui226",
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtthwnma4k2u"
     ],
-    "thread_length": 2
+    "thread_length": 3
 }
