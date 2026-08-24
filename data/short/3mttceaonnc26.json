@@ -1,0 +1,34 @@
+{
+    "Title": "Thread: Technical contributions are so power lawed. I try to show up and do something...",
+    "Author": "Jake Koenig",
+    "URL": "3mttceaonnc26",
+    "Template": "tweet.temp",
+    "Date": "2026-08-24",
+    "Content": "short/3mttceaonnc26.md",
+    "Summary": "Technical contributions are so power lawed. I try to show up and do something valuable everyday but probably <10 of my contributions this year are worth more than everything else put together. This...",
+    "Categories": [
+        "shorts",
+        "bluesky",
+        "threads"
+    ],
+    "tweet_id": "3mttceaonnc26",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mttceaonnc26",
+            "https://x.com/ja3k_/status/2091875697686188379"
+        ],
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mttceaoui226",
+            "https://x.com/ja3k_/status/2091875707257487653"
+        ]
+    ],
+    "original_date": "2026-08-24T12:25:21.042Z",
+    "media": [],
+    "is_thread": true,
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mttceaonnc26",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mttceaonnc26",
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mttceaoui226"
+    ],
+    "thread_length": 2
+}
