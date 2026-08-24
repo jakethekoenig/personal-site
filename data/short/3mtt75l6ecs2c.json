@@ -1,0 +1,49 @@
+{
+    "Title": "Testing X crosspoasting",
+    "Author": "Jake Koenig",
+    "URL": "3mtt75l6ecs2c",
+    "Template": "tweet.temp",
+    "Date": "2026-08-24",
+    "Content": "short/3mtt75l6ecs2c.md",
+    "Summary": "Testing X crosspoasting",
+    "Categories": [
+        "shorts",
+        "bluesky"
+    ],
+    "tweet_id": "3mtt75l6ecs2c",
+    "bluesky_url": "https://bsky.app/profile/ja3k.bsky.social/post/3mtt75l6ecs2c",
+    "original_date": "2026-08-24T11:27:55.927Z",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/bluesky/3mtt75l6ecs2c_1.webp",
+            "original_url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:hdbroi7ep3cg76jeppowcsg6/bafkreigb7kx3dfanymlqscbtwri7ofc7eo63nzsixryo5qrmva3ie5wyfi",
+            "alt": "Deer in my yard",
+            "source_post_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtt75l6ecs2c"
+        }
+    ],
+    "is_thread": false,
+    "source": "bluesky",
+    "source_name": "Bluesky",
+    "source_badge": "<span class=\"post-source\">Bluesky</span>",
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtt75l6ecs2c",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtt75l6ecs2c"
+    ],
+    "twitter_crossposts": [
+        {
+            "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtt75l6ecs2c",
+            "chunk_index": 0,
+            "tweet_id": "2091850915456438556",
+            "tweet_url": "https://x.com/ja3k_/status/2091850915456438556"
+        }
+    ],
+    "twitter_urls": [
+        "https://x.com/ja3k_/status/2091850915456438556"
+    ],
+    "twitter_post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtt75l6ecs2c"
+    ],
+    "tweet_url": "https://x.com/ja3k_/status/2091850915456438556",
+    "twitter_posted": true
+}
