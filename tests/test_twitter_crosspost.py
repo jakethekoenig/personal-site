@@ -86,6 +86,47 @@ class FakeBlueskyClient:
 
 
 class TwitterCrosspostTest(unittest.TestCase):
+    def test_crosspost_expands_bluesky_link_facets(self):
+        display_url = "ja3k.com/short/3mtt75..."
+        full_url = "https://ja3k.com/short/3mtt75l6ecs2c"
+        prefix = "Nice it worked!\n"
+        root = post("root", prefix + display_url)
+        root["record"]["facets"] = [
+            {
+                "features": [
+                    {
+                        "$type": "app.bsky.richtext.facet#link",
+                        "uri": full_url,
+                    }
+                ],
+                "index": {
+                    "byteStart": len(prefix.encode("utf-8")),
+                    "byteEnd": len((prefix + display_url).encode("utf-8")),
+                },
+            }
+        ]
+        posting_client = FakePostingClient(["100"])
+
+        with (
+            patch.object(
+                sync_bluesky,
+                "twitter_clients",
+                return_value=(FakeMediaApi(), posting_client),
+            ),
+            patch.object(sync_bluesky.time, "sleep"),
+        ):
+            _, complete = sync_bluesky.crosspost_to_twitter(
+                [root],
+                [[]],
+                {root["uri"]: []},
+                Path("."),
+                "ja3k_",
+            )
+
+        self.assertTrue(complete)
+        self.assertEqual(posting_client.calls[0]["text"], prefix + full_url)
+        self.assertNotIn(display_url, posting_client.calls[0]["text"])
+
     def test_posts_media_and_replies_with_tweepy_keyword_arguments(self):
         root = post("root", "Root")
         reply = post("reply", "Reply", reply=root["uri"])

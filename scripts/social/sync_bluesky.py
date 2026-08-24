@@ -368,6 +368,47 @@ def chunk_text(text, limit=TWITTER_CHARACTER_LIMIT - 10):
     return chunks
 
 
+def text_with_full_links(record):
+    """Expand Bluesky's shortened link labels to their complete facet URLs."""
+    text = record.get("text", "")
+    text_bytes = text.encode("utf-8")
+    links = []
+    for facet in record.get("facets", []):
+        index = facet.get("index", {})
+        start = index.get("byteStart")
+        end = index.get("byteEnd")
+        if not isinstance(start, int) or not isinstance(end, int):
+            continue
+        if start < 0 or end <= start or end > len(text_bytes):
+            continue
+        url = next(
+            (
+                feature.get("uri")
+                for feature in facet.get("features", [])
+                if feature.get("$type", "").endswith("#link")
+                and feature.get("uri")
+            ),
+            None,
+        )
+        if url:
+            links.append((start, end, url))
+
+    if not links:
+        return text
+
+    links.sort()
+    expanded = []
+    position = 0
+    for start, end, url in links:
+        if start < position:
+            continue
+        expanded.append(text_bytes[position:start].decode("utf-8"))
+        expanded.append(url)
+        position = end
+    expanded.append(text_bytes[position:].decode("utf-8"))
+    return "".join(expanded)
+
+
 def twitter_clients():
     """Return the authenticated v1.1 media API and v2 posting client."""
     global _twitter_clients
@@ -466,7 +507,7 @@ def crosspost_to_twitter(
         existing_urls = [
             url for url in post_links[post_index] if is_twitter_post_url(url)
         ]
-        for index, chunk in enumerate(chunk_text(post_record(post).get("text", "")) or [""]):
+        for index, chunk in enumerate(chunk_text(text_with_full_links(post_record(post))) or [""]):
             if index < len(existing_urls):
                 previous_id = twitter_post_id(existing_urls[index])
                 continue
