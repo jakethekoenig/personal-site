@@ -21,9 +21,7 @@
 					<span class="tweet-date"><$Date$></span>
 				</div>
 				<div class="tweet-links">
-					<a href="<$tweet_url$>" target="_blank" class="tweet-twitter-link" title="<$short_source_title$>">
-						<$source_badge$>
-					</a>
+					<$short_source_links$>
 				</div>
 			</div>
 			<div class="tweet-content">

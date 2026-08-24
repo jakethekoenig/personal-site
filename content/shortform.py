@@ -1,5 +1,4 @@
 import json
-import html as html_lib
 import os
 import sys
 from pathlib import Path
@@ -10,40 +9,9 @@ from content import md2html
 from shortform_render import (
     render_thread_content,
     shortform_sort_key,
+    source_links_html,
     thread_indicator_text,
 )
-
-TWITTER_ICON_SVG = '''<svg class="twitter-icon" viewBox="0 0 24 24" width="16" height="16">
-    <path fill="#1da1f2" d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-</svg>'''
-
-
-def source_badge(post_data):
-    if post_data.get('source') == 'bluesky':
-        return '<span class="post-source">Bluesky</span>'
-    return TWITTER_ICON_SVG
-
-
-def source_links_html(post_data):
-    """Render one link per platform the post exists on."""
-    is_bluesky = post_data.get('source') == 'bluesky'
-    if is_bluesky:
-        bluesky_url = post_data.get('bluesky_url')
-        if not bluesky_url:
-            thread_urls = post_data.get('thread_urls') or []
-            bluesky_url = thread_urls[0] if thread_urls else None
-        tweet_url = post_data.get('tweet_url') if post_data.get('twitter_posted') else None
-    else:
-        bluesky_url = None
-        tweet_url = post_data.get('tweet_url')
-
-    links = ''
-    if bluesky_url:
-        links += f'<a href="{html_lib.escape(bluesky_url, quote=True)}" target="_blank" class="tweet-bluesky-link" title="View original post on Bluesky">{source_badge(post_data)}</a>'
-    if tweet_url:
-        title = 'View original post on Twitter'
-        links += f'<a href="{html_lib.escape(tweet_url, quote=True)}" target="_blank" class="tweet-twitter-link" title="{title}">{TWITTER_ICON_SVG}</a>'
-    return links
 
 
 def generate(data, index):

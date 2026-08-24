@@ -12,7 +12,7 @@
         "threads"
     ],
     "tweet_id": "3mt6yf2w2lc27",
-    "tweet_url": "https://bsky.app/profile/ja3k.bsky.social/post/3mt6yf2w2lc27",
+    "bluesky_url": "https://bsky.app/profile/ja3k.bsky.social/post/3mt6yf2w2lc27",
     "original_date": "2026-08-16T10:33:36.361Z",
     "media": [
         {
@@ -29,6 +29,11 @@
     "source_badge": "<span class=\"post-source\">Bluesky</span>",
     "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mt6yf2w2lc27",
     "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mt6yf2w2lc27",
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mt6yf3dq3c27",
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mt6yldgduk27"
+    ],
+    "twitter_skipped_post_uris": [
         "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mt6yf2w2lc27",
         "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mt6yf3dq3c27",
         "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mt6yldgduk27"

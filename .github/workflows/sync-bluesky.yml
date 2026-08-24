@@ -30,18 +30,22 @@ jobs:
                                   fetch-depth: 0
 
                         - name: Import new Bluesky posts
+                          id: import
+                          continue-on-error: true
                           env:
+                                  TWITTER_CROSSPOST_ENABLED: "true"
                                   TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
                                   TWITTER_API_SECRET: ${{ secrets.TWITTER_API_SECRET }}
                                   TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
                                   TWITTER_ACCESS_SECRET: ${{ secrets.TWITTER_ACCESS_SECRET }}
                                   TWITTER_USERNAME: ja3k_
                           run: |
-                                  python3 -m pip install --quiet tweepy
+                                  python3 -m pip install --quiet --requirement scripts/social/requirements.txt
                                   python3 scripts/social/sync_bluesky.py
 
                         - name: Check for imported posts
                           id: changes
+                          if: always()
                           shell: bash
                           run: |
                                   changes="$(git status --porcelain -- .github/bluesky-sync-state.json data/short content/short)"
@@ -53,7 +57,7 @@ jobs:
                                   fi
 
                         - name: Upload Bluesky media
-                          if: steps.changes.outputs.changed == 'true'
+                          if: always() && steps.changes.outputs.changed == 'true'
                           env:
                                   AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
                                   AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -61,7 +65,7 @@ jobs:
                           run: aws s3 sync nongenerated/asset/bluesky s3://ja3k.com/asset/bluesky --size-only
 
                         - name: Commit and push imported posts
-                          if: steps.changes.outputs.changed == 'true'
+                          if: always() && steps.changes.outputs.changed == 'true'
                           shell: bash
                           run: |
                                   git config user.name "github-actions[bot]"
@@ -72,7 +76,11 @@ jobs:
                                   git push origin HEAD:master
 
                         - name: Trigger website deployment
-                          if: steps.changes.outputs.changed == 'true' || inputs.deploy_without_changes == true
+                          if: always() && (steps.changes.outputs.changed == 'true' || inputs.deploy_without_changes == true)
                           env:
                                   GH_TOKEN: ${{ github.token }}
                           run: gh workflow run deploy.yml --ref master
+
+                        - name: Report an incomplete import
+                          if: always() && steps.import.outcome == 'failure'
+                          run: exit 1
