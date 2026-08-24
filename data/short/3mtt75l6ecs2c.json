@@ -5,7 +5,7 @@
     "Template": "tweet.temp",
     "Date": "2026-08-24",
     "Content": "short/3mtt75l6ecs2c.md",
-    "Summary": "Testing X crosspoasting Nice it worked! ja3k.com/short/3mtt75...",
+    "Summary": "Testing X crosspoasting Nice it worked! ja3k.com/short/3mtt75... Okay lets see if this link works correctly: ja3k.com/short/3mtt75...",
     "Categories": [
         "shorts",
         "bluesky",
@@ -20,6 +20,10 @@
         [
             "https://bsky.app/profile/ja3k.bsky.social/post/3mtt7h54cn22c",
             "https://x.com/ja3k_/status/2091852547841577217"
+        ],
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mttb3fe2mc2c",
+            "https://x.com/ja3k_/status/2091861818654286000"
         ]
     ],
     "original_date": "2026-08-24T11:27:55.927Z",
@@ -36,7 +40,8 @@
     "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtt75l6ecs2c",
     "post_uris": [
         "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtt75l6ecs2c",
-        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtt7h54cn22c"
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtt7h54cn22c",
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mttb3fe2mc2c"
     ],
-    "thread_length": 2
+    "thread_length": 3
 }
