@@ -12,16 +12,34 @@
         "threads"
     ],
     "tweet_id": "1451969239611547648",
-    "thread_urls": [
-        "https://twitter.com/ja3k_/status/1451969239611547648",
-        "https://twitter.com/ja3k_/status/1452296198132572162",
-        "https://twitter.com/ja3k_/status/1435980599177666561",
-        "https://twitter.com/ja3k_/status/1435980600708673539",
-        "https://twitter.com/ja3k_/status/1435980601824268293",
-        "https://twitter.com/ja3k_/status/1435980602918977537",
-        "https://twitter.com/ja3k_/status/1435980603988512790",
-        "https://twitter.com/ja3k_/status/1436093758643265539",
-        "https://twitter.com/ja3k_/status/1440290944276844553"
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1451969239611547648"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/1452296198132572162"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/1435980599177666561"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/1435980600708673539"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/1435980601824268293"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/1435980602918977537"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/1435980603988512790"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/1436093758643265539"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/1440290944276844553"
+        ]
     ],
     "original_date": "Sat Oct 23 17:50:17 +0000 2021",
     "media": [],

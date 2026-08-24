@@ -2,6 +2,7 @@
 
 import html as html_lib
 from datetime import datetime, timezone
+from urllib.parse import urlparse
 
 
 TWITTER_ICON_SVG = '''<svg class="twitter-icon" viewBox="0 0 24 24" width="16" height="16">
@@ -9,25 +10,46 @@ TWITTER_ICON_SVG = '''<svg class="twitter-icon" viewBox="0 0 24 24" width="16" h
 </svg>'''
 
 
-def source_links_html(post_data):
-    """Render links according to strict per-platform URL fields."""
-    links = []
-    bluesky_url = post_data.get("bluesky_url")
-    if bluesky_url:
-        links.append(
-            '<a href="%s" target="_blank" class="tweet-bluesky-link" '
-            'title="View original post on Bluesky">'
-            '<span class="post-source">Bluesky</span></a>'
-            % html_lib.escape(bluesky_url, quote=True)
-        )
+def post_service(url):
+    """Identify the service for a public post URL."""
+    hostname = urlparse(url).hostname or ""
+    hostname = hostname.lower().removeprefix("www.")
+    if hostname in {"twitter.com", "x.com"}:
+        return "twitter"
+    if hostname == "bsky.app":
+        return "bluesky"
+    return "other"
 
-    tweet_url = post_data.get("tweet_url")
-    if tweet_url:
-        links.append(
-            '<a href="%s" target="_blank" class="tweet-twitter-link" '
-            'title="View original post on Twitter">%s</a>'
-            % (html_lib.escape(tweet_url, quote=True), TWITTER_ICON_SVG)
-        )
+
+def source_links_html(post_data):
+    """Render one source link per service from the first logical post."""
+    posts = post_data.get("posts") or []
+    urls = posts[0] if posts and isinstance(posts[0], list) else []
+    links = []
+    rendered_services = set()
+    for url in urls:
+        service = post_service(url)
+        if service in rendered_services:
+            continue
+        rendered_services.add(service)
+        escaped_url = html_lib.escape(url, quote=True)
+        if service == "bluesky":
+            links.append(
+                '<a href="%s" target="_blank" class="tweet-bluesky-link" '
+                'title="View original post on Bluesky">'
+                '<span class="post-source">Bluesky</span></a>' % escaped_url
+            )
+        elif service == "twitter":
+            links.append(
+                '<a href="%s" target="_blank" class="tweet-twitter-link" '
+                'title="View original post on X">%s</a>'
+                % (escaped_url, TWITTER_ICON_SVG)
+            )
+        else:
+            links.append(
+                '<a href="%s" target="_blank" class="tweet-source-link" '
+                'title="View original post">Source</a>' % escaped_url
+            )
     return "".join(links)
 
 
@@ -106,7 +128,7 @@ def render_thread_content(thread_content, render_markdown, fallback=""):
 
 def thread_indicator_text(thread_data):
     count = thread_data.get("thread_length", 1)
-    noun = "post" if thread_data.get("source") == "bluesky" else "tweet"
+    noun = "post"
     if count != 1:
         noun += "s"
     return f"🧵 Thread ({count} {noun})"

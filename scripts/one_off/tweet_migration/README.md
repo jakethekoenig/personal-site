@@ -122,7 +122,7 @@ Each tweet is stored as a JSON file with this structure:
     "Summary": "Full tweet text",
     "Categories": ["tweets"],
     "tweet_id": "1234567890",
-    "tweet_url": "https://twitter.com/ja3k_/status/1234567890",
+    "posts": [["https://twitter.com/ja3k_/status/1234567890"]],
     "original_date": "Fri Dec 01 15:30:00 +0000 2023",
     "is_thread": false,
     "media": [
@@ -150,9 +150,9 @@ Tweet threads are stored with additional metadata:
     "Summary": "Combined thread text preview...",
     "Categories": ["tweets", "threads"],
     "tweet_id": "1234567890",
-    "thread_urls": [
-        "https://twitter.com/ja3k_/status/1234567890",
-        "https://twitter.com/ja3k_/status/1234567891"
+    "posts": [
+        ["https://twitter.com/ja3k_/status/1234567890"],
+        ["https://twitter.com/ja3k_/status/1234567891"]
     ],
     "original_date": "Fri Dec 01 15:30:00 +0000 2023",
     "is_thread": true,

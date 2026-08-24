@@ -12,7 +12,16 @@
         "threads"
     ],
     "tweet_id": "3mtt75l6ecs2c",
-    "bluesky_url": "https://bsky.app/profile/ja3k.bsky.social/post/3mtt75l6ecs2c",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mtt75l6ecs2c",
+            "https://x.com/ja3k_/status/2091850915456438556"
+        ],
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mtt7h54cn22c",
+            "https://x.com/ja3k_/status/2091852547841577217"
+        ]
+    ],
     "original_date": "2026-08-24T11:27:55.927Z",
     "media": [
         {
@@ -24,45 +33,10 @@
         }
     ],
     "is_thread": true,
-    "source": "bluesky",
-    "source_name": "Bluesky",
-    "source_badge": "<span class=\"post-source\">Bluesky</span>",
     "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtt75l6ecs2c",
     "post_uris": [
         "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtt75l6ecs2c",
         "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtt7h54cn22c"
     ],
-    "thread_length": 2,
-    "thread_urls": [
-        "https://bsky.app/profile/ja3k.bsky.social/post/3mtt75l6ecs2c",
-        "https://bsky.app/profile/ja3k.bsky.social/post/3mtt7h54cn22c"
-    ],
-    "bluesky_thread_urls": [
-        "https://bsky.app/profile/ja3k.bsky.social/post/3mtt75l6ecs2c",
-        "https://bsky.app/profile/ja3k.bsky.social/post/3mtt7h54cn22c"
-    ],
-    "twitter_crossposts": [
-        {
-            "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtt75l6ecs2c",
-            "chunk_index": 0,
-            "tweet_id": "2091850915456438556",
-            "tweet_url": "https://x.com/ja3k_/status/2091850915456438556"
-        },
-        {
-            "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtt7h54cn22c",
-            "chunk_index": 0,
-            "tweet_id": "2091852547841577217",
-            "tweet_url": "https://x.com/ja3k_/status/2091852547841577217"
-        }
-    ],
-    "twitter_urls": [
-        "https://x.com/ja3k_/status/2091850915456438556",
-        "https://x.com/ja3k_/status/2091852547841577217"
-    ],
-    "twitter_post_uris": [
-        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtt75l6ecs2c",
-        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtt7h54cn22c"
-    ],
-    "tweet_url": "https://x.com/ja3k_/status/2091850915456438556",
-    "twitter_posted": true
+    "thread_length": 2
 }

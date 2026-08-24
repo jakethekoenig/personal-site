@@ -85,14 +85,6 @@ def make_index(index_path="."):
                 data1.update(data)
                 if data1.get("Template") == "tweet.temp":
                     is_thread = data1.get("is_thread", False)
-                    if (
-                        is_thread
-                        and data1.get("source") != "bluesky"
-                        and not data1.get("tweet_url")
-                    ):
-                        thread_urls = data1.get("thread_urls", [])
-                        if thread_urls:
-                            data1["tweet_url"] = thread_urls[0]
                     data1["short_page_class"] = " thread" if is_thread else ""
                     data1["short_header_class"] = (
                         "thread-header" if is_thread else "tweet-header"

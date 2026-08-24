@@ -11,7 +11,7 @@ from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
 from urllib.error import HTTPError, URLError
-from urllib.parse import quote, urlencode
+from urllib.parse import quote, urlencode, urlparse
 from urllib.request import Request, urlopen
 
 
@@ -428,33 +428,47 @@ def twitter_crossposting_enabled():
     }
 
 
+def is_twitter_post_url(url):
+    hostname = (urlparse(url).hostname or "").lower().removeprefix("www.")
+    return hostname in {"twitter.com", "x.com"} and "/status/" in urlparse(url).path
+
+
+def twitter_post_id(url):
+    path_parts = urlparse(url).path.strip("/").split("/")
+    try:
+        return path_parts[path_parts.index("status") + 1]
+    except (ValueError, IndexError):
+        raise ValueError(f"Cannot find an X post ID in {url}") from None
+
+
 def crosspost_to_twitter(
     posts,
+    post_links,
     media_by_post,
     media_dir,
     username,
-    existing_crossposts=None,
+    skipped_uris=None,
 ):
-    """Mirror posts to X, resuming after each previously successful chunk."""
-    crossposts = list(existing_crossposts or [])
-    existing_by_key = {
-        (item.get("bluesky_uri"), item.get("chunk_index")): item
-        for item in crossposts
-    }
+    """Mirror posts to X, using their public links as durable retry state."""
+    post_links = [list(urls) for urls in post_links]
+    skipped_uris = set(skipped_uris or [])
     previous_id = None
 
     try:
         api_v1, client_v2 = twitter_clients()
     except Exception as error:
         print(f"Twitter cross-posting deferred: {error}")
-        return crossposts, False
+        return post_links, False
 
-    for post in posts:
+    for post_index, post in enumerate(posts):
+        if post["uri"] in skipped_uris:
+            continue
+        existing_urls = [
+            url for url in post_links[post_index] if is_twitter_post_url(url)
+        ]
         for index, chunk in enumerate(chunk_text(post_record(post).get("text", "")) or [""]):
-            key = (post["uri"], index)
-            existing = existing_by_key.get(key)
-            if existing:
-                previous_id = existing["tweet_id"]
+            if index < len(existing_urls):
+                previous_id = twitter_post_id(existing_urls[index])
                 continue
 
             try:
@@ -476,35 +490,26 @@ def crosspost_to_twitter(
                 response = client_v2.create_tweet(**payload)
                 previous_id = str(response.data["id"])
             except Exception as error:
+                successful_count = sum(
+                    is_twitter_post_url(url)
+                    for urls in post_links
+                    for url in urls
+                )
                 print(
                     "Twitter cross-posting deferred after "
-                    f"{len(crossposts)} successful post(s): {error}"
+                    f"{successful_count} successful post(s): {error}"
                 )
-                return crossposts, False
-            item = {
-                "bluesky_uri": post["uri"],
-                "chunk_index": index,
-                "tweet_id": previous_id,
-                "tweet_url": f"https://x.com/{username}/status/{previous_id}",
-            }
-            crossposts.append(item)
-            existing_by_key[key] = item
+                return post_links, False
+            post_links[post_index].append(
+                f"https://x.com/{username}/status/{previous_id}"
+            )
             time.sleep(2)
 
-    print(f"Cross-posted to Twitter: {[item['tweet_url'] for item in crossposts]}")
-    return crossposts, True
-
-
-def completed_twitter_post_uris(posts, crossposts):
-    completed_chunks = {
-        (item.get("bluesky_uri"), item.get("chunk_index")) for item in crossposts
-    }
-    completed = []
-    for post in posts:
-        chunks = chunk_text(post_record(post).get("text", "")) or [""]
-        if all((post["uri"], index) in completed_chunks for index in range(len(chunks))):
-            completed.append(post["uri"])
-    return completed
+    twitter_urls = [
+        url for urls in post_links for url in urls if is_twitter_post_url(url)
+    ]
+    print(f"Cross-posted to Twitter: {twitter_urls}")
+    return post_links, True
 
 
 def write_json(path, value):
@@ -681,27 +686,35 @@ def save_thread(repo_root, client, actor, actor_did, posts):
 
     text_parts = [post_record(post).get("text", "") for post in posts]
     combined_text = "\n\n".join(text for text in text_parts if text)
-    root_url = bluesky_post_url(actor, root_uri)
 
-    # Store each successful X chunk so a partial thread can resume without
-    # duplicating the posts that X already accepted.
+    # Public links are both the site schema and the durable X retry state.
     existing_data = existing_data or {}
-    twitter_crossposts = list(existing_data.get("twitter_crossposts", []))
+    existing_post_uris = existing_data.get("post_uris", [])
+    existing_posts = existing_data.get("posts", [])
+    links_by_uri = {
+        uri: list(existing_posts[index])
+        for index, uri in enumerate(existing_post_uris)
+        if index < len(existing_posts)
+    }
+    post_links = []
+    for post in posts:
+        links = links_by_uri.get(post["uri"], [])
+        bluesky_url = bluesky_post_url(actor, post["uri"])
+        if bluesky_url not in links:
+            links.insert(0, bluesky_url)
+        post_links.append(links)
+
     skipped_twitter_uris = list(existing_data.get("twitter_skipped_post_uris", []))
-    twitter_posts = [
-        post for post in posts if post["uri"] not in skipped_twitter_uris
-    ]
     twitter_complete = not existing_data.get("twitter_crosspost_pending", False)
     if twitter_crossposting_enabled():
-        twitter_crossposts, twitter_complete = crosspost_to_twitter(
-            twitter_posts,
+        post_links, twitter_complete = crosspost_to_twitter(
+            posts,
+            post_links,
             media_by_post,
             media_dir,
             os.environ.get("TWITTER_USERNAME", "ja3k_"),
-            existing_crossposts=twitter_crossposts,
+            skipped_uris=skipped_twitter_uris,
         )
-    twitter_urls = [item["tweet_url"] for item in twitter_crossposts]
-    tweeted_uris = completed_twitter_post_uris(twitter_posts, twitter_crossposts)
 
     is_thread = len(posts) > 1
     data = {
@@ -718,30 +731,18 @@ def save_thread(repo_root, client, actor, actor_did, posts):
         "Summary": shortened(combined_text, 200),
         "Categories": ["shorts", "bluesky"] + (["threads"] if is_thread else []),
         "tweet_id": slug,
-        "bluesky_url": root_url,
+        "posts": post_links,
         "original_date": post_created_at(root),
         "media": all_media,
         "is_thread": is_thread,
-        "source": "bluesky",
-        "source_name": "Bluesky",
-        "source_badge": '<span class="post-source">Bluesky</span>',
         "bluesky_uri": root_uri,
         "post_uris": [post["uri"] for post in posts],
     }
     if is_thread:
         data["thread_length"] = len(posts)
-        data["thread_urls"] = [bluesky_post_url(actor, post["uri"]) for post in posts]
-        data["bluesky_thread_urls"] = list(data["thread_urls"])
     if skipped_twitter_uris:
         data["twitter_skipped_post_uris"] = skipped_twitter_uris
-    if twitter_crossposts:
-        data["twitter_crossposts"] = twitter_crossposts
-        data["twitter_urls"] = twitter_urls
-        data["twitter_post_uris"] = tweeted_uris
-        data["tweet_url"] = twitter_urls[0]
-    if twitter_complete and twitter_crossposts:
-        data["twitter_posted"] = True
-    elif not twitter_complete:
+    if not twitter_complete:
         data["twitter_crosspost_pending"] = True
 
     if is_thread:

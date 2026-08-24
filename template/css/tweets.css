@@ -40,7 +40,7 @@
     gap: 8px;
 }
 
-.tweet-page-link, .tweet-twitter-link, .tweet-bluesky-link {
+.tweet-page-link, .tweet-twitter-link, .tweet-bluesky-link, .tweet-source-link {
     display: inline-flex;
     align-items: center;
     text-decoration: none;
@@ -48,7 +48,7 @@
     transition: opacity 0.2s ease;
 }
 
-.tweet-page-link:hover, .tweet-twitter-link:hover, .tweet-bluesky-link:hover {
+.tweet-page-link:hover, .tweet-twitter-link:hover, .tweet-bluesky-link:hover, .tweet-source-link:hover {
     opacity: 1;
 }
 

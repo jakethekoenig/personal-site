@@ -44,7 +44,7 @@ def create_default_tweet_data():
             "Summary": "This is an example tweet to show how the tweets page works.",
             "Categories": ["tweets"],
             "tweet_id": "example",
-            "tweet_url": "https://twitter.com/ja3k_/status/example",
+            "posts": [["https://twitter.com/ja3k_/status/example"]],
             "original_date": "Thu Sep 05 16:00:00 +0000 2025",
             "media": []
         }

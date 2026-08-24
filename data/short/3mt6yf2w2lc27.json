@@ -12,7 +12,17 @@
         "threads"
     ],
     "tweet_id": "3mt6yf2w2lc27",
-    "bluesky_url": "https://bsky.app/profile/ja3k.bsky.social/post/3mt6yf2w2lc27",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mt6yf2w2lc27"
+        ],
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mt6yf3dq3c27"
+        ],
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mt6yldgduk27"
+        ]
+    ],
     "original_date": "2026-08-16T10:33:36.361Z",
     "media": [
         {
@@ -24,9 +34,6 @@
         }
     ],
     "is_thread": true,
-    "source": "bluesky",
-    "source_name": "Bluesky",
-    "source_badge": "<span class=\"post-source\">Bluesky</span>",
     "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mt6yf2w2lc27",
     "post_uris": [
         "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mt6yf2w2lc27",
@@ -38,10 +45,5 @@
         "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mt6yf3dq3c27",
         "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mt6yldgduk27"
     ],
-    "thread_length": 3,
-    "thread_urls": [
-        "https://bsky.app/profile/ja3k.bsky.social/post/3mt6yf2w2lc27",
-        "https://bsky.app/profile/ja3k.bsky.social/post/3mt6yf3dq3c27",
-        "https://bsky.app/profile/ja3k.bsky.social/post/3mt6yldgduk27"
-    ]
+    "thread_length": 3
 }

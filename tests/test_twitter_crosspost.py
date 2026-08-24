@@ -112,8 +112,9 @@ class TwitterCrosspostTest(unittest.TestCase):
                 ),
                 patch.object(sync_bluesky.time, "sleep"),
             ):
-                crossposts, complete = sync_bluesky.crosspost_to_twitter(
+                post_links, complete = sync_bluesky.crosspost_to_twitter(
                     [root, reply],
+                    [[], []],
                     media_by_post,
                     media_dir,
                     "ja3k_",
@@ -136,7 +137,13 @@ class TwitterCrosspostTest(unittest.TestCase):
             ],
         )
         self.assertEqual(media_api.metadata, [("media-1", "A diagram")])
-        self.assertEqual([item["tweet_id"] for item in crossposts], ["100", "101"])
+        self.assertEqual(
+            post_links,
+            [
+                ["https://x.com/ja3k_/status/100"],
+                ["https://x.com/ja3k_/status/101"],
+            ],
+        )
 
     def test_retry_resumes_after_the_successful_prefix(self):
         root = post("root", "Root")
@@ -151,15 +158,16 @@ class TwitterCrosspostTest(unittest.TestCase):
             ),
             patch.object(sync_bluesky.time, "sleep"),
         ):
-            crossposts, complete = sync_bluesky.crosspost_to_twitter(
+            post_links, complete = sync_bluesky.crosspost_to_twitter(
                 [root, reply],
+                [[], []],
                 {root["uri"]: [], reply["uri"]: []},
                 Path("."),
                 "ja3k_",
             )
 
         self.assertFalse(complete)
-        self.assertEqual([item["tweet_id"] for item in crossposts], ["100"])
+        self.assertEqual(post_links, [["https://x.com/ja3k_/status/100"], []])
 
         retry_client = FakePostingClient(["101"])
         with (
@@ -170,18 +178,24 @@ class TwitterCrosspostTest(unittest.TestCase):
             ),
             patch.object(sync_bluesky.time, "sleep"),
         ):
-            crossposts, complete = sync_bluesky.crosspost_to_twitter(
+            post_links, complete = sync_bluesky.crosspost_to_twitter(
                 [root, reply],
+                post_links,
                 {root["uri"]: [], reply["uri"]: []},
                 Path("."),
                 "ja3k_",
-                existing_crossposts=crossposts,
             )
 
         self.assertTrue(complete)
         self.assertEqual(len(retry_client.calls), 1)
         self.assertEqual(retry_client.calls[0]["in_reply_to_tweet_id"], "100")
-        self.assertEqual([item["tweet_id"] for item in crossposts], ["100", "101"])
+        self.assertEqual(
+            post_links,
+            [
+                ["https://x.com/ja3k_/status/100"],
+                ["https://x.com/ja3k_/status/101"],
+            ],
+        )
 
     def test_enabled_crossposting_rejects_missing_credentials(self):
         with patch.dict(os.environ, {}, clear=True):
@@ -189,7 +203,7 @@ class TwitterCrosspostTest(unittest.TestCase):
             with self.assertRaisesRegex(RuntimeError, "TWITTER_API_KEY"):
                 sync_bluesky.twitter_clients()
 
-    def test_bluesky_only_record_has_no_tweet_url(self):
+    def test_bluesky_only_record_uses_the_posts_schema(self):
         root = post("root", "Root")
         with tempfile.TemporaryDirectory() as temporary_directory:
             repo_root = Path(temporary_directory)
@@ -206,8 +220,8 @@ class TwitterCrosspostTest(unittest.TestCase):
         self.assertTrue(complete)
         self.assertNotIn("tweet_url", data)
         self.assertEqual(
-            data["bluesky_url"],
-            "https://bsky.app/profile/ja3k.bsky.social/post/root",
+            data["posts"],
+            [["https://bsky.app/profile/ja3k.bsky.social/post/root"]],
         )
 
     def test_incomplete_crosspost_is_saved_without_advancing_checkpoint(self):
@@ -242,7 +256,10 @@ class TwitterCrosspostTest(unittest.TestCase):
                 patch.object(
                     sync_bluesky,
                     "crosspost_to_twitter",
-                    return_value=([], False),
+                    side_effect=lambda posts, post_links, *args, **kwargs: (
+                        post_links,
+                        False,
+                    ),
                 ),
             ):
                 with self.assertRaisesRegex(RuntimeError, "checkpoint was not advanced"):
@@ -260,6 +277,10 @@ class TwitterCrosspostTest(unittest.TestCase):
 
         self.assertTrue(data["twitter_crosspost_pending"])
         self.assertNotIn("tweet_url", data)
+        self.assertEqual(
+            data["posts"],
+            [["https://bsky.app/profile/ja3k.bsky.social/post/root"]],
+        )
 
 
 if __name__ == "__main__":

@@ -11,7 +11,11 @@
         "tweets"
     ],
     "tweet_id": "1572397720211689473",
-    "tweet_url": "https://twitter.com/ja3k_/status/1572397720211689473",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1572397720211689473"
+        ]
+    ],
     "original_date": "Wed Sep 21 01:30:04 +0000 2022",
     "media": [],
     "quoted_tweet": null,
