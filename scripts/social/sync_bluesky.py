@@ -7,6 +7,7 @@ import json
 import mimetypes
 import os
 import time
+import uuid
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
@@ -553,6 +554,349 @@ def crosspost_to_twitter(
     return post_links, True
 
 
+# --- Mastodon / Threads / Farcaster cross-posting ----------------------------
+
+SITE_PUBLIC_URL = os.environ.get("SITE_PUBLIC_URL", "https://ja3k.com")
+MASTODON_CHARACTER_LIMIT = 500
+THREADS_CHARACTER_LIMIT = 500
+FARCASTER_CHARACTER_LIMIT = 320
+THREADS_GRAPH_URL = "https://graph.threads.net/v1.0"
+FARCASTER_API_URL = "https://api.neynar.com/v2/farcaster"
+
+
+def http_request_json(
+    url,
+    method="GET",
+    *,
+    token=None,
+    headers=None,
+    data=None,
+    content_type="application/json",
+    timeout=30,
+    attempts=3,
+):
+    """Small stdlib HTTP helper with the same retry policy as BlueskyClient."""
+    request_headers = {"User-Agent": "ja3k.com-crossposter/1.0"}
+    if token:
+        request_headers["Authorization"] = f"Bearer {token}"
+    if headers:
+        request_headers.update(headers)
+    if isinstance(data, str):
+        data = data.encode("utf-8")
+    if data is not None:
+        request_headers.setdefault("Content-Type", content_type)
+    request = Request(url, data=data, headers=request_headers, method=method)
+    for attempt in range(attempts):
+        try:
+            with urlopen(request, timeout=timeout) as response:
+                payload = response.read()
+            if response.headers.get_content_type() == "application/json":
+                return json.loads(payload)
+            text = payload.decode("utf-8", "replace")
+            try:
+                return json.loads(text)
+            except json.JSONDecodeError:
+                return text
+        except HTTPError as error:
+            detail = error.read().decode("utf-8", "replace")[:500]
+            if error.code not in {429, 500, 502, 503, 504} or attempt + 1 == attempts:
+                raise RuntimeError(f"{method} {url} failed: {error.code} {detail}") from error
+        except URLError as error:
+            if attempt + 1 == attempts:
+                raise RuntimeError(f"{method} {url} failed: {error.reason}") from error
+        time.sleep(2**attempt)
+    raise RuntimeError(f"Unable to complete {method} {url}")
+
+
+def crossposting_enabled(name):
+    """Allow local site-only imports while requiring platforms in the workflow."""
+    return os.environ.get(f"{name}_CROSSPOST_ENABLED", "").lower() in {
+        "1",
+        "true",
+        "yes",
+    }
+
+
+def require_credentials(platform, keys):
+    values = {key: os.environ.get(key) for key in keys}
+    missing = [key for key, value in values.items() if not value]
+    if missing:
+        names = ", ".join(missing)
+        raise RuntimeError(f"{platform} cross-posting is enabled but {names} is not set")
+    return values
+
+
+def public_media_url(item):
+    return f"{SITE_PUBLIC_URL.rstrip('/')}{item['url']}"
+
+
+def status_id_from_url(url):
+    return urlparse(url).path.rstrip("/").rsplit("/", 1)[-1]
+
+
+def run_crosspost(crosspost, platform, posts, post_links, skipped_uris):
+    """Invoke a poster, tolerating missing credentials for local site-only runs."""
+    post_links = [list(urls) for urls in post_links]
+    try:
+        return crosspost(post_links), True
+    except Exception as error:
+        successful_count = sum(len(urls) for urls in post_links)
+        print(f"{platform} cross-posting deferred after {successful_count} post(s): {error}")
+        return post_links, False
+
+
+# --- Mastodon -----------------------------------------------------------------
+
+
+def multipart_encode(fields, files):
+    boundary = "----ja3k" + uuid.uuid4().hex
+    parts = []
+    for name, value in fields.items():
+        parts.append(
+            f'--{boundary}\r\nContent-Disposition: form-data; name="{name}"\r\n\r\n{value}\r\n'.encode("utf-8")
+        )
+    for name, filename, body, file_content_type in files:
+        header = (
+            f'--{boundary}\r\nContent-Disposition: form-data; name="{name}"; '
+            f'filename="{filename}"\r\nContent-Type: {file_content_type}\r\n\r\n'
+        ).encode("utf-8")
+        parts.append(header + body + b"\r\n")
+    parts.append(f"--{boundary}--\r\n".encode("utf-8"))
+    return b"".join(parts), f"multipart/form-data; boundary={boundary}"
+
+
+def mastodon_config():
+    credentials = require_credentials("Mastodon", ("MASTODON_BASE_URL", "MASTODON_ACCESS_TOKEN"))
+    return credentials["MASTODON_BASE_URL"].rstrip("/"), credentials["MASTODON_ACCESS_TOKEN"]
+
+
+def mastodon_upload_media(base_url, token, path, alt=""):
+    fields = {}
+    if alt:
+        fields["description"] = alt[:1000]
+    body, content_type = multipart_encode(
+        fields,
+        [
+            (
+                "file",
+                path.name,
+                path.read_bytes(),
+                mimetypes.guess_type(str(path))[0] or "application/octet-stream",
+            )
+        ],
+    )
+    response = http_request_json(
+        f"{base_url}/api/v2/media",
+        "POST",
+        token=token,
+        data=body,
+        content_type=content_type,
+        timeout=120,
+    )
+    return response["id"]
+
+
+def crosspost_to_mastodon(posts, post_links, media_by_post, media_dir, skipped_uris=None):
+    """Mirror posts to Mastodon; each chunk is a reply to the previous status."""
+    base_url, token = mastodon_config()
+    skipped_uris = set(skipped_uris or [])
+    previous_id = None
+
+    for post_index, post in enumerate(posts):
+        if post["uri"] in skipped_uris:
+            continue
+        existing_urls = list(post_links[post_index])
+        chunks = chunk_text(text_with_full_links(post_record(post)), MASTODON_CHARACTER_LIMIT - 10) or [""]
+        for index, chunk in enumerate(chunks):
+            if index < len(existing_urls):
+                previous_id = status_id_from_url(existing_urls[index])
+                continue
+            payload = {"status": chunk}
+            if previous_id:
+                payload["in_reply_to_id"] = previous_id
+            if index == 0:
+                media_ids = []
+                for item in media_by_post.get(post["uri"], [])[:4]:
+                    local_path = media_dir / Path(item["url"]).name
+                    if local_path.exists():
+                        media_ids.append(mastodon_upload_media(base_url, token, local_path, item.get("alt", "")))
+                if media_ids:
+                    payload["media_ids[]"] = ",".join(media_ids)
+            response = http_request_json(
+                f"{base_url}/api/v1/statuses",
+                "POST",
+                token=token,
+                data=urlencode(payload),
+                content_type="application/x-www-form-urlencoded",
+            )
+            previous_id = response["id"]
+            post_links[post_index].append(response.get("url") or f"{base_url}/{response['account']['acct']}/{previous_id}")
+            time.sleep(1)
+    return post_links
+
+
+# --- Threads ------------------------------------------------------------------
+
+
+def threads_config():
+    credentials = require_credentials("Threads", ("THREADS_ACCESS_TOKEN",))
+    username = os.environ.get("THREADS_USERNAME", "")
+    return credentials["THREADS_ACCESS_TOKEN"], username
+
+
+def threads_container(params, token):
+    response = http_request_json(
+        f"{THREADS_GRAPH_URL}/me/threads",
+        "POST",
+        token=token,
+        data=urlencode(params),
+        content_type="application/x-www-form-urlencoded",
+    )
+    return response["id"]
+
+
+def threads_wait_for_container(container_id, token, timeout_seconds=60):
+    deadline = time.monotonic() + timeout_seconds
+    while time.monotonic() < deadline:
+        response = http_request_json(
+            f"{THREADS_GRAPH_URL}/{container_id}?fields=status_code&access_token={quote(token, safe='')}",
+        )
+        status = response.get("status_code")
+        if status == "FINISHED":
+            return
+        if status in {"EXPIRED", "ERROR"}:
+            raise RuntimeError(f"Threads container {container_id} reached status {status}")
+        time.sleep(3)
+    raise RuntimeError(f"Timed out waiting for Threads container {container_id}")
+
+
+def threads_publish(container_id, token):
+    response = http_request_json(
+        f"{THREADS_GRAPH_URL}/me/threads_publish",
+        "POST",
+        token=token,
+        data=urlencode({"creation_id": container_id}),
+        content_type="application/x-www-form-urlencoded",
+    )
+    return response["id"]
+
+
+def crosspost_to_threads(posts, post_links, media_by_post, media_dir, username, skipped_uris=None):
+    """Mirror posts to Threads via the official Graph API."""
+    token, configured_username = threads_config()
+    permalink_username = (username or configured_username).lstrip("@")
+    skipped_uris = set(skipped_uris or [])
+    previous_id = None
+
+    for post_index, post in enumerate(posts):
+        if post["uri"] in skipped_uris:
+            continue
+        existing_urls = list(post_links[post_index])
+        chunks = chunk_text(text_with_full_links(post_record(post)), THREADS_CHARACTER_LIMIT - 10) or [""]
+        for index, chunk in enumerate(chunks):
+            if index < len(existing_urls):
+                previous_id = status_id_from_url(existing_urls[index])
+                continue
+            params = {"text": chunk}
+            if previous_id:
+                params["reply_to_id"] = previous_id
+            if index == 0:
+                items = [item for item in media_by_post.get(post["uri"], [])][:10]
+                video_items = [item for item in items if item["type"] == "video"]
+                image_items = [item for item in items if item["type"] != "video"]
+                # The publish API supports one video or up to ten images per post.
+                if video_items:
+                    params["media_type"] = "VIDEO"
+                    params["video_url"] = public_media_url(video_items[0])
+                elif image_items:
+                    if len(image_items) > 1:
+                        params["media_type"] = "CAROUSEL_ALBUM"
+                        for child_index, item in enumerate(image_items[:10]):
+                            child_id = threads_container({"media_type": "IMAGE", "image_url": public_media_url(item)}, token)
+                            threads_wait_for_container(child_id, token)
+                            params.setdefault("children", []).append(child_id)
+                        params["children"] = ",".join(params.pop("children"))
+                    else:
+                        params["media_type"] = "IMAGE"
+                        params["image_url"] = public_media_url(image_items[0])
+                else:
+                    params["media_type"] = "TEXT"
+            else:
+                params["media_type"] = "TEXT"
+            container_id = threads_container(params, token)
+            if params.get("media_type") != "TEXT":
+                threads_wait_for_container(container_id, token)
+            published_id = threads_publish(container_id, token)
+            previous_id = published_id
+            post_links[post_index].append(f"https://www.threads.net/@{permalink_username}/post/{published_id}")
+            time.sleep(2)
+    return post_links
+
+
+# --- Farcaster (via Neynar) ---------------------------------------------------
+
+
+def farcaster_config():
+    credentials = require_credentials(
+        "Farcaster", ("NEYNAR_API_KEY", "FARCASTER_SIGNER_UUID")
+    )
+    username = os.environ.get("FARCASTER_USERNAME", "")
+    return credentials["NEYNAR_API_KEY"], credentials["FARCASTER_SIGNER_UUID"], username
+
+
+def farcaster_cast(api_key, signer_uuid, text, parent_hash=None, embeds=None):
+    payload = {"signer_uuid": signer_uuid, "text": text}
+    if parent_hash:
+        payload["parent"] = f"hash:{parent_hash}"
+    if embeds:
+        payload["embeds"] = [{"url": url} for url in embeds]
+    response = http_request_json(
+        f"{FARCASTER_API_URL}/cast",
+        "POST",
+        headers={"x-api-key": api_key},
+        data=json.dumps(payload),
+    )
+    cast = response.get("cast", {})
+    return cast.get("hash"), (cast.get("author") or {}).get("username", "")
+
+
+def crosspost_to_farcaster(posts, post_links, media_by_post, media_dir, username, skipped_uris=None):
+    """Mirror posts to Farcaster through Neynar's v2 API."""
+    api_key, signer_uuid, configured_username = farcaster_config()
+    permalink_username = (username or configured_username).lstrip("@")
+    skipped_uris = set(skipped_uris or [])
+    previous_hash = None
+
+    for post_index, post in enumerate(posts):
+        if post["uri"] in skipped_uris:
+            continue
+        existing_urls = list(post_links[post_index])
+        chunks = chunk_text(text_with_full_links(post_record(post)), FARCASTER_CHARACTER_LIMIT - 10) or [""]
+        for index, chunk in enumerate(chunks):
+            if index < len(existing_urls):
+                previous_hash = status_id_from_url(existing_urls[index]).removeprefix("0x")
+                continue
+            embeds = None
+            if index == 0 and not existing_urls:
+                embeds = [
+                    public_media_url(item)
+                    for item in media_by_post.get(post["uri"], [])
+                    if item["type"] in {"photo", "video"}
+                ] or None
+            cast_hash, author_username = farcaster_cast(
+                api_key,
+                signer_uuid=signer_uuid,
+                text=chunk,
+                parent_hash=previous_hash,
+                embeds=embeds,
+            )
+            previous_hash = cast_hash.removeprefix("0x")
+            author = author_username or permalink_username
+            post_links[post_index].append(f"https://warpcast.com/{author}/0x{previous_hash}")
+            time.sleep(1)
+    return post_links
+
+
 def write_json(path, value):
     path.parent.mkdir(parents=True, exist_ok=True)
     temporary_path = path.with_suffix(path.suffix + ".tmp")
@@ -746,9 +1090,9 @@ def save_thread(repo_root, client, actor, actor_did, posts):
         post_links.append(links)
 
     skipped_twitter_uris = list(existing_data.get("twitter_skipped_post_uris", []))
-    twitter_complete = not existing_data.get("twitter_crosspost_pending", False)
+    platform_complete = {"twitter": not existing_data.get("twitter_crosspost_pending", False)}
     if twitter_crossposting_enabled():
-        post_links, twitter_complete = crosspost_to_twitter(
+        post_links, platform_complete["twitter"] = crosspost_to_twitter(
             posts,
             post_links,
             media_by_post,
@@ -756,6 +1100,44 @@ def save_thread(repo_root, client, actor, actor_did, posts):
             os.environ.get("TWITTER_USERNAME", "ja3k_"),
             skipped_uris=skipped_twitter_uris,
         )
+
+    # Each additional platform keeps its own parallel link arrays so retries
+    # skip chunks whose public permalink is already recorded.
+    platform_links_by_platform = {}
+    for platform in ("mastodon", "threads", "farcaster"):
+        skipped = list(existing_data.get(f"{platform}_skipped_post_uris", []))
+        stored_links = existing_data.get(f"{platform}_posts", [])
+        links_by_uri = {
+            uri: list(stored_links[index])
+            for index, uri in enumerate(existing_post_uris)
+            if index < len(stored_links)
+        }
+        platform_links = [links_by_uri.get(post["uri"], []) for post in posts]
+        platform_complete[platform] = not existing_data.get(f"{platform}_crosspost_pending", False)
+        if not crossposting_enabled(platform.upper()):
+            continue
+        if platform == "mastodon":
+            def poster(links, _skipped=skipped):
+                return crosspost_to_mastodon(
+                    posts, links, media_by_post, media_dir, skipped_uris=_skipped
+                )
+        elif platform == "threads":
+            def poster(links, _skipped=skipped):
+                return crosspost_to_threads(
+                    posts, links, media_by_post, media_dir,
+                    os.environ.get("THREADS_USERNAME", ""), skipped_uris=_skipped,
+                )
+        else:
+            def poster(links, _skipped=skipped):
+                return crosspost_to_farcaster(
+                    posts, links, media_by_post, media_dir,
+                    os.environ.get("FARCASTER_USERNAME", ""), skipped_uris=_skipped,
+                )
+        platform_links, complete = run_crosspost(
+            poster, platform.capitalize(), posts, platform_links, skipped
+        )
+        platform_complete[platform] = complete
+        platform_links_by_platform[platform] = platform_links
 
     is_thread = len(posts) > 1
     data = {
@@ -783,8 +1165,16 @@ def save_thread(repo_root, client, actor, actor_did, posts):
         data["thread_length"] = len(posts)
     if skipped_twitter_uris:
         data["twitter_skipped_post_uris"] = skipped_twitter_uris
-    if not twitter_complete:
+    if not platform_complete["twitter"]:
         data["twitter_crosspost_pending"] = True
+
+    for platform, links in platform_links_by_platform.items():
+        data[f"{platform}_posts"] = links
+        skipped = list(existing_data.get(f"{platform}_skipped_post_uris", []))
+        if skipped:
+            data[f"{platform}_skipped_post_uris"] = skipped
+        if not platform_complete[platform]:
+            data[f"{platform}_crosspost_pending"] = True
 
     if is_thread:
         sections = ["# Thread", ""]
@@ -806,7 +1196,7 @@ def save_thread(repo_root, client, actor, actor_did, posts):
     write_json(data_path, data)
     content_path.parent.mkdir(parents=True, exist_ok=True)
     content_path.write_text(content, encoding="utf-8")
-    return data_path, twitter_complete
+    return data_path, platform_complete
 
 
 def sync(repo_root, client, actor, state_path):
@@ -829,7 +1219,7 @@ def sync(repo_root, client, actor, state_path):
             root_uris.append(root_uri)
 
     written = 0
-    twitter_complete = True
+    all_platforms_complete = True
     fallback_posts = {post.get("uri"): post for post in eligible_posts}
     for root_uri in root_uris:
         try:
@@ -844,7 +1234,7 @@ def sync(repo_root, client, actor, state_path):
             posts.sort(key=lambda post: parse_datetime(post_created_at(post)))
         if not posts or posts[0].get("uri") != root_uri:
             raise RuntimeError(f"Could not load Bluesky thread root {root_uri}")
-        path, thread_twitter_complete = save_thread(
+        path, thread_platform_complete = save_thread(
             repo_root,
             client,
             actor,
@@ -853,11 +1243,12 @@ def sync(repo_root, client, actor, state_path):
         )
         print(f"Updated {path.relative_to(repo_root)} with {len(posts)} post(s).")
         written += 1
-        twitter_complete = twitter_complete and thread_twitter_complete
+        for complete in thread_platform_complete.values():
+            all_platforms_complete = all_platforms_complete and complete
 
-    if not twitter_complete:
+    if not all_platforms_complete:
         raise RuntimeError(
-            "One or more X cross-posts are incomplete; Bluesky checkpoint was not advanced"
+            "One or more cross-posts are incomplete; Bluesky checkpoint was not advanced"
         )
 
     state["last_seen_uri"] = scan.newest_uri

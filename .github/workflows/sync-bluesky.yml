@@ -39,6 +39,16 @@ jobs:
                                   TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
                                   TWITTER_ACCESS_SECRET: ${{ secrets.TWITTER_ACCESS_SECRET }}
                                   TWITTER_USERNAME: ja3k_
+                                  MASTODON_CROSSPOST_ENABLED: "true"
+                                  MASTODON_BASE_URL: ${{ secrets.MASTODON_BASE_URL }}
+                                  MASTODON_ACCESS_TOKEN: ${{ secrets.MASTODON_ACCESS_TOKEN }}
+                                  THREADS_CROSSPOST_ENABLED: "true"
+                                  THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+                                  THREADS_USERNAME: ${{ secrets.THREADS_USERNAME }}
+                                  FARCASTER_CROSSPOST_ENABLED: "true"
+                                  NEYNAR_API_KEY: ${{ secrets.NEYNAR_API_KEY }}
+                                  FARCASTER_SIGNER_UUID: ${{ secrets.FARCASTER_SIGNER_UUID }}
+                                  FARCASTER_USERNAME: ${{ secrets.FARCASTER_USERNAME }}
                           run: |
                                   python3 -m pip install --quiet --requirement scripts/social/requirements.txt
                                   python3 scripts/social/sync_bluesky.py
