@@ -73,6 +73,7 @@
     line-height: 1.5;
     color: #14171a;
     font-size: 16px;
+    overflow-wrap: anywhere;
 }
 
 .tweet-content p {
@@ -104,7 +105,6 @@
     
     .tweet-content {
         font-size: 15px;
-        overflow-wrap: break-word;
     }
 }
 
