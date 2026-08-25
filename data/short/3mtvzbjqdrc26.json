@@ -1,0 +1,49 @@
+{
+    "Title": "Thread: I finally read and understood the SynthID paper and now I'm against LLM water...",
+    "Author": "Jake Koenig",
+    "URL": "3mtvzbjqdrc26",
+    "Template": "tweet.temp",
+    "Date": "2026-08-25",
+    "Content": "short/3mtvzbjqdrc26.md",
+    "Summary": "I finally read and understood the SynthID paper and now I'm against LLM watermarking. It is only non-distortionary in a fairly weak way To give a concrete example if an llm predicts the next token ...",
+    "Categories": [
+        "shorts",
+        "bluesky",
+        "threads"
+    ],
+    "tweet_id": "3mtvzbjqdrc26",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mtvzbjqdrc26",
+            "https://x.com/ja3k_/status/2092265817383514276"
+        ],
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mtvzbjqmkk26",
+            "https://x.com/ja3k_/status/2092265826820767919"
+        ],
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mtvzbjqmkl26",
+            "https://x.com/ja3k_/status/2092265836421460195"
+        ],
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mtvzbjqnjt26",
+            "https://x.com/ja3k_/status/2092265846060036164"
+        ],
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mtvzbjqnju26",
+            "https://x.com/ja3k_/status/2092265855887253894"
+        ]
+    ],
+    "original_date": "2026-08-25T14:20:45.410Z",
+    "media": [],
+    "is_thread": true,
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtvzbjqdrc26",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtvzbjqdrc26",
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtvzbjqmkk26",
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtvzbjqmkl26",
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtvzbjqnjt26",
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtvzbjqnju26"
+    ],
+    "thread_length": 5
+}
