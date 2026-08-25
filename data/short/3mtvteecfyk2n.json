@@ -1,27 +1,34 @@
 {
-    "Title": "The last 5 years I've been drinking a whole French press because it seemed efficient but this wee...",
+    "Title": "Thread: The last 5 years I've been drinking a whole French press because it seemed ef...",
     "Author": "Jake Koenig",
     "URL": "3mtvteecfyk2n",
     "Template": "tweet.temp",
     "Date": "2026-08-25",
     "Content": "short/3mtvteecfyk2n.md",
-    "Summary": "The last 5 years I've been drinking a whole French press because it seemed efficient but this week I realized I didn't have to fill it all the way up and tbh I feel better",
+    "Summary": "The last 5 years I've been drinking a whole French press because it seemed efficient but this week I realized I didn't have to fill it all the way up and tbh I feel better I take it back. I'm big s...",
     "Categories": [
         "shorts",
-        "bluesky"
+        "bluesky",
+        "threads"
     ],
     "tweet_id": "3mtvteecfyk2n",
     "posts": [
         [
             "https://bsky.app/profile/ja3k.bsky.social/post/3mtvteecfyk2n",
             "https://x.com/ja3k_/status/2092237100150124589"
+        ],
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mtwr3n3zus2z",
+            "https://x.com/ja3k_/status/2092369303924588667"
         ]
     ],
     "original_date": "2026-08-25T12:34:57.915Z",
     "media": [],
-    "is_thread": false,
+    "is_thread": true,
     "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtvteecfyk2n",
     "post_uris": [
-        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtvteecfyk2n"
-    ]
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtvteecfyk2n",
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtwr3n3zus2z"
+    ],
+    "thread_length": 2
 }
