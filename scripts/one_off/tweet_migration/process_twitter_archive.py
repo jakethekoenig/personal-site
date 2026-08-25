@@ -534,13 +534,7 @@ def process_twitter_archive(
                     else:
                         md_content += f"> <strong>@{quoted_tweet['user']}:</strong> {quoted_tweet['text']}\n"
                         md_content += f"> [View original tweet]({quoted_tweet['url']})\n\n"
-                if media_files:
-                    md_content += "\n"
-                    for media in media_files:
-                        if media['type'] == 'photo':
-                            md_content += f"![Tweet image]({media['url']})\n\n"
-                        elif media['type'] == 'video':
-                            md_content += f"[Video: {media['url']}]({media['url']})\n\n"
+                md_content += media_markdown(media_files)
                 md_path = os.path.join(content_output_dir, f"{tweet_id}.md")
                 with open(md_path, 'w', encoding='utf-8') as output_file:
                     output_file.write(md_content)
@@ -557,6 +551,18 @@ def process_twitter_archive(
         print(f"Markdown files saved to: {content_output_dir}")
         if media_dir:
             print(f"Media files saved to: {media_output_dir}")
+
+
+def media_markdown(media_files):
+    """Render imported media references for a short-form Markdown section."""
+    markdown = ""
+    for media in media_files:
+        if media['type'] == 'photo':
+            markdown += f"![Tweet image]({media['url']})\n\n"
+        elif media['type'] in {'video', 'animated_gif'}:
+            markdown += f"[Video: {media['url']}]({media['url']})\n\n"
+    return markdown
+
 
 def process_tweet_thread(
     thread_tweets,
@@ -580,18 +586,12 @@ def process_tweet_thread(
         return None
     
     # Collect all text and media from the thread
-    thread_text_parts = []
+    thread_parts = []
     all_media = []
-    tweet_urls = []
     
     for tweet in thread_tweets:
         tweet_id = tweet.get('id_str', tweet.get('id', ''))
         text = tweet.get('full_text', tweet.get('text', ''))
-        created_at = tweet.get('created_at', '')
-        
-        if not text:
-            continue
-            
         clean_text = clean_tweet_text(text)
         # Check for quoted tweet and include it
         quoted_tweet = process_quoted_tweet(tweet, tweet_map)
@@ -603,9 +603,8 @@ def process_tweet_thread(
                 # For full quoted tweets with text
                 clean_text += f"\n\n> <strong>@{quoted_tweet['user']}:</strong> {quoted_tweet['text']}\n> [View original tweet]({quoted_tweet['url']})"
 
-        thread_text_parts.append(clean_text.strip())
-            
         # Process media for this tweet
+        media_files = []
         if media_dir:
             media_files = process_media(
                 tweet,
@@ -614,10 +613,16 @@ def process_tweet_thread(
                 media_output_dir,
             )
             all_media.extend(media_files)
-            
-        # Add tweet URL
+
         if tweet_id:
-            tweet_urls.append(f"https://twitter.com/{TWITTER_USERNAME}/status/{tweet_id}")
+            thread_parts.append({
+                "text": clean_text.strip(),
+                "media": media_files,
+                "url": f"https://twitter.com/{TWITTER_USERNAME}/status/{tweet_id}",
+            })
+
+    thread_text_parts = [part["text"] for part in thread_parts]
+    tweet_urls = [part["url"] for part in thread_parts]
     
     if not any(thread_text_parts) and not all_media:
         return None
@@ -645,7 +650,6 @@ def process_tweet_thread(
         "thread_length": len(thread_tweets)
     }
     
-    # Save JSON file
     json_path = os.path.join(output_dir, f"thread_{thread_id}.json")
     with open(json_path, 'w', encoding='utf-8') as f:
         json.dump(thread_data, f, indent=4, ensure_ascii=False)
@@ -657,9 +661,11 @@ def process_tweet_thread(
     
     md_content = "# Thread\n\n"
     
-    for i, (text_part, tweet_url) in enumerate(zip(thread_text_parts, tweet_urls), 1):
+    for i, part in enumerate(thread_parts, 1):
         md_content += f"## Tweet {i}\n\n"
-        md_content += text_part + "\n\n"
+        if part["text"]:
+            md_content += part["text"] + "\n\n"
+        md_content += media_markdown(part["media"])
         md_content += "---\n\n"
     
     md_path = os.path.join(content_dir, f"thread_{thread_id}.md")

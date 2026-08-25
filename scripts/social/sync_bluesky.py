@@ -809,6 +809,19 @@ def save_thread(repo_root, client, actor, actor_did, posts):
         "bluesky_uri": root_uri,
         "post_uris": [post["uri"] for post in posts],
     }
+    if "og_image" in existing_data:
+        data["og_image"] = existing_data["og_image"]
+    else:
+        first_image = next(
+            (
+                item.get("url")
+                for item in all_media
+                if item.get("type") == "photo" and item.get("url")
+            ),
+            None,
+        )
+        if first_image:
+            data["og_image"] = first_image
     for preserved_key in ("Hide", "quoted_tweet"):
         if preserved_key in existing_data:
             data[preserved_key] = existing_data[preserved_key]
