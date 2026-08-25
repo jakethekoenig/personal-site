@@ -676,23 +676,48 @@ def existing_media_paths(data_path, repo_root):
     return paths
 
 
+def existing_bluesky_data_path(repo_root, root_uri, public_url):
+    """Find a short-form record already associated with a Bluesky root."""
+    data_dir = repo_root / "data" / "short"
+    for path in data_dir.glob("*.json"):
+        if path.name == "default.json":
+            continue
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        if data.get("bluesky_uri") == root_uri:
+            return path
+        if any(public_url in urls for urls in data.get("posts", [])):
+            return path
+    return None
+
+
 def save_thread(repo_root, client, actor, actor_did, posts):
     root = posts[0]
     root_uri = root["uri"]
     slug = at_uri_rkey(root_uri)
-    data_path = repo_root / "data" / "short" / f"{slug}.json"
-    content_path = repo_root / "content" / "short" / f"{slug}.md"
+    public_root_url = bluesky_post_url(actor, root_uri)
+    data_path = existing_bluesky_data_path(
+        repo_root,
+        root_uri,
+        public_root_url,
+    ) or (repo_root / "data" / "short" / f"{slug}.json")
     media_dir = repo_root / "nongenerated" / "asset" / "bluesky"
     media_dir.mkdir(parents=True, exist_ok=True)
 
     if data_path.exists():
         existing_data = json.loads(data_path.read_text(encoding="utf-8"))
-        if existing_data.get("bluesky_uri") != root_uri:
+        if existing_data.get("bluesky_uri") not in {None, root_uri}:
             raise RuntimeError(
                 f"Cannot mirror {root_uri}: short-form URL {slug} is already in use"
             )
     else:
         existing_data = None
+
+    site_slug = str((existing_data or {}).get("URL") or slug)
+    content_reference = (existing_data or {}).get("Content") or f"short/{site_slug}.md"
+    content_path = repo_root / "content" / content_reference
 
     media_by_post = {}
     all_media = []
@@ -737,6 +762,11 @@ def save_thread(repo_root, client, actor, actor_did, posts):
         for index, uri in enumerate(existing_post_uris)
         if index < len(existing_posts)
     }
+    if not links_by_uri and len(existing_posts) == len(posts):
+        links_by_uri = {
+            post["uri"]: list(existing_posts[index])
+            for index, post in enumerate(posts)
+        }
     post_links = []
     for post in posts:
         links = links_by_uri.get(post["uri"], [])
@@ -765,13 +795,13 @@ def save_thread(repo_root, client, actor, actor_did, posts):
             else shortened(text_parts[0], 100)
         ),
         "Author": "Jake Koenig",
-        "URL": slug,
+        "URL": site_slug,
         "Template": "tweet.temp",
         "Date": parse_datetime(post_created_at(root)).strftime("%Y-%m-%d"),
-        "Content": f"short/{slug}.md",
+        "Content": content_reference,
         "Summary": shortened(combined_text, 200),
         "Categories": ["shorts", "bluesky"] + (["threads"] if is_thread else []),
-        "tweet_id": slug,
+        "tweet_id": (existing_data or {}).get("tweet_id", site_slug),
         "posts": post_links,
         "original_date": post_created_at(root),
         "media": all_media,
@@ -779,6 +809,9 @@ def save_thread(repo_root, client, actor, actor_did, posts):
         "bluesky_uri": root_uri,
         "post_uris": [post["uri"] for post in posts],
     }
+    for preserved_key in ("Hide", "quoted_tweet"):
+        if preserved_key in existing_data:
+            data[preserved_key] = existing_data[preserved_key]
     if is_thread:
         data["thread_length"] = len(posts)
     if skipped_twitter_uris:

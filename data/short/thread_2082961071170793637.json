@@ -1,0 +1,38 @@
+{
+    "Title": "Thread: 4 yo self portrait",
+    "Author": "Jake Koenig",
+    "URL": "2082961071170793637",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-07-30",
+    "Content": "short/thread_2082961071170793637.md",
+    "Summary": "4 yo self portrait",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "2082961071170793637",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2082961071170793637"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/2090460043644989520"
+        ]
+    ],
+    "original_date": "Thu Jul 30 22:46:33 +0000 2026",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/HOgqBDcbEAAr4T5.jpg",
+            "original_url": "https://pbs.twimg.com/media/HOgqBDcbEAAr4T5.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/HQLOVDyaYAAm3FR.jpg",
+            "original_url": "https://pbs.twimg.com/media/HQLOVDyaYAAm3FR.jpg"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 2
+}

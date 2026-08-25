@@ -1,0 +1,33 @@
+{
+    "Title": "Thread: The second link actually just goes back to the pricing page",
+    "Author": "Jake Koenig",
+    "URL": "1979286880786223127",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-10-17",
+    "Content": "short/thread_1979286880786223127.md",
+    "Summary": "The second link actually just goes back to the pricing page",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1979286880786223127",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1979286880786223127"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/1979291693028642876"
+        ]
+    ],
+    "original_date": "Fri Oct 17 20:42:20 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/G3fW7E0WoAASgnK.png",
+            "original_url": "https://pbs.twimg.com/media/G3fW7E0WoAASgnK.png"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 2
+}

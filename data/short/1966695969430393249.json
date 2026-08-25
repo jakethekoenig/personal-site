@@ -1,0 +1,28 @@
+{
+    "Title": "Time to commit the perfect crime",
+    "Author": "Jake Koenig",
+    "URL": "1966695969430393249",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-09-13",
+    "Content": "short/1966695969430393249.md",
+    "Summary": "Time to commit the perfect crime",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1966695969430393249",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1966695969430393249"
+        ]
+    ],
+    "original_date": "Sat Sep 13 02:50:33 +0000 2025",
+    "media": [],
+    "quoted_tweet": {
+        "user": "jarvis_best",
+        "text": null,
+        "url": "https://x.com/jarvis_best/status/1966499102738272505",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

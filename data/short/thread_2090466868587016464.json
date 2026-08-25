@@ -1,0 +1,49 @@
+{
+    "Title": "Thread: Working from a coffee shop today",
+    "Author": "Jake Koenig",
+    "URL": "2090466868587016464",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-08-20",
+    "Content": "short/thread_2090466868587016464.md",
+    "Summary": "Working from a coffee shop today\n\nKind of crazy I never leave my basement\n\nJust a 17m walk from my house\n\nThis place is hopping!",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "2090466868587016464",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2090466868587016464"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/2090466924568416558"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/2090468767931523284"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/2090469997848191463"
+        ]
+    ],
+    "original_date": "Thu Aug 20 15:51:55 +0000 2026",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/HQLUiCiasAA4HAs.jpg",
+            "original_url": "https://pbs.twimg.com/media/HQLUiCiasAA4HAs.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/HQLWQTIbwAE0wK_.jpg",
+            "original_url": "https://pbs.twimg.com/media/HQLWQTIbwAE0wK_.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/HQLWQ_CbYAATEtG.jpg",
+            "original_url": "https://pbs.twimg.com/media/HQLWQ_CbYAATEtG.jpg"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 4
+}

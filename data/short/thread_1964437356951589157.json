@@ -1,0 +1,41 @@
+{
+    "Title": "Thread: Updating my personal site",
+    "Author": "Jake Koenig",
+    "URL": "1964437356951589157",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-09-06",
+    "Content": "short/thread_1964437356951589157.md",
+    "Summary": "Updating my personal site\n\nPeak performance\n\nMy personal site now has a mirror of every tweet I've ever made available here: If you even care",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1964437356951589157",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1964437356951589157"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/1964437747453796742"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/1964438400565657608"
+        ]
+    ],
+    "original_date": "Sat Sep 06 21:15:38 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/G0MVVu6bUAIFQBP.png",
+            "original_url": "https://pbs.twimg.com/media/G0MVVu6bUAIFQBP.png"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/G0MVtbWbsAAtb1e.png",
+            "original_url": "https://pbs.twimg.com/media/G0MVtbWbsAAtb1e.png"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 3
+}

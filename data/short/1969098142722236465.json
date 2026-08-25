@@ -1,0 +1,29 @@
+{
+    "Title": "🎶🎶🎶 I DON'T KNOW ABOUT YOU 🎶🎶🎶",
+    "Author": "Jake Koenig",
+    "URL": "1969098142722236465",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-09-19",
+    "Content": "short/1969098142722236465.md",
+    "Summary": "🎶🎶🎶 I DON'T KNOW ABOUT YOU 🎶🎶🎶",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1969098142722236465",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1969098142722236465"
+        ]
+    ],
+    "original_date": "Fri Sep 19 17:55:55 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/G1OkU1JbQAA_KAs.jpg",
+            "original_url": "https://pbs.twimg.com/media/G1OkU1JbQAA_KAs.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

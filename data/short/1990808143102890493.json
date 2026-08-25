@@ -1,0 +1,23 @@
+{
+    "Title": "Why is cloudflare so ubiquitous? I've only used cloudfront since I'm using aws anyway. Works fine an...",
+    "Author": "Jake Koenig",
+    "URL": "1990808143102890493",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-11-18",
+    "Content": "short/1990808143102890493.md",
+    "Summary": "Why is cloudflare so ubiquitous? I've only used cloudfront since I'm using aws anyway. Works fine and it never goes down",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1990808143102890493",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1990808143102890493"
+        ]
+    ],
+    "original_date": "Tue Nov 18 15:43:43 +0000 2025",
+    "media": [],
+    "quoted_tweet": null,
+    "is_thread": false
+}

@@ -1,0 +1,28 @@
+{
+    "Title": "Takes from 2023. You don't think Claude can run `gh`?",
+    "Author": "Jake Koenig",
+    "URL": "2080848290460111215",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-07-25",
+    "Content": "short/2080848290460111215.md",
+    "Summary": "Takes from 2023. You don't think Claude can run `gh`?",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2080848290460111215",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2080848290460111215"
+        ]
+    ],
+    "original_date": "Sat Jul 25 02:51:07 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "DanielGlejzner",
+        "text": null,
+        "url": "https://x.com/DanielGlejzner/status/2080648072640463076",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

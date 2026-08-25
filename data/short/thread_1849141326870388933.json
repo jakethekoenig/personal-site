@@ -1,0 +1,33 @@
+{
+    "Title": "Thread: > [Quote tweet of @Mr_Considerate](https://x.com/Mr_Considerate/status/184883020...",
+    "Author": "Jake Koenig",
+    "URL": "1849141326870388933",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2024-10-23",
+    "Content": "short/thread_1849141326870388933.md",
+    "Summary": "> [Quote tweet of @Mr_Considerate](https://x.com/Mr_Considerate/status/1848830200399991132)\n\n> [Quote tweet of @ja3k_](https://x.com/ja3k_/status/1684157867136368640)",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1849141326870388933",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1849141326870388933"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/1849141401814290547"
+        ]
+    ],
+    "original_date": "Wed Oct 23 17:30:22 +0000 2024",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/Gal4OlZbQAANyyc.jpg",
+            "original_url": "https://pbs.twimg.com/media/Gal4OlZbQAANyyc.jpg"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 2
+}

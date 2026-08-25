@@ -1,0 +1,36 @@
+{
+    "Title": "Thread: Is there a bug in the GPT apps API? It says the model should see the content of ...",
+    "Author": "Jake Koenig",
+    "URL": "1978546914158416163",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-10-15",
+    "Content": "short/thread_1978546914158416163.md",
+    "Summary": "Is there a bug in the GPT apps API? It says the model should see the content of widgetState but when I call setWidgetState and ask GPT about it it reports not seeing. But the new state is preserved ac...",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1978546914158416163",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1978546914158416163"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/1978546915517382736"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/1978546916628762829"
+        ]
+    ],
+    "original_date": "Wed Oct 15 19:41:58 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/G3U1KkraMAAKGSH.png",
+            "original_url": "https://pbs.twimg.com/media/G3U1KkraMAAKGSH.png"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 3
+}

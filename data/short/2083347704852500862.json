@@ -1,0 +1,29 @@
+{
+    "Title": "Never tweeting about housing again",
+    "Author": "Jake Koenig",
+    "URL": "2083347704852500862",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-08-01",
+    "Content": "short/2083347704852500862.md",
+    "Summary": "Never tweeting about housing again",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2083347704852500862",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2083347704852500862"
+        ]
+    ],
+    "original_date": "Sat Aug 01 00:22:54 +0000 2026",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/HOmJqw3bEAAkzmd.jpg",
+            "original_url": "https://pbs.twimg.com/media/HOmJqw3bEAAkzmd.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

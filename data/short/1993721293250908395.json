@@ -1,0 +1,23 @@
+{
+    "Title": "What bothers me about context engineering vs. prompt engineering is both context and prompt just mea...",
+    "Author": "Jake Koenig",
+    "URL": "1993721293250908395",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-11-26",
+    "Content": "short/1993721293250908395.md",
+    "Summary": "What bothers me about context engineering vs. prompt engineering is both context and prompt just mean \"string you show llm\". The word which is wrong is \"engineering\"",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1993721293250908395",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1993721293250908395"
+        ]
+    ],
+    "original_date": "Wed Nov 26 16:39:32 +0000 2025",
+    "media": [],
+    "quoted_tweet": null,
+    "is_thread": false
+}

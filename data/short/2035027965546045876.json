@@ -1,0 +1,29 @@
+{
+    "Title": "Let's see Sam Altman type one query into ChatGPT",
+    "Author": "Jake Koenig",
+    "URL": "2035027965546045876",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-03-20",
+    "Content": "short/2035027965546045876.md",
+    "Summary": "Let's see Sam Altman type one query into ChatGPT",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2035027965546045876",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2035027965546045876"
+        ]
+    ],
+    "original_date": "Fri Mar 20 16:17:30 +0000 2026",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/HD3fFgWboAAm8cc.jpg",
+            "original_url": "https://pbs.twimg.com/media/HD3fFgWboAAm8cc.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

@@ -1,0 +1,28 @@
+{
+    "Title": "Wait, why can't this be real? I feel like it. Could be pretty light and ergonomical with modern hard...",
+    "Author": "Jake Koenig",
+    "URL": "2033730586456780848",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-03-17",
+    "Content": "short/2033730586456780848.md",
+    "Summary": "Wait, why can't this be real? I feel like it. Could be pretty light and ergonomical with modern hardware",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2033730586456780848",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2033730586456780848"
+        ]
+    ],
+    "original_date": "Tue Mar 17 02:22:11 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "allgarbled",
+        "text": null,
+        "url": "https://x.com/allgarbled/status/2033433010062987292",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

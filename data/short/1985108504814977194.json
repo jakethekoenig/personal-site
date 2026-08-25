@@ -1,0 +1,29 @@
+{
+    "Title": "Happy Sunday",
+    "Author": "Jake Koenig",
+    "URL": "1985108504814977194",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-11-02",
+    "Content": "short/1985108504814977194.md",
+    "Summary": "Happy Sunday",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1985108504814977194",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1985108504814977194"
+        ]
+    ],
+    "original_date": "Sun Nov 02 22:15:23 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/G4yFqj6akAAvqBy.jpg",
+            "original_url": "https://pbs.twimg.com/media/G4yFqj6akAAvqBy.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

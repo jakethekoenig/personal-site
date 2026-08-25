@@ -1,0 +1,28 @@
+{
+    "Title": "Mons Olympus in 2045",
+    "Author": "Jake Koenig",
+    "URL": "2066520898321232095",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-06-15",
+    "Content": "short/2066520898321232095.md",
+    "Summary": "Mons Olympus in 2045",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2066520898321232095",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2066520898321232095"
+        ]
+    ],
+    "original_date": "Mon Jun 15 13:59:10 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "luke_leisher_",
+        "text": null,
+        "url": "https://x.com/luke_leisher_/status/2066215298739707914",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

@@ -1,0 +1,28 @@
+{
+    "Title": "Someone should build a datacenter in us-east-1",
+    "Author": "Jake Koenig",
+    "URL": "1981537193794687159",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-10-24",
+    "Content": "short/1981537193794687159.md",
+    "Summary": "Someone should build a datacenter in us-east-1",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1981537193794687159",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1981537193794687159"
+        ]
+    ],
+    "original_date": "Fri Oct 24 01:44:16 +0000 2025",
+    "media": [],
+    "quoted_tweet": {
+        "user": "zebulgar",
+        "text": null,
+        "url": "https://x.com/zebulgar/status/1981479432528548289",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

@@ -1,0 +1,29 @@
+{
+    "Title": "Media post",
+    "Author": "Jake Koenig",
+    "URL": "1620050413671284736",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2023-01-30",
+    "Content": "short/1620050413671284736.md",
+    "Summary": "Media post",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1620050413671284736",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1620050413671284736"
+        ]
+    ],
+    "original_date": "Mon Jan 30 13:24:52 +0000 2023",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/FnuTO-HacAEoFky.jpg",
+            "original_url": "https://pbs.twimg.com/media/FnuTO-HacAEoFky.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

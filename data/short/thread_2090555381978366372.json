@@ -1,0 +1,27 @@
+{
+    "Title": "Thread: I don't really get the value of stacked PRs. Why is it better than organizing by...",
+    "Author": "Jake Koenig",
+    "URL": "2090555381978366372",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-08-20",
+    "Content": "short/thread_2090555381978366372.md",
+    "Summary": "I don't really get the value of stacked PRs. Why is it better than organizing by commit?\n\nMaybe this is reinventing stacked PRs from first principles but it seems like the issue is per commit commenti...",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "2090555381978366372",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2090555381978366372"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/2090555384499237362"
+        ]
+    ],
+    "original_date": "Thu Aug 20 21:43:38 +0000 2026",
+    "media": [],
+    "is_thread": true,
+    "thread_length": 2
+}

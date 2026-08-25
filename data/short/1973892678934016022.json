@@ -1,0 +1,29 @@
+{
+    "Title": "Oh that makes me feel better, thanks",
+    "Author": "Jake Koenig",
+    "URL": "1973892678934016022",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-10-02",
+    "Content": "short/1973892678934016022.md",
+    "Summary": "Oh that makes me feel better, thanks",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1973892678934016022",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1973892678934016022"
+        ]
+    ],
+    "original_date": "Thu Oct 02 23:27:42 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/G2Ss7oNbMAU-3xN.jpg",
+            "original_url": "https://pbs.twimg.com/media/G2Ss7oNbMAU-3xN.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

@@ -1,0 +1,23 @@
+{
+    "Title": "The thing about giving your agent a better search tool than grep is most tools that are \"better\" are...",
+    "Author": "Jake Koenig",
+    "URL": "1987922413397618937",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-11-10",
+    "Content": "short/1987922413397618937.md",
+    "Summary": "The thing about giving your agent a better search tool than grep is most tools that are \"better\" are only better because humans are bad at regex and knowing all the flags and features",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1987922413397618937",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1987922413397618937"
+        ]
+    ],
+    "original_date": "Mon Nov 10 16:36:51 +0000 2025",
+    "media": [],
+    "quoted_tweet": null,
+    "is_thread": false
+}

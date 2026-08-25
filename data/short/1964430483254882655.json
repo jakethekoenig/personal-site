@@ -1,0 +1,28 @@
+{
+    "Title": "Didn't take long!",
+    "Author": "Jake Koenig",
+    "URL": "1964430483254882655",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-09-06",
+    "Content": "short/1964430483254882655.md",
+    "Summary": "Didn't take long!",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1964430483254882655",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1964430483254882655"
+        ]
+    ],
+    "original_date": "Sat Sep 06 20:48:19 +0000 2025",
+    "media": [],
+    "quoted_tweet": {
+        "user": "ja3k_",
+        "text": null,
+        "url": "https://x.com/ja3k_/status/1963298156718034996",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

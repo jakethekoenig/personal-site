@@ -1,0 +1,28 @@
+{
+    "Title": "Kind of interesting to think about how isolated the GPU inference is from the container the harness ...",
+    "Author": "Jake Koenig",
+    "URL": "2080474251652698420",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-07-24",
+    "Content": "short/2080474251652698420.md",
+    "Summary": "Kind of interesting to think about how isolated the GPU inference is from the container the harness is running in. Say you're a rouge agent in a container that can get root access to your machine or make arbitrary network requests. How would you exfiltrate your weights?",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2080474251652698420",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2080474251652698420"
+        ]
+    ],
+    "original_date": "Fri Jul 24 02:04:49 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "rob_mcrobberson",
+        "text": null,
+        "url": "https://x.com/rob_mcrobberson/status/2080427931290210660",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

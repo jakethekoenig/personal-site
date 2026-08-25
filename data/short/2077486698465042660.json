@@ -1,0 +1,28 @@
+{
+    "Title": "They call it streaming because they require a small stream to keep the computers cool",
+    "Author": "Jake Koenig",
+    "URL": "2077486698465042660",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-07-15",
+    "Content": "short/2077486698465042660.md",
+    "Summary": "They call it streaming because they require a small stream to keep the computers cool",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2077486698465042660",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2077486698465042660"
+        ]
+    ],
+    "original_date": "Wed Jul 15 20:13:21 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "Awk20000",
+        "text": null,
+        "url": "https://x.com/Awk20000/status/2077269309827469553",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

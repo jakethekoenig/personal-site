@@ -1,0 +1,28 @@
+{
+    "Title": "My son asks for 3 butters because that's the largest number he knows",
+    "Author": "Jake Koenig",
+    "URL": "1990102074646766074",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-11-16",
+    "Content": "short/1990102074646766074.md",
+    "Summary": "My son asks for 3 butters because that's the largest number he knows",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1990102074646766074",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1990102074646766074"
+        ]
+    ],
+    "original_date": "Sun Nov 16 16:58:03 +0000 2025",
+    "media": [],
+    "quoted_tweet": {
+        "user": "ja3k_",
+        "text": null,
+        "url": "https://x.com/ja3k_/status/1983915635873640464",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

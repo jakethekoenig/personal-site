@@ -1,0 +1,34 @@
+{
+    "Title": "Media post",
+    "Author": "Jake Koenig",
+    "URL": "1718080771565682716",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2023-10-28",
+    "Content": "short/1718080771565682716.md",
+    "Summary": "Media post",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1718080771565682716",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1718080771565682716"
+        ]
+    ],
+    "original_date": "Sat Oct 28 01:42:30 +0000 2023",
+    "media": [
+        {
+            "type": "video",
+            "url": "/asset/crosspoast/F9fZVUXaYAAVUq6.mp4",
+            "original_url": "https://video.twimg.com/tweet_video/F9fZVUXaYAAVUq6.mp4"
+        }
+    ],
+    "quoted_tweet": {
+        "user": "_mengde_",
+        "text": null,
+        "url": "https://x.com/_mengde_/status/1717888191645012210",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

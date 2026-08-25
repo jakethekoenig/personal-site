@@ -1,0 +1,29 @@
+{
+    "Title": "You're all posers not posting about this at 5am on a Tuesday",
+    "Author": "Jake Koenig",
+    "URL": "2059245788145008766",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-05-26",
+    "Content": "short/2059245788145008766.md",
+    "Summary": "You're all posers not posting about this at 5am on a Tuesday",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2059245788145008766",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2059245788145008766"
+        ]
+    ],
+    "original_date": "Tue May 26 12:10:29 +0000 2026",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/HJPpHJ_bwAA9ukB.jpg",
+            "original_url": "https://pbs.twimg.com/media/HJPpHJ_bwAA9ukB.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

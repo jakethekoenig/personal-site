@@ -1,0 +1,29 @@
+{
+    "Title": "What did you get done?",
+    "Author": "Jake Koenig",
+    "URL": "1976643467125334242",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-10-10",
+    "Content": "short/1976643467125334242.md",
+    "Summary": "What did you get done?",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1976643467125334242",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1976643467125334242"
+        ]
+    ],
+    "original_date": "Fri Oct 10 13:38:21 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/G25ywktaUAAK0D6.jpg",
+            "original_url": "https://pbs.twimg.com/media/G25ywktaUAAK0D6.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

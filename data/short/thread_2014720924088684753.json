@@ -1,0 +1,36 @@
+{
+    "Title": "Thread: Recently I encountered a Claude Code bug where when it ran anything it froze the...",
+    "Author": "Jake Koenig",
+    "URL": "2014720924088684753",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-01-23",
+    "Content": "short/thread_2014720924088684753.md",
+    "Summary": "Recently I encountered a Claude Code bug where when it ran anything it froze the terminal. I got around it by no longer opening nvim in tmux (I use the nvim terminal btw)\n\nAlso when I paste more than ...",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "2014720924088684753",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2014720924088684753"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/2014720925120471159"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/2014720926047469779"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/2014720927498707024"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/2014728174064853003"
+        ]
+    ],
+    "original_date": "Fri Jan 23 15:24:34 +0000 2026",
+    "media": [],
+    "is_thread": true,
+    "thread_length": 5
+}

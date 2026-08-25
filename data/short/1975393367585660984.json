@@ -1,0 +1,28 @@
+{
+    "Title": "Should I make a ChatGPT app?",
+    "Author": "Jake Koenig",
+    "URL": "1975393367585660984",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-10-07",
+    "Content": "short/1975393367585660984.md",
+    "Summary": "Should I make a ChatGPT app?",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1975393367585660984",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1975393367585660984"
+        ]
+    ],
+    "original_date": "Tue Oct 07 02:50:54 +0000 2025",
+    "media": [],
+    "quoted_tweet": {
+        "user": "threepointone",
+        "text": null,
+        "url": "https://x.com/threepointone/status/1975250330381394177",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

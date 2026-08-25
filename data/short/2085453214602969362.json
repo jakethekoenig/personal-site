@@ -1,0 +1,23 @@
+{
+    "Title": "They can't deploy the GitHub actions fix until CI passes",
+    "Author": "Jake Koenig",
+    "URL": "2085453214602969362",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-08-06",
+    "Content": "short/2085453214602969362.md",
+    "Summary": "They can't deploy the GitHub actions fix until CI passes",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2085453214602969362",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2085453214602969362"
+        ]
+    ],
+    "original_date": "Thu Aug 06 19:49:26 +0000 2026",
+    "media": [],
+    "quoted_tweet": null,
+    "is_thread": false
+}

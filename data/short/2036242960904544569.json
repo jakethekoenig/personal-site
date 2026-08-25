@@ -1,0 +1,28 @@
+{
+    "Title": "Some of you people just want to read this tweet over and over again",
+    "Author": "Jake Koenig",
+    "URL": "2036242960904544569",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-03-24",
+    "Content": "short/2036242960904544569.md",
+    "Summary": "Some of you people just want to read this tweet over and over again",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2036242960904544569",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2036242960904544569"
+        ]
+    ],
+    "original_date": "Tue Mar 24 00:45:28 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "visakanv",
+        "text": null,
+        "url": "https://x.com/visakanv/status/1324978566455468035",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

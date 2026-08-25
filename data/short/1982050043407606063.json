@@ -1,0 +1,29 @@
+{
+    "Title": "So close",
+    "Author": "Jake Koenig",
+    "URL": "1982050043407606063",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-10-25",
+    "Content": "short/1982050043407606063.md",
+    "Summary": "So close",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1982050043407606063",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1982050043407606063"
+        ]
+    ],
+    "original_date": "Sat Oct 25 11:42:09 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/G4GoAqWWEAAVC4K.jpg",
+            "original_url": "https://pbs.twimg.com/media/G4GoAqWWEAAVC4K.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

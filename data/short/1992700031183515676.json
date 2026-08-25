@@ -1,0 +1,28 @@
+{
+    "Title": "The first day of college a friend asked if I wanted to join his ICPC team and I had a lot of fun doi...",
+    "Author": "Jake Koenig",
+    "URL": "1992700031183515676",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-11-23",
+    "Content": "short/1992700031183515676.md",
+    "Summary": "The first day of college a friend asked if I wanted to join his ICPC team and I had a lot of fun doing algos for 3 years. Never really thought it would come in handy",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1992700031183515676",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1992700031183515676"
+        ]
+    ],
+    "original_date": "Sun Nov 23 21:01:24 +0000 2025",
+    "media": [],
+    "quoted_tweet": {
+        "user": "1thousandfaces_",
+        "text": null,
+        "url": "https://x.com/1thousandfaces_/status/1992402421637918867",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

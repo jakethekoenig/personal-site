@@ -1,0 +1,29 @@
+{
+    "Title": "So goofy slack suggests both middle fingers if you search \"finger\" and doesn't suggest crossed_finge...",
+    "Author": "Jake Koenig",
+    "URL": "1981149703204196788",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-10-23",
+    "Content": "short/1981149703204196788.md",
+    "Summary": "So goofy slack suggests both middle fingers if you search \"finger\" and doesn't suggest crossed_fingers until you add the \"s\"",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1981149703204196788",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1981149703204196788"
+        ]
+    ],
+    "original_date": "Thu Oct 23 00:04:31 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/G351J7gXYAAZl7Q.jpg",
+            "original_url": "https://pbs.twimg.com/media/G351J7gXYAAZl7Q.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

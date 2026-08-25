@@ -1,0 +1,28 @@
+{
+    "Title": "I don't buy it. I met my wife on my phone. I used my phone to navigate to the hospital when she was ...",
+    "Author": "Jake Koenig",
+    "URL": "2055796235999838523",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-05-16",
+    "Content": "short/2055796235999838523.md",
+    "Summary": "I don't buy it. I met my wife on my phone. I used my phone to navigate to the hospital when she was giving birth. I used my phone to find the house I'm raising my kids in.",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2055796235999838523",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2055796235999838523"
+        ]
+    ],
+    "original_date": "Sat May 16 23:43:12 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "paulg",
+        "text": null,
+        "url": "https://x.com/paulg/status/2055751487867752716",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

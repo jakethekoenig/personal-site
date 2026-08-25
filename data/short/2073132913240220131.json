@@ -1,0 +1,28 @@
+{
+    "Title": "Everyone copies everyone too quickly to even think about whether it's even a good idea. Worst UX eve...",
+    "Author": "Jake Koenig",
+    "URL": "2073132913240220131",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-07-03",
+    "Content": "short/2073132913240220131.md",
+    "Summary": "Everyone copies everyone too quickly to even think about whether it's even a good idea. Worst UX ever. Your AI app doesn't have to reinvent \"text boxes\"",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2073132913240220131",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2073132913240220131"
+        ]
+    ],
+    "original_date": "Fri Jul 03 19:52:58 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "meijer_s",
+        "text": null,
+        "url": "https://x.com/meijer_s/status/2072952844890574884",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

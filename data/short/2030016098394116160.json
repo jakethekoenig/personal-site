@@ -1,0 +1,29 @@
+{
+    "Title": "Improving the vibes",
+    "Author": "Jake Koenig",
+    "URL": "2030016098394116160",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-03-06",
+    "Content": "short/2030016098394116160.md",
+    "Summary": "Improving the vibes",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2030016098394116160",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2030016098394116160"
+        ]
+    ],
+    "original_date": "Fri Mar 06 20:22:08 +0000 2026",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/HCwQ3D5bUAAKot8.jpg",
+            "original_url": "https://pbs.twimg.com/media/HCwQ3D5bUAAKot8.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

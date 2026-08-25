@@ -1,0 +1,23 @@
+{
+    "Title": "I need to go to bed",
+    "Author": "Jake Koenig",
+    "URL": "2082680228011557328",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-07-30",
+    "Content": "short/2082680228011557328.md",
+    "Summary": "I need to go to bed",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2082680228011557328",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2082680228011557328"
+        ]
+    ],
+    "original_date": "Thu Jul 30 04:10:35 +0000 2026",
+    "media": [],
+    "quoted_tweet": null,
+    "is_thread": false
+}

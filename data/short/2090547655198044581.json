@@ -1,0 +1,28 @@
+{
+    "Title": "You have 0-10^100 years left. Act accordingly",
+    "Author": "Jake Koenig",
+    "URL": "2090547655198044581",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-08-20",
+    "Content": "short/2090547655198044581.md",
+    "Summary": "You have 0-10^100 years left. Act accordingly",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2090547655198044581",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2090547655198044581"
+        ]
+    ],
+    "original_date": "Thu Aug 20 21:12:56 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "hopes_revenge",
+        "text": null,
+        "url": "https://x.com/hopes_revenge/status/2090240087053480002",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

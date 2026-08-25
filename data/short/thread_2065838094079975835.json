@@ -1,0 +1,27 @@
+{
+    "Title": "Thread: I feel like there should be something like a type system but for backwards compa...",
+    "Author": "Jake Koenig",
+    "URL": "2065838094079975835",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-06-13",
+    "Content": "short/thread_2065838094079975835.md",
+    "Summary": "I feel like there should be something like a type system but for backwards compatible code. Some language in which writing non-backwards compatible code is impossible\n\nI guess in general code is never...",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "2065838094079975835",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2065838094079975835"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/2065838365522669604"
+        ]
+    ],
+    "original_date": "Sat Jun 13 16:45:57 +0000 2026",
+    "media": [],
+    "is_thread": true,
+    "thread_length": 2
+}

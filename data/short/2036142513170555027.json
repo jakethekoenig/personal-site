@@ -1,0 +1,28 @@
+{
+    "Title": "Slop motion",
+    "Author": "Jake Koenig",
+    "URL": "2036142513170555027",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-03-23",
+    "Content": "short/2036142513170555027.md",
+    "Summary": "Slop motion",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2036142513170555027",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2036142513170555027"
+        ]
+    ],
+    "original_date": "Mon Mar 23 18:06:19 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "EVECHOWCHOW",
+        "text": null,
+        "url": "https://x.com/EVECHOWCHOW/status/2014297999183352049",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

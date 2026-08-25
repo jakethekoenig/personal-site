@@ -1,0 +1,28 @@
+{
+    "Title": "I will fit two ideas in my sentences; and you can't stop me",
+    "Author": "Jake Koenig",
+    "URL": "2084432686647787683",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-08-04",
+    "Content": "short/2084432686647787683.md",
+    "Summary": "I will fit two ideas in my sentences; and you can't stop me",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2084432686647787683",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2084432686647787683"
+        ]
+    ],
+    "original_date": "Tue Aug 04 00:14:14 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "morew4rd",
+        "text": null,
+        "url": "https://x.com/morew4rd/status/2084418357210792197",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

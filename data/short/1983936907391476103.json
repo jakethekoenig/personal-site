@@ -1,0 +1,34 @@
+{
+    "Title": "People want the world to work like this but it's the other way",
+    "Author": "Jake Koenig",
+    "URL": "1983936907391476103",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-10-30",
+    "Content": "short/1983936907391476103.md",
+    "Summary": "People want the world to work like this but it's the other way",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1983936907391476103",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1983936907391476103"
+        ]
+    ],
+    "original_date": "Thu Oct 30 16:39:53 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/G4hcBLia0AALNzk.png",
+            "original_url": "https://pbs.twimg.com/media/G4hcBLia0AALNzk.png"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/G4hcE0La8AESkNf.png",
+            "original_url": "https://pbs.twimg.com/media/G4hcE0La8AESkNf.png"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

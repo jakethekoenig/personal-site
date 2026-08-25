@@ -1,0 +1,28 @@
+{
+    "Title": "I use KirklandGit personally",
+    "Author": "Jake Koenig",
+    "URL": "2090051947059728515",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-08-19",
+    "Content": "short/2090051947059728515.md",
+    "Summary": "I use KirklandGit personally",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2090051947059728515",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2090051947059728515"
+        ]
+    ],
+    "original_date": "Wed Aug 19 12:23:10 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "ja3k_",
+        "text": null,
+        "url": "https://x.com/ja3k_/status/1963041836022587505",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

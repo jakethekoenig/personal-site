@@ -1,0 +1,28 @@
+{
+    "Title": "This actually how the world works",
+    "Author": "Jake Koenig",
+    "URL": "2076856179662451200",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-07-14",
+    "Content": "short/2076856179662451200.md",
+    "Summary": "This actually how the world works",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2076856179662451200",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2076856179662451200"
+        ]
+    ],
+    "original_date": "Tue Jul 14 02:27:54 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "bennpeifert",
+        "text": null,
+        "url": "https://x.com/bennpeifert/status/2076840601497309387",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

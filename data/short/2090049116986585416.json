@@ -1,0 +1,28 @@
+{
+    "Title": "Pangrams should add their enemies to the ai examples training set",
+    "Author": "Jake Koenig",
+    "URL": "2090049116986585416",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-08-19",
+    "Content": "short/2090049116986585416.md",
+    "Summary": "Pangrams should add their enemies to the ai examples training set",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2090049116986585416",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2090049116986585416"
+        ]
+    ],
+    "original_date": "Wed Aug 19 12:11:55 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "max_spero_",
+        "text": null,
+        "url": "https://x.com/max_spero_/status/2089905639644418127",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

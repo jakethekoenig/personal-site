@@ -1,0 +1,28 @@
+{
+    "Title": "What happened to his pfp?! Has it been a decade already?!",
+    "Author": "Jake Koenig",
+    "URL": "2083345384626352512",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-08-01",
+    "Content": "short/2083345384626352512.md",
+    "Summary": "What happened to his pfp?! Has it been a decade already?!",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2083345384626352512",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2083345384626352512"
+        ]
+    ],
+    "original_date": "Sat Aug 01 00:13:41 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "AviSchiffmann",
+        "text": null,
+        "url": "https://x.com/AviSchiffmann/status/2082827785987629526",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

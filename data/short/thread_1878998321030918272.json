@@ -1,0 +1,38 @@
+{
+    "Title": "Thread: Media post",
+    "Author": "Jake Koenig",
+    "URL": "1878998321030918272",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-01-14",
+    "Content": "short/thread_1878998321030918272.md",
+    "Summary": "Media thread",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1878998321030918272",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1878998321030918272"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/1879009555323240701"
+        ]
+    ],
+    "original_date": "Tue Jan 14 02:51:24 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GhOLBA9bwAAWMRm.jpg",
+            "original_url": "https://pbs.twimg.com/media/GhOLBA9bwAAWMRm.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/GhOVO95akAEU5LX.jpg",
+            "original_url": "https://pbs.twimg.com/media/GhOVO95akAEU5LX.jpg"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 2
+}

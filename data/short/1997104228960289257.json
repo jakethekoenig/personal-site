@@ -1,0 +1,23 @@
+{
+    "Title": "Prompts should live alongside code in version control for the same reasons documentation should. In ...",
+    "Author": "Jake Koenig",
+    "URL": "1997104228960289257",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-12-06",
+    "Content": "short/1997104228960289257.md",
+    "Summary": "Prompts should live alongside code in version control for the same reasons documentation should. In fact prompts are just LLM facing documentation.",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1997104228960289257",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1997104228960289257"
+        ]
+    ],
+    "original_date": "Sat Dec 06 00:42:07 +0000 2025",
+    "media": [],
+    "quoted_tweet": null,
+    "is_thread": false
+}

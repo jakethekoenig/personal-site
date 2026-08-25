@@ -1,0 +1,28 @@
+{
+    "Title": "Um, uh, well ... There are many things one could say",
+    "Author": "Jake Koenig",
+    "URL": "2038297830947983361",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-03-29",
+    "Content": "short/2038297830947983361.md",
+    "Summary": "Um, uh, well ... There are many things one could say",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2038297830947983361",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2038297830947983361"
+        ]
+    ],
+    "original_date": "Sun Mar 29 16:50:47 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "amritwt",
+        "text": null,
+        "url": "https://x.com/amritwt/status/2038167796526592310",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

@@ -1,0 +1,29 @@
+{
+    "Title": "I talk a big talk about not using tmux but...",
+    "Author": "Jake Koenig",
+    "URL": "1965855143800541601",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-09-10",
+    "Content": "short/1965855143800541601.md",
+    "Summary": "I talk a big talk about not using tmux but...",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1965855143800541601",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1965855143800541601"
+        ]
+    ],
+    "original_date": "Wed Sep 10 19:09:24 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/G0geyuBaMAYzPM_.jpg",
+            "original_url": "https://pbs.twimg.com/media/G0geyuBaMAYzPM_.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

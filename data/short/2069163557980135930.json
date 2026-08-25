@@ -1,0 +1,23 @@
+{
+    "Title": "LLMs suck at prompting because they keep the same style they use for the idiot human",
+    "Author": "Jake Koenig",
+    "URL": "2069163557980135930",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-06-22",
+    "Content": "short/2069163557980135930.md",
+    "Summary": "LLMs suck at prompting because they keep the same style they use for the idiot human",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2069163557980135930",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2069163557980135930"
+        ]
+    ],
+    "original_date": "Mon Jun 22 21:00:10 +0000 2026",
+    "media": [],
+    "quoted_tweet": null,
+    "is_thread": false
+}

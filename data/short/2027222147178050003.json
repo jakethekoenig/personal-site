@@ -1,0 +1,29 @@
+{
+    "Title": "They're doing this to 4000 people tomorrow",
+    "Author": "Jake Koenig",
+    "URL": "2027222147178050003",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-02-27",
+    "Content": "short/2027222147178050003.md",
+    "Summary": "They're doing this to 4000 people tomorrow",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2027222147178050003",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2027222147178050003"
+        ]
+    ],
+    "original_date": "Fri Feb 27 03:19:58 +0000 2026",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/HCIjuwzbYAAp0yd.jpg",
+            "original_url": "https://pbs.twimg.com/media/HCIjuwzbYAAp0yd.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

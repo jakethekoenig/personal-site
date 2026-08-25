@@ -1,0 +1,28 @@
+{
+    "Title": "Why did he have to compute x/2+7 so many times?",
+    "Author": "Jake Koenig",
+    "URL": "2089781222478328253",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-08-18",
+    "Content": "short/2089781222478328253.md",
+    "Summary": "Why did he have to compute x/2+7 so many times?",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2089781222478328253",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2089781222478328253"
+        ]
+    ],
+    "original_date": "Tue Aug 18 18:27:24 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "FeralPHunter",
+        "text": null,
+        "url": "https://x.com/FeralPHunter/status/2089472467924332632",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

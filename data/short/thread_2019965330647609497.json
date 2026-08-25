@@ -1,0 +1,30 @@
+{
+    "Title": "Thread: Claude code has a bug with it's stop hooks. They run repeatedly not just once",
+    "Author": "Jake Koenig",
+    "URL": "2019965330647609497",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-02-07",
+    "Content": "short/thread_2019965330647609497.md",
+    "Summary": "Claude code has a bug with it's stop hooks. They run repeatedly not just once\n\nVery awkward with my hook that says the branch name\n\n@bcherny @_catwu @jarredsu",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "2019965330647609497",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2019965330647609497"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/2019965331390033951"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/2019965600882418070"
+        ]
+    ],
+    "original_date": "Sat Feb 07 02:43:58 +0000 2026",
+    "media": [],
+    "is_thread": true,
+    "thread_length": 3
+}

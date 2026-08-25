@@ -1,0 +1,28 @@
+{
+    "Title": "First question: what's your favorite idea",
+    "Author": "Jake Koenig",
+    "URL": "2082635314443772319",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-07-30",
+    "Content": "short/2082635314443772319.md",
+    "Summary": "First question: what's your favorite idea",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2082635314443772319",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2082635314443772319"
+        ]
+    ],
+    "original_date": "Thu Jul 30 01:12:07 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "hopes_revenge",
+        "text": null,
+        "url": "https://x.com/hopes_revenge/status/2082549232448496010",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

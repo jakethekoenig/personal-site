@@ -1,0 +1,39 @@
+{
+    "Title": "Maybe I'm just retarded but I still don't understand: 1. How tournament sampling is non-distortionar...",
+    "Author": "Jake Koenig",
+    "URL": "2091211508248359129",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-08-22",
+    "Content": "short/2091211508248359129.md",
+    "Summary": "Maybe I'm just retarded but I still don't understand: 1. How tournament sampling is non-distortionary. Just looking at this figure it seems like mango should become less likely than it's logprob would imply 2. How you can compare the choices for in the wild text to the choices…",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2091211508248359129",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2091211508248359129"
+        ]
+    ],
+    "original_date": "Sat Aug 22 17:10:51 +0000 2026",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/HQV5yBRbwAAh6Rn.jpg",
+            "original_url": "https://pbs.twimg.com/media/HQV5yBRbwAAh6Rn.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/HQV5yO9bwAEFnZR.jpg",
+            "original_url": "https://pbs.twimg.com/media/HQV5yO9bwAEFnZR.jpg"
+        }
+    ],
+    "quoted_tweet": {
+        "user": "TheZvi",
+        "text": null,
+        "url": "https://x.com/TheZvi/status/2090882128208896254",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

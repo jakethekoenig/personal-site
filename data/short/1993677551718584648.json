@@ -1,0 +1,29 @@
+{
+    "Title": "Just discovered a website that blocks `?utm_source=`. Why would they do that?",
+    "Author": "Jake Koenig",
+    "URL": "1993677551718584648",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-11-26",
+    "Content": "short/1993677551718584648.md",
+    "Summary": "Just discovered a website that blocks `?utm_source=`. Why would they do that?",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1993677551718584648",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1993677551718584648"
+        ]
+    ],
+    "original_date": "Wed Nov 26 13:45:43 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/G6r3ExgboAArPkp.jpg",
+            "original_url": "https://pbs.twimg.com/media/G6r3ExgboAArPkp.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

@@ -1,0 +1,29 @@
+{
+    "Title": "10",
+    "Author": "Jake Koenig",
+    "URL": "1973416099686522901",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-10-01",
+    "Content": "short/1973416099686522901.md",
+    "Summary": "10",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1973416099686522901",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1973416099686522901"
+        ]
+    ],
+    "original_date": "Wed Oct 01 15:53:57 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/G2L7fAfbIAAI2Li.jpg",
+            "original_url": "https://pbs.twimg.com/media/G2L7fAfbIAAI2Li.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

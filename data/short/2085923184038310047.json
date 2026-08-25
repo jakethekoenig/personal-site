@@ -1,0 +1,34 @@
+{
+    "Title": "I picked the wrong week to go on vacation",
+    "Author": "Jake Koenig",
+    "URL": "2085923184038310047",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-08-08",
+    "Content": "short/2085923184038310047.md",
+    "Summary": "I picked the wrong week to go on vacation",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2085923184038310047",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2085923184038310047"
+        ]
+    ],
+    "original_date": "Sat Aug 08 02:56:56 +0000 2026",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/HPKwCOuawAAg8FG.jpg",
+            "original_url": "https://pbs.twimg.com/media/HPKwCOuawAAg8FG.jpg"
+        }
+    ],
+    "quoted_tweet": {
+        "user": "ja3k_",
+        "text": null,
+        "url": "https://x.com/ja3k_/status/2085694032068714808",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

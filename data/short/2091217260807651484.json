@@ -1,0 +1,29 @@
+{
+    "Title": "Still like to handwrite some code on my phone now and again",
+    "Author": "Jake Koenig",
+    "URL": "2091217260807651484",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-08-22",
+    "Content": "short/2091217260807651484.md",
+    "Summary": "Still like to handwrite some code on my phone now and again",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2091217260807651484",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2091217260807651484"
+        ]
+    ],
+    "original_date": "Sat Aug 22 17:33:42 +0000 2026",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/HQV_BBiacAAoiRT.jpg",
+            "original_url": "https://pbs.twimg.com/media/HQV_BBiacAAoiRT.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

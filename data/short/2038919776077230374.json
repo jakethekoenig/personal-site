@@ -1,0 +1,29 @@
+{
+    "Title": "Remember this classic?",
+    "Author": "Jake Koenig",
+    "URL": "2038919776077230374",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-03-31",
+    "Content": "short/2038919776077230374.md",
+    "Summary": "Remember this classic?",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2038919776077230374",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2038919776077230374"
+        ]
+    ],
+    "original_date": "Tue Mar 31 10:02:10 +0000 2026",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/HEuyuRRboAAV00W.png",
+            "original_url": "https://pbs.twimg.com/media/HEuyuRRboAAV00W.png"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

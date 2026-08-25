@@ -1,0 +1,29 @@
+{
+    "Title": "Maybe worktrees are the wrong thing",
+    "Author": "Jake Koenig",
+    "URL": "2085810581437817282",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-08-07",
+    "Content": "short/2085810581437817282.md",
+    "Summary": "Maybe worktrees are the wrong thing",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2085810581437817282",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2085810581437817282"
+        ]
+    ],
+    "original_date": "Fri Aug 07 19:29:29 +0000 2026",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/HPJJnuAbkAAmWuH.png",
+            "original_url": "https://pbs.twimg.com/media/HPJJnuAbkAAmWuH.png"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

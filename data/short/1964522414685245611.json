@@ -1,0 +1,28 @@
+{
+    "Title": "Should rebrand as meat milk",
+    "Author": "Jake Koenig",
+    "URL": "1964522414685245611",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-09-07",
+    "Content": "short/1964522414685245611.md",
+    "Summary": "Should rebrand as meat milk",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1964522414685245611",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1964522414685245611"
+        ]
+    ],
+    "original_date": "Sun Sep 07 02:53:37 +0000 2025",
+    "media": [],
+    "quoted_tweet": {
+        "user": "IanJaeger29",
+        "text": null,
+        "url": "https://x.com/IanJaeger29/status/1963981133013545403",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

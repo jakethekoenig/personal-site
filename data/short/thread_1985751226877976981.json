@@ -1,0 +1,38 @@
+{
+    "Title": "Thread: Todays addition to the vimrc. Really makes the nvim inside worktree inside neovi...",
+    "Author": "Jake Koenig",
+    "URL": "1985751226877976981",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-11-04",
+    "Content": "short/thread_1985751226877976981.md",
+    "Summary": "Todays addition to the vimrc. Really makes the nvim inside worktree inside neovim workflow intuitive.\n\nclaude code knows how to name a temp file",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1985751226877976981",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1985751226877976981"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/1985752570577719604"
+        ]
+    ],
+    "original_date": "Tue Nov 04 16:49:20 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/G47OGDYbQAIEYGM.png",
+            "original_url": "https://pbs.twimg.com/media/G47OGDYbQAIEYGM.png"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/G47PbxvaMAA4y8h.png",
+            "original_url": "https://pbs.twimg.com/media/G47PbxvaMAA4y8h.png"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 2
+}

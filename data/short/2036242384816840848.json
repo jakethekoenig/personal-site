@@ -1,0 +1,28 @@
+{
+    "Title": "Just discovered `:lcd`!",
+    "Author": "Jake Koenig",
+    "URL": "2036242384816840848",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-03-24",
+    "Content": "short/2036242384816840848.md",
+    "Summary": "Just discovered `:lcd`!",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2036242384816840848",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2036242384816840848"
+        ]
+    ],
+    "original_date": "Tue Mar 24 00:43:10 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "ja3k_",
+        "text": null,
+        "url": "https://x.com/ja3k_/status/1984598967645323542",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

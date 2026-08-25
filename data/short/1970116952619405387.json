@@ -1,0 +1,34 @@
+{
+    "Title": "X growth hack: just sit around and wait for yacine to tag you",
+    "Author": "Jake Koenig",
+    "URL": "1970116952619405387",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-09-22",
+    "Content": "short/1970116952619405387.md",
+    "Summary": "X growth hack: just sit around and wait for yacine to tag you",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1970116952619405387",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1970116952619405387"
+        ]
+    ],
+    "original_date": "Mon Sep 22 13:24:19 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/G1dC7ZKbMAIaVX2.jpg",
+            "original_url": "https://pbs.twimg.com/media/G1dC7ZKbMAIaVX2.jpg"
+        }
+    ],
+    "quoted_tweet": {
+        "user": "yacineMTB",
+        "text": null,
+        "url": "https://x.com/yacineMTB/status/1969951276537643423",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

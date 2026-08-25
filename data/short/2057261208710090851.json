@@ -1,0 +1,29 @@
+{
+    "Title": "What does it even mean for a color to be fake?",
+    "Author": "Jake Koenig",
+    "URL": "2057261208710090851",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-05-21",
+    "Content": "short/2057261208710090851.md",
+    "Summary": "What does it even mean for a color to be fake?",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2057261208710090851",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2057261208710090851"
+        ]
+    ],
+    "original_date": "Thu May 21 00:44:28 +0000 2026",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/HIzcIL0bMAAzCSM.jpg",
+            "original_url": "https://pbs.twimg.com/media/HIzcIL0bMAAzCSM.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

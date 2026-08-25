@@ -1,0 +1,28 @@
+{
+    "Title": "Funny reply from the king of asking questions we all know the answer to",
+    "Author": "Jake Koenig",
+    "URL": "2039737783544418796",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-04-02",
+    "Content": "short/2039737783544418796.md",
+    "Summary": "Funny reply from the king of asking questions we all know the answer to",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2039737783544418796",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2039737783544418796"
+        ]
+    ],
+    "original_date": "Thu Apr 02 16:12:38 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "robinhanson",
+        "text": null,
+        "url": "https://x.com/robinhanson/status/2039724156334289265",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

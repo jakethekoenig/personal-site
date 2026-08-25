@@ -1,0 +1,28 @@
+{
+    "Title": "It's actually really weird that code is in *files*. It's just become so normal it's hard to notice",
+    "Author": "Jake Koenig",
+    "URL": "2045659592080928794",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-04-19",
+    "Content": "short/2045659592080928794.md",
+    "Summary": "It's actually really weird that code is in *files*. It's just become so normal it's hard to notice",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2045659592080928794",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2045659592080928794"
+        ]
+    ],
+    "original_date": "Sun Apr 19 00:23:47 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "ONAN_OUS",
+        "text": null,
+        "url": "https://x.com/ONAN_OUS/status/2045644013378965891",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

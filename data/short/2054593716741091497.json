@@ -1,0 +1,28 @@
+{
+    "Title": "It seems very plausible to me Google will win a similar share of the LLM inference business as it di...",
+    "Author": "Jake Koenig",
+    "URL": "2054593716741091497",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-05-13",
+    "Content": "short/2054593716741091497.md",
+    "Summary": "It seems very plausible to me Google will win a similar share of the LLM inference business as it did the cloud business? e.g. the pricing is about right",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2054593716741091497",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2054593716741091497"
+        ]
+    ],
+    "original_date": "Wed May 13 16:04:49 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "BoringBiz_",
+        "text": null,
+        "url": "https://x.com/BoringBiz_/status/2054553947239567696",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

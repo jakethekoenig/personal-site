@@ -1,0 +1,28 @@
+{
+    "Title": "I've been curious about this for a while! Looks like early results that js/python are the best langu...",
+    "Author": "Jake Koenig",
+    "URL": "2088230094817145225",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-08-14",
+    "Content": "short/2088230094817145225.md",
+    "Summary": "I've been curious about this for a while! Looks like early results that js/python are the best languages for LLMs are still roughly true. Though perhaps time to switch to F#",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2088230094817145225",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2088230094817145225"
+        ]
+    ],
+    "original_date": "Fri Aug 14 11:43:46 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "danluu",
+        "text": null,
+        "url": "https://x.com/danluu/status/2086711468016427343",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

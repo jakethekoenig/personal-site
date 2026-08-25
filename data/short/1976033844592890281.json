@@ -1,0 +1,29 @@
+{
+    "Title": "You should be able to react with any emoji and the model should see it too",
+    "Author": "Jake Koenig",
+    "URL": "1976033844592890281",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-10-08",
+    "Content": "short/1976033844592890281.md",
+    "Summary": "You should be able to react with any emoji and the model should see it too",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1976033844592890281",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1976033844592890281"
+        ]
+    ],
+    "original_date": "Wed Oct 08 21:15:56 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/G2xINtMasAAyf1e.png",
+            "original_url": "https://pbs.twimg.com/media/G2xINtMasAAyf1e.png"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

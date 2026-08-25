@@ -1,0 +1,28 @@
+{
+    "Title": "We've all been there",
+    "Author": "Jake Koenig",
+    "URL": "1977512155089108995",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-10-12",
+    "Content": "short/1977512155089108995.md",
+    "Summary": "We've all been there",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1977512155089108995",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1977512155089108995"
+        ]
+    ],
+    "original_date": "Sun Oct 12 23:10:12 +0000 2025",
+    "media": [],
+    "quoted_tweet": {
+        "user": "repligate",
+        "text": null,
+        "url": "https://x.com/repligate/status/1977488937422897286",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

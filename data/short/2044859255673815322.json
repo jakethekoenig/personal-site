@@ -1,0 +1,29 @@
+{
+    "Title": "As I was checking out taco bell said \"you might also like the cinnabon balls\" and they were frankly ...",
+    "Author": "Jake Koenig",
+    "URL": "2044859255673815322",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-04-16",
+    "Content": "short/2044859255673815322.md",
+    "Summary": "As I was checking out taco bell said \"you might also like the cinnabon balls\" and they were frankly incredible",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2044859255673815322",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2044859255673815322"
+        ]
+    ],
+    "original_date": "Thu Apr 16 19:23:32 +0000 2026",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/HGDMhvOaIAAi6br.jpg",
+            "original_url": "https://pbs.twimg.com/media/HGDMhvOaIAAi6br.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

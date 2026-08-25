@@ -1,0 +1,27 @@
+{
+    "Title": "Thread: Bug tracking system where issues are tracked as TODOs at root and progressively ...",
+    "Author": "Jake Koenig",
+    "URL": "1964737845475823838",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-09-07",
+    "Content": "short/thread_1964737845475823838.md",
+    "Summary": "Bug tracking system where issues are tracked as TODOs at root and progressively moved to subdirectories and inlined\n\n> [Quote tweet of @tsoding](https://x.com/tsoding/status/1964668658405536016)\n\nIt s...",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1964737845475823838",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1964737845475823838"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/1964737847547871549"
+        ]
+    ],
+    "original_date": "Sun Sep 07 17:09:40 +0000 2025",
+    "media": [],
+    "is_thread": true,
+    "thread_length": 2
+}

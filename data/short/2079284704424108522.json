@@ -1,0 +1,28 @@
+{
+    "Title": "Meh. Just a counterexample",
+    "Author": "Jake Koenig",
+    "URL": "2079284704424108522",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-07-20",
+    "Content": "short/2079284704424108522.md",
+    "Summary": "Meh. Just a counterexample",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2079284704424108522",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2079284704424108522"
+        ]
+    ],
+    "original_date": "Mon Jul 20 19:17:59 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "ja3k_",
+        "text": null,
+        "url": "https://x.com/ja3k_/status/2077391556324250002",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

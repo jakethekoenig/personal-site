@@ -1,0 +1,28 @@
+{
+    "Title": "Absolutely insane this was ever not the default. Mentat ran it's agent code outside the sandbox the ...",
+    "Author": "Jake Koenig",
+    "URL": "2081846672624394347",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-07-27",
+    "Content": "short/2081846672624394347.md",
+    "Summary": "Absolutely insane this was ever not the default. Mentat ran it's agent code outside the sandbox the agent used and it never once occurred to me it could be any other way",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2081846672624394347",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2081846672624394347"
+        ]
+    ],
+    "original_date": "Mon Jul 27 20:58:20 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "NathanFlurry",
+        "text": null,
+        "url": "https://x.com/NathanFlurry/status/2081768022025658672",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

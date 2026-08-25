@@ -1,0 +1,23 @@
+{
+    "Title": "I feel like codegen agents need a sense of place and proximity. Like I should be able to \"see\" them ...",
+    "Author": "Jake Koenig",
+    "URL": "2083160145711050802",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-07-31",
+    "Content": "short/2083160145711050802.md",
+    "Summary": "I feel like codegen agents need a sense of place and proximity. Like I should be able to \"see\" them in the codebase. And while they're working they should be able to \"feel\" others working nearby",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2083160145711050802",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2083160145711050802"
+        ]
+    ],
+    "original_date": "Fri Jul 31 11:57:36 +0000 2026",
+    "media": [],
+    "quoted_tweet": null,
+    "is_thread": false
+}

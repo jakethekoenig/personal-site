@@ -203,6 +203,25 @@
     margin-bottom: 0;
 }
 
+/* Markdown blockquotes are epigraphs elsewhere on the site. Quote-post cards
+   should stay compact, left-aligned, and readable as ordinary post content. */
+.tweet-content blockquote.epigraph {
+    margin: 10px 0;
+}
+
+.tweet-content blockquote.epigraph > p:first-child {
+    font-style: normal;
+}
+
+.tweet-content blockquote.epigraph > p:last-child {
+    text-align: left;
+}
+
+.tweet-content blockquote.epigraph a {
+    font-style: normal;
+    font-weight: 600;
+}
+
 /* Individual tweet page styling */
 .individual-tweet {
     max-width: 800px;

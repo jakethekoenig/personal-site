@@ -1,0 +1,28 @@
+{
+    "Title": "Finally with the power of LLMs we can make expert systems work",
+    "Author": "Jake Koenig",
+    "URL": "2062729462119293083",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-06-05",
+    "Content": "short/2062729462119293083.md",
+    "Summary": "Finally with the power of LLMs we can make expert systems work",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2062729462119293083",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2062729462119293083"
+        ]
+    ],
+    "original_date": "Fri Jun 05 02:53:22 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "AnthropicAI",
+        "text": null,
+        "url": "https://x.com/AnthropicAI/status/2062568864240836995",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

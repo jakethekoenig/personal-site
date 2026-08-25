@@ -1,0 +1,29 @@
+{
+    "Title": "What is this CTA?",
+    "Author": "Jake Koenig",
+    "URL": "1987911517782884702",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-11-10",
+    "Content": "short/1987911517782884702.md",
+    "Summary": "What is this CTA?",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1987911517782884702",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1987911517782884702"
+        ]
+    ],
+    "original_date": "Mon Nov 10 15:53:34 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/G5Z6_GPaIAA7iTq.png",
+            "original_url": "https://pbs.twimg.com/media/G5Z6_GPaIAA7iTq.png"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

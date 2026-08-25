@@ -1,0 +1,29 @@
+{
+    "Title": "Nice",
+    "Author": "Jake Koenig",
+    "URL": "2018865997550407906",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-02-04",
+    "Content": "short/2018865997550407906.md",
+    "Summary": "Nice",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2018865997550407906",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2018865997550407906"
+        ]
+    ],
+    "original_date": "Wed Feb 04 01:55:37 +0000 2026",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/HARz37lbsAApXDt.png",
+            "original_url": "https://pbs.twimg.com/media/HARz37lbsAApXDt.png"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

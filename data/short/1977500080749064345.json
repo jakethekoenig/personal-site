@@ -1,0 +1,29 @@
+{
+    "Title": "I wonder what happened there?",
+    "Author": "Jake Koenig",
+    "URL": "1977500080749064345",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-10-12",
+    "Content": "short/1977500080749064345.md",
+    "Summary": "I wonder what happened there?",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1977500080749064345",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1977500080749064345"
+        ]
+    ],
+    "original_date": "Sun Oct 12 22:22:14 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/G3F92EcbkAELjbJ.jpg",
+            "original_url": "https://pbs.twimg.com/media/G3F92EcbkAELjbJ.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

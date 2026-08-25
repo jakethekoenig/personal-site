@@ -1,0 +1,28 @@
+{
+    "Title": "It's a beautiful thing to see as a parent",
+    "Author": "Jake Koenig",
+    "URL": "1980761507676975324",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-10-21",
+    "Content": "short/1980761507676975324.md",
+    "Summary": "It's a beautiful thing to see as a parent",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1980761507676975324",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1980761507676975324"
+        ]
+    ],
+    "original_date": "Tue Oct 21 22:21:58 +0000 2025",
+    "media": [],
+    "quoted_tweet": {
+        "user": "RomeoStevens76",
+        "text": null,
+        "url": "https://x.com/RomeoStevens76/status/1455068457091756034",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

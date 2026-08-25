@@ -1,0 +1,29 @@
+{
+    "Title": "Faster than Twitter for getting the latest LLM news",
+    "Author": "Jake Koenig",
+    "URL": "1990823303804526727",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-11-18",
+    "Content": "short/1990823303804526727.md",
+    "Summary": "Faster than Twitter for getting the latest LLM news",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1990823303804526727",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1990823303804526727"
+        ]
+    ],
+    "original_date": "Tue Nov 18 16:43:57 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/G6DTPr1bMAEXPff.jpg",
+            "original_url": "https://pbs.twimg.com/media/G6DTPr1bMAEXPff.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

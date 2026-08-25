@@ -1,0 +1,28 @@
+{
+    "Title": "You'll love this person I referred. They're a total brute!",
+    "Author": "Jake Koenig",
+    "URL": "2084312328309514431",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-08-03",
+    "Content": "short/2084312328309514431.md",
+    "Summary": "You'll love this person I referred. They're a total brute!",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2084312328309514431",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2084312328309514431"
+        ]
+    ],
+    "original_date": "Mon Aug 03 16:15:58 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "staysaasy",
+        "text": null,
+        "url": "https://x.com/staysaasy/status/2084291859459846265",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

@@ -1,0 +1,29 @@
+{
+    "Title": "Found on the beach. Can't escape work.",
+    "Author": "Jake Koenig",
+    "URL": "2068478925886628317",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-06-20",
+    "Content": "short/2068478925886628317.md",
+    "Summary": "Found on the beach. Can't escape work.",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2068478925886628317",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2068478925886628317"
+        ]
+    ],
+    "original_date": "Sat Jun 20 23:39:41 +0000 2026",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/HLS2lQjaUAAAeYg.jpg",
+            "original_url": "https://pbs.twimg.com/media/HLS2lQjaUAAAeYg.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

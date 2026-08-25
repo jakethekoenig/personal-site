@@ -1,0 +1,28 @@
+{
+    "Title": "How it feels to be a Senior Software Engineer",
+    "Author": "Jake Koenig",
+    "URL": "2091914173622235503",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-08-24",
+    "Content": "short/2091914173622235503.md",
+    "Summary": "How it feels to be a Senior Software Engineer",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2091914173622235503",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2091914173622235503"
+        ]
+    ],
+    "original_date": "Mon Aug 24 15:42:59 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "peplumtop",
+        "text": null,
+        "url": "https://x.com/peplumtop/status/2091614512948428918",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

@@ -1,0 +1,28 @@
+{
+    "Title": "Gonna start saying \"small dot product\" for things that are mostly unrelated but not entirely. And li...",
+    "Author": "Jake Koenig",
+    "URL": "1978287461173166342",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-10-15",
+    "Content": "short/1978287461173166342.md",
+    "Summary": "Gonna start saying \"small dot product\" for things that are mostly unrelated but not entirely. And linearly independent to mean not exactly the same thing (up to scalar)",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1978287461173166342",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1978287461173166342"
+        ]
+    ],
+    "original_date": "Wed Oct 15 02:31:00 +0000 2025",
+    "media": [],
+    "quoted_tweet": {
+        "user": "pronounced_kyle",
+        "text": null,
+        "url": "https://x.com/pronounced_kyle/status/1978212022593495513",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

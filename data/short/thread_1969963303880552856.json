@@ -1,0 +1,27 @@
+{
+    "Title": "Thread: I'm constantly looking for new config settings to make my nvim setup as ugly as ...",
+    "Author": "Jake Koenig",
+    "URL": "1969963303880552856",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-09-22",
+    "Content": "short/thread_1969963303880552856.md",
+    "Summary": "I'm constantly looking for new config settings to make my nvim setup as ugly as possible\n\nJust tried `colors darkblue` and it feel deeply right",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1969963303880552856",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1969963303880552856"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/1970189201221312643"
+        ]
+    ],
+    "original_date": "Mon Sep 22 03:13:46 +0000 2025",
+    "media": [],
+    "is_thread": true,
+    "thread_length": 2
+}

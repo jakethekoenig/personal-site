@@ -1,0 +1,34 @@
+{
+    "Title": "My vision",
+    "Author": "Jake Koenig",
+    "URL": "2083221339004187131",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-07-31",
+    "Content": "short/2083221339004187131.md",
+    "Summary": "My vision",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2083221339004187131",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2083221339004187131"
+        ]
+    ],
+    "original_date": "Fri Jul 31 16:00:46 +0000 2026",
+    "media": [
+        {
+            "type": "video",
+            "url": "/asset/crosspoast/E-LDQV8CQ_2xVu2P.mp4",
+            "original_url": "https://video.twimg.com/amplify_video/2083220637615808512/vid/avc1/1080x1920/E-LDQV8CQ_2xVu2P.mp4"
+        }
+    ],
+    "quoted_tweet": {
+        "user": "ja3k_",
+        "text": null,
+        "url": "https://x.com/ja3k_/status/2083160145711050802",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

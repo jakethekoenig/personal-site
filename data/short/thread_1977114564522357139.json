@@ -1,0 +1,27 @@
+{
+    "Title": "Thread: Prompt engineering is like 80% communicating clearly. So you'd think being good ...",
+    "Author": "Jake Koenig",
+    "URL": "1977114564522357139",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-10-11",
+    "Content": "short/thread_1977114564522357139.md",
+    "Summary": "Prompt engineering is like 80% communicating clearly. So you'd think being good at communicating with people would be mostly the same skill. But it's not because the LLM actually reads what you write ...",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1977114564522357139",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1977114564522357139"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/1977545752135204900"
+        ]
+    ],
+    "original_date": "Sat Oct 11 20:50:19 +0000 2025",
+    "media": [],
+    "is_thread": true,
+    "thread_length": 2
+}

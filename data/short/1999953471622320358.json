@@ -1,0 +1,28 @@
+{
+    "Title": "That's me at #7!",
+    "Author": "Jake Koenig",
+    "URL": "1999953471622320358",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-12-13",
+    "Content": "short/1999953471622320358.md",
+    "Summary": "That's me at #7!",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1999953471622320358",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1999953471622320358"
+        ]
+    ],
+    "original_date": "Sat Dec 13 21:23:59 +0000 2025",
+    "media": [],
+    "quoted_tweet": {
+        "user": "ajlvi",
+        "text": null,
+        "url": "https://x.com/ajlvi/status/1999896262057832639",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

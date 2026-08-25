@@ -1,0 +1,29 @@
+{
+    "Title": "Trying something new",
+    "Author": "Jake Koenig",
+    "URL": "1980252729290490296",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-10-20",
+    "Content": "short/1980252729290490296.md",
+    "Summary": "Trying something new",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1980252729290490296",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1980252729290490296"
+        ]
+    ],
+    "original_date": "Mon Oct 20 12:40:16 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/G3tFXMRWcAAjsyo.jpg",
+            "original_url": "https://pbs.twimg.com/media/G3tFXMRWcAAjsyo.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

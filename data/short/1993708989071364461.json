@@ -1,0 +1,23 @@
+{
+    "Title": "Running multiple Claude in parallel and telling them to use `say` to keep me updated",
+    "Author": "Jake Koenig",
+    "URL": "1993708989071364461",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-11-26",
+    "Content": "short/1993708989071364461.md",
+    "Summary": "Running multiple Claude in parallel and telling them to use `say` to keep me updated",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1993708989071364461",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1993708989071364461"
+        ]
+    ],
+    "original_date": "Wed Nov 26 15:50:38 +0000 2025",
+    "media": [],
+    "quoted_tweet": null,
+    "is_thread": false
+}

@@ -1,0 +1,28 @@
+{
+    "Title": "RL is hard",
+    "Author": "Jake Koenig",
+    "URL": "1981680907473043581",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-10-24",
+    "Content": "short/1981680907473043581.md",
+    "Summary": "RL is hard",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1981680907473043581",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1981680907473043581"
+        ]
+    ],
+    "original_date": "Fri Oct 24 11:15:20 +0000 2025",
+    "media": [],
+    "quoted_tweet": {
+        "user": "turing_hamster",
+        "text": null,
+        "url": "https://x.com/turing_hamster/status/1981512401930354910",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

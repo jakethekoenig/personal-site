@@ -1,0 +1,28 @@
+{
+    "Title": "This is literally Kobayashi",
+    "Author": "Jake Koenig",
+    "URL": "2076743135083016504",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-07-13",
+    "Content": "short/2076743135083016504.md",
+    "Summary": "This is literally Kobayashi",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2076743135083016504",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2076743135083016504"
+        ]
+    ],
+    "original_date": "Mon Jul 13 18:58:42 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "acenter102",
+        "text": null,
+        "url": "https://x.com/acenter102/status/2076112623314108615",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

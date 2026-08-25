@@ -1,0 +1,28 @@
+{
+    "Title": "I have so many ideas for codegen agents. Maybe I should just do it again",
+    "Author": "Jake Koenig",
+    "URL": "1980732346660975064",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-10-21",
+    "Content": "short/1980732346660975064.md",
+    "Summary": "I have so many ideas for codegen agents. Maybe I should just do it again",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1980732346660975064",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1980732346660975064"
+        ]
+    ],
+    "original_date": "Tue Oct 21 20:26:06 +0000 2025",
+    "media": [],
+    "quoted_tweet": {
+        "user": "yacineMTB",
+        "text": null,
+        "url": "https://x.com/yacineMTB/status/1980729440293331308",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

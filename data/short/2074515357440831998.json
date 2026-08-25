@@ -1,0 +1,28 @@
+{
+    "Title": "If you're so smart, why don't you lie a lot?",
+    "Author": "Jake Koenig",
+    "URL": "2074515357440831998",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-07-07",
+    "Content": "short/2074515357440831998.md",
+    "Summary": "If you're so smart, why don't you lie a lot?",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2074515357440831998",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2074515357440831998"
+        ]
+    ],
+    "original_date": "Tue Jul 07 15:26:18 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "yacineMTB",
+        "text": null,
+        "url": "https://x.com/yacineMTB/status/2074442399552503971",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

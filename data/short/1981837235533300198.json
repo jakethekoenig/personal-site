@@ -1,0 +1,28 @@
+{
+    "Title": "Glad this thread flopped. I was dangerously close to becoming a thread guy",
+    "Author": "Jake Koenig",
+    "URL": "1981837235533300198",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-10-24",
+    "Content": "short/1981837235533300198.md",
+    "Summary": "Glad this thread flopped. I was dangerously close to becoming a thread guy",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1981837235533300198",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1981837235533300198"
+        ]
+    ],
+    "original_date": "Fri Oct 24 21:36:32 +0000 2025",
+    "media": [],
+    "quoted_tweet": {
+        "user": "ja3k_",
+        "text": null,
+        "url": "https://x.com/ja3k_/status/1981818564861734969",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

@@ -1,0 +1,34 @@
+{
+    "Title": "New levels of nvim psychosis",
+    "Author": "Jake Koenig",
+    "URL": "2084317374245953847",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-08-03",
+    "Content": "short/2084317374245953847.md",
+    "Summary": "New levels of nvim psychosis",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2084317374245953847",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2084317374245953847"
+        ]
+    ],
+    "original_date": "Mon Aug 03 16:36:01 +0000 2026",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/HOz7gNOa8AABMzO.jpg",
+            "original_url": "https://pbs.twimg.com/media/HOz7gNOa8AABMzO.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/HOz7lHFasAAj5LL.jpg",
+            "original_url": "https://pbs.twimg.com/media/HOz7lHFasAAj5LL.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

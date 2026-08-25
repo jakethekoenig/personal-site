@@ -1,0 +1,23 @@
+{
+    "Title": "Ingesting my twitter data",
+    "Author": "Jake Koenig",
+    "URL": "1963995368968098178",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-09-05",
+    "Content": "short/1963995368968098178.md",
+    "Summary": "Ingesting my twitter data",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1963995368968098178",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1963995368968098178"
+        ]
+    ],
+    "original_date": "Fri Sep 05 15:59:19 +0000 2025",
+    "media": [],
+    "quoted_tweet": null,
+    "is_thread": false
+}

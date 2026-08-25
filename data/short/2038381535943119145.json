@@ -1,0 +1,29 @@
+{
+    "Title": "There's a Kirkland energy drink?! This changes everything!",
+    "Author": "Jake Koenig",
+    "URL": "2038381535943119145",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-03-29",
+    "Content": "short/2038381535943119145.md",
+    "Summary": "There's a Kirkland energy drink?! This changes everything!",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2038381535943119145",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2038381535943119145"
+        ]
+    ],
+    "original_date": "Sun Mar 29 22:23:24 +0000 2026",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/HEnJIsAaIAA92nX.jpg",
+            "original_url": "https://pbs.twimg.com/media/HEnJIsAaIAA92nX.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

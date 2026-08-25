@@ -20,7 +20,7 @@ The Twitter functionality consists of:
 
 3. **Process your Twitter archive**:
    ```bash
-   python3 scripts/one_off/tweet_migration/process_twitter_archive.py /path/to/your/twitter-archive
+   python3 scripts/one_off/tweet_migration/process_twitter_archive.py /path/to/twitter-archive.zip
    ```
 
 4. **Build your site**:
@@ -43,11 +43,15 @@ python3 scripts/one_off/tweet_migration/process_twitter_archive.py <archive_path
 ```
 
 **Options:**
-- `--output-dir`: Directory for tweet JSON files (default: `data/tweets`)
-- `--media-dir`: Directory for tweet media files (default: `nongenerated/assets/crosspoast`)
+- `--output-dir`: Directory for tweet JSON files (default: `data/short`)
+- `--media-dir`: Directory for tweet media files (default: `nongenerated/asset/crosspoast`)
+- `--content-dir`: Directory for tweet Markdown files (default: `content/short`)
 
 **What it does:**
 - Finds and parses `tweets.js` from your Twitter archive
+- Reads either the downloaded ZIP directly or an extracted archive directory
+- Preserves records whose X/Twitter URLs are already represented, including
+  Bluesky metadata and cross-platform links
 - Extracts tweet content, dates, and metadata
 - Downloads and processes media files (images, videos)
 - Creates JSON files compatible with your site's structure
@@ -58,7 +62,7 @@ python3 scripts/one_off/tweet_migration/process_twitter_archive.py <archive_path
 
 **Example:**
 ```bash
-python3 scripts/one_off/tweet_migration/process_twitter_archive.py ~/Downloads/twitter-2023-12-01-abc123/
+python3 scripts/one_off/tweet_migration/process_twitter_archive.py ~/Downloads/twitter-2026-08-25-abc123.zip
 ```
 
 ### `setup_tweets.py`

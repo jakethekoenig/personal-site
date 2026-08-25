@@ -1,0 +1,23 @@
+{
+    "Title": "Do any LLM products run the LLM code as it's being streamed? Seems possible for some scripts and the...",
+    "Author": "Jake Koenig",
+    "URL": "2056867115333042538",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-05-19",
+    "Content": "short/2056867115333042538.md",
+    "Summary": "Do any LLM products run the LLM code as it's being streamed? Seems possible for some scripts and then you can do things like incrementally show prints or a mutated matplotlib graph or whatever",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2056867115333042538",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2056867115333042538"
+        ]
+    ],
+    "original_date": "Tue May 19 22:38:29 +0000 2026",
+    "media": [],
+    "quoted_tweet": null,
+    "is_thread": false
+}

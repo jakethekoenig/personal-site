@@ -1,0 +1,34 @@
+{
+    "Title": "Last time I brought up Mentat at work @PradyuPrasad said I sound like this guy",
+    "Author": "Jake Koenig",
+    "URL": "2081847871675195483",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-07-27",
+    "Content": "short/2081847871675195483.md",
+    "Summary": "Last time I brought up Mentat at work @PradyuPrasad said I sound like this guy",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2081847871675195483",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2081847871675195483"
+        ]
+    ],
+    "original_date": "Mon Jul 27 21:03:06 +0000 2026",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/HOQ1g2Sb0AAN_kM.jpg",
+            "original_url": "https://pbs.twimg.com/media/HOQ1g2Sb0AAN_kM.jpg"
+        }
+    ],
+    "quoted_tweet": {
+        "user": "ja3k_",
+        "text": null,
+        "url": "https://x.com/ja3k_/status/2081846672624394347",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

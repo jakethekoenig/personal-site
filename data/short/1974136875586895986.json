@@ -1,0 +1,29 @@
+{
+    "Title": "I'll be away this weekend. Update your own timelines while I'm gone!",
+    "Author": "Jake Koenig",
+    "URL": "1974136875586895986",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-10-03",
+    "Content": "short/1974136875586895986.md",
+    "Summary": "I'll be away this weekend. Update your own timelines while I'm gone!",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1974136875586895986",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1974136875586895986"
+        ]
+    ],
+    "original_date": "Fri Oct 03 15:38:03 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/G2WLBsebMAc1b3S.jpg",
+            "original_url": "https://pbs.twimg.com/media/G2WLBsebMAc1b3S.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

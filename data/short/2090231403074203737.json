@@ -1,0 +1,28 @@
+{
+    "Title": "wtf I literally sold last week",
+    "Author": "Jake Koenig",
+    "URL": "2090231403074203737",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-08-20",
+    "Content": "short/2090231403074203737.md",
+    "Summary": "wtf I literally sold last week",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2090231403074203737",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2090231403074203737"
+        ]
+    ],
+    "original_date": "Thu Aug 20 00:16:15 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "notfrydoteth",
+        "text": null,
+        "url": "https://x.com/notfrydoteth/status/2090184698534228132",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

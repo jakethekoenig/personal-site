@@ -1,0 +1,33 @@
+{
+    "Title": "Installed pi on my phone and just like that the last textbox I fingercoded on went away",
+    "Author": "Jake Koenig",
+    "URL": "2092046274321334318",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-08-25",
+    "Content": "short/2092046274321334318.md",
+    "Summary": "Installed pi on my phone and just like that the last textbox I fingercoded on went away",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2092046274321334318",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2092046274321334318"
+        ]
+    ],
+    "original_date": "Tue Aug 25 00:27:54 +0000 2026",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/HQhw_-JaQAAoDiz.jpg",
+            "original_url": "https://pbs.twimg.com/media/HQhw_-JaQAAoDiz.jpg"
+        }
+    ],
+    "quoted_tweet": {
+        "user": "ja3k_",
+        "text": "Still like to handwrite some code on my phone now and again",
+        "url": "https://x.com/ja3k_/status/2091217260807651484"
+    },
+    "is_thread": false
+}

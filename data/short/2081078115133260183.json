@@ -1,0 +1,29 @@
+{
+    "Title": "Something ain't right with this zebra",
+    "Author": "Jake Koenig",
+    "URL": "2081078115133260183",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-07-25",
+    "Content": "short/2081078115133260183.md",
+    "Summary": "Something ain't right with this zebra",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2081078115133260183",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2081078115133260183"
+        ]
+    ],
+    "original_date": "Sat Jul 25 18:04:21 +0000 2026",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/HOF5b3ca0AAyMMp.jpg",
+            "original_url": "https://pbs.twimg.com/media/HOF5b3ca0AAyMMp.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

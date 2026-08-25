@@ -1,0 +1,28 @@
+{
+    "Title": "It is time to play a lot of Magic the Gathering",
+    "Author": "Jake Koenig",
+    "URL": "2037201891017580965",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-03-26",
+    "Content": "short/2037201891017580965.md",
+    "Summary": "It is time to play a lot of Magic the Gathering",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2037201891017580965",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2037201891017580965"
+        ]
+    ],
+    "original_date": "Thu Mar 26 16:15:54 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "vikhyatk",
+        "text": null,
+        "url": "https://x.com/vikhyatk/status/2037097591486447700",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

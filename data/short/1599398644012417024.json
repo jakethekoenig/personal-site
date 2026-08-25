@@ -1,0 +1,29 @@
+{
+    "Title": "Media post",
+    "Author": "Jake Koenig",
+    "URL": "1599398644012417024",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2022-12-04",
+    "Content": "short/1599398644012417024.md",
+    "Summary": "Media post",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1599398644012417024",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1599398644012417024"
+        ]
+    ],
+    "original_date": "Sun Dec 04 13:42:06 +0000 2022",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/FjI0h1takAEZa0X.png",
+            "original_url": "https://pbs.twimg.com/media/FjI0h1takAEZa0X.png"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

@@ -1,0 +1,33 @@
+{
+    "Title": "Thread: I wrote a blog post about using the same agent to review and write code",
+    "Author": "Jake Koenig",
+    "URL": "1966563463926280465",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-09-12",
+    "Content": "short/thread_1966563463926280465.md",
+    "Summary": "I wrote a blog post about using the same agent to review and write code\n\nLink:",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1966563463926280465",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1966563463926280465"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/1966563465835040820"
+        ]
+    ],
+    "original_date": "Fri Sep 12 18:04:01 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/G0qi_YqaoAA1sdb.png",
+            "original_url": "https://pbs.twimg.com/media/G0qi_YqaoAA1sdb.png"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 2
+}

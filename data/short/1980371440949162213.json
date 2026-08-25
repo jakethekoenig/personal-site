@@ -1,0 +1,28 @@
+{
+    "Title": "They'll supply the data centers with coffee when they use up all the water",
+    "Author": "Jake Koenig",
+    "URL": "1980371440949162213",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-10-20",
+    "Content": "short/1980371440949162213.md",
+    "Summary": "They'll supply the data centers with coffee when they use up all the water",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1980371440949162213",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1980371440949162213"
+        ]
+    ],
+    "original_date": "Mon Oct 20 20:31:59 +0000 2025",
+    "media": [],
+    "quoted_tweet": {
+        "user": "exec_sum",
+        "text": null,
+        "url": "https://x.com/exec_sum/status/1979978210981880308",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

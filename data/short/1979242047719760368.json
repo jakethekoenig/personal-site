@@ -1,0 +1,28 @@
+{
+    "Title": "It's 20 lines of python. A random walk in Z^5. I liked how it looked.",
+    "Author": "Jake Koenig",
+    "URL": "1979242047719760368",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-10-17",
+    "Content": "short/1979242047719760368.md",
+    "Summary": "It's 20 lines of python. A random walk in Z^5. I liked how it looked.",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1979242047719760368",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1979242047719760368"
+        ]
+    ],
+    "original_date": "Fri Oct 17 17:44:11 +0000 2025",
+    "media": [],
+    "quoted_tweet": {
+        "user": "0x45o",
+        "text": null,
+        "url": "https://x.com/0x45o/status/1979196842328948746",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

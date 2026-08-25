@@ -1,0 +1,28 @@
+{
+    "Title": "Today I escaped the permanent underclass",
+    "Author": "Jake Koenig",
+    "URL": "2064432337144918347",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-06-09",
+    "Content": "short/2064432337144918347.md",
+    "Summary": "Today I escaped the permanent underclass",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2064432337144918347",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2064432337144918347"
+        ]
+    ],
+    "original_date": "Tue Jun 09 19:39:59 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "ja3k_",
+        "text": null,
+        "url": "https://x.com/ja3k_/status/2064432271462162601",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

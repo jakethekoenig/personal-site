@@ -1,0 +1,28 @@
+{
+    "Title": "I just wish SOMEONE would make an AI cli. Somehow totally impossible. Less is more",
+    "Author": "Jake Koenig",
+    "URL": "2089756984736432314",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-08-18",
+    "Content": "short/2089756984736432314.md",
+    "Summary": "I just wish SOMEONE would make an AI cli. Somehow totally impossible. Less is more",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2089756984736432314",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2089756984736432314"
+        ]
+    ],
+    "original_date": "Tue Aug 18 16:51:05 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "justinmk",
+        "text": null,
+        "url": "https://x.com/justinmk/status/2089752682575601694",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

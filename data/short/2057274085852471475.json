@@ -1,0 +1,28 @@
+{
+    "Title": "&gt; Our focus is to get it out quickly so that everyone can use it for themselves. Yay, can't wait ...",
+    "Author": "Jake Koenig",
+    "URL": "2057274085852471475",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-05-21",
+    "Content": "short/2057274085852471475.md",
+    "Summary": "&gt; Our focus is to get it out quickly so that everyone can use it for themselves. Yay, can't wait to settle all my conjectures!",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2057274085852471475",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2057274085852471475"
+        ]
+    ],
+    "original_date": "Thu May 21 01:35:39 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "polynoamial",
+        "text": null,
+        "url": "https://x.com/polynoamial/status/2057179104315670826",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

@@ -1,0 +1,28 @@
+{
+    "Title": "Good news!",
+    "Author": "Jake Koenig",
+    "URL": "1963984647907680732",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-09-05",
+    "Content": "short/1963984647907680732.md",
+    "Summary": "Good news!",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1963984647907680732",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1963984647907680732"
+        ]
+    ],
+    "original_date": "Fri Sep 05 15:16:43 +0000 2025",
+    "media": [],
+    "quoted_tweet": {
+        "user": "mattyglesias",
+        "text": null,
+        "url": "https://x.com/mattyglesias/status/1963801864090128503",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

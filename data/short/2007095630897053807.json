@@ -1,0 +1,29 @@
+{
+    "Title": "This email is raising a lot of questions answered in the email",
+    "Author": "Jake Koenig",
+    "URL": "2007095630897053807",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-01-02",
+    "Content": "short/2007095630897053807.md",
+    "Summary": "This email is raising a lot of questions answered in the email",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2007095630897053807",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2007095630897053807"
+        ]
+    ],
+    "original_date": "Fri Jan 02 14:24:23 +0000 2026",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/G9qiysSacAEKQtM.jpg",
+            "original_url": "https://pbs.twimg.com/media/G9qiysSacAEKQtM.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

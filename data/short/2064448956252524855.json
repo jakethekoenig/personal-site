@@ -1,0 +1,28 @@
+{
+    "Title": "If anyone makes a billion scoville salsa everyone dies",
+    "Author": "Jake Koenig",
+    "URL": "2064448956252524855",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-06-09",
+    "Content": "short/2064448956252524855.md",
+    "Summary": "If anyone makes a billion scoville salsa everyone dies",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2064448956252524855",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2064448956252524855"
+        ]
+    ],
+    "original_date": "Tue Jun 09 20:46:01 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "hopes_revenge",
+        "text": null,
+        "url": "https://x.com/hopes_revenge/status/2062628139642024107",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

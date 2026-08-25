@@ -1,0 +1,29 @@
+{
+    "Title": "What even happened here? I've never seen a ratio like this. Grok just liked the post?",
+    "Author": "Jake Koenig",
+    "URL": "1984739517707010532",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-11-01",
+    "Content": "short/1984739517707010532.md",
+    "Summary": "What even happened here? I've never seen a ratio like this. Grok just liked the post?",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1984739517707010532",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1984739517707010532"
+        ]
+    ],
+    "original_date": "Sat Nov 01 21:49:10 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/G4s2EvgbQAEbl-S.jpg",
+            "original_url": "https://pbs.twimg.com/media/G4s2EvgbQAEbl-S.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

@@ -1,0 +1,28 @@
+{
+    "Title": "Reminds me of a time in Mexico City when a friend pointed at a restaurant and said \"Basura looks goo...",
+    "Author": "Jake Koenig",
+    "URL": "2064454047890129190",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-06-09",
+    "Content": "short/2064454047890129190.md",
+    "Summary": "Reminds me of a time in Mexico City when a friend pointed at a restaurant and said \"Basura looks good\"",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2064454047890129190",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2064454047890129190"
+        ]
+    ],
+    "original_date": "Tue Jun 09 21:06:15 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "NeilShenvi",
+        "text": null,
+        "url": "https://x.com/NeilShenvi/status/2064347570122465290",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

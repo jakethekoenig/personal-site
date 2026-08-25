@@ -1,0 +1,28 @@
+{
+    "Title": "Believe it or not nvim is the better tmux",
+    "Author": "Jake Koenig",
+    "URL": "2033679370171388308",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-03-16",
+    "Content": "short/2033679370171388308.md",
+    "Summary": "Believe it or not nvim is the better tmux",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2033679370171388308",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2033679370171388308"
+        ]
+    ],
+    "original_date": "Mon Mar 16 22:58:40 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "levelsio",
+        "text": null,
+        "url": "https://x.com/levelsio/status/2033657882160386084",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

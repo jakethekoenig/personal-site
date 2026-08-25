@@ -1,0 +1,28 @@
+{
+    "Title": "Wrote a tournament report:",
+    "Author": "Jake Koenig",
+    "URL": "2015886669032128703",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-01-26",
+    "Content": "short/2015886669032128703.md",
+    "Summary": "Wrote a tournament report:",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2015886669032128703",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2015886669032128703"
+        ]
+    ],
+    "original_date": "Mon Jan 26 20:36:49 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "ja3k_",
+        "text": null,
+        "url": "https://x.com/ja3k_/status/2015282861310656594",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

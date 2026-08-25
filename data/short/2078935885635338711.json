@@ -1,0 +1,28 @@
+{
+    "Title": "I have hope that it's only useless because no one understands it",
+    "Author": "Jake Koenig",
+    "URL": "2078935885635338711",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-07-19",
+    "Content": "short/2078935885635338711.md",
+    "Summary": "I have hope that it's only useless because no one understands it",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2078935885635338711",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2078935885635338711"
+        ]
+    ],
+    "original_date": "Sun Jul 19 20:11:54 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "alz_zyd_",
+        "text": null,
+        "url": "https://x.com/alz_zyd_/status/2078770242159886528",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

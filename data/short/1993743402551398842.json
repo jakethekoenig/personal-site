@@ -1,0 +1,28 @@
+{
+    "Title": "Opening your terminals inside nvim is the gift that keeps on giving. So many things become possible....",
+    "Author": "Jake Koenig",
+    "URL": "1993743402551398842",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-11-26",
+    "Content": "short/1993743402551398842.md",
+    "Summary": "Opening your terminals inside nvim is the gift that keeps on giving. So many things become possible. Why would I want to have text not inside nvim anyway",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1993743402551398842",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1993743402551398842"
+        ]
+    ],
+    "original_date": "Wed Nov 26 18:07:23 +0000 2025",
+    "media": [],
+    "quoted_tweet": {
+        "user": "ja3k_",
+        "text": null,
+        "url": "https://x.com/ja3k_/status/1993742749091418368",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

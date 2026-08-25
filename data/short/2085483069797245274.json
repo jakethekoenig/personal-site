@@ -1,0 +1,28 @@
+{
+    "Title": "I'll do it if the pay is good",
+    "Author": "Jake Koenig",
+    "URL": "2085483069797245274",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-08-06",
+    "Content": "short/2085483069797245274.md",
+    "Summary": "I'll do it if the pay is good",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2085483069797245274",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2085483069797245274"
+        ]
+    ],
+    "original_date": "Thu Aug 06 21:48:04 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "Polymarket",
+        "text": null,
+        "url": "https://x.com/Polymarket/status/2085475760018538715",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

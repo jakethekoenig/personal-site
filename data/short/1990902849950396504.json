@@ -1,0 +1,28 @@
+{
+    "Title": "GitHub is actually still up it's just the git protocol is down",
+    "Author": "Jake Koenig",
+    "URL": "1990902849950396504",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-11-18",
+    "Content": "short/1990902849950396504.md",
+    "Summary": "GitHub is actually still up it's just the git protocol is down",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1990902849950396504",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1990902849950396504"
+        ]
+    ],
+    "original_date": "Tue Nov 18 22:00:03 +0000 2025",
+    "media": [],
+    "quoted_tweet": {
+        "user": "githubstatus",
+        "text": null,
+        "url": "https://x.com/githubstatus/status/1990890655040606516",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

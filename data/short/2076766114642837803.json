@@ -1,0 +1,34 @@
+{
+    "Title": "Holy shit, I need a new startup idea",
+    "Author": "Jake Koenig",
+    "URL": "2076766114642837803",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-07-13",
+    "Content": "short/2076766114642837803.md",
+    "Summary": "Holy shit, I need a new startup idea",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2076766114642837803",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2076766114642837803"
+        ]
+    ],
+    "original_date": "Mon Jul 13 20:30:00 +0000 2026",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/HNIntSJa0AAYjdD.jpg",
+            "original_url": "https://pbs.twimg.com/media/HNIntSJa0AAYjdD.jpg"
+        }
+    ],
+    "quoted_tweet": {
+        "user": "clankrmedia",
+        "text": null,
+        "url": "https://x.com/clankrmedia/status/2076593164744376707",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

@@ -1,0 +1,33 @@
+{
+    "Title": "Thread: continue",
+    "Author": "Jake Koenig",
+    "URL": "2080747506695295434",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-07-24",
+    "Content": "short/thread_2080747506695295434.md",
+    "Summary": "continue\n\nAlso a real \"that's it?\" moment",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "2080747506695295434",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2080747506695295434"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/2080747508159160451"
+        ]
+    ],
+    "original_date": "Fri Jul 24 20:10:38 +0000 2026",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/HOBMwWubAAAuALw.jpg",
+            "original_url": "https://pbs.twimg.com/media/HOBMwWubAAAuALw.jpg"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 2
+}

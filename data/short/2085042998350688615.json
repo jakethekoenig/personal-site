@@ -1,0 +1,28 @@
+{
+    "Title": "Proud of what we've accomplished at Elicit with our agent. Try it out!",
+    "Author": "Jake Koenig",
+    "URL": "2085042998350688615",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-08-05",
+    "Content": "short/2085042998350688615.md",
+    "Summary": "Proud of what we've accomplished at Elicit with our agent. Try it out!",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2085042998350688615",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2085042998350688615"
+        ]
+    ],
+    "original_date": "Wed Aug 05 16:39:23 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "elicitorg",
+        "text": null,
+        "url": "https://x.com/elicitorg/status/2085040984581452151",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

@@ -1,0 +1,29 @@
+{
+    "Title": "That clarifies things",
+    "Author": "Jake Koenig",
+    "URL": "2090448322427301972",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-08-20",
+    "Content": "short/2090448322427301972.md",
+    "Summary": "That clarifies things",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2090448322427301972",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2090448322427301972"
+        ]
+    ],
+    "original_date": "Thu Aug 20 14:38:13 +0000 2026",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/HQLDq6VbgAAVWMn.jpg",
+            "original_url": "https://pbs.twimg.com/media/HQLDq6VbgAAVWMn.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

@@ -1,0 +1,61 @@
+{
+    "Title": "Thread: I've been looking into pi because I have some coding agent ideas I want to get b...",
+    "Author": "Jake Koenig",
+    "URL": "2091539787203465607",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-08-23",
+    "Content": "short/thread_2091539787203465607.md",
+    "Summary": "I've been looking into pi because I have some coding agent ideas I want to get back to. And it's sad in their quest for simplicity they picked the wrong default. It's not that there should be no backg...",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "2091539787203465607",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2091539787203465607"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/2091546246448328787"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/2091558034363621629"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/2091654578702037035"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/2091656825204818078"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/2091658438728466822"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/2091659659744846278"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/2092047107595387090"
+        ]
+    ],
+    "original_date": "Sun Aug 23 14:55:18 +0000 2026",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/HQakWkZasAAG7HE.jpg",
+            "original_url": "https://pbs.twimg.com/media/HQakWkZasAAG7HE.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/HQaqOkubUAAxF6G.jpg",
+            "original_url": "https://pbs.twimg.com/media/HQaqOkubUAAxF6G.jpg"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/HQhxwjMawAAmuwU.jpg",
+            "original_url": "https://pbs.twimg.com/media/HQhxwjMawAAmuwU.jpg"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 8
+}

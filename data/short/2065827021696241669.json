@@ -1,0 +1,28 @@
+{
+    "Title": "I've been thinking agent transcripts should be committed along with code changes in a way that makes...",
+    "Author": "Jake Koenig",
+    "URL": "2065827021696241669",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-06-13",
+    "Content": "short/2065827021696241669.md",
+    "Summary": "I've been thinking agent transcripts should be committed along with code changes in a way that makes it easy to chat with the agent that made a change",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2065827021696241669",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2065827021696241669"
+        ]
+    ],
+    "original_date": "Sat Jun 13 16:01:57 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "zeddotdev",
+        "text": null,
+        "url": "https://x.com/zeddotdev/status/2065089002445963435",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

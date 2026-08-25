@@ -1,0 +1,23 @@
+{
+    "Title": "Claude code takes 2s to start and Codex is instant. Please fix @AnthropicAI",
+    "Author": "Jake Koenig",
+    "URL": "1978424793561989517",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-10-15",
+    "Content": "short/1978424793561989517.md",
+    "Summary": "Claude code takes 2s to start and Codex is instant. Please fix @AnthropicAI",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1978424793561989517",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1978424793561989517"
+        ]
+    ],
+    "original_date": "Wed Oct 15 11:36:42 +0000 2025",
+    "media": [],
+    "quoted_tweet": null,
+    "is_thread": false
+}

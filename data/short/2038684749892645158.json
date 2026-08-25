@@ -1,0 +1,34 @@
+{
+    "Title": "First one drank. My review: Peachy. Reminds of the day I took the GRE and threw up that evening afte...",
+    "Author": "Jake Koenig",
+    "URL": "2038684749892645158",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-03-30",
+    "Content": "short/2038684749892645158.md",
+    "Summary": "First one drank. My review: Peachy. Reminds of the day I took the GRE and threw up that evening after drinking New Amsterdam Peach Vodka. My friend and I had a bet that the lower scorer had to drink the difference in our scores in shots. I won but for some reason went shot for…",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2038684749892645158",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2038684749892645158"
+        ]
+    ],
+    "original_date": "Mon Mar 30 18:28:15 +0000 2026",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/HErb1ttaIAE9rLv.jpg",
+            "original_url": "https://pbs.twimg.com/media/HErb1ttaIAE9rLv.jpg"
+        }
+    ],
+    "quoted_tweet": {
+        "user": "ja3k_",
+        "text": null,
+        "url": "https://x.com/ja3k_/status/2038381535943119145",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

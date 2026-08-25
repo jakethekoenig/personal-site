@@ -1,0 +1,33 @@
+{
+    "Title": "Thread: It worked though. I'm reading their documentation first now",
+    "Author": "Jake Koenig",
+    "URL": "1984705412135076260",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-11-01",
+    "Content": "short/thread_1984705412135076260.md",
+    "Summary": "It worked though. I'm reading their documentation first now",
+    "Categories": [
+        "tweets",
+        "threads"
+    ],
+    "tweet_id": "1984705412135076260",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1984705412135076260"
+        ],
+        [
+            "https://twitter.com/ja3k_/status/1984725320172556612"
+        ]
+    ],
+    "original_date": "Sat Nov 01 19:33:38 +0000 2025",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/G4sXDhdbQAIAOZB.jpg",
+            "original_url": "https://pbs.twimg.com/media/G4sXDhdbQAIAOZB.jpg"
+        }
+    ],
+    "is_thread": true,
+    "thread_length": 2
+}

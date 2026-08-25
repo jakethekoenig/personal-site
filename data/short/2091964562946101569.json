@@ -1,0 +1,28 @@
+{
+    "Title": "Biblically accurate angel",
+    "Author": "Jake Koenig",
+    "URL": "2091964562946101569",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-08-24",
+    "Content": "short/2091964562946101569.md",
+    "Summary": "Biblically accurate angel",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2091964562946101569",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2091964562946101569"
+        ]
+    ],
+    "original_date": "Mon Aug 24 19:03:13 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "cremieuxrecueil",
+        "text": null,
+        "url": "https://x.com/cremieuxrecueil/status/2091630990112251975",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

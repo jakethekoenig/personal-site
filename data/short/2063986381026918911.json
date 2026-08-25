@@ -1,0 +1,29 @@
+{
+    "Title": "Happy Monday!",
+    "Author": "Jake Koenig",
+    "URL": "2063986381026918911",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-06-08",
+    "Content": "short/2063986381026918911.md",
+    "Summary": "Happy Monday!",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2063986381026918911",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2063986381026918911"
+        ]
+    ],
+    "original_date": "Mon Jun 08 14:07:54 +0000 2026",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/crosspoast/HKTAo1jacAAaMOB.jpg",
+            "original_url": "https://pbs.twimg.com/media/HKTAo1jacAAaMOB.jpg"
+        }
+    ],
+    "quoted_tweet": null,
+    "is_thread": false
+}

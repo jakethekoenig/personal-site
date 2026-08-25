@@ -1,0 +1,28 @@
+{
+    "Title": "Still the best async coding agent!",
+    "Author": "Jake Koenig",
+    "URL": "1975590206675034457",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2025-10-07",
+    "Content": "short/1975590206675034457.md",
+    "Summary": "Still the best async coding agent!",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "1975590206675034457",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/1975590206675034457"
+        ]
+    ],
+    "original_date": "Tue Oct 07 15:53:04 +0000 2025",
+    "media": [],
+    "quoted_tweet": {
+        "user": "seconds_0",
+        "text": null,
+        "url": "https://x.com/seconds_0/status/1975444935433457920",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}

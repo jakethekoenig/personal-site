@@ -1,0 +1,28 @@
+{
+    "Title": "I see takes like this all the time and I don't get it. I've never once asked a model how long it wil...",
+    "Author": "Jake Koenig",
+    "URL": "2079627335712817567",
+    "Template": "tweet.temp",
+    "Hide": true,
+    "Date": "2026-07-21",
+    "Content": "short/2079627335712817567.md",
+    "Summary": "I see takes like this all the time and I don't get it. I've never once asked a model how long it will take I just tell it what to do!",
+    "Categories": [
+        "tweets"
+    ],
+    "tweet_id": "2079627335712817567",
+    "posts": [
+        [
+            "https://twitter.com/ja3k_/status/2079627335712817567"
+        ]
+    ],
+    "original_date": "Tue Jul 21 17:59:29 +0000 2026",
+    "media": [],
+    "quoted_tweet": {
+        "user": "DavidSHolz",
+        "text": null,
+        "url": "https://x.com/DavidSHolz/status/2079610914190594399",
+        "is_url_reference": true
+    },
+    "is_thread": false
+}
