@@ -1,20 +1,25 @@
 {
-    "Title": "My posts are now available via RSS",
+    "Title": "Thread: My posts are now available via RSS",
     "Author": "Jake Koenig",
     "URL": "3mtymhhhye22n",
     "Template": "tweet.temp",
     "Date": "2026-08-26",
     "Content": "short/3mtymhhhye22n.md",
-    "Summary": "My posts are now available via RSS",
+    "Summary": "My posts are now available via RSS All according to plan",
     "Categories": [
         "shorts",
-        "bluesky"
+        "bluesky",
+        "threads"
     ],
     "tweet_id": "3mtymhhhye22n",
     "posts": [
         [
             "https://bsky.app/profile/ja3k.bsky.social/post/3mtymhhhye22n",
             "https://x.com/ja3k_/status/2092643004129632631"
+        ],
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mtysuqvj7s2n",
+            "https://x.com/ja3k_/status/2092690282475094183"
         ]
     ],
     "original_date": "2026-08-26T15:09:24.915Z",
@@ -25,12 +30,21 @@
             "original_url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:hdbroi7ep3cg76jeppowcsg6/bafkreigbaz6h4imwnouie3h2nupzx5dje5gzskoysbo6gfzew2367ptkxa",
             "alt": "",
             "source_post_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtymhhhye22n"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/bluesky/3mtysuqvj7s2n_1.webp",
+            "original_url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:hdbroi7ep3cg76jeppowcsg6/bafkreif3ue4wsclmthc4ijfc4oz3cmdg6gwjjsl3wl3msgcty6gjveiruy",
+            "alt": "",
+            "source_post_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtysuqvj7s2n"
         }
     ],
-    "is_thread": false,
+    "is_thread": true,
     "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtymhhhye22n",
     "post_uris": [
-        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtymhhhye22n"
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtymhhhye22n",
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mtysuqvj7s2n"
     ],
-    "og_image": "/asset/bluesky/3mtymhhhye22n_1.webp"
+    "og_image": "/asset/bluesky/3mtymhhhye22n_1.webp",
+    "thread_length": 2
 }
