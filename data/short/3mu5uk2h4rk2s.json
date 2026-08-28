@@ -1,0 +1,62 @@
+{
+    "Title": "Thread: Feeling the AGI",
+    "Author": "Jake Koenig",
+    "URL": "3mu5uk2h4rk2s",
+    "Template": "tweet.temp",
+    "Date": "2026-08-28",
+    "Content": "short/3mu5uk2h4rk2s.md",
+    "Summary": "Feeling the AGI I'm LLM psychosis maxing now",
+    "Categories": [
+        "shorts",
+        "bluesky",
+        "threads"
+    ],
+    "tweet_id": "3mu5uk2h4rk2s",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mu5uk2h4rk2s",
+            "https://x.com/ja3k_/status/2093391199465832605"
+        ],
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mu5uqrjyq22s",
+            "https://x.com/ja3k_/status/2093391211293806989"
+        ],
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mu5vcwer3s2s",
+            "https://x.com/ja3k_/status/2093391222979104883"
+        ]
+    ],
+    "original_date": "2026-08-28T17:17:20.554Z",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/bluesky/3mu5uk2h4rk2s_1.webp",
+            "original_url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:hdbroi7ep3cg76jeppowcsg6/bafkreietmpddi5xz3yoa7n7m5e7e2qc4qpgbgwr2aqqxkgchrucmmop7j4",
+            "alt": "",
+            "source_post_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mu5uk2h4rk2s"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/bluesky/3mu5uqrjyq22s_1.webp",
+            "original_url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:hdbroi7ep3cg76jeppowcsg6/bafkreicya4h3a4ii7jx2aap72lct6vitsicetmwg7rulbmzae2jgkckl7a",
+            "alt": "",
+            "source_post_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mu5uqrjyq22s"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/bluesky/3mu5vcwer3s2s_1.webp",
+            "original_url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:hdbroi7ep3cg76jeppowcsg6/bafkreigvr5oy4zppwzi6x6gwo6cj7aoqnyhhzesgmr2hijkqwq7zlak2ju",
+            "alt": "",
+            "source_post_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mu5vcwer3s2s"
+        }
+    ],
+    "is_thread": true,
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mu5uk2h4rk2s",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mu5uk2h4rk2s",
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mu5uqrjyq22s",
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mu5vcwer3s2s"
+    ],
+    "og_image": "/asset/bluesky/3mu5uk2h4rk2s_1.webp",
+    "thread_length": 3
+}
