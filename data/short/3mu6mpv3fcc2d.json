@@ -1,0 +1,34 @@
+{
+    "Title": "Thread: Why'd we settle on swarm? Why not host? Or pod? Or murder?",
+    "Author": "Jake Koenig",
+    "URL": "3mu6mpv3fcc2d",
+    "Template": "tweet.temp",
+    "Date": "2026-08-29",
+    "Content": "short/3mu6mpv3fcc2d.md",
+    "Summary": "Why'd we settle on swarm? Why not host? Or pod? Or murder? Telling that all our new coinages in this space are incredibly disrespectful. Imagine calling the laptop you sent your new employee their ...",
+    "Categories": [
+        "shorts",
+        "bluesky",
+        "threads"
+    ],
+    "tweet_id": "3mu6mpv3fcc2d",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mu6mpv3fcc2d",
+            "https://x.com/ja3k_/status/2093496589117739465"
+        ],
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mu6mpv4anc2d",
+            "https://x.com/ja3k_/status/2093496598374596660"
+        ]
+    ],
+    "original_date": "2026-08-29T00:30:06.069Z",
+    "media": [],
+    "is_thread": true,
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mu6mpv3fcc2d",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mu6mpv3fcc2d",
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mu6mpv4anc2d"
+    ],
+    "thread_length": 2
+}
