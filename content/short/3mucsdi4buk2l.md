@@ -1,0 +1,1 @@
+<p>For the longest time I thought press up to get previous messages was dumb for coding agents because I never want to edit and resend messages but it&#x27;s sort of the only way to get situated. Scrolling up to see your old messages is just impossible</p>
