@@ -13,7 +13,8 @@
     "tweet_id": "3mudhet5zhk2v",
     "posts": [
         [
-            "https://bsky.app/profile/ja3k.bsky.social/post/3mudhet5zhk2v"
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mudhet5zhk2v",
+            "https://x.com/ja3k_/status/2094387970661126260"
         ]
     ],
     "original_date": "2026-08-30T22:37:44.942Z",
@@ -22,6 +23,5 @@
     "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mudhet5zhk2v",
     "post_uris": [
         "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mudhet5zhk2v"
-    ],
-    "twitter_crosspost_pending": true
+    ]
 }
