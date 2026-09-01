@@ -7,5 +7,5 @@
 	"Template": "blog.temp",
 	"Date": "2023-03-06",
 	"Content": "blog/newsletter.md",
-	"Categories": ["technology", "personal"]
+	"Categories": ["tech", "personal"]
 }
