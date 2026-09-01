@@ -1,13 +1,19 @@
 <script type=text/javascript>
 function resizer(id)
 {
+	var iframe = document.getElementById(id);
+	var doc = iframe.contentWindow.document;
 
-	var doc=document.getElementById(id).contentWindow.document;
+	if (!doc.querySelector(".comment")) {
+		iframe.style.height = "0";
+		return;
+	}
+
 	var body_ = doc.body, html_ = doc.documentElement;
 
 	var height = Math.max( body_.scrollHeight, body_.offsetHeight, html_.clientHeight, html_.scrollHeight, html_.offsetHeight );
 
-	document.getElementById(id).style.height=height+"px";
+	iframe.style.height=height+"px";
 }
 </script>
-<iframe src="/comments/<$relative_path$>.html" width="100%"  id='commentiframe' onload='resizer("commentiframe")' style="border:none;"></iframe>
+<iframe src="/comments/<$relative_path$>.html" width="100%" id="commentiframe" title="Comments" onload='resizer("commentiframe")' style="border:none; height:0;"></iframe>

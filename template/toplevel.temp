@@ -23,6 +23,8 @@ try {
 	<div class="main_content">
 	<[Content]>
 	</div>
+	<div id="socials_footer">
         <:comp/socials:>
+	</div>
 </body>
 </html>
