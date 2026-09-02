@@ -1,0 +1,9 @@
+{
+	"Title": "Site Update 5",
+	"Author": "Jake Koenig",
+	"URL": "su5",
+	"Template": "blog.temp",
+	"Date": "2026-09-02",
+	"Content": "blog/su5.md",
+	"Categories": ["personal", "tech"]
+}
