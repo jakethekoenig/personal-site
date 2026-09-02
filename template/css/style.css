@@ -149,7 +149,7 @@ blockquote.epigraph {
 blockquote.epigraph > p:first-child {
 	font-style: italic;
 }
-blockquote.epigraph > p:last-child {
+blockquote.epigraph > p ~ p:last-child {
 	text-align: right;
 }
 
