@@ -1,0 +1,36 @@
+{
+    "Title": "Astra performed a lot worse than Fable on my internal benchmark",
+    "Author": "Jake Koenig",
+    "URL": "3muq7cwrz2k2b",
+    "Template": "tweet.temp",
+    "Date": "2026-09-05",
+    "Content": "short/3muq7cwrz2k2b.md",
+    "Summary": "Astra performed a lot worse than Fable on my internal benchmark",
+    "Categories": [
+        "shorts",
+        "bluesky"
+    ],
+    "tweet_id": "3muq7cwrz2k2b",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3muq7cwrz2k2b",
+            "https://x.com/ja3k_/status/2096046495640211847"
+        ]
+    ],
+    "original_date": "2026-09-05T00:18:08.287Z",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/bluesky/3muq7cwrz2k2b_1.webp",
+            "original_url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:hdbroi7ep3cg76jeppowcsg6/bafkreig7no6rzdvjh5inxzbh7jnhdlafxwngrm2ffmkjfmbx5ufkkpdfqu",
+            "alt": "",
+            "source_post_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3muq7cwrz2k2b"
+        }
+    ],
+    "is_thread": false,
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3muq7cwrz2k2b",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3muq7cwrz2k2b"
+    ],
+    "og_image": "/asset/bluesky/3muq7cwrz2k2b_1.webp"
+}
