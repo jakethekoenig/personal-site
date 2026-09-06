@@ -1,0 +1,1 @@
+<p>It&#x27;s often claimed the models will perform best in the harness they&#x27;re trained in but all the train/eval time incidents/cheating we see that don&#x27;t seem to occur in normal use is maybe a clue the opposite may be true. You need to let the model feel this is real life.</p>

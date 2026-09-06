@@ -1,0 +1,27 @@
+{
+    "Title": "Fall comes for us all",
+    "Author": "Jake Koenig",
+    "URL": "3muumkk4a2k2i",
+    "Template": "tweet.temp",
+    "Date": "2026-09-06",
+    "Content": "short/3muumkk4a2k2i.md",
+    "Summary": "Fall comes for us all",
+    "Categories": [
+        "shorts",
+        "bluesky"
+    ],
+    "tweet_id": "3muumkk4a2k2i",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3muumkk4a2k2i"
+        ]
+    ],
+    "original_date": "2026-09-06T18:25:41.034Z",
+    "media": [],
+    "is_thread": false,
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3muumkk4a2k2i",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3muumkk4a2k2i"
+    ],
+    "twitter_crosspost_pending": true
+}
