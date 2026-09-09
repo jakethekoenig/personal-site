@@ -1,0 +1,36 @@
+{
+    "Title": "Type of week you post this on Tuesday",
+    "Author": "Jake Koenig",
+    "URL": "3mv2glhl6m22w",
+    "Template": "tweet.temp",
+    "Date": "2026-09-09",
+    "Content": "short/3mv2glhl6m22w.md",
+    "Summary": "Type of week you post this on Tuesday",
+    "Categories": [
+        "shorts",
+        "bluesky"
+    ],
+    "tweet_id": "3mv2glhl6m22w",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mv2glhl6m22w",
+            "https://x.com/ja3k_/status/2097575420766061017"
+        ]
+    ],
+    "original_date": "2026-09-09T01:54:47.900Z",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/bluesky/3mv2glhl6m22w_1.webp",
+            "original_url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:hdbroi7ep3cg76jeppowcsg6/bafkreif5vliwgysqtg2bd2pzttju7my4x6xo2aqes7amooqf7oduwi2ecu",
+            "alt": "",
+            "source_post_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mv2glhl6m22w"
+        }
+    ],
+    "is_thread": false,
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mv2glhl6m22w",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mv2glhl6m22w"
+    ],
+    "og_image": "/asset/bluesky/3mv2glhl6m22w_1.webp"
+}
