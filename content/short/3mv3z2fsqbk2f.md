@@ -1,0 +1,1 @@
+<p>I always think it&#x27;s strange people think it&#x27;s obvious P!=NP. How many greater than cubic time algorithms can you name? There are presumably a lot more of them than linear/quadratic algorithms</p>

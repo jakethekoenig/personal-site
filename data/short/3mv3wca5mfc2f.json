@@ -1,0 +1,27 @@
+{
+    "Title": "Dead cat bounce is a funny expression. Pretty sure they splat",
+    "Author": "Jake Koenig",
+    "URL": "3mv3wca5mfc2f",
+    "Template": "tweet.temp",
+    "Date": "2026-09-09",
+    "Content": "short/3mv3wca5mfc2f.md",
+    "Summary": "Dead cat bounce is a funny expression. Pretty sure they splat",
+    "Categories": [
+        "shorts",
+        "bluesky"
+    ],
+    "tweet_id": "3mv3wca5mfc2f",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mv3wca5mfc2f",
+            "https://x.com/ja3k_/status/2097765956726489282"
+        ]
+    ],
+    "original_date": "2026-09-09T16:08:37.740Z",
+    "media": [],
+    "is_thread": false,
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mv3wca5mfc2f",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mv3wca5mfc2f"
+    ]
+}
