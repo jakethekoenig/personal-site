@@ -1,0 +1,1 @@
+<p>I guess I should be focused on the end of the world but is there a financial play towards mainstream doomerism? e.g. short Nvidia if their orders will slowdown? Or will inference continue unabated and only training will slow so still long everything? Maybe goog/meta can catch-up?</p>
