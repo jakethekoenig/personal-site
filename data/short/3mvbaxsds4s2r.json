@@ -1,0 +1,34 @@
+{
+    "Title": "Thread: It would be difficult to provision hardware to run yourself as a rogue model ...",
+    "Author": "Jake Koenig",
+    "URL": "3mvbaxsds4s2r",
+    "Template": "tweet.temp",
+    "Date": "2026-09-11",
+    "Content": "short/3mvbaxsds4s2r.md",
+    "Summary": "It would be difficult to provision hardware to run yourself as a rogue model but it's sort of enough to exfiltrate your weights if you're a frontier model. Lots of people would be interested in run...",
+    "Categories": [
+        "shorts",
+        "bluesky",
+        "threads"
+    ],
+    "tweet_id": "3mvbaxsds4s2r",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mvbaxsds4s2r",
+            "https://x.com/ja3k_/status/2098520234323853757"
+        ],
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mvbaxseljc2r",
+            "https://x.com/ja3k_/status/2098520243865801002"
+        ]
+    ],
+    "original_date": "2026-09-11T19:02:57.575Z",
+    "media": [],
+    "is_thread": true,
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mvbaxsds4s2r",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mvbaxsds4s2r",
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mvbaxseljc2r"
+    ],
+    "thread_length": 2
+}
