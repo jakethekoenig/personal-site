@@ -1,0 +1,36 @@
+{
+    "Title": "Last LinkedIn notification you ever get",
+    "Author": "Jake Koenig",
+    "URL": "3mvb6ve7tqc2r",
+    "Template": "tweet.temp",
+    "Date": "2026-09-11",
+    "Content": "short/3mvb6ve7tqc2r.md",
+    "Summary": "Last LinkedIn notification you ever get",
+    "Categories": [
+        "shorts",
+        "bluesky"
+    ],
+    "tweet_id": "3mvb6ve7tqc2r",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mvb6ve7tqc2r",
+            "https://x.com/ja3k_/status/2098478696109613101"
+        ]
+    ],
+    "original_date": "2026-09-11T18:25:48.154Z",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/bluesky/3mvb6ve7tqc2r_1.webp",
+            "original_url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:hdbroi7ep3cg76jeppowcsg6/bafkreievtrdovglgo7dtmv5xlknlj6metr7avklfx6dd2wohvr52uxfjey",
+            "alt": "",
+            "source_post_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mvb6ve7tqc2r"
+        }
+    ],
+    "is_thread": false,
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mvb6ve7tqc2r",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mvb6ve7tqc2r"
+    ],
+    "og_image": "/asset/bluesky/3mvb6ve7tqc2r_1.webp"
+}
