@@ -1,0 +1,36 @@
+{
+    "Title": "Big update to the METR time horizon benchmark",
+    "Author": "Jake Koenig",
+    "URL": "3mv7eye3eo22f",
+    "Template": "tweet.temp",
+    "Date": "2026-09-11",
+    "Content": "short/3mv7eye3eo22f.md",
+    "Summary": "Big update to the METR time horizon benchmark",
+    "Categories": [
+        "shorts",
+        "bluesky"
+    ],
+    "tweet_id": "3mv7eye3eo22f",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mv7eye3eo22f",
+            "https://x.com/ja3k_/status/2098217437997236548"
+        ]
+    ],
+    "original_date": "2026-09-11T01:09:31.647Z",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/bluesky/3mv7eye3eo22f_1.webp",
+            "original_url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:hdbroi7ep3cg76jeppowcsg6/bafkreie4h6jofmf3ycgoogflo4j6erenkiu35rp33gtp656zex5vh2cmye",
+            "alt": "",
+            "source_post_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mv7eye3eo22f"
+        }
+    ],
+    "is_thread": false,
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mv7eye3eo22f",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mv7eye3eo22f"
+    ],
+    "og_image": "/asset/bluesky/3mv7eye3eo22f_1.webp"
+}
