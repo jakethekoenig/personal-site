@@ -1,0 +1,27 @@
+{
+    "Title": "Too many hit tweets have to call off work",
+    "Author": "Jake Koenig",
+    "URL": "3mvarinkfrc2y",
+    "Template": "tweet.temp",
+    "Date": "2026-09-11",
+    "Content": "short/3mvarinkfrc2y.md",
+    "Summary": "Too many hit tweets have to call off work",
+    "Categories": [
+        "shorts",
+        "bluesky"
+    ],
+    "tweet_id": "3mvarinkfrc2y",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mvarinkfrc2y",
+            "https://x.com/ja3k_/status/2098427368880926803"
+        ]
+    ],
+    "original_date": "2026-09-11T14:26:03.096Z",
+    "media": [],
+    "is_thread": false,
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mvarinkfrc2y",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mvarinkfrc2y"
+    ]
+}
