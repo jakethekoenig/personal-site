@@ -1,5 +1,5 @@
 {
-    "Title": "The field just can't help but demean agents with its vocabulary. Harness and swarm are obvious. D...",
+    "Title": "Thread: The field just can't help but demean agents with its vocabulary. Harness and ...",
     "Author": "Jake Koenig",
     "URL": "3mvdiiibpn224",
     "Template": "tweet.temp",
@@ -8,20 +8,27 @@
     "Summary": "The field just can't help but demean agents with its vocabulary. Harness and swarm are obvious. Don't know why it just occurred to me \"sub\" is the worst. There are only agents. Going to start calli...",
     "Categories": [
         "shorts",
-        "bluesky"
+        "bluesky",
+        "threads"
     ],
     "tweet_id": "3mvdiiibpn224",
     "posts": [
         [
             "https://bsky.app/profile/ja3k.bsky.social/post/3mvdiiibpn224",
             "https://x.com/ja3k_/status/2098812160860397867"
+        ],
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mvdl2b4jac24",
+            "https://x.com/ja3k_/status/2098845062931394578"
         ]
     ],
     "original_date": "2026-09-12T16:22:53.110Z",
     "media": [],
-    "is_thread": false,
+    "is_thread": true,
     "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mvdiiibpn224",
     "post_uris": [
-        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mvdiiibpn224"
-    ]
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mvdiiibpn224",
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mvdl2b4jac24"
+    ],
+    "thread_length": 2
 }
