@@ -1,0 +1,36 @@
+{
+    "Title": "Everything reminds me of her",
+    "Author": "Jake Koenig",
+    "URL": "3mvqq4i656s2i",
+    "Template": "tweet.temp",
+    "Date": "2026-09-17",
+    "Content": "short/3mvqq4i656s2i.md",
+    "Summary": "Everything reminds me of her",
+    "Categories": [
+        "shorts",
+        "bluesky"
+    ],
+    "tweet_id": "3mvqq4i656s2i",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mvqq4i656s2i",
+            "https://x.com/ja3k_/status/2100737391111639143"
+        ]
+    ],
+    "original_date": "2026-09-17T22:43:56.878Z",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/bluesky/3mvqq4i656s2i_1.webp",
+            "original_url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:hdbroi7ep3cg76jeppowcsg6/bafkreib5sens6awcei7llhzpwt5uskh2dilzvy54ajrqmmeo2neo4jh6ti",
+            "alt": "",
+            "source_post_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mvqq4i656s2i"
+        }
+    ],
+    "is_thread": false,
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mvqq4i656s2i",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mvqq4i656s2i"
+    ],
+    "og_image": "/asset/bluesky/3mvqq4i656s2i_1.webp"
+}
