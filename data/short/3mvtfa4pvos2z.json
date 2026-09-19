@@ -1,0 +1,36 @@
+{
+    "Title": "Just what I want to see after buying goog",
+    "Author": "Jake Koenig",
+    "URL": "3mvtfa4pvos2z",
+    "Template": "tweet.temp",
+    "Date": "2026-09-19",
+    "Content": "short/3mvtfa4pvos2z.md",
+    "Summary": "Just what I want to see after buying goog",
+    "Categories": [
+        "shorts",
+        "bluesky"
+    ],
+    "tweet_id": "3mvtfa4pvos2z",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mvtfa4pvos2z",
+            "https://x.com/ja3k_/status/2101100987729478032"
+        ]
+    ],
+    "original_date": "2026-09-19T00:07:07.136Z",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/bluesky/3mvtfa4pvos2z_1.webp",
+            "original_url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:hdbroi7ep3cg76jeppowcsg6/bafkreibysftl5f4pg5levhvalatphqexzvocatfnjxrzm6oxihfl2pwgq4",
+            "alt": "",
+            "source_post_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mvtfa4pvos2z"
+        }
+    ],
+    "is_thread": false,
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mvtfa4pvos2z",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mvtfa4pvos2z"
+    ],
+    "og_image": "/asset/bluesky/3mvtfa4pvos2z_1.webp"
+}
