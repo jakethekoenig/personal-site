@@ -1,0 +1,50 @@
+{
+    "Title": "Thread: How I feel at the airport taking the second mac book pro out of my bag",
+    "Author": "Jake Koenig",
+    "URL": "3mvtomfjjsc2m",
+    "Template": "tweet.temp",
+    "Date": "2026-09-19",
+    "Content": "short/3mvtomfjjsc2m.md",
+    "Summary": "How I feel at the airport taking the second mac book pro out of my bag Holy shit",
+    "Categories": [
+        "shorts",
+        "bluesky",
+        "threads"
+    ],
+    "tweet_id": "3mvtomfjjsc2m",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mvtomfjjsc2m",
+            "https://x.com/ja3k_/status/2101168866470547823"
+        ],
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mvtooov3uk2m",
+            "https://x.com/ja3k_/status/2101168877971333569"
+        ]
+    ],
+    "original_date": "2026-09-19T02:55:02.709Z",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/bluesky/3mvtomfjjsc2m_1.webp",
+            "original_url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:hdbroi7ep3cg76jeppowcsg6/bafkreickvzbs3cwmog6xmjswnuotx7h4rf7q36yqbdmvfybbijq72n7lmq",
+            "alt": "",
+            "source_post_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mvtomfjjsc2m"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/bluesky/3mvtooov3uk2m_1.webp",
+            "original_url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:hdbroi7ep3cg76jeppowcsg6/bafkreic3uzr5ez3l3wmg44n2xsw5xfuhcpz433vb7zg6af2xfrrh6snaey",
+            "alt": "",
+            "source_post_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mvtooov3uk2m"
+        }
+    ],
+    "is_thread": true,
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mvtomfjjsc2m",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mvtomfjjsc2m",
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mvtooov3uk2m"
+    ],
+    "og_image": "/asset/bluesky/3mvtomfjjsc2m_1.webp",
+    "thread_length": 2
+}
