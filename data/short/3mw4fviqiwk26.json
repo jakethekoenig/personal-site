@@ -1,0 +1,43 @@
+{
+    "Title": "My whole career I've been manspread keyboard maxing. Time to go kawaii. I'm just a little guy",
+    "Author": "Jake Koenig",
+    "URL": "3mw4fviqiwk26",
+    "Template": "tweet.temp",
+    "Date": "2026-09-22",
+    "Content": "short/3mw4fviqiwk26.md",
+    "Summary": "My whole career I've been manspread keyboard maxing. Time to go kawaii. I'm just a little guy",
+    "Categories": [
+        "shorts",
+        "bluesky"
+    ],
+    "tweet_id": "3mw4fviqiwk26",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mw4fviqiwk26",
+            "https://x.com/ja3k_/status/2102401013135098120"
+        ]
+    ],
+    "original_date": "2026-09-22T14:13:02.024Z",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/bluesky/3mw4fviqiwk26_1.webp",
+            "original_url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:hdbroi7ep3cg76jeppowcsg6/bafkreid4cqbcjncxwe3vs3aqqmivqqhner3zxm2a6krketu2gcfj55xryi",
+            "alt": "",
+            "source_post_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mw4fviqiwk26"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/bluesky/3mw4fviqiwk26_2.webp",
+            "original_url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:hdbroi7ep3cg76jeppowcsg6/bafkreiacfksy4bwt4rzchtkd6pfnxj3e276kekyj6tfatbcb2tfl4fdp24",
+            "alt": "",
+            "source_post_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mw4fviqiwk26"
+        }
+    ],
+    "is_thread": false,
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mw4fviqiwk26",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mw4fviqiwk26"
+    ],
+    "og_image": "/asset/bluesky/3mw4fviqiwk26_1.webp"
+}
