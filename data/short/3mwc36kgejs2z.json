@@ -1,0 +1,36 @@
+{
+    "Title": "In another life I would have liked to have spent 10m post singularity years in a pleasure sack wi...",
+    "Author": "Jake Koenig",
+    "URL": "3mwc36kgejs2z",
+    "Template": "tweet.temp",
+    "Date": "2026-09-24",
+    "Content": "short/3mwc36kgejs2z.md",
+    "Summary": "In another life I would have liked to have spent 10m post singularity years in a pleasure sack with you",
+    "Categories": [
+        "shorts",
+        "bluesky"
+    ],
+    "tweet_id": "3mwc36kgejs2z",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mwc36kgejs2z",
+            "https://x.com/ja3k_/status/2103220056884670612"
+        ]
+    ],
+    "original_date": "2026-09-24T20:17:13.051Z",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/bluesky/3mwc36kgejs2z_1.webp",
+            "original_url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:hdbroi7ep3cg76jeppowcsg6/bafkreifeigxzlnfjxilebkdk7vso2aqijsrunfq7rlwwlwqbax3g5ux65u",
+            "alt": "",
+            "source_post_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mwc36kgejs2z"
+        }
+    ],
+    "is_thread": false,
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mwc36kgejs2z",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mwc36kgejs2z"
+    ],
+    "og_image": "/asset/bluesky/3mwc36kgejs2z_1.webp"
+}
