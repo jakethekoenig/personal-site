@@ -1,0 +1,36 @@
+{
+    "Title": "The future is already here. It's just not evenly distributed.",
+    "Author": "Jake Koenig",
+    "URL": "3mwcpo5cmj22j",
+    "Template": "tweet.temp",
+    "Date": "2026-09-25",
+    "Content": "short/3mwcpo5cmj22j.md",
+    "Summary": "The future is already here. It's just not evenly distributed.",
+    "Categories": [
+        "shorts",
+        "bluesky"
+    ],
+    "tweet_id": "3mwcpo5cmj22j",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mwcpo5cmj22j",
+            "https://x.com/ja3k_/status/2103309574023393379"
+        ]
+    ],
+    "original_date": "2026-09-25T02:23:50.998Z",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/bluesky/3mwcpo5cmj22j_1.webp",
+            "original_url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:hdbroi7ep3cg76jeppowcsg6/bafkreiag65227oklpy7oxwc6c3d3qaxltbu6uoppnfidy2vxkpt4grx6zq",
+            "alt": "",
+            "source_post_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mwcpo5cmj22j"
+        }
+    ],
+    "is_thread": false,
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mwcpo5cmj22j",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mwcpo5cmj22j"
+    ],
+    "og_image": "/asset/bluesky/3mwcpo5cmj22j_1.webp"
+}
