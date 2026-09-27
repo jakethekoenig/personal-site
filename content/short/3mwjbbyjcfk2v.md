@@ -1,0 +1,1 @@
+<p>It&#x27;s crazy how everything is always getting better. I replaced my toilet seat and the new models don&#x27;t slam shut. So much cleaner to not have to use your hand to close it in a controlled manner. No random slams</p>
