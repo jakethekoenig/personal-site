@@ -1,0 +1,43 @@
+{
+    "Title": "Me and my Claudes",
+    "Author": "Jake Koenig",
+    "URL": "3mwjzvkzasc2u",
+    "Template": "tweet.temp",
+    "Date": "2026-09-28",
+    "Content": "short/3mwjzvkzasc2u.md",
+    "Summary": "Me and my Claudes",
+    "Categories": [
+        "shorts",
+        "bluesky"
+    ],
+    "tweet_id": "3mwjzvkzasc2u",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mwjzvkzasc2u",
+            "https://x.com/ja3k_/status/2104375076476883392"
+        ]
+    ],
+    "original_date": "2026-09-28T00:15:35.827Z",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/bluesky/3mwjzvkzasc2u_1.webp",
+            "original_url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:hdbroi7ep3cg76jeppowcsg6/bafkreies7v2mezlmc4hilf5ytsnxsy35tbhtd5fdphl7trajqba5avdcli",
+            "alt": "",
+            "source_post_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mwjzvkzasc2u"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/bluesky/3mwjzvkzasc2u_2.webp",
+            "original_url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:hdbroi7ep3cg76jeppowcsg6/bafkreifbh3wk3cp7vhem7pggh7efuv2c5vrcxhnb65u23ykgy6pynyqr6y",
+            "alt": "",
+            "source_post_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mwjzvkzasc2u"
+        }
+    ],
+    "is_thread": false,
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mwjzvkzasc2u",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mwjzvkzasc2u"
+    ],
+    "og_image": "/asset/bluesky/3mwjzvkzasc2u_1.webp"
+}
