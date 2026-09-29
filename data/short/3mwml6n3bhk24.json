@@ -1,0 +1,36 @@
+{
+    "Title": "Using AI to automate the hardest part of my job",
+    "Author": "Jake Koenig",
+    "URL": "3mwml6n3bhk24",
+    "Template": "tweet.temp",
+    "Date": "2026-09-29",
+    "Content": "short/3mwml6n3bhk24.md",
+    "Summary": "Using AI to automate the hardest part of my job",
+    "Categories": [
+        "shorts",
+        "bluesky"
+    ],
+    "tweet_id": "3mwml6n3bhk24",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mwml6n3bhk24",
+            "https://x.com/ja3k_/status/2104732302060183968"
+        ]
+    ],
+    "original_date": "2026-09-29T00:30:13.089Z",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/bluesky/3mwml6n3bhk24_1.webp",
+            "original_url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:hdbroi7ep3cg76jeppowcsg6/bafkreigxr2atlr75erc6vzhnz5k7ostrgnsr75hp5ykbzk5rkpfbrex6bm",
+            "alt": "",
+            "source_post_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mwml6n3bhk24"
+        }
+    ],
+    "is_thread": false,
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mwml6n3bhk24",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mwml6n3bhk24"
+    ],
+    "og_image": "/asset/bluesky/3mwml6n3bhk24_1.webp"
+}
