@@ -1,0 +1,36 @@
+{
+    "Title": "Nick Bostrom?!",
+    "Author": "Jake Koenig",
+    "URL": "3mwoepsp7x22r",
+    "Template": "tweet.temp",
+    "Date": "2026-09-29",
+    "Content": "short/3mwoepsp7x22r.md",
+    "Summary": "Nick Bostrom?!",
+    "Categories": [
+        "shorts",
+        "bluesky"
+    ],
+    "tweet_id": "3mwoepsp7x22r",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mwoepsp7x22r",
+            "https://x.com/ja3k_/status/2105003975128842605"
+        ]
+    ],
+    "original_date": "2026-09-29T17:39:52.702Z",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/bluesky/3mwoepsp7x22r_1.webp",
+            "original_url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:hdbroi7ep3cg76jeppowcsg6/bafkreicix3ozcv3wpl5umeq5cgzojgcjkjovteul2we4wdc3fdityda4i4",
+            "alt": "",
+            "source_post_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mwoepsp7x22r"
+        }
+    ],
+    "is_thread": false,
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mwoepsp7x22r",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mwoepsp7x22r"
+    ],
+    "og_image": "/asset/bluesky/3mwoepsp7x22r_1.webp"
+}
