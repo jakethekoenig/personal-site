@@ -1,0 +1,27 @@
+{
+    "Title": "dot.com is a fun thing to say",
+    "Author": "Jake Koenig",
+    "URL": "3mwowvnnwfk2r",
+    "Template": "tweet.temp",
+    "Date": "2026-09-29",
+    "Content": "short/3mwowvnnwfk2r.md",
+    "Summary": "dot.com is a fun thing to say",
+    "Categories": [
+        "shorts",
+        "bluesky"
+    ],
+    "tweet_id": "3mwowvnnwfk2r",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mwowvnnwfk2r",
+            "https://x.com/ja3k_/status/2105109425958552010"
+        ]
+    ],
+    "original_date": "2026-09-29T23:05:16.101Z",
+    "media": [],
+    "is_thread": false,
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mwowvnnwfk2r",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mwowvnnwfk2r"
+    ]
+}
