@@ -1,0 +1,36 @@
+{
+    "Title": "Is Brock Gregman 5?",
+    "Author": "Jake Koenig",
+    "URL": "3mwrd6lu3cs2d",
+    "Template": "tweet.temp",
+    "Date": "2026-09-30",
+    "Content": "short/3mwrd6lu3cs2d.md",
+    "Summary": "Is Brock Gregman 5?",
+    "Categories": [
+        "shorts",
+        "bluesky"
+    ],
+    "tweet_id": "3mwrd6lu3cs2d",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mwrd6lu3cs2d",
+            "https://x.com/ja3k_/status/2105434633487724618"
+        ]
+    ],
+    "original_date": "2026-09-30T21:50:20.572Z",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/bluesky/3mwrd6lu3cs2d_1.webp",
+            "original_url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:hdbroi7ep3cg76jeppowcsg6/bafkreifmhqoagi7i7q2uar7j6e24k4ahsthtnzrzcd6exr4eqevya4gfdy",
+            "alt": "",
+            "source_post_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mwrd6lu3cs2d"
+        }
+    ],
+    "is_thread": false,
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mwrd6lu3cs2d",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mwrd6lu3cs2d"
+    ],
+    "og_image": "/asset/bluesky/3mwrd6lu3cs2d_1.webp"
+}
