@@ -1,0 +1,49 @@
+{
+    "Title": "Thread: Got a recruiter email from someone who said they asked chatgpt for people who...",
+    "Author": "Jake Koenig",
+    "URL": "3mwqkrn46vk2p",
+    "Template": "tweet.temp",
+    "Date": "2026-09-30",
+    "Content": "short/3mwqkrn46vk2p.md",
+    "Summary": "Got a recruiter email from someone who said they asked chatgpt for people who list prediction markets on their resume Feels like it vindicates some of my ideas about writing being more valuable in ...",
+    "Categories": [
+        "shorts",
+        "bluesky",
+        "threads"
+    ],
+    "tweet_id": "3mwqkrn46vk2p",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mwqkrn46vk2p",
+            "https://x.com/ja3k_/status/2105378042134831293"
+        ],
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mwqkrndyvk2p",
+            "https://x.com/ja3k_/status/2105378051706282452"
+        ],
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mwqkrndzus2p",
+            "https://x.com/ja3k_/status/2105378061181161623"
+        ],
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mwqkrne2u22p",
+            "https://x.com/ja3k_/status/2105378070630908213"
+        ],
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mwqkrne2u32p",
+            "https://x.com/ja3k_/status/2105378080080740670"
+        ]
+    ],
+    "original_date": "2026-09-30T14:33:35.878Z",
+    "media": [],
+    "is_thread": true,
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mwqkrn46vk2p",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mwqkrn46vk2p",
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mwqkrndyvk2p",
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mwqkrndzus2p",
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mwqkrne2u22p",
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mwqkrne2u32p"
+    ],
+    "thread_length": 5
+}
