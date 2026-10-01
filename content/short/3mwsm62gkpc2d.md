@@ -1,0 +1,1 @@
+<p>I&#x27;m against the death penalty but don&#x27;t have a super strong view. But the world where you sentence people to death and then wait 32 years is just ridiculous. Just have life sentences at that point</p>
