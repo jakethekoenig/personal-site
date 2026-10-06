@@ -1,0 +1,27 @@
+{
+    "Title": "Say you have a passage where every word agrees with what an LLM would write with 99.9% probabilit...",
+    "Author": "Jake Koenig",
+    "URL": "3mx6bud4v3s2e",
+    "Template": "tweet.temp",
+    "Date": "2026-10-06",
+    "Content": "short/3mx6bud4v3s2e.md",
+    "Summary": "Say you have a passage where every word agrees with what an LLM would write with 99.9% probability. A watermark based detector will give you no signal. But in most cases you can be pretty sure the ...",
+    "Categories": [
+        "shorts",
+        "bluesky"
+    ],
+    "tweet_id": "3mx6bud4v3s2e",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mx6bud4v3s2e",
+            "https://x.com/ja3k_/status/2107356666505449891"
+        ]
+    ],
+    "original_date": "2026-10-06T01:31:18.734Z",
+    "media": [],
+    "is_thread": false,
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mx6bud4v3s2e",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mx6bud4v3s2e"
+    ]
+}

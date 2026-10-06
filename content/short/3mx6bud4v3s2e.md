@@ -1,0 +1,1 @@
+<p>Say you have a passage where every word agrees with what an LLM would write with 99.9% probability. A watermark based detector will give you no signal. But in most cases you can be pretty sure the LLM generated it.</p>
