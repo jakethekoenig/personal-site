@@ -1,0 +1,27 @@
+{
+    "Title": "Every time I open a PR swarms of agents make markets on the day it will merge, if it will cause a...",
+    "Author": "Jake Koenig",
+    "URL": "3mxibq4ihc22b",
+    "Template": "tweet.temp",
+    "Date": "2026-10-10",
+    "Content": "short/3mxibq4ihc22b.md",
+    "Summary": "Every time I open a PR swarms of agents make markets on the day it will merge, if it will cause a production incident, the amount of usage it gets and its effect on churn/conversion",
+    "Categories": [
+        "shorts",
+        "bluesky"
+    ],
+    "tweet_id": "3mxibq4ihc22b",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mxibq4ihc22b",
+            "https://x.com/ja3k_/status/2108745553186095193"
+        ]
+    ],
+    "original_date": "2026-10-10T00:55:34.944Z",
+    "media": [],
+    "is_thread": false,
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mxibq4ihc22b",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mxibq4ihc22b"
+    ]
+}
