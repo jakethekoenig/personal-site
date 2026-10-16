@@ -1,0 +1,27 @@
+{
+    "Title": "overloadbearing",
+    "Author": "Jake Koenig",
+    "URL": "3mxz2j3g65s2f",
+    "Template": "tweet.temp",
+    "Date": "2026-10-16",
+    "Content": "short/3mxz2j3g65s2f.md",
+    "Summary": "overloadbearing",
+    "Categories": [
+        "shorts",
+        "bluesky"
+    ],
+    "tweet_id": "3mxz2j3g65s2f",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mxz2j3g65s2f",
+            "https://x.com/ja3k_/status/2111155033752694839"
+        ]
+    ],
+    "original_date": "2026-10-16T17:01:38.299Z",
+    "media": [],
+    "is_thread": false,
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mxz2j3g65s2f",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mxz2j3g65s2f"
+    ]
+}
