@@ -1,0 +1,27 @@
+{
+    "Title": "Excited for practical n^2.25 matmul algorithms to instantly make inference and training 1000x che...",
+    "Author": "Jake Koenig",
+    "URL": "3my4cx2cvis2e",
+    "Template": "tweet.temp",
+    "Date": "2026-10-18",
+    "Content": "short/3my4cx2cvis2e.md",
+    "Summary": "Excited for practical n^2.25 matmul algorithms to instantly make inference and training 1000x cheaper in Q1 2027",
+    "Categories": [
+        "shorts",
+        "bluesky"
+    ],
+    "tweet_id": "3my4cx2cvis2e",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3my4cx2cvis2e",
+            "https://x.com/ja3k_/status/2111628804510642280"
+        ]
+    ],
+    "original_date": "2026-10-18T00:10:36.049Z",
+    "media": [],
+    "is_thread": false,
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3my4cx2cvis2e",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3my4cx2cvis2e"
+    ]
+}
