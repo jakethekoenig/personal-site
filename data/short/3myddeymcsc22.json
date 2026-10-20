@@ -1,0 +1,36 @@
+{
+    "Title": "POV: 2026",
+    "Author": "Jake Koenig",
+    "URL": "3myddeymcsc22",
+    "Template": "tweet.temp",
+    "Date": "2026-10-20",
+    "Content": "short/3myddeymcsc22.md",
+    "Summary": "POV: 2026",
+    "Categories": [
+        "shorts",
+        "bluesky"
+    ],
+    "tweet_id": "3myddeymcsc22",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3myddeymcsc22",
+            "https://x.com/ja3k_/status/2112624198610977018"
+        ]
+    ],
+    "original_date": "2026-10-20T19:07:02.195Z",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/bluesky/3myddeymcsc22_1.webp",
+            "original_url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:hdbroi7ep3cg76jeppowcsg6/bafkreiczucxxm3snroxwunghcb5pkngdky7wygmghupuw6euu3xdda66aa",
+            "alt": "",
+            "source_post_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3myddeymcsc22"
+        }
+    ],
+    "is_thread": false,
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3myddeymcsc22",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3myddeymcsc22"
+    ],
+    "og_image": "/asset/bluesky/3myddeymcsc22_1.webp"
+}
