@@ -1,0 +1,43 @@
+{
+    "Title": "Thread: I actually like all the random name changes. Gives the setting a nice cyberpu...",
+    "Author": "Jake Koenig",
+    "URL": "3mycnv7kbkc22",
+    "Template": "tweet.temp",
+    "Date": "2026-10-20",
+    "Content": "short/3mycnv7kbkc22.md",
+    "Summary": "I actually like all the random name changes. Gives the setting a nice cyberpunk feel In particular \"new america\" sounds like foreshadowing. I wouldn't have predicted its arid soil would be the crad...",
+    "Categories": [
+        "shorts",
+        "bluesky",
+        "threads"
+    ],
+    "tweet_id": "3mycnv7kbkc22",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mycnv7kbkc22",
+            "https://x.com/ja3k_/status/2112561562313429434"
+        ],
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mycnzr3ygc22",
+            "https://x.com/ja3k_/status/2112561572526563470"
+        ]
+    ],
+    "original_date": "2026-10-20T12:42:23.993Z",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/bluesky/3mycnv7kbkc22_1.webp",
+            "original_url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:hdbroi7ep3cg76jeppowcsg6/bafkreieunflxe3a2rfqs54xs6uaeaaclzihy4yprn2rtokhqlxpbu5uh6a",
+            "alt": "",
+            "source_post_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mycnv7kbkc22"
+        }
+    ],
+    "is_thread": true,
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mycnv7kbkc22",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mycnv7kbkc22",
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mycnzr3ygc22"
+    ],
+    "og_image": "/asset/bluesky/3mycnv7kbkc22_1.webp",
+    "thread_length": 2
+}
