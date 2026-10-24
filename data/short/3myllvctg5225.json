@@ -1,0 +1,27 @@
+{
+    "Title": "There's a 63% chance SHA1 has a fixed point. It'd be so sick to find",
+    "Author": "Jake Koenig",
+    "URL": "3myllvctg5225",
+    "Template": "tweet.temp",
+    "Date": "2026-10-24",
+    "Content": "short/3myllvctg5225.md",
+    "Summary": "There's a 63% chance SHA1 has a fixed point. It'd be so sick to find",
+    "Categories": [
+        "shorts",
+        "bluesky"
+    ],
+    "tweet_id": "3myllvctg5225",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3myllvctg5225",
+            "https://x.com/ja3k_/status/2113881182454898894"
+        ]
+    ],
+    "original_date": "2026-10-24T02:00:37.619Z",
+    "media": [],
+    "is_thread": false,
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3myllvctg5225",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3myllvctg5225"
+    ]
+}
