@@ -1,26 +1,26 @@
 <div class="socials">
-	<a href="/eggs/rss"><img class="icon" src="/asset/icon/rss.svg"></a>
-	<a href="https://twitter.com/ja3k_"><img class="icon" src="/asset/icon/twitter.svg"></a>
-	<a href="https://github.com/jakethekoenig"><img class="icon" src="/asset/icon/git.png"></a>
-	<a href="https://www.instagram.com/ricebroccolichicken/"><img class="icon" src="/asset/icon/gram.png"></a>
-	<a href="https://www.twitch.tv/ja3k"><img class="icon" src="/asset/icon/twitch.png"></a>
-	<a href="https://www.youtube.com/channel/UC3VcFF-aq7mBHktqprwgknQ"><img class="icon" src="/asset/icon/youtube.png"></a>
-	<a href="https://www.tiktok.com/@ja3kcodes"><img class="icon" src="/asset/icon/tiktok.svg"></a>
-	<a href="https://www.chess.com/member/ja3k"><img class="icon" src="/asset/icon/chess.svg"></a>
-	<a rel="me" href="https://bsky.app/profile/ja3k.bsky.social"><img class="icon" src="/asset/icon/bluesky.svg" alt="Bluesky"></a>
-	<a href="https://www.reddit.com/user/OverridingApathy"><img class="icon" src="/asset/icon/reddit.svg"></a>
-	<a href="https://www.linkedin.com/in/jake-koenig-7000/"><img class="icon" src="/asset/icon/linkedin.svg"></a>
-	<a href="/aboutme"><img class="icon" src="/asset/favicon.png"></a>
-	<a href="https://discordapp.com/users/ja3k#7464"><img class="icon" src="/asset/icon/discord.svg"></a>
-	<a href="https://ko-fi.com/ja3k0305"><img class="icon" src="/asset/icon/kofi.svg"></a>
-	<a href="https://news.ycombinator.com/user?id=ja3k"><img class="icon" src="/asset/icon/hackernews.svg"></a>
-	<a href="https://boardgamearena.com/player?id=87186841"><img class="icon" src="/asset/icon/bga.svg"></a>
-	<a href="https://matrix.to/#/@ja3k:matrix.org"><img class="icon" src="/asset/icon/mat.svg"></a>
-	<a href="https://disqus.com/by/ja3k/"><img class="icon" src="/asset/icon/disq.ico"></a>
-	<a href="https://linktr.ee/ja3k_"><img class="icon" src="/asset/icon/linktree.ico"></a>
-	<a href="/feed.xml"><img class="icon" src="/asset/icon/rss.svg" style="display:none;"></a>
-        <a rel="me" href="https://mastodon.social/@ja3k"><img class="icon" src="/asset/icon/mastodon.svg"></a>
+	<a href="/eggs/rss" aria-label="RSS"><img class="icon" src="/asset/icon/rss.svg" alt="RSS"></a>
+	<a href="https://twitter.com/ja3k_" aria-label="Twitter"><img class="icon" src="/asset/icon/twitter.svg" alt="Twitter"></a>
+	<a href="https://github.com/jakethekoenig" aria-label="GitHub"><img class="icon" src="/asset/icon/git.png" alt="GitHub"></a>
+	<a href="https://www.instagram.com/ricebroccolichicken/" aria-label="Instagram"><img class="icon" src="/asset/icon/gram.png" alt="Instagram"></a>
+	<a href="https://www.twitch.tv/ja3k" aria-label="Twitch"><img class="icon" src="/asset/icon/twitch.png" alt="Twitch"></a>
+	<a href="https://www.youtube.com/channel/UC3VcFF-aq7mBHktqprwgknQ" aria-label="YouTube"><img class="icon" src="/asset/icon/youtube.png" alt="YouTube"></a>
+	<a href="https://www.tiktok.com/@ja3kcodes" aria-label="TikTok"><img class="icon" src="/asset/icon/tiktok.svg" alt="TikTok"></a>
+	<a href="https://www.chess.com/member/ja3k" aria-label="Chess.com"><img class="icon" src="/asset/icon/chess.svg" alt="Chess.com"></a>
+	<a rel="me" href="https://bsky.app/profile/ja3k.bsky.social" aria-label="Bluesky"><img class="icon" src="/asset/icon/bluesky.svg" alt="Bluesky"></a>
+	<a href="https://www.reddit.com/user/OverridingApathy" aria-label="Reddit"><img class="icon" src="/asset/icon/reddit.svg" alt="Reddit"></a>
+	<a href="https://www.linkedin.com/in/jake-koenig-7000/" aria-label="LinkedIn"><img class="icon" src="/asset/icon/linkedin.svg" alt="LinkedIn"></a>
+	<a href="/aboutme" aria-label="About me"><img class="icon" src="/asset/favicon.png" alt="About me"></a>
+	<a href="https://discordapp.com/users/ja3k#7464" aria-label="Discord"><img class="icon" src="/asset/icon/discord.svg" alt="Discord"></a>
+	<a href="https://ko-fi.com/ja3k0305" aria-label="Ko-fi"><img class="icon" src="/asset/icon/kofi.svg" alt="Ko-fi"></a>
+	<a href="https://news.ycombinator.com/user?id=ja3k" aria-label="Hacker News"><img class="icon" src="/asset/icon/hackernews.svg" alt="Hacker News"></a>
+	<a href="https://boardgamearena.com/player?id=87186841" aria-label="Board Game Arena"><img class="icon" src="/asset/icon/bga.svg" alt="Board Game Arena"></a>
+	<a href="https://matrix.to/#/@ja3k:matrix.org" aria-label="Matrix"><img class="icon" src="/asset/icon/mat.svg" alt="Matrix"></a>
+	<a href="https://disqus.com/by/ja3k/" aria-label="Disqus"><img class="icon" src="/asset/icon/disq.ico" alt="Disqus"></a>
+	<a href="https://linktr.ee/ja3k_" aria-label="Linktree"><img class="icon" src="/asset/icon/linktree.ico" alt="Linktree"></a>
+	<a href="/feed.xml" aria-label="RSS"><img class="icon" src="/asset/icon/rss.svg" style="display:none;" alt="RSS"></a>
+        <a rel="me" href="https://mastodon.social/@ja3k" aria-label="Mastodon"><img class="icon" src="/asset/icon/mastodon.svg" alt="Mastodon"></a>
 	<div style="display:none;">
-        <a rel="me" href="https://qoto.org/@ja3k"><img class="icon" src="/asset/icon/mastodon.svg"></a>
-        <a target="_blank" href="https://icons8.com/icon/CVY1Tj6mnwWy/chess-com">Chess Com</a> icon by <a target="_blank" href="https://icons8.com" style="dispay:none;">Icons8</a></div>
+        <a rel="me" href="https://qoto.org/@ja3k" aria-label="Mastodon"><img class="icon" src="/asset/icon/mastodon.svg" alt="Mastodon"></a>
+        <a target="_blank" href="https://icons8.com/icon/CVY1Tj6mnwWy/chess-com" aria-label="Icons8">Chess Com</a> icon by <a target="_blank" href="https://icons8.com" style="dispay:none;" aria-label="Icons8">Icons8</a></div>
 </div>

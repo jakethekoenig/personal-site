@@ -1,6 +1,6 @@
 <div class="sidemenu">
 	 <ul class="menu">
-	 	<li><a href="https://ja3k.com"><img id="mainicon" src="/asset/favicon.png"></a></li>
+	 	<li><a href="https://ja3k.com" aria-label="ja3k"><img id="mainicon" src="/asset/favicon.png" alt="ja3k"></a></li>
 		<li><a class="menu-item" href="/index">Blog</a></li>
 		<li><a class="menu-item" href="/shortform">Short Form</a></li>
 		<li><a class="menu-item" href="/pods">Podcast</a></li>
