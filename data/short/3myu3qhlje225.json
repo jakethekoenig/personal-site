@@ -1,0 +1,27 @@
+{
+    "Title": "Prediction: by the end of 2028 the cubic matmul algorithm will not be used in modern training/inf...",
+    "Author": "Jake Koenig",
+    "URL": "3myu3qhlje225",
+    "Template": "tweet.temp",
+    "Date": "2026-10-27",
+    "Content": "short/3myu3qhlje225.md",
+    "Summary": "Prediction: by the end of 2028 the cubic matmul algorithm will not be used in modern training/inference",
+    "Categories": [
+        "shorts",
+        "bluesky"
+    ],
+    "tweet_id": "3myu3qhlje225",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3myu3qhlje225",
+            "https://x.com/ja3k_/status/2115055762816880875"
+        ]
+    ],
+    "original_date": "2026-10-27T11:05:32.616Z",
+    "media": [],
+    "is_thread": false,
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3myu3qhlje225",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3myu3qhlje225"
+    ]
+}
