@@ -1,0 +1,36 @@
+{
+    "Title": "Almost joined the Jules team last year. The product wouldn't have made it to my vest date! Also t...",
+    "Author": "Jake Koenig",
+    "URL": "3mz225yrgtk26",
+    "Template": "tweet.temp",
+    "Date": "2026-10-29",
+    "Content": "short/3mz225yrgtk26.md",
+    "Summary": "Almost joined the Jules team last year. The product wouldn't have made it to my vest date! Also the hiring manager left a quarter later",
+    "Categories": [
+        "shorts",
+        "bluesky"
+    ],
+    "tweet_id": "3mz225yrgtk26",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mz225yrgtk26",
+            "https://x.com/ja3k_/status/2115912264712958118"
+        ]
+    ],
+    "original_date": "2026-10-29T19:53:17.758Z",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/bluesky/3mz225yrgtk26_1.webp",
+            "original_url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:hdbroi7ep3cg76jeppowcsg6/bafkreiazwp37bc3xn7ovemvffbboaj7m5beqnlvbzpuodx4dp5q7vnzmvq",
+            "alt": "",
+            "source_post_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mz225yrgtk26"
+        }
+    ],
+    "is_thread": false,
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mz225yrgtk26",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mz225yrgtk26"
+    ],
+    "og_image": "/asset/bluesky/3mz225yrgtk26_1.webp"
+}
