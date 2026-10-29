@@ -1,0 +1,1 @@
+<p>It&#x27;s funny that openai took 2 years to catch up with ant on the cute model names and Google immediately copies and fumbled the most important bit: the names are from a category which makes it clear which is S/M/L</p>
