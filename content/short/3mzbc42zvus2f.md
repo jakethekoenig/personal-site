@@ -1,0 +1,1 @@
+<p>I am calling for the deregulation of time. The government should not be in the business of deciding what time it is. Each legal person should be entitled to choose their own time. Opened to the free market I&#x27;m sure we will find more efficient and innovative times</p>
