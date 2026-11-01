@@ -1,0 +1,36 @@
+{
+    "Title": "New daily driver",
+    "Author": "Jake Koenig",
+    "URL": "3mz7elbiuk22c",
+    "Template": "tweet.temp",
+    "Date": "2026-10-31",
+    "Content": "short/3mz7elbiuk22c.md",
+    "Summary": "New daily driver",
+    "Categories": [
+        "shorts",
+        "bluesky"
+    ],
+    "tweet_id": "3mz7elbiuk22c",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mz7elbiuk22c",
+            "https://x.com/ja3k_/status/2116696063025319988"
+        ]
+    ],
+    "original_date": "2026-10-31T22:42:59.260Z",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/bluesky/3mz7elbiuk22c_1.webp",
+            "original_url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:hdbroi7ep3cg76jeppowcsg6/bafkreidqnk5hgvsj6gqipyzeapznfn5ogp5ep3ogujaz4k6k3bjsrxrcge",
+            "alt": "",
+            "source_post_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mz7elbiuk22c"
+        }
+    ],
+    "is_thread": false,
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mz7elbiuk22c",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mz7elbiuk22c"
+    ],
+    "og_image": "/asset/bluesky/3mz7elbiuk22c_1.webp"
+}
