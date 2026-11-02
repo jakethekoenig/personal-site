@@ -1,0 +1,1 @@
+<p>Being on the Internet for years you start to realize how cyclical discourse is. And how much of it was stale the first time you heard it. No where is it as clear as DST discourse which happens like clockwork</p>
