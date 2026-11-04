@@ -1,0 +1,36 @@
+{
+    "Title": "Nut free November has gone too far",
+    "Author": "Jake Koenig",
+    "URL": "3mzh3zcqbp22k",
+    "Template": "tweet.temp",
+    "Date": "2026-11-04",
+    "Content": "short/3mzh3zcqbp22k.md",
+    "Summary": "Nut free November has gone too far",
+    "Categories": [
+        "shorts",
+        "bluesky"
+    ],
+    "tweet_id": "3mzh3zcqbp22k",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mzh3zcqbp22k",
+            "https://x.com/ja3k_/status/2117802337196466406"
+        ]
+    ],
+    "original_date": "2026-11-04T00:31:04.538Z",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/bluesky/3mzh3zcqbp22k_1.webp",
+            "original_url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:hdbroi7ep3cg76jeppowcsg6/bafkreih66ljrnqbynwfckgasp4cqmpsq47gwt43qaxn65npvpez5e5gbo4",
+            "alt": "",
+            "source_post_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mzh3zcqbp22k"
+        }
+    ],
+    "is_thread": false,
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mzh3zcqbp22k",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mzh3zcqbp22k"
+    ],
+    "og_image": "/asset/bluesky/3mzh3zcqbp22k_1.webp"
+}
