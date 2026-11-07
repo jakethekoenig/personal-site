@@ -1,0 +1,27 @@
+{
+    "Title": "It's over (the day)",
+    "Author": "Jake Koenig",
+    "URL": "3mzoogap3qc2a",
+    "Template": "tweet.temp",
+    "Date": "2026-11-07",
+    "Content": "short/3mzoogap3qc2a.md",
+    "Summary": "It's over (the day)",
+    "Categories": [
+        "shorts",
+        "bluesky"
+    ],
+    "tweet_id": "3mzoogap3qc2a",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mzoogap3qc2a",
+            "https://x.com/ja3k_/status/2118868492732755981"
+        ]
+    ],
+    "original_date": "2026-11-07T00:49:04.141Z",
+    "media": [],
+    "is_thread": false,
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mzoogap3qc2a",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mzoogap3qc2a"
+    ]
+}
