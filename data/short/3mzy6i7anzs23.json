@@ -1,0 +1,43 @@
+{
+    "Title": "What's in your wallet?",
+    "Author": "Jake Koenig",
+    "URL": "3mzy6i7anzs23",
+    "Template": "tweet.temp",
+    "Date": "2026-11-10",
+    "Content": "short/3mzy6i7anzs23.md",
+    "Summary": "What's in your wallet?",
+    "Categories": [
+        "shorts",
+        "bluesky"
+    ],
+    "tweet_id": "3mzy6i7anzs23",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3mzy6i7anzs23",
+            "https://x.com/ja3k_/status/2120268968409649563"
+        ]
+    ],
+    "original_date": "2026-11-10T19:30:27.230Z",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/bluesky/3mzy6i7anzs23_1.webp",
+            "original_url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:hdbroi7ep3cg76jeppowcsg6/bafkreifdpf64vy7ocwceyibhwqpswk4c4gw25qb362fd5z3nbbbx3rxrlm",
+            "alt": "",
+            "source_post_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mzy6i7anzs23"
+        },
+        {
+            "type": "photo",
+            "url": "/asset/bluesky/3mzy6i7anzs23_2.webp",
+            "original_url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:hdbroi7ep3cg76jeppowcsg6/bafkreidg5k73sadcwvdeg7dse5qqwzs2zxfgjgvtjy7n6kq6keuqqmqhfe",
+            "alt": "",
+            "source_post_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mzy6i7anzs23"
+        }
+    ],
+    "is_thread": false,
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mzy6i7anzs23",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3mzy6i7anzs23"
+    ],
+    "og_image": "/asset/bluesky/3mzy6i7anzs23_1.webp"
+}
