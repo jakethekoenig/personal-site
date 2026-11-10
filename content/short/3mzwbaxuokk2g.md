@@ -1,0 +1,1 @@
+<p>It&#x27;s striking how pointless the benchmarks are. Every model has to be announced with breakthroughs in math or physics and programming achievements that would take a skilled human multiple years. I don&#x27;t care you went from 60 to 65% on doodad bench</p>
