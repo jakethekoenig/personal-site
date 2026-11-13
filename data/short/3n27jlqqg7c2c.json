@@ -1,0 +1,27 @@
+{
+    "Title": "It's always day one for \"it's always day one\"",
+    "Author": "Jake Koenig",
+    "URL": "3n27jlqqg7c2c",
+    "Template": "tweet.temp",
+    "Date": "2026-11-13",
+    "Content": "short/3n27jlqqg7c2c.md",
+    "Summary": "It's always day one for \"it's always day one\"",
+    "Categories": [
+        "shorts",
+        "bluesky"
+    ],
+    "tweet_id": "3n27jlqqg7c2c",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3n27jlqqg7c2c",
+            "https://x.com/ja3k_/status/2121356737840394498"
+        ]
+    ],
+    "original_date": "2026-11-13T17:37:55.569Z",
+    "media": [],
+    "is_thread": false,
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3n27jlqqg7c2c",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3n27jlqqg7c2c"
+    ]
+}
