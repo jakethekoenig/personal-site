@@ -1,0 +1,27 @@
+{
+    "Title": "We all wake up a loser somedays",
+    "Author": "Jake Koenig",
+    "URL": "3n25nljy5qc2g",
+    "Template": "tweet.temp",
+    "Date": "2026-11-12",
+    "Content": "short/3n25nljy5qc2g.md",
+    "Summary": "We all wake up a loser somedays",
+    "Categories": [
+        "shorts",
+        "bluesky"
+    ],
+    "tweet_id": "3n25nljy5qc2g",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3n25nljy5qc2g",
+            "https://x.com/ja3k_/status/2121040695712686348"
+        ]
+    ],
+    "original_date": "2026-11-12T23:44:03.953Z",
+    "media": [],
+    "is_thread": false,
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3n25nljy5qc2g",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3n25nljy5qc2g"
+    ]
+}
