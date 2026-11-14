@@ -1,0 +1,36 @@
+{
+    "Title": "Rate my happy meal haul",
+    "Author": "Jake Koenig",
+    "URL": "3n2abdjsr4k2s",
+    "Template": "tweet.temp",
+    "Date": "2026-11-14",
+    "Content": "short/3n2abdjsr4k2s.md",
+    "Summary": "Rate my happy meal haul",
+    "Categories": [
+        "shorts",
+        "bluesky"
+    ],
+    "tweet_id": "3n2abdjsr4k2s",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3n2abdjsr4k2s",
+            "https://x.com/ja3k_/status/2121419840498131128"
+        ]
+    ],
+    "original_date": "2026-11-14T00:42:49.671Z",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/bluesky/3n2abdjsr4k2s_1.webp",
+            "original_url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:hdbroi7ep3cg76jeppowcsg6/bafkreiaf76gakunjjlfyfdupia3mvsh3hkemtuud3rpjkdjgcrod7v2f24",
+            "alt": "",
+            "source_post_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3n2abdjsr4k2s"
+        }
+    ],
+    "is_thread": false,
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3n2abdjsr4k2s",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3n2abdjsr4k2s"
+    ],
+    "og_image": "/asset/bluesky/3n2abdjsr4k2s_1.webp"
+}
