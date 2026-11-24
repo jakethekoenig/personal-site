@@ -11,6 +11,7 @@
 \usepackage{tabularx}
 \usepackage{enumitem}
 \usepackage{xcolor}
+\usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{qrcode}
 
@@ -83,6 +84,10 @@
 
 \hypersetup{pdftitle={Jake Koenig},pdfauthor={Jake Koenig},colorlinks,urlcolor=accent}
 
+\newcommand{\ResumeIcon}[1]{%
+  \kern0.35em\raisebox{-0.15ex}[0pt][0pt]{\includegraphics[height=1.75ex]{resume-assets/#1}}%
+}
+
 \newcommand{\ResumeHeader}{%
   \hspace*{\ResumeHeaderInset}%
   \begin{minipage}[c]{\dimexpr\linewidth-\ResumeHeaderInset-14mm\relax}
@@ -91,8 +96,8 @@
     \vspace{3pt}
     {\small
       \href{mailto:jakethekoenig@gmail.com}{jakethekoenig@gmail.com}%
-      \hspace{1em}\href{https://github.com/jakethekoenig}{jakethekoenig}%
-      \hspace{1em}\href{https://www.linkedin.com/in/jake-koenig-7000/}{jake-koenig-7000}\par
+      \hspace{1em}\href{https://github.com/jakethekoenig}{jakethekoenig\ResumeIcon{github.png}}%
+      \hspace{1em}\href{https://www.linkedin.com/in/jake-koenig-7000/}{jake-koenig-7000\ResumeIcon{linkedin.pdf}}\par
     }
   \end{minipage}%
   \hspace{2mm}%
