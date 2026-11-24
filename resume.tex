@@ -1,0 +1,197 @@
+% Build locally from the repository root with: tectonic resume.tex
+% Choose classic, modern, or technical to change the layout.
+\providecommand{\ResumeStyle}{classic}
+
+\documentclass[a4paper,10pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{etoolbox}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{qrcode}
+
+\geometry{left=15mm,right=15mm,top=12mm,bottom=12mm}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=1.35em,labelsep=0.45em,topsep=2pt,itemsep=1pt,parsep=0pt}
+\urlstyle{same}
+
+\newlength{\ResumeHeaderInset}
+\newlength{\ResumeSectionSpace}
+\newlength{\ResumeEntrySpace}
+\newlength{\ResumeExperienceInset}
+\newlength{\ResumeEducationInset}
+\setlength{\ResumeSectionSpace}{9pt}
+\setlength{\ResumeEntrySpace}{6pt}
+\setlength{\ResumeEducationInset}{25mm}
+\newcommand{\ResumeHeaderAlign}{\raggedright}
+\newcommand{\ResumeNameFont}{\fontsize{29}{32}\selectfont\bfseries}
+\newcommand{\ResumeSectionFont}{\large\bfseries}
+\newcommand{\ResumeSectionRule}{}
+\newcommand{\ResumeDate}[1]{{\small\color{detail}#1}}
+\newcommand{\ResumeLabel}[1]{\textbf{#1}}
+\newcommand{\ResumeSkillsBox}[1]{\begingroup#1\endgroup}
+\newcommand{\ResumeEntryHeading}[2]{%
+  \textbf{#2}\hfill\ResumeDate{#1}%
+}
+
+\ifdefstring{\ResumeStyle}{classic}{%
+  \geometry{left=17mm,right=17mm}
+  \definecolor{accent}{HTML}{182839}
+  \definecolor{detail}{HTML}{3F4C58}
+  \setlength{\ResumeHeaderInset}{14mm}
+  \renewcommand{\ResumeHeaderAlign}{\centering}
+  \renewcommand{\ResumeNameFont}{\fontsize{27}{30}\selectfont}
+  \renewcommand{\ResumeSectionFont}{\large\scshape}
+  \renewcommand{\ResumeSectionRule}{\vspace{2pt}{\color{accent}\hrule height 0.4pt}}
+}{\ifdefstring{\ResumeStyle}{modern}{%
+  \usepackage{tgheros}
+  \renewcommand{\familydefault}{\sfdefault}
+  \definecolor{accent}{HTML}{17635D}
+  \definecolor{detail}{HTML}{415354}
+  \setlength{\ResumeSectionSpace}{12pt}
+  \setlength{\ResumeEntrySpace}{8pt}
+}{\ifdefstring{\ResumeStyle}{technical}{%
+  \usepackage{tgpagella}
+  \usepackage{tgheros}
+  \definecolor{accent}{HTML}{24446B}
+  \definecolor{detail}{HTML}{394F65}
+  \definecolor{skillbackground}{HTML}{EDF2F7}
+  \setlength{\ResumeExperienceInset}{33mm}
+  \setlength{\ResumeEducationInset}{\ResumeExperienceInset}
+  \renewcommand{\ResumeNameFont}{\sffamily\fontsize{29}{32}\selectfont\bfseries}
+  \renewcommand{\ResumeSectionFont}{\ttfamily\large\bfseries}
+  \renewcommand{\ResumeDate}[1]{{\ttfamily\small\color{detail}#1}}
+  \renewcommand{\ResumeLabel}[1]{{\ttfamily\bfseries #1}}
+  \renewcommand{\ResumeEntryHeading}[2]{%
+    \llap{\makebox[\ResumeExperienceInset][l]{\ResumeDate{#1}}}\textbf{#2}%
+  }
+  \renewcommand{\ResumeSkillsBox}[1]{%
+    \begingroup
+    \setlength{\fboxsep}{6pt}%
+    \colorbox{skillbackground}{%
+      \parbox{\dimexpr\linewidth-2\fboxsep\relax}{#1}%
+    }%
+    \endgroup
+  }
+}{\PackageError{resume}{Unknown style \ResumeStyle}{Choose classic, modern, or technical.}}}}
+
+\hypersetup{pdftitle={Jake Koenig},pdfauthor={Jake Koenig},colorlinks,urlcolor=accent}
+
+\newcommand{\ResumeHeader}{%
+  \hspace*{\ResumeHeaderInset}%
+  \begin{minipage}[c]{\dimexpr\linewidth-\ResumeHeaderInset-14mm\relax}
+    \ResumeHeaderAlign
+    {\ResumeNameFont Jake Koenig\par}
+    \vspace{3pt}
+    {\small
+      \href{mailto:jakethekoenig@gmail.com}{jakethekoenig@gmail.com}%
+      \hspace{1em}\href{https://github.com/jakethekoenig}{jakethekoenig}%
+      \hspace{1em}\href{https://www.linkedin.com/in/jake-koenig-7000/}{jake-koenig-7000}\par
+    }
+  \end{minipage}%
+  \hspace{2mm}%
+  \qrcode[height=12mm,nolink]{https://ja3k.com/resume.pdf}\par
+}
+
+\newcommand{\ResumeSection}[1]{%
+  \par\addvspace{\ResumeSectionSpace}%
+  {\ResumeSectionFont\color{accent}#1\par}\nobreak
+  \ResumeSectionRule
+  \vspace{4pt}\nobreak
+}
+
+\newenvironment{experience}[3]{%
+  \par\addvspace{\ResumeEntrySpace}%
+  \noindent\hspace*{\ResumeExperienceInset}%
+  \begin{minipage}[t]{\dimexpr\linewidth-\ResumeExperienceInset\relax}
+    \raggedright
+    \noindent\ResumeEntryHeading{#1}{#2 \textbar{} #3}\par
+    \ignorespaces
+}{\end{minipage}\par}
+
+\newcommand{\ResumeEducation}[2]{%
+  \par\noindent
+  \makebox[\ResumeEducationInset][l]{\ResumeDate{#1}}%
+  \begin{minipage}[t]{\dimexpr\linewidth-\ResumeEducationInset\relax}
+    \raggedright #2
+  \end{minipage}\par
+}
+
+\newcommand{\ResumePublication}[1]{%
+  \par\addvspace{3pt}#1\par
+}
+
+\begin{document}
+\raggedright
+\fontsize{10.5}{13}\selectfont
+\ResumeHeader
+
+\ResumeSection{Skills and Technologies}
+\ResumeSkillsBox{%
+  \renewcommand{\arraystretch}{1.08}%
+  \begin{tabularx}{\linewidth}{@{}l>{\raggedright\arraybackslash}X@{}}
+    \ResumeLabel{Languages} & Python, TypeScript, Clojure, SQL, Bash \\
+    \ResumeLabel{Tools \& DevOps} & Docker, Git, Neovim, Postgres, AWS (EC2, S3, CloudFront, Elastic Beanstalk), GitHub Actions \\
+    \ResumeLabel{Backend} & Node.js, Express, FastAPI, Jest, Pytest \\
+    \ResumeLabel{Frontend} & React, Tailwind CSS, HTML/CSS, JavaScript, Vite \\
+    \ResumeLabel{AI} & PI, LLM agent systems, agentic workflows, prompt engineering, MCP, OpenAI, Anthropic, OpenRouter, LiteLLM, Ollama, llama.cpp
+  \end{tabularx}%
+}
+
+\ResumeSection{Work Experience}
+\begin{experience}{Dec 2025--present}{Senior AI Engineer}{Elicit}
+Worked on the Elicit agent.
+\begin{itemize}
+  \item Made context optimizations that saved 10\% of llm spend 3 times.
+  \item Was also in charge of choosing the model we served for \textasciitilde{}3 months during which we cut per turn LLM cost by >90\%.
+  \item Led the consolidation of the agent from 3 modes fast/comprehensive/sandbox to just the sandbox mode.
+  \item Added figures and presentations as well as file viewers for common file formats.
+  \item Launched the MCP server which wraps our API.
+  \item Led the observability of our agent.
+\end{itemize}
+\end{experience}
+
+\begin{experience}{Sep 2023--Nov 2025}{Founding Software Engineer}{AbanteAI}
+Built \href{https://mentat.ai}{mentat.ai}, a remote coding agent.
+\begin{itemize}
+  \item SOTA performance on SWE-bench lite (July 2024)
+  \item Designed and implemented hosting infrastructure including CI/CD pipeline, server hosting, CDN layer, and worker provisioning
+  \item Continuously optimized agent performance by refining prompts, environment, and tool interfaces based on log analysis
+  \item Directly engaged with users via Twitter and Discord to gather feedback and promote product adoption
+\end{itemize}
+\end{experience}
+
+\begin{experience}{Oct 2021--Sep 2023}{Software Engineer}{The Arena Group}
+Developed backend systems and commenting functionality.
+\begin{itemize}
+  \item Led launch of \href{https://rojo.com}{rojo.com}, a community platform for user engagement across Arena Group sites.
+\end{itemize}
+\end{experience}
+
+\begin{experience}{Feb 2016--Apr 2017}{Software Engineer}{Google}
+Contributed to Firebase platform, focusing on Dynamic Links and related products.
+\end{experience}
+
+\ResumeSection{Education}
+\ResumeEducation{2017-2021}{%
+  Math PhD program at the Ohio State University (left with masters)\newline
+  Specialization: Random Matrix Theory
+}
+\ResumeEducation{2012-2015}{%
+  B.S. at the University of Chicago\newline
+  Major: Math\newline
+  \textsc{Gpa}: 3.72
+}
+
+\ResumeSection{Publications}
+\ResumePublication{Koenig, J. \& Nguyen, H.. \emph{Rank of Near Uniform Matrices}. Journal of Combinatorics, 13(3): 397--436 (2022)}
+\ResumePublication{Bhargava, A., DePascale, J. \& Koenig, J. \emph{The Rank of the Sandpile Group of Random Directed Bipartite Graphs}. Annals of Combinatorics, 27, 979\textendash{}-992 (2023).}
+\ResumePublication{Koenig, J. (2022). \emph{Exponential Growth for Babies}. Self-published children's book. \url{https://www.amazon.com/dp/B0BMJQ8X5L}}
+
+\end{document}
