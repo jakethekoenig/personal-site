@@ -1,11 +1,8 @@
 % Build locally from the repository root with: tectonic resume.tex
-% Choose classic, modern, or technical to change the layout.
-\providecommand{\ResumeStyle}{classic}
 
 \documentclass[a4paper,10pt]{article}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
-\usepackage{etoolbox}
 \usepackage{geometry}
 \usepackage{microtype}
 \usepackage{tabularx}
@@ -15,7 +12,7 @@
 \usepackage{hyperref}
 \usepackage{qrcode}
 
-\geometry{left=15mm,right=15mm,top=12mm,bottom=12mm}
+\geometry{left=17mm,right=17mm,top=12mm,bottom=12mm}
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
@@ -23,81 +20,30 @@
 \urlstyle{same}
 
 \newlength{\ResumeHeaderInset}
-\newlength{\ResumeSectionSpace}
-\newlength{\ResumeEntrySpace}
-\newlength{\ResumeExperienceInset}
 \newlength{\ResumeEducationInset}
-\setlength{\ResumeSectionSpace}{9pt}
-\setlength{\ResumeEntrySpace}{6pt}
+\setlength{\ResumeHeaderInset}{14mm}
 \setlength{\ResumeEducationInset}{25mm}
-\newcommand{\ResumeHeaderAlign}{\raggedright}
-\newcommand{\ResumeNameFont}{\fontsize{29}{32}\selectfont\bfseries}
-\newcommand{\ResumeSectionFont}{\large\bfseries}
-\newcommand{\ResumeSectionRule}{}
-\newcommand{\ResumeDate}[1]{{\small\color{detail}#1}}
-\newcommand{\ResumeLabel}[1]{\textbf{#1}}
-\newcommand{\ResumeSkillsBox}[1]{\begingroup#1\endgroup}
-\newcommand{\ResumeEntryHeading}[2]{%
-  \textbf{#2}\hfill\ResumeDate{#1}%
-}
 
-\ifdefstring{\ResumeStyle}{classic}{%
-  \geometry{left=17mm,right=17mm}
-  \definecolor{accent}{HTML}{182839}
-  \definecolor{detail}{HTML}{3F4C58}
-  \setlength{\ResumeHeaderInset}{14mm}
-  \renewcommand{\ResumeHeaderAlign}{\centering}
-  \renewcommand{\ResumeNameFont}{\fontsize{27}{30}\selectfont}
-  \renewcommand{\ResumeSectionFont}{\large\scshape}
-  \renewcommand{\ResumeSectionRule}{\vspace{2pt}{\color{accent}\hrule height 0.4pt}}
-}{\ifdefstring{\ResumeStyle}{modern}{%
-  \usepackage{tgheros}
-  \renewcommand{\familydefault}{\sfdefault}
-  \definecolor{accent}{HTML}{17635D}
-  \definecolor{detail}{HTML}{415354}
-  \setlength{\ResumeSectionSpace}{12pt}
-  \setlength{\ResumeEntrySpace}{8pt}
-}{\ifdefstring{\ResumeStyle}{technical}{%
-  \usepackage{tgpagella}
-  \usepackage{tgheros}
-  \definecolor{accent}{HTML}{24446B}
-  \definecolor{detail}{HTML}{394F65}
-  \definecolor{skillbackground}{HTML}{EDF2F7}
-  \setlength{\ResumeExperienceInset}{33mm}
-  \setlength{\ResumeEducationInset}{\ResumeExperienceInset}
-  \renewcommand{\ResumeNameFont}{\sffamily\fontsize{29}{32}\selectfont\bfseries}
-  \renewcommand{\ResumeSectionFont}{\ttfamily\large\bfseries}
-  \renewcommand{\ResumeDate}[1]{{\ttfamily\small\color{detail}#1}}
-  \renewcommand{\ResumeLabel}[1]{{\ttfamily\bfseries #1}}
-  \renewcommand{\ResumeEntryHeading}[2]{%
-    \llap{\makebox[\ResumeExperienceInset][l]{\ResumeDate{#1}}}\textbf{#2}%
-  }
-  \renewcommand{\ResumeSkillsBox}[1]{%
-    \begingroup
-    \setlength{\fboxsep}{6pt}%
-    \colorbox{skillbackground}{%
-      \parbox{\dimexpr\linewidth-2\fboxsep\relax}{#1}%
-    }%
-    \endgroup
-  }
-}{\PackageError{resume}{Unknown style \ResumeStyle}{Choose classic, modern, or technical.}}}}
-
+\definecolor{accent}{HTML}{182839}
+\definecolor{detail}{HTML}{3F4C58}
 \hypersetup{pdftitle={Jake Koenig},pdfauthor={Jake Koenig},colorlinks,urlcolor=accent}
+\graphicspath{{nongenerated/asset/icon/}}
 
+\newcommand{\ResumeDate}[1]{{\small\color{detail}#1}}
 \newcommand{\ResumeIcon}[1]{%
-  \kern0.35em\raisebox{-0.15ex}[0pt][0pt]{\includegraphics[height=1.75ex]{resume-assets/#1}}%
+  \kern0.35em\raisebox{-0.15ex}[0pt][0pt]{\includegraphics[height=1.75ex]{#1}}%
 }
 
 \newcommand{\ResumeHeader}{%
   \hspace*{\ResumeHeaderInset}%
   \begin{minipage}[c]{\dimexpr\linewidth-\ResumeHeaderInset-14mm\relax}
-    \ResumeHeaderAlign
-    {\ResumeNameFont Jake Koenig\par}
+    \centering
+    {\fontsize{27}{30}\selectfont Jake Koenig\par}
     \vspace{3pt}
     {\small
       \href{mailto:jakethekoenig@gmail.com}{jakethekoenig@gmail.com}%
-      \hspace{1em}\href{https://github.com/jakethekoenig}{jakethekoenig\ResumeIcon{github.png}}%
-      \hspace{1em}\href{https://www.linkedin.com/in/jake-koenig-7000/}{jake-koenig-7000\ResumeIcon{linkedin.pdf}}\par
+      \hspace{1em}\href{https://github.com/jakethekoenig}{jakethekoenig\ResumeIcon{git.png}}%
+      \hspace{1em}\href{https://www.linkedin.com/in/jake-koenig-7000/}{jake-koenig-7000\ResumeIcon{resume-linkedin.pdf}}\par
     }
   \end{minipage}%
   \hspace{2mm}%
@@ -105,18 +51,17 @@
 }
 
 \newcommand{\ResumeSection}[1]{%
-  \par\addvspace{\ResumeSectionSpace}%
-  {\ResumeSectionFont\color{accent}#1\par}\nobreak
-  \ResumeSectionRule
+  \par\addvspace{9pt}%
+  {\large\scshape\color{accent}#1\par}\nobreak
+  \vspace{2pt}{\color{accent}\hrule height 0.4pt}
   \vspace{4pt}\nobreak
 }
 
 \newenvironment{experience}[3]{%
-  \par\addvspace{\ResumeEntrySpace}%
-  \noindent\hspace*{\ResumeExperienceInset}%
-  \begin{minipage}[t]{\dimexpr\linewidth-\ResumeExperienceInset\relax}
+  \par\addvspace{6pt}%
+  \noindent\begin{minipage}[t]{\linewidth}
     \raggedright
-    \noindent\ResumeEntryHeading{#1}{#2 \textbar{} #3}\par
+    \noindent\textbf{#2 \textbar{} #3}\hfill\ResumeDate{#1}\par
     \ignorespaces
 }{\end{minipage}\par}
 
@@ -138,16 +83,16 @@
 \ResumeHeader
 
 \ResumeSection{Skills and Technologies}
-\ResumeSkillsBox{%
+\begingroup
   \renewcommand{\arraystretch}{1.08}%
   \begin{tabularx}{\linewidth}{@{}l>{\raggedright\arraybackslash}X@{}}
-    \ResumeLabel{Languages} & Python, TypeScript, Clojure, SQL, Bash \\
-    \ResumeLabel{Tools \& DevOps} & Docker, Git, Neovim, Postgres, AWS (EC2, S3, CloudFront, Elastic Beanstalk), GitHub Actions \\
-    \ResumeLabel{Backend} & Node.js, Express, FastAPI, Jest, Pytest \\
-    \ResumeLabel{Frontend} & React, Tailwind CSS, HTML/CSS, JavaScript, Vite \\
-    \ResumeLabel{AI} & PI, LLM agent systems, agentic workflows, prompt engineering, MCP, OpenAI, Anthropic, OpenRouter, LiteLLM, Ollama, llama.cpp
+    \textbf{Languages} & Python, TypeScript, Clojure, SQL, Bash \\
+    \textbf{Tools \& DevOps} & Docker, Git, Neovim, Postgres, AWS (EC2, S3, CloudFront, Elastic Beanstalk), GitHub Actions \\
+    \textbf{Backend} & Node.js, Express, FastAPI, Jest, Pytest \\
+    \textbf{Frontend} & React, Tailwind CSS, HTML/CSS, JavaScript, Vite \\
+    \textbf{AI} & PI, LLM agent systems, agentic workflows, prompt engineering, MCP, OpenAI, Anthropic, OpenRouter, LiteLLM, Ollama, llama.cpp
   \end{tabularx}%
-}
+\endgroup
 
 \ResumeSection{Work Experience}
 \begin{experience}{Dec 2025--present}{Senior AI Engineer}{Elicit}

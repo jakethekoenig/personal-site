@@ -1,0 +1,44 @@
+name: Publish resume
+
+on:
+        workflow_dispatch:
+
+permissions:
+        contents: read
+
+concurrency:
+        group: publish-resume
+        cancel-in-progress: false
+
+jobs:
+        publish:
+                runs-on: ubuntu-latest
+                steps:
+                        - name: Check out website source
+                          uses: actions/checkout@v4
+                          with:
+                                  persist-credentials: false
+
+                        - name: Build resume PDF
+                          shell: bash
+                          run: |
+                                  archive="$RUNNER_TEMP/tectonic.tar.gz"
+                                  curl --fail --silent --show-error --location --retry 3 --output "$archive" \
+                                          'https://github.com/tectonic-typesetting/tectonic/releases/download/tectonic%400.17.0/tectonic-0.17.0-x86_64-unknown-linux-musl.tar.gz'
+                                  printf '%s  %s\n' '8533d07f9ccbd7a65824b9e0459041bca34af1eb33daba48f59215593753a3b7' "$archive" | sha256sum --check
+                                  tar -xzf "$archive" -C "$RUNNER_TEMP" tectonic
+                                  mkdir -p build/resume
+                                  "$RUNNER_TEMP/tectonic" --untrusted --outdir build/resume resume.tex
+                                  test -s build/resume/resume.pdf
+
+                        - name: Upload PDFs and invalidate CloudFront paths
+                          shell: bash
+                          env:
+                                  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+                                  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+                                  AWS_DEFAULT_REGION: us-west-2
+                          run: |
+                                  for filename in resume.pdf cv.pdf; do
+                                          aws s3 cp build/resume/resume.pdf "s3://ja3k.com/$filename" --content-type application/pdf
+                                  done
+                                  aws cloudfront create-invalidation --distribution-id E3RFZ3RTME1070 --paths '/resume.pdf' '/cv.pdf'
