@@ -86,62 +86,63 @@
 \begingroup
   \renewcommand{\arraystretch}{1.08}%
   \begin{tabularx}{\linewidth}{@{}l>{\raggedright\arraybackslash}X@{}}
+    \textbf{AI \& Agents} & Agent evaluation, context optimization, model selection, agent observability, sandboxed agents, MCP, pi, harness design \\
     \textbf{Languages} & Python, TypeScript, Clojure, SQL, Bash \\
-    \textbf{Tools \& DevOps} & Docker, Git, Neovim, Postgres, AWS (EC2, S3, CloudFront, Elastic Beanstalk), GitHub Actions \\
-    \textbf{Backend} & Node.js, Express, FastAPI, Jest, Pytest \\
-    \textbf{Frontend} & React, Tailwind CSS, HTML/CSS, JavaScript, Vite \\
-    \textbf{AI} & PI, LLM agent systems, agentic workflows, prompt engineering, MCP, OpenAI, Anthropic, OpenRouter, LiteLLM, Ollama, llama.cpp
+    \textbf{Tools \& DevOps} & Docker, Kubernetes, Terraform, Git, Neovim, AWS (EC2, S3, CloudFront, Elastic Beanstalk), GitHub Actions \\
+    \textbf{Backend \& Data} & FastAPI, Node.js, Express, PostgreSQL \\
+    \textbf{Frontend} & React, Tailwind CSS, HTML/CSS, JavaScript, Vite
   \end{tabularx}%
 \endgroup
 
 \ResumeSection{Work Experience}
 \begin{experience}{Dec 2025--present}{Senior AI Engineer}{Elicit}
-Worked on the Elicit agent.
 \begin{itemize}
-  \item Made context optimizations that saved 10\% of llm spend 3 times.
-  \item Was also in charge of choosing the model we served for \textasciitilde{}3 months during which we cut per turn LLM cost by >90\%.
+  \item Changed the models we serve 5 times cutting our per-turn LLM spend by >90\% with no measured loss of quality or user retention.
+  \item Made 3 context optimizations that saved >10\% of LLM spend each.
   \item Led the consolidation of the agent from 3 modes fast/comprehensive/sandbox to just the sandbox mode.
-  \item Added figures and presentations as well as file viewers for common file formats.
+  \item Gave the agent the ability to deliver figures and presentations and made viewers for other common file formats.
   \item Launched the MCP server which wraps our API.
   \item Led the observability of our agent.
 \end{itemize}
 \end{experience}
 
+\vspace{5pt}
 \begin{experience}{Sep 2023--Nov 2025}{Founding Software Engineer}{AbanteAI}
-Built \href{https://mentat.ai}{mentat.ai}, a remote coding agent.
+Built Mentat, a GitHub coding agent that works from issues and comments, opens pull requests, and reviews code.
 \begin{itemize}
-  \item SOTA performance on SWE-bench lite (July 2024)
-  \item Designed and implemented hosting infrastructure including CI/CD pipeline, server hosting, CDN layer, and worker provisioning
-  \item Continuously optimized agent performance by refining prompts, environment, and tool interfaces based on log analysis
-  \item Directly engaged with users via Twitter and Discord to gather feedback and promote product adoption
+  \item Achieved SOTA performance on SWE-bench Lite in July 2024.
+  \item Built and deployed a multi-worker system for a GitHub coding agent, with PostgreSQL-backed task coordination and Docker execution on AWS EC2.
+  \item Proposed moving from a local CLI to a GitHub coding agent and built Mentat from scratch on a four-person team.
+  \item Optimized agent performance by refining prompts, environment, and tool interfaces based on agent execution analysis.
+  \item Directly engaged with users via Twitter and Discord to gather feedback and promote product adoption.
 \end{itemize}
 \end{experience}
 
+\vspace{5pt}
 \begin{experience}{Oct 2021--Sep 2023}{Software Engineer}{The Arena Group}
-Developed backend systems and commenting functionality.
-\begin{itemize}
-  \item Led launch of \href{https://rojo.com}{rojo.com}, a community platform for user engagement across Arena Group sites.
-\end{itemize}
+Led launch of \href{https://rojo.com}{rojo.com}, a community platform for user engagement across Arena Group sites.
 \end{experience}
 
+\vspace{5pt}
 \begin{experience}{Feb 2016--Apr 2017}{Software Engineer}{Google}
-Contributed to Firebase platform, focusing on Dynamic Links and related products.
+Contributed to Firebase platform, focusing on Dynamic Links.
 \end{experience}
 
 \ResumeSection{Education}
-\ResumeEducation{2017-2021}{%
-  Math PhD program at the Ohio State University (left with masters)\newline
+\ResumeEducation{2017--2021}{%
+  Math PhD program at the Ohio State University (left with master's)\newline
   Specialization: Random Matrix Theory
 }
-\ResumeEducation{2012-2015}{%
+\vspace{5pt}
+\ResumeEducation{2012--2015}{%
   B.S. at the University of Chicago\newline
   Major: Math\newline
-  \textsc{Gpa}: 3.72
+  ICPC world finalist (2014 and 2015)
 }
 
 \ResumeSection{Publications}
-\ResumePublication{Koenig, J. \& Nguyen, H.. \emph{Rank of Near Uniform Matrices}. Journal of Combinatorics, 13(3): 397--436 (2022)}
-\ResumePublication{Bhargava, A., DePascale, J. \& Koenig, J. \emph{The Rank of the Sandpile Group of Random Directed Bipartite Graphs}. Annals of Combinatorics, 27, 979\textendash{}-992 (2023).}
+\ResumePublication{Koenig, J. \& Nguyen, H. \emph{Rank of Near Uniform Matrices}. Journal of Combinatorics, 13(3): 397--436 (2022).}
+\ResumePublication{Bhargava, A., DePascale, J. \& Koenig, J. \emph{The Rank of the Sandpile Group of Random Directed Bipartite Graphs}. Annals of Combinatorics, 27, 979--992 (2023).}
 \ResumePublication{Koenig, J. (2022). \emph{Exponential Growth for Babies}. Self-published children's book. \url{https://www.amazon.com/dp/B0BMJQ8X5L}}
 
 \end{document}
