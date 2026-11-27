@@ -1,0 +1,36 @@
+{
+    "Title": "I wonder what this thing's prompt was",
+    "Author": "Jake Koenig",
+    "URL": "3n3cqb2rbv22f",
+    "Template": "tweet.temp",
+    "Date": "2026-11-27",
+    "Content": "short/3n3cqb2rbv22f.md",
+    "Summary": "I wonder what this thing's prompt was",
+    "Categories": [
+        "shorts",
+        "bluesky"
+    ],
+    "tweet_id": "3n3cqb2rbv22f",
+    "posts": [
+        [
+            "https://bsky.app/profile/ja3k.bsky.social/post/3n3cqb2rbv22f",
+            "https://x.com/ja3k_/status/2126400806110859576"
+        ]
+    ],
+    "original_date": "2026-11-27T17:40:24.021Z",
+    "media": [
+        {
+            "type": "photo",
+            "url": "/asset/bluesky/3n3cqb2rbv22f_1.webp",
+            "original_url": "https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:hdbroi7ep3cg76jeppowcsg6/bafkreiagmx42fjyuichqm2zzrftqndhm6azlen2pkk5zayyt26lhv5i4je",
+            "alt": "",
+            "source_post_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3n3cqb2rbv22f"
+        }
+    ],
+    "is_thread": false,
+    "bluesky_uri": "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3n3cqb2rbv22f",
+    "post_uris": [
+        "at://did:plc:hdbroi7ep3cg76jeppowcsg6/app.bsky.feed.post/3n3cqb2rbv22f"
+    ],
+    "og_image": "/asset/bluesky/3n3cqb2rbv22f_1.webp"
+}
